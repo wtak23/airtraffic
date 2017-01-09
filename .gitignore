@@ -5,3 +5,5 @@ ignore
 
 # a bulky file (4mb) i ended up not using much
 uscitiespop.txt
+
+sphinx/build/*
