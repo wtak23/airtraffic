@@ -1,0 +1,1 @@
+Search.setIndex({envversion:46,filenames:["file1","index"],objects:{},objnames:{},objtypes:{},terms:{all:1,avail:1,code:1,content:1,creat:1,doc:1,januari:1,link:1,modul:1,predefin:1,releas:1,substitut:1,tabl:1,todai:1,version:1,which:1},titles:["1 Hello","Sphinx Skeleton"],titleterms:{hello:0,skeleton:1,sphinx:1}})
