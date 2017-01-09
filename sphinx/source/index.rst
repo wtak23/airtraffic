@@ -1,6 +1,6 @@
-Sphinx Skeleton
-===============
-Skeleton for creating my doc.
+US Airport Analysis
+===================
+US Airport Analysis
 
 .. toctree::
    :maxdepth: 2
@@ -8,11 +8,7 @@ Skeleton for creating my doc.
    :caption: Table of Contents
 
    file1.rst
+   spotify_0105a
 
-These substitutions are predefined in Sphinx
 
-- ``|version|`` = |version|
-- ``|release|`` = |release|
-- ``|today|`` = |today|
-
-All modules for which code is available (`link <./_modules/index.html>`_)
+.. All modules for which code is available (`link <./_modules/index.html>`_)
