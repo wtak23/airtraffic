@@ -1,0 +1,118 @@
+
+blockquote p {
+    font-size: 14px !important;
+}
+
+blockquote {
+    margin: 0 0 4px !important;
+}
+
+code {
+    color: #49759c !important;
+    background-color: #f3f5f9 !important;
+}
+
+.alert-info {
+    background-color: #adb8cb !important;
+    border-color: #adb8cb !important;
+    color: #2c3e50 !important;
+}
+
+.function dt {
+    padding-top: 150px;
+    margin-top: -150px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+/* === above is from seaborn === */
+@media (min-width: 1200px) {
+    /* i prefer the body to not be TOOOO huge in full screen mode */
+    /*http://stackoverflow.com/questions/18548453/how-to-change-navbar-container-width-bootstrap-3*/
+    .container{
+        max-width: 1050px;
+    }
+}
+
+div.topic {
+    background-color: rgba(255, 153, 255,0.2);
+    padding-left: 18px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    max-width:700px;
+}
+
+/*
+     for parsed literal block coming from ipynb                     
+     (note: i add :class: myliteral in the rst file to achieve this
+     http://www.w3schools.com/css/css_combinators.asp
+*/
+.myliteral pre {
+  /*font-size:12px;*/
+  /*font-size:22px;*/
+  color:black;
+  background-color:rgba(0,255,0,0.08);
+  padding-left:45px;
+  font-style:italic;
+  font-family:"Incosolata","Consolata","Monaco",monospace; 
+}
+
+
+/* Center images */
+/*http://www.w3schools.com/css/css_align.asp*/
+img {
+    display: block;
+    margin: auto;
+}
+
+/*=============================================================================
+    Change admonitions
+  ===========================================================================*/
+/*div.admonition{
+    background-color: rgba(0,0,255,0.15);
+}*/
+
+
+/*=============================================================================
+    To style output from pandas
+    (these are assigned class "dataframe")
+  ===========================================================================*/
+table.dataframe {
+    overflow-x:auto;
+    width:100%; 
+    table-layout:fixed;
+    display: block;
+    border-collapse: collapse;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+table.dataframe th,table.dataframe  td {
+    padding: 14px;
+    /*border: 1px solid #ecf0f1;*/
+    border: 1px solid rgba(255,128,128,0.1);
+    /*border: 1px solid black;*/
+    /*border: 2px solid #ecf0f1;*/
+    /*border-bottom: 2px solid #ddd;*/
+    /*border-bottom: 2px solid #aaa;*/
+}
+
+table.dataframe th {
+    font-size:16px;
+    text-align: center;
+    font-weight:bold;
+    /*border: 2px solid #aaa;*/
+    background-color: rgba(255,0,0,0.15);
+    /*background: #E3E3E3;  Light grey background */
+}
+
+table.dataframe td {
+    font-size:14px;
+    text-align: center;
+    /*border: 1px solid #ecf0f1;*/
+    /*border: 1px solid rgba(0,0,0,0.1);*/
+}
+
+/*table.dataframe tr:hover{background-color:#CCF6FF}*/
+table.dataframe tr:hover{background-color:rgba(0,128,255,0.1)}
+

@@ -7,3 +7,4 @@ ignore
 uscitiespop.txt
 
 sphinx/build/*
+sphinx/build_published/*
