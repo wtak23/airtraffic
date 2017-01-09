@@ -1,0 +1,1017 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="lat" type="double" />
+      <attribute id="1" title="lon" type="double" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.0.dev_20170108093821</creator>
+      <lastmodified>09/01/2017</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Panama City (FL)" label="Panama City (FL)">
+        <attvalues>
+          <attvalue for="0" value="30.1588129" />
+          <attvalue for="1" value="-85.6602058" />
+        </attvalues>
+      </node>
+      <node id="Lawton/Fort Sill (OK)" label="Lawton/Fort Sill (OK)">
+        <attvalues>
+          <attvalue for="0" value="34.5726626" />
+          <attvalue for="1" value="-98.4159133" />
+        </attvalues>
+      </node>
+      <node id="Houston (TX) [WP.Hobby]" label="Houston (TX) [WP.Hobby]">
+        <attvalues>
+          <attvalue for="0" value="29.6529506" />
+          <attvalue for="1" value="-95.2766507" />
+        </attvalues>
+      </node>
+      <node id="Myrtle Beach (SC)" label="Myrtle Beach (SC)">
+        <attvalues>
+          <attvalue for="0" value="33.6822019" />
+          <attvalue for="1" value="-78.9278943" />
+        </attvalues>
+      </node>
+      <node id="Austin (TX)" label="Austin (TX)">
+        <attvalues>
+          <attvalue for="0" value="30.267153" />
+          <attvalue for="1" value="-97.7430608" />
+        </attvalues>
+      </node>
+      <node id="Charleston/Dunbar (WV)" label="Charleston/Dunbar (WV)">
+        <attvalues>
+          <attvalue for="0" value="38.3498195" />
+          <attvalue for="1" value="-81.6326234" />
+        </attvalues>
+      </node>
+      <node id="Alexandria (LA)" label="Alexandria (LA)">
+        <attvalues>
+          <attvalue for="0" value="31.3267812" />
+          <attvalue for="1" value="-92.5472399" />
+        </attvalues>
+      </node>
+      <node id="Fort Myers (FL)" label="Fort Myers (FL)">
+        <attvalues>
+          <attvalue for="0" value="26.5337051" />
+          <attvalue for="1" value="-81.7553083" />
+        </attvalues>
+      </node>
+      <node id="Tallahassee (FL)" label="Tallahassee (FL)">
+        <attvalues>
+          <attvalue for="0" value="30.395743" />
+          <attvalue for="1" value="-84.345124" />
+        </attvalues>
+      </node>
+      <node id="Baltimore (MD)" label="Baltimore (MD)">
+        <attvalues>
+          <attvalue for="0" value="39.2903848" />
+          <attvalue for="1" value="-76.6121893" />
+        </attvalues>
+      </node>
+      <node id="Charleston (SC)" label="Charleston (SC)">
+        <attvalues>
+          <attvalue for="0" value="32.8942676" />
+          <attvalue for="1" value="-80.038159" />
+        </attvalues>
+      </node>
+      <node id="Daytona Beach (FL)" label="Daytona Beach (FL)">
+        <attvalues>
+          <attvalue for="0" value="29.2108147" />
+          <attvalue for="1" value="-81.0228331" />
+        </attvalues>
+      </node>
+      <node id="Houston (TX) [Ell]" label="Houston (TX) [Ell]">
+        <attvalues>
+          <attvalue for="0" value="29.7604267" />
+          <attvalue for="1" value="-95.3698028" />
+        </attvalues>
+      </node>
+      <node id="Charlotte (NC)" label="Charlotte (NC)">
+        <attvalues>
+          <attvalue for="0" value="35.2270869" />
+          <attvalue for="1" value="-80.8431267" />
+        </attvalues>
+      </node>
+      <node id="Abilene (TX)" label="Abilene (TX)">
+        <attvalues>
+          <attvalue for="0" value="32.4487364" />
+          <attvalue for="1" value="-99.7331439" />
+        </attvalues>
+      </node>
+      <node id="El Paso (TX)" label="El Paso (TX)">
+        <attvalues>
+          <attvalue for="0" value="31.8053354" />
+          <attvalue for="1" value="-106.3824345" />
+        </attvalues>
+      </node>
+      <node id="Jacksonville/Camp Lejeune (NC)" label="Jacksonville/Camp Lejeune (NC)">
+        <attvalues>
+          <attvalue for="0" value="34.8295521" />
+          <attvalue for="1" value="-77.6109114" />
+        </attvalues>
+      </node>
+      <node id="Texarkana (AR)" label="Texarkana (AR)">
+        <attvalues>
+          <attvalue for="0" value="33.4568777" />
+          <attvalue for="1" value="-93.9941485" />
+        </attvalues>
+      </node>
+      <node id="Monroe (LA)" label="Monroe (LA)">
+        <attvalues>
+          <attvalue for="0" value="32.5101466" />
+          <attvalue for="1" value="-92.0436835" />
+        </attvalues>
+      </node>
+      <node id="Valparaiso (FL)" label="Valparaiso (FL)">
+        <attvalues>
+          <attvalue for="0" value="30.495438" />
+          <attvalue for="1" value="-86.549817" />
+        </attvalues>
+      </node>
+      <node id="New Bern/Morehead/Beaufort (NC)" label="New Bern/Morehead/Beaufort (NC)">
+        <attvalues>
+          <attvalue for="0" value="35.0743313" />
+          <attvalue for="1" value="-77.0427951" />
+        </attvalues>
+      </node>
+      <node id="Corpus Christi (TX)" label="Corpus Christi (TX)">
+        <attvalues>
+          <attvalue for="0" value="27.8005828" />
+          <attvalue for="1" value="-97.396381" />
+        </attvalues>
+      </node>
+      <node id="Fayetteville (NC)" label="Fayetteville (NC)">
+        <attvalues>
+          <attvalue for="0" value="34.9903054" />
+          <attvalue for="1" value="-78.8870574" />
+        </attvalues>
+      </node>
+      <node id="Midland/Odessa (TX)" label="Midland/Odessa (TX)">
+        <attvalues>
+          <attvalue for="0" value="31.9417386" />
+          <attvalue for="1" value="-102.2047497" />
+        </attvalues>
+      </node>
+      <node id="Waco (TX)" label="Waco (TX)">
+        <attvalues>
+          <attvalue for="0" value="31.6086462" />
+          <attvalue for="1" value="-97.2226498" />
+        </attvalues>
+      </node>
+      <node id="Miami (FL)" label="Miami (FL)">
+        <attvalues>
+          <attvalue for="0" value="25.795865" />
+          <attvalue for="1" value="-80.2870457" />
+        </attvalues>
+      </node>
+      <node id="Savannah (GA)" label="Savannah (GA)">
+        <attvalues>
+          <attvalue for="0" value="32.1294267" />
+          <attvalue for="1" value="-81.2018521" />
+        </attvalues>
+      </node>
+      <node id="Fort Lauderdale (FL)" label="Fort Lauderdale (FL)">
+        <attvalues>
+          <attvalue for="0" value="26.0742344" />
+          <attvalue for="1" value="-80.1506022" />
+        </attvalues>
+      </node>
+      <node id="Albany (GA)" label="Albany (GA)">
+        <attvalues>
+          <attvalue for="0" value="31.5356711" />
+          <attvalue for="1" value="-84.1939049" />
+        </attvalues>
+      </node>
+      <node id="Brunswick (GA)" label="Brunswick (GA)">
+        <attvalues>
+          <attvalue for="0" value="31.1499528" />
+          <attvalue for="1" value="-81.4914894" />
+        </attvalues>
+      </node>
+      <node id="Greensboro/High Point (NC)" label="Greensboro/High Point (NC)">
+        <attvalues>
+          <attvalue for="0" value="36.1043671" />
+          <attvalue for="1" value="-79.9351805" />
+        </attvalues>
+      </node>
+      <node id="Roanoke (VA)" label="Roanoke (VA)">
+        <attvalues>
+          <attvalue for="0" value="37.3204427" />
+          <attvalue for="1" value="-79.9703018" />
+        </attvalues>
+      </node>
+      <node id="Charlottesville (VA)" label="Charlottesville (VA)">
+        <attvalues>
+          <attvalue for="0" value="38.0293059" />
+          <attvalue for="1" value="-78.4766781" />
+        </attvalues>
+      </node>
+      <node id="Montgomery (AL)" label="Montgomery (AL)">
+        <attvalues>
+          <attvalue for="0" value="32.3668052" />
+          <attvalue for="1" value="-86.2999689" />
+        </attvalues>
+      </node>
+      <node id="Columbia (SC)" label="Columbia (SC)">
+        <attvalues>
+          <attvalue for="0" value="34.0007104" />
+          <attvalue for="1" value="-81.0348144" />
+        </attvalues>
+      </node>
+      <node id="Fayetteville (AR)" label="Fayetteville (AR)">
+        <attvalues>
+          <attvalue for="0" value="36.2786587" />
+          <attvalue for="1" value="-94.304294" />
+        </attvalues>
+      </node>
+      <node id="Dothan (AL)" label="Dothan (AL)">
+        <attvalues>
+          <attvalue for="0" value="31.3216557" />
+          <attvalue for="1" value="-85.4524326" />
+        </attvalues>
+      </node>
+      <node id="Washington (DC) [R.Reagan]" label="Washington (DC) [R.Reagan]">
+        <attvalues>
+          <attvalue for="0" value="38.851242" />
+          <attvalue for="1" value="-77.0402315" />
+        </attvalues>
+      </node>
+      <node id="Houston (TX) [G.Bush]" label="Houston (TX) [G.Bush]">
+        <attvalues>
+          <attvalue for="0" value="29.9902199" />
+          <attvalue for="1" value="-95.3367827" />
+        </attvalues>
+      </node>
+      <node id="Tulsa (OK)" label="Tulsa (OK)">
+        <attvalues>
+          <attvalue for="0" value="36.198778" />
+          <attvalue for="1" value="-95.8838659" />
+        </attvalues>
+      </node>
+      <node id="Mobile (AL)" label="Mobile (AL)">
+        <attvalues>
+          <attvalue for="0" value="30.6813282" />
+          <attvalue for="1" value="-88.2441408" />
+        </attvalues>
+      </node>
+      <node id="Oklahoma City (OK)" label="Oklahoma City (OK)">
+        <attvalues>
+          <attvalue for="0" value="35.393056" />
+          <attvalue for="1" value="-97.600556" />
+        </attvalues>
+      </node>
+      <node id="Sarasota/Bradenton (FL)" label="Sarasota/Bradenton (FL)">
+        <attvalues>
+          <attvalue for="0" value="27.3873477" />
+          <attvalue for="1" value="-82.5534486" />
+        </attvalues>
+      </node>
+      <node id="Dallas/Fort Worth (TX)" label="Dallas/Fort Worth (TX)">
+        <attvalues>
+          <attvalue for="0" value="32.8998091" />
+          <attvalue for="1" value="-97.0403352" />
+        </attvalues>
+      </node>
+      <node id="West Palm Beach/Palm Beach (FL)" label="West Palm Beach/Palm Beach (FL)">
+        <attvalues>
+          <attvalue for="0" value="26.6857475" />
+          <attvalue for="1" value="-80.0928165" />
+        </attvalues>
+      </node>
+      <node id="Washington (DC) [W.Dulles]" label="Washington (DC) [W.Dulles]">
+        <attvalues>
+          <attvalue for="0" value="38.9531162" />
+          <attvalue for="1" value="-77.4565388" />
+        </attvalues>
+      </node>
+      <node id="Columbus (GA)" label="Columbus (GA)">
+        <attvalues>
+          <attvalue for="0" value="32.4609764" />
+          <attvalue for="1" value="-84.9877094" />
+        </attvalues>
+      </node>
+      <node id="Tampa (FL)" label="Tampa (FL)">
+        <attvalues>
+          <attvalue for="0" value="27.9834776" />
+          <attvalue for="1" value="-82.5370781" />
+        </attvalues>
+      </node>
+      <node id="Wilmington (NC)" label="Wilmington (NC)">
+        <attvalues>
+          <attvalue for="0" value="34.266805" />
+          <attvalue for="1" value="-77.9103607" />
+        </attvalues>
+      </node>
+      <node id="Punta Gorda (FL)" label="Punta Gorda (FL)">
+        <attvalues>
+          <attvalue for="0" value="26.9162084" />
+          <attvalue for="1" value="-81.9977777" />
+        </attvalues>
+      </node>
+      <node id="Paducah (KY)" label="Paducah (KY)">
+        <attvalues>
+          <attvalue for="0" value="37.0612439" />
+          <attvalue for="1" value="-88.7675112" />
+        </attvalues>
+      </node>
+      <node id="Meridian (MS)" label="Meridian (MS)">
+        <attvalues>
+          <attvalue for="0" value="32.3311612" />
+          <attvalue for="1" value="-88.7526547" />
+        </attvalues>
+      </node>
+      <node id="Chattanooga (TN)" label="Chattanooga (TN)">
+        <attvalues>
+          <attvalue for="0" value="35.0357067" />
+          <attvalue for="1" value="-85.2016567" />
+        </attvalues>
+      </node>
+      <node id="Killeen (TX)" label="Killeen (TX)">
+        <attvalues>
+          <attvalue for="0" value="31.0615206" />
+          <attvalue for="1" value="-97.8208843" />
+        </attvalues>
+      </node>
+      <node id="Longview (TX)" label="Longview (TX)">
+        <attvalues>
+          <attvalue for="0" value="32.3877112" />
+          <attvalue for="1" value="-94.719144" />
+        </attvalues>
+      </node>
+      <node id="Louisville (KY)" label="Louisville (KY)">
+        <attvalues>
+          <attvalue for="0" value="38.2526647" />
+          <attvalue for="1" value="-85.7584557" />
+        </attvalues>
+      </node>
+      <node id="New Orleans (LA)" label="New Orleans (LA)">
+        <attvalues>
+          <attvalue for="0" value="29.9922012" />
+          <attvalue for="1" value="-90.2590112" />
+        </attvalues>
+      </node>
+      <node id="Gulfport/Biloxi (MS)" label="Gulfport/Biloxi (MS)">
+        <attvalues>
+          <attvalue for="0" value="30.413366" />
+          <attvalue for="1" value="-89.072955" />
+        </attvalues>
+      </node>
+      <node id="Columbus (MS)" label="Columbus (MS)">
+        <attvalues>
+          <attvalue for="0" value="33.4516041" />
+          <attvalue for="1" value="-88.587603" />
+        </attvalues>
+      </node>
+      <node id="Memphis (TN)" label="Memphis (TN)">
+        <attvalues>
+          <attvalue for="0" value="35.0420679" />
+          <attvalue for="1" value="-89.9791729" />
+        </attvalues>
+      </node>
+      <node id="Nashville (TN)" label="Nashville (TN)">
+        <attvalues>
+          <attvalue for="0" value="36.1626638" />
+          <attvalue for="1" value="-86.7816016" />
+        </attvalues>
+      </node>
+      <node id="Baton Rouge (LA)" label="Baton Rouge (LA)">
+        <attvalues>
+          <attvalue for="0" value="30.4582829" />
+          <attvalue for="1" value="-91.1403196" />
+        </attvalues>
+      </node>
+      <node id="Newport News/Williamsburg (VA)" label="Newport News/Williamsburg (VA)">
+        <attvalues>
+          <attvalue for="0" value="37.131667" />
+          <attvalue for="1" value="-76.492778" />
+        </attvalues>
+      </node>
+      <node id="Wichita Falls (TX)" label="Wichita Falls (TX)">
+        <attvalues>
+          <attvalue for="0" value="33.9137085" />
+          <attvalue for="1" value="-98.4933873" />
+        </attvalues>
+      </node>
+      <node id="Norfolk (VA)" label="Norfolk (VA)">
+        <attvalues>
+          <attvalue for="0" value="36.8956837" />
+          <attvalue for="1" value="-76.2000161" />
+        </attvalues>
+      </node>
+      <node id="Laredo (TX)" label="Laredo (TX)">
+        <attvalues>
+          <attvalue for="0" value="27.5305671" />
+          <attvalue for="1" value="-99.4803241" />
+        </attvalues>
+      </node>
+      <node id="Huntsville (AL)" label="Huntsville (AL)">
+        <attvalues>
+          <attvalue for="0" value="34.6403329" />
+          <attvalue for="1" value="-86.7756899" />
+        </attvalues>
+      </node>
+      <node id="Amarillo (TX)" label="Amarillo (TX)">
+        <attvalues>
+          <attvalue for="0" value="35.2219971" />
+          <attvalue for="1" value="-101.8312969" />
+        </attvalues>
+      </node>
+      <node id="Atlanta (GA)" label="Atlanta (GA)">
+        <attvalues>
+          <attvalue for="0" value="33.7489954" />
+          <attvalue for="1" value="-84.3879824" />
+        </attvalues>
+      </node>
+      <node id="Knoxville (TN)" label="Knoxville (TN)">
+        <attvalues>
+          <attvalue for="0" value="35.810833" />
+          <attvalue for="1" value="-83.993889" />
+        </attvalues>
+      </node>
+      <node id="Lake Charles (LA)" label="Lake Charles (LA)">
+        <attvalues>
+          <attvalue for="0" value="30.1229972" />
+          <attvalue for="1" value="-93.2211183" />
+        </attvalues>
+      </node>
+      <node id="Brownsville (TX)" label="Brownsville (TX)">
+        <attvalues>
+          <attvalue for="0" value="25.9017472" />
+          <attvalue for="1" value="-97.4974838" />
+        </attvalues>
+      </node>
+      <node id="Orlando (FL)" label="Orlando (FL)">
+        <attvalues>
+          <attvalue for="0" value="28.4311577" />
+          <attvalue for="1" value="-81.308083" />
+        </attvalues>
+      </node>
+      <node id="Birmingham (AL)" label="Birmingham (AL)">
+        <attvalues>
+          <attvalue for="0" value="33.5624269" />
+          <attvalue for="1" value="-86.754126" />
+        </attvalues>
+      </node>
+      <node id="St. Augustine (FL)" label="St. Augustine (FL)">
+        <attvalues>
+          <attvalue for="0" value="29.9543518" />
+          <attvalue for="1" value="-81.3429353" />
+        </attvalues>
+      </node>
+      <node id="Asheville (NC)" label="Asheville (NC)">
+        <attvalues>
+          <attvalue for="0" value="35.5950581" />
+          <attvalue for="1" value="-82.5514869" />
+        </attvalues>
+      </node>
+      <node id="Mission/McAllen/Edinburg (TX)" label="Mission/McAllen/Edinburg (TX)">
+        <attvalues>
+          <attvalue for="0" value="26.1807841" />
+          <attvalue for="1" value="-98.2398433" />
+        </attvalues>
+      </node>
+      <node id="Jackson/Vicksburg (MS)" label="Jackson/Vicksburg (MS)">
+        <attvalues>
+          <attvalue for="0" value="32.3122283" />
+          <attvalue for="1" value="-90.0764217" />
+        </attvalues>
+      </node>
+      <node id="Melbourne (FL)" label="Melbourne (FL)">
+        <attvalues>
+          <attvalue for="0" value="28.0979886" />
+          <attvalue for="1" value="-80.6312478" />
+        </attvalues>
+      </node>
+      <node id="Augusta (GA)" label="Augusta (GA)">
+        <attvalues>
+          <attvalue for="0" value="33.4734978" />
+          <attvalue for="1" value="-82.0105148" />
+        </attvalues>
+      </node>
+      <node id="Pensacola (FL)" label="Pensacola (FL)">
+        <attvalues>
+          <attvalue for="0" value="30.4738158" />
+          <attvalue for="1" value="-87.1867049" />
+        </attvalues>
+      </node>
+      <node id="Beaumont/Port Arthur (TX)" label="Beaumont/Port Arthur (TX)">
+        <attvalues>
+          <attvalue for="0" value="29.878116" />
+          <attvalue for="1" value="-93.9405549" />
+        </attvalues>
+      </node>
+      <node id="College Station/Bryan (TX)" label="College Station/Bryan (TX)">
+        <attvalues>
+          <attvalue for="0" value="30.627977" />
+          <attvalue for="1" value="-96.3344068" />
+        </attvalues>
+      </node>
+      <node id="Lafayette (LA)" label="Lafayette (LA)">
+        <attvalues>
+          <attvalue for="0" value="30.2084779" />
+          <attvalue for="1" value="-91.993286" />
+        </attvalues>
+      </node>
+      <node id="Bristol/Johnson City/Kingsport (TN)" label="Bristol/Johnson City/Kingsport (TN)">
+        <attvalues>
+          <attvalue for="0" value="36.48111" />
+          <attvalue for="1" value="-82.40785" />
+        </attvalues>
+      </node>
+      <node id="Greer (SC)" label="Greer (SC)">
+        <attvalues>
+          <attvalue for="0" value="34.8959008" />
+          <attvalue for="1" value="-82.2172338" />
+        </attvalues>
+      </node>
+      <node id="Raleigh/Durham (NC)" label="Raleigh/Durham (NC)">
+        <attvalues>
+          <attvalue for="0" value="35.880079" />
+          <attvalue for="1" value="-78.7879963" />
+        </attvalues>
+      </node>
+      <node id="Richmond (VA)" label="Richmond (VA)">
+        <attvalues>
+          <attvalue for="0" value="37.5065795" />
+          <attvalue for="1" value="-77.3208112" />
+        </attvalues>
+      </node>
+      <node id="Little Rock (AR)" label="Little Rock (AR)">
+        <attvalues>
+          <attvalue for="0" value="34.7464809" />
+          <attvalue for="1" value="-92.2895948" />
+        </attvalues>
+      </node>
+      <node id="Harlingen/San Benito (TX)" label="Harlingen/San Benito (TX)">
+        <attvalues>
+          <attvalue for="0" value="26.2239796" />
+          <attvalue for="1" value="-97.6618154" />
+        </attvalues>
+      </node>
+      <node id="Tyler (TX)" label="Tyler (TX)">
+        <attvalues>
+          <attvalue for="0" value="32.3511258" />
+          <attvalue for="1" value="-95.4096293" />
+        </attvalues>
+      </node>
+      <node id="Hattiesburg/Laurel (MS)" label="Hattiesburg/Laurel (MS)">
+        <attvalues>
+          <attvalue for="0" value="31.3271189" />
+          <attvalue for="1" value="-89.2903392" />
+        </attvalues>
+      </node>
+      <node id="Fort Smith (AR)" label="Fort Smith (AR)">
+        <attvalues>
+          <attvalue for="0" value="35.3360061" />
+          <attvalue for="1" value="-94.3668408" />
+        </attvalues>
+      </node>
+      <node id="Lexington (KY)" label="Lexington (KY)">
+        <attvalues>
+          <attvalue for="0" value="41.5089194" />
+          <attvalue for="1" value="-90.7659767" />
+        </attvalues>
+      </node>
+      <node id="Shreveport (LA)" label="Shreveport (LA)">
+        <attvalues>
+          <attvalue for="0" value="32.4544911" />
+          <attvalue for="1" value="-93.8286552" />
+        </attvalues>
+      </node>
+      <node id="Gainesville (FL)" label="Gainesville (FL)">
+        <attvalues>
+          <attvalue for="0" value="29.6516344" />
+          <attvalue for="1" value="-82.3248262" />
+        </attvalues>
+      </node>
+      <node id="Dallas (TX)" label="Dallas (TX)">
+        <attvalues>
+          <attvalue for="0" value="32.7766642" />
+          <attvalue for="1" value="-96.7969879" />
+        </attvalues>
+      </node>
+      <node id="San Angelo (TX)" label="San Angelo (TX)">
+        <attvalues>
+          <attvalue for="0" value="31.3572911" />
+          <attvalue for="1" value="-100.5031694" />
+        </attvalues>
+      </node>
+      <node id="Jacksonville (FL)" label="Jacksonville (FL)">
+        <attvalues>
+          <attvalue for="0" value="30.4940713" />
+          <attvalue for="1" value="-81.6879368" />
+        </attvalues>
+      </node>
+      <node id="Valdosta (GA)" label="Valdosta (GA)">
+        <attvalues>
+          <attvalue for="0" value="30.785034" />
+          <attvalue for="1" value="-83.27651" />
+        </attvalues>
+      </node>
+      <node id="Key West (FL)" label="Key West (FL)">
+        <attvalues>
+          <attvalue for="0" value="24.556987" />
+          <attvalue for="1" value="-81.757397" />
+        </attvalues>
+      </node>
+      <node id="Lubbock (TX)" label="Lubbock (TX)">
+        <attvalues>
+          <attvalue for="0" value="33.6562701" />
+          <attvalue for="1" value="-101.8209749" />
+        </attvalues>
+      </node>
+      <node id="San Antonio (TX)" label="San Antonio (TX)">
+        <attvalues>
+          <attvalue for="0" value="29.5311973" />
+          <attvalue for="1" value="-98.4683484" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Panama City (FL)" target="Baltimore (MD)" weight="164" />
+      <edge id="1" source="Panama City (FL)" target="Atlanta (GA)" weight="2067" />
+      <edge id="2" source="Panama City (FL)" target="Nashville (TN)" weight="716" />
+      <edge id="3" source="Panama City (FL)" target="Houston (TX) [G.Bush]" weight="710" />
+      <edge id="4" source="Panama City (FL)" target="Dallas (TX)" weight="152" />
+      <edge id="5" source="Panama City (FL)" target="Houston (TX) [WP.Hobby]" weight="606" />
+      <edge id="6" source="Lawton/Fort Sill (OK)" target="Dallas/Fort Worth (TX)" weight="1142" />
+      <edge id="7" source="Houston (TX) [WP.Hobby]" target="Nashville (TN)" weight="1345" />
+      <edge id="8" source="Houston (TX) [WP.Hobby]" target="Lubbock (TX)" weight="10" />
+      <edge id="9" source="Houston (TX) [WP.Hobby]" target="Pensacola (FL)" weight="366" />
+      <edge id="10" source="Houston (TX) [WP.Hobby]" target="Dallas/Fort Worth (TX)" weight="955" />
+      <edge id="11" source="Houston (TX) [WP.Hobby]" target="Washington (DC) [R.Reagan]" weight="1354" />
+      <edge id="12" source="Houston (TX) [WP.Hobby]" target="Memphis (TN)" weight="667" />
+      <edge id="13" source="Houston (TX) [WP.Hobby]" target="Greer (SC)" weight="148" />
+      <edge id="14" source="Houston (TX) [WP.Hobby]" target="Raleigh/Durham (NC)" weight="416" />
+      <edge id="15" source="Houston (TX) [WP.Hobby]" target="Dallas (TX)" weight="6666" />
+      <edge id="16" source="Houston (TX) [WP.Hobby]" target="Tulsa (OK)" weight="998" />
+      <edge id="17" source="Houston (TX) [WP.Hobby]" target="Fort Lauderdale (FL)" weight="744" />
+      <edge id="18" source="Houston (TX) [WP.Hobby]" target="Harlingen/San Benito (TX)" weight="1715" />
+      <edge id="19" source="Houston (TX) [WP.Hobby]" target="Baltimore (MD)" weight="1167" />
+      <edge id="20" source="Houston (TX) [WP.Hobby]" target="New Orleans (LA)" weight="3301" />
+      <edge id="21" source="Houston (TX) [WP.Hobby]" target="Charleston (SC)" weight="302" />
+      <edge id="22" source="Houston (TX) [WP.Hobby]" target="Austin (TX)" weight="1532" />
+      <edge id="23" source="Houston (TX) [WP.Hobby]" target="Oklahoma City (OK)" weight="1316" />
+      <edge id="24" source="Houston (TX) [WP.Hobby]" target="Birmingham (AL)" weight="659" />
+      <edge id="25" source="Houston (TX) [WP.Hobby]" target="Jacksonville (FL)" weight="376" />
+      <edge id="26" source="Houston (TX) [WP.Hobby]" target="El Paso (TX)" weight="994" />
+      <edge id="27" source="Houston (TX) [WP.Hobby]" target="Atlanta (GA)" weight="4033" />
+      <edge id="28" source="Houston (TX) [WP.Hobby]" target="Orlando (FL)" weight="1524" />
+      <edge id="29" source="Houston (TX) [WP.Hobby]" target="Corpus Christi (TX)" weight="1360" />
+      <edge id="30" source="Houston (TX) [WP.Hobby]" target="Tampa (FL)" weight="1058" />
+      <edge id="31" source="Houston (TX) [WP.Hobby]" target="Midland/Odessa (TX)" weight="996" />
+      <edge id="32" source="Houston (TX) [WP.Hobby]" target="Charlotte (NC)" weight="411" />
+      <edge id="33" source="Houston (TX) [WP.Hobby]" target="San Antonio (TX)" weight="1476" />
+      <edge id="34" source="Myrtle Beach (SC)" target="Dallas/Fort Worth (TX)" weight="86" />
+      <edge id="35" source="Myrtle Beach (SC)" target="Baltimore (MD)" weight="224" />
+      <edge id="36" source="Myrtle Beach (SC)" target="Atlanta (GA)" weight="1509" />
+      <edge id="37" source="Myrtle Beach (SC)" target="Fort Lauderdale (FL)" weight="408" />
+      <edge id="38" source="Myrtle Beach (SC)" target="Charleston/Dunbar (WV)" weight="42" />
+      <edge id="39" source="Austin (TX)" target="Lubbock (TX)" weight="346" />
+      <edge id="40" source="Austin (TX)" target="New Orleans (LA)" weight="378" />
+      <edge id="41" source="Austin (TX)" target="Dallas/Fort Worth (TX)" weight="4536" />
+      <edge id="42" source="Austin (TX)" target="Memphis (TN)" weight="19" />
+      <edge id="43" source="Austin (TX)" target="Nashville (TN)" weight="689" />
+      <edge id="44" source="Austin (TX)" target="Dallas (TX)" weight="3450" />
+      <edge id="45" source="Austin (TX)" target="Fort Lauderdale (FL)" weight="1078" />
+      <edge id="46" source="Austin (TX)" target="Harlingen/San Benito (TX)" weight="354" />
+      <edge id="47" source="Austin (TX)" target="Baltimore (MD)" weight="688" />
+      <edge id="48" source="Austin (TX)" target="Washington (DC) [R.Reagan]" weight="366" />
+      <edge id="49" source="Austin (TX)" target="Houston (TX) [G.Bush]" weight="1874" />
+      <edge id="50" source="Austin (TX)" target="Tampa (FL)" weight="373" />
+      <edge id="51" source="Austin (TX)" target="El Paso (TX)" weight="947" />
+      <edge id="52" source="Austin (TX)" target="Atlanta (GA)" weight="3332" />
+      <edge id="53" source="Austin (TX)" target="Orlando (FL)" weight="1098" />
+      <edge id="54" source="Austin (TX)" target="Charlotte (NC)" weight="892" />
+      <edge id="55" source="Austin (TX)" target="Washington (DC) [W.Dulles]" weight="100" />
+      <edge id="56" source="Austin (TX)" target="Miami (FL)" weight="317" />
+      <edge id="57" source="Charleston/Dunbar (WV)" target="Houston (TX) [G.Bush]" weight="308" />
+      <edge id="58" source="Charleston/Dunbar (WV)" target="Atlanta (GA)" weight="1637" />
+      <edge id="59" source="Alexandria (LA)" target="Dallas/Fort Worth (TX)" weight="582" />
+      <edge id="60" source="Alexandria (LA)" target="Houston (TX) [G.Bush]" weight="971" />
+      <edge id="61" source="Alexandria (LA)" target="Atlanta (GA)" weight="1345" />
+      <edge id="62" source="Fort Myers (FL)" target="Nashville (TN)" weight="122" />
+      <edge id="63" source="Fort Myers (FL)" target="Baltimore (MD)" weight="1333" />
+      <edge id="64" source="Fort Myers (FL)" target="Dallas/Fort Worth (TX)" weight="1126" />
+      <edge id="65" source="Fort Myers (FL)" target="Dallas (TX)" weight="14" />
+      <edge id="66" source="Fort Myers (FL)" target="Washington (DC) [R.Reagan]" weight="497" />
+      <edge id="67" source="Fort Myers (FL)" target="Houston (TX) [G.Bush]" weight="580" />
+      <edge id="68" source="Fort Myers (FL)" target="Atlanta (GA)" weight="4210" />
+      <edge id="69" source="Fort Myers (FL)" target="Charlotte (NC)" weight="1818" />
+      <edge id="70" source="Tallahassee (FL)" target="Dallas/Fort Worth (TX)" weight="430" />
+      <edge id="71" source="Tallahassee (FL)" target="Atlanta (GA)" weight="2280" />
+      <edge id="72" source="Tallahassee (FL)" target="Miami (FL)" weight="17" />
+      <edge id="73" source="Baltimore (MD)" target="Norfolk (VA)" weight="1575" />
+      <edge id="74" source="Baltimore (MD)" target="Nashville (TN)" weight="1988" />
+      <edge id="75" source="Baltimore (MD)" target="Jacksonville (FL)" weight="1212" />
+      <edge id="76" source="Baltimore (MD)" target="Louisville (KY)" weight="1211" />
+      <edge id="77" source="Baltimore (MD)" target="Dallas/Fort Worth (TX)" weight="1668" />
+      <edge id="78" source="Baltimore (MD)" target="New Orleans (LA)" weight="932" />
+      <edge id="79" source="Baltimore (MD)" target="Memphis (TN)" weight="420" />
+      <edge id="80" source="Baltimore (MD)" target="Greer (SC)" weight="276" />
+      <edge id="81" source="Baltimore (MD)" target="Charleston (SC)" weight="1118" />
+      <edge id="82" source="Baltimore (MD)" target="Dallas (TX)" weight="1383" />
+      <edge id="83" source="Baltimore (MD)" target="Fort Lauderdale (FL)" weight="5079" />
+      <edge id="84" source="Baltimore (MD)" target="Little Rock (AR)" weight="60" />
+      <edge id="85" source="Baltimore (MD)" target="Houston (TX) [G.Bush]" weight="1040" />
+      <edge id="86" source="Baltimore (MD)" target="Tampa (FL)" weight="2415" />
+      <edge id="87" source="Baltimore (MD)" target="Oklahoma City (OK)" weight="366" />
+      <edge id="88" source="Baltimore (MD)" target="Birmingham (AL)" weight="375" />
+      <edge id="89" source="Baltimore (MD)" target="Raleigh/Durham (NC)" weight="2122" />
+      <edge id="90" source="Baltimore (MD)" target="Atlanta (GA)" weight="6449" />
+      <edge id="91" source="Baltimore (MD)" target="Orlando (FL)" weight="4005" />
+      <edge id="92" source="Baltimore (MD)" target="West Palm Beach/Palm Beach (FL)" weight="1013" />
+      <edge id="93" source="Baltimore (MD)" target="Miami (FL)" weight="1004" />
+      <edge id="94" source="Baltimore (MD)" target="Charlotte (NC)" weight="3432" />
+      <edge id="95" source="Baltimore (MD)" target="San Antonio (TX)" weight="806" />
+      <edge id="96" source="Charleston (SC)" target="Washington (DC) [R.Reagan]" weight="873" />
+      <edge id="97" source="Charleston (SC)" target="Atlanta (GA)" weight="3655" />
+      <edge id="98" source="Charleston (SC)" target="Nashville (TN)" weight="382" />
+      <edge id="99" source="Charleston (SC)" target="Charlotte (NC)" weight="537" />
+      <edge id="100" source="Charleston (SC)" target="Washington (DC) [W.Dulles]" weight="3" />
+      <edge id="101" source="Charleston (SC)" target="Houston (TX) [G.Bush]" weight="617" />
+      <edge id="102" source="Charleston (SC)" target="Dallas (TX)" weight="366" />
+      <edge id="103" source="Charleston (SC)" target="Fort Lauderdale (FL)" weight="347" />
+      <edge id="104" source="Daytona Beach (FL)" target="Charlotte (NC)" weight="4" />
+      <edge id="105" source="Daytona Beach (FL)" target="Atlanta (GA)" weight="1615" />
+      <edge id="106" source="Charlotte (NC)" target="Washington (DC) [R.Reagan]" weight="2859" />
+      <edge id="107" source="Charlotte (NC)" target="Norfolk (VA)" weight="908" />
+      <edge id="108" source="Charlotte (NC)" target="Richmond (VA)" weight="1661" />
+      <edge id="109" source="Charlotte (NC)" target="Louisville (KY)" weight="9" />
+      <edge id="110" source="Charlotte (NC)" target="Dallas/Fort Worth (TX)" weight="4147" />
+      <edge id="111" source="Charlotte (NC)" target="Memphis (TN)" weight="824" />
+      <edge id="112" source="Charlotte (NC)" target="Nashville (TN)" weight="1682" />
+      <edge id="113" source="Charlotte (NC)" target="Fort Lauderdale (FL)" weight="2654" />
+      <edge id="114" source="Charlotte (NC)" target="Dallas (TX)" weight="366" />
+      <edge id="115" source="Charlotte (NC)" target="New Orleans (LA)" weight="1614" />
+      <edge id="116" source="Charlotte (NC)" target="Houston (TX) [G.Bush]" weight="2777" />
+      <edge id="117" source="Charlotte (NC)" target="West Palm Beach/Palm Beach (FL)" weight="1745" />
+      <edge id="118" source="Charlotte (NC)" target="Tampa (FL)" weight="3128" />
+      <edge id="119" source="Charlotte (NC)" target="Raleigh/Durham (NC)" weight="2701" />
+      <edge id="120" source="Charlotte (NC)" target="Jacksonville (FL)" weight="2002" />
+      <edge id="121" source="Charlotte (NC)" target="Atlanta (GA)" weight="6847" />
+      <edge id="122" source="Charlotte (NC)" target="Washington (DC) [W.Dulles]" weight="1" />
+      <edge id="123" source="Charlotte (NC)" target="Orlando (FL)" weight="3346" />
+      <edge id="124" source="Charlotte (NC)" target="Greensboro/High Point (NC)" weight="204" />
+      <edge id="125" source="Charlotte (NC)" target="Miami (FL)" weight="3108" />
+      <edge id="126" source="Charlotte (NC)" target="Wilmington (NC)" weight="640" />
+      <edge id="127" source="Charlotte (NC)" target="San Antonio (TX)" weight="652" />
+      <edge id="128" source="Abilene (TX)" target="Dallas/Fort Worth (TX)" weight="509" />
+      <edge id="129" source="El Paso (TX)" target="Dallas/Fort Worth (TX)" weight="1425" />
+      <edge id="130" source="El Paso (TX)" target="Atlanta (GA)" weight="881" />
+      <edge id="131" source="El Paso (TX)" target="Houston (TX) [G.Bush]" weight="1094" />
+      <edge id="132" source="El Paso (TX)" target="Dallas (TX)" weight="1384" />
+      <edge id="133" source="El Paso (TX)" target="San Antonio (TX)" weight="861" />
+      <edge id="134" source="Jacksonville/Camp Lejeune (NC)" target="Atlanta (GA)" weight="1274" />
+      <edge id="135" source="Texarkana (AR)" target="Dallas/Fort Worth (TX)" weight="921" />
+      <edge id="136" source="Monroe (LA)" target="Dallas/Fort Worth (TX)" weight="1016" />
+      <edge id="137" source="Monroe (LA)" target="Houston (TX) [G.Bush]" weight="783" />
+      <edge id="138" source="Monroe (LA)" target="Atlanta (GA)" weight="1309" />
+      <edge id="139" source="Valparaiso (FL)" target="Dallas/Fort Worth (TX)" weight="1143" />
+      <edge id="140" source="Valparaiso (FL)" target="Houston (TX) [G.Bush]" weight="887" />
+      <edge id="141" source="Valparaiso (FL)" target="Atlanta (GA)" weight="2405" />
+      <edge id="142" source="New Bern/Morehead/Beaufort (NC)" target="Atlanta (GA)" weight="700" />
+      <edge id="143" source="Corpus Christi (TX)" target="Dallas/Fort Worth (TX)" weight="162" />
+      <edge id="144" source="Corpus Christi (TX)" target="Houston (TX) [G.Bush]" weight="1657" />
+      <edge id="145" source="Fayetteville (NC)" target="Atlanta (GA)" weight="1749" />
+      <edge id="146" source="Midland/Odessa (TX)" target="Dallas/Fort Worth (TX)" weight="382" />
+      <edge id="147" source="Midland/Odessa (TX)" target="Houston (TX) [G.Bush]" weight="1423" />
+      <edge id="148" source="Midland/Odessa (TX)" target="Dallas (TX)" weight="1672" />
+      <edge id="149" source="Waco (TX)" target="Dallas/Fort Worth (TX)" weight="1511" />
+      <edge id="150" source="Miami (FL)" target="Nashville (TN)" weight="101" />
+      <edge id="151" source="Miami (FL)" target="Pensacola (FL)" weight="1" />
+      <edge id="152" source="Miami (FL)" target="Dallas/Fort Worth (TX)" weight="4075" />
+      <edge id="153" source="Miami (FL)" target="New Orleans (LA)" weight="830" />
+      <edge id="154" source="Miami (FL)" target="Greer (SC)" weight="1" />
+      <edge id="155" source="Miami (FL)" target="Raleigh/Durham (NC)" weight="1073" />
+      <edge id="156" source="Miami (FL)" target="Tulsa (OK)" weight="52" />
+      <edge id="157" source="Miami (FL)" target="Richmond (VA)" weight="45" />
+      <edge id="158" source="Miami (FL)" target="Washington (DC) [R.Reagan]" weight="3279" />
+      <edge id="159" source="Miami (FL)" target="Key West (FL)" weight="118" />
+      <edge id="160" source="Miami (FL)" target="Houston (TX) [G.Bush]" weight="3057" />
+      <edge id="161" source="Miami (FL)" target="Oklahoma City (OK)" weight="2" />
+      <edge id="162" source="Miami (FL)" target="Gainesville (FL)" weight="112" />
+      <edge id="163" source="Miami (FL)" target="Birmingham (AL)" weight="90" />
+      <edge id="164" source="Miami (FL)" target="Jacksonville (FL)" weight="123" />
+      <edge id="165" source="Miami (FL)" target="Atlanta (GA)" weight="5724" />
+      <edge id="166" source="Miami (FL)" target="Washington (DC) [W.Dulles]" weight="658" />
+      <edge id="167" source="Miami (FL)" target="Orlando (FL)" weight="3605" />
+      <edge id="168" source="Miami (FL)" target="Tampa (FL)" weight="2129" />
+      <edge id="169" source="Miami (FL)" target="San Antonio (TX)" weight="304" />
+      <edge id="170" source="Savannah (GA)" target="Atlanta (GA)" weight="3642" />
+      <edge id="171" source="Savannah (GA)" target="Houston (TX) [G.Bush]" weight="414" />
+      <edge id="172" source="Fort Lauderdale (FL)" target="Washington (DC) [R.Reagan]" weight="2838" />
+      <edge id="173" source="Fort Lauderdale (FL)" target="Nashville (TN)" weight="1165" />
+      <edge id="174" source="Fort Lauderdale (FL)" target="Jacksonville (FL)" weight="1088" />
+      <edge id="175" source="Fort Lauderdale (FL)" target="Dallas/Fort Worth (TX)" weight="2808" />
+      <edge id="176" source="Fort Lauderdale (FL)" target="Raleigh/Durham (NC)" weight="657" />
+      <edge id="177" source="Fort Lauderdale (FL)" target="Dallas (TX)" weight="952" />
+      <edge id="178" source="Fort Lauderdale (FL)" target="Richmond (VA)" weight="366" />
+      <edge id="179" source="Fort Lauderdale (FL)" target="New Orleans (LA)" weight="1030" />
+      <edge id="180" source="Fort Lauderdale (FL)" target="Houston (TX) [G.Bush]" weight="1929" />
+      <edge id="181" source="Fort Lauderdale (FL)" target="Oklahoma City (OK)" weight="1" />
+      <edge id="182" source="Fort Lauderdale (FL)" target="Atlanta (GA)" weight="8079" />
+      <edge id="183" source="Fort Lauderdale (FL)" target="Orlando (FL)" weight="731" />
+      <edge id="184" source="Fort Lauderdale (FL)" target="Tampa (FL)" weight="2154" />
+      <edge id="185" source="Albany (GA)" target="Atlanta (GA)" weight="1007" />
+      <edge id="186" source="Brunswick (GA)" target="Atlanta (GA)" weight="1033" />
+      <edge id="187" source="Greensboro/High Point (NC)" target="Atlanta (GA)" weight="2903" />
+      <edge id="188" source="Roanoke (VA)" target="Atlanta (GA)" weight="1661" />
+      <edge id="189" source="Charlottesville (VA)" target="Atlanta (GA)" weight="1047" />
+      <edge id="190" source="Montgomery (AL)" target="Dallas/Fort Worth (TX)" weight="203" />
+      <edge id="191" source="Montgomery (AL)" target="Atlanta (GA)" weight="2421" />
+      <edge id="192" source="Columbia (SC)" target="Dallas/Fort Worth (TX)" weight="443" />
+      <edge id="193" source="Columbia (SC)" target="Houston (TX) [G.Bush]" weight="263" />
+      <edge id="194" source="Columbia (SC)" target="Atlanta (GA)" weight="2849" />
+      <edge id="195" source="Fayetteville (AR)" target="Dallas/Fort Worth (TX)" weight="424" />
+      <edge id="196" source="Fayetteville (AR)" target="Atlanta (GA)" weight="1878" />
+      <edge id="197" source="Fayetteville (AR)" target="Houston (TX) [G.Bush]" weight="909" />
+      <edge id="198" source="Dothan (AL)" target="Atlanta (GA)" weight="1380" />
+      <edge id="199" source="Washington (DC) [R.Reagan]" target="Nashville (TN)" weight="1068" />
+      <edge id="200" source="Washington (DC) [R.Reagan]" target="Dallas/Fort Worth (TX)" weight="3271" />
+      <edge id="201" source="Washington (DC) [R.Reagan]" target="Baton Rouge (LA)" weight="1" />
+      <edge id="202" source="Washington (DC) [R.Reagan]" target="Dallas (TX)" weight="2419" />
+      <edge id="203" source="Washington (DC) [R.Reagan]" target="New Orleans (LA)" weight="750" />
+      <edge id="204" source="Washington (DC) [R.Reagan]" target="Houston (TX) [G.Bush]" weight="1604" />
+      <edge id="205" source="Washington (DC) [R.Reagan]" target="Jacksonville (FL)" weight="733" />
+      <edge id="206" source="Washington (DC) [R.Reagan]" target="Atlanta (GA)" weight="6493" />
+      <edge id="207" source="Washington (DC) [R.Reagan]" target="Orlando (FL)" weight="4073" />
+      <edge id="208" source="Washington (DC) [R.Reagan]" target="West Palm Beach/Palm Beach (FL)" weight="976" />
+      <edge id="209" source="Washington (DC) [R.Reagan]" target="Tampa (FL)" weight="2614" />
+      <edge id="210" source="Houston (TX) [G.Bush]" target="Lubbock (TX)" weight="1112" />
+      <edge id="211" source="Houston (TX) [G.Bush]" target="Harlingen/San Benito (TX)" weight="1007" />
+      <edge id="212" source="Houston (TX) [G.Bush]" target="Norfolk (VA)" weight="340" />
+      <edge id="213" source="Houston (TX) [G.Bush]" target="Nashville (TN)" weight="1039" />
+      <edge id="214" source="Houston (TX) [G.Bush]" target="Tyler (TX)" weight="281" />
+      <edge id="215" source="Houston (TX) [G.Bush]" target="New Orleans (LA)" weight="2922" />
+      <edge id="216" source="Houston (TX) [G.Bush]" target="Mobile (AL)" weight="1620" />
+      <edge id="217" source="Houston (TX) [G.Bush]" target="Oklahoma City (OK)" weight="1062" />
+      <edge id="218" source="Houston (TX) [G.Bush]" target="Huntsville (AL)" weight="884" />
+      <edge id="219" source="Houston (TX) [G.Bush]" target="Washington (DC) [W.Dulles]" weight="1213" />
+      <edge id="220" source="Houston (TX) [G.Bush]" target="Mission/McAllen/Edinburg (TX)" weight="1181" />
+      <edge id="221" source="Houston (TX) [G.Bush]" target="Tampa (FL)" weight="1915" />
+      <edge id="222" source="Houston (TX) [G.Bush]" target="Killeen (TX)" weight="828" />
+      <edge id="223" source="Houston (TX) [G.Bush]" target="Louisville (KY)" weight="330" />
+      <edge id="224" source="Houston (TX) [G.Bush]" target="Dallas/Fort Worth (TX)" weight="3587" />
+      <edge id="225" source="Houston (TX) [G.Bush]" target="Memphis (TN)" weight="1139" />
+      <edge id="226" source="Houston (TX) [G.Bush]" target="Baton Rouge (LA)" weight="2094" />
+      <edge id="227" source="Houston (TX) [G.Bush]" target="Gulfport/Biloxi (MS)" weight="1028" />
+      <edge id="228" source="Houston (TX) [G.Bush]" target="Jacksonville (FL)" weight="536" />
+      <edge id="229" source="Houston (TX) [G.Bush]" target="Laredo (TX)" weight="988" />
+      <edge id="230" source="Houston (TX) [G.Bush]" target="Amarillo (TX)" weight="941" />
+      <edge id="231" source="Houston (TX) [G.Bush]" target="Atlanta (GA)" weight="4354" />
+      <edge id="232" source="Houston (TX) [G.Bush]" target="Knoxville (TN)" weight="920" />
+      <edge id="233" source="Houston (TX) [G.Bush]" target="Lake Charles (LA)" weight="942" />
+      <edge id="234" source="Houston (TX) [G.Bush]" target="Orlando (FL)" weight="2965" />
+      <edge id="235" source="Houston (TX) [G.Bush]" target="Jackson/Vicksburg (MS)" weight="1740" />
+      <edge id="236" source="Houston (TX) [G.Bush]" target="Pensacola (FL)" weight="1547" />
+      <edge id="237" source="Houston (TX) [G.Bush]" target="College Station/Bryan (TX)" weight="733" />
+      <edge id="238" source="Houston (TX) [G.Bush]" target="Lafayette (LA)" weight="1573" />
+      <edge id="239" source="Houston (TX) [G.Bush]" target="Greer (SC)" weight="457" />
+      <edge id="240" source="Houston (TX) [G.Bush]" target="Tulsa (OK)" weight="1679" />
+      <edge id="241" source="Houston (TX) [G.Bush]" target="Lexington (KY)" weight="334" />
+      <edge id="242" source="Houston (TX) [G.Bush]" target="Richmond (VA)" weight="381" />
+      <edge id="243" source="Houston (TX) [G.Bush]" target="Little Rock (AR)" weight="1548" />
+      <edge id="244" source="Houston (TX) [G.Bush]" target="West Palm Beach/Palm Beach (FL)" weight="109" />
+      <edge id="245" source="Houston (TX) [G.Bush]" target="Shreveport (LA)" weight="1304" />
+      <edge id="246" source="Houston (TX) [G.Bush]" target="Birmingham (AL)" weight="1671" />
+      <edge id="247" source="Houston (TX) [G.Bush]" target="Raleigh/Durham (NC)" weight="171" />
+      <edge id="248" source="Houston (TX) [G.Bush]" target="Brownsville (TX)" weight="1426" />
+      <edge id="249" source="Houston (TX) [G.Bush]" target="San Antonio (TX)" weight="2175" />
+      <edge id="250" source="Tulsa (OK)" target="Dallas/Fort Worth (TX)" weight="2403" />
+      <edge id="251" source="Tulsa (OK)" target="Atlanta (GA)" weight="1629" />
+      <edge id="252" source="Tulsa (OK)" target="Dallas (TX)" weight="1006" />
+      <edge id="253" source="Mobile (AL)" target="Dallas/Fort Worth (TX)" weight="517" />
+      <edge id="254" source="Mobile (AL)" target="Atlanta (GA)" weight="2491" />
+      <edge id="255" source="Oklahoma City (OK)" target="Dallas/Fort Worth (TX)" weight="1930" />
+      <edge id="256" source="Oklahoma City (OK)" target="Dallas (TX)" weight="999" />
+      <edge id="257" source="Oklahoma City (OK)" target="Atlanta (GA)" weight="2358" />
+      <edge id="258" source="Sarasota/Bradenton (FL)" target="Atlanta (GA)" weight="2140" />
+      <edge id="259" source="Dallas/Fort Worth (TX)" target="Chattanooga (TN)" weight="467" />
+      <edge id="260" source="Dallas/Fort Worth (TX)" target="Lubbock (TX)" weight="449" />
+      <edge id="261" source="Dallas/Fort Worth (TX)" target="Norfolk (VA)" weight="696" />
+      <edge id="262" source="Dallas/Fort Worth (TX)" target="Tyler (TX)" weight="513" />
+      <edge id="263" source="Dallas/Fort Worth (TX)" target="San Angelo (TX)" weight="1107" />
+      <edge id="264" source="Dallas/Fort Worth (TX)" target="New Orleans (LA)" weight="2844" />
+      <edge id="265" source="Dallas/Fort Worth (TX)" target="Huntsville (AL)" weight="147" />
+      <edge id="266" source="Dallas/Fort Worth (TX)" target="Washington (DC) [W.Dulles]" weight="1391" />
+      <edge id="267" source="Dallas/Fort Worth (TX)" target="Mission/McAllen/Edinburg (TX)" weight="1059" />
+      <edge id="268" source="Dallas/Fort Worth (TX)" target="Tampa (FL)" weight="2595" />
+      <edge id="269" source="Dallas/Fort Worth (TX)" target="Meridian (MS)" weight="366" />
+      <edge id="270" source="Dallas/Fort Worth (TX)" target="Killeen (TX)" weight="945" />
+      <edge id="271" source="Dallas/Fort Worth (TX)" target="Louisville (KY)" weight="323" />
+      <edge id="272" source="Dallas/Fort Worth (TX)" target="Memphis (TN)" weight="1323" />
+      <edge id="273" source="Dallas/Fort Worth (TX)" target="Nashville (TN)" weight="2805" />
+      <edge id="274" source="Dallas/Fort Worth (TX)" target="Baton Rouge (LA)" weight="2253" />
+      <edge id="275" source="Dallas/Fort Worth (TX)" target="Raleigh/Durham (NC)" weight="1799" />
+      <edge id="276" source="Dallas/Fort Worth (TX)" target="Gulfport/Biloxi (MS)" weight="748" />
+      <edge id="277" source="Dallas/Fort Worth (TX)" target="Jacksonville (FL)" weight="1143" />
+      <edge id="278" source="Dallas/Fort Worth (TX)" target="Wichita Falls (TX)" weight="878" />
+      <edge id="279" source="Dallas/Fort Worth (TX)" target="Laredo (TX)" weight="1187" />
+      <edge id="280" source="Dallas/Fort Worth (TX)" target="Amarillo (TX)" weight="150" />
+      <edge id="281" source="Dallas/Fort Worth (TX)" target="Atlanta (GA)" weight="7144" />
+      <edge id="282" source="Dallas/Fort Worth (TX)" target="Knoxville (TN)" weight="1761" />
+      <edge id="283" source="Dallas/Fort Worth (TX)" target="Lake Charles (LA)" weight="404" />
+      <edge id="284" source="Dallas/Fort Worth (TX)" target="Orlando (FL)" weight="4014" />
+      <edge id="285" source="Dallas/Fort Worth (TX)" target="Longview (TX)" weight="398" />
+      <edge id="286" source="Dallas/Fort Worth (TX)" target="West Palm Beach/Palm Beach (FL)" weight="799" />
+      <edge id="287" source="Dallas/Fort Worth (TX)" target="Jackson/Vicksburg (MS)" weight="897" />
+      <edge id="288" source="Dallas/Fort Worth (TX)" target="Pensacola (FL)" weight="593" />
+      <edge id="289" source="Dallas/Fort Worth (TX)" target="Beaumont/Port Arthur (TX)" weight="670" />
+      <edge id="290" source="Dallas/Fort Worth (TX)" target="College Station/Bryan (TX)" weight="576" />
+      <edge id="291" source="Dallas/Fort Worth (TX)" target="Lafayette (LA)" weight="422" />
+      <edge id="292" source="Dallas/Fort Worth (TX)" target="Greer (SC)" weight="229" />
+      <edge id="293" source="Dallas/Fort Worth (TX)" target="Richmond (VA)" weight="892" />
+      <edge id="294" source="Dallas/Fort Worth (TX)" target="Little Rock (AR)" weight="458" />
+      <edge id="295" source="Dallas/Fort Worth (TX)" target="Fort Smith (AR)" weight="615" />
+      <edge id="296" source="Dallas/Fort Worth (TX)" target="Shreveport (LA)" weight="2314" />
+      <edge id="297" source="Dallas/Fort Worth (TX)" target="Birmingham (AL)" weight="119" />
+      <edge id="298" source="Dallas/Fort Worth (TX)" target="Brownsville (TX)" weight="861" />
+      <edge id="299" source="Dallas/Fort Worth (TX)" target="San Antonio (TX)" weight="4595" />
+      <edge id="300" source="West Palm Beach/Palm Beach (FL)" target="Atlanta (GA)" weight="4652" />
+      <edge id="301" source="Washington (DC) [W.Dulles]" target="Norfolk (VA)" weight="40" />
+      <edge id="302" source="Washington (DC) [W.Dulles]" target="Louisville (KY)" weight="1" />
+      <edge id="303" source="Washington (DC) [W.Dulles]" target="Raleigh/Durham (NC)" weight="665" />
+      <edge id="304" source="Washington (DC) [W.Dulles]" target="New Orleans (LA)" weight="251" />
+      <edge id="305" source="Washington (DC) [W.Dulles]" target="Tampa (FL)" weight="1053" />
+      <edge id="306" source="Washington (DC) [W.Dulles]" target="Atlanta (GA)" weight="3059" />
+      <edge id="307" source="Washington (DC) [W.Dulles]" target="Orlando (FL)" weight="1811" />
+      <edge id="308" source="Columbus (GA)" target="Atlanta (GA)" weight="1239" />
+      <edge id="309" source="Tampa (FL)" target="Norfolk (VA)" weight="9" />
+      <edge id="310" source="Tampa (FL)" target="Nashville (TN)" weight="1368" />
+      <edge id="311" source="Tampa (FL)" target="Louisville (KY)" weight="413" />
+      <edge id="312" source="Tampa (FL)" target="New Orleans (LA)" weight="1057" />
+      <edge id="313" source="Tampa (FL)" target="Memphis (TN)" weight="366" />
+      <edge id="314" source="Tampa (FL)" target="Dallas (TX)" weight="745" />
+      <edge id="315" source="Tampa (FL)" target="Birmingham (AL)" weight="677" />
+      <edge id="316" source="Tampa (FL)" target="Raleigh/Durham (NC)" weight="827" />
+      <edge id="317" source="Tampa (FL)" target="Atlanta (GA)" weight="7858" />
+      <edge id="318" source="Tampa (FL)" target="San Antonio (TX)" weight="357" />
+      <edge id="319" source="Wilmington (NC)" target="Atlanta (GA)" weight="1776" />
+      <edge id="320" source="Meridian (MS)" target="Hattiesburg/Laurel (MS)" weight="366" />
+      <edge id="321" source="Chattanooga (TN)" target="Atlanta (GA)" weight="3228" />
+      <edge id="322" source="Killeen (TX)" target="Atlanta (GA)" weight="575" />
+      <edge id="323" source="Louisville (KY)" target="Atlanta (GA)" weight="3006" />
+      <edge id="324" source="Louisville (KY)" target="Orlando (FL)" weight="441" />
+      <edge id="325" source="New Orleans (LA)" target="Nashville (TN)" weight="1124" />
+      <edge id="326" source="New Orleans (LA)" target="Dallas (TX)" weight="2465" />
+      <edge id="327" source="New Orleans (LA)" target="Atlanta (GA)" weight="6254" />
+      <edge id="328" source="New Orleans (LA)" target="Orlando (FL)" weight="1359" />
+      <edge id="329" source="New Orleans (LA)" target="San Antonio (TX)" weight="361" />
+      <edge id="330" source="Gulfport/Biloxi (MS)" target="Atlanta (GA)" weight="1402" />
+      <edge id="331" source="Columbus (MS)" target="Atlanta (GA)" weight="1020" />
+      <edge id="332" source="Memphis (TN)" target="Atlanta (GA)" weight="3498" />
+      <edge id="333" source="Memphis (TN)" target="Orlando (FL)" weight="423" />
+      <edge id="334" source="Memphis (TN)" target="Dallas (TX)" weight="716" />
+      <edge id="335" source="Nashville (TN)" target="Pensacola (FL)" weight="708" />
+      <edge id="336" source="Nashville (TN)" target="Dallas (TX)" weight="1048" />
+      <edge id="337" source="Nashville (TN)" target="Raleigh/Durham (NC)" weight="1084" />
+      <edge id="338" source="Nashville (TN)" target="Jacksonville (FL)" weight="979" />
+      <edge id="339" source="Nashville (TN)" target="Atlanta (GA)" weight="3817" />
+      <edge id="340" source="Nashville (TN)" target="Orlando (FL)" weight="1554" />
+      <edge id="341" source="Nashville (TN)" target="San Antonio (TX)" weight="675" />
+      <edge id="342" source="Baton Rouge (LA)" target="Atlanta (GA)" weight="2733" />
+      <edge id="343" source="Newport News/Williamsburg (VA)" target="Atlanta (GA)" weight="1171" />
+      <edge id="344" source="Norfolk (VA)" target="Atlanta (GA)" weight="2968" />
+      <edge id="345" source="Norfolk (VA)" target="Orlando (FL)" weight="464" />
+      <edge id="346" source="Huntsville (AL)" target="Atlanta (GA)" weight="2849" />
+      <edge id="347" source="Amarillo (TX)" target="Dallas (TX)" weight="1331" />
+      <edge id="348" source="Atlanta (GA)" target="Greer (SC)" weight="3285" />
+      <edge id="349" source="Atlanta (GA)" target="Dallas (TX)" weight="3387" />
+      <edge id="350" source="Atlanta (GA)" target="Jackson/Vicksburg (MS)" weight="2436" />
+      <edge id="351" source="Atlanta (GA)" target="Knoxville (TN)" weight="2153" />
+      <edge id="352" source="Atlanta (GA)" target="Bristol/Johnson City/Kingsport (TN)" weight="2116" />
+      <edge id="353" source="Atlanta (GA)" target="Raleigh/Durham (NC)" weight="5424" />
+      <edge id="354" source="Atlanta (GA)" target="Orlando (FL)" weight="9035" />
+      <edge id="355" source="Atlanta (GA)" target="Asheville (NC)" weight="2286" />
+      <edge id="356" source="Atlanta (GA)" target="Melbourne (FL)" weight="1524" />
+      <edge id="357" source="Atlanta (GA)" target="Augusta (GA)" weight="2660" />
+      <edge id="358" source="Atlanta (GA)" target="Pensacola (FL)" weight="2493" />
+      <edge id="359" source="Atlanta (GA)" target="Lafayette (LA)" weight="1312" />
+      <edge id="360" source="Atlanta (GA)" target="Key West (FL)" weight="1750" />
+      <edge id="361" source="Atlanta (GA)" target="Lexington (KY)" weight="2553" />
+      <edge id="362" source="Atlanta (GA)" target="Richmond (VA)" weight="4012" />
+      <edge id="363" source="Atlanta (GA)" target="Little Rock (AR)" weight="2239" />
+      <edge id="364" source="Atlanta (GA)" target="Fort Smith (AR)" weight="710" />
+      <edge id="365" source="Atlanta (GA)" target="Shreveport (LA)" weight="2213" />
+      <edge id="366" source="Atlanta (GA)" target="Gainesville (FL)" weight="2273" />
+      <edge id="367" source="Atlanta (GA)" target="Birmingham (AL)" weight="3593" />
+      <edge id="368" source="Atlanta (GA)" target="Jacksonville (FL)" weight="5734" />
+      <edge id="369" source="Atlanta (GA)" target="Valdosta (GA)" weight="1028" />
+      <edge id="370" source="Atlanta (GA)" target="San Antonio (TX)" weight="3225" />
+      <edge id="371" source="Orlando (FL)" target="Dallas (TX)" weight="1202" />
+      <edge id="372" source="Orlando (FL)" target="Birmingham (AL)" weight="717" />
+      <edge id="373" source="Orlando (FL)" target="Raleigh/Durham (NC)" weight="1504" />
+      <edge id="374" source="Orlando (FL)" target="Richmond (VA)" weight="710" />
+      <edge id="375" source="Orlando (FL)" target="San Antonio (TX)" weight="525" />
+      <edge id="376" source="Birmingham (AL)" target="Dallas (TX)" weight="698" />
+      <edge id="377" source="Pensacola (FL)" target="Dallas (TX)" weight="9" />
+      <edge id="378" source="Raleigh/Durham (NC)" target="Dallas (TX)" weight="366" />
+      <edge id="379" source="Little Rock (AR)" target="Dallas (TX)" weight="1064" />
+      <edge id="380" source="Dallas (TX)" target="Lubbock (TX)" weight="1725" />
+      <edge id="381" source="Dallas (TX)" target="San Antonio (TX)" weight="3370" />
+    </edges>
+  </graph>
+</gexf>

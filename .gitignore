@@ -1,2 +1,7 @@
 ignore
 .ipynb_checkpoints
+*.pyc
+*.pdf
+
+# a bulky file (4mb) i ended up not using much
+uscitiespop.txt

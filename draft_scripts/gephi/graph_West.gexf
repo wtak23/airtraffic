@@ -1,0 +1,961 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="lat" type="double" />
+      <attribute id="1" title="lon" type="double" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.0.dev_20170108093821</creator>
+      <lastmodified>09/01/2017</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Laramie (WY)" label="Laramie (WY)">
+        <attvalues>
+          <attvalue for="0" value="41.3201937" />
+          <attvalue for="1" value="-105.6703447" />
+        </attvalues>
+      </node>
+      <node id="Long Beach (CA)" label="Long Beach (CA)">
+        <attvalues>
+          <attvalue for="0" value="33.8182652" />
+          <attvalue for="1" value="-118.1445416" />
+        </attvalues>
+      </node>
+      <node id="Helena (MT)" label="Helena (MT)">
+        <attvalues>
+          <attvalue for="0" value="46.5883707" />
+          <attvalue for="1" value="-112.0245054" />
+        </attvalues>
+      </node>
+      <node id="Lewiston (ID)" label="Lewiston (ID)">
+        <attvalues>
+          <attvalue for="0" value="46.4004089" />
+          <attvalue for="1" value="-117.0011889" />
+        </attvalues>
+      </node>
+      <node id="Gustavus (AK)" label="Gustavus (AK)">
+        <attvalues>
+          <attvalue for="0" value="58.422469" />
+          <attvalue for="1" value="-135.7030422" />
+        </attvalues>
+      </node>
+      <node id="Fairbanks (AK)" label="Fairbanks (AK)">
+        <attvalues>
+          <attvalue for="0" value="64.8164163" />
+          <attvalue for="1" value="-147.8635169" />
+        </attvalues>
+      </node>
+      <node id="Arcata/Eureka (CA)" label="Arcata/Eureka (CA)">
+        <attvalues>
+          <attvalue for="0" value="40.8665166" />
+          <attvalue for="1" value="-124.0828396" />
+        </attvalues>
+      </node>
+      <node id="Santa Fe (NM)" label="Santa Fe (NM)">
+        <attvalues>
+          <attvalue for="0" value="35.6869752" />
+          <attvalue for="1" value="-105.937799" />
+        </attvalues>
+      </node>
+      <node id="Great Falls (MT)" label="Great Falls (MT)">
+        <attvalues>
+          <attvalue for="0" value="47.4825016" />
+          <attvalue for="1" value="-111.3566299" />
+        </attvalues>
+      </node>
+      <node id="Tucson (AZ)" label="Tucson (AZ)">
+        <attvalues>
+          <attvalue for="0" value="32.1145102" />
+          <attvalue for="1" value="-110.9392269" />
+        </attvalues>
+      </node>
+      <node id="Kotzebue (AK)" label="Kotzebue (AK)">
+        <attvalues>
+          <attvalue for="0" value="66.892154" />
+          <attvalue for="1" value="-162.601154" />
+        </attvalues>
+      </node>
+      <node id="Missoula (MT)" label="Missoula (MT)">
+        <attvalues>
+          <attvalue for="0" value="46.9188306" />
+          <attvalue for="1" value="-114.0837639" />
+        </attvalues>
+      </node>
+      <node id="Butte (MT)" label="Butte (MT)">
+        <attvalues>
+          <attvalue for="0" value="46.0038232" />
+          <attvalue for="1" value="-112.5347776" />
+        </attvalues>
+      </node>
+      <node id="Yuma (AZ)" label="Yuma (AZ)">
+        <attvalues>
+          <attvalue for="0" value="32.6926512" />
+          <attvalue for="1" value="-114.6276916" />
+        </attvalues>
+      </node>
+      <node id="Fresno (CA)" label="Fresno (CA)">
+        <attvalues>
+          <attvalue for="0" value="36.7758493" />
+          <attvalue for="1" value="-119.7181083" />
+        </attvalues>
+      </node>
+      <node id="Elko (NV)" label="Elko (NV)">
+        <attvalues>
+          <attvalue for="0" value="40.8278188" />
+          <attvalue for="1" value="-115.786212" />
+        </attvalues>
+      </node>
+      <node id="King Salmon (AK)" label="King Salmon (AK)">
+        <attvalues>
+          <attvalue for="0" value="58.6883251" />
+          <attvalue for="1" value="-156.661351" />
+        </attvalues>
+      </node>
+      <node id="Medford (OR)" label="Medford (OR)">
+        <attvalues>
+          <attvalue for="0" value="42.3684191" />
+          <attvalue for="1" value="-122.8740066" />
+        </attvalues>
+      </node>
+      <node id="Bakersfield (CA)" label="Bakersfield (CA)">
+        <attvalues>
+          <attvalue for="0" value="35.4329123" />
+          <attvalue for="1" value="-119.056618" />
+        </attvalues>
+      </node>
+      <node id="Honolulu (HI)" label="Honolulu (HI)">
+        <attvalues>
+          <attvalue for="0" value="21.3245132" />
+          <attvalue for="1" value="-157.9250736" />
+        </attvalues>
+      </node>
+      <node id="Reno (NV)" label="Reno (NV)">
+        <attvalues>
+          <attvalue for="0" value="39.4995907" />
+          <attvalue for="1" value="-119.7680951" />
+        </attvalues>
+      </node>
+      <node id="Montrose/Delta (CO)" label="Montrose/Delta (CO)">
+        <attvalues>
+          <attvalue for="0" value="38.5026155" />
+          <attvalue for="1" value="-107.89635" />
+        </attvalues>
+      </node>
+      <node id="Dillingham (AK)" label="Dillingham (AK)">
+        <attvalues>
+          <attvalue for="0" value="59.045941" />
+          <attvalue for="1" value="-158.5044336" />
+        </attvalues>
+      </node>
+      <node id="Phoenix (AZ)" label="Phoenix (AZ)">
+        <attvalues>
+          <attvalue for="0" value="33.4372686" />
+          <attvalue for="1" value="-112.0077881" />
+        </attvalues>
+      </node>
+      <node id="Kahului (HI)" label="Kahului (HI)">
+        <attvalues>
+          <attvalue for="0" value="20.8967924" />
+          <attvalue for="1" value="-156.4329379" />
+        </attvalues>
+      </node>
+      <node id="Bend/Redmond (OR)" label="Bend/Redmond (OR)">
+        <attvalues>
+          <attvalue for="0" value="44.2539448" />
+          <attvalue for="1" value="-121.1505531" />
+        </attvalues>
+      </node>
+      <node id="Cody (WY)" label="Cody (WY)">
+        <attvalues>
+          <attvalue for="0" value="44.5263422" />
+          <attvalue for="1" value="-109.0565308" />
+        </attvalues>
+      </node>
+      <node id="Spokane (WA)" label="Spokane (WA)">
+        <attvalues>
+          <attvalue for="0" value="47.6217478" />
+          <attvalue for="1" value="-117.534812" />
+        </attvalues>
+      </node>
+      <node id="Nome (AK)" label="Nome (AK)">
+        <attvalues>
+          <attvalue for="0" value="64.5099347" />
+          <attvalue for="1" value="-165.4435152" />
+        </attvalues>
+      </node>
+      <node id="Bethel (AK)" label="Bethel (AK)">
+        <attvalues>
+          <attvalue for="0" value="60.7922222" />
+          <attvalue for="1" value="-161.7558333" />
+        </attvalues>
+      </node>
+      <node id="Monterey (CA)" label="Monterey (CA)">
+        <attvalues>
+          <attvalue for="0" value="36.588269" />
+          <attvalue for="1" value="-121.8491091" />
+        </attvalues>
+      </node>
+      <node id="Twin Falls (ID)" label="Twin Falls (ID)">
+        <attvalues>
+          <attvalue for="0" value="42.5629668" />
+          <attvalue for="1" value="-114.4608711" />
+        </attvalues>
+      </node>
+      <node id="Juneau (AK)" label="Juneau (AK)">
+        <attvalues>
+          <attvalue for="0" value="58.3579806" />
+          <attvalue for="1" value="-134.5831791" />
+        </attvalues>
+      </node>
+      <node id="Cedar City (UT)" label="Cedar City (UT)">
+        <attvalues>
+          <attvalue for="0" value="37.6993793" />
+          <attvalue for="1" value="-113.0927218" />
+        </attvalues>
+      </node>
+      <node id="Ketchikan (AK)" label="Ketchikan (AK)">
+        <attvalues>
+          <attvalue for="0" value="55.3554106" />
+          <attvalue for="1" value="-131.7105604" />
+        </attvalues>
+      </node>
+      <node id="Boise (ID)" label="Boise (ID)">
+        <attvalues>
+          <attvalue for="0" value="43.6187102" />
+          <attvalue for="1" value="-116.2146068" />
+        </attvalues>
+      </node>
+      <node id="Flagstaff (AZ)" label="Flagstaff (AZ)">
+        <attvalues>
+          <attvalue for="0" value="35.1359051" />
+          <attvalue for="1" value="-111.676476" />
+        </attvalues>
+      </node>
+      <node id="Pasco/Kennewick/Richland (WA)" label="Pasco/Kennewick/Richland (WA)">
+        <attvalues>
+          <attvalue for="0" value="46.2349999" />
+          <attvalue for="1" value="-119.2233014" />
+        </attvalues>
+      </node>
+      <node id="West Yellowstone (MT)" label="West Yellowstone (MT)">
+        <attvalues>
+          <attvalue for="0" value="44.427963" />
+          <attvalue for="1" value="-110.588455" />
+        </attvalues>
+      </node>
+      <node id="Hobbs (NM)" label="Hobbs (NM)">
+        <attvalues>
+          <attvalue for="0" value="32.7026116" />
+          <attvalue for="1" value="-103.1360403" />
+        </attvalues>
+      </node>
+      <node id="Adak Island (AK)" label="Adak Island (AK)">
+        <attvalues>
+          <attvalue for="0" value="51.88" />
+          <attvalue for="1" value="-176.6580556" />
+        </attvalues>
+      </node>
+      <node id="Eugene (OR)" label="Eugene (OR)">
+        <attvalues>
+          <attvalue for="0" value="44.1217811" />
+          <attvalue for="1" value="-123.2159003" />
+        </attvalues>
+      </node>
+      <node id="Santa Ana (CA)" label="Santa Ana (CA)">
+        <attvalues>
+          <attvalue for="0" value="33.6761901" />
+          <attvalue for="1" value="-117.8674759" />
+        </attvalues>
+      </node>
+      <node id="Albuquerque (NM)" label="Albuquerque (NM)">
+        <attvalues>
+          <attvalue for="0" value="35.0433333" />
+          <attvalue for="1" value="-106.6129085" />
+        </attvalues>
+      </node>
+      <node id="Billings (MT)" label="Billings (MT)">
+        <attvalues>
+          <attvalue for="0" value="45.8037379" />
+          <attvalue for="1" value="-108.5372138" />
+        </attvalues>
+      </node>
+      <node id="Grand Junction (CO)" label="Grand Junction (CO)">
+        <attvalues>
+          <attvalue for="0" value="39.1245955" />
+          <attvalue for="1" value="-108.5312962" />
+        </attvalues>
+      </node>
+      <node id="Gunnison (CO)" label="Gunnison (CO)">
+        <attvalues>
+          <attvalue for="0" value="38.5372495" />
+          <attvalue for="1" value="-106.9353988" />
+        </attvalues>
+      </node>
+      <node id="Lihue (HI)" label="Lihue (HI)">
+        <attvalues>
+          <attvalue for="0" value="21.9788489" />
+          <attvalue for="1" value="-159.3437585" />
+        </attvalues>
+      </node>
+      <node id="Mammoth Lakes (CA)" label="Mammoth Lakes (CA)">
+        <attvalues>
+          <attvalue for="0" value="37.6244629" />
+          <attvalue for="1" value="-118.8388538" />
+        </attvalues>
+      </node>
+      <node id="North Bend/Coos Bay (OR)" label="North Bend/Coos Bay (OR)">
+        <attvalues>
+          <attvalue for="0" value="43.4194303" />
+          <attvalue for="1" value="-124.2468795" />
+        </attvalues>
+      </node>
+      <node id="Aspen (CO)" label="Aspen (CO)">
+        <attvalues>
+          <attvalue for="0" value="39.1910983" />
+          <attvalue for="1" value="-106.8175387" />
+        </attvalues>
+      </node>
+      <node id="Colorado Springs (CO)" label="Colorado Springs (CO)">
+        <attvalues>
+          <attvalue for="0" value="38.8338816" />
+          <attvalue for="1" value="-104.8213634" />
+        </attvalues>
+      </node>
+      <node id="Oakland (CA)" label="Oakland (CA)">
+        <attvalues>
+          <attvalue for="0" value="37.7125689" />
+          <attvalue for="1" value="-122.2197428" />
+        </attvalues>
+      </node>
+      <node id="San Jose (CA)" label="San Jose (CA)">
+        <attvalues>
+          <attvalue for="0" value="37.3382082" />
+          <attvalue for="1" value="-121.8863286" />
+        </attvalues>
+      </node>
+      <node id="Bellingham (WA)" label="Bellingham (WA)">
+        <attvalues>
+          <attvalue for="0" value="48.7955792" />
+          <attvalue for="1" value="-122.5330551" />
+        </attvalues>
+      </node>
+      <node id="Portland (OR)" label="Portland (OR)">
+        <attvalues>
+          <attvalue for="0" value="45.5897694" />
+          <attvalue for="1" value="-122.5950942" />
+        </attvalues>
+      </node>
+      <node id="San Luis Obispo (CA)" label="San Luis Obispo (CA)">
+        <attvalues>
+          <attvalue for="0" value="35.239314" />
+          <attvalue for="1" value="-120.641239" />
+        </attvalues>
+      </node>
+      <node id="Kalispell (MT)" label="Kalispell (MT)">
+        <attvalues>
+          <attvalue for="0" value="48.3099055" />
+          <attvalue for="1" value="-114.2545723" />
+        </attvalues>
+      </node>
+      <node id="Seattle (WA)" label="Seattle (WA)">
+        <attvalues>
+          <attvalue for="0" value="47.4502499" />
+          <attvalue for="1" value="-122.3088165" />
+        </attvalues>
+      </node>
+      <node id="Cordova (AK)" label="Cordova (AK)">
+        <attvalues>
+          <attvalue for="0" value="60.4934354" />
+          <attvalue for="1" value="-145.4757287" />
+        </attvalues>
+      </node>
+      <node id="Jackson (WY)" label="Jackson (WY)">
+        <attvalues>
+          <attvalue for="0" value="43.4799291" />
+          <attvalue for="1" value="-110.7624282" />
+        </attvalues>
+      </node>
+      <node id="Los Angeles (CA)" label="Los Angeles (CA)">
+        <attvalues>
+          <attvalue for="0" value="33.9415889" />
+          <attvalue for="1" value="-118.40853" />
+        </attvalues>
+      </node>
+      <node id="Hayden (CO)" label="Hayden (CO)">
+        <attvalues>
+          <attvalue for="0" value="39.3747061" />
+          <attvalue for="1" value="-105.7671561" />
+        </attvalues>
+      </node>
+      <node id="Kodiak (AK)" label="Kodiak (AK)">
+        <attvalues>
+          <attvalue for="0" value="57.7543782" />
+          <attvalue for="1" value="-152.51473" />
+        </attvalues>
+      </node>
+      <node id="Sitka (AK)" label="Sitka (AK)">
+        <attvalues>
+          <attvalue for="0" value="57.0507099" />
+          <attvalue for="1" value="-135.3648661" />
+        </attvalues>
+      </node>
+      <node id="Eagle (CO)" label="Eagle (CO)">
+        <attvalues>
+          <attvalue for="0" value="39.6552634" />
+          <attvalue for="1" value="-106.8286507" />
+        </attvalues>
+      </node>
+      <node id="Casper (WY)" label="Casper (WY)">
+        <attvalues>
+          <attvalue for="0" value="42.866632" />
+          <attvalue for="1" value="-106.313081" />
+        </attvalues>
+      </node>
+      <node id="Idaho Falls (ID)" label="Idaho Falls (ID)">
+        <attvalues>
+          <attvalue for="0" value="43.51511" />
+          <attvalue for="1" value="-112.06788" />
+        </attvalues>
+      </node>
+      <node id="San Francisco (CA)" label="San Francisco (CA)">
+        <attvalues>
+          <attvalue for="0" value="37.6213129" />
+          <attvalue for="1" value="-122.3789554" />
+        </attvalues>
+      </node>
+      <node id="Ontario (CA)" label="Ontario (CA)">
+        <attvalues>
+          <attvalue for="0" value="34.0559781" />
+          <attvalue for="1" value="-117.598057" />
+        </attvalues>
+      </node>
+      <node id="Bozeman (MT)" label="Bozeman (MT)">
+        <attvalues>
+          <attvalue for="0" value="45.77746" />
+          <attvalue for="1" value="-111.160161" />
+        </attvalues>
+      </node>
+      <node id="Hilo (HI)" label="Hilo (HI)">
+        <attvalues>
+          <attvalue for="0" value="19.7188342" />
+          <attvalue for="1" value="-155.0416866" />
+        </attvalues>
+      </node>
+      <node id="Santa Maria (CA)" label="Santa Maria (CA)">
+        <attvalues>
+          <attvalue for="0" value="34.8991411" />
+          <attvalue for="1" value="-120.4477733" />
+        </attvalues>
+      </node>
+      <node id="Santa Barbara (CA)" label="Santa Barbara (CA)">
+        <attvalues>
+          <attvalue for="0" value="34.4208305" />
+          <attvalue for="1" value="-119.6981901" />
+        </attvalues>
+      </node>
+      <node id="Barrow (AK)" label="Barrow (AK)">
+        <attvalues>
+          <attvalue for="0" value="71.2905556" />
+          <attvalue for="1" value="-156.7886111" />
+        </attvalues>
+      </node>
+      <node id="Sacramento (CA)" label="Sacramento (CA)">
+        <attvalues>
+          <attvalue for="0" value="38.6950854" />
+          <attvalue for="1" value="-121.5900648" />
+        </attvalues>
+      </node>
+      <node id="Gillette (WY)" label="Gillette (WY)">
+        <attvalues>
+          <attvalue for="0" value="44.2910915" />
+          <attvalue for="1" value="-105.5022205" />
+        </attvalues>
+      </node>
+      <node id="Pocatello (ID)" label="Pocatello (ID)">
+        <attvalues>
+          <attvalue for="0" value="42.9057182" />
+          <attvalue for="1" value="-112.5887461" />
+        </attvalues>
+      </node>
+      <node id="Anchorage (AK)" label="Anchorage (AK)">
+        <attvalues>
+          <attvalue for="0" value="61.2180556" />
+          <attvalue for="1" value="-149.9002778" />
+        </attvalues>
+      </node>
+      <node id="Kona (HI)" label="Kona (HI)">
+        <attvalues>
+          <attvalue for="0" value="19.639994" />
+          <attvalue for="1" value="-155.9969261" />
+        </attvalues>
+      </node>
+      <node id="St. George (UT)" label="St. George (UT)">
+        <attvalues>
+          <attvalue for="0" value="37.0307872" />
+          <attvalue for="1" value="-113.5089552" />
+        </attvalues>
+      </node>
+      <node id="Durango (CO)" label="Durango (CO)">
+        <attvalues>
+          <attvalue for="0" value="37.27528" />
+          <attvalue for="1" value="-107.8800667" />
+        </attvalues>
+      </node>
+      <node id="Petersburg (AK)" label="Petersburg (AK)">
+        <attvalues>
+          <attvalue for="0" value="56.8016671" />
+          <attvalue for="1" value="-132.9452781" />
+        </attvalues>
+      </node>
+      <node id="Las Vegas (NV)" label="Las Vegas (NV)">
+        <attvalues>
+          <attvalue for="0" value="36.0839998" />
+          <attvalue for="1" value="-115.1537389" />
+        </attvalues>
+      </node>
+      <node id="Wrangell (AK)" label="Wrangell (AK)">
+        <attvalues>
+          <attvalue for="0" value="56.4850237" />
+          <attvalue for="1" value="-132.3795998" />
+        </attvalues>
+      </node>
+      <node id="Sun Valley/Hailey/Ketchum (ID)" label="Sun Valley/Hailey/Ketchum (ID)">
+        <attvalues>
+          <attvalue for="0" value="43.5066901" />
+          <attvalue for="1" value="-114.2992901" />
+        </attvalues>
+      </node>
+      <node id="Palm Springs (CA)" label="Palm Springs (CA)">
+        <attvalues>
+          <attvalue for="0" value="33.8303194" />
+          <attvalue for="1" value="-116.5070468" />
+        </attvalues>
+      </node>
+      <node id="Deadhorse (AK)" label="Deadhorse (AK)">
+        <attvalues>
+          <attvalue for="0" value="70.1971592" />
+          <attvalue for="1" value="-148.4610843" />
+        </attvalues>
+      </node>
+      <node id="San Diego (CA)" label="San Diego (CA)">
+        <attvalues>
+          <attvalue for="0" value="32.7338006" />
+          <attvalue for="1" value="-117.1933038" />
+        </attvalues>
+      </node>
+      <node id="Rock Springs (WY)" label="Rock Springs (WY)">
+        <attvalues>
+          <attvalue for="0" value="41.5874644" />
+          <attvalue for="1" value="-109.2029043" />
+        </attvalues>
+      </node>
+      <node id="Burbank (CA)" label="Burbank (CA)">
+        <attvalues>
+          <attvalue for="0" value="34.1808392" />
+          <attvalue for="1" value="-118.3089661" />
+        </attvalues>
+      </node>
+      <node id="Denver (CO)" label="Denver (CO)">
+        <attvalues>
+          <attvalue for="0" value="39.8560963" />
+          <attvalue for="1" value="-104.6737376" />
+        </attvalues>
+      </node>
+      <node id="Roswell (NM)" label="Roswell (NM)">
+        <attvalues>
+          <attvalue for="0" value="33.3067198" />
+          <attvalue for="1" value="-104.5189261" />
+        </attvalues>
+      </node>
+      <node id="Redding (CA)" label="Redding (CA)">
+        <attvalues>
+          <attvalue for="0" value="40.505498" />
+          <attvalue for="1" value="-122.2998094" />
+        </attvalues>
+      </node>
+      <node id="Yakutat (AK)" label="Yakutat (AK)">
+        <attvalues>
+          <attvalue for="0" value="59.509167" />
+          <attvalue for="1" value="-139.65973" />
+        </attvalues>
+      </node>
+      <node id="Salt Lake City (UT)" label="Salt Lake City (UT)">
+        <attvalues>
+          <attvalue for="0" value="40.7899404" />
+          <attvalue for="1" value="-111.9790706" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Laramie (WY)" target="Denver (CO)" weight="626" />
+      <edge id="1" source="Long Beach (CA)" target="Seattle (WA)" weight="853" />
+      <edge id="2" source="Long Beach (CA)" target="Portland (OR)" weight="805" />
+      <edge id="3" source="Long Beach (CA)" target="Sacramento (CA)" weight="721" />
+      <edge id="4" source="Long Beach (CA)" target="Las Vegas (NV)" weight="1386" />
+      <edge id="5" source="Long Beach (CA)" target="Salt Lake City (UT)" weight="2209" />
+      <edge id="6" source="Long Beach (CA)" target="Oakland (CA)" weight="1733" />
+      <edge id="7" source="Long Beach (CA)" target="Anchorage (AK)" weight="108" />
+      <edge id="8" source="Long Beach (CA)" target="San Francisco (CA)" weight="1140" />
+      <edge id="9" source="Long Beach (CA)" target="Phoenix (AZ)" weight="2" />
+      <edge id="10" source="Long Beach (CA)" target="Reno (NV)" weight="78" />
+      <edge id="11" source="Helena (MT)" target="Denver (CO)" weight="366" />
+      <edge id="12" source="Helena (MT)" target="Salt Lake City (UT)" weight="985" />
+      <edge id="13" source="Lewiston (ID)" target="Salt Lake City (UT)" weight="707" />
+      <edge id="14" source="Gustavus (AK)" target="Juneau (AK)" weight="84" />
+      <edge id="15" source="Fairbanks (AK)" target="Anchorage (AK)" weight="366" />
+      <edge id="16" source="Fairbanks (AK)" target="Seattle (WA)" weight="1581" />
+      <edge id="17" source="Arcata/Eureka (CA)" target="San Francisco (CA)" weight="1447" />
+      <edge id="18" source="Great Falls (MT)" target="Denver (CO)" weight="513" />
+      <edge id="19" source="Great Falls (MT)" target="Salt Lake City (UT)" weight="965" />
+      <edge id="20" source="Tucson (AZ)" target="Seattle (WA)" weight="475" />
+      <edge id="21" source="Tucson (AZ)" target="Portland (OR)" weight="217" />
+      <edge id="22" source="Tucson (AZ)" target="Las Vegas (NV)" weight="1120" />
+      <edge id="23" source="Tucson (AZ)" target="Salt Lake City (UT)" weight="830" />
+      <edge id="24" source="Tucson (AZ)" target="Denver (CO)" weight="1954" />
+      <edge id="25" source="Tucson (AZ)" target="San Diego (CA)" weight="1012" />
+      <edge id="26" source="Tucson (AZ)" target="San Francisco (CA)" weight="827" />
+      <edge id="27" source="Tucson (AZ)" target="Phoenix (AZ)" weight="1480" />
+      <edge id="28" source="Tucson (AZ)" target="Los Angeles (CA)" weight="2537" />
+      <edge id="29" source="Kotzebue (AK)" target="Nome (AK)" weight="52" />
+      <edge id="30" source="Kotzebue (AK)" target="Anchorage (AK)" weight="416" />
+      <edge id="31" source="Missoula (MT)" target="Seattle (WA)" weight="235" />
+      <edge id="32" source="Missoula (MT)" target="Denver (CO)" weight="661" />
+      <edge id="33" source="Missoula (MT)" target="San Francisco (CA)" weight="52" />
+      <edge id="34" source="Missoula (MT)" target="Salt Lake City (UT)" weight="1144" />
+      <edge id="35" source="Butte (MT)" target="Salt Lake City (UT)" weight="688" />
+      <edge id="36" source="Yuma (AZ)" target="Phoenix (AZ)" weight="2033" />
+      <edge id="37" source="Fresno (CA)" target="Seattle (WA)" weight="976" />
+      <edge id="38" source="Fresno (CA)" target="Portland (OR)" weight="366" />
+      <edge id="39" source="Fresno (CA)" target="Denver (CO)" weight="1277" />
+      <edge id="40" source="Fresno (CA)" target="Phoenix (AZ)" weight="463" />
+      <edge id="41" source="Fresno (CA)" target="San Diego (CA)" weight="724" />
+      <edge id="42" source="Fresno (CA)" target="San Francisco (CA)" weight="961" />
+      <edge id="43" source="Fresno (CA)" target="Salt Lake City (UT)" weight="1029" />
+      <edge id="44" source="Fresno (CA)" target="Los Angeles (CA)" weight="1095" />
+      <edge id="45" source="Elko (NV)" target="Salt Lake City (UT)" weight="637" />
+      <edge id="46" source="King Salmon (AK)" target="Anchorage (AK)" weight="63" />
+      <edge id="47" source="Medford (OR)" target="Denver (CO)" weight="649" />
+      <edge id="48" source="Medford (OR)" target="Salt Lake City (UT)" weight="735" />
+      <edge id="49" source="Medford (OR)" target="San Francisco (CA)" weight="1581" />
+      <edge id="50" source="Bakersfield (CA)" target="Denver (CO)" weight="671" />
+      <edge id="51" source="Bakersfield (CA)" target="Phoenix (AZ)" weight="1265" />
+      <edge id="52" source="Bakersfield (CA)" target="San Francisco (CA)" weight="666" />
+      <edge id="53" source="Honolulu (HI)" target="Portland (OR)" weight="778" />
+      <edge id="54" source="Honolulu (HI)" target="Sacramento (CA)" weight="366" />
+      <edge id="55" source="Honolulu (HI)" target="Phoenix (AZ)" weight="1212" />
+      <edge id="56" source="Honolulu (HI)" target="Kona (HI)" weight="6708" />
+      <edge id="57" source="Honolulu (HI)" target="Seattle (WA)" weight="1801" />
+      <edge id="58" source="Honolulu (HI)" target="Anchorage (AK)" weight="346" />
+      <edge id="59" source="Honolulu (HI)" target="San Jose (CA)" weight="610" />
+      <edge id="60" source="Honolulu (HI)" target="San Diego (CA)" weight="699" />
+      <edge id="61" source="Honolulu (HI)" target="Kahului (HI)" weight="9065" />
+      <edge id="62" source="Honolulu (HI)" target="Las Vegas (NV)" weight="889" />
+      <edge id="63" source="Honolulu (HI)" target="San Francisco (CA)" weight="2618" />
+      <edge id="64" source="Honolulu (HI)" target="Los Angeles (CA)" weight="5676" />
+      <edge id="65" source="Honolulu (HI)" target="Lihue (HI)" weight="6618" />
+      <edge id="66" source="Honolulu (HI)" target="Hilo (HI)" weight="4991" />
+      <edge id="67" source="Honolulu (HI)" target="Oakland (CA)" weight="566" />
+      <edge id="68" source="Honolulu (HI)" target="Denver (CO)" weight="366" />
+      <edge id="69" source="Honolulu (HI)" target="Bellingham (WA)" weight="141" />
+      <edge id="70" source="Honolulu (HI)" target="Salt Lake City (UT)" weight="356" />
+      <edge id="71" source="Reno (NV)" target="Phoenix (AZ)" weight="1857" />
+      <edge id="72" source="Reno (NV)" target="Las Vegas (NV)" weight="3369" />
+      <edge id="73" source="Reno (NV)" target="Salt Lake City (UT)" weight="1086" />
+      <edge id="74" source="Reno (NV)" target="Denver (CO)" weight="1492" />
+      <edge id="75" source="Reno (NV)" target="Oakland (CA)" weight="426" />
+      <edge id="76" source="Reno (NV)" target="San Diego (CA)" weight="717" />
+      <edge id="77" source="Reno (NV)" target="San Francisco (CA)" weight="1494" />
+      <edge id="78" source="Reno (NV)" target="Los Angeles (CA)" weight="1593" />
+      <edge id="79" source="Montrose/Delta (CO)" target="Denver (CO)" weight="515" />
+      <edge id="80" source="Montrose/Delta (CO)" target="Phoenix (AZ)" weight="50" />
+      <edge id="81" source="Montrose/Delta (CO)" target="San Francisco (CA)" weight="29" />
+      <edge id="82" source="Montrose/Delta (CO)" target="Los Angeles (CA)" weight="41" />
+      <edge id="83" source="Dillingham (AK)" target="Anchorage (AK)" weight="84" />
+      <edge id="84" source="Phoenix (AZ)" target="Durango (CO)" weight="995" />
+      <edge id="85" source="Phoenix (AZ)" target="Spokane (WA)" weight="880" />
+      <edge id="86" source="Phoenix (AZ)" target="Grand Junction (CO)" weight="1085" />
+      <edge id="87" source="Phoenix (AZ)" target="Portland (OR)" weight="3211" />
+      <edge id="88" source="Phoenix (AZ)" target="Sacramento (CA)" weight="3555" />
+      <edge id="89" source="Phoenix (AZ)" target="Monterey (CA)" weight="488" />
+      <edge id="90" source="Phoenix (AZ)" target="Oakland (CA)" weight="2768" />
+      <edge id="91" source="Phoenix (AZ)" target="Santa Ana (CA)" weight="4363" />
+      <edge id="92" source="Phoenix (AZ)" target="Burbank (CA)" weight="2041" />
+      <edge id="93" source="Phoenix (AZ)" target="San Luis Obispo (CA)" weight="583" />
+      <edge id="94" source="Phoenix (AZ)" target="Kona (HI)" weight="319" />
+      <edge id="95" source="Phoenix (AZ)" target="Denver (CO)" weight="8131" />
+      <edge id="96" source="Phoenix (AZ)" target="Seattle (WA)" weight="6206" />
+      <edge id="97" source="Phoenix (AZ)" target="Boise (ID)" weight="1110" />
+      <edge id="98" source="Phoenix (AZ)" target="San Jose (CA)" weight="3475" />
+      <edge id="99" source="Phoenix (AZ)" target="Flagstaff (AZ)" weight="1908" />
+      <edge id="100" source="Phoenix (AZ)" target="San Diego (CA)" weight="5502" />
+      <edge id="101" source="Phoenix (AZ)" target="Colorado Springs (CO)" weight="126" />
+      <edge id="102" source="Phoenix (AZ)" target="Palm Springs (CA)" weight="2225" />
+      <edge id="103" source="Phoenix (AZ)" target="Las Vegas (NV)" weight="5890" />
+      <edge id="104" source="Phoenix (AZ)" target="Santa Barbara (CA)" weight="705" />
+      <edge id="105" source="Phoenix (AZ)" target="Kahului (HI)" weight="591" />
+      <edge id="106" source="Phoenix (AZ)" target="San Francisco (CA)" weight="5137" />
+      <edge id="107" source="Phoenix (AZ)" target="Ontario (CA)" weight="3001" />
+      <edge id="108" source="Phoenix (AZ)" target="Los Angeles (CA)" weight="8028" />
+      <edge id="109" source="Phoenix (AZ)" target="Lihue (HI)" weight="373" />
+      <edge id="110" source="Phoenix (AZ)" target="Salt Lake City (UT)" weight="5566" />
+      <edge id="111" source="Phoenix (AZ)" target="Roswell (NM)" weight="243" />
+      <edge id="112" source="Phoenix (AZ)" target="Anchorage (AK)" weight="367" />
+      <edge id="113" source="Phoenix (AZ)" target="Bend/Redmond (OR)" weight="152" />
+      <edge id="114" source="Phoenix (AZ)" target="Albuquerque (NM)" weight="2100" />
+      <edge id="115" source="Kahului (HI)" target="Portland (OR)" weight="637" />
+      <edge id="116" source="Kahului (HI)" target="Hilo (HI)" weight="731" />
+      <edge id="117" source="Kahului (HI)" target="Seattle (WA)" weight="1354" />
+      <edge id="118" source="Kahului (HI)" target="Oakland (CA)" weight="693" />
+      <edge id="119" source="Kahului (HI)" target="Anchorage (AK)" weight="76" />
+      <edge id="120" source="Kahului (HI)" target="San Jose (CA)" weight="695" />
+      <edge id="121" source="Kahului (HI)" target="Sacramento (CA)" weight="366" />
+      <edge id="122" source="Kahului (HI)" target="Denver (CO)" weight="214" />
+      <edge id="123" source="Kahului (HI)" target="San Diego (CA)" weight="442" />
+      <edge id="124" source="Kahului (HI)" target="San Francisco (CA)" weight="2152" />
+      <edge id="125" source="Kahului (HI)" target="Bellingham (WA)" weight="88" />
+      <edge id="126" source="Kahului (HI)" target="Kona (HI)" weight="950" />
+      <edge id="127" source="Kahului (HI)" target="Los Angeles (CA)" weight="3011" />
+      <edge id="128" source="Kahului (HI)" target="Lihue (HI)" weight="1427" />
+      <edge id="129" source="Bend/Redmond (OR)" target="Denver (CO)" weight="547" />
+      <edge id="130" source="Bend/Redmond (OR)" target="Salt Lake City (UT)" weight="664" />
+      <edge id="131" source="Bend/Redmond (OR)" target="Los Angeles (CA)" weight="152" />
+      <edge id="132" source="Bend/Redmond (OR)" target="San Francisco (CA)" weight="1145" />
+      <edge id="133" source="Cody (WY)" target="Denver (CO)" weight="57" />
+      <edge id="134" source="Cody (WY)" target="Salt Lake City (UT)" weight="794" />
+      <edge id="135" source="Spokane (WA)" target="Seattle (WA)" weight="3335" />
+      <edge id="136" source="Spokane (WA)" target="Anchorage (AK)" weight="12" />
+      <edge id="137" source="Spokane (WA)" target="Boise (ID)" weight="629" />
+      <edge id="138" source="Spokane (WA)" target="Las Vegas (NV)" weight="711" />
+      <edge id="139" source="Spokane (WA)" target="Denver (CO)" weight="1457" />
+      <edge id="140" source="Spokane (WA)" target="Oakland (CA)" weight="704" />
+      <edge id="141" source="Spokane (WA)" target="Salt Lake City (UT)" weight="1337" />
+      <edge id="142" source="Spokane (WA)" target="Los Angeles (CA)" weight="161" />
+      <edge id="143" source="Nome (AK)" target="Anchorage (AK)" weight="415" />
+      <edge id="144" source="Bethel (AK)" target="Anchorage (AK)" weight="976" />
+      <edge id="145" source="Monterey (CA)" target="Los Angeles (CA)" weight="1283" />
+      <edge id="146" source="Monterey (CA)" target="San Francisco (CA)" weight="723" />
+      <edge id="147" source="Twin Falls (ID)" target="Salt Lake City (UT)" weight="979" />
+      <edge id="148" source="Juneau (AK)" target="Ketchikan (AK)" weight="344" />
+      <edge id="149" source="Juneau (AK)" target="Seattle (WA)" weight="1476" />
+      <edge id="150" source="Juneau (AK)" target="Anchorage (AK)" weight="1115" />
+      <edge id="151" source="Juneau (AK)" target="Yakutat (AK)" weight="362" />
+      <edge id="152" source="Juneau (AK)" target="Petersburg (AK)" weight="364" />
+      <edge id="153" source="Juneau (AK)" target="Sitka (AK)" weight="705" />
+      <edge id="154" source="Cedar City (UT)" target="Salt Lake City (UT)" weight="626" />
+      <edge id="155" source="Ketchikan (AK)" target="Wrangell (AK)" weight="364" />
+      <edge id="156" source="Ketchikan (AK)" target="Seattle (WA)" weight="1410" />
+      <edge id="157" source="Ketchikan (AK)" target="Sitka (AK)" weight="366" />
+      <edge id="158" source="Boise (ID)" target="Sacramento (CA)" weight="257" />
+      <edge id="159" source="Boise (ID)" target="Seattle (WA)" weight="2159" />
+      <edge id="160" source="Boise (ID)" target="Portland (OR)" weight="397" />
+      <edge id="161" source="Boise (ID)" target="Eugene (OR)" weight="1" />
+      <edge id="162" source="Boise (ID)" target="Las Vegas (NV)" weight="712" />
+      <edge id="163" source="Boise (ID)" target="Denver (CO)" weight="2109" />
+      <edge id="164" source="Boise (ID)" target="Oakland (CA)" weight="725" />
+      <edge id="165" source="Boise (ID)" target="San Diego (CA)" weight="366" />
+      <edge id="166" source="Boise (ID)" target="San Francisco (CA)" weight="1456" />
+      <edge id="167" source="Boise (ID)" target="Salt Lake City (UT)" weight="2080" />
+      <edge id="168" source="Boise (ID)" target="Los Angeles (CA)" weight="579" />
+      <edge id="169" source="Pasco/Kennewick/Richland (WA)" target="Denver (CO)" weight="731" />
+      <edge id="170" source="Pasco/Kennewick/Richland (WA)" target="Salt Lake City (UT)" weight="1041" />
+      <edge id="171" source="Pasco/Kennewick/Richland (WA)" target="Seattle (WA)" weight="1084" />
+      <edge id="172" source="Pasco/Kennewick/Richland (WA)" target="San Francisco (CA)" weight="469" />
+      <edge id="173" source="West Yellowstone (MT)" target="Salt Lake City (UT)" weight="224" />
+      <edge id="174" source="Adak Island (AK)" target="Anchorage (AK)" weight="105" />
+      <edge id="175" source="Eugene (OR)" target="Denver (CO)" weight="693" />
+      <edge id="176" source="Eugene (OR)" target="Salt Lake City (UT)" weight="748" />
+      <edge id="177" source="Eugene (OR)" target="Los Angeles (CA)" weight="290" />
+      <edge id="178" source="Eugene (OR)" target="San Francisco (CA)" weight="1823" />
+      <edge id="179" source="Santa Ana (CA)" target="Portland (OR)" weight="1653" />
+      <edge id="180" source="Santa Ana (CA)" target="Sacramento (CA)" weight="2327" />
+      <edge id="181" source="Santa Ana (CA)" target="Seattle (WA)" weight="3247" />
+      <edge id="182" source="Santa Ana (CA)" target="San Jose (CA)" weight="3399" />
+      <edge id="183" source="Santa Ana (CA)" target="Las Vegas (NV)" weight="2436" />
+      <edge id="184" source="Santa Ana (CA)" target="San Francisco (CA)" weight="4641" />
+      <edge id="185" source="Santa Ana (CA)" target="Oakland (CA)" weight="2702" />
+      <edge id="186" source="Santa Ana (CA)" target="Denver (CO)" weight="3671" />
+      <edge id="187" source="Santa Ana (CA)" target="Salt Lake City (UT)" weight="1742" />
+      <edge id="188" source="Albuquerque (NM)" target="Portland (OR)" weight="242" />
+      <edge id="189" source="Albuquerque (NM)" target="Seattle (WA)" weight="375" />
+      <edge id="190" source="Albuquerque (NM)" target="San Diego (CA)" weight="675" />
+      <edge id="191" source="Albuquerque (NM)" target="Las Vegas (NV)" weight="1413" />
+      <edge id="192" source="Albuquerque (NM)" target="San Francisco (CA)" weight="372" />
+      <edge id="193" source="Albuquerque (NM)" target="Los Angeles (CA)" weight="1241" />
+      <edge id="194" source="Albuquerque (NM)" target="Oakland (CA)" weight="850" />
+      <edge id="195" source="Albuquerque (NM)" target="Denver (CO)" weight="1900" />
+      <edge id="196" source="Albuquerque (NM)" target="Salt Lake City (UT)" weight="1035" />
+      <edge id="197" source="Billings (MT)" target="Denver (CO)" weight="1313" />
+      <edge id="198" source="Billings (MT)" target="Seattle (WA)" weight="135" />
+      <edge id="199" source="Billings (MT)" target="Salt Lake City (UT)" weight="1130" />
+      <edge id="200" source="Grand Junction (CO)" target="Denver (CO)" weight="822" />
+      <edge id="201" source="Grand Junction (CO)" target="Salt Lake City (UT)" weight="915" />
+      <edge id="202" source="Gunnison (CO)" target="Denver (CO)" weight="24" />
+      <edge id="203" source="Lihue (HI)" target="Seattle (WA)" weight="611" />
+      <edge id="204" source="Lihue (HI)" target="Portland (OR)" weight="101" />
+      <edge id="205" source="Lihue (HI)" target="San Jose (CA)" weight="209" />
+      <edge id="206" source="Lihue (HI)" target="Denver (CO)" weight="32" />
+      <edge id="207" source="Lihue (HI)" target="Oakland (CA)" weight="247" />
+      <edge id="208" source="Lihue (HI)" target="San Diego (CA)" weight="219" />
+      <edge id="209" source="Lihue (HI)" target="San Francisco (CA)" weight="496" />
+      <edge id="210" source="Lihue (HI)" target="Los Angeles (CA)" weight="1509" />
+      <edge id="211" source="Mammoth Lakes (CA)" target="Denver (CO)" weight="9" />
+      <edge id="212" source="Mammoth Lakes (CA)" target="San Francisco (CA)" weight="109" />
+      <edge id="213" source="North Bend/Coos Bay (OR)" target="Denver (CO)" weight="34" />
+      <edge id="214" source="North Bend/Coos Bay (OR)" target="San Francisco (CA)" weight="270" />
+      <edge id="215" source="Aspen (CO)" target="Denver (CO)" weight="2154" />
+      <edge id="216" source="Aspen (CO)" target="San Francisco (CA)" weight="275" />
+      <edge id="217" source="Aspen (CO)" target="Los Angeles (CA)" weight="677" />
+      <edge id="218" source="Colorado Springs (CO)" target="Seattle (WA)" weight="366" />
+      <edge id="219" source="Colorado Springs (CO)" target="Las Vegas (NV)" weight="201" />
+      <edge id="220" source="Colorado Springs (CO)" target="Denver (CO)" weight="2484" />
+      <edge id="221" source="Colorado Springs (CO)" target="Salt Lake City (UT)" weight="676" />
+      <edge id="222" source="Colorado Springs (CO)" target="Los Angeles (CA)" weight="694" />
+      <edge id="223" source="Oakland (CA)" target="Portland (OR)" weight="1961" />
+      <edge id="224" source="Oakland (CA)" target="Kona (HI)" weight="375" />
+      <edge id="225" source="Oakland (CA)" target="Seattle (WA)" weight="3562" />
+      <edge id="226" source="Oakland (CA)" target="San Diego (CA)" weight="3852" />
+      <edge id="227" source="Oakland (CA)" target="Las Vegas (NV)" weight="3768" />
+      <edge id="228" source="Oakland (CA)" target="Ontario (CA)" weight="2355" />
+      <edge id="229" source="Oakland (CA)" target="Los Angeles (CA)" weight="6299" />
+      <edge id="230" source="Oakland (CA)" target="Burbank (CA)" weight="4024" />
+      <edge id="231" source="Oakland (CA)" target="Denver (CO)" weight="1513" />
+      <edge id="232" source="Oakland (CA)" target="Salt Lake City (UT)" weight="2115" />
+      <edge id="233" source="San Jose (CA)" target="Portland (OR)" weight="2846" />
+      <edge id="234" source="San Jose (CA)" target="Kona (HI)" weight="157" />
+      <edge id="235" source="San Jose (CA)" target="Seattle (WA)" weight="3972" />
+      <edge id="236" source="San Jose (CA)" target="San Diego (CA)" weight="3821" />
+      <edge id="237" source="San Jose (CA)" target="Las Vegas (NV)" weight="3077" />
+      <edge id="238" source="San Jose (CA)" target="Ontario (CA)" weight="1421" />
+      <edge id="239" source="San Jose (CA)" target="Los Angeles (CA)" weight="5142" />
+      <edge id="240" source="San Jose (CA)" target="Burbank (CA)" weight="2315" />
+      <edge id="241" source="San Jose (CA)" target="Denver (CO)" weight="2397" />
+      <edge id="242" source="San Jose (CA)" target="Salt Lake City (UT)" weight="1639" />
+      <edge id="243" source="Bellingham (WA)" target="Seattle (WA)" weight="216" />
+      <edge id="244" source="Bellingham (WA)" target="Las Vegas (NV)" weight="216" />
+      <edge id="245" source="Portland (OR)" target="Sacramento (CA)" weight="1758" />
+      <edge id="246" source="Portland (OR)" target="Kona (HI)" weight="169" />
+      <edge id="247" source="Portland (OR)" target="Bozeman (MT)" weight="149" />
+      <edge id="248" source="Portland (OR)" target="Seattle (WA)" weight="2144" />
+      <edge id="249" source="Portland (OR)" target="Anchorage (AK)" weight="1058" />
+      <edge id="250" source="Portland (OR)" target="San Diego (CA)" weight="1851" />
+      <edge id="251" source="Portland (OR)" target="Santa Barbara (CA)" weight="366" />
+      <edge id="252" source="Portland (OR)" target="Palm Springs (CA)" weight="301" />
+      <edge id="253" source="Portland (OR)" target="Las Vegas (NV)" weight="2947" />
+      <edge id="254" source="Portland (OR)" target="San Francisco (CA)" weight="5124" />
+      <edge id="255" source="Portland (OR)" target="Ontario (CA)" weight="901" />
+      <edge id="256" source="Portland (OR)" target="Los Angeles (CA)" weight="4776" />
+      <edge id="257" source="Portland (OR)" target="Burbank (CA)" weight="1148" />
+      <edge id="258" source="Portland (OR)" target="Salt Lake City (UT)" weight="2872" />
+      <edge id="259" source="Portland (OR)" target="Denver (CO)" weight="3990" />
+      <edge id="260" source="San Luis Obispo (CA)" target="Los Angeles (CA)" weight="1390" />
+      <edge id="261" source="San Luis Obispo (CA)" target="San Francisco (CA)" weight="1116" />
+      <edge id="262" source="Kalispell (MT)" target="Denver (CO)" weight="903" />
+      <edge id="263" source="Kalispell (MT)" target="Salt Lake City (UT)" weight="1025" />
+      <edge id="264" source="Seattle (WA)" target="Sacramento (CA)" weight="3898" />
+      <edge id="265" source="Seattle (WA)" target="Burbank (CA)" weight="1162" />
+      <edge id="266" source="Seattle (WA)" target="Kona (HI)" weight="897" />
+      <edge id="267" source="Seattle (WA)" target="Bozeman (MT)" weight="189" />
+      <edge id="268" source="Seattle (WA)" target="Sitka (AK)" weight="211" />
+      <edge id="269" source="Seattle (WA)" target="Denver (CO)" weight="6497" />
+      <edge id="270" source="Seattle (WA)" target="Anchorage (AK)" weight="6696" />
+      <edge id="271" source="Seattle (WA)" target="San Diego (CA)" weight="3539" />
+      <edge id="272" source="Seattle (WA)" target="Hayden (CO)" weight="60" />
+      <edge id="273" source="Seattle (WA)" target="Las Vegas (NV)" weight="6242" />
+      <edge id="274" source="Seattle (WA)" target="San Francisco (CA)" weight="7889" />
+      <edge id="275" source="Seattle (WA)" target="Ontario (CA)" weight="961" />
+      <edge id="276" source="Seattle (WA)" target="Jackson (WY)" weight="25" />
+      <edge id="277" source="Seattle (WA)" target="Palm Springs (CA)" weight="943" />
+      <edge id="278" source="Seattle (WA)" target="Santa Barbara (CA)" weight="499" />
+      <edge id="279" source="Seattle (WA)" target="Los Angeles (CA)" weight="10224" />
+      <edge id="280" source="Seattle (WA)" target="Salt Lake City (UT)" weight="4243" />
+      <edge id="281" source="Cordova (AK)" target="Yakutat (AK)" weight="361" />
+      <edge id="282" source="Cordova (AK)" target="Anchorage (AK)" weight="362" />
+      <edge id="283" source="Jackson (WY)" target="San Francisco (CA)" weight="201" />
+      <edge id="284" source="Jackson (WY)" target="Salt Lake City (UT)" weight="1055" />
+      <edge id="285" source="Jackson (WY)" target="Denver (CO)" weight="1015" />
+      <edge id="286" source="Jackson (WY)" target="Los Angeles (CA)" weight="310" />
+      <edge id="287" source="Los Angeles (CA)" target="Sacramento (CA)" weight="4744" />
+      <edge id="288" source="Los Angeles (CA)" target="Kona (HI)" weight="1476" />
+      <edge id="289" source="Los Angeles (CA)" target="Denver (CO)" weight="6849" />
+      <edge id="290" source="Los Angeles (CA)" target="Anchorage (AK)" weight="515" />
+      <edge id="291" source="Los Angeles (CA)" target="Durango (CO)" weight="12" />
+      <edge id="292" source="Los Angeles (CA)" target="San Diego (CA)" weight="2879" />
+      <edge id="293" source="Los Angeles (CA)" target="Hayden (CO)" weight="96" />
+      <edge id="294" source="Los Angeles (CA)" target="Las Vegas (NV)" weight="11298" />
+      <edge id="295" source="Los Angeles (CA)" target="Eagle (CO)" weight="122" />
+      <edge id="296" source="Los Angeles (CA)" target="San Francisco (CA)" weight="17409" />
+      <edge id="297" source="Los Angeles (CA)" target="Bozeman (MT)" weight="164" />
+      <edge id="298" source="Los Angeles (CA)" target="Palm Springs (CA)" weight="375" />
+      <edge id="299" source="Los Angeles (CA)" target="Santa Barbara (CA)" weight="1405" />
+      <edge id="300" source="Los Angeles (CA)" target="Hilo (HI)" weight="278" />
+      <edge id="301" source="Los Angeles (CA)" target="Sun Valley/Hailey/Ketchum (ID)" weight="32" />
+      <edge id="302" source="Los Angeles (CA)" target="Salt Lake City (UT)" weight="5030" />
+      <edge id="303" source="Hayden (CO)" target="Denver (CO)" weight="343" />
+      <edge id="304" source="Hayden (CO)" target="San Francisco (CA)" weight="14" />
+      <edge id="305" source="Kodiak (AK)" target="Anchorage (AK)" weight="538" />
+      <edge id="306" source="Eagle (CO)" target="Denver (CO)" weight="327" />
+      <edge id="307" source="Casper (WY)" target="Denver (CO)" weight="757" />
+      <edge id="308" source="Casper (WY)" target="Salt Lake City (UT)" weight="764" />
+      <edge id="309" source="Idaho Falls (ID)" target="Denver (CO)" weight="1023" />
+      <edge id="310" source="Idaho Falls (ID)" target="Salt Lake City (UT)" weight="1462" />
+      <edge id="311" source="San Francisco (CA)" target="Sacramento (CA)" weight="1778" />
+      <edge id="312" source="San Francisco (CA)" target="Burbank (CA)" weight="2833" />
+      <edge id="313" source="San Francisco (CA)" target="Kona (HI)" weight="726" />
+      <edge id="314" source="San Francisco (CA)" target="Denver (CO)" weight="7580" />
+      <edge id="315" source="San Francisco (CA)" target="Anchorage (AK)" weight="111" />
+      <edge id="316" source="San Francisco (CA)" target="San Diego (CA)" weight="7943" />
+      <edge id="317" source="San Francisco (CA)" target="Las Vegas (NV)" weight="9114" />
+      <edge id="318" source="San Francisco (CA)" target="Ontario (CA)" weight="2640" />
+      <edge id="319" source="San Francisco (CA)" target="Bozeman (MT)" weight="209" />
+      <edge id="320" source="San Francisco (CA)" target="Santa Maria (CA)" weight="675" />
+      <edge id="321" source="San Francisco (CA)" target="Santa Barbara (CA)" weight="2308" />
+      <edge id="322" source="San Francisco (CA)" target="Palm Springs (CA)" weight="2504" />
+      <edge id="323" source="San Francisco (CA)" target="Redding (CA)" weight="930" />
+      <edge id="324" source="San Francisco (CA)" target="Sun Valley/Hailey/Ketchum (ID)" weight="181" />
+      <edge id="325" source="San Francisco (CA)" target="Salt Lake City (UT)" weight="3337" />
+      <edge id="326" source="Ontario (CA)" target="Sacramento (CA)" weight="2245" />
+      <edge id="327" source="Ontario (CA)" target="Las Vegas (NV)" weight="1496" />
+      <edge id="328" source="Ontario (CA)" target="Denver (CO)" weight="1280" />
+      <edge id="329" source="Ontario (CA)" target="Salt Lake City (UT)" weight="1031" />
+      <edge id="330" source="Bozeman (MT)" target="Denver (CO)" weight="1138" />
+      <edge id="331" source="Bozeman (MT)" target="Salt Lake City (UT)" weight="1141" />
+      <edge id="332" source="Santa Barbara (CA)" target="Denver (CO)" weight="733" />
+      <edge id="333" source="Barrow (AK)" target="Deadhorse (AK)" weight="137" />
+      <edge id="334" source="Barrow (AK)" target="Anchorage (AK)" weight="208" />
+      <edge id="335" source="Sacramento (CA)" target="San Diego (CA)" weight="3107" />
+      <edge id="336" source="Sacramento (CA)" target="Las Vegas (NV)" weight="2765" />
+      <edge id="337" source="Sacramento (CA)" target="Burbank (CA)" weight="2289" />
+      <edge id="338" source="Sacramento (CA)" target="Denver (CO)" weight="2813" />
+      <edge id="339" source="Sacramento (CA)" target="Salt Lake City (UT)" weight="1637" />
+      <edge id="340" source="Gillette (WY)" target="Denver (CO)" weight="678" />
+      <edge id="341" source="Gillette (WY)" target="Salt Lake City (UT)" weight="366" />
+      <edge id="342" source="Pocatello (ID)" target="Salt Lake City (UT)" weight="875" />
+      <edge id="343" source="Anchorage (AK)" target="Kona (HI)" weight="46" />
+      <edge id="344" source="Anchorage (AK)" target="Las Vegas (NV)" weight="83" />
+      <edge id="345" source="Anchorage (AK)" target="Deadhorse (AK)" weight="137" />
+      <edge id="346" source="Anchorage (AK)" target="Denver (CO)" weight="451" />
+      <edge id="347" source="Anchorage (AK)" target="Salt Lake City (UT)" weight="92" />
+      <edge id="348" source="Kona (HI)" target="Denver (CO)" weight="90" />
+      <edge id="349" source="Kona (HI)" target="San Diego (CA)" weight="168" />
+      <edge id="350" source="St. George (UT)" target="Denver (CO)" weight="674" />
+      <edge id="351" source="St. George (UT)" target="Salt Lake City (UT)" weight="1345" />
+      <edge id="352" source="Durango (CO)" target="Denver (CO)" weight="630" />
+      <edge id="353" source="Petersburg (AK)" target="Wrangell (AK)" weight="364" />
+      <edge id="354" source="Las Vegas (NV)" target="Burbank (CA)" weight="3361" />
+      <edge id="355" source="Las Vegas (NV)" target="San Diego (CA)" weight="4520" />
+      <edge id="356" source="Las Vegas (NV)" target="Salt Lake City (UT)" weight="4101" />
+      <edge id="357" source="Las Vegas (NV)" target="Denver (CO)" weight="6807" />
+      <edge id="358" source="Sun Valley/Hailey/Ketchum (ID)" target="Denver (CO)" weight="146" />
+      <edge id="359" source="Sun Valley/Hailey/Ketchum (ID)" target="Salt Lake City (UT)" weight="875" />
+      <edge id="360" source="Palm Springs (CA)" target="Salt Lake City (UT)" weight="824" />
+      <edge id="361" source="Palm Springs (CA)" target="Denver (CO)" weight="1004" />
+      <edge id="362" source="San Diego (CA)" target="Salt Lake City (UT)" weight="2484" />
+      <edge id="363" source="San Diego (CA)" target="Denver (CO)" weight="4691" />
+      <edge id="364" source="Rock Springs (WY)" target="Denver (CO)" weight="661" />
+      <edge id="365" source="Burbank (CA)" target="Salt Lake City (UT)" weight="989" />
+      <edge id="366" source="Burbank (CA)" target="Denver (CO)" weight="1370" />
+      <edge id="367" source="Denver (CO)" target="Salt Lake City (UT)" weight="7071" />
+    </edges>
+  </graph>
+</gexf>

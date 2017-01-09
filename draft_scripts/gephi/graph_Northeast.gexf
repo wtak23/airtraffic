@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="lat" type="double" />
+      <attribute id="1" title="lon" type="double" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.0.dev_20170108093821</creator>
+      <lastmodified>09/01/2017</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Newark (NJ)" label="Newark (NJ)">
+        <attvalues>
+          <attvalue for="0" value="40.6895314" />
+          <attvalue for="1" value="-74.1744624" />
+        </attvalues>
+      </node>
+      <node id="Burlington (VT)" label="Burlington (VT)">
+        <attvalues>
+          <attvalue for="0" value="44.4758825" />
+          <attvalue for="1" value="-73.212072" />
+        </attvalues>
+      </node>
+      <node id="Latrobe (PA)" label="Latrobe (PA)">
+        <attvalues>
+          <attvalue for="0" value="40.2738018" />
+          <attvalue for="1" value="-79.4070821" />
+        </attvalues>
+      </node>
+      <node id="Rochester (NY)" label="Rochester (NY)">
+        <attvalues>
+          <attvalue for="0" value="43.1225229" />
+          <attvalue for="1" value="-77.6665722" />
+        </attvalues>
+      </node>
+      <node id="Bangor (ME)" label="Bangor (ME)">
+        <attvalues>
+          <attvalue for="0" value="44.8079749" />
+          <attvalue for="1" value="-68.8166829" />
+        </attvalues>
+      </node>
+      <node id="Nantucket (MA)" label="Nantucket (MA)">
+        <attvalues>
+          <attvalue for="0" value="41.2569516" />
+          <attvalue for="1" value="-70.0637506" />
+        </attvalues>
+      </node>
+      <node id="Hartford (CT)" label="Hartford (CT)">
+        <attvalues>
+          <attvalue for="0" value="41.7637111" />
+          <attvalue for="1" value="-72.6850932" />
+        </attvalues>
+      </node>
+      <node id="Albany (NY)" label="Albany (NY)">
+        <attvalues>
+          <attvalue for="0" value="42.6525793" />
+          <attvalue for="1" value="-73.7562317" />
+        </attvalues>
+      </node>
+      <node id="Islip (NY)" label="Islip (NY)">
+        <attvalues>
+          <attvalue for="0" value="40.7898451" />
+          <attvalue for="1" value="-73.097568" />
+        </attvalues>
+      </node>
+      <node id="Syracuse (NY)" label="Syracuse (NY)">
+        <attvalues>
+          <attvalue for="0" value="43.1139301" />
+          <attvalue for="1" value="-76.1101888" />
+        </attvalues>
+      </node>
+      <node id="Boston (MA)" label="Boston (MA)">
+        <attvalues>
+          <attvalue for="0" value="42.3600825" />
+          <attvalue for="1" value="-71.0588801" />
+        </attvalues>
+      </node>
+      <node id="Martha's Vineyard (MA)" label="Martha's Vineyard (MA)">
+        <attvalues>
+          <attvalue for="0" value="41.3894107" />
+          <attvalue for="1" value="-70.6120544" />
+        </attvalues>
+      </node>
+      <node id="Niagara Falls (NY)" label="Niagara Falls (NY)">
+        <attvalues>
+          <attvalue for="0" value="43.1073749" />
+          <attvalue for="1" value="-78.9445352" />
+        </attvalues>
+      </node>
+      <node id="Plattsburgh (NY)" label="Plattsburgh (NY)">
+        <attvalues>
+          <attvalue for="0" value="44.6694407" />
+          <attvalue for="1" value="-73.4722941" />
+        </attvalues>
+      </node>
+      <node id="Allentown/Bethlehem/Easton (PA)" label="Allentown/Bethlehem/Easton (PA)">
+        <attvalues>
+          <attvalue for="0" value="40.6516504" />
+          <attvalue for="1" value="-75.4347461" />
+        </attvalues>
+      </node>
+      <node id="Hyannis (MA)" label="Hyannis (MA)">
+        <attvalues>
+          <attvalue for="0" value="41.6673379" />
+          <attvalue for="1" value="-70.2847445" />
+        </attvalues>
+      </node>
+      <node id="Elmira/Corning (NY)" label="Elmira/Corning (NY)">
+        <attvalues>
+          <attvalue for="0" value="42.15987" />
+          <attvalue for="1" value="-76.893638" />
+        </attvalues>
+      </node>
+      <node id="Scranton/Wilkes-Barre (PA)" label="Scranton/Wilkes-Barre (PA)">
+        <attvalues>
+          <attvalue for="0" value="41.408969" />
+          <attvalue for="1" value="-75.6624122" />
+        </attvalues>
+      </node>
+      <node id="Binghamton (NY)" label="Binghamton (NY)">
+        <attvalues>
+          <attvalue for="0" value="42.2081084" />
+          <attvalue for="1" value="-75.9820633" />
+        </attvalues>
+      </node>
+      <node id="Ithaca/Cortland (NY)" label="Ithaca/Cortland (NY)">
+        <attvalues>
+          <attvalue for="0" value="42.4906384" />
+          <attvalue for="1" value="-76.4599412" />
+        </attvalues>
+      </node>
+      <node id="New York (NY) [Lag]" label="New York (NY) [Lag]">
+        <attvalues>
+          <attvalue for="0" value="40.7769271" />
+          <attvalue for="1" value="-73.8739659" />
+        </attvalues>
+      </node>
+      <node id="Worcester (MA)" label="Worcester (MA)">
+        <attvalues>
+          <attvalue for="0" value="42.2680227" />
+          <attvalue for="1" value="-71.8735112" />
+        </attvalues>
+      </node>
+      <node id="Atlantic City (NJ)" label="Atlantic City (NJ)">
+        <attvalues>
+          <attvalue for="0" value="39.4513116" />
+          <attvalue for="1" value="-74.5721964" />
+        </attvalues>
+      </node>
+      <node id="Erie (PA)" label="Erie (PA)">
+        <attvalues>
+          <attvalue for="0" value="42.083016" />
+          <attvalue for="1" value="-80.181827" />
+        </attvalues>
+      </node>
+      <node id="Newburgh/Poughkeepsie (NY)" label="Newburgh/Poughkeepsie (NY)">
+        <attvalues>
+          <attvalue for="0" value="41.4985635" />
+          <attvalue for="1" value="-74.1004385" />
+        </attvalues>
+      </node>
+      <node id="Harrisburg (PA)" label="Harrisburg (PA)">
+        <attvalues>
+          <attvalue for="0" value="40.1942375" />
+          <attvalue for="1" value="-76.7576672" />
+        </attvalues>
+      </node>
+      <node id="White Plains (NY)" label="White Plains (NY)">
+        <attvalues>
+          <attvalue for="0" value="41.1220194" />
+          <attvalue for="1" value="-73.7948516" />
+        </attvalues>
+      </node>
+      <node id="State College (PA)" label="State College (PA)">
+        <attvalues>
+          <attvalue for="0" value="32.8550377" />
+          <attvalue for="1" value="-96.797592" />
+        </attvalues>
+      </node>
+      <node id="Manchester (NH)" label="Manchester (NH)">
+        <attvalues>
+          <attvalue for="0" value="42.929687" />
+          <attvalue for="1" value="-71.4352177" />
+        </attvalues>
+      </node>
+      <node id="Portland (ME)" label="Portland (ME)">
+        <attvalues>
+          <attvalue for="0" value="43.6464785" />
+          <attvalue for="1" value="-70.3096974" />
+        </attvalues>
+      </node>
+      <node id="Pittsburgh (PA)" label="Pittsburgh (PA)">
+        <attvalues>
+          <attvalue for="0" value="40.4957722" />
+          <attvalue for="1" value="-80.2413113" />
+        </attvalues>
+      </node>
+      <node id="Providence (RI)" label="Providence (RI)">
+        <attvalues>
+          <attvalue for="0" value="41.7245271" />
+          <attvalue for="1" value="-71.4304062" />
+        </attvalues>
+      </node>
+      <node id="Trenton (NJ)" label="Trenton (NJ)">
+        <attvalues>
+          <attvalue for="0" value="40.277031" />
+          <attvalue for="1" value="-74.8180489" />
+        </attvalues>
+      </node>
+      <node id="Buffalo (NY)" label="Buffalo (NY)">
+        <attvalues>
+          <attvalue for="0" value="42.8864468" />
+          <attvalue for="1" value="-78.8783689" />
+        </attvalues>
+      </node>
+      <node id="Philadelphia (PA)" label="Philadelphia (PA)">
+        <attvalues>
+          <attvalue for="0" value="39.8743959" />
+          <attvalue for="1" value="-75.2424229" />
+        </attvalues>
+      </node>
+      <node id="New York (NY) [JFK]" label="New York (NY) [JFK]">
+        <attvalues>
+          <attvalue for="0" value="40.6413111" />
+          <attvalue for="1" value="-73.7781391" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Newark (NJ)" target="Burlington (VT)" weight="1319" />
+      <edge id="1" source="Newark (NJ)" target="Rochester (NY)" weight="1037" />
+      <edge id="2" source="Newark (NJ)" target="Hartford (CT)" weight="207" />
+      <edge id="3" source="Newark (NJ)" target="Providence (RI)" weight="643" />
+      <edge id="4" source="Newark (NJ)" target="Bangor (ME)" weight="121" />
+      <edge id="5" source="Newark (NJ)" target="Albany (NY)" weight="251" />
+      <edge id="6" source="Newark (NJ)" target="Syracuse (NY)" weight="541" />
+      <edge id="7" source="Newark (NJ)" target="Scranton/Wilkes-Barre (PA)" weight="135" />
+      <edge id="8" source="Newark (NJ)" target="Boston (MA)" weight="4669" />
+      <edge id="9" source="Newark (NJ)" target="Manchester (NH)" weight="593" />
+      <edge id="10" source="Newark (NJ)" target="Portland (ME)" weight="1434" />
+      <edge id="11" source="Newark (NJ)" target="Pittsburgh (PA)" weight="529" />
+      <edge id="12" source="Newark (NJ)" target="Buffalo (NY)" weight="1374" />
+      <edge id="13" source="Burlington (VT)" target="New York (NY) [Lag]" weight="110" />
+      <edge id="14" source="Burlington (VT)" target="New York (NY) [JFK]" weight="1172" />
+      <edge id="15" source="Rochester (NY)" target="New York (NY) [Lag]" weight="129" />
+      <edge id="16" source="Rochester (NY)" target="New York (NY) [JFK]" weight="1219" />
+      <edge id="17" source="Bangor (ME)" target="New York (NY) [Lag]" weight="219" />
+      <edge id="18" source="Nantucket (MA)" target="Boston (MA)" weight="172" />
+      <edge id="19" source="Nantucket (MA)" target="New York (NY) [JFK]" weight="392" />
+      <edge id="20" source="Hartford (CT)" target="Philadelphia (PA)" weight="151" />
+      <edge id="21" source="Syracuse (NY)" target="New York (NY) [JFK]" weight="1104" />
+      <edge id="22" source="Syracuse (NY)" target="New York (NY) [Lag]" weight="482" />
+      <edge id="23" source="Boston (MA)" target="Pittsburgh (PA)" weight="1293" />
+      <edge id="24" source="Boston (MA)" target="Philadelphia (PA)" weight="5533" />
+      <edge id="25" source="Boston (MA)" target="Martha's Vineyard (MA)" weight="110" />
+      <edge id="26" source="Boston (MA)" target="Buffalo (NY)" weight="1361" />
+      <edge id="27" source="Boston (MA)" target="Atlantic City (NJ)" weight="147" />
+      <edge id="28" source="Boston (MA)" target="New York (NY) [JFK]" weight="5503" />
+      <edge id="29" source="Boston (MA)" target="New York (NY) [Lag]" weight="6590" />
+      <edge id="30" source="Martha's Vineyard (MA)" target="New York (NY) [JFK]" weight="138" />
+      <edge id="31" source="Hyannis (MA)" target="New York (NY) [JFK]" weight="121" />
+      <edge id="32" source="New York (NY) [Lag]" target="Portland (ME)" weight="186" />
+      <edge id="33" source="New York (NY) [Lag]" target="Pittsburgh (PA)" weight="276" />
+      <edge id="34" source="New York (NY) [Lag]" target="Buffalo (NY)" weight="463" />
+      <edge id="35" source="New York (NY) [Lag]" target="Philadelphia (PA)" weight="777" />
+      <edge id="36" source="New York (NY) [Lag]" target="Manchester (NH)" weight="10" />
+      <edge id="37" source="Portland (ME)" target="New York (NY) [JFK]" weight="1189" />
+      <edge id="38" source="Pittsburgh (PA)" target="Philadelphia (PA)" weight="799" />
+      <edge id="39" source="Pittsburgh (PA)" target="New York (NY) [JFK]" weight="23" />
+      <edge id="40" source="Providence (RI)" target="Philadelphia (PA)" weight="476" />
+      <edge id="41" source="Buffalo (NY)" target="New York (NY) [JFK]" weight="2452" />
+      <edge id="42" source="Buffalo (NY)" target="Philadelphia (PA)" weight="8" />
+      <edge id="43" source="Philadelphia (PA)" target="New York (NY) [JFK]" weight="3" />
+    </edges>
+  </graph>
+</gexf>

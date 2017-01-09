@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="lat" type="double" />
+      <attribute id="1" title="lon" type="double" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.0.dev_20170108093821</creator>
+      <lastmodified>09/01/2017</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Rapid City (SD)" label="Rapid City (SD)">
+        <attvalues>
+          <attvalue for="0" value="44.0805434" />
+          <attvalue for="1" value="-103.2310149" />
+        </attvalues>
+      </node>
+      <node id="Evansville (IN)" label="Evansville (IN)">
+        <attvalues>
+          <attvalue for="0" value="38.0459587" />
+          <attvalue for="1" value="-87.5276758" />
+        </attvalues>
+      </node>
+      <node id="Manhattan/Ft. Riley (KS)" label="Manhattan/Ft. Riley (KS)">
+        <attvalues>
+          <attvalue for="0" value="39.1371223" />
+          <attvalue for="1" value="-96.6699273" />
+        </attvalues>
+      </node>
+      <node id="La Crosse (WI)" label="La Crosse (WI)">
+        <attvalues>
+          <attvalue for="0" value="43.8753299" />
+          <attvalue for="1" value="-91.2635471" />
+        </attvalues>
+      </node>
+      <node id="Akron (OH)" label="Akron (OH)">
+        <attvalues>
+          <attvalue for="0" value="40.914615" />
+          <attvalue for="1" value="-81.436672" />
+        </attvalues>
+      </node>
+      <node id="Williston (ND)" label="Williston (ND)">
+        <attvalues>
+          <attvalue for="0" value="48.1773699" />
+          <attvalue for="1" value="-103.6367331" />
+        </attvalues>
+      </node>
+      <node id="Aberdeen (SD)" label="Aberdeen (SD)">
+        <attvalues>
+          <attvalue for="0" value="45.4534583" />
+          <attvalue for="1" value="-98.4177261" />
+        </attvalues>
+      </node>
+      <node id="Mosinee (WI)" label="Mosinee (WI)">
+        <attvalues>
+          <attvalue for="0" value="44.7930232" />
+          <attvalue for="1" value="-89.7031784" />
+        </attvalues>
+      </node>
+      <node id="Flint (MI)" label="Flint (MI)">
+        <attvalues>
+          <attvalue for="0" value="43.0125274" />
+          <attvalue for="1" value="-83.6874562" />
+        </attvalues>
+      </node>
+      <node id="Scottsbluff (NE)" label="Scottsbluff (NE)">
+        <attvalues>
+          <attvalue for="0" value="41.8735461" />
+          <attvalue for="1" value="-103.5950216" />
+        </attvalues>
+      </node>
+      <node id="Wichita (KS)" label="Wichita (KS)">
+        <attvalues>
+          <attvalue for="0" value="37.6508529" />
+          <attvalue for="1" value="-97.4286988" />
+        </attvalues>
+      </node>
+      <node id="Grand Forks (ND)" label="Grand Forks (ND)">
+        <attvalues>
+          <attvalue for="0" value="47.942861" />
+          <attvalue for="1" value="-97.176582" />
+        </attvalues>
+      </node>
+      <node id="Dayton (OH)" label="Dayton (OH)">
+        <attvalues>
+          <attvalue for="0" value="39.9025242" />
+          <attvalue for="1" value="-84.2217719" />
+        </attvalues>
+      </node>
+      <node id="Eau Claire (WI)" label="Eau Claire (WI)">
+        <attvalues>
+          <attvalue for="0" value="44.811349" />
+          <attvalue for="1" value="-91.4984941" />
+        </attvalues>
+      </node>
+      <node id="Duluth (MN)" label="Duluth (MN)">
+        <attvalues>
+          <attvalue for="0" value="46.8386505" />
+          <attvalue for="1" value="-92.1800294" />
+        </attvalues>
+      </node>
+      <node id="Joplin (MO)" label="Joplin (MO)">
+        <attvalues>
+          <attvalue for="0" value="37.157353" />
+          <attvalue for="1" value="-94.5015192" />
+        </attvalues>
+      </node>
+      <node id="Cleveland (OH)" label="Cleveland (OH)">
+        <attvalues>
+          <attvalue for="0" value="41.49932" />
+          <attvalue for="1" value="-81.6943605" />
+        </attvalues>
+      </node>
+      <node id="Fargo (ND)" label="Fargo (ND)">
+        <attvalues>
+          <attvalue for="0" value="46.9181473" />
+          <attvalue for="1" value="-96.8183039" />
+        </attvalues>
+      </node>
+      <node id="International Falls (MN)" label="International Falls (MN)">
+        <attvalues>
+          <attvalue for="0" value="48.5663926" />
+          <attvalue for="1" value="-93.397607" />
+        </attvalues>
+      </node>
+      <node id="Madison (WI)" label="Madison (WI)">
+        <attvalues>
+          <attvalue for="0" value="43.0730517" />
+          <attvalue for="1" value="-89.4012302" />
+        </attvalues>
+      </node>
+      <node id="Moline (IL)" label="Moline (IL)">
+        <attvalues>
+          <attvalue for="0" value="41.4496341" />
+          <attvalue for="1" value="-90.5082706" />
+        </attvalues>
+      </node>
+      <node id="South Bend (IN)" label="South Bend (IN)">
+        <attvalues>
+          <attvalue for="0" value="41.7008353" />
+          <attvalue for="1" value="-86.3121986" />
+        </attvalues>
+      </node>
+      <node id="Detroit (MI)" label="Detroit (MI)">
+        <attvalues>
+          <attvalue for="0" value="42.331427" />
+          <attvalue for="1" value="-83.0457538" />
+        </attvalues>
+      </node>
+      <node id="Rhinelander (WI)" label="Rhinelander (WI)">
+        <attvalues>
+          <attvalue for="0" value="45.6366228" />
+          <attvalue for="1" value="-89.4120753" />
+        </attvalues>
+      </node>
+      <node id="Peoria (IL)" label="Peoria (IL)">
+        <attvalues>
+          <attvalue for="0" value="40.6666408" />
+          <attvalue for="1" value="-89.6916264" />
+        </attvalues>
+      </node>
+      <node id="Bismarck/Mandan (ND)" label="Bismarck/Mandan (ND)">
+        <attvalues>
+          <attvalue for="0" value="46.775111" />
+          <attvalue for="1" value="-100.7573875" />
+        </attvalues>
+      </node>
+      <node id="Bloomington/Normal (IL)" label="Bloomington/Normal (IL)">
+        <attvalues>
+          <attvalue for="0" value="40.4829137" />
+          <attvalue for="1" value="-88.914102" />
+        </attvalues>
+      </node>
+      <node id="Champaign/Urbana (IL)" label="Champaign/Urbana (IL)">
+        <attvalues>
+          <attvalue for="0" value="40.1105875" />
+          <attvalue for="1" value="-88.2072697" />
+        </attvalues>
+      </node>
+      <node id="Chicago (IL) [O'Hare]" label="Chicago (IL) [O'Hare]">
+        <attvalues>
+          <attvalue for="0" value="41.9741625" />
+          <attvalue for="1" value="-87.9073214" />
+        </attvalues>
+      </node>
+      <node id="Bemidji (MN)" label="Bemidji (MN)">
+        <attvalues>
+          <attvalue for="0" value="47.5092442" />
+          <attvalue for="1" value="-94.9329041" />
+        </attvalues>
+      </node>
+      <node id="Jamestown (ND)" label="Jamestown (ND)">
+        <attvalues>
+          <attvalue for="0" value="46.9105438" />
+          <attvalue for="1" value="-98.7084357" />
+        </attvalues>
+      </node>
+      <node id="Hibbing (MN)" label="Hibbing (MN)">
+        <attvalues>
+          <attvalue for="0" value="47.3921561" />
+          <attvalue for="1" value="-92.8421461" />
+        </attvalues>
+      </node>
+      <node id="Hancock/Houghton (MI)" label="Hancock/Houghton (MI)">
+        <attvalues>
+          <attvalue for="0" value="47.1268714" />
+          <attvalue for="1" value="-88.5809563" />
+        </attvalues>
+      </node>
+      <node id="Escanaba (MI)" label="Escanaba (MI)">
+        <attvalues>
+          <attvalue for="0" value="38.8531357" />
+          <attvalue for="1" value="-107.763621" />
+        </attvalues>
+      </node>
+      <node id="Green Bay (WI)" label="Green Bay (WI)">
+        <attvalues>
+          <attvalue for="0" value="44.4923615" />
+          <attvalue for="1" value="-88.1271314" />
+        </attvalues>
+      </node>
+      <node id="Sioux Falls (SD)" label="Sioux Falls (SD)">
+        <attvalues>
+          <attvalue for="0" value="43.580268" />
+          <attvalue for="1" value="-96.731188" />
+        </attvalues>
+      </node>
+      <node id="Hays (KS)" label="Hays (KS)">
+        <attvalues>
+          <attvalue for="0" value="38.842222" />
+          <attvalue for="1" value="-99.273167" />
+        </attvalues>
+      </node>
+      <node id="Minneapolis (MN)" label="Minneapolis (MN)">
+        <attvalues>
+          <attvalue for="0" value="44.8847554" />
+          <attvalue for="1" value="-93.2222846" />
+        </attvalues>
+      </node>
+      <node id="Des Moines (IA)" label="Des Moines (IA)">
+        <attvalues>
+          <attvalue for="0" value="41.6005448" />
+          <attvalue for="1" value="-93.6091064" />
+        </attvalues>
+      </node>
+      <node id="Indianapolis (IN)" label="Indianapolis (IN)">
+        <attvalues>
+          <attvalue for="0" value="39.7168593" />
+          <attvalue for="1" value="-86.2955952" />
+        </attvalues>
+      </node>
+      <node id="Waterloo (IA)" label="Waterloo (IA)">
+        <attvalues>
+          <attvalue for="0" value="42.492786" />
+          <attvalue for="1" value="-92.3425775" />
+        </attvalues>
+      </node>
+      <node id="Columbia (MO)" label="Columbia (MO)">
+        <attvalues>
+          <attvalue for="0" value="38.9517053" />
+          <attvalue for="1" value="-92.3340724" />
+        </attvalues>
+      </node>
+      <node id="Traverse City (MI)" label="Traverse City (MI)">
+        <attvalues>
+          <attvalue for="0" value="44.7369137" />
+          <attvalue for="1" value="-85.5796208" />
+        </attvalues>
+      </node>
+      <node id="Brainerd (MN)" label="Brainerd (MN)">
+        <attvalues>
+          <attvalue for="0" value="46.3526733" />
+          <attvalue for="1" value="-94.2020084" />
+        </attvalues>
+      </node>
+      <node id="Dubuque (IA)" label="Dubuque (IA)">
+        <attvalues>
+          <attvalue for="0" value="42.3970919" />
+          <attvalue for="1" value="-90.7056061" />
+        </attvalues>
+      </node>
+      <node id="Lincoln (NE)" label="Lincoln (NE)">
+        <attvalues>
+          <attvalue for="0" value="40.8469517" />
+          <attvalue for="1" value="-96.7552229" />
+        </attvalues>
+      </node>
+      <node id="Muskegon (MI)" label="Muskegon (MI)">
+        <attvalues>
+          <attvalue for="0" value="43.294941" />
+          <attvalue for="1" value="-86.1261055" />
+        </attvalues>
+      </node>
+      <node id="Grand Island (NE)" label="Grand Island (NE)">
+        <attvalues>
+          <attvalue for="0" value="40.97025" />
+          <attvalue for="1" value="-98.3182995" />
+        </attvalues>
+      </node>
+      <node id="Grand Rapids (MI)" label="Grand Rapids (MI)">
+        <attvalues>
+          <attvalue for="0" value="42.8846633" />
+          <attvalue for="1" value="-85.5248434" />
+        </attvalues>
+      </node>
+      <node id="Appleton (WI)" label="Appleton (WI)">
+        <attvalues>
+          <attvalue for="0" value="44.2619309" />
+          <attvalue for="1" value="-88.4153847" />
+        </attvalues>
+      </node>
+      <node id="Cedar Rapids/Iowa City (IA)" label="Cedar Rapids/Iowa City (IA)">
+        <attvalues>
+          <attvalue for="0" value="41.8863861" />
+          <attvalue for="1" value="-91.7069754" />
+        </attvalues>
+      </node>
+      <node id="Minot (ND)" label="Minot (ND)">
+        <attvalues>
+          <attvalue for="0" value="48.2559683" />
+          <attvalue for="1" value="-101.2879102" />
+        </attvalues>
+      </node>
+      <node id="Toledo (OH)" label="Toledo (OH)">
+        <attvalues>
+          <attvalue for="0" value="41.5924755" />
+          <attvalue for="1" value="-83.8060041" />
+        </attvalues>
+      </node>
+      <node id="Iron Mountain/Kingsfd (MI)" label="Iron Mountain/Kingsfd (MI)">
+        <attvalues>
+          <attvalue for="0" value="45.8145175" />
+          <attvalue for="1" value="-88.0546147" />
+        </attvalues>
+      </node>
+      <node id="Pellston (MI)" label="Pellston (MI)">
+        <attvalues>
+          <attvalue for="0" value="45.5714903" />
+          <attvalue for="1" value="-84.7861834" />
+        </attvalues>
+      </node>
+      <node id="Lansing (MI)" label="Lansing (MI)">
+        <attvalues>
+          <attvalue for="0" value="42.7750893" />
+          <attvalue for="1" value="-84.5892334" />
+        </attvalues>
+      </node>
+      <node id="Cincinnati (OH)" label="Cincinnati (OH)">
+        <attvalues>
+          <attvalue for="0" value="39.1031182" />
+          <attvalue for="1" value="-84.5120196" />
+        </attvalues>
+      </node>
+      <node id="Kalamazoo (MI)" label="Kalamazoo (MI)">
+        <attvalues>
+          <attvalue for="0" value="42.2917069" />
+          <attvalue for="1" value="-85.5872286" />
+        </attvalues>
+      </node>
+      <node id="Rochester (MN)" label="Rochester (MN)">
+        <attvalues>
+          <attvalue for="0" value="43.1225229" />
+          <attvalue for="1" value="-77.6665722" />
+        </attvalues>
+      </node>
+      <node id="Dickinson (ND)" label="Dickinson (ND)">
+        <attvalues>
+          <attvalue for="0" value="46.8016664" />
+          <attvalue for="1" value="-102.7928843" />
+        </attvalues>
+      </node>
+      <node id="Milwaukee (WI)" label="Milwaukee (WI)">
+        <attvalues>
+          <attvalue for="0" value="42.9475534" />
+          <attvalue for="1" value="-87.896646" />
+        </attvalues>
+      </node>
+      <node id="Kansas City (MO)" label="Kansas City (MO)">
+        <attvalues>
+          <attvalue for="0" value="39.3006427" />
+          <attvalue for="1" value="-94.7125937" />
+        </attvalues>
+      </node>
+      <node id="Saginaw/Bay City/Midland (MI)" label="Saginaw/Bay City/Midland (MI)">
+        <attvalues>
+          <attvalue for="0" value="43.5328989" />
+          <attvalue for="1" value="-84.0850766" />
+        </attvalues>
+      </node>
+      <node id="Columbus (OH)" label="Columbus (OH)">
+        <attvalues>
+          <attvalue for="0" value="39.9611755" />
+          <attvalue for="1" value="-82.9987942" />
+        </attvalues>
+      </node>
+      <node id="Marquette (MI)" label="Marquette (MI)">
+        <attvalues>
+          <attvalue for="0" value="46.3497071" />
+          <attvalue for="1" value="-87.3874449" />
+        </attvalues>
+      </node>
+      <node id="Sioux City (IA)" label="Sioux City (IA)">
+        <attvalues>
+          <attvalue for="0" value="42.4025" />
+          <attvalue for="1" value="-96.384167" />
+        </attvalues>
+      </node>
+      <node id="Devils Lake (ND)" label="Devils Lake (ND)">
+        <attvalues>
+          <attvalue for="0" value="48.112779" />
+          <attvalue for="1" value="-98.8651202" />
+        </attvalues>
+      </node>
+      <node id="Chicago (IL) [Midway]" label="Chicago (IL) [Midway]">
+        <attvalues>
+          <attvalue for="0" value="41.7867759" />
+          <attvalue for="1" value="-87.7521884" />
+        </attvalues>
+      </node>
+      <node id="St. Louis (MO)" label="St. Louis (MO)">
+        <attvalues>
+          <attvalue for="0" value="38.7431329" />
+          <attvalue for="1" value="-90.3650945" />
+        </attvalues>
+      </node>
+      <node id="Fort Wayne (IN)" label="Fort Wayne (IN)">
+        <attvalues>
+          <attvalue for="0" value="40.9864749" />
+          <attvalue for="1" value="-85.1879222" />
+        </attvalues>
+      </node>
+      <node id="Alpena (MI)" label="Alpena (MI)">
+        <attvalues>
+          <attvalue for="0" value="45.0616794" />
+          <attvalue for="1" value="-83.4327528" />
+        </attvalues>
+      </node>
+      <node id="Garden City (KS)" label="Garden City (KS)">
+        <attvalues>
+          <attvalue for="0" value="37.9268913" />
+          <attvalue for="1" value="-100.7198703" />
+        </attvalues>
+      </node>
+      <node id="Sault Ste. Marie (MI)" label="Sault Ste. Marie (MI)">
+        <attvalues>
+          <attvalue for="0" value="46.2577577" />
+          <attvalue for="1" value="-84.4744174" />
+        </attvalues>
+      </node>
+      <node id="Springfield (MO)" label="Springfield (MO)">
+        <attvalues>
+          <attvalue for="0" value="37.238077" />
+          <attvalue for="1" value="-93.397096" />
+        </attvalues>
+      </node>
+      <node id="Omaha (NE)" label="Omaha (NE)">
+        <attvalues>
+          <attvalue for="0" value="41.299734" />
+          <attvalue for="1" value="-95.8994865" />
+        </attvalues>
+      </node>
+      <node id="Springfield (IL)" label="Springfield (IL)">
+        <attvalues>
+          <attvalue for="0" value="39.844101" />
+          <attvalue for="1" value="-89.6779022" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Rapid City (SD)" target="Minneapolis (MN)" weight="1493" />
+      <edge id="1" source="Rapid City (SD)" target="Chicago (IL) [O'Hare]" weight="200" />
+      <edge id="2" source="Evansville (IN)" target="Chicago (IL) [O'Hare]" weight="1193" />
+      <edge id="3" source="Evansville (IN)" target="Detroit (MI)" weight="735" />
+      <edge id="4" source="Manhattan/Ft. Riley (KS)" target="Chicago (IL) [O'Hare]" weight="121" />
+      <edge id="5" source="La Crosse (WI)" target="Minneapolis (MN)" weight="808" />
+      <edge id="6" source="La Crosse (WI)" target="Chicago (IL) [O'Hare]" weight="188" />
+      <edge id="7" source="Akron (OH)" target="Chicago (IL) [O'Hare]" weight="1346" />
+      <edge id="8" source="Akron (OH)" target="Detroit (MI)" weight="368" />
+      <edge id="9" source="Williston (ND)" target="Minneapolis (MN)" weight="740" />
+      <edge id="10" source="Aberdeen (SD)" target="Minneapolis (MN)" weight="742" />
+      <edge id="11" source="Mosinee (WI)" target="Chicago (IL) [O'Hare]" weight="829" />
+      <edge id="12" source="Mosinee (WI)" target="Detroit (MI)" weight="26" />
+      <edge id="13" source="Mosinee (WI)" target="Minneapolis (MN)" weight="105" />
+      <edge id="14" source="Flint (MI)" target="Minneapolis (MN)" weight="499" />
+      <edge id="15" source="Flint (MI)" target="Chicago (IL) [Midway]" weight="579" />
+      <edge id="16" source="Flint (MI)" target="Chicago (IL) [O'Hare]" weight="1064" />
+      <edge id="17" source="Wichita (KS)" target="Minneapolis (MN)" weight="591" />
+      <edge id="18" source="Wichita (KS)" target="Chicago (IL) [Midway]" weight="293" />
+      <edge id="19" source="Wichita (KS)" target="Chicago (IL) [O'Hare]" weight="2313" />
+      <edge id="20" source="Wichita (KS)" target="St. Louis (MO)" weight="376" />
+      <edge id="21" source="Grand Forks (ND)" target="Minneapolis (MN)" weight="1464" />
+      <edge id="22" source="Dayton (OH)" target="Minneapolis (MN)" weight="546" />
+      <edge id="23" source="Dayton (OH)" target="Chicago (IL) [Midway]" weight="579" />
+      <edge id="24" source="Dayton (OH)" target="Chicago (IL) [O'Hare]" weight="1620" />
+      <edge id="25" source="Dayton (OH)" target="Detroit (MI)" weight="549" />
+      <edge id="26" source="Eau Claire (WI)" target="Chicago (IL) [O'Hare]" weight="694" />
+      <edge id="27" source="Duluth (MN)" target="Minneapolis (MN)" weight="1268" />
+      <edge id="28" source="Duluth (MN)" target="Chicago (IL) [O'Hare]" weight="1214" />
+      <edge id="29" source="Cleveland (OH)" target="St. Louis (MO)" weight="408" />
+      <edge id="30" source="Cleveland (OH)" target="Chicago (IL) [O'Hare]" weight="3091" />
+      <edge id="31" source="Cleveland (OH)" target="Milwaukee (WI)" weight="591" />
+      <edge id="32" source="Cleveland (OH)" target="Chicago (IL) [Midway]" weight="1908" />
+      <edge id="33" source="Cleveland (OH)" target="Minneapolis (MN)" weight="896" />
+      <edge id="34" source="Cleveland (OH)" target="Detroit (MI)" weight="927" />
+      <edge id="35" source="Fargo (ND)" target="Minneapolis (MN)" weight="1765" />
+      <edge id="36" source="Fargo (ND)" target="Chicago (IL) [O'Hare]" weight="1413" />
+      <edge id="37" source="International Falls (MN)" target="Minneapolis (MN)" weight="263" />
+      <edge id="38" source="International Falls (MN)" target="Hibbing (MN)" weight="365" />
+      <edge id="39" source="Madison (WI)" target="Minneapolis (MN)" weight="1341" />
+      <edge id="40" source="Madison (WI)" target="Chicago (IL) [O'Hare]" weight="2183" />
+      <edge id="41" source="Madison (WI)" target="Detroit (MI)" weight="1540" />
+      <edge id="42" source="Moline (IL)" target="Minneapolis (MN)" weight="240" />
+      <edge id="43" source="Moline (IL)" target="Chicago (IL) [O'Hare]" weight="728" />
+      <edge id="44" source="Moline (IL)" target="Detroit (MI)" weight="444" />
+      <edge id="45" source="South Bend (IN)" target="Chicago (IL) [O'Hare]" weight="1327" />
+      <edge id="46" source="South Bend (IN)" target="Detroit (MI)" weight="1482" />
+      <edge id="47" source="South Bend (IN)" target="Minneapolis (MN)" weight="642" />
+      <edge id="48" source="Detroit (MI)" target="Traverse City (MI)" weight="1010" />
+      <edge id="49" source="Detroit (MI)" target="Omaha (NE)" weight="890" />
+      <edge id="50" source="Detroit (MI)" target="Chicago (IL) [Midway]" weight="2688" />
+      <edge id="51" source="Detroit (MI)" target="Kansas City (MO)" weight="1599" />
+      <edge id="52" source="Detroit (MI)" target="Escanaba (MI)" weight="627" />
+      <edge id="53" source="Detroit (MI)" target="Pellston (MI)" weight="762" />
+      <edge id="54" source="Detroit (MI)" target="Green Bay (WI)" weight="785" />
+      <edge id="55" source="Detroit (MI)" target="Minneapolis (MN)" weight="2945" />
+      <edge id="56" source="Detroit (MI)" target="Indianapolis (IN)" weight="899" />
+      <edge id="57" source="Detroit (MI)" target="Des Moines (IA)" weight="229" />
+      <edge id="58" source="Detroit (MI)" target="Bloomington/Normal (IL)" weight="128" />
+      <edge id="59" source="Detroit (MI)" target="Grand Rapids (MI)" weight="1385" />
+      <edge id="60" source="Detroit (MI)" target="Milwaukee (WI)" weight="1975" />
+      <edge id="61" source="Detroit (MI)" target="Cedar Rapids/Iowa City (IA)" weight="796" />
+      <edge id="62" source="Detroit (MI)" target="St. Louis (MO)" weight="1673" />
+      <edge id="63" source="Detroit (MI)" target="Chicago (IL) [O'Hare]" weight="4188" />
+      <edge id="64" source="Detroit (MI)" target="Peoria (IL)" weight="551" />
+      <edge id="65" source="Detroit (MI)" target="Lansing (MI)" weight="975" />
+      <edge id="66" source="Detroit (MI)" target="Appleton (WI)" weight="697" />
+      <edge id="67" source="Detroit (MI)" target="Marquette (MI)" weight="603" />
+      <edge id="68" source="Detroit (MI)" target="Kalamazoo (MI)" weight="812" />
+      <edge id="69" source="Detroit (MI)" target="Fort Wayne (IN)" weight="1184" />
+      <edge id="70" source="Detroit (MI)" target="Alpena (MI)" weight="425" />
+      <edge id="71" source="Detroit (MI)" target="Saginaw/Bay City/Midland (MI)" weight="758" />
+      <edge id="72" source="Detroit (MI)" target="Sault Ste. Marie (MI)" weight="678" />
+      <edge id="73" source="Detroit (MI)" target="Cincinnati (OH)" weight="476" />
+      <edge id="74" source="Detroit (MI)" target="Columbus (OH)" weight="527" />
+      <edge id="75" source="Rhinelander (WI)" target="Minneapolis (MN)" weight="731" />
+      <edge id="76" source="Rhinelander (WI)" target="Iron Mountain/Kingsfd (MI)" weight="313" />
+      <edge id="77" source="Peoria (IL)" target="Minneapolis (MN)" weight="282" />
+      <edge id="78" source="Peoria (IL)" target="Chicago (IL) [O'Hare]" weight="1259" />
+      <edge id="79" source="Bismarck/Mandan (ND)" target="Minneapolis (MN)" weight="1348" />
+      <edge id="80" source="Bismarck/Mandan (ND)" target="Chicago (IL) [O'Hare]" weight="60" />
+      <edge id="81" source="Bloomington/Normal (IL)" target="Minneapolis (MN)" weight="337" />
+      <edge id="82" source="Bloomington/Normal (IL)" target="Chicago (IL) [O'Hare]" weight="194" />
+      <edge id="83" source="Champaign/Urbana (IL)" target="Chicago (IL) [O'Hare]" weight="368" />
+      <edge id="84" source="Chicago (IL) [O'Hare]" target="Traverse City (MI)" weight="932" />
+      <edge id="85" source="Chicago (IL) [O'Hare]" target="Cedar Rapids/Iowa City (IA)" weight="1398" />
+      <edge id="86" source="Chicago (IL) [O'Hare]" target="Kansas City (MO)" weight="1810" />
+      <edge id="87" source="Chicago (IL) [O'Hare]" target="Hancock/Houghton (MI)" weight="738" />
+      <edge id="88" source="Chicago (IL) [O'Hare]" target="Green Bay (WI)" weight="1634" />
+      <edge id="89" source="Chicago (IL) [O'Hare]" target="Sioux Falls (SD)" weight="1485" />
+      <edge id="90" source="Chicago (IL) [O'Hare]" target="Minneapolis (MN)" weight="7492" />
+      <edge id="91" source="Chicago (IL) [O'Hare]" target="Des Moines (IA)" weight="1633" />
+      <edge id="92" source="Chicago (IL) [O'Hare]" target="Indianapolis (IN)" weight="1569" />
+      <edge id="93" source="Chicago (IL) [O'Hare]" target="Columbia (MO)" weight="120" />
+      <edge id="94" source="Chicago (IL) [O'Hare]" target="Dubuque (IA)" weight="172" />
+      <edge id="95" source="Chicago (IL) [O'Hare]" target="Lincoln (NE)" weight="1035" />
+      <edge id="96" source="Chicago (IL) [O'Hare]" target="Muskegon (MI)" weight="693" />
+      <edge id="97" source="Chicago (IL) [O'Hare]" target="Grand Rapids (MI)" weight="1424" />
+      <edge id="98" source="Chicago (IL) [O'Hare]" target="Milwaukee (WI)" weight="4999" />
+      <edge id="99" source="Chicago (IL) [O'Hare]" target="Omaha (NE)" weight="1273" />
+      <edge id="100" source="Chicago (IL) [O'Hare]" target="Springfield (IL)" weight="1091" />
+      <edge id="101" source="Chicago (IL) [O'Hare]" target="Toledo (OH)" weight="169" />
+      <edge id="102" source="Chicago (IL) [O'Hare]" target="Lansing (MI)" weight="968" />
+      <edge id="103" source="Chicago (IL) [O'Hare]" target="Rochester (MN)" weight="251" />
+      <edge id="104" source="Chicago (IL) [O'Hare]" target="Appleton (WI)" weight="1345" />
+      <edge id="105" source="Chicago (IL) [O'Hare]" target="Columbus (OH)" weight="1668" />
+      <edge id="106" source="Chicago (IL) [O'Hare]" target="Marquette (MI)" weight="52" />
+      <edge id="107" source="Chicago (IL) [O'Hare]" target="Kalamazoo (MI)" weight="1130" />
+      <edge id="108" source="Chicago (IL) [O'Hare]" target="Sioux City (IA)" weight="113" />
+      <edge id="109" source="Chicago (IL) [O'Hare]" target="St. Louis (MO)" weight="2739" />
+      <edge id="110" source="Chicago (IL) [O'Hare]" target="Fort Wayne (IN)" weight="1354" />
+      <edge id="111" source="Chicago (IL) [O'Hare]" target="Waterloo (IA)" weight="113" />
+      <edge id="112" source="Chicago (IL) [O'Hare]" target="Saginaw/Bay City/Midland (MI)" weight="1037" />
+      <edge id="113" source="Chicago (IL) [O'Hare]" target="Cincinnati (OH)" weight="2064" />
+      <edge id="114" source="Chicago (IL) [O'Hare]" target="Springfield (MO)" weight="1003" />
+      <edge id="115" source="Bemidji (MN)" target="Minneapolis (MN)" weight="731" />
+      <edge id="116" source="Jamestown (ND)" target="Devils Lake (ND)" weight="331" />
+      <edge id="117" source="Hibbing (MN)" target="Minneapolis (MN)" weight="626" />
+      <edge id="118" source="Green Bay (WI)" target="Minneapolis (MN)" weight="1008" />
+      <edge id="119" source="Sioux Falls (SD)" target="Minneapolis (MN)" weight="1263" />
+      <edge id="120" source="Minneapolis (MN)" target="Traverse City (MI)" weight="317" />
+      <edge id="121" source="Minneapolis (MN)" target="Dickinson (ND)" weight="55" />
+      <edge id="122" source="Minneapolis (MN)" target="Omaha (NE)" weight="1605" />
+      <edge id="123" source="Minneapolis (MN)" target="Kansas City (MO)" weight="2249" />
+      <edge id="124" source="Minneapolis (MN)" target="Iron Mountain/Kingsfd (MI)" weight="365" />
+      <edge id="125" source="Minneapolis (MN)" target="Minot (ND)" weight="1082" />
+      <edge id="126" source="Minneapolis (MN)" target="Indianapolis (IN)" weight="991" />
+      <edge id="127" source="Minneapolis (MN)" target="Brainerd (MN)" weight="640" />
+      <edge id="128" source="Minneapolis (MN)" target="Lincoln (NE)" weight="870" />
+      <edge id="129" source="Minneapolis (MN)" target="Des Moines (IA)" weight="372" />
+      <edge id="130" source="Minneapolis (MN)" target="Grand Rapids (MI)" weight="1562" />
+      <edge id="131" source="Minneapolis (MN)" target="Milwaukee (WI)" weight="2664" />
+      <edge id="132" source="Minneapolis (MN)" target="Cedar Rapids/Iowa City (IA)" weight="724" />
+      <edge id="133" source="Minneapolis (MN)" target="Pellston (MI)" weight="70" />
+      <edge id="134" source="Minneapolis (MN)" target="Lansing (MI)" weight="542" />
+      <edge id="135" source="Minneapolis (MN)" target="Rochester (MN)" weight="797" />
+      <edge id="136" source="Minneapolis (MN)" target="Appleton (WI)" weight="813" />
+      <edge id="137" source="Minneapolis (MN)" target="St. Louis (MO)" weight="2567" />
+      <edge id="138" source="Minneapolis (MN)" target="Kalamazoo (MI)" weight="234" />
+      <edge id="139" source="Minneapolis (MN)" target="Chicago (IL) [Midway]" weight="3099" />
+      <edge id="140" source="Minneapolis (MN)" target="Fort Wayne (IN)" weight="340" />
+      <edge id="141" source="Minneapolis (MN)" target="Saginaw/Bay City/Midland (MI)" weight="179" />
+      <edge id="142" source="Minneapolis (MN)" target="Cincinnati (OH)" weight="630" />
+      <edge id="143" source="Minneapolis (MN)" target="Columbus (OH)" weight="716" />
+      <edge id="144" source="Des Moines (IA)" target="Chicago (IL) [Midway]" weight="308" />
+      <edge id="145" source="Des Moines (IA)" target="St. Louis (MO)" weight="377" />
+      <edge id="146" source="Indianapolis (IN)" target="Kansas City (MO)" weight="674" />
+      <edge id="147" source="Indianapolis (IN)" target="Chicago (IL) [Midway]" weight="556" />
+      <edge id="148" source="Grand Rapids (MI)" target="Chicago (IL) [Midway]" weight="571" />
+      <edge id="149" source="Grand Rapids (MI)" target="St. Louis (MO)" weight="149" />
+      <edge id="150" source="Pellston (MI)" target="Alpena (MI)" weight="216" />
+      <edge id="151" source="Pellston (MI)" target="Sault Ste. Marie (MI)" weight="19" />
+      <edge id="152" source="Cincinnati (OH)" target="St. Louis (MO)" weight="60" />
+      <edge id="153" source="Cincinnati (OH)" target="Milwaukee (WI)" weight="360" />
+      <edge id="154" source="Cincinnati (OH)" target="Kansas City (MO)" weight="225" />
+      <edge id="155" source="Milwaukee (WI)" target="St. Louis (MO)" weight="485" />
+      <edge id="156" source="Milwaukee (WI)" target="Kansas City (MO)" weight="642" />
+      <edge id="157" source="Kansas City (MO)" target="St. Louis (MO)" weight="1321" />
+      <edge id="158" source="Kansas City (MO)" target="Chicago (IL) [Midway]" weight="2702" />
+      <edge id="159" source="Columbus (OH)" target="St. Louis (MO)" weight="647" />
+      <edge id="160" source="Columbus (OH)" target="Chicago (IL) [Midway]" weight="2026" />
+      <edge id="161" source="Chicago (IL) [Midway]" target="St. Louis (MO)" weight="2345" />
+      <edge id="162" source="Chicago (IL) [Midway]" target="Omaha (NE)" weight="1847" />
+      <edge id="163" source="St. Louis (MO)" target="Omaha (NE)" weight="955" />
+    </edges>
+  </graph>
+</gexf>
