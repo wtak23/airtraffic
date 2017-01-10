@@ -1,4 +1,8 @@
 
+.wy-side-nav-search > a {
+    fa-spotify
+}
+
 blockquote p {
     font-size: 14px !important;
 }
@@ -33,11 +37,13 @@ code {
     }
 }
 
+/* style on the "Contents" at each page */
 div.topic {
-    background-color: rgba(255, 153, 255,0.2);
+    /*background-color: rgba(255, 153, 255,0.2);*/
+    background-color: rgba(25, 25, 25,0.1);
     padding-left: 18px;
     padding-top: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 3px;
     border-radius: 8px;
     max-width:700px;
 }
@@ -117,3 +123,19 @@ table.dataframe td {
 /*table.dataframe tr:hover{background-color:#CCF6FF}*/
 table.dataframe tr:hover{background-color:rgba(0,128,255,0.1)}
 
+
+/* distinguish python code and output style */
+
+/* output part */
+div .highlight-python{
+    background-color:rgba(0,0,0,0.1);
+    /*background-color:#D6E9FC;*/
+    font-style: italic;
+    padding-left: 20px;
+}
+
+/* code part */
+div .code.highlight-python{
+    font-style: normal;
+    padding-left: 0px;
+}

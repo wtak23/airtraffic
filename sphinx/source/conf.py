@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, os.path.abspath('.'))
 
 # General information about the project.
-project = u'US Airtraffic Analysis'
+project = u'US Airport Traffic Analysis'
 author = u'Takanori Watanabe'
 
 # -- General configuration ------------------------------------------------
@@ -172,6 +172,7 @@ html_last_updated_fmt = ''
 
 html_show_sphinx = False
 html_show_copyright = False
+html_show_sourcelink = True
 
 # Output file base name for HTML help builder.
 # htmlhelp_basename = 'PROJECT_NAME'

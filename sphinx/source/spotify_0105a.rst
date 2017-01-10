@@ -1,6 +1,13 @@
+Study ``carriers.xls`` and ``airports new.xlt``
+"""""""""""""""""""""""""""""""""""""""""""""""
 
-spotify_0105a.rst
-"""""""""""""""""
+Preliminary data analysis with the spreadsheets ``carriers.xls`` and ``airports new.xlt``.
+
+The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/draft_scripts/spotify_0105a.ipynb>`__ .
+
+.. contents:: `Contents`
+   :depth: 2
+   :local:
 
 .. code:: python
 
@@ -9,13 +16,13 @@ spotify_0105a.rst
     import matplotlib.pyplot as plt
     from pprint import pprint
     import os
-    os.getcwd()
+    import plotly.plotly as py
     
     from geopy.geocoders import Nominatim
     geolocator = Nominatim()
     
     # limit output to avoid cluttering screen
-    pd.options.display.max_rows = 20
+    pd.options.display.max_rows = 10
 
 
 Study the "carrier" spreadsheet
@@ -75,29 +82,9 @@ Study the "carrier" spreadsheet
           <td>NaN</td>
         </tr>
         <tr>
-          <th>5</th>
-          <td>05Q</td>
-          <td>Comlux Aviation, AG</td>
-        </tr>
-        <tr>
-          <th>6</th>
-          <td>NaN</td>
-          <td>NaN</td>
-        </tr>
-        <tr>
-          <th>7</th>
-          <td>06Q</td>
-          <td>Master Top Linhas Aereas Ltd.</td>
-        </tr>
-        <tr>
-          <th>8</th>
-          <td>NaN</td>
-          <td>NaN</td>
-        </tr>
-        <tr>
-          <th>9</th>
-          <td>07Q</td>
-          <td>Flair Airlines Ltd.</td>
+          <th>...</th>
+          <td>...</td>
+          <td>...</td>
         </tr>
         <tr>
           <th>10</th>
@@ -126,6 +113,7 @@ Study the "carrier" spreadsheet
         </tr>
       </tbody>
     </table>
+    <p>15 rows × 2 columns</p>
     </div>
 
 
@@ -178,59 +166,9 @@ sort out the "nan" values
           <td>True</td>
         </tr>
         <tr>
-          <th>5</th>
-          <td>False</td>
-          <td>False</td>
-        </tr>
-        <tr>
-          <th>6</th>
-          <td>True</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>7</th>
-          <td>False</td>
-          <td>False</td>
-        </tr>
-        <tr>
-          <th>8</th>
-          <td>True</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>9</th>
-          <td>False</td>
-          <td>False</td>
-        </tr>
-        <tr>
           <th>...</th>
           <td>...</td>
           <td>...</td>
-        </tr>
-        <tr>
-          <th>2972</th>
-          <td>True</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>2973</th>
-          <td>False</td>
-          <td>False</td>
-        </tr>
-        <tr>
-          <th>2974</th>
-          <td>True</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>2975</th>
-          <td>False</td>
-          <td>False</td>
-        </tr>
-        <tr>
-          <th>2976</th>
-          <td>True</td>
-          <td>True</td>
         </tr>
         <tr>
           <th>2977</th>
@@ -469,29 +407,29 @@ What's the deal with the (1) appended to some of the entries?
       </thead>
       <tbody>
         <tr>
+          <th>34</th>
+          <td>4E (1)</td>
+          <td>British Airtours Limited</td>
+        </tr>
+        <tr>
+          <th>37</th>
+          <td>4M (1)</td>
+          <td>Lan Dominica</td>
+        </tr>
+        <tr>
+          <th>41</th>
+          <td>4S (1)</td>
+          <td>Conner Air Lines Inc.</td>
+        </tr>
+        <tr>
+          <th>50</th>
+          <td>5G (1)</td>
+          <td>Queen Air</td>
+        </tr>
+        <tr>
           <th>66</th>
           <td>7G (1)</td>
           <td>Bellair Inc. (1)</td>
-        </tr>
-        <tr>
-          <th>130</th>
-          <td>ACT</td>
-          <td>Air Central Inc. (1)</td>
-        </tr>
-        <tr>
-          <th>231</th>
-          <td>ASU</td>
-          <td>Air South (1)</td>
-        </tr>
-        <tr>
-          <th>292</th>
-          <td>BHQ</td>
-          <td>Turks Air Ltd. (1)</td>
-        </tr>
-        <tr>
-          <th>407</th>
-          <td>CSN</td>
-          <td>Casino Airlines (1)</td>
         </tr>
       </tbody>
     </table>
@@ -602,59 +540,9 @@ What's the deal with the (1) appended to some of the entries?
           <td>Sol Air (Aero Hunduras)</td>
         </tr>
         <tr>
-          <th>41</th>
-          <td>4S (1)</td>
-          <td>Conner Air Lines Inc.</td>
-        </tr>
-        <tr>
-          <th>49</th>
-          <td>5G</td>
-          <td>Skyservice Airlines, Inc.</td>
-        </tr>
-        <tr>
-          <th>50</th>
-          <td>5G (1)</td>
-          <td>Queen Air</td>
-        </tr>
-        <tr>
-          <th>65</th>
-          <td>7G</td>
-          <td>MK Airlines Ltd.</td>
-        </tr>
-        <tr>
-          <th>66</th>
-          <td>7G (1)</td>
-          <td>Bellair Inc. (1)</td>
-        </tr>
-        <tr>
           <th>...</th>
           <td>...</td>
           <td>...</td>
-        </tr>
-        <tr>
-          <th>1348</th>
-          <td>VX</td>
-          <td>Virgin America</td>
-        </tr>
-        <tr>
-          <th>1349</th>
-          <td>VX (1)</td>
-          <td>Aces Airlines</td>
-        </tr>
-        <tr>
-          <th>1355</th>
-          <td>WA</td>
-          <td>Worldwide Airlines Services</td>
-        </tr>
-        <tr>
-          <th>1356</th>
-          <td>WA (1)</td>
-          <td>Western Air Lines Inc.</td>
-        </tr>
-        <tr>
-          <th>1395</th>
-          <td>WS</td>
-          <td>Westjet</td>
         </tr>
         <tr>
           <th>1396</th>
@@ -733,59 +621,9 @@ What's the deal with the (1) appended to some of the entries?
           <td>Astro Airways</td>
         </tr>
         <tr>
-          <th>231</th>
-          <td>ASU</td>
-          <td>Air South (1)</td>
-        </tr>
-        <tr>
-          <th>291</th>
-          <td>BHO</td>
-          <td>Bighorn Airways Inc.</td>
-        </tr>
-        <tr>
-          <th>292</th>
-          <td>BHQ</td>
-          <td>Turks Air Ltd. (1)</td>
-        </tr>
-        <tr>
-          <th>406</th>
-          <td>CSM</td>
-          <td>Chisum Flying Service</td>
-        </tr>
-        <tr>
-          <th>407</th>
-          <td>CSN</td>
-          <td>Casino Airlines (1)</td>
-        </tr>
-        <tr>
           <th>...</th>
           <td>...</td>
           <td>...</td>
-        </tr>
-        <tr>
-          <th>1062</th>
-          <td>RC</td>
-          <td>Republic Airlines Inc.</td>
-        </tr>
-        <tr>
-          <th>1063</th>
-          <td>RCA</td>
-          <td>Mid-South Aviation Inc. (1)</td>
-        </tr>
-        <tr>
-          <th>1092</th>
-          <td>ROE</td>
-          <td>Roederer Aviation Inc.</td>
-        </tr>
-        <tr>
-          <th>1093</th>
-          <td>ROQ</td>
-          <td>Aero Uruguay (1)</td>
-        </tr>
-        <tr>
-          <th>1304</th>
-          <td>UP</td>
-          <td>Bahamasair Holding Limited</td>
         </tr>
         <tr>
           <th>1305</th>
@@ -1093,24 +931,14 @@ Study nans
           <td>-103.103567</td>
         </tr>
         <tr>
-          <th>2759</th>
-          <td>RDR</td>
-          <td>Grand Forks AFB</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>USA</td>
-          <td>47.961167</td>
-          <td>-97.401167</td>
-        </tr>
-        <tr>
-          <th>2794</th>
-          <td>ROP</td>
-          <td>Prachinburi</td>
-          <td>NaN</td>
-          <td>NaN</td>
-          <td>Thailand</td>
-          <td>14.078333</td>
-          <td>101.378334</td>
+          <th>...</th>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
         </tr>
         <tr>
           <th>2795</th>
@@ -1164,6 +992,7 @@ Study nans
         </tr>
       </tbody>
     </table>
+    <p>12 rows × 7 columns</p>
     </div>
 
 
@@ -1311,13 +1140,10 @@ Study "airports" state distribution
     # define data/trace object
     trace = dict(
             type='choropleth',
-            #colorscale = scl,
-            #autocolorscale = False,
             autocolorscale = True,
             locations = df_state['state'],
             z = df_state['counts'],
             locationmode = 'USA-states',
-            #text = df['text'],
             marker = dict(line = dict (color = 'rgb(255,255,255)',width = 2) ),
             colorbar = dict(title = "counts")
     )
@@ -1328,23 +1154,25 @@ Study "airports" state distribution
                projection=dict( type='albers usa' ),
                showlakes = True,
                lakecolor = 'rgb(255, 255, 255)')
-    layout = dict(geo=geo,title = 'State Frequency chart (hover over for number)')
+    layout = dict(geo=geo,
+                  margin = dict(b=0,l=0,r=0,t=40),
+                  title = 'State Frequency chart (hover over for number)')
     
     fig = dict( data=data, layout=layout )
     # py.iplot( fig, filename='d3-cloropleth-map' )
     
-    import plotly.plotly as py
+    
 
 .. code:: python
 
-    py.iplot( fig, filename='spotify-tmp1', sharing = 'secret')
+    py.iplot( fig, filename='spotify-tmp1')
 
 
 
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1345.embed?share_key=HXSygiLDpJTyDMXMN7lIa6" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1345.embed?share_key=HXSygiLDpJTyDMXMN7lIa6&link=false" height="525px" width="100%"></iframe>
 
 
 
@@ -1380,6 +1208,7 @@ This will give an idea of the airport distribution around the country
     layout = dict(
             title = 'Airports in the United States<br>(Scroll mouse to zoom)',
             colorbar = True,   
+            margin = dict(b=0,l=0,r=0,t=40),
             geo = dict(
                 scope='usa',
                 projection=dict( type='albers usa' ),
@@ -1389,27 +1218,30 @@ This will give an idea of the airport distribution around the country
         )
     
     fig = dict( data=data, layout=layout )
-    py.iplot( fig, filename='spotify-tmp2', sharing = 'secret',validate=False)
+    py.iplot( fig, filename='spotify-tmp2',validate=False)
 
 
 
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1349.embed?share_key=lPM6X5p9K50zOVqNgTUPqg" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1349.embed?link=false&share_key=lPM6X5p9K50zOVqNgTUPqg" height="525px" width="100%"></iframe>
 
 
 
-**Some personal remarks** - airport-density is high in the Northeastern
-regions, which was expected, as these are economically developed and
-densely populated region. - airport-density in the Western area is low
-outside of California, which was again expected. - I did not expect
-there are
+**Some personal remarks**
+
+-  airport-density is high in the Northeastern regions, which was
+   expected, as these are economically developed and densely populated
+   region.
+
+-  airport-density in the Western area is low outside of California,
+   which was again expected.
+
+-  I did not expect that there are so many airports in Alaska!
 
 Take a closer look at Michigan, my home state
 ---------------------------------------------
-
--  https://plot.ly/python/bubble-maps/
 
 .. code:: python
 
@@ -1501,15 +1333,16 @@ Take a closer look at Michigan, my home state
     data[0]['text'] = df_mi['airport'] + ' ' + df_mi['city']
     
     layout['title'] = 'Airports in Michigan<br>(Hover for airport names. Mouse scroll to zoom, right-click to pan)'
+    layout['geo']['projection']['scale'] = 2
     
     fig = dict( data=data, layout=layout )
-    py.iplot( fig, filename='spotify-tmp3', sharing = 'secret',validate=False)
+    py.iplot( fig, filename='spotify-tmp3', validate=False)
 
 
 
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1351.embed?share_key=boE8CXijf20MKcLBq8PbW9" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1351.embed?link=false&share_key=boE8CXijf20MKcLBq8PbW9&link=false" height="525px" width="100%"></iframe>
 
 
