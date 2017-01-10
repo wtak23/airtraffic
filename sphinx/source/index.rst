@@ -12,6 +12,7 @@ US Airport Traffic Analysis
    :caption: Table of Contents
 
    spotify_0105a
+   create_lookup_table.rst
    test
 
 

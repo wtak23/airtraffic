@@ -72,8 +72,6 @@ swap = lambda x: (x[1],x[0])
 for i in cnt_pairs3.index:
     cnt_pairs3[i] = min(cnt_pairs2[i], cnt_pairs2[swap(i)])
 #%% === well that was a lot of work...let's define a function to achieve this
-def get_roundtrips(
-
 #%% networkx plots?
 import networkx as nx
 

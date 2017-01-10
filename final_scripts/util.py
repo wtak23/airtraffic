@@ -76,11 +76,17 @@ def sns_subplots(nrows,ncols,style='darkgrid',ravel=True,**kwargs):
         axes = axes.ravel()
     return fig,axes
     
-    #%%
-
-    #%%
+def sns_set_colorpalette():
+    """ Set seaborn plotting  to my preferred style """
+    tmp = sns.color_palette("muted")
+    
+    # swap red and green
+    tmp[1],tmp[2] = tmp[2],tmp[1]
+    
+    sns.set_palette(tmp)
+    
 #%% === data loader ====
-def load_airport_data():
+def load_airport_data(verbose=True):
     """ Load one year worth of airport traffic data (2015-11 to 2016-10) """
     df = None
     
@@ -90,19 +96,22 @@ def load_airport_data():
     full_files = map(lambda x: '2015-'+str(x).rjust(2,'0')+'.zip', [11,12]) + \
                  map(lambda x: '2016-'+str(x).rjust(2,'0')+'.zip', range(1,11))
     
+    # columns to read from zipped spreadsheet
+    usecols = ['YEAR','QUARTER','MONTH','DAY_OF_MONTH','DAY_OF_WEEK',
+               'ORIGIN_AIRPORT_ID','DEST_AIRPORT_ID']
+               
+    df = None
     for filename in full_files:
-        print ' ... load dataframe from {} '.format(filename)
+        if verbose: print ' ... load dataframe from {} '.format(filename)
         if df is None:
-            df = pd.read_csv('../data/'+filename).ix[:,:-1]
+            df = pd.read_csv('../data/'+filename,usecols=usecols)
         else:
-            df = df.append(pd.read_csv('../data/'+filename).ix[:,:-1])
+            df = df.append(pd.read_csv('../data/'+filename,usecols=usecols))
 
     return df
     
-def load_airport_data_3years():
+def load_airport_data_3years(verbose=True):
     """ Load 3 years worth of airport traffic data (2013-11 to 2016-10) """
-    df = None
-    
     # create list of files.
     # rjust prepends '0' if month has single-digit
     # ( so '1' gets mapped to '01', whereas '11' remains as is)
@@ -111,14 +120,101 @@ def load_airport_data_3years():
                  map(lambda x: '2015-'+str(x).rjust(2,'0')+'.zip', range(1,13)) + \
                  map(lambda x: '2016-'+str(x).rjust(2,'0')+'.zip', range(1,11))
     
+    # columns to read from zipped spreadsheet
+    usecols = ['YEAR','QUARTER','MONTH','DAY_OF_MONTH','DAY_OF_WEEK',
+               'ORIGIN_AIRPORT_ID','DEST_AIRPORT_ID']
+               
+    df = None
     for filename in full_files:
-        #print ' ... load dataframe from {} '.format(filename)
+        if verbose: print ' ... load dataframe from {} '.format(filename)
         if df is None:
-            df = pd.read_csv('../data/'+filename).ix[:,:-1]
+            df = pd.read_csv('../data/'+filename,usecols=usecols)
         else:
-            df = df.append(pd.read_csv('../data/'+filename).ix[:,:-1])
+            df = df.append(pd.read_csv('../data/'+filename,usecols=usecols))
 
     return df
+#%% === other utility functions ===
+def print_time(t):
+    """ Return string indicating times elapsed wrt a time.time() instance
+
+    Usage: 
+    
+    >>> import time
+    >>> t = time.time()
+    >>> time.sleep(2.5)
+    >>> print_time(t)
+    'Elapsed time:  2.50 seconds'
+    
+    Parameters
+    ----------
+    t : time object
+        Instance of the time.time() object
+        
+    Returns
+    -------
+    time_str : string
+        String with elapsed time
+    """
+    return "Elapsed time: {:>5.2f} seconds".format(time.time()-t)
+#%%
+def hash_state_to_abbrev():
+    """ Return a hash-table mapping state name to its abbreviation.
+    
+    Credit: https://gist.github.com/rogerallen/1583593
+    """
+    return {
+        'Alabama': 'AL',
+        'Alaska': 'AK',
+        'Arizona': 'AZ',
+        'Arkansas': 'AR',
+        'California': 'CA',
+        'Colorado': 'CO',
+        'Connecticut': 'CT',
+        'Delaware': 'DE',
+        'District of Columbia': 'DC',
+        'Florida': 'FL',
+        'Georgia': 'GA',
+        'Hawaii': 'HI',
+        'Idaho': 'ID',
+        'Illinois': 'IL',
+        'Indiana': 'IN',
+        'Iowa': 'IA',
+        'Kansas': 'KS',
+        'Kentucky': 'KY',
+        'Louisiana': 'LA',
+        'Maine': 'ME',
+        'Maryland': 'MD',
+        'Massachusetts': 'MA',
+        'Michigan': 'MI',
+        'Minnesota': 'MN',
+        'Mississippi': 'MS',
+        'Missouri': 'MO',
+        'Montana': 'MT',
+        'Nebraska': 'NE',
+        'Nevada': 'NV',
+        'New Hampshire': 'NH',
+        'New Jersey': 'NJ',
+        'New Mexico': 'NM',
+        'New York': 'NY',
+        'North Carolina': 'NC',
+        'North Dakota': 'ND',
+        'Ohio': 'OH',
+        'Oklahoma': 'OK',
+        'Oregon': 'OR',
+        'Pennsylvania': 'PA',
+        'Rhode Island': 'RI',
+        'South Carolina': 'SC',
+        'South Dakota': 'SD',
+        'Tennessee': 'TN',
+        'Texas': 'TX',
+        'Utah': 'UT',
+        'Vermont': 'VT',
+        'Virginia': 'VA',
+        'Washington': 'WA',
+        'West Virginia': 'WV',
+        'Wisconsin': 'WI',
+        'Wyoming': 'WY',
+    }
 #%%
 if __name__ == '__main__':
     df_data = load_airport_data()
