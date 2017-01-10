@@ -1,6 +1,8 @@
-
 spotify_0105a.rst
 """""""""""""""""
+Preliminary data analysis with the spreadsheets ``carriers.xls`` and ``airports new.xlt``.
+
+The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/draft_scripts/spotify_0105a.ipynb>`__ .
 
 .. code:: python
 
