@@ -1,0 +1,1128 @@
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1.2 Create Lookup Table</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="" href="index.html"/>
+        <link rel="up" title="1 Data munging (some elbow grease)" href="data_munging.html"/>
+        <link rel="next" title="1.3 Test" href="test.html"/>
+        <link rel="prev" title="1.1 Study carriers.xls and airports new.xlt" href="spotify_0105a.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="fa fa-spotify"> US Airport Traffic Analysis
+            
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="data_munging.html">1 Data munging (some elbow grease)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">1.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">1.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">1.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">1.1.1.2 Filter away nans from the DataFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">1.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">1.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">1.1.2 Study <em>airports</em> spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">1.1.2.1 Study nans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">1.1.2.2 Filter out non-USA airports</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">1.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">1.1.3.1 Plot bubble markers for all airports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">1.1.3.2 Take a closer look at Michigan, my home state</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">1.2 Create Lookup Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#aim-of-notebook">1.2.1 Aim of notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-the-main-airport-traffic-data">1.2.2 Load the main airport traffic data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-lookup-table-provided-by-bts">1.2.3 Load lookup table provided by BTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-enhanced-lookuptable">1.2.4 Create <em>enhanced</em> lookuptable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#remove-code-that-is-not-present-our-dataset">1.2.4.1 Remove Code that is not present our dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parse-state-city-and-airport-name-from-description-field">1.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-state-region-information">1.2.4.3 Add state &#8216;region&#8217; information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-airport-latitude-and-longitude-information-using-google-geocoder">1.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">1.3 Test</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">US Airport Traffic Analysis</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+    <li>1.2 Create Lookup Table</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/create_lookup_table.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="create-lookup-table">
+<h1>1.2 Create Lookup Table</h1>
+<div class="section" id="aim-of-notebook">
+<h2>1.2.1 Aim of notebook</h2>
+<ul class="simple">
+<li>The [airport traffic
+dataset]((<a class="reference external" href="http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&amp;DB_Short_Name=On-Time">http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&amp;DB_Short_Name=On-Time</a>)
+encodes the airport with unique ID numbers.</li>
+<li>In this notebook, we&#8217;ll create an <em>enhanced lookup-table</em> by taking
+the lookup table provided by the BTS (<a class="reference external" href="http://www.transtats.bts.gov/Download_Lookup.asp?Lookup=L_AIRPORT_ID">download
+link</a>)
+and adding additional relevant information regarding the airport
+(such as latitude/longitutde info)</li>
+</ul>
+</div>
+<div class="section" id="load-the-main-airport-traffic-data">
+<h2>1.2.2 Load the main airport traffic data</h2>
+<ul class="simple">
+<li>Load 3 years worth of air-traffic data provided by BTS
+(<a class="reference external" href="http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&amp;DB_Short_Name=On-Time">link</a>)</li>
+<li>(from November 2013 to October 2016)</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">util</span> <span class="kn">import</span> <span class="n">load_airport_data</span>
+<span class="n">df_data</span> <span class="o">=</span> <span class="n">load_airport_data</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2015</span><span class="o">-</span><span class="mf">11.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2015</span><span class="o">-</span><span class="mf">12.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">01.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">02.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">03.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">04.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">05.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">06.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">07.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">08.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">09.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">10.</span><span class="n">zip</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="k">print</span> <span class="n">df_data</span><span class="o">.</span><span class="n">shape</span>
+<span class="n">df_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">5652973</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YEAR</th>
+      <th>QUARTER</th>
+      <th>MONTH</th>
+      <th>DAY_OF_MONTH</th>
+      <th>DAY_OF_WEEK</th>
+      <th>ORIGIN_AIRPORT_ID</th>
+      <th>DEST_AIRPORT_ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>4</td>
+      <td>3</td>
+      <td>14570</td>
+      <td>13930</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>5</td>
+      <td>4</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>6</td>
+      <td>5</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>7</td>
+      <td>6</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>8</td>
+      <td>7</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+<div class="section" id="load-lookup-table-provided-by-bts">
+<h2>1.2.3 Load lookup table provided by BTS</h2>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_lookup</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/L_AIRPORT_ID.csv&#39;</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">6409</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-enhanced-lookuptable">
+<h2>1.2.4 Create <em>enhanced</em> lookuptable</h2>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_lookup</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10001</td>
+      <td>Afognak Lake, AK: Afognak Lake Airport</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10003</td>
+      <td>Granite Mountain, AK: Bear Creek Mining Strip</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10004</td>
+      <td>Lik, AK: Lik Mining Camp</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10005</td>
+      <td>Little Squaw, AK: Little Squaw Airport</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10006</td>
+      <td>Kizhuyak, AK: Kizhuyak Bay</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10007</td>
+      <td>Klawock, AK: Klawock Seaplane Base</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>10008</td>
+      <td>Elizabeth Island, AK: Elizabeth Island Airport</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>10009</td>
+      <td>Homer, AK: Augustin Island</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>10010</td>
+      <td>Hudson, NY: Columbia County</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10011</td>
+      <td>Peach Springs, AZ: Grand Canyon West</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="section" id="remove-code-that-is-not-present-our-dataset">
+<h3>1.2.4.1 Remove Code that is not present our dataset</h3>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># unique ID&#39;s in the dataset</span>
+<span class="n">uniq_orig</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;ORIGIN_AIRPORT_ID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">uniq_dest</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;DEST_AIRPORT_ID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># apply ``set`` function to get unique items in concatenated list</span>
+<span class="n">uniq_id</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">uniq_orig</span> <span class="o">+</span> <span class="n">uniq_dest</span><span class="p">))</span>
+
+<span class="k">print</span> <span class="s2">&quot;There are {} Airport-Codes in the lookup table&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df_lookup</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span> <span class="s2">&quot;There are {} unique airport-codes in our dataset&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">uniq_id</span><span class="o">.</span><span class="n">__len__</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span>There are 6409 Airport-Codes in the lookup table
+There are 319 unique airport-codes in our dataset
+</pre></div>
+</div>
+<p>Let&#8217;s filter/drop the rows/records that we do not need in our analysis</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># only keep the items in the main dataframe</span>
+<span class="n">_mask</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span> <span class="n">uniq_id</span> <span class="p">)</span>
+<span class="n">df_lookup</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="p">[</span> <span class="n">_mask</span> <span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">shape</span>
+<span class="n">df_lookup</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">319</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10135</td>
+      <td>Allentown/Bethlehem/Easton, PA: Lehigh Valley ...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10136</td>
+      <td>Abilene, TX: Abilene Regional</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10140</td>
+      <td>Albuquerque, NM: Albuquerque International Sun...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10141</td>
+      <td>Aberdeen, SD: Aberdeen Regional</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10146</td>
+      <td>Albany, GA: Southwest Georgia Regional</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10154</td>
+      <td>Nantucket, MA: Nantucket Memorial</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>10155</td>
+      <td>Waco, TX: Waco Regional</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>10157</td>
+      <td>Arcata/Eureka, CA: Arcata</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>10158</td>
+      <td>Atlantic City, NJ: Atlantic City International</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10165</td>
+      <td>Adak Island, AK: Adak</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+<div class="section" id="parse-state-city-and-airport-name-from-description-field">
+<h3>1.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</h3>
+<ul class="simple">
+<li>Above we realize that the <code class="docutils literal"><span class="pre">Description</span></code> field contains information
+regarding the <em>city</em>, <em>state</em>, and <em>name</em> of the airport.</li>
+<li>Let&#8217;s create individual field for each information.</li>
+<li>Fortunately, the <code class="docutils literal"><span class="pre">Description</span></code> column uses a comma (<code class="docutils literal"><span class="pre">,</span></code>) and
+colon (<code class="docutils literal"><span class="pre">:</span></code>) to delimit the City, State, Airport-name information,
+so splitting these are is straightforward.</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># apply string &quot;split&quot; method to break information up</span>
+<span class="n">df_parse</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">splits</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;City&#39;</span><span class="p">:</span><span class="n">splits</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;State&#39;</span><span class="p">:</span><span class="n">splits</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span><span class="s1">&#39;Airport&#39;</span><span class="p">:</span><span class="n">splits</span><span class="p">[</span><span class="mi">4</span><span class="p">]},</span>
+               <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">r&#39;(,\s|:\s)&#39;</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="n">df_parse</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
+
+<span class="c1"># convert dict to dataframe</span>
+<span class="n">df_parse</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_parse</span><span class="p">)</span>
+<span class="n">df_parse</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="s1">&#39;Airport&#39;</span><span class="p">:</span> <span class="s1">&#39;Lehigh Valley International&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="s1">&#39;Allentown/Bethlehem/Easton&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;State&#39;</span><span class="p">:</span> <span class="s1">&#39;PA&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;Airport&#39;</span><span class="p">:</span> <span class="s1">&#39;Abilene Regional&#39;</span><span class="p">,</span> <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="s1">&#39;Abilene&#39;</span><span class="p">,</span> <span class="s1">&#39;State&#39;</span><span class="p">:</span> <span class="s1">&#39;TX&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;Airport&#39;</span><span class="p">:</span> <span class="s1">&#39;Albuquerque International Sunport&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="s1">&#39;Albuquerque&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;State&#39;</span><span class="p">:</span> <span class="s1">&#39;NM&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;Airport&#39;</span><span class="p">:</span> <span class="s1">&#39;Aberdeen Regional&#39;</span><span class="p">,</span> <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="s1">&#39;Aberdeen&#39;</span><span class="p">,</span> <span class="s1">&#39;State&#39;</span><span class="p">:</span> <span class="s1">&#39;SD&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;Airport&#39;</span><span class="p">:</span> <span class="s1">&#39;Southwest Georgia Regional&#39;</span><span class="p">,</span> <span class="s1">&#39;City&#39;</span><span class="p">:</span> <span class="s1">&#39;Albany&#39;</span><span class="p">,</span> <span class="s1">&#39;State&#39;</span><span class="p">:</span> <span class="s1">&#39;GA&#39;</span><span class="p">}]</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Airport</th>
+      <th>City</th>
+      <th>State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Lehigh Valley International</td>
+      <td>Allentown/Bethlehem/Easton</td>
+      <td>PA</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Abilene Regional</td>
+      <td>Abilene</td>
+      <td>TX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Albuquerque International Sunport</td>
+      <td>Albuquerque</td>
+      <td>NM</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Aberdeen Regional</td>
+      <td>Aberdeen</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Southwest Georgia Regional</td>
+      <td>Albany</td>
+      <td>GA</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># now we can readily add these information to our lookup table</span>
+<span class="n">df_lookup</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df_parse</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">shape</span>
+<span class="n">df_lookup</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">319</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Airport</th>
+      <th>City</th>
+      <th>State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10135</td>
+      <td>Allentown/Bethlehem/Easton, PA: Lehigh Valley ...</td>
+      <td>Lehigh Valley International</td>
+      <td>Allentown/Bethlehem/Easton</td>
+      <td>PA</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10136</td>
+      <td>Abilene, TX: Abilene Regional</td>
+      <td>Abilene Regional</td>
+      <td>Abilene</td>
+      <td>TX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10140</td>
+      <td>Albuquerque, NM: Albuquerque International Sun...</td>
+      <td>Albuquerque International Sunport</td>
+      <td>Albuquerque</td>
+      <td>NM</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10141</td>
+      <td>Aberdeen, SD: Aberdeen Regional</td>
+      <td>Aberdeen Regional</td>
+      <td>Aberdeen</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10146</td>
+      <td>Albany, GA: Southwest Georgia Regional</td>
+      <td>Southwest Georgia Regional</td>
+      <td>Albany</td>
+      <td>GA</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+<div class="section" id="add-state-region-information">
+<h3>1.2.4.3 Add state &#8216;region&#8217; information</h3>
+<p>I also would like to study patterns among the four-regions in the United
+States:</p>
+<ol class="arabic simple">
+<li>Northeast</li>
+<li>South</li>
+<li>West</li>
+<li>Midwest</li>
+</ol>
+<p>I saved a json lookup file for this purpose</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span>%%bash
+cat ../data/us_states_regions.json
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;Northeast&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Connecticut&quot;</span><span class="p">,</span><span class="s2">&quot;Maine&quot;</span><span class="p">,</span> <span class="s2">&quot;Massachusetts&quot;</span><span class="p">,</span> <span class="s2">&quot;New Hampshire&quot;</span><span class="p">,</span> <span class="s2">&quot;Rhode Island&quot;</span><span class="p">,</span> <span class="s2">&quot;Vermont&quot;</span><span class="p">,</span><span class="s2">&quot;New Jersey&quot;</span><span class="p">,</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span> <span class="s2">&quot;Pennsylvania&quot;</span><span class="p">],</span>
+<span class="s2">&quot;Midwest&quot;</span>   <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Illinois&quot;</span><span class="p">,</span> <span class="s2">&quot;Indiana&quot;</span><span class="p">,</span> <span class="s2">&quot;Michigan&quot;</span><span class="p">,</span> <span class="s2">&quot;Ohio&quot;</span><span class="p">,</span> <span class="s2">&quot;Wisconsin&quot;</span><span class="p">,</span> <span class="s2">&quot;Iowa&quot;</span><span class="p">,</span> <span class="s2">&quot;Kansas&quot;</span><span class="p">,</span> <span class="s2">&quot;Minnesota&quot;</span><span class="p">,</span> <span class="s2">&quot;Missouri&quot;</span><span class="p">,</span> <span class="s2">&quot;Nebraska&quot;</span><span class="p">,</span> <span class="s2">&quot;North Dakota&quot;</span><span class="p">,</span> <span class="s2">&quot;South Dakota&quot;</span><span class="p">],</span>
+<span class="s2">&quot;South&quot;</span>     <span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;Delaware&quot;</span><span class="p">,</span> <span class="s2">&quot;Florida&quot;</span><span class="p">,</span> <span class="s2">&quot;Georgia&quot;</span><span class="p">,</span> <span class="s2">&quot;Maryland&quot;</span><span class="p">,</span> <span class="s2">&quot;North Carolina&quot;</span><span class="p">,</span> <span class="s2">&quot;South Carolina&quot;</span><span class="p">,</span> <span class="s2">&quot;Virginia&quot;</span><span class="p">,</span> <span class="s2">&quot;District of Columbia&quot;</span><span class="p">,</span> <span class="s2">&quot;West Virginia&quot;</span><span class="p">,</span>             <span class="s2">&quot;Alabama&quot;</span><span class="p">,</span> <span class="s2">&quot;Kentucky&quot;</span><span class="p">,</span> <span class="s2">&quot;Mississippi&quot;</span><span class="p">,</span> <span class="s2">&quot;Tennessee&quot;</span><span class="p">,</span><span class="s2">&quot;Arkansas&quot;</span><span class="p">,</span> <span class="s2">&quot;Louisiana&quot;</span><span class="p">,</span> <span class="s2">&quot;Oklahoma&quot;</span><span class="p">,</span> <span class="s2">&quot;Texas&quot;</span><span class="p">],</span>
+<span class="s2">&quot;West&quot;</span>      <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Arizona&quot;</span><span class="p">,</span> <span class="s2">&quot;Colorado&quot;</span><span class="p">,</span> <span class="s2">&quot;Idaho&quot;</span><span class="p">,</span> <span class="s2">&quot;Montana&quot;</span><span class="p">,</span> <span class="s2">&quot;Nevada&quot;</span><span class="p">,</span> <span class="s2">&quot;New Mexico&quot;</span><span class="p">,</span> <span class="s2">&quot;Utah&quot;</span><span class="p">,</span>  <span class="s2">&quot;Wyoming&quot;</span><span class="p">,</span> <span class="s2">&quot;Alaska&quot;</span><span class="p">,</span> <span class="s2">&quot;California&quot;</span><span class="p">,</span> <span class="s2">&quot;Hawaii&quot;</span><span class="p">,</span> <span class="s2">&quot;Oregon&quot;</span><span class="p">,</span> <span class="s2">&quot;Washington&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../data/us_states_regions.json&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">regions</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">regions</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="k">print</span> <span class="n">regions</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">u&#39;West&#39;</span><span class="p">,</span> <span class="s1">u&#39;Northeast&#39;</span><span class="p">,</span> <span class="s1">u&#39;Midwest&#39;</span><span class="p">,</span> <span class="s1">u&#39;South&#39;</span><span class="p">]</span>
+<span class="p">[[</span><span class="s1">u&#39;Arizona&#39;</span><span class="p">,</span> <span class="s1">u&#39;Colorado&#39;</span><span class="p">,</span> <span class="s1">u&#39;Idaho&#39;</span><span class="p">,</span> <span class="s1">u&#39;Montana&#39;</span><span class="p">,</span> <span class="s1">u&#39;Nevada&#39;</span><span class="p">,</span> <span class="s1">u&#39;New Mexico&#39;</span><span class="p">,</span> <span class="s1">u&#39;Utah&#39;</span><span class="p">,</span> <span class="s1">u&#39;Wyoming&#39;</span><span class="p">,</span> <span class="s1">u&#39;Alaska&#39;</span><span class="p">,</span> <span class="s1">u&#39;California&#39;</span><span class="p">,</span> <span class="s1">u&#39;Hawaii&#39;</span><span class="p">,</span> <span class="s1">u&#39;Oregon&#39;</span><span class="p">,</span> <span class="s1">u&#39;Washington&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">u&#39;Connecticut&#39;</span><span class="p">,</span> <span class="s1">u&#39;Maine&#39;</span><span class="p">,</span> <span class="s1">u&#39;Massachusetts&#39;</span><span class="p">,</span> <span class="s1">u&#39;New Hampshire&#39;</span><span class="p">,</span> <span class="s1">u&#39;Rhode Island&#39;</span><span class="p">,</span> <span class="s1">u&#39;Vermont&#39;</span><span class="p">,</span> <span class="s1">u&#39;New Jersey&#39;</span><span class="p">,</span> <span class="s1">u&#39;New York&#39;</span><span class="p">,</span> <span class="s1">u&#39;Pennsylvania&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">u&#39;Illinois&#39;</span><span class="p">,</span> <span class="s1">u&#39;Indiana&#39;</span><span class="p">,</span> <span class="s1">u&#39;Michigan&#39;</span><span class="p">,</span> <span class="s1">u&#39;Ohio&#39;</span><span class="p">,</span> <span class="s1">u&#39;Wisconsin&#39;</span><span class="p">,</span> <span class="s1">u&#39;Iowa&#39;</span><span class="p">,</span> <span class="s1">u&#39;Kansas&#39;</span><span class="p">,</span> <span class="s1">u&#39;Minnesota&#39;</span><span class="p">,</span> <span class="s1">u&#39;Missouri&#39;</span><span class="p">,</span> <span class="s1">u&#39;Nebraska&#39;</span><span class="p">,</span> <span class="s1">u&#39;North Dakota&#39;</span><span class="p">,</span> <span class="s1">u&#39;South Dakota&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">u&#39;Delaware&#39;</span><span class="p">,</span> <span class="s1">u&#39;Florida&#39;</span><span class="p">,</span> <span class="s1">u&#39;Georgia&#39;</span><span class="p">,</span> <span class="s1">u&#39;Maryland&#39;</span><span class="p">,</span> <span class="s1">u&#39;North Carolina&#39;</span><span class="p">,</span> <span class="s1">u&#39;South Carolina&#39;</span><span class="p">,</span> <span class="s1">u&#39;Virginia&#39;</span><span class="p">,</span> <span class="s1">u&#39;District of Columbia&#39;</span><span class="p">,</span> <span class="s1">u&#39;West Virginia&#39;</span><span class="p">,</span> <span class="s1">u&#39;Alabama&#39;</span><span class="p">,</span> <span class="s1">u&#39;Kentucky&#39;</span><span class="p">,</span> <span class="s1">u&#39;Mississippi&#39;</span><span class="p">,</span> <span class="s1">u&#39;Tennessee&#39;</span><span class="p">,</span> <span class="s1">u&#39;Arkansas&#39;</span><span class="p">,</span> <span class="s1">u&#39;Louisiana&#39;</span><span class="p">,</span> <span class="s1">u&#39;Oklahoma&#39;</span><span class="p">,</span> <span class="s1">u&#39;Texas&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_region</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">regions</span><span class="p">:</span>
+    <span class="n">_dftmp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="n">regions</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span>  <span class="p">)</span>
+    <span class="n">_dftmp</span><span class="p">[</span><span class="s1">&#39;Region&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">key</span>
+    <span class="n">df_region</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_dftmp</span><span class="p">)</span>
+
+<span class="n">df_region</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">df_region</span><span class="p">,</span><span class="n">ignore_index</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="n">df_region</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>State</th>
+      <th>Region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Arizona</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Colorado</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Idaho</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Montana</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Nevada</td>
+      <td>West</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>Let&#8217;s use a hash-table (source) to map state name to its abbreviation</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">util</span> <span class="kn">import</span> <span class="n">hash_state_to_abbrev</span>
+<span class="n">hash_state</span> <span class="o">=</span> <span class="n">hash_state_to_abbrev</span><span class="p">()</span>
+
+<span class="n">df_region</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_region</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">key</span><span class="p">:</span> <span class="n">hash_state</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+<span class="n">df_region</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>State</th>
+      <th>Region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AZ</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CO</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ID</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>MT</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NV</td>
+      <td>West</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># good, we&#39;re now ready to join this &quot;Region&quot; information to our lookup table</span>
+<span class="n">df_lookup</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_region</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;State&#39;</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+
+<span class="n">df_lookup</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Airport</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10135</td>
+      <td>Allentown/Bethlehem/Easton, PA: Lehigh Valley ...</td>
+      <td>Lehigh Valley International</td>
+      <td>Allentown/Bethlehem/Easton</td>
+      <td>PA</td>
+      <td>Northeast</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10136</td>
+      <td>Abilene, TX: Abilene Regional</td>
+      <td>Abilene Regional</td>
+      <td>Abilene</td>
+      <td>TX</td>
+      <td>South</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10140</td>
+      <td>Albuquerque, NM: Albuquerque International Sun...</td>
+      <td>Albuquerque International Sunport</td>
+      <td>Albuquerque</td>
+      <td>NM</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10141</td>
+      <td>Aberdeen, SD: Aberdeen Regional</td>
+      <td>Aberdeen Regional</td>
+      <td>Aberdeen</td>
+      <td>SD</td>
+      <td>Midwest</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10146</td>
+      <td>Albany, GA: Southwest Georgia Regional</td>
+      <td>Southwest Georgia Regional</td>
+      <td>Albany</td>
+      <td>GA</td>
+      <td>South</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10154</td>
+      <td>Nantucket, MA: Nantucket Memorial</td>
+      <td>Nantucket Memorial</td>
+      <td>Nantucket</td>
+      <td>MA</td>
+      <td>Northeast</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>10155</td>
+      <td>Waco, TX: Waco Regional</td>
+      <td>Waco Regional</td>
+      <td>Waco</td>
+      <td>TX</td>
+      <td>South</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>10157</td>
+      <td>Arcata/Eureka, CA: Arcata</td>
+      <td>Arcata</td>
+      <td>Arcata/Eureka</td>
+      <td>CA</td>
+      <td>West</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>10158</td>
+      <td>Atlantic City, NJ: Atlantic City International</td>
+      <td>Atlantic City International</td>
+      <td>Atlantic City</td>
+      <td>NJ</td>
+      <td>Northeast</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10165</td>
+      <td>Adak Island, AK: Adak</td>
+      <td>Adak</td>
+      <td>Adak Island</td>
+      <td>AK</td>
+      <td>West</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+<div class="section" id="add-airport-latitude-and-longitude-information-using-google-geocoder">
+<h3>1.2.4.4 Add airport latitude and longitude information using Google geocoder</h3>
+<p>This information will be useful especially when making visualization
+plots</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">geocoder</span>
+<span class="kn">from</span> <span class="nn">util</span> <span class="kn">import</span> <span class="n">print_time</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">lat</span><span class="p">,</span><span class="n">lon</span> <span class="o">=</span> <span class="p">[],[]</span>
+
+<span class="n">n_items</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">airport</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;Airport&#39;</span><span class="p">]):</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">20</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+         <span class="k">print</span> <span class="s1">&#39;({:3} out of {})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">n_items</span><span class="p">),</span><span class="n">print_time</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="n">loc</span> <span class="o">=</span> <span class="n">geocoder</span><span class="o">.</span><span class="n">google</span><span class="p">(</span><span class="n">airport</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">loc</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="n">lon</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">loc</span><span class="o">.</span><span class="n">lng</span><span class="p">)</span>
+        <span class="n">lat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">loc</span><span class="o">.</span><span class="n">lat</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># lookup failed</span>
+        <span class="n">lon</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+        <span class="n">lat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+
+<span class="c1"># add as new columns</span>
+<span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lat</span>
+<span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lon</span>
+
+<span class="n">n_nans</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;-- {} NANs out {} ({:.2f}%) --&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_nans</span><span class="p">,</span><span class="n">n_items</span><span class="p">,</span><span class="n">n_nans</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">n_items</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span>(  0 out of 319) Elapsed time:  0.00 seconds
+( 20 out of 319) Elapsed time:  1.52 seconds
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span>---------------------------------------------------------------------------
+
+KeyboardInterrupt                         Traceback (most recent call last)
+
+&lt;ipython-input-52-364727c36938&gt; in &lt;module&gt;()
+      9     if i%20==0:
+     10          print &#39;({:3} out of {})&#39;.format(i,n_items),print_time(t)
+---&gt; 11     loc = geocoder.google(airport)
+     12
+     13     if loc is not None:
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\geocoder\api.pyc in google(location, **kwargs)
+    184         &gt; elevation
+    185     &quot;&quot;&quot;
+--&gt; 186     return get(location, provider=&#39;google&#39;, **kwargs)
+    187
+    188
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\geocoder\api.pyc in get(location, **kwargs)
+    150         if method not in options[provider]:
+    151             raise ValueError(&quot;Invalid method&quot;)
+--&gt; 152     return options[provider][method](location, **kwargs)
+    153
+    154
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\geocoder\google.pyc in __init__(self, location, **kwargs)
+     59         if self.client and self.client_secret:
+     60             self._encode_params(**kwargs)
+---&gt; 61         self._initialize(**kwargs)
+     62
+     63     def _encode_params(self, **kwargs):
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\geocoder\base.pyc in _initialize(self, **kwargs)
+    122         self.content = None
+    123         self.encoding = kwargs.get(&#39;encoding&#39;, &#39;utf-8&#39;)
+--&gt; 124         self._connect(url=self.url, params=self.params, **kwargs)
+    125         ###
+    126         try:
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\geocoder\base.pyc in _connect(self, **kwargs)
+     93                 headers=self.headers,
+     94                 timeout=self.timeout,
+---&gt; 95                 proxies=self.proxies
+     96             )
+     97             self.status_code = r.status_code
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\geocoder\base.pyc in rate_limited_get(url, **kwargs)
+     71     @staticmethod
+     72     def rate_limited_get(url, **kwargs):
+---&gt; 73         return requests.get(url, **kwargs)
+     74
+     75     def _get_api_key(self, base_key, **kwargs):
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\requests\api.pyc in get(url, params, **kwargs)
+     68
+     69     kwargs.setdefault(&#39;allow_redirects&#39;, True)
+---&gt; 70     return request(&#39;get&#39;, url, params=params, **kwargs)
+     71
+     72
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\requests\api.pyc in request(method, url, **kwargs)
+     54     # cases, and look like a memory leak in others.
+     55     with sessions.Session() as session:
+---&gt; 56         return session.request(method=method, url=url, **kwargs)
+     57
+     58
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\requests\sessions.pyc in request(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)
+    486         }
+    487         send_kwargs.update(settings)
+--&gt; 488         resp = self.send(prep, **send_kwargs)
+    489
+    490         return resp
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\requests\sessions.pyc in send(self, request, **kwargs)
+    607
+    608         # Send the request
+--&gt; 609         r = adapter.send(request, **kwargs)
+    610
+    611         # Total elapsed time of the request (approximately)
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\requests\adapters.pyc in send(self, request, stream, timeout, verify, cert, proxies)
+    421                     decode_content=False,
+    422                     retries=self.max_retries,
+--&gt; 423                     timeout=timeout
+    424                 )
+    425
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\requests\packages\urllib3\connectionpool.pyc in urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, **response_kw)
+    592                                                   timeout=timeout_obj,
+    593                                                   body=body, headers=headers,
+--&gt; 594                                                   chunked=chunked)
+    595
+    596             # If we&#39;re going to release the connection in ``finally:``, then
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\requests\packages\urllib3\connectionpool.pyc in _make_request(self, conn, method, url, timeout, chunked, **httplib_request_kw)
+    382         try:
+    383             try:  # Python 2.7, use buffering of HTTP responses
+--&gt; 384                 httplib_response = conn.getresponse(buffering=True)
+    385             except TypeError:  # Python 2.6 and older, Python 3
+    386                 try:
+
+
+C:\Users\takanori\Anaconda2\lib\httplib.pyc in getresponse(self, buffering)
+   1134
+   1135         try:
+-&gt; 1136             response.begin()
+   1137             assert response.will_close != _UNKNOWN
+   1138             self.__state = _CS_IDLE
+
+
+C:\Users\takanori\Anaconda2\lib\httplib.pyc in begin(self)
+    451         # read until we get a non-100 response
+    452         while True:
+--&gt; 453             version, status, reason = self._read_status()
+    454             if status != CONTINUE:
+    455                 break
+
+
+C:\Users\takanori\Anaconda2\lib\httplib.pyc in _read_status(self)
+    407     def _read_status(self):
+    408         # Initialize with Simple-Response defaults
+--&gt; 409         line = self.fp.readline(_MAXLINE + 1)
+    410         if len(line) &gt; _MAXLINE:
+    411             raise LineTooLong(&quot;header line&quot;)
+
+
+C:\Users\takanori\Anaconda2\lib\socket.pyc in readline(self, size)
+    478             while True:
+    479                 try:
+--&gt; 480                     data = self._sock.recv(self._rbufsize)
+    481                 except error, e:
+    482                     if e.args[0] == EINTR:
+
+
+C:\Users\takanori\AppData\Roaming\Python\Python27\site-packages\requests\packages\urllib3\contrib\pyopenssl.pyc in recv(self, *args, **kwargs)
+    244         except OpenSSL.SSL.WantReadError:
+    245             rd, wd, ed = select.select(
+--&gt; 246                 [self.socket], [], [], self.socket.gettimeout())
+    247             if not rd:
+    248                 raise timeout(&#39;The read operation timed out&#39;)
+
+
+KeyboardInterrupt:
+</pre></div>
+</div>
+<p>Some lookup failed...but most succeeded</p>
+<p>argh..hit daily google geocoding quota limit...come back later</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># let&#39;s do lookup based city and state</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,(</span><span class="n">city</span><span class="p">,</span><span class="n">state</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;City&#39;</span><span class="p">],</span><span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]):</span>
+    <span class="n">loc</span> <span class="o">=</span> <span class="n">geocoder</span><span class="o">.</span><span class="n">google</span><span class="p">(</span><span class="n">city</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">state</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">loc</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="c1"># if airport lookup failed, lookup based on city and state info</span>
+        <span class="n">city</span>  <span class="o">=</span> <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;City&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">loc</span> <span class="o">=</span> <span class="n">geocoder</span><span class="o">.</span><span class="n">google</span><span class="p">(</span><span class="n">city</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">state</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">loc</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="c1"># even if that fails, append None for now</span>
+        <span class="n">lon</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+        <span class="n">lat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># else, append the identified lat/lon informatino</span>
+        <span class="n">lon</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">loc</span><span class="o">.</span><span class="n">lng</span><span class="p">)</span>
+        <span class="n">lat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">loc</span><span class="o">.</span><span class="n">lat</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="test.html" class="btn btn-neutral float-right" title="1.3 Test" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="spotify_0105a.html" class="btn btn-neutral" title="1.1 Study carriers.xls and airports new.xlt" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on Jan 10, 2017.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
