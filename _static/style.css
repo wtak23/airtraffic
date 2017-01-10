@@ -83,12 +83,13 @@ table.dataframe {
     table-layout:fixed;
     display: block;
     border-collapse: collapse;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    border: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 table.dataframe th,table.dataframe  td {
-    padding: 14px;
+    padding: 10px;
     /*border: 1px solid #ecf0f1;*/
     border: 1px solid rgba(255,128,128,0.1);
     /*border: 1px solid black;*/
@@ -98,7 +99,7 @@ table.dataframe th,table.dataframe  td {
 }
 
 table.dataframe th {
-    font-size:16px;
+    font-size:14px;
     text-align: center;
     font-weight:bold;
     /*border: 2px solid #aaa;*/
@@ -107,7 +108,7 @@ table.dataframe th {
 }
 
 table.dataframe td {
-    font-size:14px;
+    font-size:12px;
     text-align: center;
     /*border: 1px solid #ecf0f1;*/
     /*border: 1px solid rgba(0,0,0,0.1);*/
