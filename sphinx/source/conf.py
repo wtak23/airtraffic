@@ -22,29 +22,6 @@ extensions = [
     'numpydoc', # used to parse numpy-style docstrings for autodoc    
 ]
 
-#=============================================================================#
-# config for seaborn style repos
-#=============================================================================#
-import sphinx_bootstrap_theme
-import matplotlib as mpl
-mpl.use("Agg")
-
-# Generate the API documentation when building
-autosummary_generate = True
-numpydoc_show_class_members = False
-
-# Include the example source for plots in API docs
-plot_include_source = True
-plot_formats = [("png", 90)]
-plot_html_show_formats = False
-plot_html_show_source_link = False
-#=============================================================================#
-
-# Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
-
-source_suffix = '.rst'
-
 # The master toctree document.
 master_doc = 'index'
 
@@ -64,81 +41,102 @@ exclude_patterns = [
 #'templates',
 ]
 
+
+
+# -- Options for HTML output ----------------------------------------------
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 
-# -- Options for HTML output ----------------------------------------------
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ['_templates']
 
-#=============================================================================#
-# Seaborn style
-#=============================================================================#
-html_theme = 'bootstrap'
-html_theme_options = {
-    # Navigation bar title. (Default: ``project`` value)
-    #'navbar_title': "Demo",
+source_suffix = '.rst'
 
-    # Tab name for entire site. (Default: "Site")
-    'navbar_site_name': "TOC",
+# choose between "Read the doc" or "Bootstrap" theme (i'm not set on which one to use...)
+theme = 'rtd'
 
-    # A list of tuples containing pages or urls to link to.
-    # Valid tuples should be in the following forms:
-    #    (name, page)                 # a link to a page
-    #    (name, "/aa/bb", 1)          # a link to an arbitrary relative url
-    #    (name, "http://example.com", True) # arbitrary absolute url
-    # Note the "1" or "True" value above as the third argument to indicate
-    # an arbitrary url.
-    'navbar_links': [
-        ('<i class="fa fa-home" aria-hidden="true"></i>&nbsp; takwatanabe.me', "http://takwatanabe.me", True),
-        ('<i class="fa fa-github" aria-hidden="true"></i>&nbsp; Github', "https://github.com/wtak23/airtraffic", True),
-        # ("Link", "http://example.com", True),
-    ],
-
-    # Render the next and previous page links in navbar. (Default: true)
-    'navbar_sidebarrel': False,
-
-    #-------------------------------------------------------------------------#
-    # Render the current pages TOC in the navbar. (Default: true)
-    'navbar_pagenav': True,
-
-    # Tab name for the current pages TOC. (Default: "Page")
-    'navbar_pagenav_name': "page",
-    #-------------------------------------------------------------------------#
-
-    # Global TOC depth for "site" navbar tab. (Default: 1)
-    # Switching to -1 shows all levels.
-    'globaltoc_depth': -1,
-
-    # Include hidden TOCs in Site navbar?
+if theme == 'rtd':
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_options = {
+        'collapse_navigation': False, #<- set to false when publishing
+        # 'sticky_navigation': True,  # Set to False to disable the sticky nav while scrolling.
+        # 'navigation_depth': 4,
+    }
+elif theme == 'bootstrap':
+    #=========================================================================#
+    # config for bootstrap repos
     #
-    # Note: If this is "false", you cannot have mixed ``:hidden:`` and
-    # non-hidden ``toctree`` directives in the same page, or else the build
-    # will break.
-    #
-    # Values: "true" (default) or "false"
-    'globaltoc_includehidden': "true",
+    # Credit: styling inspired (ie, taken) from Seaborn 
+    #         http://seaborn.pydata.org/index.html
+    #=========================================================================#
+    import sphinx_bootstrap_theme
+    html_theme = 'bootstrap'
+    html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
-    # HTML navbar class (Default: "navbar") to attach to <div> element.
-    # For black navbar, do "navbar navbar-inverse"
-    # 'navbar_class': "navbar navbar-inverse",
+    html_theme = 'bootstrap'
+    html_theme_options = {
+        # Navigation bar title. (Default: ``project`` value)
+        #'navbar_title': "Demo",
 
-    # Fix navigation bar to top of page?
-    # Values: "true" (default) or "false"
-    'navbar_fixed_top': "true",
+        # Tab name for entire site. (Default: "Site")
+        'navbar_site_name': "TOC",
 
-    # Location of link to source.
-    # Options are "nav" (default), "footer" or anything else to exclude.
-    'source_link_position': "footer",
+        # A list of tuples containing pages or urls to link to.
+        # Valid tuples should be in the following forms:
+        #    (name, page)                 # a link to a page
+        #    (name, "/aa/bb", 1)          # a link to an arbitrary relative url
+        #    (name, "http://example.com", True) # arbitrary absolute url
+        # Note the "1" or "True" value above as the third argument to indicate
+        # an arbitrary url.
+        'navbar_links': [
+            ('<i class="fa fa-home" aria-hidden="true"></i>&nbsp; takwatanabe.me', "http://takwatanabe.me", True),
+            ('<i class="fa fa-github" aria-hidden="true"></i>&nbsp; Github', "https://github.com/wtak23/airtraffic", True),
+            # ("Link", "http://example.com", True),
+        ],
 
-    'bootswatch_theme': "flatly",
-    'bootstrap_version': "3",
-}
+        # Render the next and previous page links in navbar. (Default: true)
+        'navbar_sidebarrel': False,
 
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
-#=============================================================================#
+        #-------------------------------------------------------------------------#
+        # Render the current pages TOC in the navbar. (Default: true)
+        'navbar_pagenav': True,
+
+        # Tab name for the current pages TOC. (Default: "Page")
+        'navbar_pagenav_name': "page",
+        #-------------------------------------------------------------------------#
+
+        # Global TOC depth for "site" navbar tab. (Default: 1)
+        # Switching to -1 shows all levels.
+        'globaltoc_depth': -1,
+
+        # Include hidden TOCs in Site navbar?
+        #
+        # Note: If this is "false", you cannot have mixed ``:hidden:`` and
+        # non-hidden ``toctree`` directives in the same page, or else the build
+        # will break.
+        #
+        # Values: "true" (default) or "false"
+        'globaltoc_includehidden': "true",
+
+        # HTML navbar class (Default: "navbar") to attach to <div> element.
+        # For black navbar, do "navbar navbar-inverse"
+        # 'navbar_class': "navbar navbar-inverse",
+
+        # Fix navigation bar to top of page?
+        # Values: "true" (default) or "false"
+        'navbar_fixed_top': "true",
+
+        # Location of link to source.
+        # Options are "nav" (default), "footer" or anything else to exclude.
+        'source_link_position': "footer",
+
+        'bootswatch_theme': "flatly",
+        'bootstrap_version': "3",
+    }
+
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
