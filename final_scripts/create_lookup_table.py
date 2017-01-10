@@ -4,6 +4,8 @@ import pandas as pd
 import json
 import time
 import geocoder
+from geopy.geocoders import Nominatim
+geolocator = Nominatim()
 
 from util import load_airport_data,load_airport_data_3years, hash_state_to_abbrev,print_time
 #%%
@@ -60,25 +62,18 @@ if __name__ == '__main__':
     t = time.time()
     lat,lon= [],[]
     n_items = df_lookup.shape[0]
-    for i in xrange(n_items):
-        if i%20==0: 
+    for i,airport in enumerate(df_lookup['Airport']):
+        if i%20==0:
              print '({:3} out of {})'.format(i,n_items),print_time(t)
              
-        # first try looking up by airport name
-        airport = df_lookup['Airport'].ix[i]
-        loc = geocoder.google(airport)
-        
-        if loc is None:
-            # if search failed, try looking up by city and state
-            city  = df_lookup['City'].ix[i]
-            state = df_lookup['State'].ix[i]
-            loc = geocoder.google(city+' '+state)
-            
+        loc = geolocator.geocode(airport)
+        time.sleep(1.5) # add break to avoid api service timeouts
+    
         if loc is not None:
-            lon.append(loc.lng)
-            lat.append(loc.lat)
+            lon.append(loc[1][0])
+            lat.append(loc[1][1])
         else:
-            # lookup failed...append None
+            print '    lookup failed for: ' + airport
             lon.append(None)
             lat.append(None)
             
@@ -89,18 +84,18 @@ if __name__ == '__main__':
     n_nans = df_lookup['lat'].isnull().sum(axis=0)
     print "-- {} NANs out {} ({:.2f}%) --".format(n_nans,n_items,n_nans/float(n_items)*100)
     #%%
-    for i,(city,state) in enumerate(df_lookup['City'],df_lookup['State']):
-        print city,state
-        break
-        loc = geocoder.google(airport)
-        
+    for i in xrange(n_items):
+        print i,
+        if lat[i] is not None:
+            continue
+        city,state = df_lookup['City'].ix[i], df_lookup['State'].ix[i]
+        loc = geolocator.geocode(city+', '+state)
+        time.sleep(10) # add break to avoid api service timeouts
+    
         if loc is not None:
-            lon.append(loc.lng)
-            lat.append(loc.lat)
+            lon[i],lat[i] = loc[1]
         else:
-            # lookup failed
-            lon.append(None)
-            lat.append(None)
+            print '    lookup failed for: {}, {}'.format(city,state)
     #%%
 #    df_lookup.to_csv('df_lookup_from_0106d.csv',index=False)
     

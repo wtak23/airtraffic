@@ -19,7 +19,7 @@ geolocator = Nominatim()
 #pprint(location.raw)
 #%% === study the "carrier.xls" spreadsheet ===
 def load_carriers():
-    df_carr = pd.read_excel('carriers.xls')
+    df_carr = pd.read_excel('../data/carriers.xls')
     
     # --- data cleansing ---
     # remove record containing any nans
@@ -32,7 +32,7 @@ def load_carriers():
     return df_carr
 
 def load_airports():
-    df_airports = pd.read_excel('airports new.xlt')
+    df_airports = pd.read_excel('../data/airports new.xlt')
     
     # convert columns to unicode (realized some elements are treated as 'int'
     df_airports['iata'] = df_airports['iata'].apply(unicode)
@@ -51,7 +51,7 @@ df_airports = load_airports()
 #plt.scatter(x = df_airports['long'].values,y=df_airports['lat'].values)
 #plt.grid('on')
 #%% === new part from today ===
-df = pd.read_csv('690907700_T_ONTIME.csv').iloc[:,:6]
+df = pd.read_csv('../data/2016-10.zip').iloc[:,:-1]
 pprint(df.dtypes)
 pprint(df.columns.tolist())
 
@@ -66,9 +66,9 @@ test2 = np.array_equal(np.sort(df['ORIGIN_AIRPORT_SEQ_ID'].unique()),
 test3 = np.array_equal(np.sort(df['ORIGIN_CITY_MARKET_ID'].unique()), 
                        np.sort(df['DEST_CITY_MARKET_ID'].unique()))
 #%%
-df_air_id = pd.read_csv('L_AIRPORT_ID.csv')
-df_seq_id = pd.read_csv('L_AIRPORT_SEQ_ID.csv')
-df_market = pd.read_csv('L_CITY_MARKET_ID.csv')
+df_air_id = pd.read_csv('../data/L_AIRPORT_ID.csv')
+df_seq_id = pd.read_csv('../data/L_AIRPORT_SEQ_ID.csv')
+df_market = pd.read_csv('../data/L_CITY_MARKET_ID.csv')
 
 #%% any overlap in the auxiliary info files?
 print df_air_id.describe().loc[['min','max']]

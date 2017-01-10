@@ -44,7 +44,4 @@ if __name__ == '__main__':
         
     assert np.all(df_lookup['City_State'].value_counts() == 1)
     #%%
-import mapbox
-
-geocoder = mapbox.Geocoder(access_token='YOUR_ACCESS_TOKEN')
-    geocoder.mapbox('Ann Arbor',access_token='pk.eyJ1Ijoid3RhazIzIiwiYSI6ImNpdDNtcG9rejAwMWQyeHRkeGd5MTRtcmwifQ.qFcLeBjVlGvypxMW58un9w')
+    df_lookup.to_csv('df_lookup.csv',ignore_index=True)
