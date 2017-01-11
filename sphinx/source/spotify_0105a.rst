@@ -37,6 +37,7 @@ Study the "carrier" spreadsheet
 
 
 .. parsed-literal::
+    :class: myliteral
 
     df_carr.shape =  (2982, 2)
     [u'Code', u'Description']
@@ -212,6 +213,7 @@ sort out the "nan" values
 
 
 .. parsed-literal::
+    :class: myliteral
 
     Code           1492
     Description    1491
@@ -233,6 +235,7 @@ special about that entry?
 
 
 .. parsed-literal::
+    :class: myliteral
 
     Code                               NaN
     Description    North American Airlines
@@ -254,6 +257,7 @@ Filter away nans from the DataFrame
 
 
 .. parsed-literal::
+    :class: myliteral
 
     df_carr.shape =  (1490, 2)
     
@@ -266,6 +270,7 @@ Filter away nans from the DataFrame
 
 
 .. parsed-literal::
+    :class: myliteral
 
     (1490L,)
     (1490L,)
@@ -371,6 +376,7 @@ Realized some *Code* is treated as int...convert to string
 
 
 .. parsed-literal::
+    :class: myliteral
 
     Code           object
     Description    object
@@ -671,6 +677,7 @@ Study *airports* spreadsheet
 
 
 .. parsed-literal::
+    :class: myliteral
 
     df_airports.shape =  (3376, 7)
     iata        object
@@ -825,6 +832,7 @@ Study nans
 
 
 .. parsed-literal::
+    :class: myliteral
 
     iata        0
     airport     0
@@ -850,6 +858,7 @@ Study nans
 
 
 .. parsed-literal::
+    :class: myliteral
 
     True
 
@@ -1006,6 +1015,7 @@ Study nans
 
 
 .. parsed-literal::
+    :class: myliteral
 
     USA                               3372
     Palau                                1
@@ -1031,6 +1041,7 @@ Filter out non-USA airports
 
 
 .. parsed-literal::
+    :class: myliteral
 
     array([u'USA'], dtype=object)
 

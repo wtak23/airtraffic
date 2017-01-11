@@ -5,6 +5,7 @@ This part of the site outlines some of the "dirty work" that required some elbow
 .. toctree::
    :maxdepth: 2
    :caption: Contents
+   :name: meh
 
    spotify_0105a
    create_lookup_table.rst

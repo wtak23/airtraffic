@@ -3,10 +3,19 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, "C:\\Users\\takanori\\Dropbox\\git\\spotify\\final_scripts")
 
 # General information about the project.
 project = u'US Airport Traffic Analysis'
 author = u'Takanori Watanabe'
+
+# sys.path.insert(0, os.path.abspath('../../final_scripts'))
+# sys.path.insert(0, os.path.abspath("'C:\\Users\\takanori/Dropbox\\git\\spotify\\final_scripts'"))
+# sys.path.insert(0,"'C:\\Users\\takanori/Dropbox/work/sbia_work/python/modules'")
+autosummary_generate=True
+autoclass_content='class' # http://www.sphinx-doc.org/en/stable/ext/autodoc.html#confval-autoclass_content
+import IPython.sphinxext
+import numpydoc
 
 # -- General configuration ------------------------------------------------
 numpydoc_class_members_toctree = False
@@ -39,6 +48,7 @@ language = None
 exclude_patterns = [
 # 'test3.rst',
 #'templates',
+'autodoc.rst',
 ]
 
 
@@ -144,7 +154,7 @@ elif theme == 'bootstrap':
 html_title = ''
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = None
+html_short_title = ''
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -184,4 +194,4 @@ def setup(app):
     app.add_stylesheet('style.css') # <- from seaborn doc
 
 html_secnumber_suffix = ' '
-html_add_permalinks = None 
+html_add_permalinks = ''
