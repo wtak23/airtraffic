@@ -56,7 +56,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # choose between "Read the doc" or "Bootstrap" theme (i'm not set on which one to use...)
-theme = 'rtd'
+theme = 'bootstrap'
 
 if theme == 'rtd':
     html_theme = 'sphinx_rtd_theme'

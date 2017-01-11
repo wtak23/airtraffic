@@ -28,6 +28,7 @@ Load the main airport traffic data
 
 
 .. parsed-literal::
+    :class: myliteral
 
      ... load dataframe from 2015-11.zip 
      ... load dataframe from 2015-12.zip 
@@ -50,6 +51,7 @@ Load the main airport traffic data
 
 
 .. parsed-literal::
+    :class: myliteral
 
     (5652973, 7)
     
@@ -139,6 +141,7 @@ Load lookup table provided by BTS
 
 
 .. parsed-literal::
+    :class: myliteral
 
     (6409, 2)
     
@@ -238,6 +241,7 @@ Remove Code that is not present our dataset
 
 
 .. parsed-literal::
+    :class: myliteral
 
     There are 6409 Airport-Codes in the lookup table
     There are 319 unique airport-codes in our dataset
@@ -256,6 +260,7 @@ Let's filter/drop the rows/records that we do not need in our analysis
 
 
 .. parsed-literal::
+    :class: myliteral
 
     (319, 2)
     
@@ -356,6 +361,7 @@ Parse state,city, and airport-name from 'Description' field
 
 
 .. parsed-literal::
+    :class: myliteral
 
     [{'Airport': 'Lehigh Valley International',
       'City': 'Allentown/Bethlehem/Easton',
@@ -429,6 +435,7 @@ Parse state,city, and airport-name from 'Description' field
 
 
 .. parsed-literal::
+    :class: myliteral
 
     (319, 5)
     
@@ -516,6 +523,7 @@ I saved a json lookup file for this purpose
 
 
 .. parsed-literal::
+    :class: myliteral
 
     {
     "Northeast" : ["Connecticut","Maine", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont","New Jersey", "New York", "Pennsylvania"],
@@ -535,6 +543,7 @@ I saved a json lookup file for this purpose
 
 
 .. parsed-literal::
+    :class: myliteral
 
     [u'West', u'Northeast', u'Midwest', u'South']
     [[u'Arizona', u'Colorado', u'Idaho', u'Montana', u'Nevada', u'New Mexico', u'Utah', u'Wyoming', u'Alaska', u'California', u'Hawaii', u'Oregon', u'Washington'], [u'Connecticut', u'Maine', u'Massachusetts', u'New Hampshire', u'Rhode Island', u'Vermont', u'New Jersey', u'New York', u'Pennsylvania'], [u'Illinois', u'Indiana', u'Michigan', u'Ohio', u'Wisconsin', u'Iowa', u'Kansas', u'Minnesota', u'Missouri', u'Nebraska', u'North Dakota', u'South Dakota'], [u'Delaware', u'Florida', u'Georgia', u'Maryland', u'North Carolina', u'South Carolina', u'Virginia', u'District of Columbia', u'West Virginia', u'Alabama', u'Kentucky', u'Mississippi', u'Tennessee', u'Arkansas', u'Louisiana', u'Oklahoma', u'Texas']]
@@ -813,6 +822,7 @@ plots
 
 
 .. parsed-literal::
+    :class: myliteral
 
     (  0 out of 319) Elapsed time:  0.00 seconds
     ( 20 out of 319) Elapsed time:  1.52 seconds

@@ -13,7 +13,7 @@ blockquote {
 
 code {
     color: #49759c !important;
-    background-color: #f3f5f9 !important;
+    background-color: #ffffff !important;
 }
 
 .alert-info {
@@ -127,15 +127,16 @@ table.dataframe tr:hover{background-color:rgba(0,128,255,0.1)}
 /* distinguish python code and output style */
 
 /* output part */
-div .highlight-python{
-    background-color:rgba(0,0,0,0.1);
-    /*background-color:#D6E9FC;*/
+div.highlight-python{
+    /*background-color:rgba(0,0,0,0);*/
+    background:#ffffff;
     font-style: italic;
-    padding-left: 20px;
+    padding-left: 80px;
 }
 
 /* code part */
-div .code.highlight-python{
+div.code.python.highlight-python{
     font-style: normal;
+    /*font-size:12px;*/
     padding-left: 0px;
 }
