@@ -1,247 +1,234 @@
 
 
 
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Search</title>
-  
 
-  
-  
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-  
 
-  
-
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-
-  
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
+    <title>Search</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/style.css" type="text/css" />
-  
     <link rel="stylesheet" href="_static/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
-  
-
-  
-    <link rel="top" title="" href="index.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+    <link rel="stylesheet" href="_static/bootswatch-3.3.6/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
-
-          
-            <a href="index.html" class="fa fa-spotify"> US Airport Traffic Analysis
-            
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-                <p class="caption"><span class="caption-text">Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="data_munging.html">1 Data munging (some elbow grease)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">1.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">1.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">1.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">1.1.1.2 Filter away nans from the DataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">1.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">1.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">1.1.2 Study <em>airports</em> spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">1.1.2.1 Study nans</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">1.1.2.2 Filter out non-USA airports</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">1.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">1.1.3.1 Plot bubble markers for all airports</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">1.1.3.2 Take a closer look at Michigan, my home state</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">1.2 Create Lookup Table</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">1.2.1 Aim of notebook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">1.2.2 Load the main airport traffic data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">1.2.3 Load lookup table provided by BTS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">1.2.4 Create <em>enhanced</em> lookuptable</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#remove-code-that-is-not-present-our-dataset">1.2.4.1 Remove Code that is not present our dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#parse-state-city-and-airport-name-from-description-field">1.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-state-region-information">1.2.4.3 Add state &#8216;region&#8217; information</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-airport-latitude-and-longitude-information-using-google-geocoder">1.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="test.html">1.3 Test</a></li>
-</ul>
-</li>
-</ul>
-
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">US Airport Traffic Analysis</a>
-      </nav>
-
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    
-    <li></li>
-      <li class="wy-breadcrumbs-aside">
-        
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
-
-  
-  <div id="search-results">
-  
-  </div>
-
-           </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-      Last updated on Jan 10, 2017.
-
-    </p>
-  </div> 
-
-</footer>
-
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-  
-
-
-  
-
     <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/copybutton.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
-  </script>
-  
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/copybutton.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/searchtools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="" href="index.html" />
   <script type="text/javascript">
     jQuery(function() { Search.loadIndex("searchindex.js"); });
   </script>
   
   <script type="text/javascript" id="searchindexloader"></script>
-   
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
 
 
-</body>
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          US Airport Traffic Analysis</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="http://takwatanabe.me"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; takwatanabe.me</a></li>
+                <li><a href="https://github.com/wtak23/airtraffic"><i class="fa fa-github" aria-hidden="true"></i>&nbsp; Github</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">TOC <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="flight-count-analysis1.html">1 Air-traffic Count Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#load-data">1.1 Load data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#create-timeseries-of-daily-flight-counts">1.2 Create Timeseries of Daily Flight Counts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#create-interactive-plot-with-plotly-cufflinks">1.2.1 Create interactive plot with plotly/cufflinks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#study-seasonal-trend-with-rolling-averaged-timeseries">1.2.2 Study seasonal trend with rolling-averaged timeseries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-study-by-day-of-week-and-month">1.3 Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#over-entire-year">1.3.1 Over entire year</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#apply-pivoting-to-groupby-month-and-day-of-week">1.3.2 Apply pivoting to groupby month and day_of_week</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#repeat-analysis-for-ny-la-and-vegas">1.4 Repeat analysis for NY, LA, and Vegas.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#data-tidying">1.4.1 Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#plot-results">1.4.2 Plot results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#create-sublots-of-monthly-flight-count-trends-for-each-city">1.4.3 Create sublots of monthly flight-count trends for each city</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#which-state-had-the-most-air-traffics">1.5 Which state had the most air traffics?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#id1">1.5.1 Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#choropleth-figure-display-result-on-us-map">1.5.2 Choropleth figure (display result on US map)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#choropleth-after-normalizing-over-state-population">1.5.3 Choropleth after normalizing over state population</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#normalized-flight-counts-at-different-month">1.5.4 Normalized flight-counts at different month?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-by-airport">1.6 Flight-counts by airport</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_munging.html">2 Data munging (some elbow grease)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">2.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">2.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">2.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">2.1.1.2 Filter away nans from the DataFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">2.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">2.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">2.1.2 Study <em>airports</em> spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">2.1.2.1 Study nans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">2.1.2.2 Filter out non-USA airports</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">2.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">2.1.3.1 Plot bubble markers for all airports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">2.1.3.2 Take a closer look at Michigan, my home state</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">2.2 Create Lookup Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">2.2.1 Aim of notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">2.2.2 Load the main airport traffic data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">2.2.3 Load lookup table provided by BTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">2.2.4 Create <em>enhanced</em> lookuptable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#remove-code-that-is-not-present-our-dataset">2.2.4.1 Remove Code that is not present our dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#parse-state-city-and-airport-name-from-description-field">2.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-state-region-information">2.2.4.3 Add state &#8216;region&#8217; information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-airport-latitude-and-longitude-information-using-google-geocoder">2.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">2.3 Test</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"></ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <h1 id="search-documentation">Search</h1>
+  <div id="fallback" class="admonition warning">
+  <script type="text/javascript">$('#fallback').hide();</script>
+  <p>
+    Please activate JavaScript to enable the search
+    functionality.
+  </p>
+  </div>
+  <p>
+    From here you can search these documents. Enter your search
+    words into the box below and click "search". Note that the search
+    function will automatically search for all of the words. Pages
+    containing fewer words won't appear in the result list.
+  </p>
+
+  
+  <form class="form-inline" action="" method="get">
+    <div class="form-group">
+      <input type="text" class="form-control" name="q" value="" />
+    </div>
+    <input type="submit" class="btn btn-default" value="search" />
+    <span id="search-progress" style="padding-left: 10px"></span>
+  </form>  
+  
+  
+  
+  <div id="search-results">
+  
+  </div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+      
+    </p>
+    <p>
+      Last updated on Jan 11, 2017.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
 </html>

@@ -4,17 +4,22 @@ US Airport Traffic Analysis
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1345.embed?share_key=HXSygiLDpJTyDMXMN7lIa6&link=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1779.embed?share_key=xkV9WAnsiywgPQQgk2lE0h&link=false&logo=false" height="525px" width="100%"></iframe>
+
+.. raw:: html
+
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" width="100%" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~takanori/1795.embed?link=false&logo=false"></iframe>
 
 .. toctree::
    :maxdepth: 2
    :numbered:
    :caption: Contents
 
+   flight-count-analysis1
    data_munging
 
-.. figure:: /_static/img/west.svg
-   :scale: 100 %
+.. figure:: /_static/img/west-zoom.png
+   :scale: 55 %
    :align: center
 
    Network representing community structure in the US airport traffic during the past year (Nov 2015 - Oct 2016), with the node-color representing the community each airport belongs to.  Click on figure to open in a separate tab and zoom; figures are in SVG format, so zoom in as you wish :)

@@ -1,177 +1,213 @@
 
 
 
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>1.1 Study carriers.xls and airports new.xlt</title>
-  
 
-  
-  
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-  
 
-  
-
-  
-  
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-
-  
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
+    <title>2.1 Study carriers.xls and airports new.xlt</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/style.css" type="text/css" />
-  
     <link rel="stylesheet" href="_static/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
-  
-
-  
-    <link rel="top" title="" href="index.html"/>
-        <link rel="up" title="1 Data munging (some elbow grease)" href="data_munging.html"/>
-        <link rel="next" title="1.2 Create Lookup Table" href="create_lookup_table.html"/>
-        <link rel="prev" title="1 Data munging (some elbow grease)" href="data_munging.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+    <link rel="stylesheet" href="_static/bootswatch-3.3.6/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/copybutton.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="" href="index.html" />
+    <link rel="up" title="2 Data munging (some elbow grease)" href="data_munging.html" />
+    <link rel="next" title="2.2 Create Lookup Table" href="create_lookup_table.html" />
+    <link rel="prev" title="2 Data munging (some elbow grease)" href="data_munging.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
 
-          
-            <a href="index.html" class="fa fa-spotify"> US Airport Traffic Analysis
-            
-          
+  </head>
+  <body role="document">
 
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-                <p class="caption"><span class="caption-text">Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="data_munging.html">1 Data munging (some elbow grease)</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">1.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#study-the-carrier-spreadsheet">1.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sort-out-the-nan-values">1.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#filter-away-nans-from-the-dataframe">1.1.1.2 Filter away nans from the DataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#realized-some-code-is-treated-as-int-convert-to-string">1.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">1.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#study-airports-spreadsheet">1.1.2 Study <em>airports</em> spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#study-nans">1.1.2.1 Study nans</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#filter-out-non-usa-airports">1.1.2.2 Filter out non-USA airports</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#study-airports-state-distribution">1.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#plot-bubble-markers-for-all-airports">1.1.3.1 Plot bubble markers for all airports</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#take-a-closer-look-at-michigan-my-home-state">1.1.3.2 Take a closer look at Michigan, my home state</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">1.2 Create Lookup Table</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">1.2.1 Aim of notebook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">1.2.2 Load the main airport traffic data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">1.2.3 Load lookup table provided by BTS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">1.2.4 Create <em>enhanced</em> lookuptable</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#remove-code-that-is-not-present-our-dataset">1.2.4.1 Remove Code that is not present our dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#parse-state-city-and-airport-name-from-description-field">1.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-state-region-information">1.2.4.3 Add state &#8216;region&#8217; information</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-airport-latitude-and-longitude-information-using-google-geocoder">1.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="test.html">1.3 Test</a></li>
-</ul>
-</li>
-</ul>
-
-            
-          
-        </div>
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          US Airport Traffic Analysis</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">US Airport Traffic Analysis</a>
-      </nav>
-
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    
-    <li>1.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></li>
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="_sources/spotify_0105a.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
             
+                <li><a href="http://takwatanabe.me"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; takwatanabe.me</a></li>
+                <li><a href="https://github.com/wtak23/airtraffic"><i class="fa fa-github" aria-hidden="true"></i>&nbsp; Github</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">TOC <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="flight-count-analysis1.html">1 Air-traffic Count Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#load-data">1.1 Load data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#create-timeseries-of-daily-flight-counts">1.2 Create Timeseries of Daily Flight Counts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#create-interactive-plot-with-plotly-cufflinks">1.2.1 Create interactive plot with plotly/cufflinks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#study-seasonal-trend-with-rolling-averaged-timeseries">1.2.2 Study seasonal trend with rolling-averaged timeseries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-study-by-day-of-week-and-month">1.3 Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#over-entire-year">1.3.1 Over entire year</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#apply-pivoting-to-groupby-month-and-day-of-week">1.3.2 Apply pivoting to groupby month and day_of_week</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#repeat-analysis-for-ny-la-and-vegas">1.4 Repeat analysis for NY, LA, and Vegas.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#data-tidying">1.4.1 Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#plot-results">1.4.2 Plot results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#create-sublots-of-monthly-flight-count-trends-for-each-city">1.4.3 Create sublots of monthly flight-count trends for each city</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#which-state-had-the-most-air-traffics">1.5 Which state had the most air traffics?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#id1">1.5.1 Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#choropleth-figure-display-result-on-us-map">1.5.2 Choropleth figure (display result on US map)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#choropleth-after-normalizing-over-state-population">1.5.3 Choropleth after normalizing over state population</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#normalized-flight-counts-at-different-month">1.5.4 Normalized flight-counts at different month?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-by-airport">1.6 Flight-counts by airport</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="data_munging.html">2 Data munging (some elbow grease)</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">2.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#study-the-carrier-spreadsheet">2.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sort-out-the-nan-values">2.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filter-away-nans-from-the-dataframe">2.1.1.2 Filter away nans from the DataFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#realized-some-code-is-treated-as-int-convert-to-string">2.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">2.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#study-airports-spreadsheet">2.1.2 Study <em>airports</em> spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#study-nans">2.1.2.1 Study nans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filter-out-non-usa-airports">2.1.2.2 Filter out non-USA airports</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#study-airports-state-distribution">2.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#plot-bubble-markers-for-all-airports">2.1.3.1 Plot bubble markers for all airports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#take-a-closer-look-at-michigan-my-home-state">2.1.3.2 Take a closer look at Michigan, my home state</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">2.2 Create Lookup Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">2.2.1 Aim of notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">2.2.2 Load the main airport traffic data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">2.2.3 Load lookup table provided by BTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">2.2.4 Create <em>enhanced</em> lookuptable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#remove-code-that-is-not-present-our-dataset">2.2.4.1 Remove Code that is not present our dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#parse-state-city-and-airport-name-from-description-field">2.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-state-region-information">2.2.4.3 Add state &#8216;region&#8217; information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-airport-latitude-and-longitude-information-using-google-geocoder">2.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">2.3 Test</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">2.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li><a class="reference internal" href="#study-the-carrier-spreadsheet">2.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
+<li><a class="reference internal" href="#sort-out-the-nan-values">2.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
+<li><a class="reference internal" href="#filter-away-nans-from-the-dataframe">2.1.1.2 Filter away nans from the DataFrame</a></li>
+<li><a class="reference internal" href="#realized-some-code-is-treated-as-int-convert-to-string">2.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
+<li><a class="reference internal" href="#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">2.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#study-airports-spreadsheet">2.1.2 Study <em>airports</em> spreadsheet</a><ul>
+<li><a class="reference internal" href="#study-nans">2.1.2.1 Study nans</a></li>
+<li><a class="reference internal" href="#filter-out-non-usa-airports">2.1.2.2 Filter out non-USA airports</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#study-airports-state-distribution">2.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
+<li><a class="reference internal" href="#plot-bubble-markers-for-all-airports">2.1.3.1 Plot bubble markers for all airports</a></li>
+<li><a class="reference internal" href="#take-a-closer-look-at-michigan-my-home-state">2.1.3.2 Take a closer look at Michigan, my home state</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
   <div class="section" id="study-carriers-xls-and-airports-new-xlt">
-<h1>1.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></h1>
+<h1>2.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></h1>
 <p>Preliminary data analysis with the spreadsheets <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code>.</p>
 <p>The original ipython notebook can be downloaded from <a class="reference external" href="http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/draft_scripts/spotify_0105a.ipynb">here</a> .</p>
 <div class="contents local topic" id="contents">
@@ -211,7 +247,7 @@
 </pre></div>
 </div>
 <div class="section" id="study-the-carrier-spreadsheet">
-<h2><a class="toc-backref" href="#id1">1.1.1 Study the &#8220;carrier&#8221; spreadsheet</a></h2>
+<h2><a class="toc-backref" href="#id1">2.1.1 Study the &#8220;carrier&#8221; spreadsheet</a></h2>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_carr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;../data/carriers.xls&#39;</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;df_carr.shape = &quot;</span><span class="p">,</span><span class="n">df_carr</span><span class="o">.</span><span class="n">shape</span>
 <span class="k">print</span> <span class="n">df_carr</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
@@ -291,7 +327,7 @@
 </table>
 <p>15 rows × 2 columns</p>
 </div><div class="section" id="sort-out-the-nan-values">
-<h3><a class="toc-backref" href="#id2">1.1.1.1 sort out the &#8220;nan&#8221; values</a></h3>
+<h3><a class="toc-backref" href="#id2">2.1.1.1 sort out the &#8220;nan&#8221; values</a></h3>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_carr</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -388,7 +424,7 @@ Name: 1747, dtype: object
 <p>...so nothing exactly special looking...</p>
 </div>
 <div class="section" id="filter-away-nans-from-the-dataframe">
-<h3><a class="toc-backref" href="#id3">1.1.1.2 Filter away nans from the DataFrame</a></h3>
+<h3><a class="toc-backref" href="#id3">2.1.1.2 Filter away nans from the DataFrame</a></h3>
 <ul class="simple">
 <li>remove row with <em>any</em> nans</li>
 </ul>
@@ -479,7 +515,7 @@ Name: 1747, dtype: object
 </div>
 </div>
 <div class="section" id="realized-some-code-is-treated-as-int-convert-to-string">
-<h3><a class="toc-backref" href="#id4">1.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></h3>
+<h3><a class="toc-backref" href="#id4">2.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></h3>
 <ul class="simple">
 <li>d</li>
 </ul>
@@ -499,7 +535,7 @@ dtype: object
 </div>
 </div>
 <div class="section" id="what-s-the-deal-with-the-1-appended-to-some-of-the-entries">
-<h3><a class="toc-backref" href="#id5">1.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></h3>
+<h3><a class="toc-backref" href="#id5">2.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></h3>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">mask1</span> <span class="o">=</span> <span class="n">df_carr</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;(1)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span>
 <span class="n">mask2</span> <span class="o">=</span> <span class="n">df_carr</span><span class="p">[</span><span class="s1">&#39;Description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;(1)&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">bool</span><span class="p">)</span>
 
@@ -736,7 +772,7 @@ dtype: object
 </div></div>
 </div>
 <div class="section" id="study-airports-spreadsheet">
-<h2><a class="toc-backref" href="#id6">1.1.2 Study <em>airports</em> spreadsheet</a></h2>
+<h2><a class="toc-backref" href="#id6">2.1.2 Study <em>airports</em> spreadsheet</a></h2>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_airports</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;../data/airports new.xlt&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -876,7 +912,7 @@ dtype: object
   </tbody>
 </table>
 </div><div class="section" id="study-nans">
-<h3><a class="toc-backref" href="#id7">1.1.2.1 Study nans</a></h3>
+<h3><a class="toc-backref" href="#id7">2.1.2.1 Study nans</a></h3>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># any nans?</span>
 <span class="n">df_airports</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
@@ -1048,7 +1084,7 @@ Name: country, dtype: int64
 </div>
 </div>
 <div class="section" id="filter-out-non-usa-airports">
-<h3><a class="toc-backref" href="#id8">1.1.2.2 Filter out non-USA airports</a></h3>
+<h3><a class="toc-backref" href="#id8">2.1.2.2 Filter out non-USA airports</a></h3>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_airports</span> <span class="o">=</span> <span class="n">df_airports</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;country == &quot;USA&quot;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1061,7 +1097,7 @@ Name: country, dtype: int64
 </div>
 </div>
 <div class="section" id="study-airports-state-distribution">
-<h2><a class="toc-backref" href="#id9">1.1.3 Study &#8220;airports&#8221; state distribution</a></h2>
+<h2><a class="toc-backref" href="#id9">2.1.3 Study &#8220;airports&#8221; state distribution</a></h2>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_state</span> <span class="o">=</span> <span class="n">df_airports</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">df_state</span> <span class="o">=</span> <span class="n">df_state</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="n">df_state</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span><span class="s1">&#39;counts&#39;</span><span class="p">]</span>
@@ -1179,7 +1215,7 @@ Name: country, dtype: int64
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1345.embed?share_key=HXSygiLDpJTyDMXMN7lIa6&link=false" height="525px" width="100%"></iframe><p>From the above plot, it looks like the number of aiports in a state is
 proportional to the land-area of the state...</p>
 <div class="section" id="plot-bubble-markers-for-all-airports">
-<h3><a class="toc-backref" href="#id10">1.1.3.1 Plot bubble markers for all airports</a></h3>
+<h3><a class="toc-backref" href="#id10">2.1.3.1 Plot bubble markers for all airports</a></h3>
 <p>This will give an idea of the airport distribution around the country</p>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">dict</span><span class="p">(</span>
         <span class="nb">type</span> <span class="o">=</span> <span class="s1">&#39;scattergeo&#39;</span><span class="p">,</span>
@@ -1227,7 +1263,7 @@ which was again expected.</li>
 </ul>
 </div>
 <div class="section" id="take-a-closer-look-at-michigan-my-home-state">
-<h3><a class="toc-backref" href="#id11">1.1.3.2 Take a closer look at Michigan, my home state</a></h3>
+<h3><a class="toc-backref" href="#id11">2.1.3.2 Take a closer look at Michigan, my home state</a></h3>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_airports</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;state==&quot;MI&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1317,72 +1353,27 @@ which was again expected.</li>
 </div>
 
 
-           </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="create_lookup_table.html" class="btn btn-neutral float-right" title="1.2 Create Lookup Table" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="data_munging.html" class="btn btn-neutral" title="1 Data munging (some elbow grease)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
     </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-      Last updated on Jan 10, 2017.
-
-    </p>
-  </div> 
-
-</footer>
-
-        </div>
-      </div>
-
-    </section>
-
+      
   </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/copybutton.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
-  </script>
-   
-
-</body>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="_sources/spotify_0105a.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+      Last updated on Jan 11, 2017.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
 </html>

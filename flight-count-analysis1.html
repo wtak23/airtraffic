@@ -1,0 +1,2629 @@
+
+
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1 Air-traffic Count Analysis</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="stylesheet" href="_static/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.6/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/copybutton.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="" href="index.html" />
+    <link rel="next" title="2 Data munging (some elbow grease)" href="data_munging.html" />
+    <link rel="prev" title="US Airport Traffic Analysis" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          US Airport Traffic Analysis</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="http://takwatanabe.me"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; takwatanabe.me</a></li>
+                <li><a href="https://github.com/wtak23/airtraffic"><i class="fa fa-github" aria-hidden="true"></i>&nbsp; Github</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">TOC <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">1 Air-traffic Count Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#load-data">1.1 Load data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-timeseries-of-daily-flight-counts">1.2 Create Timeseries of Daily Flight Counts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-interactive-plot-with-plotly-cufflinks">1.2.1 Create interactive plot with plotly/cufflinks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#study-seasonal-trend-with-rolling-averaged-timeseries">1.2.2 Study seasonal trend with rolling-averaged timeseries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#flight-counts-study-by-day-of-week-and-month">1.3 Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#over-entire-year">1.3.1 Over entire year</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#apply-pivoting-to-groupby-month-and-day-of-week">1.3.2 Apply pivoting to groupby month and day_of_week</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#repeat-analysis-for-ny-la-and-vegas">1.4 Repeat analysis for NY, LA, and Vegas.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-tidying">1.4.1 Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plot-results">1.4.2 Plot results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-sublots-of-monthly-flight-count-trends-for-each-city">1.4.3 Create sublots of monthly flight-count trends for each city</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#which-state-had-the-most-air-traffics">1.5 Which state had the most air traffics?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.5.1 Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#choropleth-figure-display-result-on-us-map">1.5.2 Choropleth figure (display result on US map)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#choropleth-after-normalizing-over-state-population">1.5.3 Choropleth after normalizing over state population</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#normalized-flight-counts-at-different-month">1.5.4 Normalized flight-counts at different month?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#flight-counts-by-airport">1.6 Flight-counts by airport</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_munging.html">2 Data munging (some elbow grease)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">2.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">2.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">2.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">2.1.1.2 Filter away nans from the DataFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">2.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">2.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">2.1.2 Study <em>airports</em> spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">2.1.2.1 Study nans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">2.1.2.2 Filter out non-USA airports</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">2.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">2.1.3.1 Plot bubble markers for all airports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">2.1.3.2 Take a closer look at Michigan, my home state</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">2.2 Create Lookup Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">2.2.1 Aim of notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">2.2.2 Load the main airport traffic data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">2.2.3 Load lookup table provided by BTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">2.2.4 Create <em>enhanced</em> lookuptable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#remove-code-that-is-not-present-our-dataset">2.2.4.1 Remove Code that is not present our dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#parse-state-city-and-airport-name-from-description-field">2.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-state-region-information">2.2.4.3 Add state &#8216;region&#8217; information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-airport-latitude-and-longitude-information-using-google-geocoder">2.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">2.3 Test</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">1 Air-traffic Count Analysis</a><ul>
+<li><a class="reference internal" href="#load-data">1.1 Load data</a></li>
+<li><a class="reference internal" href="#create-timeseries-of-daily-flight-counts">1.2 Create Timeseries of Daily Flight Counts</a><ul>
+<li><a class="reference internal" href="#create-interactive-plot-with-plotly-cufflinks">1.2.1 Create interactive plot with plotly/cufflinks</a></li>
+<li><a class="reference internal" href="#study-seasonal-trend-with-rolling-averaged-timeseries">1.2.2 Study seasonal trend with rolling-averaged timeseries</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#flight-counts-study-by-day-of-week-and-month">1.3 Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
+<li><a class="reference internal" href="#over-entire-year">1.3.1 Over entire year</a></li>
+<li><a class="reference internal" href="#apply-pivoting-to-groupby-month-and-day-of-week">1.3.2 Apply pivoting to groupby month and day_of_week</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#repeat-analysis-for-ny-la-and-vegas">1.4 Repeat analysis for NY, LA, and Vegas.</a><ul>
+<li><a class="reference internal" href="#data-tidying">1.4.1 Data tidying</a></li>
+<li><a class="reference internal" href="#plot-results">1.4.2 Plot results</a></li>
+<li><a class="reference internal" href="#create-sublots-of-monthly-flight-count-trends-for-each-city">1.4.3 Create sublots of monthly flight-count trends for each city</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#which-state-had-the-most-air-traffics">1.5 Which state had the most air traffics?</a><ul>
+<li><a class="reference internal" href="#id1">1.5.1 Data tidying</a></li>
+<li><a class="reference internal" href="#choropleth-figure-display-result-on-us-map">1.5.2 Choropleth figure (display result on US map)</a></li>
+<li><a class="reference internal" href="#choropleth-after-normalizing-over-state-population">1.5.3 Choropleth after normalizing over state population</a></li>
+<li><a class="reference internal" href="#normalized-flight-counts-at-different-month">1.5.4 Normalized flight-counts at different month?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#flight-counts-by-airport">1.6 Flight-counts by airport</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="air-traffic-count-analysis">
+<h1>1 Air-traffic Count Analysis</h1>
+<p>The original ipython notebook can be downloaded from <a class="reference external" href="http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/flight-count-analysis1.ipynb">here</a> .</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title first"><cite>Contents</cite></p>
+<ul class="simple">
+<li><a class="reference internal" href="#load-data" id="id2">Load data</a></li>
+<li><a class="reference internal" href="#create-timeseries-of-daily-flight-counts" id="id3">Create Timeseries of Daily Flight Counts</a><ul>
+<li><a class="reference internal" href="#create-interactive-plot-with-plotly-cufflinks" id="id4">Create interactive plot with plotly/cufflinks</a></li>
+<li><a class="reference internal" href="#study-seasonal-trend-with-rolling-averaged-timeseries" id="id5">Study seasonal trend with rolling-averaged timeseries</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#flight-counts-study-by-day-of-week-and-month" id="id6">Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
+<li><a class="reference internal" href="#over-entire-year" id="id7">Over entire year</a></li>
+<li><a class="reference internal" href="#apply-pivoting-to-groupby-month-and-day-of-week" id="id8">Apply pivoting to groupby month and day_of_week</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#repeat-analysis-for-ny-la-and-vegas" id="id9">Repeat analysis for NY, LA, and Vegas.</a><ul>
+<li><a class="reference internal" href="#data-tidying" id="id10">Data tidying</a></li>
+<li><a class="reference internal" href="#plot-results" id="id11">Plot results</a></li>
+<li><a class="reference internal" href="#create-sublots-of-monthly-flight-count-trends-for-each-city" id="id12">Create sublots of monthly flight-count trends for each city</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#which-state-had-the-most-air-traffics" id="id13">Which state had the most air traffics?</a><ul>
+<li><a class="reference internal" href="#id1" id="id14">Data tidying</a></li>
+<li><a class="reference internal" href="#choropleth-figure-display-result-on-us-map" id="id15">Choropleth figure (display result on US map)</a></li>
+<li><a class="reference internal" href="#choropleth-after-normalizing-over-state-population" id="id16">Choropleth after normalizing over state population</a></li>
+<li><a class="reference internal" href="#normalized-flight-counts-at-different-month" id="id17">Normalized flight-counts at different month?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#flight-counts-by-airport" id="id18">Flight-counts by airport</a></li>
+</ul>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span>%matplotlib inline
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn.apionly</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">plotly</span>
+<span class="kn">import</span> <span class="nn">plotly.plotly</span> <span class="kn">as</span> <span class="nn">py</span>
+<span class="kn">import</span> <span class="nn">calendar</span>
+
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+
+<span class="kn">import</span> <span class="nn">cufflinks</span> <span class="kn">as</span> <span class="nn">cf</span>
+<span class="n">cf</span><span class="o">.</span><span class="n">set_config_file</span><span class="p">(</span><span class="n">theme</span><span class="o">=</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">util</span>
+
+<span class="c1"># limit output to avoid cluttering screen</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="mi">20</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># name of output files to prepend with</span>
+<span class="n">outfile</span> <span class="o">=</span> <span class="s1">&#39;flight_count_analysis1_&#39;</span>
+</pre></div>
+</div>
+<div class="section" id="load-data">
+<h2><a class="toc-backref" href="#id2">1.1 Load data</a></h2>
+<p>Load the <strong>airport data</strong>, as well as the <strong>lookup-table</strong> I created
+<a class="reference external" href="http://takwatanabe.me/airtraffic/create_lookup_table.html">here</a>.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_data</span> <span class="o">=</span> <span class="n">util</span><span class="o">.</span><span class="n">load_airport_data</span><span class="p">()</span>
+<span class="n">period</span> <span class="o">=</span> <span class="s1">&#39;11/1/2015 to 10/31/2016&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2015</span><span class="o">-</span><span class="mf">11.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2015</span><span class="o">-</span><span class="mf">12.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">01.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">02.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">03.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">04.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">05.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">06.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">07.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">08.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">09.</span><span class="n">zip</span>
+<span class="o">...</span> <span class="n">load</span> <span class="n">dataframe</span> <span class="kn">from</span> <span class="mi">2016</span><span class="o">-</span><span class="mf">10.</span><span class="n">zip</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YEAR</th>
+      <th>QUARTER</th>
+      <th>MONTH</th>
+      <th>DAY_OF_MONTH</th>
+      <th>DAY_OF_WEEK</th>
+      <th>ORIGIN_AIRPORT_ID</th>
+      <th>DEST_AIRPORT_ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>4</td>
+      <td>3</td>
+      <td>14570</td>
+      <td>13930</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>5</td>
+      <td>4</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>6</td>
+      <td>5</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>7</td>
+      <td>6</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>8</td>
+      <td>7</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># make the &quot;day_of_week&quot; explicit</span>
+<span class="n">hash_dayofweek</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s1">&#39;Tue&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="s1">&#39;Wed&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="s1">&#39;Thu&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span><span class="s1">&#39;Fri&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span><span class="s1">&#39;Sat&#39;</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span><span class="s1">&#39;Sun&#39;</span><span class="p">}</span>
+<span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;DAY_OF_WEEK&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;DAY_OF_WEEK&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">key</span><span class="p">:</span> <span class="n">hash_dayofweek</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+<span class="n">df_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YEAR</th>
+      <th>QUARTER</th>
+      <th>MONTH</th>
+      <th>DAY_OF_MONTH</th>
+      <th>DAY_OF_WEEK</th>
+      <th>ORIGIN_AIRPORT_ID</th>
+      <th>DEST_AIRPORT_ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>4</td>
+      <td>Wed</td>
+      <td>14570</td>
+      <td>13930</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>5</td>
+      <td>Thu</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>6</td>
+      <td>Fri</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>7</td>
+      <td>Sat</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>8</td>
+      <td>Sun</td>
+      <td>13930</td>
+      <td>14057</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_lookup</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;df_lookup.csv&#39;</span><span class="p">)</span> <span class="c1"># lookup table for the AIRPORT_ID above</span>
+<span class="n">df_lookup</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Airport</th>
+      <th>City</th>
+      <th>State</th>
+      <th>lat</th>
+      <th>lon</th>
+      <th>latlon</th>
+      <th>City_State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10135</td>
+      <td>Allentown/Bethlehem/Easton, PA: Lehigh Valley ...</td>
+      <td>Lehigh Valley International</td>
+      <td>Allentown/Bethlehem/Easton</td>
+      <td>PA</td>
+      <td>40.651650</td>
+      <td>-75.434746</td>
+      <td>(40.651650399999994, -75.434746099999984)</td>
+      <td>Allentown/Bethlehem/Easton (PA)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10136</td>
+      <td>Abilene, TX: Abilene Regional</td>
+      <td>Abilene Regional</td>
+      <td>Abilene</td>
+      <td>TX</td>
+      <td>32.448736</td>
+      <td>-99.733144</td>
+      <td>(32.448736400000001, -99.733143900000002)</td>
+      <td>Abilene (TX)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10140</td>
+      <td>Albuquerque, NM: Albuquerque International Sun...</td>
+      <td>Albuquerque International Sunport</td>
+      <td>Albuquerque</td>
+      <td>NM</td>
+      <td>35.043333</td>
+      <td>-106.612909</td>
+      <td>(35.0433333, -106.6129085)</td>
+      <td>Albuquerque (NM)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10141</td>
+      <td>Aberdeen, SD: Aberdeen Regional</td>
+      <td>Aberdeen Regional</td>
+      <td>Aberdeen</td>
+      <td>SD</td>
+      <td>45.453458</td>
+      <td>-98.417726</td>
+      <td>(45.453458300000001, -98.417726099999996)</td>
+      <td>Aberdeen (SD)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10146</td>
+      <td>Albany, GA: Southwest Georgia Regional</td>
+      <td>Southwest Georgia Regional</td>
+      <td>Albany</td>
+      <td>GA</td>
+      <td>31.535671</td>
+      <td>-84.193905</td>
+      <td>(31.535671100000002, -84.193904900000007)</td>
+      <td>Albany (GA)</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># create hash-table to convert Airport &quot;Code&quot; to &quot;City_State&quot;</span>
+<span class="c1"># (combination of city/state is verified to be unique with the scope of this dataset)</span>
+<span class="n">hash_lookup</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Code&#39;</span><span class="p">)[</span><span class="s1">&#39;City_State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="n">pprint</span><span class="p">({</span><span class="n">k</span><span class="p">:</span> <span class="n">hash_lookup</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">hash_lookup</span><span class="o">.</span><span class="n">keys</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]})</span>
+
+<span class="c1"># also create hash-table for airport names</span>
+<span class="n">hash_airport</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Code&#39;</span><span class="p">)[</span><span class="s1">&#39;Airport&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="n">pprint</span><span class="p">({</span><span class="n">k</span><span class="p">:</span> <span class="n">hash_airport</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">hash_airport</span><span class="o">.</span><span class="n">keys</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]})</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">10245</span><span class="p">:</span> <span class="s1">&#39;King Salmon (AK)&#39;</span><span class="p">,</span>
+ <span class="mi">10754</span><span class="p">:</span> <span class="s1">&#39;Barrow (AK)&#39;</span><span class="p">,</span>
+ <span class="mi">11267</span><span class="p">:</span> <span class="s1">&#39;Dayton (OH)&#39;</span><span class="p">,</span>
+ <span class="mi">11274</span><span class="p">:</span> <span class="s1">&#39;Dubuque (IA)&#39;</span><span class="p">,</span>
+ <span class="mi">11278</span><span class="p">:</span> <span class="s1">&#39;Washington (DC) [R.Reagan]&#39;</span><span class="p">,</span>
+ <span class="mi">11778</span><span class="p">:</span> <span class="s1">&#39;Fort Smith (AR)&#39;</span><span class="p">,</span>
+ <span class="mi">13230</span><span class="p">:</span> <span class="s1">&#39;Harrisburg (PA)&#39;</span><span class="p">,</span>
+ <span class="mi">13830</span><span class="p">:</span> <span class="s1">&#39;Kahului (HI)&#39;</span><span class="p">,</span>
+ <span class="mi">14696</span><span class="p">:</span> <span class="s1">&#39;South Bend (IN)&#39;</span><span class="p">,</span>
+ <span class="mi">15412</span><span class="p">:</span> <span class="s1">&#39;Knoxville (TN)&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="mi">10245</span><span class="p">:</span> <span class="s1">&#39;King Salmon Airport&#39;</span><span class="p">,</span>
+ <span class="mi">10754</span><span class="p">:</span> <span class="s1">&#39;Wiley Post/Will Rogers Memorial&#39;</span><span class="p">,</span>
+ <span class="mi">11267</span><span class="p">:</span> <span class="s1">&#39;James M Cox/Dayton International&#39;</span><span class="p">,</span>
+ <span class="mi">11274</span><span class="p">:</span> <span class="s1">&#39;Dubuque Regional&#39;</span><span class="p">,</span>
+ <span class="mi">11278</span><span class="p">:</span> <span class="s1">&#39;Ronald Reagan Washington National&#39;</span><span class="p">,</span>
+ <span class="mi">11778</span><span class="p">:</span> <span class="s1">&#39;Fort Smith Regional&#39;</span><span class="p">,</span>
+ <span class="mi">13230</span><span class="p">:</span> <span class="s1">&#39;Harrisburg International&#39;</span><span class="p">,</span>
+ <span class="mi">13830</span><span class="p">:</span> <span class="s1">&#39;Kahului Airport&#39;</span><span class="p">,</span>
+ <span class="mi">14696</span><span class="p">:</span> <span class="s1">&#39;South Bend International&#39;</span><span class="p">,</span>
+ <span class="mi">15412</span><span class="p">:</span> <span class="s1">&#39;McGhee Tyson&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-timeseries-of-daily-flight-counts">
+<h2><a class="toc-backref" href="#id3">1.2 Create Timeseries of Daily Flight Counts</a></h2>
+<ul class="simple">
+<li>Here, I would like to analyze the trend in the <strong>total daily
+flights</strong> in the United States.</li>
+<li>To this end, we&#8217;ll first construct a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/timeseries.html">Pandas
+TimeSeries</a>
+DataFrame containing the daily Flight-count information.</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># create a column containing &quot;YEAR-MONTH-DAY&quot;</span>
+<span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;-&#39;</span>
+                  <span class="o">+</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;-&#39;</span>
+                  <span class="o">+</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;DAY_OF_MONTH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+
+<span class="n">df_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YEAR</th>
+      <th>QUARTER</th>
+      <th>MONTH</th>
+      <th>DAY_OF_MONTH</th>
+      <th>DAY_OF_WEEK</th>
+      <th>ORIGIN_AIRPORT_ID</th>
+      <th>DEST_AIRPORT_ID</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>4</td>
+      <td>Wed</td>
+      <td>14570</td>
+      <td>13930</td>
+      <td>2015-11-4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>5</td>
+      <td>Thu</td>
+      <td>13930</td>
+      <td>14057</td>
+      <td>2015-11-5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>6</td>
+      <td>Fri</td>
+      <td>13930</td>
+      <td>14057</td>
+      <td>2015-11-6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>7</td>
+      <td>Sat</td>
+      <td>13930</td>
+      <td>14057</td>
+      <td>2015-11-7</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2015</td>
+      <td>4</td>
+      <td>11</td>
+      <td>8</td>
+      <td>Sun</td>
+      <td>13930</td>
+      <td>14057</td>
+      <td>2015-11-8</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># create time-series of airtraffic counts</span>
+<span class="n">ts_flightcounts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;time&#39;</span><span class="p">:</span><span class="s1">&#39;counts&#39;</span><span class="p">})</span>
+<span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">()</span>
+<span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="c1"># need to sort by date</span>
+<span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>counts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2015-11-01</th>
+      <td>15652</td>
+    </tr>
+    <tr>
+      <th>2015-11-02</th>
+      <td>16596</td>
+    </tr>
+    <tr>
+      <th>2015-11-03</th>
+      <td>15918</td>
+    </tr>
+    <tr>
+      <th>2015-11-04</th>
+      <td>16363</td>
+    </tr>
+    <tr>
+      <th>2015-11-05</th>
+      <td>16619</td>
+    </tr>
+    <tr>
+      <th>2015-11-06</th>
+      <td>16600</td>
+    </tr>
+    <tr>
+      <th>2015-11-07</th>
+      <td>12793</td>
+    </tr>
+    <tr>
+      <th>2015-11-08</th>
+      <td>15679</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># explicitly add extra date-info as dataframe columns (to apply `groupby` later)</span>
+<span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">day</span>
+<span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">month</span>
+<span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;day_of_week&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">dayofweek</span>
+
+<span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>counts</th>
+      <th>day</th>
+      <th>month</th>
+      <th>day_of_week</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2015-11-01</th>
+      <td>15652</td>
+      <td>1</td>
+      <td>11</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2015-11-02</th>
+      <td>16596</td>
+      <td>2</td>
+      <td>11</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2015-11-03</th>
+      <td>15918</td>
+      <td>3</td>
+      <td>11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2015-11-04</th>
+      <td>16363</td>
+      <td>4</td>
+      <td>11</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2015-11-05</th>
+      <td>16619</td>
+      <td>5</td>
+      <td>11</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># `dayofweek` uses encoding Monday=0 ... Sunday=6...make this explicit</span>
+<span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;day_of_week&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;day_of_week&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="mi">0</span><span class="p">:</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span>
+                                                                     <span class="mi">1</span><span class="p">:</span><span class="s1">&#39;Tue&#39;</span><span class="p">,</span>
+                                                                     <span class="mi">2</span><span class="p">:</span><span class="s1">&#39;Wed&#39;</span><span class="p">,</span>
+                                                                     <span class="mi">3</span><span class="p">:</span><span class="s1">&#39;Thu&#39;</span><span class="p">,</span>
+                                                                     <span class="mi">4</span><span class="p">:</span><span class="s1">&#39;Fri&#39;</span><span class="p">,</span>
+                                                                     <span class="mi">5</span><span class="p">:</span><span class="s1">&#39;Sat&#39;</span><span class="p">,</span>
+                                                                     <span class="mi">6</span><span class="p">:</span><span class="s1">&#39;Sun&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+
+<span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>counts</th>
+      <th>day</th>
+      <th>month</th>
+      <th>day_of_week</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2015-11-01</th>
+      <td>15652</td>
+      <td>1</td>
+      <td>11</td>
+      <td>Sun</td>
+    </tr>
+    <tr>
+      <th>2015-11-02</th>
+      <td>16596</td>
+      <td>2</td>
+      <td>11</td>
+      <td>Mon</td>
+    </tr>
+    <tr>
+      <th>2015-11-03</th>
+      <td>15918</td>
+      <td>3</td>
+      <td>11</td>
+      <td>Tue</td>
+    </tr>
+    <tr>
+      <th>2015-11-04</th>
+      <td>16363</td>
+      <td>4</td>
+      <td>11</td>
+      <td>Wed</td>
+    </tr>
+    <tr>
+      <th>2015-11-05</th>
+      <td>16619</td>
+      <td>5</td>
+      <td>11</td>
+      <td>Thu</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="section" id="create-interactive-plot-with-plotly-cufflinks">
+<h3><a class="toc-backref" href="#id4">1.2.1 Create interactive plot with plotly/cufflinks</a></h3>
+<ul class="simple">
+<li>I am a huge fan of <a class="reference external" href="http://plot.ly/python/">plotly</a>...brings the
+distance between the data and user closer together :)</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># create hover_text object for plotly</span>
+<span class="n">hover_text</span><span class="o">=</span> <span class="p">(</span>
+    <span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+    <span class="o">+</span>  <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+    <span class="o">+</span> <span class="s1">&#39; (&#39;</span> <span class="o">+</span> <span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;day_of_week&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span>
+<span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="k">print</span> <span class="n">hover_text</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;11/1 (Sun)&#39;</span><span class="p">,</span> <span class="s1">&#39;11/2 (Mon)&#39;</span><span class="p">,</span> <span class="s1">&#39;11/3 (Tue)&#39;</span><span class="p">,</span> <span class="s1">&#39;11/4 (Wed)&#39;</span><span class="p">,</span> <span class="s1">&#39;11/5 (Thu)&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># see https://plot.ly/pandas/line-charts/</span>
+<span class="n">plt_options</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">hover_text</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;pink&#39;</span><span class="p">)</span>
+<span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Daily Airflight Counts in the US between &#39;</span> <span class="o">+</span> <span class="n">period</span>
+<span class="n">title</span><span class="o">+=</span> <span class="s1">&#39;&lt;br&gt;(hover over plot for dates; left-click to zoom)&#39;</span>
+
+<span class="n">ts_flightcounts</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">,</span>
+                      <span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;plot_flightcounts&#39;</span><span class="p">,</span>
+                      <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span>
+                      <span class="o">**</span><span class="n">plt_options</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1555.embed?link=false&logo=false" height="525px" width="100%"></iframe><ul class="simple">
+<li>From the above time-series plot, we can see that the trend in the
+Flight-counts looks to be obscured by the effect from the
+<code class="docutils literal"><span class="pre">day_of_week</span></code></li>
+<li>(a clear cyclical trend appears in the time-series above)</li>
+<li>By hovering over the above plot, we can observe that Saturday takes a
+<em>dip</em> downwards in flight-counts</li>
+<li>(while this was somewhat expected, it&#8217;s always nice to have the data
+reaffirm your intuition)</li>
+</ul>
+</div>
+<div class="section" id="study-seasonal-trend-with-rolling-averaged-timeseries">
+<h3><a class="toc-backref" href="#id5">1.2.2 Study seasonal trend with rolling-averaged timeseries</a></h3>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Daily Airflight Counts in the US between &#39;</span> <span class="o">+</span> <span class="n">period</span> <span class="o">+</span> <span class="s1">&#39; with rolling-mean applied over 7day window&#39;</span>
+<span class="n">ts_flightcounts</span><span class="p">[</span><span class="s1">&#39;counts&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;rolling_mean&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1695.embed?link=false&logo=false" height="525px" width="100%"></iframe><ul class="simple">
+<li>from the above plot, the summertime and end-of-the-year looks to have
+more flights (makes sense...vacation time)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="flight-counts-study-by-day-of-week-and-month">
+<h2><a class="toc-backref" href="#id6">1.3 Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a></h2>
+<ul class="simple">
+<li>to gain further insights in the patterns among the flight-counts
+across <code class="docutils literal"><span class="pre">day_of_week</span></code> and <code class="docutils literal"><span class="pre">month</span></code>, let&#8217;s create some
+<strong>count-charts</strong> via bar-graphs</li>
+</ul>
+<div class="section" id="over-entire-year">
+<h3><a class="toc-backref" href="#id7">1.3.1 Over entire year</a></h3>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># dow = dayofweek</span>
+<span class="n">flight_counts_dow</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;DAY_OF_WEEK&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;flight-counts&#39;</span><span class="p">)</span>
+<span class="n">flight_counts_dow</span> <span class="o">=</span> <span class="n">flight_counts_dow</span><span class="o">.</span><span class="n">reindex</span><span class="p">([</span><span class="s1">&#39;Sun&#39;</span><span class="p">,</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span><span class="s1">&#39;Tue&#39;</span><span class="p">,</span><span class="s1">&#39;Wed&#39;</span><span class="p">,</span><span class="s1">&#39;Thu&#39;</span><span class="p">,</span><span class="s1">&#39;Fri&#39;</span><span class="p">,</span><span class="s1">&#39;Sat&#39;</span><span class="p">])</span> <span class="c1"># reorder rows by day-of-week</span>
+
+<span class="n">flight_counts_month</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;flight-counts&#39;</span><span class="p">)</span>
+<span class="n">flight_counts_month</span> <span class="o">=</span> <span class="n">flight_counts_month</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="p">))</span>  <span class="c1"># reorder by month</span>
+<span class="n">flight_counts_month</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">flight_counts_month</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">calendar</span><span class="o">.</span><span class="n">month_abbr</span><span class="p">[</span><span class="n">num</span><span class="p">])</span> <span class="c1"># replace number with string-of-month</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">flight_counts_dow</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">flight_counts_month</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sun</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>flight-counts</th>
+      <td>804731</td>
+      <td>850170</td>
+      <td>820609</td>
+      <td>829558</td>
+      <td>831454</td>
+      <td>834372</td>
+      <td>682079</td>
+    </tr>
+  </tbody>
+</table>
+</div><div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Jan</th>
+      <th>Feb</th>
+      <th>Mar</th>
+      <th>Apr</th>
+      <th>May</th>
+      <th>Jun</th>
+      <th>Jul</th>
+      <th>Aug</th>
+      <th>Sep</th>
+      <th>Oct</th>
+      <th>Nov</th>
+      <th>Dec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>flight-counts</th>
+      <td>445827</td>
+      <td>423889</td>
+      <td>479122</td>
+      <td>461630</td>
+      <td>479358</td>
+      <td>487637</td>
+      <td>502457</td>
+      <td>498347</td>
+      <td>454878</td>
+      <td>472626</td>
+      <td>467972</td>
+      <td>479230</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Total US Flight-counts over &quot;day_of_week&quot; ({})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">flight_counts_dow</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;bar_by_dow&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1683.embed?link=false&logo=false" height="525px" width="100%"></iframe><ul class="simple">
+<li>from the above plot, we see that Saturday definitely takes a huge dip
+in flight-counts.</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Total US Flight-counts over &quot;day_of_week&quot; ({})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">flight_counts_month</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;bar_by_month&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1685.embed?link=false&logo=false" height="525px" width="100%"></iframe><ul class="simple">
+<li>as we saw in the rolling-averaged timeseries plot, the above plot
+tells us that the summertime and end-of-the-year looks to have more
+flights (makes sense...vacation time)</li>
+</ul>
+</div>
+<div class="section" id="apply-pivoting-to-groupby-month-and-day-of-week">
+<h3><a class="toc-backref" href="#id8">1.3.2 Apply pivoting to groupby month and day_of_week</a></h3>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_counts_month</span> <span class="o">=</span> <span class="n">df_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;MONTH&#39;</span><span class="p">,</span><span class="s1">&#39;DAY_OF_WEEK&#39;</span><span class="p">,])[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span>
+<span class="n">df_counts_month</span> <span class="o">=</span> <span class="n">df_counts_month</span><span class="p">[[</span><span class="s1">&#39;Sun&#39;</span><span class="p">,</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span><span class="s1">&#39;Tue&#39;</span><span class="p">,</span><span class="s1">&#39;Wed&#39;</span><span class="p">,</span><span class="s1">&#39;Thu&#39;</span><span class="p">,</span><span class="s1">&#39;Fri&#39;</span><span class="p">,</span><span class="s1">&#39;Sat&#39;</span><span class="p">]]</span> <span class="c1"># reorder columns</span>
+<span class="n">df_counts_month</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">df_counts_month</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">calendar</span><span class="o">.</span><span class="n">month_abbr</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
+<span class="n">df_counts_month</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>DAY_OF_WEEK</th>
+      <th>Sun</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Jan</th>
+      <td>70654</td>
+      <td>61028</td>
+      <td>58273</td>
+      <td>59036</td>
+      <td>61044</td>
+      <td>74138</td>
+      <td>61654</td>
+    </tr>
+    <tr>
+      <th>Feb</th>
+      <td>54748</td>
+      <td>76987</td>
+      <td>59617</td>
+      <td>60326</td>
+      <td>61945</td>
+      <td>62097</td>
+      <td>48169</td>
+    </tr>
+    <tr>
+      <th>Mar</th>
+      <td>61115</td>
+      <td>64094</td>
+      <td>77364</td>
+      <td>78285</td>
+      <td>80333</td>
+      <td>64145</td>
+      <td>53786</td>
+    </tr>
+    <tr>
+      <th>Apr</th>
+      <td>61020</td>
+      <td>64426</td>
+      <td>62860</td>
+      <td>63275</td>
+      <td>64454</td>
+      <td>80605</td>
+      <td>64990</td>
+    </tr>
+    <tr>
+      <th>May</th>
+      <td>73918</td>
+      <td>80141</td>
+      <td>79913</td>
+      <td>64065</td>
+      <td>65144</td>
+      <td>65187</td>
+      <td>50990</td>
+    </tr>
+    <tr>
+      <th>Jun</th>
+      <td>64372</td>
+      <td>67055</td>
+      <td>66239</td>
+      <td>82752</td>
+      <td>83913</td>
+      <td>67070</td>
+      <td>56236</td>
+    </tr>
+    <tr>
+      <th>Jul</th>
+      <td>78665</td>
+      <td>64712</td>
+      <td>67158</td>
+      <td>67429</td>
+      <td>67717</td>
+      <td>84935</td>
+      <td>71841</td>
+    </tr>
+    <tr>
+      <th>Aug</th>
+      <td>63469</td>
+      <td>83136</td>
+      <td>81291</td>
+      <td>82178</td>
+      <td>66676</td>
+      <td>66872</td>
+      <td>54725</td>
+    </tr>
+    <tr>
+      <th>Sep</th>
+      <td>58264</td>
+      <td>63402</td>
+      <td>61955</td>
+      <td>62463</td>
+      <td>80059</td>
+      <td>80204</td>
+      <td>48531</td>
+    </tr>
+    <tr>
+      <th>Oct</th>
+      <td>76328</td>
+      <td>79157</td>
+      <td>62309</td>
+      <td>63424</td>
+      <td>64635</td>
+      <td>64674</td>
+      <td>62099</td>
+    </tr>
+    <tr>
+      <th>Nov</th>
+      <td>79587</td>
+      <td>81315</td>
+      <td>64102</td>
+      <td>65775</td>
+      <td>59947</td>
+      <td>62624</td>
+      <td>54622</td>
+    </tr>
+    <tr>
+      <th>Dec</th>
+      <td>62591</td>
+      <td>64717</td>
+      <td>79528</td>
+      <td>80550</td>
+      <td>75587</td>
+      <td>61821</td>
+      <td>54436</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Total US Flight-counts over &quot;day_of_week&quot; over each month ({})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">df_counts_month</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span><span class="n">xTitle</span><span class="o">=</span><span class="s1">&#39;Month&#39;</span><span class="p">,</span><span class="n">yTitle</span><span class="o">=</span><span class="s1">&#39;Counts&#39;</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;bar2&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1599.embed?link=false&logo=false" height="525px" width="100%"></iframe><ul class="simple">
+<li>the trend of Saturday having the smallest airflights holds generally
+true for each month</li>
+<li>intereting exceptions at <strong>January</strong> and <strong>July</strong>...perhaps this is a
+common vacation period (so businessday trend is eliminated)?</li>
+<li>for example, maybe there tends to be more family trips since children
+is on school vacation</li>
+</ul>
+</div>
+</div>
+<div class="section" id="repeat-analysis-for-ny-la-and-vegas">
+<h2><a class="toc-backref" href="#id9">1.4 Repeat analysis for NY, LA, and Vegas.</a></h2>
+<ul class="simple">
+<li>Now I&#8217;m curious to see what the trend looks like in major cities.</li>
+<li>Let&#8217;s repeat the above analysis for NY, LA, and Las Vegas</li>
+</ul>
+<div class="section" id="data-tidying">
+<h3><a class="toc-backref" href="#id10">1.4.1 Data tidying</a></h3>
+<ul class="simple">
+<li>First we&#8217;ll &#8220;tidy&#8221; up our data so we have a data-structure that are
+amenable for plotting</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">,</span><span class="s1">&#39;Los Angeles&#39;</span><span class="p">,</span><span class="s1">&#39;Las Vegas&#39;</span><span class="p">]</span>
+
+<span class="c1"># get AIRPORT_ID codes corresponding to the above three cities</span>
+<span class="n">df_lookup</span><span class="p">[</span> <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;City&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">cities</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Airport</th>
+      <th>City</th>
+      <th>State</th>
+      <th>lat</th>
+      <th>lon</th>
+      <th>latlon</th>
+      <th>City_State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>164</th>
+      <td>12478</td>
+      <td>New York, NY: John F. Kennedy International</td>
+      <td>John F. Kennedy International</td>
+      <td>New York</td>
+      <td>NY</td>
+      <td>40.641311</td>
+      <td>-73.778139</td>
+      <td>(40.641311100000003, -73.77813909999999)</td>
+      <td>New York (NY) [JFK]</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>12889</td>
+      <td>Las Vegas, NV: McCarran International</td>
+      <td>McCarran International</td>
+      <td>Las Vegas</td>
+      <td>NV</td>
+      <td>36.084000</td>
+      <td>-115.153739</td>
+      <td>(36.083999799999994, -115.15373889999999)</td>
+      <td>Las Vegas (NV)</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>12892</td>
+      <td>Los Angeles, CA: Los Angeles International</td>
+      <td>Los Angeles International</td>
+      <td>Los Angeles</td>
+      <td>CA</td>
+      <td>33.941589</td>
+      <td>-118.408530</td>
+      <td>(33.941588899999999, -118.40853)</td>
+      <td>Los Angeles (CA)</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>12953</td>
+      <td>New York, NY: LaGuardia</td>
+      <td>LaGuardia</td>
+      <td>New York</td>
+      <td>NY</td>
+      <td>40.776927</td>
+      <td>-73.873966</td>
+      <td>(40.776927100000002, -73.873965900000016)</td>
+      <td>New York (NY) [Lag]</td>
+    </tr>
+  </tbody>
+</table>
+</div><ul class="simple">
+<li>Well, both Houston and NY have multiple major airport.</li>
+<li>For the sake of simplicity of our analysis, we&#8217;ll pool the flight
+counts from these airports.</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># dictionary keeping track of list of Airport code for each city</span>
+<span class="c1"># (list-array used since there could be multiple airports in a city)</span>
+<span class="c1"># city_codes = {&#39;New York&#39;:[12478, 12953],</span>
+<span class="c1">#               &#39;Los Angeles&#39; : [12892],</span>
+<span class="c1">#               &#39;Las Vegas&#39; : [12889]}</span>
+<span class="n">city_codes</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
+    <span class="n">city_codes</span><span class="p">[</span><span class="n">city</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="p">[</span> <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;City&#39;</span><span class="p">]</span><span class="o">==</span> <span class="n">city</span> <span class="p">][</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">city_codes</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Las Vegas&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">12889</span><span class="p">],</span> <span class="s1">&#39;Los Angeles&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">12892</span><span class="p">],</span> <span class="s1">&#39;New York&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">12478</span><span class="p">,</span> <span class="mi">12953</span><span class="p">]}</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">filter_by_codelist</span><span class="p">(</span><span class="n">df_data</span><span class="p">,</span><span class="n">code_list</span><span class="p">):</span>
+    <span class="n">mask1</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;ORIGIN_AIRPORT_ID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">code_list</span><span class="p">)</span>
+    <span class="n">mask2</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;DEST_AIRPORT_ID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">code_list</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df_data</span><span class="p">[</span><span class="n">mask1</span> <span class="o">|</span> <span class="n">mask2</span><span class="p">]</span>
+
+<span class="n">df_data_city</span> <span class="o">=</span> <span class="p">{</span><span class="n">city</span><span class="p">:[]</span> <span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">}</span>
+
+<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">city</span>
+    <span class="n">city_code</span> <span class="o">=</span> <span class="n">city_codes</span><span class="p">[</span><span class="n">city</span><span class="p">]</span>
+    <span class="n">df_data_city</span><span class="p">[</span><span class="n">city</span><span class="p">]</span> <span class="o">=</span> <span class="n">filter_by_codelist</span><span class="p">(</span><span class="n">df_data</span><span class="p">,</span> <span class="n">city_code</span><span class="p">)</span>
+
+    <span class="c1"># sanity check</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df_data_city</span><span class="p">[</span><span class="n">city</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span>New York
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YEAR</th>
+      <th>QUARTER</th>
+      <th>MONTH</th>
+      <th>DAY_OF_MONTH</th>
+      <th>DAY_OF_WEEK</th>
+      <th>ORIGIN_AIRPORT_ID</th>
+      <th>DEST_AIRPORT_ID</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>141327</th>
+      <td>2016</td>
+      <td>1</td>
+      <td>1</td>
+      <td>15</td>
+      <td>Fri</td>
+      <td>12478</td>
+      <td>10721</td>
+      <td>2016-1-15</td>
+    </tr>
+    <tr>
+      <th>51544</th>
+      <td>2016</td>
+      <td>3</td>
+      <td>8</td>
+      <td>8</td>
+      <td>Mon</td>
+      <td>12953</td>
+      <td>10721</td>
+      <td>2016-8-8</td>
+    </tr>
+    <tr>
+      <th>47106</th>
+      <td>2016</td>
+      <td>2</td>
+      <td>4</td>
+      <td>8</td>
+      <td>Fri</td>
+      <td>11278</td>
+      <td>12953</td>
+      <td>2016-4-8</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="highlight-python"><div class="highlight"><pre><span></span>Los Angeles
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YEAR</th>
+      <th>QUARTER</th>
+      <th>MONTH</th>
+      <th>DAY_OF_MONTH</th>
+      <th>DAY_OF_WEEK</th>
+      <th>ORIGIN_AIRPORT_ID</th>
+      <th>DEST_AIRPORT_ID</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>317195</th>
+      <td>2016</td>
+      <td>3</td>
+      <td>9</td>
+      <td>15</td>
+      <td>Thu</td>
+      <td>12892</td>
+      <td>13830</td>
+      <td>2016-9-15</td>
+    </tr>
+    <tr>
+      <th>176974</th>
+      <td>2016</td>
+      <td>2</td>
+      <td>5</td>
+      <td>23</td>
+      <td>Mon</td>
+      <td>12892</td>
+      <td>13830</td>
+      <td>2016-5-23</td>
+    </tr>
+    <tr>
+      <th>383603</th>
+      <td>2016</td>
+      <td>1</td>
+      <td>2</td>
+      <td>19</td>
+      <td>Fri</td>
+      <td>12892</td>
+      <td>11292</td>
+      <td>2016-2-19</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="highlight-python"><div class="highlight"><pre><span></span>Las Vegas
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>YEAR</th>
+      <th>QUARTER</th>
+      <th>MONTH</th>
+      <th>DAY_OF_MONTH</th>
+      <th>DAY_OF_WEEK</th>
+      <th>ORIGIN_AIRPORT_ID</th>
+      <th>DEST_AIRPORT_ID</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>370999</th>
+      <td>2016</td>
+      <td>2</td>
+      <td>5</td>
+      <td>2</td>
+      <td>Mon</td>
+      <td>14893</td>
+      <td>12889</td>
+      <td>2016-5-2</td>
+    </tr>
+    <tr>
+      <th>399702</th>
+      <td>2016</td>
+      <td>1</td>
+      <td>3</td>
+      <td>10</td>
+      <td>Thu</td>
+      <td>12889</td>
+      <td>14831</td>
+      <td>2016-3-10</td>
+    </tr>
+    <tr>
+      <th>389667</th>
+      <td>2016</td>
+      <td>2</td>
+      <td>4</td>
+      <td>11</td>
+      <td>Mon</td>
+      <td>15016</td>
+      <td>12889</td>
+      <td>2016-4-11</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># dow = &#39;day of week&#39;</span>
+<span class="n">flight_counts_by_dow</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">flight_counts_by_month</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
+    <span class="n">flight_counts_by_dow</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">df_data_city</span><span class="p">[</span><span class="n">city</span><span class="p">][</span><span class="s1">&#39;DAY_OF_WEEK&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+    <span class="n">flight_counts_by_month</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_data_city</span><span class="p">[</span><span class="n">city</span><span class="p">][</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+
+<span class="n">flight_counts_by_dow</span>   <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">flight_counts_by_dow</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">cities</span><span class="p">)[[</span><span class="s1">&#39;Sun&#39;</span><span class="p">,</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span><span class="s1">&#39;Tue&#39;</span><span class="p">,</span><span class="s1">&#39;Wed&#39;</span><span class="p">,</span><span class="s1">&#39;Thu&#39;</span><span class="p">,</span><span class="s1">&#39;Fri&#39;</span><span class="p">,</span><span class="s1">&#39;Sat&#39;</span><span class="p">]]</span> <span class="c1"># reorder columns</span>
+<span class="n">flight_counts_by_month</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">flight_counts_by_month</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">cities</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">calendar</span><span class="o">.</span><span class="n">month_abbr</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="n">flight_counts_by_dow</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">flight_counts_by_month</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sun</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>New York</th>
+      <td>54774</td>
+      <td>59836</td>
+      <td>57450</td>
+      <td>58018</td>
+      <td>58680</td>
+      <td>58437</td>
+      <td>43946</td>
+    </tr>
+    <tr>
+      <th>Los Angeles</th>
+      <td>60730</td>
+      <td>63463</td>
+      <td>60909</td>
+      <td>61503</td>
+      <td>62119</td>
+      <td>62430</td>
+      <td>51961</td>
+    </tr>
+    <tr>
+      <th>Las Vegas</th>
+      <td>43824</td>
+      <td>44222</td>
+      <td>42803</td>
+      <td>43217</td>
+      <td>43708</td>
+      <td>44043</td>
+      <td>39132</td>
+    </tr>
+  </tbody>
+</table>
+</div><div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Jan</th>
+      <th>Feb</th>
+      <th>Mar</th>
+      <th>Apr</th>
+      <th>May</th>
+      <th>Jun</th>
+      <th>Jul</th>
+      <th>Aug</th>
+      <th>Sep</th>
+      <th>Oct</th>
+      <th>Nov</th>
+      <th>Dec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>New York</th>
+      <td>32104</td>
+      <td>31092</td>
+      <td>33700</td>
+      <td>31911</td>
+      <td>32788</td>
+      <td>33710</td>
+      <td>34540</td>
+      <td>34666</td>
+      <td>31638</td>
+      <td>31519</td>
+      <td>31387</td>
+      <td>32086</td>
+    </tr>
+    <tr>
+      <th>Los Angeles</th>
+      <td>32833</td>
+      <td>30814</td>
+      <td>34609</td>
+      <td>33986</td>
+      <td>35385</td>
+      <td>38150</td>
+      <td>39835</td>
+      <td>39447</td>
+      <td>35055</td>
+      <td>35979</td>
+      <td>32922</td>
+      <td>34100</td>
+    </tr>
+    <tr>
+      <th>Las Vegas</th>
+      <td>24491</td>
+      <td>22844</td>
+      <td>25465</td>
+      <td>25045</td>
+      <td>25883</td>
+      <td>25586</td>
+      <td>26112</td>
+      <td>26075</td>
+      <td>25156</td>
+      <td>26312</td>
+      <td>23809</td>
+      <td>24171</td>
+    </tr>
+  </tbody>
+</table>
+</div><ul class="simple">
+<li>good, we now have the apppropriate data-structure to construct
+desired plots</li>
+</ul>
+</div>
+<div class="section" id="plot-results">
+<h3><a class="toc-backref" href="#id11">1.4.2 Plot results</a></h3>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Flight-counts across &quot;day_of_week&quot; during {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">flight_counts_by_dow</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span><span class="n">xTitle</span><span class="o">=</span><span class="s1">&#39;City&#39;</span><span class="p">,</span><span class="n">yTitle</span><span class="o">=</span><span class="s1">&#39;Counts&#39;</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;bar_dow_3cities&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1697.embed?link=false&logo=false" height="525px" width="100%"></iframe><ul class="simple">
+<li>interesting to see flight-traffic in Las Vegas seems to be unaffected
+by <code class="docutils literal"><span class="pre">day_of_week</span></code>...</li>
+<li>now I&#8217;m curious to see what the monthly trend looks like...</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Flight-counts across &quot;month&quot; during {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">flight_counts_by_month</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span><span class="n">xTitle</span><span class="o">=</span><span class="s1">&#39;City&#39;</span><span class="p">,</span><span class="n">yTitle</span><span class="o">=</span><span class="s1">&#39;Counts&#39;</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;bar_month_3cities&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1699.embed?link=false&logo=false" height="525px" width="100%"></iframe></div>
+<div class="section" id="create-sublots-of-monthly-flight-count-trends-for-each-city">
+<h3><a class="toc-backref" href="#id12">1.4.3 Create sublots of monthly flight-count trends for each city</a></h3>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_monthly_counts_by_city</span> <span class="o">=</span> <span class="p">{</span><span class="n">city</span><span class="p">:[]</span> <span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">}</span>
+<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
+    <span class="n">df_monthly_counts_by_city</span><span class="p">[</span><span class="n">city</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_data_city</span><span class="p">[</span><span class="n">city</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;MONTH&#39;</span><span class="p">,</span><span class="s1">&#39;DAY_OF_WEEK&#39;</span><span class="p">,])[</span><span class="s1">&#39;YEAR&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()[[</span><span class="s1">&#39;Sun&#39;</span><span class="p">,</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span><span class="s1">&#39;Tue&#39;</span><span class="p">,</span><span class="s1">&#39;Wed&#39;</span><span class="p">,</span><span class="s1">&#39;Thu&#39;</span><span class="p">,</span><span class="s1">&#39;Fri&#39;</span><span class="p">,</span><span class="s1">&#39;Sat&#39;</span><span class="p">]]</span>
+    <span class="n">df_monthly_counts_by_city</span><span class="p">[</span><span class="n">city</span><span class="p">]</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">df_monthly_counts_by_city</span><span class="p">[</span><span class="n">city</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">calendar</span><span class="o">.</span><span class="n">month_abbr</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
+
+<span class="n">df_monthly_counts_by_city</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">df_monthly_counts_by_city</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">df_monthly_counts_by_city</span>
+<span class="c1"># df_monthly_counts_by_city.loc[&#39;New York&#39;] # access city by multi-indexing by &quot;levels&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span>DAY_OF_WEEK     Sun   Mon   Tue   Wed   Thu   Fri   Sat
+Las Vegas Jan  3940  3235  3169  3164  3283  4051  3649
+          Feb  3062  4045  3115  3173  3273  3308  2868
+          Mar  3313  3347  4029  4113  4245  3406  3012
+          Apr  3374  3419  3335  3389  3452  4327  3749
+          May  4097  4238  4225  3413  3470  3482  2958
+          Jun  3468  3451  3420  4291  4342  3494  3120
+          Jul  4220  3315  3408  3422  3472  4365  3910
+          Aug  3422  4265  4200  4219  3441  3464  3064
+          Sep  3309  3421  3382  3409  4338  4345  2952
+          Oct  4342  4272  3403  3440  3505  3516  3834
+...             ...   ...   ...   ...   ...   ...   ...
+New York  Mar  4158  4591  5547  5625  5777  4572  3430
+          Apr  4120  4536  4379  4445  4545  5643  4243
+          May  4978  5559  5519  4406  4520  4478  3328
+          Jun  4373  4698  4650  5776  5918  4707  3588
+          Jul  5350  4556  4701  4740  4747  5911  4535
+          Aug  4351  5862  5708  5795  4708  4712  3530
+          Sep  4050  4486  4319  4338  5653  5667  3125
+          Oct  5068  5407  4108  4198  4414  4419  3905
+          Nov  5278  5569  4410  4483  4103  4144  3400
+          Dec  4103  4367  5394  5424  5116  4172  3510
+
+[36 rows x 7 columns]
+</pre></div>
+</div>
+<ul class="simple">
+<li>Good, we&#8217;re ready to make subplots</li>
+<li>Some references</li>
+<li><a class="reference external" href="http://takwatanabe.me/data_science/plotly_pandas/Cufflinks%20-%20Pandas%20Like%20Visualization.html#id21">http://takwatanabe.me/data_science/plotly_pandas/Cufflinks%20-%20Pandas%20Like%20Visualization.html#id21</a></li>
+<li><a class="reference external" href="http://takwatanabe.me/data_science/plotly_layout/plotly-layout-options-subplots.html">http://takwatanabe.me/data_science/plotly_layout/plotly-layout-options-subplots.html</a></li>
+<li><a class="reference external" href="http://stackoverflow.com/questions/26939121/how-to-avoid-duplicate-legend-labels-in-plotly-or-pass-custom-legend-labels">http://stackoverflow.com/questions/26939121/how-to-avoid-duplicate-legend-labels-in-plotly-or-pass-custom-legend-labels</a></li>
+<li><a class="reference external" href="http://takwatanabe.me/data_science/plotly_layout/plotly-layout-options-legend.html">http://takwatanabe.me/data_science/plotly_layout/plotly-layout-options-legend.html</a></li>
+<li>(self-remark) Maybe next time, <strong>do not</strong> try to make subplots with
+cufflinks...was a huge pain...</li>
+<li>see
+<a class="reference external" href="http://takwatanabe.me/data_science/plotly_pandas/plotly-pandas-basic-charts.html#id2">http://takwatanabe.me/data_science/plotly_pandas/plotly-pandas-basic-charts.html#id2</a></li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">figs</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">skip_legend</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
+    <span class="c1">#print city</span>
+    <span class="c1">#titles.append(&#39;Flight-counts over &quot;day_of_week&quot; over each month in {} &lt;br&gt;(during {})&#39;.format(city,period))</span>
+    <span class="n">tmp_fig</span> <span class="o">=</span> <span class="n">df_monthly_counts_by_city</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">asFigure</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">skip_legend</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tmp_fig</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">__len__</span><span class="p">()):</span>
+            <span class="c1"># have to access individual trace element to access this parameter...</span>
+            <span class="c1"># (figuring this out took an atrocious amount of time....)</span>
+            <span class="n">tmp_fig</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;showlegend&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+
+    <span class="n">figs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp_fig</span><span class="p">)</span>
+    <span class="n">skip_legend</span> <span class="o">=</span> <span class="bp">True</span> <span class="c1"># &lt;- to avoid duplicate legend (show legend for the first subplot only)</span>
+
+<span class="c1"># convert list of figures to subplot object</span>
+<span class="n">subplots</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figs</span><span class="p">,</span><span class="n">shared_xaxes</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">subplot_titles</span><span class="o">=</span><span class="n">cities</span><span class="p">,</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">vertical_spacing</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="n">subplots</span><span class="o">.</span><span class="n">layout</span><span class="p">[</span><span class="s1">&#39;height&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">subplots</span><span class="o">.</span><span class="n">layout</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;Monthly Flight-counts grouped over NY/LA/Vegas, &quot;day_of_week&quot; ({})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">cf</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">subplots</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;bar_3cities_by_month&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1681.embed?link=false&logo=false" height="1000px" width="100%"></iframe></div>
+</div>
+<div class="section" id="which-state-had-the-most-air-traffics">
+<h2><a class="toc-backref" href="#id13">1.5 Which state had the most air traffics?</a></h2>
+<ul class="simple">
+<li>Now let&#8217;s conduct a similar analysis by grouping over states</li>
+<li>the code used below is nearly a carbon copy of the above (next-time,
+perhaps create a function to avoid repeating the same code)</li>
+</ul>
+<div class="section" id="id1">
+<h3><a class="toc-backref" href="#id14">1.5.1 Data tidying</a></h3>
+<ul class="simple">
+<li>Again, we start by &#8220;tidying&#8221; our data so we have a data-structure
+that are amenable for plotting</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">states</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()))</span>
+<span class="k">print</span> <span class="n">states</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span>
+
+<span class="n">state_codes</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">state</span> <span class="ow">in</span> <span class="n">states</span><span class="p">:</span>
+    <span class="c1"># get AIRPORT_ID codes corresponding to this state</span>
+    <span class="n">state_codes</span><span class="p">[</span><span class="n">state</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_lookup</span><span class="p">[</span> <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">state</span><span class="p">][</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># below for sanity check</span>
+<span class="k">print</span> <span class="n">state</span>
+<span class="n">df_lookup</span><span class="p">[</span> <span class="n">df_lookup</span><span class="p">[</span><span class="s1">&#39;Code&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">state_codes</span><span class="p">[</span><span class="n">state</span><span class="p">])]</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;AK&#39;</span><span class="p">,</span> <span class="s1">&#39;AL&#39;</span><span class="p">,</span> <span class="s1">&#39;AR&#39;</span><span class="p">,</span> <span class="s1">&#39;AZ&#39;</span><span class="p">,</span> <span class="s1">&#39;CA&#39;</span><span class="p">,</span> <span class="s1">&#39;CO&#39;</span><span class="p">,</span> <span class="s1">&#39;CT&#39;</span><span class="p">,</span> <span class="s1">&#39;DC&#39;</span><span class="p">]</span>
+<span class="n">WY</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Code</th>
+      <th>Description</th>
+      <th>Airport</th>
+      <th>City</th>
+      <th>State</th>
+      <th>lat</th>
+      <th>lon</th>
+      <th>latlon</th>
+      <th>City_State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>69</th>
+      <td>11097</td>
+      <td>Cody, WY: Yellowstone Regional</td>
+      <td>Yellowstone Regional</td>
+      <td>Cody</td>
+      <td>WY</td>
+      <td>44.526342</td>
+      <td>-109.056531</td>
+      <td>(44.526342200000002, -109.05653079999999)</td>
+      <td>Cody (WY)</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>11122</td>
+      <td>Casper, WY: Casper/Natrona County International</td>
+      <td>Casper/Natrona County International</td>
+      <td>Casper</td>
+      <td>WY</td>
+      <td>42.866632</td>
+      <td>-106.313081</td>
+      <td>(42.866632000000003, -106.31308100000001)</td>
+      <td>Casper (WY)</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>11865</td>
+      <td>Gillette, WY: Gillette Campbell County</td>
+      <td>Gillette Campbell County</td>
+      <td>Gillette</td>
+      <td>WY</td>
+      <td>44.291092</td>
+      <td>-105.502221</td>
+      <td>(44.2910915, -105.50222050000001)</td>
+      <td>Gillette (WY)</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>12441</td>
+      <td>Jackson, WY: Jackson Hole</td>
+      <td>Jackson Hole</td>
+      <td>Jackson</td>
+      <td>WY</td>
+      <td>43.479929</td>
+      <td>-110.762428</td>
+      <td>(43.4799291, -110.76242820000002)</td>
+      <td>Jackson (WY)</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>12888</td>
+      <td>Laramie, WY: Laramie Regional</td>
+      <td>Laramie Regional</td>
+      <td>Laramie</td>
+      <td>WY</td>
+      <td>41.320194</td>
+      <td>-105.670345</td>
+      <td>(41.320193700000004, -105.67034469999999)</td>
+      <td>Laramie (WY)</td>
+    </tr>
+    <tr>
+      <th>258</th>
+      <td>14543</td>
+      <td>Rock Springs, WY: Rock Springs Sweetwater County</td>
+      <td>Rock Springs Sweetwater County</td>
+      <td>Rock Springs</td>
+      <td>WY</td>
+      <td>41.587464</td>
+      <td>-109.202904</td>
+      <td>(41.587464399999995, -109.2029043)</td>
+      <td>Rock Springs (WY)</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_data_states</span> <span class="o">=</span> <span class="p">{</span><span class="n">state</span><span class="p">:[]</span> <span class="k">for</span> <span class="n">state</span> <span class="ow">in</span> <span class="n">states</span><span class="p">}</span>
+<span class="k">for</span> <span class="n">state</span> <span class="ow">in</span> <span class="n">states</span><span class="p">:</span>
+    <span class="n">df_data_states</span><span class="p">[</span><span class="n">state</span><span class="p">]</span> <span class="o">=</span> <span class="n">filter_by_codelist</span><span class="p">(</span><span class="n">df_data</span><span class="p">,</span> <span class="n">state_codes</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+
+<span class="c1"># dow = &#39;day of week&#39;</span>
+<span class="n">flight_counts_by_dow</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">flight_counts_by_month</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">state</span> <span class="ow">in</span> <span class="n">states</span><span class="p">:</span>
+    <span class="n">flight_counts_by_dow</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">df_data_states</span><span class="p">[</span><span class="n">state</span><span class="p">][</span><span class="s1">&#39;DAY_OF_WEEK&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+    <span class="n">flight_counts_by_month</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_data_states</span><span class="p">[</span><span class="n">state</span><span class="p">][</span><span class="s1">&#39;MONTH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+
+<span class="n">flight_counts_by_dow</span>   <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">flight_counts_by_dow</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">states</span><span class="p">)[[</span><span class="s1">&#39;Sun&#39;</span><span class="p">,</span><span class="s1">&#39;Mon&#39;</span><span class="p">,</span><span class="s1">&#39;Tue&#39;</span><span class="p">,</span><span class="s1">&#39;Wed&#39;</span><span class="p">,</span><span class="s1">&#39;Thu&#39;</span><span class="p">,</span><span class="s1">&#39;Fri&#39;</span><span class="p">,</span><span class="s1">&#39;Sat&#39;</span><span class="p">]]</span> <span class="c1"># reorder columns</span>
+<span class="n">flight_counts_by_month</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">flight_counts_by_month</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">states</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">calendar</span><span class="o">.</span><span class="n">month_abbr</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="n">flight_counts_by_dow</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="n">display</span><span class="p">(</span><span class="n">flight_counts_by_month</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sun</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>AK</th>
+      <td>7578</td>
+      <td>7775</td>
+      <td>7415</td>
+      <td>7350</td>
+      <td>7630</td>
+      <td>7677</td>
+      <td>7393</td>
+    </tr>
+    <tr>
+      <th>AL</th>
+      <td>7154</td>
+      <td>7917</td>
+      <td>7565</td>
+      <td>7674</td>
+      <td>7734</td>
+      <td>7766</td>
+      <td>5315</td>
+    </tr>
+    <tr>
+      <th>AR</th>
+      <td>4746</td>
+      <td>5465</td>
+      <td>5309</td>
+      <td>5369</td>
+      <td>5350</td>
+      <td>5337</td>
+      <td>3560</td>
+    </tr>
+    <tr>
+      <th>AZ</th>
+      <td>50097</td>
+      <td>51292</td>
+      <td>48255</td>
+      <td>50236</td>
+      <td>50543</td>
+      <td>50824</td>
+      <td>45005</td>
+    </tr>
+    <tr>
+      <th>CA</th>
+      <td>174652</td>
+      <td>183544</td>
+      <td>175707</td>
+      <td>177915</td>
+      <td>179338</td>
+      <td>180126</td>
+      <td>147463</td>
+    </tr>
+  </tbody>
+</table>
+</div><div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Jan</th>
+      <th>Feb</th>
+      <th>Mar</th>
+      <th>Apr</th>
+      <th>May</th>
+      <th>Jun</th>
+      <th>Jul</th>
+      <th>Aug</th>
+      <th>Sep</th>
+      <th>Oct</th>
+      <th>Nov</th>
+      <th>Dec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>AK</th>
+      <td>3757</td>
+      <td>3473</td>
+      <td>3769</td>
+      <td>3614</td>
+      <td>4532</td>
+      <td>5979</td>
+      <td>6403</td>
+      <td>6143</td>
+      <td>4127</td>
+      <td>3626</td>
+      <td>3600</td>
+      <td>3795</td>
+    </tr>
+    <tr>
+      <th>AL</th>
+      <td>3733</td>
+      <td>3665</td>
+      <td>4218</td>
+      <td>4160</td>
+      <td>4301</td>
+      <td>4217</td>
+      <td>4361</td>
+      <td>4401</td>
+      <td>4308</td>
+      <td>4478</td>
+      <td>4666</td>
+      <td>4617</td>
+    </tr>
+    <tr>
+      <th>AR</th>
+      <td>2426</td>
+      <td>2430</td>
+      <td>2707</td>
+      <td>2659</td>
+      <td>2920</td>
+      <td>2820</td>
+      <td>2834</td>
+      <td>2927</td>
+      <td>2740</td>
+      <td>2904</td>
+      <td>3898</td>
+      <td>3871</td>
+    </tr>
+    <tr>
+      <th>AZ</th>
+      <td>28703</td>
+      <td>27053</td>
+      <td>31670</td>
+      <td>29159</td>
+      <td>29590</td>
+      <td>29642</td>
+      <td>30367</td>
+      <td>28903</td>
+      <td>26002</td>
+      <td>28383</td>
+      <td>27579</td>
+      <td>29201</td>
+    </tr>
+    <tr>
+      <th>CA</th>
+      <td>94693</td>
+      <td>89079</td>
+      <td>100383</td>
+      <td>98335</td>
+      <td>103366</td>
+      <td>107574</td>
+      <td>111746</td>
+      <td>112351</td>
+      <td>101604</td>
+      <td>105013</td>
+      <td>95710</td>
+      <td>98891</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># sanity check</span>
+<span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">flight_counts_by_month</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="n">flight_counts_by_dow</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="n">flight_counts</span> <span class="o">=</span> <span class="n">flight_counts_by_month</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;flight-counts&#39;</span><span class="p">)</span>
+<span class="n">flight_counts</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AK</th>
+      <th>AL</th>
+      <th>AR</th>
+      <th>AZ</th>
+      <th>CA</th>
+      <th>CO</th>
+      <th>CT</th>
+      <th>DC</th>
+      <th>FL</th>
+      <th>GA</th>
+      <th>...</th>
+      <th>TT</th>
+      <th>TX</th>
+      <th>UT</th>
+      <th>VA</th>
+      <th>VI</th>
+      <th>VT</th>
+      <th>WA</th>
+      <th>WI</th>
+      <th>WV</th>
+      <th>WY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>flight-counts</th>
+      <td>52818</td>
+      <td>51125</td>
+      <td>35136</td>
+      <td>346252</td>
+      <td>1218745</td>
+      <td>479372</td>
+      <td>40194</td>
+      <td>226131</td>
+      <td>876232</td>
+      <td>776731</td>
+      <td>...</td>
+      <td>976</td>
+      <td>1041128</td>
+      <td>218147</td>
+      <td>66199</td>
+      <td>12035</td>
+      <td>8150</td>
+      <td>283837</td>
+      <td>103489</td>
+      <td>5194</td>
+      <td>17507</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 53 columns</p>
+</div><ul class="simple">
+<li>Cool, we&#8217;re ready to plot</li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;US airflight-counts across states &quot; (during {})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">flight_counts</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;flight-counts&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;bar_by_state&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1705.embed?link=false&logo=false" height="525px" width="100%"></iframe></div>
+<div class="section" id="choropleth-figure-display-result-on-us-map">
+<h3><a class="toc-backref" href="#id15">1.5.2 Choropleth figure (display result on US map)</a></h3>
+<ul class="simple">
+<li>Let&#8217;s display the flight-count values we organized above into the US
+map</li>
+<li>This form of visualization is nice as it also provide geographical
+information</li>
+<li>To see how this can be done in Plotly, visit
+<a class="reference external" href="https://plot.ly/python/choropleth-maps/">https://plot.ly/python/choropleth-maps/</a></li>
+</ul>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">states</span> <span class="o">=</span> <span class="n">flight_counts</span><span class="o">.</span><span class="n">index</span>
+<span class="n">counts</span> <span class="o">=</span> <span class="n">flight_counts</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># prepare Plotly &quot;Data&quot; and &quot;Layout&quot; object</span>
+
+<span class="c1"># took this colorscale from: https://plot.ly/python/choropleth-maps/</span>
+<span class="n">colorscale</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;rgb(242,240,247)&#39;</span><span class="p">],[</span><span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;rgb(218,218,235)&#39;</span><span class="p">],[</span><span class="mf">0.4</span><span class="p">,</span> <span class="s1">&#39;rgb(188,189,220)&#39;</span><span class="p">],</span>\
+              <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="s1">&#39;rgb(158,154,200)&#39;</span><span class="p">],[</span><span class="mf">0.8</span><span class="p">,</span> <span class="s1">&#39;rgb(117,107,177)&#39;</span><span class="p">],[</span><span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;rgb(84,39,143)&#39;</span><span class="p">]]</span>
+
+<span class="c1"># define data object</span>
+<span class="n">data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;choropleth&#39;</span><span class="p">,</span>
+        <span class="n">autocolorscale</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+        <span class="c1">#Greys, YlGnBu, Greens, YlOrRd, Bluered, RdBu, Reds, Blues, Picnic, Rainbow, Portland, Jet, Hot, Blackbody, Earth, Electric, Viridis</span>
+        <span class="n">colorscale</span> <span class="o">=</span> <span class="n">colorscale</span><span class="p">,</span>
+        <span class="n">locations</span> <span class="o">=</span> <span class="n">states</span><span class="p">,</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">counts</span><span class="p">,</span>
+        <span class="n">locationmode</span> <span class="o">=</span> <span class="s1">&#39;USA-states&#39;</span><span class="p">,</span>
+        <span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">line</span> <span class="o">=</span> <span class="nb">dict</span> <span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;rgb(0,0,0)&#39;</span><span class="p">,</span><span class="n">width</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">),</span>
+        <span class="n">colorbar</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;flight-counts&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># define layout object</span>
+<span class="n">geo</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="s1">&#39;usa&#39;</span><span class="p">,</span>
+           <span class="n">projection</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;albers usa&#39;</span> <span class="p">),</span>
+           <span class="n">showlakes</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span>
+           <span class="n">lakecolor</span> <span class="o">=</span> <span class="s1">&#39;rgb(255, 255, 255)&#39;</span>
+          <span class="p">)</span>
+
+<span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;US airflight-counts across states (during {})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">title</span><span class="o">+=</span> <span class="s1">&#39;&lt;br&gt;(hover over to get count values)&#39;</span>
+<span class="n">layout</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">geo</span><span class="o">=</span><span class="n">geo</span><span class="p">,</span>
+              <span class="n">margin</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="mi">40</span><span class="p">),</span>
+              <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span> <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">data</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span> <span class="p">)</span>
+
+<span class="c1"># alright, ready for plotting!</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span> <span class="n">fig</span> <span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;_choropleth&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1707.embed?share_key=IFdLfrSEUYGHVEAJ8CZu9V&link=false&logo=false" height="525px" width="100%"></iframe><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># what about during January?</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flight_counts_by_month</span><span class="p">[</span><span class="s1">&#39;Jan&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">layout</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;US airflight-counts across states during Jan,2016&#39;</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span> <span class="n">fig</span> <span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;_choropleth_jan&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1711.embed?share_key=j4uABK8kQlGgUd29yZGkCj&link=false&logo=false" height="525px" width="100%"></iframe></div>
+<div class="section" id="choropleth-after-normalizing-over-state-population">
+<h3><a class="toc-backref" href="#id16">1.5.3 Choropleth after normalizing over state population</a></h3>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># 2015 estimate of state population saved va script ``get_us_state_populations.py``</span>
+<span class="n">df_state_popu</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;df_state_populations.csv&#39;</span><span class="p">)</span>
+<span class="n">df_state_popu</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>state</th>
+      <th>population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>CA</td>
+      <td>39250017</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>TX</td>
+      <td>27862596</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>FL</td>
+      <td>20612439</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NY</td>
+      <td>19745289</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>IL</td>
+      <td>12801539</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># create a dataframe by applying inner-join with our flight-count dataframe</span>
+<span class="n">flight_counts_popu</span> <span class="o">=</span> <span class="n">flight_counts</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;state&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_state_popu</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;state&#39;</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+<span class="n">flight_counts_popu</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>state</th>
+      <th>flight-counts</th>
+      <th>population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AK</td>
+      <td>52818</td>
+      <td>741894</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AL</td>
+      <td>51125</td>
+      <td>4863300</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AR</td>
+      <td>35136</td>
+      <td>2988248</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AZ</td>
+      <td>346252</td>
+      <td>6931071</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CA</td>
+      <td>1218745</td>
+      <td>39250017</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># normalize by state population</span>
+<span class="n">flight_counts_popu</span><span class="p">[</span><span class="s1">&#39;normalized_flight_counts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flight_counts_popu</span><span class="p">[</span><span class="s1">&#39;flight-counts&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">/</span><span class="n">flight_counts_popu</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span>
+<span class="n">flight_counts_popu</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;normalized_flight_counts&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>state</th>
+      <th>flight-counts</th>
+      <th>population</th>
+      <th>normalized_flight_counts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>7</th>
+      <td>DC</td>
+      <td>226131</td>
+      <td>681170</td>
+      <td>0.331974</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>NV</td>
+      <td>323313</td>
+      <td>2940058</td>
+      <td>0.109968</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>HI</td>
+      <td>139771</td>
+      <td>1428557</td>
+      <td>0.097841</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CO</td>
+      <td>479372</td>
+      <td>5540545</td>
+      <td>0.086521</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>GA</td>
+      <td>776731</td>
+      <td>10310371</td>
+      <td>0.075335</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># took this colorscale from: https://plot.ly/python/choropleth-maps/</span>
+<span class="n">colorscale</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;rgb(242,240,247)&#39;</span><span class="p">],[</span><span class="mf">0.2</span><span class="p">,</span> <span class="s1">&#39;rgb(218,218,235)&#39;</span><span class="p">],[</span><span class="mf">0.4</span><span class="p">,</span> <span class="s1">&#39;rgb(188,189,220)&#39;</span><span class="p">],</span>\
+              <span class="p">[</span><span class="mf">0.6</span><span class="p">,</span> <span class="s1">&#39;rgb(158,154,200)&#39;</span><span class="p">],[</span><span class="mf">0.8</span><span class="p">,</span> <span class="s1">&#39;rgb(117,107,177)&#39;</span><span class="p">],[</span><span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;rgb(84,39,143)&#39;</span><span class="p">]]</span>
+
+<span class="c1"># define data object</span>
+<span class="n">data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;choropleth&#39;</span><span class="p">,</span>
+        <span class="n">autocolorscale</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+        <span class="n">colorscale</span> <span class="o">=</span> <span class="n">colorscale</span><span class="p">,</span>
+        <span class="n">locations</span> <span class="o">=</span> <span class="n">flight_counts_popu</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="n">flight_counts_popu</span><span class="p">[</span><span class="s1">&#39;normalized_flight_counts&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="n">locationmode</span> <span class="o">=</span> <span class="s1">&#39;USA-states&#39;</span><span class="p">,</span>
+        <span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">line</span> <span class="o">=</span> <span class="nb">dict</span> <span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;rgb(0,0,0)&#39;</span><span class="p">,</span><span class="n">width</span> <span class="o">=</span> <span class="mi">2</span><span class="p">),</span> <span class="n">zmax</span><span class="o">=</span><span class="mf">0.1</span> <span class="p">),</span>
+        <span class="n">colorbar</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;flight-counts&quot;</span><span class="p">),</span>
+        <span class="c1"># --- customize heatmap scale --- #</span>
+        <span class="n">zauto</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="c1"># &lt;- took me forever to figure this out....argh...plotly api definitely has room for improvements...</span>
+        <span class="n">zmax</span><span class="o">=</span><span class="mf">0.1</span>
+<span class="p">)</span>
+
+<span class="n">layout</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;US Airflight-counts normalized over state population ({})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span> <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">data</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span> <span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span> <span class="n">fig</span> <span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1781.embed?share_key=qIQQ6Y94YA9V3gGhcjukom&link=false&logo=false" height="525px" width="100%"></iframe></div>
+<div class="section" id="normalized-flight-counts-at-different-month">
+<h3><a class="toc-backref" href="#id17">1.5.4 Normalized flight-counts at different month?</a></h3>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">flight_counts_by_month2</span> <span class="o">=</span> <span class="n">flight_counts_by_month</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;state&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_state_popu</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;state&#39;</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+<span class="n">flight_counts_by_month2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>state</th>
+      <th>Jan</th>
+      <th>Feb</th>
+      <th>Mar</th>
+      <th>Apr</th>
+      <th>May</th>
+      <th>Jun</th>
+      <th>Jul</th>
+      <th>Aug</th>
+      <th>Sep</th>
+      <th>Oct</th>
+      <th>Nov</th>
+      <th>Dec</th>
+      <th>population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AK</td>
+      <td>3757</td>
+      <td>3473</td>
+      <td>3769</td>
+      <td>3614</td>
+      <td>4532</td>
+      <td>5979</td>
+      <td>6403</td>
+      <td>6143</td>
+      <td>4127</td>
+      <td>3626</td>
+      <td>3600</td>
+      <td>3795</td>
+      <td>741894</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AL</td>
+      <td>3733</td>
+      <td>3665</td>
+      <td>4218</td>
+      <td>4160</td>
+      <td>4301</td>
+      <td>4217</td>
+      <td>4361</td>
+      <td>4401</td>
+      <td>4308</td>
+      <td>4478</td>
+      <td>4666</td>
+      <td>4617</td>
+      <td>4863300</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AR</td>
+      <td>2426</td>
+      <td>2430</td>
+      <td>2707</td>
+      <td>2659</td>
+      <td>2920</td>
+      <td>2820</td>
+      <td>2834</td>
+      <td>2927</td>
+      <td>2740</td>
+      <td>2904</td>
+      <td>3898</td>
+      <td>3871</td>
+      <td>2988248</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AZ</td>
+      <td>28703</td>
+      <td>27053</td>
+      <td>31670</td>
+      <td>29159</td>
+      <td>29590</td>
+      <td>29642</td>
+      <td>30367</td>
+      <td>28903</td>
+      <td>26002</td>
+      <td>28383</td>
+      <td>27579</td>
+      <td>29201</td>
+      <td>6931071</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CA</td>
+      <td>94693</td>
+      <td>89079</td>
+      <td>100383</td>
+      <td>98335</td>
+      <td>103366</td>
+      <td>107574</td>
+      <td>111746</td>
+      <td>112351</td>
+      <td>101604</td>
+      <td>105013</td>
+      <td>95710</td>
+      <td>98891</td>
+      <td>39250017</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">month</span> <span class="o">=</span> <span class="s1">&#39;Dec&#39;</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">flight_counts_by_month2</span><span class="p">[</span><span class="n">month</span><span class="p">]</span><span class="o">/</span><span class="n">flight_counts_by_month2</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">values</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;zmax&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmax</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">])</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">layout</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;(Month={}) US Airflight-counts normalized over state population ({})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">month</span><span class="p">,</span><span class="n">period</span><span class="p">)</span>
+
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span> <span class="n">fig</span> <span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1783.embed?share_key=QRYw7NDGr2G5PMGm9MSajW&link=false&logo=false" height="525px" width="100%"></iframe><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">month</span> <span class="o">=</span> <span class="s1">&#39;Aug&#39;</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">flight_counts_by_month2</span><span class="p">[</span><span class="n">month</span><span class="p">]</span><span class="o">/</span><span class="n">flight_counts_by_month2</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">values</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;zmax&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmax</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">])</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">layout</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;(Month={}) US Airflight-counts normalized over state population ({})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">month</span><span class="p">,</span><span class="n">period</span><span class="p">)</span>
+
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span> <span class="n">fig</span> <span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1785.embed?share_key=Uiy7WdUz3xUOwqu6w8hyBS&link=false&logo=false" height="525px" width="100%"></iframe></div>
+</div>
+<div class="section" id="flight-counts-by-airport">
+<h2><a class="toc-backref" href="#id18">1.6 Flight-counts by airport</a></h2>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">flight_counts_orig</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;ORIGIN_AIRPORT_ID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;origin&#39;</span><span class="p">)</span>
+<span class="n">flight_counts_dest</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;DEST_AIRPORT_ID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;destination&#39;</span><span class="p">)</span>
+
+<span class="n">flight_counts</span> <span class="o">=</span> <span class="n">flight_counts_orig</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flight_counts_dest</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+<span class="n">flight_counts</span><span class="p">[</span><span class="s1">&#39;flight_counts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flight_counts</span><span class="p">[</span><span class="s1">&#39;origin&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">flight_counts</span><span class="p">[</span><span class="s1">&#39;destination&#39;</span><span class="p">]</span>
+<span class="n">flight_counts</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>origin</th>
+      <th>destination</th>
+      <th>flight_counts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10397</th>
+      <td>384666</td>
+      <td>384588</td>
+      <td>769254</td>
+    </tr>
+    <tr>
+      <th>13930</th>
+      <td>257425</td>
+      <td>257275</td>
+      <td>514700</td>
+    </tr>
+    <tr>
+      <th>11292</th>
+      <td>225515</td>
+      <td>225578</td>
+      <td>451093</td>
+    </tr>
+    <tr>
+      <th>12892</th>
+      <td>211563</td>
+      <td>211552</td>
+      <td>423115</td>
+    </tr>
+    <tr>
+      <th>11298</th>
+      <td>205545</td>
+      <td>205565</td>
+      <td>411110</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">flight_counts</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df_lookup</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Code&#39;</span><span class="p">),</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;flight_counts&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>origin</th>
+      <th>destination</th>
+      <th>flight_counts</th>
+      <th>Description</th>
+      <th>Airport</th>
+      <th>City</th>
+      <th>State</th>
+      <th>lat</th>
+      <th>lon</th>
+      <th>latlon</th>
+      <th>City_State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10397</td>
+      <td>384666</td>
+      <td>384588</td>
+      <td>769254</td>
+      <td>Atlanta, GA: Hartsfield-Jackson Atlanta Intern...</td>
+      <td>Hartsfield-Jackson Atlanta International</td>
+      <td>Atlanta</td>
+      <td>GA</td>
+      <td>33.748995</td>
+      <td>-84.387982</td>
+      <td>(33.748995399999998, -84.387982399999999)</td>
+      <td>Atlanta (GA)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>13930</td>
+      <td>257425</td>
+      <td>257275</td>
+      <td>514700</td>
+      <td>Chicago, IL: Chicago O'Hare International</td>
+      <td>Chicago O'Hare International</td>
+      <td>Chicago</td>
+      <td>IL</td>
+      <td>41.974162</td>
+      <td>-87.907321</td>
+      <td>(41.974162499999998, -87.907321400000001)</td>
+      <td>Chicago (IL) [O'Hare]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11292</td>
+      <td>225515</td>
+      <td>225578</td>
+      <td>451093</td>
+      <td>Denver, CO: Denver International</td>
+      <td>Denver International</td>
+      <td>Denver</td>
+      <td>CO</td>
+      <td>39.856096</td>
+      <td>-104.673738</td>
+      <td>(39.856096299999997, -104.6737376)</td>
+      <td>Denver (CO)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>12892</td>
+      <td>211563</td>
+      <td>211552</td>
+      <td>423115</td>
+      <td>Los Angeles, CA: Los Angeles International</td>
+      <td>Los Angeles International</td>
+      <td>Los Angeles</td>
+      <td>CA</td>
+      <td>33.941589</td>
+      <td>-118.408530</td>
+      <td>(33.941588899999999, -118.40853)</td>
+      <td>Los Angeles (CA)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>11298</td>
+      <td>205545</td>
+      <td>205565</td>
+      <td>411110</td>
+      <td>Dallas/Fort Worth, TX: Dallas/Fort Worth Inter...</td>
+      <td>Dallas/Fort Worth International</td>
+      <td>Dallas/Fort Worth</td>
+      <td>TX</td>
+      <td>32.899809</td>
+      <td>-97.040335</td>
+      <td>(32.899809099999999, -97.040335200000001)</td>
+      <td>Dallas/Fort Worth (TX)</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;flight_counts&#39;</span><span class="p">,</span><span class="s1">&#39;City_State&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;City_State&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;flight_counts&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="n">hover_text</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;pink&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1787.embed?link=false&logo=false" height="525px" width="100%"></iframe><div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># welp, i faced the worth kind of bug...bug that doesn&#39;t throw any exception!</span>
+<span class="c1"># i learned the hard way that there apparently are some lat/lon values that</span>
+<span class="c1"># breaks plotly&#39;s hover functionality...took forever to figure this out through</span>
+<span class="c1"># trial and error....but it did produce pretty figure so i&#39;m happy :)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span><span class="o">&gt;=</span><span class="mi">20</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">307</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Airport&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> \
+           <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;City&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span> \
+           <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;flight_counts&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;flights&#39;</span>
+<span class="n">limits</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">),(</span><span class="mi">10</span><span class="p">,</span><span class="mi">25</span><span class="p">),(</span><span class="mi">25</span><span class="p">,</span><span class="mi">50</span><span class="p">),(</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">),(</span><span class="mi">100</span><span class="p">,</span><span class="mi">300</span><span class="p">)]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;rgb(0,116,217)&quot;</span><span class="p">,</span><span class="s2">&quot;rgb(255,65,54)&quot;</span><span class="p">,</span><span class="s2">&quot;rgb(133,20,75)&quot;</span><span class="p">,</span><span class="s2">&quot;rgb(255,133,27)&quot;</span><span class="p">,</span><span class="s2">&quot;lightgrey&quot;</span><span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">scale</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">limits</span><span class="p">)):</span>
+    <span class="n">lim</span> <span class="o">=</span> <span class="n">limits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">df_sub</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">lim</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span><span class="n">lim</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="n">airport</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="nb">type</span> <span class="o">=</span> <span class="s1">&#39;scattergeo&#39;</span><span class="p">,</span>
+        <span class="n">locationmode</span> <span class="o">=</span> <span class="s1">&#39;USA-states&#39;</span><span class="p">,</span>
+        <span class="n">lon</span> <span class="o">=</span> <span class="n">df_sub</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">],</span>
+        <span class="n">lat</span> <span class="o">=</span> <span class="n">df_sub</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">],</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">df_sub</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">],</span>
+        <span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">size</span> <span class="o">=</span> <span class="n">df_sub</span><span class="p">[</span><span class="s1">&#39;flight_counts&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">scale</span><span class="p">,</span>
+            <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;rgb(40,40,40)&#39;</span><span class="p">),</span>
+            <span class="n">sizemode</span> <span class="o">=</span> <span class="s1">&#39;area&#39;</span>
+        <span class="p">),</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Top {0} - {1}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">lim</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">lim</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">)</span>
+<span class="c1">#     if i == 0:</span>
+<span class="c1"># #         airport.update(dict(mode=&#39;markers+text&#39;))</span>
+<span class="c1">#         airport[&#39;mode&#39;] = &#39;markers+text&#39;</span>
+<span class="c1">#         airport[&#39;textfont&#39;] = dict(size=18),</span>
+<span class="c1">#         airport[&#39;textposition&#39;] = &quot;middle center&quot;,</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">airport</span><span class="p">)</span>
+
+<span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Top 300 airports based on air-traffics during {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+<span class="n">title</span><span class="o">+=</span> <span class="s1">&#39;&lt;br&gt;(click legend below to toggle airports by ranking-class)&#39;</span>
+
+<span class="n">layout</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span>
+        <span class="n">showlegend</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span>
+        <span class="n">legend</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">font</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">11</span><span class="p">),</span>
+            <span class="c1">#bordercolor=&#39;rgb(0,0,0)&#39;,</span>
+            <span class="c1">#borderwidth=1,</span>
+            <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">xanchor</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="n">geo</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">scope</span><span class="o">=</span><span class="s1">&#39;usa&#39;</span><span class="p">,</span>
+            <span class="n">projection</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;albers usa&#39;</span> <span class="p">),</span>
+            <span class="n">showland</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span>
+            <span class="n">landcolor</span> <span class="o">=</span> <span class="s1">&#39;rgb(217, 217, 217)&#39;</span><span class="p">,</span>
+            <span class="n">subunitwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">countrywidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">subunitcolor</span><span class="o">=</span><span class="s2">&quot;rgb(255, 255, 255)&quot;</span><span class="p">,</span>
+            <span class="n">countrycolor</span><span class="o">=</span><span class="s2">&quot;rgb(255, 255, 255)&quot;</span>
+        <span class="p">),</span>
+        <span class="n">margin</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">r</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="mi">60</span><span class="p">),</span>
+    <span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span> <span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span> <span class="n">fig</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">outfile</span><span class="o">+</span><span class="s1">&#39;_traffic_by_airport&#39;</span> <span class="p">)</span>
+</pre></div>
+</div>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1779.embed?share_key=xkV9WAnsiywgPQQgk2lE0h&link=false&logo=false" height="525px" width="100%"></iframe></div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="_sources/flight-count-analysis1.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+      Last updated on Jan 11, 2017.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
