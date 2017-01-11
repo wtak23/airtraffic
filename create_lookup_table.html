@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>2.2 Create Lookup Table</title>
+    <title>3.2 Create Lookup Table</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -37,9 +37,9 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="top" title="" href="index.html" />
-    <link rel="up" title="2 Data munging (some elbow grease)" href="data_munging.html" />
-    <link rel="next" title="2.3 Test" href="test.html" />
-    <link rel="prev" title="2.1 Study carriers.xls and airports new.xlt" href="spotify_0105a.html" />
+    <link rel="up" title="3 Data munging (some elbow grease)" href="data_munging.html" />
+    <link rel="next" title="3.3 Test" href="test.html" />
+    <link rel="prev" title="3.1 Study carriers.xls and airports new.xlt" href="spotify_0105a.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -79,69 +79,80 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="flight-count-analysis1.html">1 Air-traffic Count Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#load-data">1.1 Load data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#create-timeseries-of-daily-flight-counts">1.2 Create Timeseries of Daily Flight Counts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#create-interactive-plot-with-plotly-cufflinks">1.2.1 Create interactive plot with plotly/cufflinks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#study-seasonal-trend-with-rolling-averaged-timeseries">1.2.2 Study seasonal trend with rolling-averaged timeseries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main_findings.html">1 Summary of Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main_findings.html#air-traffics">1.1 Air-traffics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_findings.html#national-holidays-salient-in-reisual-air-traffic-residuals-signal">1.2 National holidays salient in reisual air-traffic residuals signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_findings.html#preliminary-graph-theory-analysis-based-on-airtraffic-network-structure">1.3 Preliminary graph theory analysis based on airtraffic network structure</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-study-by-day-of-week-and-month">1.3 Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#over-entire-year">1.3.1 Over entire year</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#apply-pivoting-to-groupby-month-and-day-of-week">1.3.2 Apply pivoting to groupby month and day_of_week</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter_notebooks.html">2 Python Codes in Jupyter Notebook</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html">2.1 Air-traffic Count Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#load-data">2.1.1 Load data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#create-timeseries-of-daily-flight-counts">2.1.2 Create Timeseries of Daily Flight Counts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#create-interactive-plot-with-plotly-cufflinks">2.1.2.1 Create interactive plot with plotly/cufflinks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#study-seasonal-trend-with-rolling-averaged-timeseries">2.1.2.2 Study seasonal trend with rolling-averaged timeseries</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#repeat-analysis-for-ny-la-and-vegas">1.4 Repeat analysis for NY, LA, and Vegas.</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#data-tidying">1.4.1 Data tidying</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#plot-results">1.4.2 Plot results</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#create-sublots-of-monthly-flight-count-trends-for-each-city">1.4.3 Create sublots of monthly flight-count trends for each city</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-study-by-day-of-week-and-month">2.1.3 Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#over-entire-year">2.1.3.1 Over entire year</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#apply-pivoting-to-groupby-month-and-day-of-week">2.1.3.2 Apply pivoting to groupby month and day_of_week</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#which-state-had-the-most-air-traffics">1.5 Which state had the most air traffics?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#id1">1.5.1 Data tidying</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#choropleth-figure-display-result-on-us-map">1.5.2 Choropleth figure (display result on US map)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#choropleth-after-normalizing-over-state-population">1.5.3 Choropleth after normalizing over state population</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#normalized-flight-counts-at-different-month">1.5.4 Normalized flight-counts at different month?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#repeat-analysis-for-ny-la-and-vegas">2.1.4 Repeat analysis for NY, LA, and Vegas.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#data-tidying">2.1.4.1 Data tidying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#plot-results">2.1.4.2 Plot results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#create-sublots-of-monthly-flight-count-trends-for-each-city">2.1.4.3 Create sublots of monthly flight-count trends for each city</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-by-airport">1.6 Flight-counts by airport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#which-state-had-the-most-air-traffics">2.1.5 Which state had the most air traffics?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#id1">2.1.5.1 Data tidying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#choropleth-figure-display-result-on-us-map">2.1.5.2 Choropleth figure (display result on US map)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#choropleth-after-normalizing-over-state-population">2.1.5.3 Choropleth after normalizing over state population</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#normalized-flight-counts-at-different-month">2.1.5.4 Normalized flight-counts at different month?</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="data_munging.html">2 Data munging (some elbow grease)</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">2.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">2.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">2.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">2.1.1.2 Filter away nans from the DataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">2.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">2.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-by-airport">2.1.6 Flight-counts by airport</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">2.1.2 Study <em>airports</em> spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">2.1.2.1 Study nans</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">2.1.2.2 Filter out non-USA airports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regression.html">2.2 Regression analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">2.3 Network analysis</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">2.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">2.1.3.1 Plot bubble markers for all airports</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">2.1.3.2 Take a closer look at Michigan, my home state</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="data_munging.html">3 Data munging (some elbow grease)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">3.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">3.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">3.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">3.1.1.2 Filter away nans from the DataFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">3.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">3.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">3.1.2 Study <em>airports</em> spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">3.1.2.1 Study nans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">3.1.2.2 Filter out non-USA airports</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">2.2 Create Lookup Table</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#aim-of-notebook">2.2.1 Aim of notebook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#load-the-main-airport-traffic-data">2.2.2 Load the main airport traffic data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#load-lookup-table-provided-by-bts">2.2.3 Load lookup table provided by BTS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-enhanced-lookuptable">2.2.4 Create <em>enhanced</em> lookuptable</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#remove-code-that-is-not-present-our-dataset">2.2.4.1 Remove Code that is not present our dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#parse-state-city-and-airport-name-from-description-field">2.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#add-state-region-information">2.2.4.3 Add state &#8216;region&#8217; information</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#add-airport-latitude-and-longitude-information-using-google-geocoder">2.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">3.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">3.1.3.1 Plot bubble markers for all airports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">3.1.3.2 Take a closer look at Michigan, my home state</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="test.html">2.3 Test</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">3.2 Create Lookup Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#aim-of-notebook">3.2.1 Aim of notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-the-main-airport-traffic-data">3.2.2 Load the main airport traffic data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-lookup-table-provided-by-bts">3.2.3 Load lookup table provided by BTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-enhanced-lookuptable">3.2.4 Create <em>enhanced</em> lookuptable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#remove-code-that-is-not-present-our-dataset">3.2.4.1 Remove Code that is not present our dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parse-state-city-and-airport-name-from-description-field">3.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-state-region-information">3.2.4.3 Add state &#8216;region&#8217; information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-airport-latitude-and-longitude-information-using-google-geocoder">3.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">3.3 Test</a></li>
 </ul>
 </li>
 </ul>
@@ -157,15 +168,15 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">2.2 Create Lookup Table</a><ul>
-<li><a class="reference internal" href="#aim-of-notebook">2.2.1 Aim of notebook</a></li>
-<li><a class="reference internal" href="#load-the-main-airport-traffic-data">2.2.2 Load the main airport traffic data</a></li>
-<li><a class="reference internal" href="#load-lookup-table-provided-by-bts">2.2.3 Load lookup table provided by BTS</a></li>
-<li><a class="reference internal" href="#create-enhanced-lookuptable">2.2.4 Create <em>enhanced</em> lookuptable</a><ul>
-<li><a class="reference internal" href="#remove-code-that-is-not-present-our-dataset">2.2.4.1 Remove Code that is not present our dataset</a></li>
-<li><a class="reference internal" href="#parse-state-city-and-airport-name-from-description-field">2.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
-<li><a class="reference internal" href="#add-state-region-information">2.2.4.3 Add state &#8216;region&#8217; information</a></li>
-<li><a class="reference internal" href="#add-airport-latitude-and-longitude-information-using-google-geocoder">2.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
+<li><a class="reference internal" href="#">3.2 Create Lookup Table</a><ul>
+<li><a class="reference internal" href="#aim-of-notebook">3.2.1 Aim of notebook</a></li>
+<li><a class="reference internal" href="#load-the-main-airport-traffic-data">3.2.2 Load the main airport traffic data</a></li>
+<li><a class="reference internal" href="#load-lookup-table-provided-by-bts">3.2.3 Load lookup table provided by BTS</a></li>
+<li><a class="reference internal" href="#create-enhanced-lookuptable">3.2.4 Create <em>enhanced</em> lookuptable</a><ul>
+<li><a class="reference internal" href="#remove-code-that-is-not-present-our-dataset">3.2.4.1 Remove Code that is not present our dataset</a></li>
+<li><a class="reference internal" href="#parse-state-city-and-airport-name-from-description-field">3.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
+<li><a class="reference internal" href="#add-state-region-information">3.2.4.3 Add state &#8216;region&#8217; information</a></li>
+<li><a class="reference internal" href="#add-airport-latitude-and-longitude-information-using-google-geocoder">3.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
 </ul>
 </li>
 </ul>
@@ -200,9 +211,9 @@
     <div class="col-md-12 content">
       
   <div class="section" id="create-lookup-table">
-<h1>2.2 Create Lookup Table</h1>
+<h1>3.2 Create Lookup Table</h1>
 <div class="section" id="aim-of-notebook">
-<h2>2.2.1 Aim of notebook</h2>
+<h2>3.2.1 Aim of notebook</h2>
 <ul class="simple">
 <li>The [airport traffic
 dataset]((<a class="reference external" href="http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&amp;DB_Short_Name=On-Time">http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&amp;DB_Short_Name=On-Time</a>)
@@ -215,7 +226,7 @@ and adding additional relevant information regarding the airport
 </ul>
 </div>
 <div class="section" id="load-the-main-airport-traffic-data">
-<h2>2.2.2 Load the main airport traffic data</h2>
+<h2>3.2.2 Load the main airport traffic data</h2>
 <ul class="simple">
 <li>Load 3 years worth of air-traffic data provided by BTS
 (<a class="reference external" href="http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&amp;DB_Short_Name=On-Time">link</a>)</li>
@@ -315,7 +326,7 @@ and adding additional relevant information regarding the airport
 </table>
 </div></div>
 <div class="section" id="load-lookup-table-provided-by-bts">
-<h2>2.2.3 Load lookup table provided by BTS</h2>
+<h2>3.2.3 Load lookup table provided by BTS</h2>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_lookup</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/L_AIRPORT_ID.csv&#39;</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">df_lookup</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
@@ -325,7 +336,7 @@ and adding additional relevant information regarding the airport
 </div>
 </div>
 <div class="section" id="create-enhanced-lookuptable">
-<h2>2.2.4 Create <em>enhanced</em> lookuptable</h2>
+<h2>3.2.4 Create <em>enhanced</em> lookuptable</h2>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">df_lookup</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -392,7 +403,7 @@ and adding additional relevant information regarding the airport
   </tbody>
 </table>
 </div><div class="section" id="remove-code-that-is-not-present-our-dataset">
-<h3>2.2.4.1 Remove Code that is not present our dataset</h3>
+<h3>3.2.4.1 Remove Code that is not present our dataset</h3>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="c1"># unique ID&#39;s in the dataset</span>
 <span class="n">uniq_orig</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;ORIGIN_AIRPORT_ID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 <span class="n">uniq_dest</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s1">&#39;DEST_AIRPORT_ID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
@@ -484,7 +495,7 @@ There are 319 unique airport-codes in our dataset
 </table>
 </div></div>
 <div class="section" id="parse-state-city-and-airport-name-from-description-field">
-<h3>2.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</h3>
+<h3>3.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</h3>
 <ul class="simple">
 <li>Above we realize that the <code class="docutils literal"><span class="pre">Description</span></code> field contains information
 regarding the <em>city</em>, <em>state</em>, and <em>name</em> of the airport.</li>
@@ -625,7 +636,7 @@ so splitting these are is straightforward.</li>
 </table>
 </div></div>
 <div class="section" id="add-state-region-information">
-<h3>2.2.4.3 Add state &#8216;region&#8217; information</h3>
+<h3>3.2.4.3 Add state &#8216;region&#8217; information</h3>
 <p>I also would like to study patterns among the four-regions in the United
 States:</p>
 <ol class="arabic simple">
@@ -866,7 +877,7 @@ cat ../data/us_states_regions.json
 </table>
 </div></div>
 <div class="section" id="add-airport-latitude-and-longitude-information-using-google-geocoder">
-<h3>2.2.4.4 Add airport latitude and longitude information using Google geocoder</h3>
+<h3>3.2.4.4 Add airport latitude and longitude information using Google geocoder</h3>
 <p>This information will be useful especially when making visualization
 plots</p>
 <div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">geocoder</span>
