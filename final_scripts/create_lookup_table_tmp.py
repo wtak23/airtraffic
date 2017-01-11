@@ -44,4 +44,4 @@ if __name__ == '__main__':
         
     assert np.all(df_lookup['City_State'].value_counts() == 1)
     #%%
-    df_lookup.to_csv('df_lookup.csv',ignore_index=True)
+    df_lookup.to_csv('df_lookup.csv',index=False)

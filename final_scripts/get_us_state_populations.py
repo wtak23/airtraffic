@@ -35,7 +35,7 @@ def get_state_population():
             if _state in state_hash_inv:
                 # only keep 50 states + DC
                 df_state_popu['state'].append(_state)
-                df_state_popu['population'].append(cells[3].contents[0])
+                df_state_popu['population'].append(int(cells[3].contents[0].replace(',', '')))
             
             # get 52 states (50 + DC)
             if len(df_state_popu['state']) == 51:
@@ -51,4 +51,4 @@ def get_state_population():
     
 if __name__ == '__main__':
     df_state = get_state_population()
-    df_state.to_csv('df_state_populations.csv')
+    df_state.to_csv('df_state_populations.csv',index=False)
