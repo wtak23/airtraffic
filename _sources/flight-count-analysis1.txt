@@ -52,6 +52,7 @@ Load the **airport data**, as well as the **lookup-table** I created
 
 
 .. parsed-literal::
+    :class: myliteral
 
      ... load dataframe from 2015-11.zip 
      ... load dataframe from 2015-12.zip 
@@ -336,6 +337,7 @@ Load the **airport data**, as well as the **lookup-table** I created
 
 
 .. parsed-literal::
+    :class: myliteral
 
     {10245: 'King Salmon (AK)',
      10754: 'Barrow (AK)',
@@ -678,6 +680,7 @@ Create interactive plot with plotly/cufflinks
 
 
 .. parsed-literal::
+    :class: myliteral
 
     ['11/1 (Sun)', '11/2 (Mon)', '11/3 (Tue)', '11/4 (Wed)', '11/5 (Thu)']
     
@@ -1164,6 +1167,7 @@ Data tidying
 
 
 .. parsed-literal::
+    :class: myliteral
 
     {'Las Vegas': [12889], 'Los Angeles': [12892], 'New York': [12478, 12953]}
 
@@ -1189,6 +1193,7 @@ Data tidying
 
 
 .. parsed-literal::
+    :class: myliteral
 
     New York
     
@@ -1251,6 +1256,7 @@ Data tidying
 
 
 .. parsed-literal::
+    :class: myliteral
 
     Los Angeles
     
@@ -1313,6 +1319,7 @@ Data tidying
 
 
 .. parsed-literal::
+    :class: myliteral
 
     Las Vegas
     
@@ -1570,6 +1577,7 @@ Create sublots of monthly flight-count trends for each city
 
 
 .. parsed-literal::
+    :class: myliteral
 
     DAY_OF_WEEK     Sun   Mon   Tue   Wed   Thu   Fri   Sat
     Las Vegas Jan  3940  3235  3169  3164  3283  4051  3649
@@ -1678,6 +1686,7 @@ Data tidying
 
 
 .. parsed-literal::
+    :class: myliteral
 
     ['AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC']
     WY
@@ -2706,7 +2715,7 @@ Flight-counts by airport
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1787.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" width="100%" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~takanori/1795.embed?link=false&logo=false"></iframe>
 
 
 
@@ -2723,6 +2732,7 @@ Flight-counts by airport
 
 
 .. parsed-literal::
+    :class: myliteral
 
     (307, 12)
 
