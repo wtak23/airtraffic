@@ -2289,7 +2289,7 @@ http://www.philippsinger.info/?p=247
 
 
 .. figure:: /_static/img/network_analysis_44_1.png
-
+    :scale: 100%
 
 PageRank Centrality among US Airports
 -------------------------------------
