@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>3 Data munging (some elbow grease)</title>
+    <title>Other Data munging (elbow grease required!)</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -37,8 +37,8 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="top" title="" href="index.html" />
-    <link rel="next" title="3.1 Study carriers.xls and airports new.xlt" href="spotify_0105a.html" />
-    <link rel="prev" title="2.3 Network analysis" href="network.html" />
+    <link rel="next" title="Study carriers.xls and airports new.xlt" href="spotify_0105a.html" />
+    <link rel="prev" title="Part3: Network analysis of 2016 US Air Traffic" href="network_analysis.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -78,95 +78,126 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="main_findings.html">1 Summary of Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="main_findings.html#air-traffics">1.1 Air-traffics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main_findings.html#national-holidays-salient-in-reisual-air-traffic-residuals-signal">1.2 National holidays salient in reisual air-traffic residuals signal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main_findings.html#preliminary-graph-theory-analysis-based-on-airtraffic-network-structure">1.3 Preliminary graph theory analysis based on airtraffic network structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main_findings.html">Summary of Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main_findings.html#air-traffics">Air-traffics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_findings.html#national-holidays-salient-in-reisual-air-traffic-residuals-signal">National holidays salient in reisual air-traffic residuals signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_findings.html#preliminary-graph-theory-analysis-based-on-airtraffic-network-structure">Preliminary graph theory analysis based on airtraffic network structure</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter_notebooks.html">2 Python Codes in Jupyter Notebook</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis1.html">2.1 Air-traffic Count Analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#load-data">2.1.1 Load data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#create-timeseries-of-daily-flight-counts">2.1.2 Create Timeseries of Daily Flight Counts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#create-interactive-plot-with-plotly-cufflinks">2.1.2.1 Create interactive plot with plotly/cufflinks</a></li>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#study-seasonal-trend-with-rolling-averaged-timeseries">2.1.2.2 Study seasonal trend with rolling-averaged timeseries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flight-count-analysis.html">Part 1. Air-traffic Count Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#load-and-explore-dataset">Load and explore dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#create-timeseries-of-daily-flight-counts">Create Timeseries of Daily Flight Counts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#create-interactive-plot-with-plotly-cufflinks">Create interactive plot with plotly/cufflinks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#study-seasonal-trend-with-rolling-averaged-timeseries">Study seasonal trend with rolling-averaged timeseries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#narrow-focus-on-honolulu-airport">Narrow focus on Honolulu Airport</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-study-by-day-of-week-and-month">2.1.3 Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#over-entire-year">2.1.3.1 Over entire year</a></li>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#apply-pivoting-to-groupby-month-and-day-of-week">2.1.3.2 Apply pivoting to groupby month and day_of_week</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#flight-counts-study-by-day-of-week-and-month">Flight counts study by &#8220;day_of_week&#8221; and &#8220;month&#8221;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#over-entire-year-period">Over entire year period</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#pivoting-analysis-grouped-by-month-and-day-of-week">Pivoting: analysis grouped by month and day_of_week</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#repeat-analysis-for-ny-la-and-vegas">2.1.4 Repeat analysis for NY, LA, and Vegas.</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#data-tidying">2.1.4.1 Data tidying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#plot-results">2.1.4.2 Plot results</a></li>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#create-sublots-of-monthly-flight-count-trends-for-each-city">2.1.4.3 Create sublots of monthly flight-count trends for each city</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#repeat-analysis-for-ny-la-and-vegas">Repeat analysis for NY, LA, and Vegas.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#data-tidying">Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#plot-results">Plot results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#create-sublots-of-monthly-flight-count-trends-for-each-city">Create sublots of monthly flight-count trends for each city</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#which-state-had-the-most-air-traffics">2.1.5 Which state had the most air traffics?</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#id1">2.1.5.1 Data tidying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#choropleth-figure-display-result-on-us-map">2.1.5.2 Choropleth figure (display result on US map)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#choropleth-after-normalizing-over-state-population">2.1.5.3 Choropleth after normalizing over state population</a></li>
-<li class="toctree-l4"><a class="reference internal" href="flight-count-analysis1.html#normalized-flight-counts-at-different-month">2.1.5.4 Normalized flight-counts at different month?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#which-state-had-the-most-air-traffics">Which state had the most air traffics?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#id1">Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#choropleth-figure-display-result-on-us-map">Choropleth figure (display result on US map)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#choropleth-after-normalizing-over-state-population">Choropleth after normalizing over state population</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#ignore-nothing-interesting-normalized-flight-counts-at-different-month">(ignore, nothing interesting) Normalized flight-counts at different month?</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis1.html#flight-counts-by-airport">2.1.6 Flight-counts by airport</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html">2.2 Regression analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#aim-of-this-notebook">2.2.1 Aim of this notebook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#load-data-and-prepare-timeseries">2.2.2 Load data, and prepare Timeseries</a></li>
-<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#regression-analysis-eliminate-effect-from-day-of-week">2.2.3 Regression analysis: eliminate effect from &#8220;day_of_week&#8221;</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="regressing_out_weekday_effect.html#fit-ols-model">2.2.3.1 Fit OLS model</a></li>
-<li class="toctree-l4"><a class="reference internal" href="regressing_out_weekday_effect.html#analyze-residual-signal">2.2.3.2 Analyze residual signal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="regressing_out_weekday_effect.html#get-lagged-residual">2.2.3.3 Get &#8220;Lagged&#8221; residual</a></li>
-<li class="toctree-l4"><a class="reference internal" href="regressing_out_weekday_effect.html#histograms-of-the-signals">2.2.3.4 Histograms of the signals</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#repeat-analysis-for-3-years-period">2.2.4 Repeat analysis for 3 years period</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="regressing_out_weekday_effect.html#try-overlaying-the-annual-plot">2.2.4.1 Try overlaying the annual plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#most-frequently-used-airports">Most frequently used airports</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#id2">Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#id3">Plot results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#display-results-on-us-map">Display results on US Map</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="network.html">2.3 Network analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="regressing_out_weekday_effect.html">Part2: Holiday Detction via Regression and Residual Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#aim-of-this-notebook">Aim of this notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#load-data-and-prepare-timeseries">Load data, and prepare Timeseries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#regression-analysis-eliminate-effect-from-day-of-week">Regression analysis: eliminate effect from &#8220;day_of_week&#8221;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#fit-ols-model">Fit OLS model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#analyze-residual-signal">Analyze residual signal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#get-lagged-residual">Get &#8220;Lagged&#8221; residual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#histograms-of-the-signals">Histograms of the signals</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">3 Data munging (some elbow grease)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">3.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">3.1.1 Study the &#8220;carrier&#8221; spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">3.1.1.1 sort out the &#8220;nan&#8221; values</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">3.1.1.2 Filter away nans from the DataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">3.1.1.3 Realized some <em>Code</em> is treated as int...convert to string</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">3.1.1.4 What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">3.1.2 Study <em>airports</em> spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">3.1.2.1 Study nans</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">3.1.2.2 Filter out non-USA airports</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">3.1.3 Study &#8220;airports&#8221; state distribution</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">3.1.3.1 Plot bubble markers for all airports</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">3.1.3.2 Take a closer look at Michigan, my home state</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#repeat-analysis-for-3-years-period">Repeat analysis for 3 years period</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#try-overlaying-the-annual-plot">Try overlaying the annual plot</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">3.2 Create Lookup Table</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">3.2.1 Aim of notebook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">3.2.2 Load the main airport traffic data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">3.2.3 Load lookup table provided by BTS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">3.2.4 Create <em>enhanced</em> lookuptable</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#remove-code-that-is-not-present-our-dataset">3.2.4.1 Remove Code that is not present our dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#parse-state-city-and-airport-name-from-description-field">3.2.4.2 Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-state-region-information">3.2.4.3 Add state &#8216;region&#8217; information</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-airport-latitude-and-longitude-information-using-google-geocoder">3.2.4.4 Add airport latitude and longitude information using Google geocoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network_analysis.html">Part3: Network analysis of 2016 US Air Traffic</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#overview-network-view-of-the-us-airtraffic-system">Overview: network view of the US Airtraffic System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#create-the-network-edges-pairs-of-aiports-forming-the-trips">Create the network &#8220;edges&#8221; &#8212; pairs of aiports forming the trips</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#data-tidying">Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#most-frequent-trips-in-us-during-the-past-year">Most frequent &#8220;trips&#8221; in US during the past year</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#create-undirected-graph-edges-ignoring-directionality">Create undirected graph &#8211; edges ignoring directionality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#id1">Data tidying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#most-frequent-routes-in-us-during-the-past-year">Most frequent &#8220;routes&#8221; in US during the past year</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#overview-complex-networt-study-of-the-us-airport-system">Overview: complex networt study of the US Airport System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#make-nx-graph-create-networkx-graph-object">make_nx_graph: create networkx graph object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#compute-network-measures-network-measures-characterizing-nodes-airport">compute_network_measures: network measures characterizing nodes (airport)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#other-helper-functions">Other helper functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#complex-network-theory-in-action">Complex network theory in action!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#power-law-analysis-of-centrality-measures">Power law analysis of centrality measures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#pagerank-centrality-among-us-airports">PageRank Centrality among US Airports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#communities-detected-via-modularity-score">Communities Detected via Modularity Score</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Other Data munging (elbow grease required!)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">Study the &#8220;carrier&#8221; spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">sort out the &#8220;nan&#8221; values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">Filter away nans from the DataFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">Realized some <em>Code</em> is treated as int...convert to string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">Study <em>airports</em> spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">Study nans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">Filter out non-USA airports</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">Study &#8220;airports&#8221; state distribution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">Plot bubble markers for all airports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">Take a closer look at Michigan, my home state</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="test.html">3.3 Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">Create lookup-table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">Aim of notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">Load the main airport traffic data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">Load lookup table provided by BTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">Create <em>enhanced</em> lookuptable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#remove-code-that-is-not-present-our-dataset">Remove Code that is not present our dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#parse-state-city-and-airport-name-from-description-field">Parse state,city, and airport-name from &#8216;Description&#8217; field</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-state-region-information">Add state &#8216;region&#8217; information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-airport-latitude-and-longitude-information-using-geocoder">Add airport latitude and longitude information using geocoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_lookup_table.html#add-column-with-both-city-and-state">Add column with both city and state</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#all-done-save-dataframe-on-disk">All done. Save dataframe on disk</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Test</a></li>
 </ul>
 </li>
 </ul>
@@ -182,7 +213,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">3 Data munging (some elbow grease)</a></li>
+<li><a class="reference internal" href="#">Other Data munging (elbow grease required!)</a></li>
 </ul>
 </ul>
 </li>
@@ -212,26 +243,27 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="data-munging-some-elbow-grease">
-<h1>3 Data munging (some elbow grease)</h1>
+  <div class="section" id="other-data-munging-elbow-grease-required">
+<h1>Other Data munging (elbow grease required!)</h1>
 <p>This part of the site outlines some of the &#8220;dirty work&#8221; that required some elbow grease. It has nothing to do with the main story of my <strong>findings</strong>, but nevertheless could provide an insight on what type of skill is required for basic data science analysis.</p>
 <div class="toctree-wrapper compound" id="meh">
 <p class="caption"><span class="caption-text">Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="spotify_0105a.html">3.1 Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">3.1.1 Study the &#8220;carrier&#8221; spreadsheet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">3.1.2 Study <em>airports</em> spreadsheet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">3.1.3 Study &#8220;airports&#8221; state distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spotify_0105a.html">Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">Study the &#8220;carrier&#8221; spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">Study <em>airports</em> spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">Study &#8220;airports&#8221; state distribution</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="create_lookup_table.html">3.2 Create Lookup Table</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">3.2.1 Aim of notebook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">3.2.2 Load the main airport traffic data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">3.2.3 Load lookup table provided by BTS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">3.2.4 Create <em>enhanced</em> lookuptable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_lookup_table.html">Create lookup-table</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">Aim of notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">Load the main airport traffic data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#load-lookup-table-provided-by-bts">Load lookup table provided by BTS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#create-enhanced-lookuptable">Create <em>enhanced</em> lookuptable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html#all-done-save-dataframe-on-disk">All done. Save dataframe on disk</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">3.3 Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">Test</a></li>
 </ul>
 </div>
 </div>
