@@ -1,12 +1,11 @@
-Air-traffic Count Analysis
-""""""""""""""""""""""""""
+Part 1. Air-traffic Count Analysis
+""""""""""""""""""""""""""""""""""
 
-The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/flight-count-analysis1.ipynb>`__ .
+The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/flight-count-analysis.ipynb>`__ .
 
 .. contents:: `Page Contents`
    :depth: 2
    :local:
-
 
 .. code:: python
 
@@ -37,10 +36,10 @@ The original ipython notebook can be downloaded from `here <http://nbviewer.jupy
 .. code:: python
 
     # name of output files to prepend with
-    outfile = 'flight_count_analysis1_'
+    outfile = 'flight_count_analysis_'
 
-Load data
-=========
+Load and explore dataset
+========================
 
 Load the **airport data**, as well as the **lookup-table** I created
 `here <http://takwatanabe.me/airtraffic/create_lookup_table.html>`__.
@@ -251,9 +250,9 @@ Load the **airport data**, as well as the **lookup-table** I created
           <th>Airport</th>
           <th>City</th>
           <th>State</th>
+          <th>Region</th>
           <th>lat</th>
           <th>lon</th>
-          <th>latlon</th>
           <th>City_State</th>
         </tr>
       </thead>
@@ -265,9 +264,9 @@ Load the **airport data**, as well as the **lookup-table** I created
           <td>Lehigh Valley International</td>
           <td>Allentown/Bethlehem/Easton</td>
           <td>PA</td>
+          <td>Northeast</td>
           <td>40.651650</td>
           <td>-75.434746</td>
-          <td>(40.651650399999994, -75.434746099999984)</td>
           <td>Allentown/Bethlehem/Easton (PA)</td>
         </tr>
         <tr>
@@ -277,9 +276,9 @@ Load the **airport data**, as well as the **lookup-table** I created
           <td>Abilene Regional</td>
           <td>Abilene</td>
           <td>TX</td>
+          <td>South</td>
           <td>32.448736</td>
           <td>-99.733144</td>
-          <td>(32.448736400000001, -99.733143900000002)</td>
           <td>Abilene (TX)</td>
         </tr>
         <tr>
@@ -289,9 +288,9 @@ Load the **airport data**, as well as the **lookup-table** I created
           <td>Albuquerque International Sunport</td>
           <td>Albuquerque</td>
           <td>NM</td>
+          <td>West</td>
           <td>35.043333</td>
           <td>-106.612909</td>
-          <td>(35.0433333, -106.6129085)</td>
           <td>Albuquerque (NM)</td>
         </tr>
         <tr>
@@ -301,9 +300,9 @@ Load the **airport data**, as well as the **lookup-table** I created
           <td>Aberdeen Regional</td>
           <td>Aberdeen</td>
           <td>SD</td>
+          <td>Midwest</td>
           <td>45.453458</td>
           <td>-98.417726</td>
-          <td>(45.453458300000001, -98.417726099999996)</td>
           <td>Aberdeen (SD)</td>
         </tr>
         <tr>
@@ -313,9 +312,9 @@ Load the **airport data**, as well as the **lookup-table** I created
           <td>Southwest Georgia Regional</td>
           <td>Albany</td>
           <td>GA</td>
+          <td>South</td>
           <td>31.535671</td>
           <td>-84.193905</td>
-          <td>(31.535671100000002, -84.193904900000007)</td>
           <td>Albany (GA)</td>
         </tr>
       </tbody>
@@ -465,7 +464,7 @@ Create Timeseries of Daily Flight Counts
 .. code:: python
 
     # create time-series of airtraffic counts
-    ts_flightcounts = pd.DataFrame(df_data['time'].value_counts()).rename(columns={'time':'counts'})
+    ts_flightcounts = df_data['time'].value_counts().to_frame(name='counts')
     ts_flightcounts.index = ts_flightcounts.index.to_datetime()
     ts_flightcounts.sort_index(inplace=True) # need to sort by date
     ts_flightcounts.head(8)
@@ -687,7 +686,6 @@ Create interactive plot with plotly/cufflinks
 
 .. code:: python
 
-    # see https://plot.ly/pandas/line-charts/
     plt_options = dict(text=hover_text,color='pink')
     title = 'Daily Airflight Counts in the US between ' + period
     title+= '<br>(hover over plot for dates; left-click to zoom)'
@@ -702,7 +700,7 @@ Create interactive plot with plotly/cufflinks
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1555.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1367.embed?link=false&logo=false&share_key=qgyP6TszCcdzevwP8jgO7E" height="525px" width="100%"></iframe>
 
 
 
@@ -731,12 +729,203 @@ Study seasonal trend with rolling-averaged timeseries
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1695.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1837.embed?link=false&logo=false&share_key=uglr1NeXnqOQpWP8C23UW7" height="525px" width="100%"></iframe>
 
 
 
 -  from the above plot, the summertime and end-of-the-year looks to have
    more flights (makes sense...vacation time)
+
+Narrow focus on Honolulu Airport
+--------------------------------
+
+-  I'm curious to see the trensd in the flights to Honolulu airport
+
+-  I would guess there would be more flight during the cold, winter
+   period
+
+.. code:: python
+
+    honolulu = df_lookup.query('City == "Honolulu"')
+    display(honolulu)
+    code = honolulu['Code'].values[0]
+    hawaii_flights = df_data.query('ORIGIN_AIRPORT_ID == @code or DEST_AIRPORT_ID == @code')
+    hawaii_flights.sample(6).sort_index()
+
+
+
+.. raw:: html
+
+    <div>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>Code</th>
+          <th>Description</th>
+          <th>Airport</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Region</th>
+          <th>lat</th>
+          <th>lon</th>
+          <th>City_State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>147</th>
+          <td>12173</td>
+          <td>Honolulu, HI: Honolulu International</td>
+          <td>Honolulu International</td>
+          <td>Honolulu</td>
+          <td>HI</td>
+          <td>West</td>
+          <td>21.324513</td>
+          <td>-157.925074</td>
+          <td>Honolulu (HI)</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+
+
+
+.. raw:: html
+
+    <div>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>YEAR</th>
+          <th>QUARTER</th>
+          <th>MONTH</th>
+          <th>DAY_OF_MONTH</th>
+          <th>DAY_OF_WEEK</th>
+          <th>ORIGIN_AIRPORT_ID</th>
+          <th>DEST_AIRPORT_ID</th>
+          <th>time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>145291</th>
+          <td>2015</td>
+          <td>4</td>
+          <td>12</td>
+          <td>15</td>
+          <td>Tue</td>
+          <td>12173</td>
+          <td>12892</td>
+          <td>2015-12-15</td>
+        </tr>
+        <tr>
+          <th>236668</th>
+          <td>2015</td>
+          <td>4</td>
+          <td>12</td>
+          <td>5</td>
+          <td>Sat</td>
+          <td>12173</td>
+          <td>12982</td>
+          <td>2015-12-5</td>
+        </tr>
+        <tr>
+          <th>256048</th>
+          <td>2016</td>
+          <td>3</td>
+          <td>8</td>
+          <td>31</td>
+          <td>Wed</td>
+          <td>12173</td>
+          <td>12758</td>
+          <td>2016-8-31</td>
+        </tr>
+        <tr>
+          <th>260987</th>
+          <td>2016</td>
+          <td>3</td>
+          <td>7</td>
+          <td>9</td>
+          <td>Sat</td>
+          <td>12173</td>
+          <td>12402</td>
+          <td>2016-7-9</td>
+        </tr>
+        <tr>
+          <th>317478</th>
+          <td>2016</td>
+          <td>3</td>
+          <td>9</td>
+          <td>13</td>
+          <td>Tue</td>
+          <td>12173</td>
+          <td>11618</td>
+          <td>2016-9-13</td>
+        </tr>
+        <tr>
+          <th>323943</th>
+          <td>2016</td>
+          <td>2</td>
+          <td>5</td>
+          <td>23</td>
+          <td>Mon</td>
+          <td>14771</td>
+          <td>12173</td>
+          <td>2016-5-23</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+
+
+.. code:: python
+
+    hawaii_flights = hawaii_flights['time'].value_counts().to_frame(name='counts')
+    hawaii_flights.index = hawaii_flights.index.to_datetime()
+    hawaii_flights.sort_index(inplace=True) # need to sort by date
+    
+    plt_options = dict(text=hover_text,color='pink')
+    title = 'Daily Airflight Counts at Honolulu Airport between ' + period
+    title+= '<br>(hover over plot for dates; left-click to zoom)'
+    
+    hawaii_flights.iplot(y='counts',
+                          filename=outfile+'plot_flightcounts_honolulu',
+                          title=title,
+                          **plt_options)
+
+
+
+
+.. raw:: html
+
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1959.embed?link=false&logo=false&share_key=NIoblG1lHUId8n8eMV81uW" height="525px" width="100%"></iframe>
+
+
+
+-  contrary to my initial hypothesis, the peak flight counts at Honolulu
+   Airport takes place more during the summer
+
+-  the rolling-mean plot below shows that vacation period around new
+   years and summer attracts the most flight (makes sense)
+
+.. code:: python
+
+    title = 'Daily Airflight Counts at Honolulu Airport between ' 
+    title+= period + '<br>(rolling-mean applied over 7day window; left click to select zoom region)'
+    hawaii_flights['counts'].rolling(window=7).mean().iplot(filename=outfile+'rolling_mean_honolulu',title=title)
+
+
+
+
+.. raw:: html
+
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1961.embed?link=false&logo=false&share_key=QekV0ZwAg0rPIdoQOsMy9n" height="525px" width="100%"></iframe>
+
+
 
 Flight counts study by "day\_of\_week" and "month"
 ==================================================
@@ -745,8 +934,8 @@ Flight counts study by "day\_of\_week" and "month"
    across ``day_of_week`` and ``month``, let's create some
    **count-charts** via bar-graphs
 
-Over entire year
-----------------
+Over entire year period
+-----------------------
 
 .. code:: python
 
@@ -848,7 +1037,7 @@ Over entire year
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1683.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1839.embed?link=false&logo=false&share_key=asTK6yNQPfpKSufetq0hUv" height="525px" width="100%"></iframe>
 
 
 
@@ -865,7 +1054,7 @@ Over entire year
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1685.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1841.embed?link=false&logo=false&share_key=24ppDqw5nftiWmjIncDcd3" height="525px" width="100%"></iframe>
 
 
 
@@ -873,8 +1062,8 @@ Over entire year
    tells us that the summertime and end-of-the-year looks to have more
    flights (makes sense...vacation time)
 
-Apply pivoting to groupby month and day\_of\_week
--------------------------------------------------
+Pivoting: analysis grouped by month and day\_of\_week
+-----------------------------------------------------
 
 .. code:: python
 
@@ -1039,7 +1228,7 @@ Apply pivoting to groupby month and day\_of\_week
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1599.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1843.embed?link=false&logo=false&share_key=wDgZZeXGfFeuDXteuK1L1C" height="525px" width="100%"></iframe>
 
 
 
@@ -1060,8 +1249,10 @@ Repeat analysis for NY, LA, and Vegas.
 Data tidying
 ------------
 
--  First we'll "tidy" up our data so we have a data-structure that are
-   amenable for plotting
+-  We begin by "tidying" up our data so we have a data-structure that
+   are amenable for plotting
+
+-  First extract list of airports in these three cities
 
 .. code:: python
 
@@ -1085,59 +1276,59 @@ Data tidying
           <th>Airport</th>
           <th>City</th>
           <th>State</th>
+          <th>Region</th>
           <th>lat</th>
           <th>lon</th>
-          <th>latlon</th>
           <th>City_State</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>164</th>
+          <th>173</th>
           <td>12478</td>
           <td>New York, NY: John F. Kennedy International</td>
           <td>John F. Kennedy International</td>
           <td>New York</td>
           <td>NY</td>
+          <td>Northeast</td>
           <td>40.641311</td>
           <td>-73.778139</td>
-          <td>(40.641311100000003, -73.77813909999999)</td>
           <td>New York (NY) [JFK]</td>
         </tr>
         <tr>
-          <th>172</th>
+          <th>181</th>
           <td>12889</td>
           <td>Las Vegas, NV: McCarran International</td>
           <td>McCarran International</td>
           <td>Las Vegas</td>
           <td>NV</td>
+          <td>West</td>
           <td>36.084000</td>
           <td>-115.153739</td>
-          <td>(36.083999799999994, -115.15373889999999)</td>
           <td>Las Vegas (NV)</td>
         </tr>
         <tr>
-          <th>174</th>
+          <th>183</th>
           <td>12892</td>
           <td>Los Angeles, CA: Los Angeles International</td>
           <td>Los Angeles International</td>
           <td>Los Angeles</td>
           <td>CA</td>
+          <td>West</td>
           <td>33.941589</td>
           <td>-118.408530</td>
-          <td>(33.941588899999999, -118.40853)</td>
           <td>Los Angeles (CA)</td>
         </tr>
         <tr>
-          <th>180</th>
+          <th>189</th>
           <td>12953</td>
           <td>New York, NY: LaGuardia</td>
           <td>LaGuardia</td>
           <td>New York</td>
           <td>NY</td>
+          <td>Northeast</td>
           <td>40.776927</td>
           <td>-73.873966</td>
-          <td>(40.776927100000002, -73.873965900000016)</td>
           <td>New York (NY) [Lag]</td>
         </tr>
       </tbody>
@@ -1148,8 +1339,11 @@ Data tidying
 
 -  Well, both Houston and NY have multiple major airport.
 
--  For the sake of simplicity of our analysis, we'll pool the flight
+-  For the sake of simplicity of our analysis, we'll combine the flight
    counts from these airports.
+
+Below we create a dictionary that keeps track of the lsit of airports in
+each city
 
 .. code:: python
 
@@ -1172,6 +1366,9 @@ Data tidying
     {'Las Vegas': [12889], 'Los Angeles': [12892], 'New York': [12478, 12953]}
 
 
+
+-  From the main dataframe, extract the flights that involve these three
+   cities
 
 .. code:: python
 
@@ -1218,37 +1415,37 @@ Data tidying
       </thead>
       <tbody>
         <tr>
-          <th>141327</th>
+          <th>88104</th>
           <td>2016</td>
           <td>1</td>
-          <td>1</td>
-          <td>15</td>
-          <td>Fri</td>
+          <td>2</td>
+          <td>14</td>
+          <td>Sun</td>
           <td>12478</td>
-          <td>10721</td>
-          <td>2016-1-15</td>
+          <td>14986</td>
+          <td>2016-2-14</td>
         </tr>
         <tr>
-          <th>51544</th>
-          <td>2016</td>
-          <td>3</td>
-          <td>8</td>
-          <td>8</td>
-          <td>Mon</td>
-          <td>12953</td>
-          <td>10721</td>
-          <td>2016-8-8</td>
-        </tr>
-        <tr>
-          <th>47106</th>
+          <th>306364</th>
           <td>2016</td>
           <td>2</td>
           <td>4</td>
-          <td>8</td>
-          <td>Fri</td>
-          <td>11278</td>
+          <td>28</td>
+          <td>Thu</td>
           <td>12953</td>
-          <td>2016-4-8</td>
+          <td>13930</td>
+          <td>2016-4-28</td>
+        </tr>
+        <tr>
+          <th>335411</th>
+          <td>2016</td>
+          <td>3</td>
+          <td>9</td>
+          <td>1</td>
+          <td>Thu</td>
+          <td>12953</td>
+          <td>11292</td>
+          <td>2016-9-1</td>
         </tr>
       </tbody>
     </table>
@@ -1281,37 +1478,37 @@ Data tidying
       </thead>
       <tbody>
         <tr>
-          <th>317195</th>
-          <td>2016</td>
-          <td>3</td>
-          <td>9</td>
-          <td>15</td>
+          <th>97887</th>
+          <td>2015</td>
+          <td>4</td>
+          <td>11</td>
+          <td>19</td>
           <td>Thu</td>
+          <td>10721</td>
           <td>12892</td>
-          <td>13830</td>
-          <td>2016-9-15</td>
+          <td>2015-11-19</td>
         </tr>
         <tr>
-          <th>176974</th>
+          <th>369000</th>
           <td>2016</td>
-          <td>2</td>
-          <td>5</td>
-          <td>23</td>
+          <td>4</td>
+          <td>10</td>
+          <td>30</td>
+          <td>Sun</td>
+          <td>12892</td>
+          <td>14747</td>
+          <td>2016-10-30</td>
+        </tr>
+        <tr>
+          <th>182393</th>
+          <td>2015</td>
+          <td>4</td>
+          <td>12</td>
+          <td>28</td>
           <td>Mon</td>
           <td>12892</td>
-          <td>13830</td>
-          <td>2016-5-23</td>
-        </tr>
-        <tr>
-          <th>383603</th>
-          <td>2016</td>
-          <td>1</td>
-          <td>2</td>
-          <td>19</td>
-          <td>Fri</td>
-          <td>12892</td>
-          <td>11292</td>
-          <td>2016-2-19</td>
+          <td>10397</td>
+          <td>2015-12-28</td>
         </tr>
       </tbody>
     </table>
@@ -1344,42 +1541,45 @@ Data tidying
       </thead>
       <tbody>
         <tr>
-          <th>370999</th>
-          <td>2016</td>
-          <td>2</td>
-          <td>5</td>
-          <td>2</td>
-          <td>Mon</td>
-          <td>14893</td>
+          <th>429670</th>
+          <td>2015</td>
+          <td>4</td>
+          <td>11</td>
+          <td>21</td>
+          <td>Sat</td>
           <td>12889</td>
-          <td>2016-5-2</td>
+          <td>14869</td>
+          <td>2015-11-21</td>
         </tr>
         <tr>
-          <th>399702</th>
+          <th>181923</th>
+          <td>2015</td>
+          <td>4</td>
+          <td>12</td>
+          <td>27</td>
+          <td>Sun</td>
+          <td>12889</td>
+          <td>14747</td>
+          <td>2015-12-27</td>
+        </tr>
+        <tr>
+          <th>337794</th>
           <td>2016</td>
           <td>1</td>
           <td>3</td>
-          <td>10</td>
-          <td>Thu</td>
-          <td>12889</td>
-          <td>14831</td>
-          <td>2016-3-10</td>
-        </tr>
-        <tr>
-          <th>389667</th>
-          <td>2016</td>
-          <td>2</td>
-          <td>4</td>
-          <td>11</td>
+          <td>14</td>
           <td>Mon</td>
-          <td>15016</td>
+          <td>12266</td>
           <td>12889</td>
-          <td>2016-4-11</td>
+          <td>2016-3-14</td>
         </tr>
       </tbody>
     </table>
     </div>
 
+
+-  Finally, we can compute the total flight-counts in each of these
+   cities by ``DAY_OF_WEEK`` and ``MONTH``
 
 .. code:: python
 
@@ -1523,7 +1723,7 @@ Data tidying
 
 
 -  good, we now have the apppropriate data-structure to construct
-   desired plots
+   desired plots :)
 
 Plot results
 ------------
@@ -1538,7 +1738,7 @@ Plot results
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1697.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1845.embed?link=false&logo=false&share_key=N480wj0Kp1fNvPZMpNBz4U" height="525px" width="100%"></iframe>
 
 
 
@@ -1557,7 +1757,7 @@ Plot results
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1699.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1847.embed?link=false&logo=false&share_key=SZpObOWiSOY56QLvixs3Rg" height="525px" width="100%"></iframe>
 
 
 
@@ -1652,7 +1852,7 @@ Create sublots of monthly flight-count trends for each city
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1681.embed?link=false&logo=false" height="1000px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1849.embed?link=false&logo=false&share_key=Fz2ganoLsyJfWYderZDFKQ" height="1000px" width="100%"></iframe>
 
 
 
@@ -1670,17 +1870,19 @@ Data tidying
 -  Again, we start by "tidying" our data so we have a data-structure
    that are amenable for plotting
 
+-  We start by creating a dictionary that keeps a list of airports in
+   each state
+
 .. code:: python
 
     states = sorted(list(df_lookup['State'].unique()))
-    print states[:8]
     
     state_codes = {}
     for state in states:
-        # get AIRPORT_ID codes corresponding to this state
+        # get list of AIRPORT_ID corresponding to this state
         state_codes[state] = df_lookup[ df_lookup['State'] == state]['Code'].tolist()
     
-    # below for sanity check
+    # check if the last state in the above loop extracted the correct list of airports
     print state
     df_lookup[ df_lookup['Code'].isin(state_codes[state])] 
 
@@ -1688,7 +1890,6 @@ Data tidying
 .. parsed-literal::
     :class: myliteral
 
-    ['AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC']
     WY
     
 
@@ -1706,83 +1907,83 @@ Data tidying
           <th>Airport</th>
           <th>City</th>
           <th>State</th>
+          <th>Region</th>
           <th>lat</th>
           <th>lon</th>
-          <th>latlon</th>
           <th>City_State</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>69</th>
+          <th>75</th>
           <td>11097</td>
           <td>Cody, WY: Yellowstone Regional</td>
           <td>Yellowstone Regional</td>
           <td>Cody</td>
           <td>WY</td>
-          <td>44.526342</td>
-          <td>-109.056531</td>
-          <td>(44.526342200000002, -109.05653079999999)</td>
+          <td>West</td>
+          <td>44.520442</td>
+          <td>-109.022579</td>
           <td>Cody (WY)</td>
         </tr>
         <tr>
-          <th>72</th>
+          <th>78</th>
           <td>11122</td>
           <td>Casper, WY: Casper/Natrona County International</td>
           <td>Casper/Natrona County International</td>
           <td>Casper</td>
           <td>WY</td>
-          <td>42.866632</td>
-          <td>-106.313081</td>
-          <td>(42.866632000000003, -106.31308100000001)</td>
+          <td>West</td>
+          <td>42.897274</td>
+          <td>-106.464850</td>
           <td>Casper (WY)</td>
         </tr>
         <tr>
-          <th>118</th>
+          <th>125</th>
           <td>11865</td>
           <td>Gillette, WY: Gillette Campbell County</td>
           <td>Gillette Campbell County</td>
           <td>Gillette</td>
           <td>WY</td>
+          <td>West</td>
           <td>44.291092</td>
           <td>-105.502221</td>
-          <td>(44.2910915, -105.50222050000001)</td>
           <td>Gillette (WY)</td>
         </tr>
         <tr>
-          <th>161</th>
+          <th>170</th>
           <td>12441</td>
           <td>Jackson, WY: Jackson Hole</td>
           <td>Jackson Hole</td>
           <td>Jackson</td>
           <td>WY</td>
+          <td>West</td>
           <td>43.479929</td>
           <td>-110.762428</td>
-          <td>(43.4799291, -110.76242820000002)</td>
           <td>Jackson (WY)</td>
         </tr>
         <tr>
-          <th>171</th>
+          <th>180</th>
           <td>12888</td>
           <td>Laramie, WY: Laramie Regional</td>
           <td>Laramie Regional</td>
           <td>Laramie</td>
           <td>WY</td>
+          <td>West</td>
           <td>41.320194</td>
           <td>-105.670345</td>
-          <td>(41.320193700000004, -105.67034469999999)</td>
           <td>Laramie (WY)</td>
         </tr>
         <tr>
-          <th>258</th>
+          <th>271</th>
           <td>14543</td>
           <td>Rock Springs, WY: Rock Springs Sweetwater County</td>
           <td>Rock Springs Sweetwater County</td>
           <td>Rock Springs</td>
           <td>WY</td>
+          <td>West</td>
           <td>41.587464</td>
           <td>-109.202904</td>
-          <td>(41.587464399999995, -109.2029043)</td>
           <td>Rock Springs (WY)</td>
         </tr>
       </tbody>
@@ -1804,8 +2005,10 @@ Data tidying
         flight_counts_by_dow.append( df_data_states[state]['DAY_OF_WEEK'].value_counts())
         flight_counts_by_month.append(df_data_states[state]['MONTH'].value_counts())
         
-    flight_counts_by_dow   = pd.DataFrame(flight_counts_by_dow, index=states)[['Sun','Mon','Tue','Wed','Thu','Fri','Sat']] # reorder columns
-    flight_counts_by_month = pd.DataFrame(flight_counts_by_month,index=states).rename(columns = lambda num: calendar.month_abbr[num])
+    flight_counts_by_dow   = pd.DataFrame(flight_counts_by_dow, index=states)\
+                                         [['Sun','Mon','Tue','Wed','Thu','Fri','Sat']] # reorder columns
+    flight_counts_by_month = pd.DataFrame(flight_counts_by_month,index=states).\
+                                          rename(columns = lambda num: calendar.month_abbr[num])
     display(flight_counts_by_dow.head())
     display(flight_counts_by_month.head())
 
@@ -1830,53 +2033,53 @@ Data tidying
       <tbody>
         <tr>
           <th>AK</th>
-          <td>7578</td>
-          <td>7775</td>
-          <td>7415</td>
-          <td>7350</td>
-          <td>7630</td>
-          <td>7677</td>
-          <td>7393</td>
+          <td>7578.0</td>
+          <td>7775.0</td>
+          <td>7415.0</td>
+          <td>7350.0</td>
+          <td>7630.0</td>
+          <td>7677.0</td>
+          <td>7393.0</td>
         </tr>
         <tr>
           <th>AL</th>
-          <td>7154</td>
-          <td>7917</td>
-          <td>7565</td>
-          <td>7674</td>
-          <td>7734</td>
-          <td>7766</td>
-          <td>5315</td>
+          <td>7154.0</td>
+          <td>7917.0</td>
+          <td>7565.0</td>
+          <td>7674.0</td>
+          <td>7734.0</td>
+          <td>7766.0</td>
+          <td>5315.0</td>
         </tr>
         <tr>
           <th>AR</th>
-          <td>4746</td>
-          <td>5465</td>
-          <td>5309</td>
-          <td>5369</td>
-          <td>5350</td>
-          <td>5337</td>
-          <td>3560</td>
+          <td>4746.0</td>
+          <td>5465.0</td>
+          <td>5309.0</td>
+          <td>5369.0</td>
+          <td>5350.0</td>
+          <td>5337.0</td>
+          <td>3560.0</td>
         </tr>
         <tr>
           <th>AZ</th>
-          <td>50097</td>
-          <td>51292</td>
-          <td>48255</td>
-          <td>50236</td>
-          <td>50543</td>
-          <td>50824</td>
-          <td>45005</td>
+          <td>50097.0</td>
+          <td>51292.0</td>
+          <td>48255.0</td>
+          <td>50236.0</td>
+          <td>50543.0</td>
+          <td>50824.0</td>
+          <td>45005.0</td>
         </tr>
         <tr>
           <th>CA</th>
-          <td>174652</td>
-          <td>183544</td>
-          <td>175707</td>
-          <td>177915</td>
-          <td>179338</td>
-          <td>180126</td>
-          <td>147463</td>
+          <td>174652.0</td>
+          <td>183544.0</td>
+          <td>175707.0</td>
+          <td>177915.0</td>
+          <td>179338.0</td>
+          <td>180126.0</td>
+          <td>147463.0</td>
         </tr>
       </tbody>
     </table>
@@ -1908,78 +2111,78 @@ Data tidying
       <tbody>
         <tr>
           <th>AK</th>
-          <td>3757</td>
-          <td>3473</td>
-          <td>3769</td>
-          <td>3614</td>
-          <td>4532</td>
-          <td>5979</td>
-          <td>6403</td>
-          <td>6143</td>
-          <td>4127</td>
-          <td>3626</td>
-          <td>3600</td>
-          <td>3795</td>
+          <td>3757.0</td>
+          <td>3473.0</td>
+          <td>3769.0</td>
+          <td>3614.0</td>
+          <td>4532.0</td>
+          <td>5979.0</td>
+          <td>6403.0</td>
+          <td>6143.0</td>
+          <td>4127.0</td>
+          <td>3626.0</td>
+          <td>3600.0</td>
+          <td>3795.0</td>
         </tr>
         <tr>
           <th>AL</th>
-          <td>3733</td>
-          <td>3665</td>
-          <td>4218</td>
-          <td>4160</td>
-          <td>4301</td>
-          <td>4217</td>
-          <td>4361</td>
-          <td>4401</td>
-          <td>4308</td>
-          <td>4478</td>
-          <td>4666</td>
-          <td>4617</td>
+          <td>3733.0</td>
+          <td>3665.0</td>
+          <td>4218.0</td>
+          <td>4160.0</td>
+          <td>4301.0</td>
+          <td>4217.0</td>
+          <td>4361.0</td>
+          <td>4401.0</td>
+          <td>4308.0</td>
+          <td>4478.0</td>
+          <td>4666.0</td>
+          <td>4617.0</td>
         </tr>
         <tr>
           <th>AR</th>
-          <td>2426</td>
-          <td>2430</td>
-          <td>2707</td>
-          <td>2659</td>
-          <td>2920</td>
-          <td>2820</td>
-          <td>2834</td>
-          <td>2927</td>
-          <td>2740</td>
-          <td>2904</td>
-          <td>3898</td>
-          <td>3871</td>
+          <td>2426.0</td>
+          <td>2430.0</td>
+          <td>2707.0</td>
+          <td>2659.0</td>
+          <td>2920.0</td>
+          <td>2820.0</td>
+          <td>2834.0</td>
+          <td>2927.0</td>
+          <td>2740.0</td>
+          <td>2904.0</td>
+          <td>3898.0</td>
+          <td>3871.0</td>
         </tr>
         <tr>
           <th>AZ</th>
-          <td>28703</td>
-          <td>27053</td>
-          <td>31670</td>
-          <td>29159</td>
-          <td>29590</td>
-          <td>29642</td>
-          <td>30367</td>
-          <td>28903</td>
-          <td>26002</td>
-          <td>28383</td>
-          <td>27579</td>
-          <td>29201</td>
+          <td>28703.0</td>
+          <td>27053.0</td>
+          <td>31670.0</td>
+          <td>29159.0</td>
+          <td>29590.0</td>
+          <td>29642.0</td>
+          <td>30367.0</td>
+          <td>28903.0</td>
+          <td>26002.0</td>
+          <td>28383.0</td>
+          <td>27579.0</td>
+          <td>29201.0</td>
         </tr>
         <tr>
           <th>CA</th>
-          <td>94693</td>
-          <td>89079</td>
-          <td>100383</td>
-          <td>98335</td>
-          <td>103366</td>
-          <td>107574</td>
-          <td>111746</td>
-          <td>112351</td>
-          <td>101604</td>
-          <td>105013</td>
-          <td>95710</td>
-          <td>98891</td>
+          <td>94693.0</td>
+          <td>89079.0</td>
+          <td>100383.0</td>
+          <td>98335.0</td>
+          <td>103366.0</td>
+          <td>107574.0</td>
+          <td>111746.0</td>
+          <td>112351.0</td>
+          <td>101604.0</td>
+          <td>105013.0</td>
+          <td>95710.0</td>
+          <td>98891.0</td>
         </tr>
       </tbody>
     </table>
@@ -2012,8 +2215,8 @@ Data tidying
           <th>CO</th>
           <th>CT</th>
           <th>DC</th>
+          <th>DE</th>
           <th>FL</th>
-          <th>GA</th>
           <th>...</th>
           <th>TT</th>
           <th>TX</th>
@@ -2038,8 +2241,8 @@ Data tidying
           <td>479372</td>
           <td>40194</td>
           <td>226131</td>
+          <td>0</td>
           <td>876232</td>
-          <td>776731</td>
           <td>...</td>
           <td>976</td>
           <td>1041128</td>
@@ -2054,7 +2257,7 @@ Data tidying
         </tr>
       </tbody>
     </table>
-    <p>1 rows × 53 columns</p>
+    <p>1 rows × 54 columns</p>
     </div>
 
 
@@ -2071,7 +2274,7 @@ Data tidying
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1705.embed?link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1851.embed?link=false&logo=false&share_key=PNATJ4yJPiuILM772Cxu9L" height="525px" width="100%"></iframe>
 
 
 
@@ -2136,7 +2339,7 @@ Choropleth figure (display result on US map)
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1707.embed?share_key=IFdLfrSEUYGHVEAJ8CZu9V&link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1853.embed?link=false&logo=false&share_key=xcDy8dp7T93r2qLV5WLTCI" height="525px" width="100%"></iframe>
 
 
 
@@ -2152,13 +2355,24 @@ Choropleth figure (display result on US map)
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1711.embed?share_key=j4uABK8kQlGgUd29yZGkCj&link=false&logo=false" height="525px" width="100%"></iframe>
-
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1855.embed?link=false&logo=false&share_key=wNO9k0tspaCCCR4aUjllda" height="525px" width="100%"></iframe>
 
 
 
 Choropleth after normalizing over state population
 --------------------------------------------------
+
+-  I'm curious to see how the above plot will look after we scale by
+   state population
+
+-  Let's created a normalized chart using the US population data that I
+   extracted from
+   `Wikipedia <https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population>`__
+   using
+   `BeautifulSoup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`__
+
+-  script:
+   https://github.com/wtak23/airtraffic/blob/master/final\_scripts/get\_us\_state\_populations.py
 
 .. code:: python
 
@@ -2301,14 +2515,14 @@ Choropleth after normalizing over state population
           <td>0.331974</td>
         </tr>
         <tr>
-          <th>32</th>
+          <th>33</th>
           <td>NV</td>
           <td>323313</td>
           <td>2940058</td>
           <td>0.109968</td>
         </tr>
         <tr>
-          <th>10</th>
+          <th>11</th>
           <td>HI</td>
           <td>139771</td>
           <td>1428557</td>
@@ -2322,7 +2536,7 @@ Choropleth after normalizing over state population
           <td>0.086521</td>
         </tr>
         <tr>
-          <th>9</th>
+          <th>10</th>
           <td>GA</td>
           <td>776731</td>
           <td>10310371</td>
@@ -2365,180 +2579,48 @@ Choropleth after normalizing over state population
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1781.embed?share_key=qIQQ6Y94YA9V3gGhcjukom&link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1963.embed?link=false&logo=false&share_key=rX1PkRx764wtdkfkuVyoJQ" height="525px" width="100%"></iframe>
 
 
 
-Normalized flight-counts at different month?
---------------------------------------------
-
-.. code:: python
-
-    flight_counts_by_month2 = flight_counts_by_month.reset_index().rename(columns=dict(index='state')).merge(df_state_popu,on='state',how='inner')
-    flight_counts_by_month2.head()
-
-
-
-
-.. raw:: html
-
-    <div>
-    <table border="1" class="dataframe">
-      <thead>
-        <tr style="text-align: right;">
-          <th></th>
-          <th>state</th>
-          <th>Jan</th>
-          <th>Feb</th>
-          <th>Mar</th>
-          <th>Apr</th>
-          <th>May</th>
-          <th>Jun</th>
-          <th>Jul</th>
-          <th>Aug</th>
-          <th>Sep</th>
-          <th>Oct</th>
-          <th>Nov</th>
-          <th>Dec</th>
-          <th>population</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>0</th>
-          <td>AK</td>
-          <td>3757</td>
-          <td>3473</td>
-          <td>3769</td>
-          <td>3614</td>
-          <td>4532</td>
-          <td>5979</td>
-          <td>6403</td>
-          <td>6143</td>
-          <td>4127</td>
-          <td>3626</td>
-          <td>3600</td>
-          <td>3795</td>
-          <td>741894</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>AL</td>
-          <td>3733</td>
-          <td>3665</td>
-          <td>4218</td>
-          <td>4160</td>
-          <td>4301</td>
-          <td>4217</td>
-          <td>4361</td>
-          <td>4401</td>
-          <td>4308</td>
-          <td>4478</td>
-          <td>4666</td>
-          <td>4617</td>
-          <td>4863300</td>
-        </tr>
-        <tr>
-          <th>2</th>
-          <td>AR</td>
-          <td>2426</td>
-          <td>2430</td>
-          <td>2707</td>
-          <td>2659</td>
-          <td>2920</td>
-          <td>2820</td>
-          <td>2834</td>
-          <td>2927</td>
-          <td>2740</td>
-          <td>2904</td>
-          <td>3898</td>
-          <td>3871</td>
-          <td>2988248</td>
-        </tr>
-        <tr>
-          <th>3</th>
-          <td>AZ</td>
-          <td>28703</td>
-          <td>27053</td>
-          <td>31670</td>
-          <td>29159</td>
-          <td>29590</td>
-          <td>29642</td>
-          <td>30367</td>
-          <td>28903</td>
-          <td>26002</td>
-          <td>28383</td>
-          <td>27579</td>
-          <td>29201</td>
-          <td>6931071</td>
-        </tr>
-        <tr>
-          <th>4</th>
-          <td>CA</td>
-          <td>94693</td>
-          <td>89079</td>
-          <td>100383</td>
-          <td>98335</td>
-          <td>103366</td>
-          <td>107574</td>
-          <td>111746</td>
-          <td>112351</td>
-          <td>101604</td>
-          <td>105013</td>
-          <td>95710</td>
-          <td>98891</td>
-          <td>39250017</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-
-
+(ignore, nothing interesting) Normalized flight-counts at different month?
+--------------------------------------------------------------------------
 
 .. code:: python
 
-    month = 'Dec'
-    data['z'] = (flight_counts_by_month2[month]/flight_counts_by_month2['population']).values
-    data['zmax'] = np.nanmax(data['z'])/3
-    layout['title'] = '(Month={}) US Airflight-counts normalized over state population ({})'.format(month,period)
+    # flight_counts_by_month2 = flight_counts_by_month.reset_index().rename(columns=dict(index='state')).merge(df_state_popu,on='state',how='inner')
+    # flight_counts_by_month2.head()
+
+.. code:: python
+
+    # month = 'Aug'
+    # data['z'] = (flight_counts_by_month2[month]/flight_counts_by_month2['population']).values
+    # data['zmax'] = np.nanmax(data['z'])/3
+    # layout['title'] = '(Month={}) US Airflight-counts normalized over state population ({})'.format(month,period)
     
-    py.iplot( fig , validate=False)
+    # py.iplot( fig , validate=False)
 
+Most frequently used airports
+=============================
 
+-  To conclude this notebook, let's investigate which airports were used
+   the most during the last one year period
 
+Data tidying
+------------
 
-.. raw:: html
-
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1783.embed?share_key=QRYw7NDGr2G5PMGm9MSajW&link=false&logo=false" height="525px" width="100%"></iframe>
-
-
-
-.. code:: python
-
-    month = 'Aug'
-    data['z'] = (flight_counts_by_month2[month]/flight_counts_by_month2['population']).values
-    data['zmax'] = np.nanmax(data['z'])/3
-    layout['title'] = '(Month={}) US Airflight-counts normalized over state population ({})'.format(month,period)
-    
-    py.iplot( fig , validate=False)
-
-
-
-
-.. raw:: html
-
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1785.embed?share_key=Uiy7WdUz3xUOwqu6w8hyBS&link=false&logo=false" height="525px" width="100%"></iframe>
-
-
-
-Flight-counts by airport
-========================
+-  the traffic-counts for each airport is computed by adding the number
+   of times it was used as an **origin** or **destination**
 
 .. code:: python
 
+    # number of times an airport was used as an origin
     flight_counts_orig = df_data['ORIGIN_AIRPORT_ID'].value_counts().to_frame(name='origin')
+    
+    # number of times an airport was used as a destination
     flight_counts_dest = df_data['DEST_AIRPORT_ID'].value_counts().to_frame(name='destination')
     
+    # join the table, and get total flight counts by adding
     flight_counts = flight_counts_orig.join(flight_counts_dest,how='inner')
     flight_counts['flight_counts'] = flight_counts['origin'] + flight_counts['destination']
     flight_counts.head()
@@ -2595,10 +2677,19 @@ Flight-counts by airport
 
 
 
+-  Ok, so we now have a dataframe with the airports ranked by
+   flight-counts.
+
+-  To gain more insights, let's join this dataframe with our lookup
+   table.
+
 .. code:: python
 
-    df = flight_counts.join(df_lookup.set_index('Code'),how='inner').sort_values('flight_counts',ascending=False).reset_index()
-    df.head()
+    df = flight_counts.join(df_lookup.set_index('Code'),how='inner').\
+            sort_values('flight_counts',ascending=False).reset_index(drop=True)
+    
+    # print top 10 airports
+    df.head(10)
 
 
 
@@ -2610,7 +2701,6 @@ Flight-counts by airport
       <thead>
         <tr style="text-align: right;">
           <th></th>
-          <th>index</th>
           <th>origin</th>
           <th>destination</th>
           <th>flight_counts</th>
@@ -2618,16 +2708,15 @@ Flight-counts by airport
           <th>Airport</th>
           <th>City</th>
           <th>State</th>
+          <th>Region</th>
           <th>lat</th>
           <th>lon</th>
-          <th>latlon</th>
           <th>City_State</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th>0</th>
-          <td>10397</td>
           <td>384666</td>
           <td>384588</td>
           <td>769254</td>
@@ -2635,14 +2724,13 @@ Flight-counts by airport
           <td>Hartsfield-Jackson Atlanta International</td>
           <td>Atlanta</td>
           <td>GA</td>
-          <td>33.748995</td>
-          <td>-84.387982</td>
-          <td>(33.748995399999998, -84.387982399999999)</td>
+          <td>South</td>
+          <td>33.640728</td>
+          <td>-84.427700</td>
           <td>Atlanta (GA)</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>13930</td>
           <td>257425</td>
           <td>257275</td>
           <td>514700</td>
@@ -2650,14 +2738,13 @@ Flight-counts by airport
           <td>Chicago O'Hare International</td>
           <td>Chicago</td>
           <td>IL</td>
+          <td>Midwest</td>
           <td>41.974162</td>
           <td>-87.907321</td>
-          <td>(41.974162499999998, -87.907321400000001)</td>
           <td>Chicago (IL) [O'Hare]</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>11292</td>
           <td>225515</td>
           <td>225578</td>
           <td>451093</td>
@@ -2665,14 +2752,13 @@ Flight-counts by airport
           <td>Denver International</td>
           <td>Denver</td>
           <td>CO</td>
+          <td>West</td>
           <td>39.856096</td>
           <td>-104.673738</td>
-          <td>(39.856096299999997, -104.6737376)</td>
           <td>Denver (CO)</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>12892</td>
           <td>211563</td>
           <td>211552</td>
           <td>423115</td>
@@ -2680,14 +2766,13 @@ Flight-counts by airport
           <td>Los Angeles International</td>
           <td>Los Angeles</td>
           <td>CA</td>
+          <td>West</td>
           <td>33.941589</td>
           <td>-118.408530</td>
-          <td>(33.941588899999999, -118.40853)</td>
           <td>Los Angeles (CA)</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>11298</td>
           <td>205545</td>
           <td>205565</td>
           <td>411110</td>
@@ -2695,10 +2780,80 @@ Flight-counts by airport
           <td>Dallas/Fort Worth International</td>
           <td>Dallas/Fort Worth</td>
           <td>TX</td>
+          <td>South</td>
           <td>32.899809</td>
           <td>-97.040335</td>
-          <td>(32.899809099999999, -97.040335200000001)</td>
           <td>Dallas/Fort Worth (TX)</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>171704</td>
+          <td>171746</td>
+          <td>343450</td>
+          <td>San Francisco, CA: San Francisco International</td>
+          <td>San Francisco International</td>
+          <td>San Francisco</td>
+          <td>CA</td>
+          <td>West</td>
+          <td>37.621313</td>
+          <td>-122.378955</td>
+          <td>San Francisco (CA)</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>158589</td>
+          <td>158636</td>
+          <td>317225</td>
+          <td>Phoenix, AZ: Phoenix Sky Harbor International</td>
+          <td>Phoenix Sky Harbor International</td>
+          <td>Phoenix</td>
+          <td>AZ</td>
+          <td>West</td>
+          <td>33.437269</td>
+          <td>-112.007788</td>
+          <td>Phoenix (AZ)</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>150470</td>
+          <td>150479</td>
+          <td>300949</td>
+          <td>Las Vegas, NV: McCarran International</td>
+          <td>McCarran International</td>
+          <td>Las Vegas</td>
+          <td>NV</td>
+          <td>West</td>
+          <td>36.084000</td>
+          <td>-115.153739</td>
+          <td>Las Vegas (NV)</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>140240</td>
+          <td>140230</td>
+          <td>280470</td>
+          <td>Houston, TX: George Bush Intercontinental/Houston</td>
+          <td>George Bush Intercontinental/Houston</td>
+          <td>Houston</td>
+          <td>TX</td>
+          <td>South</td>
+          <td>29.990220</td>
+          <td>-95.336783</td>
+          <td>Houston (TX) [G.Bush]</td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>131934</td>
+          <td>131941</td>
+          <td>263875</td>
+          <td>Seattle, WA: Seattle/Tacoma International</td>
+          <td>Seattle/Tacoma International</td>
+          <td>Seattle</td>
+          <td>WA</td>
+          <td>West</td>
+          <td>47.450250</td>
+          <td>-122.308817</td>
+          <td>Seattle (WA)</td>
         </tr>
       </tbody>
     </table>
@@ -2706,51 +2861,253 @@ Flight-counts by airport
 
 
 
+-  Interesting. I never knew that Atlanta had the airport with the
+   highest traffic counts!
+
+Plot results
+------------
+
+Begin by creating "hovertext" object for plotly
+
 .. code:: python
 
-    df[['flight_counts','City_State']].set_index('City_State').sort_values('flight_counts',ascending=False).iplot(kind='bar',text=hover_text,color='pink')
+    # create hovertext with ranking information
+    def string_rank(ranking):
+        headstr = 'Ranking: '
+        if ranking == 1:
+            return headstr + '1st'
+        elif ranking == 2:
+            return headstr + '2nd'
+        elif ranking == 3:
+            return headstr + '3rd'
+        else:
+            return headstr + str(ranking)+'th'
+    
+    hover_text = df['Airport'] + '<br>' \
+               + df['City'] + ', ' + df['State'] + '<br>' \
+               + 'Number of flight: ' + df['flight_counts'].astype(str)
+            
+    df['text'] = (hover_text + '<br>' + map(string_rank,df.index+1)).tolist()
+    pprint(df['text'].head().tolist())
+
+
+.. parsed-literal::
+    :class: myliteral
+
+    ['Hartsfield-Jackson Atlanta International<br>Atlanta, GA<br>Number of flight: 769254<br>Ranking: 1st',
+     "Chicago O'Hare International<br>Chicago, IL<br>Number of flight: 514700<br>Ranking: 2nd",
+     'Denver International<br>Denver, CO<br>Number of flight: 451093<br>Ranking: 3rd',
+     'Los Angeles International<br>Los Angeles, CA<br>Number of flight: 423115<br>Ranking: 4th',
+     'Dallas/Fort Worth International<br>Dallas/Fort Worth, TX<br>Number of flight: 411110<br>Ranking: 5th']
+    
+
+.. code:: python
+
+    title = 'Airports ranked by number of traffics between ' + period
+    title+= '<br>(hover over plots for airport names; left-click to pan-zoom)'
+    
+    df[['flight_counts','City_State']].set_index('City_State').\
+        sort_values('flight_counts',ascending=False).\
+        iplot(kind='bar',text=df['text'].tolist(),color='pink',
+              title=title,filename=outfile+'_traffic-rank')
 
 
 
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" width="100%" height="500" frameborder="0" scrolling="no" src="https://plot.ly/~takanori/1795.embed?link=false&logo=false"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1863.embed?link=false&logo=false&share_key=k0JiLH4nSRE9l2Rq60IOqZ" height="525px" width="100%"></iframe>
 
 
+
+Display results on US Map
+-------------------------
 
 .. code:: python
 
-    # welp, i faced the worth kind of bug...bug that doesn't throw any exception!
+    # welp, i faced the worst kind of bug...bug that doesn't throw any exception!
     # i learned the hard way that there apparently are some lat/lon values that
     # breaks plotly's hover functionality...took forever to figure this out through
     # trial and error....but it did produce pretty figure so i'm happy :)
-    df = df[df['lat']>=20].reset_index(drop=True)
-    df.shape
-
-
+    
+    # drop entries with latitude lower than 18
+    # (these are outside of the main US land area, such as Guam and the Virgin islands...
+    #  which is probaby why breaks the hover functionality)
+    mask = df['lat']>=19
+    df_filtered = df[mask].reset_index(drop=True)
+    print df_filtered.shape
+    
+    # the dropped airports
+    display(df[~mask])
 
 
 .. parsed-literal::
     :class: myliteral
 
-    (307, 12)
+    (309, 12)
+    
 
+
+.. raw:: html
+
+    <div>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>origin</th>
+          <th>destination</th>
+          <th>flight_counts</th>
+          <th>Description</th>
+          <th>Airport</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Region</th>
+          <th>lat</th>
+          <th>lon</th>
+          <th>City_State</th>
+          <th>text</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>47</th>
+          <td>27033</td>
+          <td>27027</td>
+          <td>54060</td>
+          <td>San Juan, PR: Luis Munoz Marin International</td>
+          <td>Luis Munoz Marin International</td>
+          <td>San Juan</td>
+          <td>PR</td>
+          <td>NaN</td>
+          <td>18.437355</td>
+          <td>-66.004473</td>
+          <td>San Juan (PR)</td>
+          <td>Luis Munoz Marin International&lt;br&gt;San Juan, PR...</td>
+        </tr>
+        <tr>
+          <th>110</th>
+          <td>4940</td>
+          <td>4940</td>
+          <td>9880</td>
+          <td>Charlotte Amalie, VI: Cyril E King</td>
+          <td>Cyril E King</td>
+          <td>Charlotte Amalie</td>
+          <td>VI</td>
+          <td>NaN</td>
+          <td>18.336061</td>
+          <td>-64.972273</td>
+          <td>Charlotte Amalie (VI)</td>
+          <td>Cyril E King&lt;br&gt;Charlotte Amalie, VI&lt;br&gt;Number...</td>
+        </tr>
+        <tr>
+          <th>192</th>
+          <td>1820</td>
+          <td>1822</td>
+          <td>3642</td>
+          <td>Aguadilla, PR: Rafael Hernandez</td>
+          <td>Rafael Hernandez</td>
+          <td>Aguadilla</td>
+          <td>PR</td>
+          <td>NaN</td>
+          <td>-34.549958</td>
+          <td>-58.450550</td>
+          <td>Aguadilla (PR)</td>
+          <td>Rafael Hernandez&lt;br&gt;Aguadilla, PR&lt;br&gt;Number of...</td>
+        </tr>
+        <tr>
+          <th>218</th>
+          <td>1078</td>
+          <td>1077</td>
+          <td>2155</td>
+          <td>Christiansted, VI: Henry E. Rohlsen</td>
+          <td>Henry E. Rohlsen</td>
+          <td>Christiansted</td>
+          <td>VI</td>
+          <td>NaN</td>
+          <td>17.701287</td>
+          <td>-64.805797</td>
+          <td>Christiansted (VI)</td>
+          <td>Henry E. Rohlsen&lt;br&gt;Christiansted, VI&lt;br&gt;Numbe...</td>
+        </tr>
+        <tr>
+          <th>243</th>
+          <td>853</td>
+          <td>853</td>
+          <td>1706</td>
+          <td>Ponce, PR: Mercedita</td>
+          <td>Mercedita</td>
+          <td>Ponce</td>
+          <td>PR</td>
+          <td>NaN</td>
+          <td>18.013893</td>
+          <td>-66.549230</td>
+          <td>Ponce (PR)</td>
+          <td>Mercedita&lt;br&gt;Ponce, PR&lt;br&gt;Number of flight: 17...</td>
+        </tr>
+        <tr>
+          <th>292</th>
+          <td>367</td>
+          <td>367</td>
+          <td>734</td>
+          <td>Guam, TT: Guam International</td>
+          <td>Guam International</td>
+          <td>Guam</td>
+          <td>TT</td>
+          <td>NaN</td>
+          <td>13.485645</td>
+          <td>144.800147</td>
+          <td>Guam (TT)</td>
+          <td>Guam International&lt;br&gt;Guam, TT&lt;br&gt;Number of fl...</td>
+        </tr>
+        <tr>
+          <th>306</th>
+          <td>121</td>
+          <td>121</td>
+          <td>242</td>
+          <td>Pago Pago, TT: Pago Pago International</td>
+          <td>Pago Pago International</td>
+          <td>Pago Pago</td>
+          <td>TT</td>
+          <td>NaN</td>
+          <td>-14.331389</td>
+          <td>-170.711389</td>
+          <td>Pago Pago (TT)</td>
+          <td>Pago Pago International&lt;br&gt;Pago Pago, TT&lt;br&gt;Nu...</td>
+        </tr>
+        <tr>
+          <th>316</th>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>Saipan, TT: Francisco C. Ada Saipan International</td>
+          <td>Francisco C. Ada Saipan International</td>
+          <td>Saipan</td>
+          <td>TT</td>
+          <td>NaN</td>
+          <td>15.119743</td>
+          <td>145.728279</td>
+          <td>Saipan (TT)</td>
+          <td>Francisco C. Ada Saipan International&lt;br&gt;Saipa...</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
 
 
 .. code:: python
 
-    df['text'] = df['Airport'] + '<br>' \
-               + df['City'] + ', ' + df['State'] + '<br>' \
-               + df['flight_counts'].astype(str) + 'flights'
-    limits = [(0,10),(10,25),(25,50),(50,100),(100,300)]
+    # group each airport by ranking-group
+    ranking_group = [(0,10),(10,25),(25,50),(50,100),(100,300)]
+    
+    # colors for each ranking group
     colors = ["rgb(0,116,217)","rgb(255,65,54)","rgb(133,20,75)","rgb(255,133,27)","lightgrey"]
     data = []
-    scale = 1000
+    scale = 1000 # scaling factor for the bubbles
     
-    for i in range(len(limits)):
-        lim = limits[i]
-        df_sub = df[lim[0]:lim[1]]
+    for i in range(len(ranking_group)):
+        lim = ranking_group[i]
+        df_sub = df_filtered[lim[0]:lim[1]]
         airport = dict(
             type = 'scattergeo',
             locationmode = 'USA-states',
@@ -2772,7 +3129,7 @@ Flight-counts by airport
         data.append(airport)
     
     title = 'Top 300 airports based on air-traffics during {}'.format(period)
-    title+= '<br>(click legend below to toggle airports by ranking-class)'
+    title+= '<br>(hover for airport info; click legend below to toggle airports by ranking-class)'
     
     layout = dict(
             title=title,
@@ -2782,7 +3139,7 @@ Flight-counts by airport
                 #bordercolor='rgb(0,0,0)',
                 #borderwidth=1,
                 orientation='h',
-                x=0.5, y = 1, 
+                x=0.5, y = 1.08, 
                 xanchor='center', yanchor='top',
             ),
             geo = dict(
@@ -2795,7 +3152,7 @@ Flight-counts by airport
                 subunitcolor="rgb(255, 255, 255)",
                 countrycolor="rgb(255, 255, 255)"
             ),
-            margin = dict(b=0,l=0,r=0,t=60),
+            margin = dict(b=0,l=0,r=0,t=125),
         )
     
     fig = dict( data=data, layout=layout )
@@ -2806,6 +3163,6 @@ Flight-counts by airport
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1779.embed?share_key=xkV9WAnsiywgPQQgk2lE0h&link=false&logo=false" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1865.embed?link=false&logo=false&share_key=7RDIKA9PJVI5HB2jeiKPGb" height="525px" width="100%"></iframe>
 
 

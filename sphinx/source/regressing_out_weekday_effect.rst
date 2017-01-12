@@ -1,5 +1,6 @@
-Regression analysis
-"""""""""""""""""""
+Part2: Holiday Detction via Regression and Residual Analysis
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/regressing_out_weekday_effect.ipynb>`__ .
 
 .. contents:: `Page Contents`
@@ -18,6 +19,13 @@ Aim of this notebook
 
 -  This ``day_of_week`` effect seems to obscure away interesting trend
    in our data.
+
+.. code:: python
+
+    from IPython.core.display import display, HTML
+    display(HTML('<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1555.embed?link=false&logo=false" height="525px" width="100%"></iframe>'))
+
+
 
 .. raw:: html
 
@@ -157,14 +165,6 @@ Load data, and prepare Timeseries
                           **plt_options)
 
 
-
-
-.. raw:: html
-
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1797.embed?share&link=false&logo=false_key=92EpEcQqajzsuT8jAt8LDS" height="525px" width="100%"></iframe>
-
-
-
 -  Ok, we are in business. Let's next run our regression analysis.
 
 Regression analysis: eliminate effect from "day\_of\_week"
@@ -295,7 +295,7 @@ Analyze residual signal
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1799.embed?share&link=false&logo=false_key=BF0DMZva3xxQFcxM1MYjnb" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1799.embed?link=false&logo=false&share_key=BF0DMZva3xxQFcxM1MYjnb" height="525px" width="100%"></iframe>
 
 
 
@@ -315,7 +315,7 @@ Analyze residual signal
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1805.embed?share&link=false&logo=false_key=miNWMfcO2toDdFhYS4UWJf" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1805.embed?link=false&logo=false&share_key=miNWMfcO2toDdFhYS4UWJf" height="525px" width="100%"></iframe>
 
 
 
@@ -372,7 +372,7 @@ Get "Lagged" residual
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1807.embed?share&link=false&logo=false_key=gZgt67hPMDug68ug3PsKwf" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1807.embed?link=false&logo=false&share_key=gZgt67hPMDug68ug3PsKwf" height="525px" width="100%"></iframe>
 
 
 
@@ -398,7 +398,7 @@ Get "Lagged" residual
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1809.embed?share&link=false&logo=false_key=OZtWbp85ihAeQoPk7bnbGm" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1809.embed?link=false&logo=false&share_key=OZtWbp85ihAeQoPk7bnbGm" height="525px" width="100%"></iframe>
 
 
 
@@ -448,7 +448,7 @@ Histograms of the signals
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1811.embed?share&link=false&logo=false_key=Id7ybFN2fZfkCXnhxvsiYT" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1811.embed?link=false&logo=false&share_key=Id7ybFN2fZfkCXnhxvsiYT" height="525px" width="100%"></iframe>
 
 
 
@@ -571,7 +571,7 @@ Repeat analysis for 3 years period
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1813.embed?share&link=false&logo=false_key=ki26T9goZ2Vdx43NnU8qZb" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1813.embed?link=false&logo=false&share_key=ki26T9goZ2Vdx43NnU8qZb" height="525px" width="100%"></iframe>
 
 
 
@@ -677,7 +677,7 @@ Repeat analysis for 3 years period
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1819.embed?share&link=false&logo=false_key=vlfcxJfo1KSoFHHsIQsNn0" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1819.embed?link=false&logo=false&share_key=vlfcxJfo1KSoFHHsIQsNn0" height="525px" width="100%"></iframe>
 
 
 
@@ -697,7 +697,7 @@ Repeat analysis for 3 years period
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1821.embed?share&link=false&logo=false_key=pCiPLG6CDNgpQf2zpWx6LO" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1821.embed?link=false&logo=false&share_key=pCiPLG6CDNgpQf2zpWx6LO" height="525px" width="100%"></iframe>
 
 
 
@@ -723,7 +723,7 @@ Repeat analysis for 3 years period
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1817.embed?share&link=false&logo=false_key=lgPen2YeoNXEvEBbXRWvOj" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1817.embed?link=false&logo=false&share_key=lgPen2YeoNXEvEBbXRWvOj" height="525px" width="100%"></iframe>
 
 
 
@@ -743,7 +743,7 @@ Repeat analysis for 3 years period
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1825.embed?share&link=false&logo=false_key=u82qeAgOF2RqhNxIADGimh" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1825.embed?link=false&logo=false&share_key=u82qeAgOF2RqhNxIADGimh" height="525px" width="100%"></iframe>
 
 
 
@@ -769,7 +769,7 @@ Repeat analysis for 3 years period
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1823.embed?share&link=false&logo=false_key=NC65bD2dR9ZTSbfCPCUtts" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1823.embed?link=false&logo=false&share_key=NC65bD2dR9ZTSbfCPCUtts" height="525px" width="100%"></iframe>
 
 
 
@@ -957,7 +957,7 @@ Try overlaying the annual plot
 
 
 
-.. image:: /_static/img/regressing_out_weekday_effect_43_1.png
+.. figure:: /_static/img/regressing_out_weekday_effect_42_1.png
 
 
 .. code:: python
@@ -979,5 +979,5 @@ Try overlaying the annual plot
 
 
 
-.. image:: /_static/img/regressing_out_weekday_effect_43_1.png
+.. figure:: /_static/img/regressing_out_weekday_effect_43_1.png
 

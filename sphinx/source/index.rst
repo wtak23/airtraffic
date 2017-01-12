@@ -2,18 +2,20 @@ US Airport Traffic Analysis
 ===========================
 Welcome to my project!
 
+.. raw:: html
+
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1955.embed?link=false&logo=false&share_key=b2DdhlljEH0JZMTRVPlUjf" height="525px" width="100%"></iframe>
+    
 .. toctree::
    :maxdepth: 2
    :caption: Contents
-   :numbered:
 
    main_findings
-   jupyter_notebooks
+   flight-count-analysis
+   regressing_out_weekday_effect
+   network_analysis
    data_munging
 
-.. raw:: html
-
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1865.embed?share_key=7RDIKA9PJVI5HB2jeiKPGb&link=false&logo=false" height="525px" width="100%"></iframe>
 
 .. figure:: /_static/img/west-zoom.png
    :scale: 50 %
