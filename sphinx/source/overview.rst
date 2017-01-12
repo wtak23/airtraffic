@@ -1,78 +1,67 @@
 Project Overview
 """"""""""""""""
-To narrow our focus, I decided to limit the scope of the analysis from Nov-1-2015 to Oct-31-2016 (this is the latest available data provided by BTS).
+
+To narrow our focus, I decided to limit the scope of the analysis from Nov-1-2015 to Oct-31-2016 (this is the latest available data provided by the Bureau of Transportation Statistic.
 
 The project is broken down into three-parts, each having its own separate `Jupyter notebook <http://jupyter.org/>`__ page (which allows me to present the result alongside wit the code):
 
-1. Air-traffic trend analysis (`notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
-
-  - Here I begin my acclimating myself  with the dataset through basic exploratory data analysis.
-  - 
-  - I've gained insights on the type of preprocessing I need to apply in order to convert the data-table in a *"nice"* format that has convenient structure that are amenable for grouping and plotting (i.e., "tidying" the data).
-2. Air-traffic count analysis (`notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
-3. Air-traffic count analysis (`notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
-
 .. rubric:: A quick remark
 
-Since this is a data science project, much of my effort was spent towards interacting with the data through **coding**, with the goal of identifying some "interesting" trend in the data, which inevitably involves some painstaking trial-and-error process.
+About 65-75% of the content in my Jupyter notebooks are occupied by codes (most of the effort towards "`tidying <https://en.wikipedia.org/wiki/Tidy_data>`__" the data-table). I put my best effort in making the visualization charts as self-explanatory as possible, so if you are only interested in the "punchline" of the analysis, please scroll thorough the code and pause whenever you see a figure/chart.
 
 
-##############################
-Analyasis 1: Air-traffic Trend
-##############################
+.. (or visit the gallery pages linked at top of this page).
 
-http://takwatanabe.me/airtraffic/flight-count-analysis.html
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Gallery
-    :name: hi
-
-    flight-count-analysis-gallery
-
-.. raw:: html
-
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1853.embed?link=false&logo=false&share_key=xcDy8dp7T93r2qLV5WLTCI" height="525px" width="100%"></iframe>
+..    #########
+..    Galleries
+..    #########
+..    toctree
+..        :maxdepth: 2
+    
+..        flight-count-analysis-gallery
+..        regression-gallery
+..        network-analysis-gallery
 
 
-#############################
-Air-traffic Residual Analysis
-#############################
+.. rubric:: Part 1. Air-traffic trend analysis (`main notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
 
-http://takwatanabe.me/airtraffic/regressing_out_weekday_effect.html
+- Here I analyzed the general trend in the frequency of flight-counts in the US as a time-series signal. 
+- The goal was to identify some interesting trend in the flight-counts at different time (eg, day-of-week, month, end of year) and location (eg, densely populated area, location of **hub** airports).
+- Example types of questions asked: 
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Gallery
-    :name: hii
+  - Is there any day/time of the year when the US flight-counts takes a dip/hike? 
+  - does Honolulu airport attract more visitors during the winter-time? 
+  - Is there a trend in fight counts that is specific to airports at major cities like NY/LA? W
+  - which airport in the US is the busiest i terms of flight-counts?
 
-    regression-gallery
-
+- Example chart from analysis:
 
 .. raw:: html
 
-   <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1807.embed?link=false&logo=false&share_key=gZgt67hPMDug68ug3PsKwf" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1853.embed?link=false&logo=false&share_key=xcDy8dp7T93r2qLV5WLTCI" height="400px" width="75%"></iframe>
 
+.. ==========================================================================..
 
-#############################################
-Network Theoretic Analysis of US Airline Data
-#############################################
+.. rubric:: Part2: Regressing away the effect of ``day_of_the_week`` in the Air-traffic Time Series Signal (`main notebook <http://takwatanabe.me/airtraffic/regressing_out_weekday_effect.html>`__)
 
-http://takwatanabe.me/airtraffic/network_analysis.html
+- Example chart from analysis:
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Gallery
-    :name: hiii
+.. raw:: html
 
-    network-analysis-gallery
+   <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1807.embed?link=false&logo=false&share_key=gZgt67hPMDug68ug3PsKwf" height="525px" width="75%"></iframe>
 
+.. =========================================================================..
+.. rubric:: Part 3. Air-traffic count analysis (`main notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
+
+- Example chart from analysis: figure in SVG format, so feel free to open in new tab and zoom in closely :)
 
 .. figure:: /_static/img/traffic_mainland_intra_only.svg
-    :align: center
-    :width: 100%
+    :width: 77%
 
-    caption
+    The network structre of aircraft movements among different **communities** of airports (detected via Louvain Modularity algorithm. Only the "intra-community" edges are displayed. Click on figure to open in new tab -- SVG format so you can zoom in closely :)
 
 
+
+
+.. Since this is a data science project, much of my effort was spent towards interacting with the data through **coding**, with the goal of identifying some "interesting" trend in the data, which inevitably involves some painstaking trial-and-error process.
 
