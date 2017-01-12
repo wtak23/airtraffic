@@ -1,6 +1,6 @@
 Part3: Network analysis of 2016 US Air Traffic
 """"""""""""""""""""""""""""""""""""""""""""""
-The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/network_analysis.ipynb>`__ .
+The original Jupyter notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/network_analysis.ipynb>`__ .
 
 .. contents:: `Page Contents`
    :depth: 2

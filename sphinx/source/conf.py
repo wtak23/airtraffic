@@ -92,7 +92,7 @@ elif theme == 'bootstrap':
         #'navbar_title': "Demo",
 
         # Tab name for entire site. (Default: "Site")
-        'navbar_site_name': "TOC",
+        'navbar_site_name': "Contents",
 
         # A list of tuples containing pages or urls to link to.
         # Valid tuples should be in the following forms:
@@ -102,8 +102,8 @@ elif theme == 'bootstrap':
         # Note the "1" or "True" value above as the third argument to indicate
         # an arbitrary url.
         'navbar_links': [
-            ('<i class="fa fa-home" aria-hidden="true"></i>&nbsp; takwatanabe.me', "http://takwatanabe.me", True),
-            ('<i class="fa fa-github" aria-hidden="true"></i>&nbsp; Github', "https://github.com/wtak23/airtraffic", True),
+            ('<i class="fa fa-spotify" aria-hidden="true"></i>&nbsp; resume', "http://takwatanabe.me/resume.pdf", True),
+            ('<i class="fa fa-github" aria-hidden="true"></i>&nbsp; Codes', "https://github.com/wtak23/airtraffic", True),
             # ("Link", "http://example.com", True),
         ],
 
@@ -115,7 +115,7 @@ elif theme == 'bootstrap':
         'navbar_pagenav': True,
 
         # Tab name for the current pages TOC. (Default: "Page")
-        'navbar_pagenav_name': "page",
+        'navbar_pagenav_name': "page-contents",
         #-------------------------------------------------------------------------#
 
         # Global TOC depth for "site" navbar tab. (Default: 1)

@@ -245,7 +245,7 @@ if __name__ == '__main__':
     df_network = compute_network_measures(G)
     
     # export .gexf file for later analysis in gephi
-    nx.write_gexf(G,'test_undirected.gexf')
+    nx.write_gexf(G,'airtraffic_network.gexf')
     
     # === directed graph ===
     D = make_nx_graph(trip_counts, df_lookup, digraph=True)

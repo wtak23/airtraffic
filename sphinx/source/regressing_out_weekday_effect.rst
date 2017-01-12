@@ -1,7 +1,7 @@
-Part2: Holiday Detction via Regression and Residual Analysis
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Part2: Holiday Detction via Flight-Residual Analysis
+""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/regressing_out_weekday_effect.ipynb>`__ .
+The original Jupyter notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/regressing_out_weekday_effect.ipynb>`__ .
 
 .. contents:: `Page Contents`
    :depth: 2

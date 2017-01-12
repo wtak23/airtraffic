@@ -1,7 +1,7 @@
 Part 1. Air-traffic Count Analysis
 """"""""""""""""""""""""""""""""""
 
-The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/flight-count-analysis.ipynb>`__ .
+The original Jupyter-notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/flight-count-analysis.ipynb>`__ .
 
 .. contents:: `Page Contents`
    :depth: 2
