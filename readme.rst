@@ -1,1 +1,1 @@
-Repository for Spotify take-home assignment.
+http://takwatanabe.me/airtraffic/

@@ -141,7 +141,7 @@ elif theme == 'bootstrap':
 
         # Location of link to source.
         # Options are "nav" (default), "footer" or anything else to exclude.
-        'source_link_position': "footer",
+        'source_link_position': "",
 
         'bootswatch_theme': "flatly",
         'bootstrap_version': "3",
@@ -177,8 +177,8 @@ html_static_path = ['_static']
 # If not None, a 'Last updated on:' timestamp is inserted at every page
 # bottom, using the given strftime format.
 # The empty string is equivalent to '%b %d, %Y'.
-# html_last_updated_fmt = None
-html_last_updated_fmt = ''
+html_last_updated_fmt = None
+# html_last_updated_fmt = ''
 
 html_show_sphinx = False
 html_show_copyright = False

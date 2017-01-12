@@ -958,7 +958,7 @@ Try overlaying the annual plot
 
 
 .. figure:: /_static/img/regressing_out_weekday_effect_42_1.png
-
+    :scale: 100%
 
 .. code:: python
 
@@ -980,4 +980,4 @@ Try overlaying the annual plot
 
 
 .. figure:: /_static/img/regressing_out_weekday_effect_43_1.png
-
+   :scale: 100%
