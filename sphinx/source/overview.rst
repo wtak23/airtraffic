@@ -1,12 +1,25 @@
 Project Overview
 """"""""""""""""
-.. contents:: `Outline`
-   :depth: 2
-   :local:
+To narrow our focus, I decided to limit the scope of the analysis from Nov-1-2015 to Oct-31-2016 (this is the latest available data provided by BTS).
 
-##########################
-Air-traffic Trend Analysis
-##########################
+The project is broken down into three-parts, each having its own separate `Jupyter notebook <http://jupyter.org/>`__ page (which allows me to present the result alongside wit the code):
+
+1. Air-traffic trend analysis (`notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
+
+  - Here I begin my acclimating myself  with the dataset through basic exploratory data analysis.
+  - 
+  - I've gained insights on the type of preprocessing I need to apply in order to convert the data-table in a *"nice"* format that has convenient structure that are amenable for grouping and plotting (i.e., "tidying" the data).
+2. Air-traffic count analysis (`notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
+3. Air-traffic count analysis (`notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
+
+.. rubric:: A quick remark
+
+Since this is a data science project, much of my effort was spent towards interacting with the data through **coding**, with the goal of identifying some "interesting" trend in the data, which inevitably involves some painstaking trial-and-error process.
+
+
+##############################
+Analyasis 1: Air-traffic Trend
+##############################
 
 http://takwatanabe.me/airtraffic/flight-count-analysis.html
 

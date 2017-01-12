@@ -1,9 +1,9 @@
 US Airport Traffic Analysis
 ===========================
 
-Hello, welcome to my project! My name is Takanori Watanabe, and I am  a postdoctoral researcher at the University of Pennsylvania, and I conduct  applied machine learning research targeted for neuroimaging application.
+Hello, welcome to my project! My name is Takanori Watanabe, and I am  a postdoctoral researcher at the University of Pennsylvania. I conduct  applied machine learning research targeted for neuroimaging application.
 
-This project analyzes the airline travel within the United States during the following one year time period: November 1, 2015 to October 31, 2016. 
+This project analyzes the airline travel within the United States during the following one year time period: November 1, 2015 to October 31, 2016. The dataset is provided by the Bureau of Transportation Statistics and is available for download `here <www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time>`__.
 
 The goal of the project is two-folds:
 
