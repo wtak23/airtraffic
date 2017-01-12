@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="213.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-98.000000 -82.000000 213.000000 138.000000" height="138.0"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path fill="none" stroke-width="1.0552"
+              d="M 15.320126,21.890137 C 0.720371,0.571629 10.798500,-53.305763 32.117008,-67.905518"
+              class="Newark (NJ) Burlington (VT)" stroke-opacity="1.0"
+              stroke="#ba579d"/>
+        <path fill="none" stroke-width="0.8296"
+              d="M 15.320126,21.890137 C -8.283151,22.666386 -44.852440,-11.574153 -45.628689,-35.177429"
+              class="Newark (NJ) Rochester (NY)" stroke-opacity="1.0"
+              stroke="#ba579d"/>
+        <path fill="none" stroke-width="0.1656"
+              d="M 15.320126,21.890137 C 15.533384,11.705637 31.130022,-3.251223 41.314522,-3.037964"
+              class="Newark (NJ) Hartford (CT)" stroke-opacity="1.0"
+              stroke="#ba61a2"/>
+        <path fill="none" stroke-width="0.5144"
+              d="M 15.320126,21.890137 C 20.096382,7.509266 48.832069,-6.897655 63.212940,-2.121399"
+              class="Newark (NJ) Providence (RI)" stroke-opacity="1.0"
+              stroke="#ba61a2"/>
+        <path fill="none" stroke-width="0.0968"
+              d="M 15.320126,21.890137 C 14.433939,-16.400408 70.540474,-75.165512 108.831017,-76.051697"
+              class="Newark (NJ) Bangor (ME)" stroke-opacity="1.0"
+              stroke="#ba61a2"/>
+        <path fill="none" stroke-width="0.2008"
+              d="M 15.320126,21.890137 C 7.605415,11.255626 11.985119,-16.268200 22.619629,-23.982910"
+              class="Newark (NJ) Albany (NY)" stroke-opacity="1.0"
+              stroke="#bb6ba7"/>
+        <path fill="none" stroke-width="0.4328"
+              d="M 15.320126,21.890137 C -2.809259,17.274672 -23.080137,-16.842600 -18.464672,-34.971985"
+              class="Newark (NJ) Syracuse (NY)" stroke-opacity="1.0"
+              stroke="#ba579d"/>
+        <path fill="none" stroke-width="0.107999995"
+              d="M 15.320126,21.890137 C 6.796136,23.753994 -8.785640,13.763798 -10.649498,5.239807"
+              class="Newark (NJ) Scranton/Wilkes-Barre (PA)"
+              stroke-opacity="1.0" stroke="#bb6ba7"/>
+        <path fill="none" stroke-width="3.7352"
+              d="M 15.320126,21.890137 C 18.405937,3.225079 51.032238,-20.143793 69.697296,-17.057983"
+              class="Newark (NJ) Boston (MA)" stroke-opacity="1.0"
+              stroke="#a02083"/>
+        <path fill="none" stroke-width="0.47439998"
+              d="M 15.320126,21.890137 C 14.389155,1.835631 43.074459,-29.642578 63.128963,-30.573547"
+              class="Newark (NJ) Manchester (NH)" stroke-opacity="1.0"
+              stroke="#ba61a2"/>
+        <path fill="none" stroke-width="1.1472"
+              d="M 15.320126,21.890137 C 14.880589,-5.530555 55.352310,-47.320900 82.773003,-47.760437"
+              class="Newark (NJ) Portland (ME)" stroke-opacity="1.0"
+              stroke="#ba579d"/>
+        <path fill="none" stroke-width="0.42319998"
+              d="M 15.320126,21.890137 C -4.966486,43.958122 -68.498375,46.630180 -90.566360,26.343567"
+              class="Newark (NJ) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b94393"/>
+        <path fill="none" stroke-width="1.0992"
+              d="M 15.320126,21.890137 C -11.386273,28.023197 -60.645466,-2.836813 -66.778526,-29.543213"
+              class="Newark (NJ) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b94393"/>
+        <path fill="none" stroke-width="0.088"
+              d="M 32.117008,-67.905518 C 47.363106,-48.038528 40.431770,4.631100 20.564779,19.877197"
+              class="Burlington (VT) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#d66fa7"/>
+        <path fill="none" stroke-width="0.93759996"
+              d="M 32.117008,-67.905518 C 48.322105,-47.748524 42.394264,6.794599 22.237272,22.999695"
+              class="Burlington (VT) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#cd67a3"/>
+        <path fill="none" stroke-width="0.103199996"
+              d="M -45.628689,-35.177429 C -21.379070,-37.405197 18.337011,-4.372421 20.564779,19.877197"
+              class="Rochester (NY) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#d66fa7"/>
+        <path fill="none" stroke-width="0.9752"
+              d="M -45.628689,-35.177429 C -20.420071,-37.115196 20.299503,-2.208922 22.237272,22.999695"
+              class="Rochester (NY) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#cd67a3"/>
+        <path fill="none" stroke-width="0.1752"
+              d="M 108.831017,-76.051697 C 110.363556,-39.212669 57.403805,18.344664 20.564779,19.877197"
+              class="Bangor (ME) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#d779ac"/>
+        <path fill="none" stroke-width="0.13759999"
+              d="M 87.065582,8.773254 C 78.425682,7.080664 68.004707,-8.418077 69.697296,-17.057983"
+              class="Nantucket (MA) Boston (MA)" stroke-opacity="1.0"
+              stroke="#e081af"/>
+        <path fill="none" stroke-width="0.3136"
+              d="M 87.065582,8.773254 C 76.945213,24.584206 38.048222,33.120071 22.237272,22.999695"
+              class="Nantucket (MA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#cd71a8"/>
+        <path fill="none" stroke-width="0.120799996"
+              d="M 41.314522,-3.037964 C 41.103260,14.604303 14.322966,40.750813 -3.319301,40.539551"
+              class="Hartford (CT) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#f491b5"/>
+        <path fill="none" stroke-width="0.8832"
+              d="M -18.464672,-34.971985 C 1.270054,-31.518036 25.691219,3.264969 22.237272,22.999695"
+              class="Syracuse (NY) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#cd67a3"/>
+        <path fill="none" stroke-width="0.3856"
+              d="M -18.464672,-34.971985 C 0.311053,-31.808037 23.728725,1.101471 20.564779,19.877197"
+              class="Syracuse (NY) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#d66fa7"/>
+        <path fill="none" stroke-width="1.0344"
+              d="M 69.697296,-17.057983 C 46.324871,23.675060 -49.833317,49.715992 -90.566360,26.343567"
+              class="Boston (MA) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#df63a0"/>
+        <path fill="none" stroke-width="4.4263997"
+              d="M 69.697296,-17.057983 C 66.613487,9.064841 22.803524,43.623363 -3.319301,40.539551"
+              class="Boston (MA) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#d95096"/>
+        <path fill="none" stroke-width="0.088"
+              d="M 69.697296,-17.057983 C 75.807587,-14.067125 80.486732,-0.415404 77.495872,5.694885"
+              class="Boston (MA) Martha&apos;s Vineyard (MA)"
+              stroke-opacity="1.0" stroke="#e081af"/>
+        <path fill="none" stroke-width="1.0888"
+              d="M 69.697296,-17.057983 C 39.905083,7.740137 -41.980408,0.248999 -66.778526,-29.543213"
+              class="Boston (MA) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#df63a0"/>
+        <path fill="none" stroke-width="0.117599994"
+              d="M 69.697296,-17.057983 C 70.871460,8.643758 34.080101,48.957611 8.378359,50.131775"
+              class="Boston (MA) Atlantic City (NJ)" stroke-opacity="1.0"
+              stroke="#e18bb4"/>
+        <path fill="none" stroke-width="4.4024"
+              d="M 69.697296,-17.057983 C 68.216827,0.445557 39.740814,24.480164 22.237272,22.999695"
+              class="Boston (MA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b33089"/>
+        <path fill="none" stroke-width="5.272"
+              d="M 69.697296,-17.057983 C 67.257828,0.155556 37.778316,22.316664 20.564779,19.877197"
+              class="Boston (MA) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#bc388d"/>
+        <path fill="none" stroke-width="0.1104"
+              d="M 77.495872,5.694885 C 69.905113,20.207565 36.749950,30.590450 22.237272,22.999695"
+              class="Martha&apos;s Vineyard (MA) New York (NY) [JFK]"
+              stroke-opacity="1.0" stroke="#cd71a8"/>
+        <path fill="none" stroke-width="0.0968"
+              d="M 83.208511,-0.784668 C 75.771141,16.166451 39.188393,30.437069 22.237272,22.999695"
+              class="Hyannis (MA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#ce7bad"/>
+        <path fill="none" stroke-width="0.1488"
+              d="M 20.564779,19.877197 C 19.478897,-6.091975 56.803833,-46.674557 82.773003,-47.760437"
+              class="New York (NY) [Lag] Portland (ME)" stroke-opacity="1.0"
+              stroke="#d66fa7"/>
+        <path fill="none" stroke-width="0.2208"
+              d="M 20.564779,19.877197 C -0.368176,43.396698 -67.046860,47.276520 -90.566360,26.343567"
+              class="New York (NY) [Lag] Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#d55b9d"/>
+        <path fill="none" stroke-width="0.37039998"
+              d="M 20.564779,19.877197 C -6.787965,27.461777 -59.193947,-2.190468 -66.778526,-29.543213"
+              class="New York (NY) [Lag] Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#d55b9d"/>
+        <path fill="none" stroke-width="0.6216"
+              d="M 20.564779,19.877197 C 19.920433,28.786484 5.589986,41.183899 -3.319301,40.539551"
+              class="New York (NY) [Lag] Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#d04893"/>
+        <path fill="none" stroke-width="0.007999999"
+              d="M 20.564779,19.877197 C 18.987469,1.274211 44.525978,-28.996235 63.128963,-30.573547"
+              class="New York (NY) [Lag] Manchester (NH)" stroke-opacity="1.0"
+              stroke="#d779ac"/>
+        <path fill="none" stroke-width="0.95119995"
+              d="M 82.773003,-47.760437 C 84.817879,-21.501265 48.496445,20.954815 22.237272,22.999695"
+              class="Portland (ME) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#cd67a3"/>
+        <path fill="none" stroke-width="0.6392"
+              d="M -90.566360,26.343567 C -70.277748,11.733351 -17.929518,20.250942 -3.319301,40.539551"
+              class="Pittsburgh (PA) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#f273a6"/>
+        <path fill="none" stroke-width="0.0184"
+              d="M -90.566360,26.343567 C -68.674408,3.114065 -0.992230,1.107740 22.237272,22.999695"
+              class="Pittsburgh (PA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#cc5399"/>
+        <path fill="none" stroke-width="0.38079998"
+              d="M 63.212940,-2.121399 C 58.438683,19.717239 18.519339,45.313812 -3.319301,40.539551"
+              class="Providence (RI) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#f491b5"/>
+        <path fill="none" stroke-width="1.9616"
+              d="M -66.778526,-29.543213 C -38.466782,-36.837791 14.942695,-5.312047 22.237272,22.999695"
+              class="Buffalo (NY) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#cc5399"/>
+        <path fill="none" stroke-width="0.0064"
+              d="M -66.778526,-29.543213 C -40.070129,-28.218506 -1.994595,13.831154 -3.319301,40.539551"
+              class="Buffalo (NY) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#f273a6"/>
+        <path fill="none" stroke-width="0.0023999999"
+              d="M -3.319301,40.539551 C -1.715958,31.920263 13.617987,21.396351 22.237272,22.999695"
+              class="Philadelphia (PA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#c64090"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#7a0177" r="9.0" cx="15.320126"
+                class="Newark (NJ)" cy="21.890137" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#faaec4" r="5.923077" cx="32.11701"
+                class="Burlington (VT)" cy="-67.90552" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-76.00632"
+                class="Latrobe (PA)" cy="31.429688" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#faaec4" r="5.923077" cx="-45.62869"
+                class="Rochester (NY)" cy="-35.17743" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fbc2ce" r="5.6153846" cx="108.83102"
+                class="Bangor (ME)" cy="-76.0517" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fbc2ce" r="5.6153846" cx="87.06558"
+                class="Nantucket (MA)" cy="8.773254" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fbc2ce" r="5.6153846" cx="41.31452"
+                class="Hartford (CT)" cy="-3.0379639" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fcd6d8" r="5.3076925" cx="22.619629"
+                class="Albany (NY)" cy="-23.98291" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="34.11548"
+                class="Islip (NY)" cy="19.579407" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#faaec4" r="5.923077" cx="-18.464672"
+                class="Syracuse (NY)" cy="-34.971985" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#c64090" r="7.769231" cx="69.697296"
+                class="Boston (MA)" cy="-17.057983" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fbc2ce" r="5.6153846" cx="77.49587"
+                class="Martha&apos;s Vineyard (MA)" cy="5.6948853"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-67.93335"
+                class="Niagara Falls (NY)" cy="-34.815247" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="27.575275"
+                class="Plattsburgh (NY)" cy="-72.64783" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-6.6759744"
+                class="Allentown/Bethlehem/Easton (PA)" cy="22.76184"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fcd6d8" r="5.3076925" cx="83.20851"
+                class="Hyannis (MA)" cy="-0.78466797" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-32.13844"
+                class="Elmira/Corning (NY)" cy="-12.336548" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fcd6d8" r="5.3076925" cx="-10.649498"
+                class="Scranton/Wilkes-Barre (PA)" cy="5.239807"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-16.22846"
+                class="Binghamton (NY)" cy="-13.472717" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-24.569004"
+                class="Ithaca/Cortland (NY)" cy="-20.144958" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b3308a" r="8.076923" cx="20.56478"
+                class="New York (NY) [Lag]" cy="19.877197" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="55.4793"
+                class="Worcester (MA)" cy="-14.885193" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fcd6d8" r="5.3076925" cx="8.378359"
+                class="Atlantic City (NJ)" cy="50.131775" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-89.52817"
+                class="Erie (PA)" cy="-10.528076" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="16.612087"
+                class="Newburgh/Poughkeepsie (NY)" cy="3.1534424"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-29.765303"
+                class="Harrisburg (PA)" cy="33.248657" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="21.945585"
+                class="White Plains (NY)" cy="11.90271" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="-64.82747"
+                class="State College (PA)" cy="27.153769" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fbc2ce" r="5.6153846" cx="63.128963"
+                class="Manchester (NH)" cy="-30.573547" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#faaec4" r="5.923077" cx="82.773"
+                class="Portland (ME)" cy="-47.760437" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#f886b0" r="6.5384617" cx="-90.56636"
+                class="Pittsburgh (PA)" cy="26.343567" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#fbc2ce" r="5.6153846" cx="63.21294"
+                class="Providence (RI)" cy="-2.121399" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#feebe2" r="5.0" cx="4.0874224"
+                class="Trenton (NJ)" cy="31.355774" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#f886b0" r="6.5384617" cx="-66.77853"
+                class="Buffalo (NY)" cy="-29.543213" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ed609d" r="7.1538463" cx="-3.3193011"
+                class="Philadelphia (PA)" cy="40.53955" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#a02083" r="8.384615" cx="22.237272"
+                class="New York (NY) [JFK]" cy="22.999695" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="10" x="15.320126" y="24.23714" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Newark (NJ)">
+            Newark (NJ)
+        </text>
+        <text font-size="5" x="32.11701" y="-66.73201" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Burlington (VT)">
+            Burlington (VT)
+        </text>
+        <text font-size="4" x="-76.00632" y="32.36849" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Latrobe (PA)">
+            Latrobe (PA)
+        </text>
+        <text font-size="5" x="-45.62869" y="-34.00393" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Rochester (NY)">
+            Rochester (NY)
+        </text>
+        <text font-size="5" x="108.83102" y="-74.87819" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Bangor (ME)">
+            Bangor (ME)
+        </text>
+        <text font-size="5" x="87.06558" y="9.946756" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Nantucket (MA)">
+            Nantucket (MA)
+        </text>
+        <text font-size="5" x="41.31452" y="-1.8644614" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Hartford (CT)">
+            Hartford (CT)
+        </text>
+        <text font-size="4" x="22.619629" y="-23.04411" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Albany (NY)">
+            Albany (NY)
+        </text>
+        <text font-size="4" x="34.11548" y="20.518208" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Islip (NY)">
+            Islip (NY)
+        </text>
+        <text font-size="5" x="-18.464672" y="-33.798485" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Syracuse (NY)">
+            Syracuse (NY)
+        </text>
+        <text font-size="8" x="69.697296" y="-15.180379" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Boston (MA)">
+            Boston (MA)
+        </text>
+        <text font-size="5" x="77.49587" y="6.868388" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Martha&apos;s Vineyard (MA)">
+            Martha&apos;s Vineyard (MA)
+        </text>
+        <text font-size="4" x="-67.93335" y="-33.876442" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Niagara Falls (NY)">
+            Niagara Falls (NY)
+        </text>
+        <text font-size="4" x="27.575275" y="-71.70903" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Plattsburgh (NY)">
+            Plattsburgh (NY)
+        </text>
+        <text font-size="4" x="-6.6759744" y="23.700642" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Allentown/Bethlehem/Easton (PA)">
+            Allentown/Bethlehem/Easton (PA)
+        </text>
+        <text font-size="4" x="83.20851" y="0.15413415" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Hyannis (MA)">
+            Hyannis (MA)
+        </text>
+        <text font-size="4" x="-32.13844" y="-11.397745" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Elmira/Corning (NY)">
+            Elmira/Corning (NY)
+        </text>
+        <text font-size="4" x="-10.649498" y="6.1786094" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Scranton/Wilkes-Barre (PA)">
+            Scranton/Wilkes-Barre (PA)
+        </text>
+        <text font-size="4" x="-16.22846" y="-12.5339155" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Binghamton (NY)">
+            Binghamton (NY)
+        </text>
+        <text font-size="4" x="-24.569004" y="-19.206158" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Ithaca/Cortland (NY)">
+            Ithaca/Cortland (NY)
+        </text>
+        <text font-size="8" x="20.56478" y="21.754803" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="New York (NY) [Lag]">
+            New York (NY) [Lag]
+        </text>
+        <text font-size="4" x="55.4793" y="-13.946391" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Worcester (MA)">
+            Worcester (MA)
+        </text>
+        <text font-size="4" x="8.378359" y="51.07058" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Atlantic City (NJ)">
+            Atlantic City (NJ)
+        </text>
+        <text font-size="4" x="-89.52817" y="-9.589273" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Erie (PA)">
+            Erie (PA)
+        </text>
+        <text font-size="4" x="16.612087" y="4.0922446" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Newburgh/Poughkeepsie (NY)">
+            Newburgh/Poughkeepsie (NY)
+        </text>
+        <text font-size="4" x="-29.765303" y="34.187458" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Harrisburg (PA)">
+            Harrisburg (PA)
+        </text>
+        <text font-size="4" x="21.945585" y="12.841513" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="White Plains (NY)">
+            White Plains (NY)
+        </text>
+        <text font-size="4" x="-64.82747" y="28.092571" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="State College (PA)">
+            State College (PA)
+        </text>
+        <text font-size="5" x="63.128963" y="-29.400045" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Manchester (NH)">
+            Manchester (NH)
+        </text>
+        <text font-size="5" x="82.773" y="-46.586937" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Portland (ME)">
+            Portland (ME)
+        </text>
+        <text font-size="6" x="-90.56636" y="27.75177" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Pittsburgh (PA)">
+            Pittsburgh (PA)
+        </text>
+        <text font-size="5" x="63.21294" y="-0.9478965" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Providence (RI)">
+            Providence (RI)
+        </text>
+        <text font-size="4" x="4.0874224" y="32.294575" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Trenton (NJ)">
+            Trenton (NJ)
+        </text>
+        <text font-size="6" x="-66.77853" y="-28.13501" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Buffalo (NY)">
+            Buffalo (NY)
+        </text>
+        <text font-size="7" x="-3.3193011" y="42.182457" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Philadelphia (PA)">
+            Philadelphia (PA)
+        </text>
+        <text font-size="9" x="22.237272" y="25.112" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="New York (NY) [JFK]">
+            New York (NY) [JFK]
+        </text>
+    </g>
+</svg>
