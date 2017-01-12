@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Create a function to get the desired result
+Web-scrape US state population from wikipedia using BeautifulSoup
 """
 #%%
-from tak import reset; reset()
 from collections import OrderedDict
 import pandas as pd
 import json
@@ -11,8 +10,7 @@ from bs4 import BeautifulSoup
 import requests
 #%%
 def get_state_population():
-    #%%
-    with open('../data/state_hash.json') as data_file:    
+        with open('../data/state_hash.json') as data_file:    
         state_hash = json.load(data_file)
         
     # swap key/val (want to map state name to abbreviation)
@@ -42,8 +40,7 @@ def get_state_population():
                 break
     
     df_state_popu = pd.DataFrame(df_state_popu)
-    #%%
-    #%%
+
     # replace state with its abbreviation
     df_state_popu['state'].replace(state_hash_inv,inplace=True)
 

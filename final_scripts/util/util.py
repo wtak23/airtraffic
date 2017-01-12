@@ -133,6 +133,24 @@ def load_airport_data_3years(verbose=True):
             df = df.append(pd.read_csv('../data/'+filename,usecols=usecols))
 
     return df
+    
+def make_hash_tables(df_lookup):
+    hash_tables = {}
+    for col in df_lookup.columns:
+        if col == 'Code':
+            continue
+        elif col in ['lat','lon']:
+            """
+            Warning: Pandas returns data type in numpy.float64 for floats,
+            which is not supported in networkx.write_gexf. So typecast to float
+            http://stackoverflow.com/questions/22037360/keyerror-when-writing-numpy-values-to-gexf-with-networkx
+            """
+            tmp_dict = df_lookup.set_index('Code')[col].to_dict()
+            hash_tables[col] = {key:float(val) for key,val in tmp_dict.iteritems()}
+        else:
+            hash_tables[col] = df_lookup.set_index('Code')[col].to_dict()
+
+    return hash_tables
 #%% === other utility functions ===
 def print_time(t):
     """ Return string indicating times elapsed wrt a time.time() instance
