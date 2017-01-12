@@ -1,9 +1,8 @@
 Project Overview
 """"""""""""""""
+To narrow the scope of my analysis, I decided to focus on the air-traffic data from Nov-1-2015 to Oct-31-2016. This is the latest available data provided by the Bureau of Transportation Statistic, and completes a full year cycle.
 
-To narrow our focus, I decided to limit the scope of the analysis from Nov-1-2015 to Oct-31-2016 (this is the latest available data provided by the Bureau of Transportation Statistic.
-
-The project is broken down into three-parts, each having its own separate `Jupyter notebook <http://jupyter.org/>`__ page (which allows me to present the result alongside wit the code):
+The project is broken down into three-parts, each having its own separate `Jupyter notebook <http://jupyter.org/>`__ page that allows me to present the result alongside with the analysis code.
 
 .. rubric:: A quick remark
 
