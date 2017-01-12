@@ -1,7 +1,7 @@
-Part2: Holiday Detction via Regression and Residual Analysis
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Part2: Holiday Detection via Flight-Residual Analysis
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-The original ipython notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/regressing_out_weekday_effect.ipynb>`__ .
+The original Jupyter notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/regressing_out_weekday_effect.ipynb>`__ .
 
 .. contents:: `Page Contents`
    :depth: 2
@@ -13,7 +13,7 @@ Aim of this notebook
 -  In our `air-traffic count
    analysis <http://takwatanabe.me/airtraffic/flight-count-analysis1.html>`__,
    we found from the following plot that when the time-series signal of
-   the airtraffic-counts is heavily influenced by "*what day of the week
+   the air-traffic-counts is heavily influenced by "*what day of the week
    it is*.", indicating that people tend to fly out less especially on
    Saturdays.
 

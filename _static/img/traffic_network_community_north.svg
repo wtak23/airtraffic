@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="502.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-137.000000 -235.966812 502.000000 381.966797" height="381.9668"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path fill="none" stroke-width="0.31750003"
+              d="M 186.006622,-129.120911 C 158.601257,-103.170410 78.567474,-105.352692 52.616974,-132.758057"
+              class="Traverse City (MI) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.93200004"
+              d="M 186.006622,-129.120911 C 191.148254,-107.728851 166.772629,-67.928314 145.380569,-62.786682"
+              class="Traverse City (MI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.4940001"
+              d="M -122.068329,-113.084290 C -91.066025,-151.956100 13.745159,-163.760361 52.616974,-132.758057"
+              class="Rapid City (SD) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.21450001"
+              d="M -122.068329,-113.084290 C -58.519012,-156.514557 101.950302,-126.335999 145.380569,-62.786682"
+              class="Rapid City (SD) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.16950001"
+              d="M 216.962067,-53.852783 C 200.858994,-41.323265 157.910095,-46.683601 145.380569,-62.786682"
+              class="Toledo (OH) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.1935"
+              d="M 152.006638,26.767639 C 132.770569,10.181989 128.794922,-43.550602 145.380569,-62.786682"
+              class="Evansville (IN) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.18800001"
+              d="M 86.803391,-108.107056 C 107.582901,-110.758423 142.729202,-83.566193 145.380569,-62.786682"
+              class="La Crosse (WI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.80850005"
+              d="M 86.803391,-108.107056 C 75.035912,-106.199974 54.524059,-120.990578 52.616974,-132.758057"
+              class="La Crosse (WI) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.36800003"
+              d="M 139.155090,-17.963135 C 131.435486,-28.172941 135.170761,-55.067066 145.380569,-62.786682"
+              class="Champaign/Urbana (IL) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="5.0E-4"
+              d="M 114.036957,-130.500183 C 120.806549,-132.053253 133.290527,-124.228455 134.843597,-117.458862"
+              class="Mosinee (WI) Appleton (WI)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.82900006"
+              d="M 114.036957,-130.500183 C 133.848373,-123.226204 152.654541,-82.598106 145.380569,-62.786682"
+              class="Mosinee (WI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="5.0E-4"
+              d="M 114.036957,-130.500183 C 106.321693,-146.657120 118.984192,-182.465408 135.141129,-190.180664"
+              class="Mosinee (WI) Hancock/Houghton (MI)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.105500005"
+              d="M 114.036957,-130.500183 C 101.301384,-118.667755 64.449394,-120.022491 52.616974,-132.758057"
+              class="Mosinee (WI) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.49950004"
+              d="M 218.133362,-86.432678 C 175.765015,-62.594475 76.455177,-90.389702 52.616974,-132.758057"
+              class="Flint (MI) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.064"
+              d="M 218.133362,-86.432678 C 208.312012,-67.152916 164.660324,-52.965324 145.380569,-62.786682"
+              class="Flint (MI) Chicago (IL) [O&apos;Hare]" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="2.3255"
+              d="M -20.798807,35.500671 C -7.220400,-17.392677 92.487221,-76.365089 145.380569,-62.786682"
+              class="Wichita (KS) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="5.0E-4"
+              d="M -20.798807,35.500671 C -32.858833,18.738895 -25.806211,-24.493805 -9.044435,-36.553833"
+              class="Wichita (KS) Lincoln (NE)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.59150004"
+              d="M -20.798807,35.500671 C -39.767399,-12.834233 4.282070,-113.789467 52.616974,-132.758057"
+              class="Wichita (KS) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.57500005"
+              d="M 209.705551,-14.916504 C 154.719528,-7.067099 60.466381,-77.772026 52.616974,-132.758057"
+              class="Dayton (OH) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.6570001"
+              d="M 209.705551,-14.916504 C 187.266525,-11.625543 148.671524,-40.347649 145.380569,-62.786682"
+              class="Dayton (OH) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.694"
+              d="M 82.986885,-132.203369 C 109.348961,-130.798767 146.785156,-89.148758 145.380569,-62.786682"
+              class="Eau Claire (WI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.766"
+              d="M -10.145406,-183.764648 C 12.608390,-186.115799 50.265820,-155.511856 52.616974,-132.758057"
+              class="Fargo (ND) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.4195001"
+              d="M -10.145406,-183.764648 C 45.155380,-190.674255 138.470963,-118.087471 145.380569,-62.786682"
+              class="Fargo (ND) Chicago (IL) [O&apos;Hare]" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.358"
+              d="M 120.438225,-90.389282 C 98.400223,-85.298790 57.707466,-110.720055 52.616974,-132.758057"
+              class="Madison (WI) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="2.184"
+              d="M 120.438225,-90.389282 C 130.947220,-89.857231 145.912628,-73.295677 145.380569,-62.786682"
+              class="Madison (WI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.24700001"
+              d="M 99.985451,-50.523010 C 74.064743,-57.496323 45.643658,-106.837357 52.616974,-132.758057"
+              class="Moline (IL) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.758"
+              d="M 99.985451,-50.523010 C 106.611740,-62.054771 133.848816,-69.412971 145.380569,-62.786682"
+              class="Moline (IL) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.642"
+              d="M 173.220718,-56.383728 C 133.825104,-47.537842 61.462860,-93.362442 52.616974,-132.758057"
+              class="South Bend (IN) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.3285"
+              d="M 173.220718,-56.383728 C 166.372101,-52.096287 149.667999,-55.938061 145.380569,-62.786682"
+              class="South Bend (IN) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.74"
+              d="M -129.149445,-216.327393 C -76.082291,-235.966812 32.977558,-185.825211 52.616974,-132.758057"
+              class="Williston (ND) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.731"
+              d="M 119.117668,-151.401550 C 109.546227,-134.372711 69.645813,-123.186615 52.616974,-132.758057"
+              class="Rhinelander (WI) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.31350002"
+              d="M 119.117668,-151.401550 C 122.966576,-157.029510 137.181870,-159.698090 142.809830,-155.849182"
+              class="Rhinelander (WI) Iron Mountain/Kingsfd (MI)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.2825"
+              d="M 114.238579,-32.399292 C 81.842506,-40.146725 44.869545,-100.361984 52.616974,-132.758057"
+              class="Peoria (IL) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.2595"
+              d="M 114.238579,-32.399292 C 114.389503,-44.705166 133.074692,-62.937603 145.380569,-62.786682"
+              class="Peoria (IL) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.060000002"
+              d="M -78.895386,-180.114563 C -10.574619,-201.504181 123.990952,-131.107452 145.380569,-62.786682"
+              class="Bismarck/Mandan (ND) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.3485"
+              d="M -78.895386,-180.114563 C -43.121609,-196.945740 35.785801,-168.531830 52.616974,-132.758057"
+              class="Bismarck/Mandan (ND) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.055500004"
+              d="M -114.421509,-180.791504 C -71.407120,-204.592514 28.815964,-175.772446 52.616974,-132.758057"
+              class="Dickinson (ND) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.96800005"
+              d="M 203.292130,-81.709229 C 195.494339,-66.342407 160.747391,-54.988876 145.380569,-62.786682"
+              class="Lansing (MI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.5425"
+              d="M 203.292130,-81.709229 C 162.947342,-61.783958 72.542244,-92.413261 52.616974,-132.758057"
+              class="Lansing (MI) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.263"
+              d="M 49.557018,-226.548462 C 68.927094,-208.402359 70.763062,-152.128128 52.616974,-132.758057"
+              class="International Falls (MN) Minneapolis (MN)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.365"
+              d="M 49.557018,-226.548462 C 57.619499,-222.363815 63.436275,-203.993149 59.251640,-195.930664"
+              class="International Falls (MN) Hibbing (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.001"
+              d="M 135.141129,-190.180664 C 149.832901,-178.050110 153.674728,-137.816650 141.544174,-123.124878"
+              class="Hancock/Houghton (MI) Green Bay (WI)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.73800004"
+              d="M 135.141129,-190.180664 C 162.667816,-166.749756 168.811493,-90.313370 145.380569,-62.786682"
+              class="Hancock/Houghton (MI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="5.0E-4"
+              d="M 135.141129,-190.180664 C 158.099274,-171.392838 164.354721,-108.773872 145.566895,-85.815735"
+              class="Hancock/Houghton (MI) Milwaukee (WI)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.036"
+              d="M 309.976349,27.136658 C 259.072510,42.071148 160.315063,-11.882854 145.380569,-62.786682"
+              class="Charlottesville (VA) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.0090001"
+              d="M 141.544174,-123.124878 C 121.832100,-107.266075 68.475777,-113.045982 52.616974,-132.758057"
+              class="Green Bay (WI) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.6345"
+              d="M 141.544174,-123.124878 C 154.379089,-111.824516 156.680939,-75.621605 145.380569,-62.786682"
+              class="Green Bay (WI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.3655"
+              d="M 142.809830,-155.849182 C 129.389481,-133.192383 75.273773,-119.337708 52.616974,-132.758057"
+              class="Iron Mountain/Kingsfd (MI) Minneapolis (MN)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.4870001"
+              d="M -8.624947,-100.980591 C 29.814941,-124.142914 122.218246,-101.226563 145.380569,-62.786682"
+              class="Sioux Falls (SD) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.263"
+              d="M -8.624947,-100.980591 C -2.732056,-119.584465 34.013100,-138.650955 52.616974,-132.758057"
+              class="Sioux Falls (SD) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.62600005"
+              d="M 59.251640,-195.930664 C 70.559227,-181.969208 66.578430,-144.065643 52.616974,-132.758057"
+              class="Hibbing (MN) Minneapolis (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.674"
+              d="M 281.904816,-66.431396 C 255.328903,-38.397606 173.414368,-36.210777 145.380569,-62.786682"
+              class="Erie (PA) Chicago (IL) [O&apos;Hare]" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.53550005"
+              d="M 357.928284,-47.908569 C 312.443115,-8.374649 184.914490,-17.301514 145.380569,-62.786682"
+              class="Scranton/Wilkes-Barre (PA) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.4645001"
+              d="M 52.616974,-132.758057 C 23.324799,-134.444031 -18.084511,-180.911255 -16.398539,-210.203430"
+              class="Minneapolis (MN) Grand Forks (ND)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.269"
+              d="M 52.616974,-132.758057 C 46.459782,-146.191559 57.374252,-175.577606 70.807755,-181.734802"
+              class="Minneapolis (MN) Duluth (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.74200004"
+              d="M 52.616974,-132.758057 C 31.665689,-117.438309 -22.740845,-125.885635 -38.060589,-146.836914"
+              class="Minneapolis (MN) Aberdeen (SD)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="7.5815005"
+              d="M 52.616974,-132.758057 C 85.163971,-137.316498 140.822128,-95.333679 145.380569,-62.786682"
+              class="Minneapolis (MN) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.731"
+              d="M 52.616974,-132.758057 C 33.406853,-140.025787 15.493289,-179.742584 22.761028,-198.952698"
+              class="Minneapolis (MN) Bemidji (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.082"
+              d="M 52.616974,-132.758057 C 7.337002,-121.729332 -77.126030,-173.106201 -88.154755,-218.386169"
+              class="Minneapolis (MN) Minot (ND)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.38450003"
+              d="M 52.616974,-132.758057 C 67.146500,-115.181107 62.575363,-67.021408 44.998413,-52.491882"
+              class="Minneapolis (MN) Des Moines (IA)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.64000005"
+              d="M 52.616974,-132.758057 C 41.878300,-137.081055 32.254772,-159.673553 36.577766,-170.412231"
+              class="Minneapolis (MN) Brainerd (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.87000006"
+              d="M 52.616974,-132.758057 C 59.525536,-101.184929 22.528694,-43.462395 -9.044435,-36.553833"
+              class="Minneapolis (MN) Lincoln (NE)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.5625001"
+              d="M 52.616974,-132.758057 C 89.174332,-149.938980 169.781738,-120.874313 186.962662,-84.316956"
+              class="Minneapolis (MN) Grand Rapids (MI)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="2.6810002"
+              d="M 52.616974,-132.758057 C 80.595421,-141.959579 136.365372,-113.794182 145.566895,-85.815735"
+              class="Minneapolis (MN) Milwaukee (WI)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.72650003"
+              d="M 52.616974,-132.758057 C 72.312531,-123.641357 88.180801,-80.422974 79.064102,-60.727417"
+              class="Minneapolis (MN) Cedar Rapids/Iowa City (IA)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.79700005"
+              d="M 52.616974,-132.758057 C 115.469528,-178.504852 278.368561,-152.846207 324.115356,-89.993652"
+              class="Minneapolis (MN) Rochester (MN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.81350005"
+              d="M 52.616974,-132.758057 C 72.122139,-146.143539 121.458107,-136.964020 134.843597,-117.458862"
+              class="Minneapolis (MN) Appleton (WI)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.2345"
+              d="M 52.616974,-132.758057 C 92.176842,-146.765182 172.527328,-108.436089 186.534454,-68.876221"
+              class="Minneapolis (MN) Kalamazoo (MI)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.34"
+              d="M 52.616974,-132.758057 C 99.258522,-142.206940 183.394180,-86.417915 192.843048,-39.776367"
+              class="Minneapolis (MN) Fort Wayne (IN)" stroke-opacity="1.0"
+              stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.17950001"
+              d="M 52.616974,-132.758057 C 91.095512,-158.069260 186.780136,-138.318253 212.091339,-99.839722"
+              class="Minneapolis (MN) Saginaw/Bay City/Midland (MI)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.7285001"
+              d="M 44.998413,-52.491882 C 63.015884,-74.627274 123.245178,-80.804153 145.380569,-62.786682"
+              class="Des Moines (IA) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.11350001"
+              d="M 274.306519,-98.188232 C 255.601639,-65.322739 178.246063,-44.081799 145.380569,-62.786682"
+              class="Waterloo (IA) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.694"
+              d="M 130.367432,48.446899 C 111.123337,23.197554 120.131226,-43.542591 145.380569,-62.786682"
+              class="Paducah (KY) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.172"
+              d="M 96.541298,-72.748657 C 108.301544,-80.524117 137.605118,-74.546928 145.380569,-62.786682"
+              class="Dubuque (IA) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.0370001"
+              d="M 212.091339,-99.839722 C 206.159805,-79.086960 166.133331,-56.855133 145.380569,-62.786682"
+              class="Saginaw/Bay City/Midland (MI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.25100002"
+              d="M 324.115356,-89.993652 C 293.809814,-48.805302 186.568924,-32.481113 145.380569,-62.786682"
+              class="Rochester (MN) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.0585"
+              d="M -9.044435,-36.553833 C 16.593994,-72.685402 109.249001,-88.425110 145.380569,-62.786682"
+              class="Lincoln (NE) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.693"
+              d="M 176.468658,-94.122375 C 176.518173,-81.637619 157.865326,-62.836201 145.380569,-62.786682"
+              class="Muskegon (MI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.4775001"
+              d="M 186.962662,-84.316956 C 182.952301,-71.694481 158.003052,-58.776318 145.380569,-62.786682"
+              class="Grand Rapids (MI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="5.0010004"
+              d="M 145.566895,-85.815735 C 150.135437,-81.172661 150.023636,-67.355232 145.380569,-62.786682"
+              class="Milwaukee (WI) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.739"
+              d="M -9.783916,138.060608 C -18.920475,66.858246 74.178207,-53.650124 145.380569,-62.786682"
+              class="State College (PA) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.0910001"
+              d="M 114.478111,-13.587891 C 110.818840,-29.608141 129.360321,-59.127415 145.380569,-62.786682"
+              class="Springfield (IL) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="0.113000005"
+              d="M -2.568287,-72.876465 C 29.039440,-100.448273 117.808762,-94.394409 145.380569,-62.786682"
+              class="Sioux City (IA) Chicago (IL) [O&apos;Hare]"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.2140001"
+              d="M 145.380569,-62.786682 C 106.676376,-71.661743 61.932693,-143.030609 70.807755,-181.734802"
+              class="Chicago (IL) [O&apos;Hare] Duluth (MN)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.4430001"
+              d="M 145.380569,-62.786682 C 132.529129,-49.111534 92.739243,-47.875977 79.064102,-60.727417"
+              class="Chicago (IL) [O&apos;Hare] Cedar Rapids/Iowa City (IA)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.345"
+              d="M 145.380569,-62.786682 C 132.338745,-71.613724 126.016556,-104.417038 134.843597,-117.458862"
+              class="Chicago (IL) [O&apos;Hare] Appleton (WI)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.13"
+              d="M 145.380569,-62.786682 C 152.393433,-72.235367 177.085770,-75.889084 186.534454,-68.876221"
+              class="Chicago (IL) [O&apos;Hare] Kalamazoo (MI)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+        <path fill="none" stroke-width="1.3545"
+              d="M 145.380569,-62.786682 C 159.475128,-67.677116 187.952621,-53.870926 192.843048,-39.776367"
+              class="Chicago (IL) [O&apos;Hare] Fort Wayne (IN)"
+              stroke-opacity="1.0" stroke="#eb7f00"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="186.00662"
+                class="Traverse City (MI)" cy="-129.12091" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="86.80339"
+                class="La Crosse (WI)" cy="-108.107056" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="79.0641"
+                class="Cedar Rapids/Iowa City (IA)" cy="-60.727417"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="209.70555"
+                class="Dayton (OH)" cy="-14.916504" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="-2.5682874"
+                class="Sioux City (IA)" cy="-72.876465" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="99.98545"
+                class="Moline (IL)" cy="-50.52301" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="-38.06059"
+                class="Aberdeen (SD)" cy="-146.83691" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.3939395" cx="141.54417"
+                class="Green Bay (WI)" cy="-123.12488" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="-88.154755"
+                class="Minot (ND)" cy="-218.38617" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="-16.398539"
+                class="Grand Forks (ND)" cy="-210.20343" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="44.998413"
+                class="Des Moines (IA)" cy="-52.491882" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="114.47811"
+                class="Springfield (IL)" cy="-13.587891" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="216.96207"
+                class="Toledo (OH)" cy="-53.852783" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="186.53445"
+                class="Kalamazoo (MI)" cy="-68.87622" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="274.30652"
+                class="Waterloo (IA)" cy="-98.18823" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="212.09134"
+                class="Saginaw/Bay City/Midland (MI)" cy="-99.83972"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="152.00664"
+                class="Evansville (IN)" cy="26.76764" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="-114.42151"
+                class="Dickinson (ND)" cy="-180.7915" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.3939395" cx="-20.798807"
+                class="Wichita (KS)" cy="35.50067" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="82.986885"
+                class="Eau Claire (WI)" cy="-132.20337" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="120.438225"
+                class="Madison (WI)" cy="-90.38928" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="-8.624947"
+                class="Sioux Falls (SD)" cy="-100.98059" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="357.92828"
+                class="Scranton/Wilkes-Barre (PA)" cy="-47.90857"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="142.80983"
+                class="Iron Mountain/Kingsfd (MI)" cy="-155.84918"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="36.577766"
+                class="Brainerd (MN)" cy="-170.41223" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="176.46866"
+                class="Muskegon (MI)" cy="-94.122375" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="281.90482"
+                class="Erie (PA)" cy="-66.4314" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.3939395" cx="145.5669"
+                class="Milwaukee (WI)" cy="-85.815735" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.3939395" cx="134.8436"
+                class="Appleton (WI)" cy="-117.45886" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="192.84305"
+                class="Fort Wayne (IN)" cy="-39.776367" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="139.15509"
+                class="Champaign/Urbana (IL)" cy="-17.963135" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="218.13336"
+                class="Flint (MI)" cy="-86.43268" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="-10.145406"
+                class="Fargo (ND)" cy="-183.76465" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="49.55702"
+                class="International Falls (MN)" cy="-226.54846"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="173.22072"
+                class="South Bend (IN)" cy="-56.383728" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="-129.14944"
+                class="Williston (ND)" cy="-216.3274" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="-78.895386"
+                class="Bismarck/Mandan (ND)" cy="-180.11456" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="22.761028"
+                class="Bemidji (MN)" cy="-198.9527" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.590909" cx="135.14113"
+                class="Hancock/Houghton (MI)" cy="-190.18066" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="309.97635"
+                class="Charlottesville (VA)" cy="27.136658" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="130.36743"
+                class="Paducah (KY)" cy="48.4469" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="96.5413"
+                class="Dubuque (IA)" cy="-72.74866" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.3939395" cx="-9.044435"
+                class="Lincoln (NE)" cy="-36.553833" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="186.96266"
+                class="Grand Rapids (MI)" cy="-84.316956" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="-122.06833"
+                class="Rapid City (SD)" cy="-113.08429" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.590909" cx="114.03696"
+                class="Mosinee (WI)" cy="-130.50018" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="70.807755"
+                class="Duluth (MN)" cy="-181.7348" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="119.11767"
+                class="Rhinelander (WI)" cy="-151.40155" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="59.25164"
+                class="Hibbing (MN)" cy="-195.93066" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="14.484848" cx="52.616974"
+                class="Minneapolis (MN)" cy="-132.75806" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.0" cx="-9.7839155"
+                class="State College (PA)" cy="138.06061" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="15.272727" cx="145.38057"
+                class="Chicago (IL) [O&apos;Hare]" cy="-62.786682"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="114.23858"
+                class="Peoria (IL)" cy="-32.399292" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="203.29213"
+                class="Lansing (MI)" cy="-81.70923" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#eb7f00" r="7.1969695" cx="324.11536"
+                class="Rochester (MN)" cy="-89.99365" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="7" x="186.00662" y="-127.478004" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Traverse City (MI)">
+            Traverse City (MI)
+        </text>
+        <text font-size="7" x="86.80339" y="-106.46416" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="La Crosse (WI)">
+            La Crosse (WI)
+        </text>
+        <text font-size="7" x="79.0641" y="-59.084515" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Cedar Rapids/Iowa City (IA)">
+            Cedar Rapids/Iowa City (IA)
+        </text>
+        <text font-size="7" x="209.70555" y="-13.27303" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Dayton (OH)">
+            Dayton (OH)
+        </text>
+        <text font-size="7" x="-2.5682874" y="-71.23357" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Sioux City (IA)">
+            Sioux City (IA)
+        </text>
+        <text font-size="7" x="99.98545" y="-48.880104" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Moline (IL)">
+            Moline (IL)
+        </text>
+        <text font-size="7" x="-38.06059" y="-145.194" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Aberdeen (SD)">
+            Aberdeen (SD)
+        </text>
+        <text font-size="7" x="141.54417" y="-121.48197" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Green Bay (WI)">
+            Green Bay (WI)
+        </text>
+        <text font-size="7" x="-88.154755" y="-216.74326" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Minot (ND)">
+            Minot (ND)
+        </text>
+        <text font-size="7" x="-16.398539" y="-208.56052" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Grand Forks (ND)">
+            Grand Forks (ND)
+        </text>
+        <text font-size="7" x="44.998413" y="-50.848976" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Des Moines (IA)">
+            Des Moines (IA)
+        </text>
+        <text font-size="7" x="114.47811" y="-11.944987" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Springfield (IL)">
+            Springfield (IL)
+        </text>
+        <text font-size="7" x="216.96207" y="-52.20931" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Toledo (OH)">
+            Toledo (OH)
+        </text>
+        <text font-size="7" x="186.53445" y="-67.23332" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Kalamazoo (MI)">
+            Kalamazoo (MI)
+        </text>
+        <text font-size="7" x="274.30652" y="-96.545334" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Waterloo (IA)">
+            Waterloo (IA)
+        </text>
+        <text font-size="7" x="212.09134" y="-98.19682" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Saginaw/Bay City/Midland (MI)">
+            Saginaw/Bay City/Midland (MI)
+        </text>
+        <text font-size="7" x="152.00664" y="28.410542" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Evansville (IN)">
+            Evansville (IN)
+        </text>
+        <text font-size="7" x="-114.42151" y="-179.14859" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Dickinson (ND)">
+            Dickinson (ND)
+        </text>
+        <text font-size="7" x="-20.798807" y="37.143574" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Wichita (KS)">
+            Wichita (KS)
+        </text>
+        <text font-size="7" x="82.986885" y="-130.56046" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Eau Claire (WI)">
+            Eau Claire (WI)
+        </text>
+        <text font-size="7" x="120.438225" y="-88.74638" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Madison (WI)">
+            Madison (WI)
+        </text>
+        <text font-size="7" x="-8.624947" y="-99.33769" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Sioux Falls (SD)">
+            Sioux Falls (SD)
+        </text>
+        <text font-size="7" x="357.92828" y="-46.265663" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Scranton/Wilkes-Barre (PA)">
+            Scranton/Wilkes-Barre (PA)
+        </text>
+        <text font-size="7" x="142.80983" y="-154.20627" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Iron Mountain/Kingsfd (MI)">
+            Iron Mountain/Kingsfd (MI)
+        </text>
+        <text font-size="7" x="36.577766" y="-168.76932" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Brainerd (MN)">
+            Brainerd (MN)
+        </text>
+        <text font-size="7" x="176.46866" y="-92.47948" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Muskegon (MI)">
+            Muskegon (MI)
+        </text>
+        <text font-size="7" x="281.90482" y="-64.7885" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Erie (PA)">
+            Erie (PA)
+        </text>
+        <text font-size="7" x="145.5669" y="-84.17284" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Milwaukee (WI)">
+            Milwaukee (WI)
+        </text>
+        <text font-size="7" x="134.8436" y="-115.81596" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Appleton (WI)">
+            Appleton (WI)
+        </text>
+        <text font-size="7" x="192.84305" y="-38.13346" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Fort Wayne (IN)">
+            Fort Wayne (IN)
+        </text>
+        <text font-size="7" x="139.15509" y="-16.320232" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Champaign/Urbana (IL)">
+            Champaign/Urbana (IL)
+        </text>
+        <text font-size="7" x="218.13336" y="-84.78978" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Flint (MI)">
+            Flint (MI)
+        </text>
+        <text font-size="7" x="-10.145406" y="-182.12173" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Fargo (ND)">
+            Fargo (ND)
+        </text>
+        <text font-size="7" x="49.55702" y="-224.90555" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="International Falls (MN)">
+            International Falls (MN)
+        </text>
+        <text font-size="7" x="173.22072" y="-54.74082" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="South Bend (IN)">
+            South Bend (IN)
+        </text>
+        <text font-size="7" x="-129.14944" y="-214.68448" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Williston (ND)">
+            Williston (ND)
+        </text>
+        <text font-size="7" x="-78.895386" y="-178.47165" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Bismarck/Mandan (ND)">
+            Bismarck/Mandan (ND)
+        </text>
+        <text font-size="7" x="22.761028" y="-197.30978" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Bemidji (MN)">
+            Bemidji (MN)
+        </text>
+        <text font-size="7" x="135.14113" y="-188.53775" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Hancock/Houghton (MI)">
+            Hancock/Houghton (MI)
+        </text>
+        <text font-size="7" x="309.97635" y="28.77956" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Charlottesville (VA)">
+            Charlottesville (VA)
+        </text>
+        <text font-size="7" x="130.36743" y="50.089806" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Paducah (KY)">
+            Paducah (KY)
+        </text>
+        <text font-size="7" x="96.5413" y="-71.10576" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Dubuque (IA)">
+            Dubuque (IA)
+        </text>
+        <text font-size="7" x="-9.044435" y="-34.910927" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Lincoln (NE)">
+            Lincoln (NE)
+        </text>
+        <text font-size="7" x="186.96266" y="-82.67406" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Grand Rapids (MI)">
+            Grand Rapids (MI)
+        </text>
+        <text font-size="7" x="-122.06833" y="-111.44139" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Rapid City (SD)">
+            Rapid City (SD)
+        </text>
+        <text font-size="7" x="114.03696" y="-128.85727" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Mosinee (WI)">
+            Mosinee (WI)
+        </text>
+        <text font-size="7" x="70.807755" y="-180.09189" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Duluth (MN)">
+            Duluth (MN)
+        </text>
+        <text font-size="7" x="119.11767" y="-149.75864" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Rhinelander (WI)">
+            Rhinelander (WI)
+        </text>
+        <text font-size="7" x="59.25164" y="-194.28775" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Hibbing (MN)">
+            Hibbing (MN)
+        </text>
+        <text font-size="16" x="52.616974" y="-129.0992" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Minneapolis (MN)">
+            Minneapolis
+        </text>
+        <text font-size="7" x="-9.7839155" y="139.70352" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="State College (PA)">
+            State College (PA)
+        </text>
+        <text font-size="17" x="145.38057" y="-58.796772" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Chicago (IL) [O&apos;Hare]">
+            Chicago
+        </text>
+        <text font-size="7" x="114.23858" y="-30.756388" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Peoria (IL)">
+            Peoria (IL)
+        </text>
+        <text font-size="7" x="203.29213" y="-80.06633" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Lansing (MI)">
+            Lansing (MI)
+        </text>
+        <text font-size="7" x="324.11536" y="-88.35075" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Rochester (MN)">
+            Rochester (MN)
+        </text>
+    </g>
+</svg>

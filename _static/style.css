@@ -33,7 +33,7 @@ code {
     /* i prefer the body to not be TOOOO huge in full screen mode */
     /*http://stackoverflow.com/questions/18548453/how-to-change-navbar-container-width-bootstrap-3*/
     .container{
-        max-width: 1050px;
+        max-width: 950px;
     }
 }
 

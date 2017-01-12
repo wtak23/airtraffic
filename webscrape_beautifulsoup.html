@@ -1,7 +1,6 @@
 
 
 
-
 <!DOCTYPE html>
 
 
@@ -9,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Index</title>
+    <title>BeautifulSoup to extract US State population</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -38,6 +37,9 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="top" title="" href="index.html" />
+    <link rel="up" title="Other Data munging (elbow grease required!)" href="data_munging.html" />
+    <link rel="next" title="Study carriers.xls and airports new.xlt" href="carriers_airports.html" />
+    <link rel="prev" title="Create lookup-table" href="create_lookup_table.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -76,7 +78,7 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="overview.html#air-traffic-trend-analysis">Air-traffic Trend Analysis</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis-gallery.html">hi</a></li>
@@ -178,7 +180,7 @@
 <li class="toctree-l2"><a class="reference internal" href="network_analysis.html#conclusion">Conclusion</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data_munging.html">Other Data munging (elbow grease required!)</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="data_munging.html">Other Data munging (elbow grease required!)</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">Create lookup-table</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">Aim of notebook</a></li>
 <li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">Load the main airport traffic data</a></li>
@@ -194,7 +196,7 @@
 <li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#all-done-save-dataframe-on-disk">All done. Save dataframe on disk</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="webscrape_beautifulsoup.html">BeautifulSoup to extract US State population</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">BeautifulSoup to extract US State population</a></li>
 <li class="toctree-l2"><a class="reference internal" href="carriers_airports.html">Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="carriers_airports.html#study-the-carrier-spreadsheet">Study the &#8220;carrier&#8221; spreadsheet</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#sort-out-the-nan-values">sort out the &#8220;nan&#8221; values</a></li>
@@ -230,7 +232,10 @@
      href="#">page-contents <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
-      aria-labelledby="dLabelLocalToc"></ul>
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">BeautifulSoup to extract US State population</a></li>
+</ul>
+</ul>
 </li>
               
             
@@ -258,11 +263,112 @@
   <div class="row">
     <div class="col-md-12 content">
       
+  <div class="section" id="beautifulsoup-to-extract-us-state-population">
+<h1>BeautifulSoup to extract US State population</h1>
+<p>It&#8217;s been a while since I last used <code class="docutils literal"><span class="pre">bs4</span></code>, so this was a nice refrehser :)</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Web-scrape US state population from wikipedia using BeautifulSoup</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1">#%%</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="c1">#%%</span>
+<span class="k">def</span> <span class="nf">get_state_population</span><span class="p">():</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../data/state_hash.json&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">data_file</span><span class="p">:</span>    
+        <span class="n">state_hash</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">data_file</span><span class="p">)</span>
+        
+    <span class="c1"># swap key/val (want to map state name to abbreviation)</span>
+    <span class="n">state_hash_inv</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span> <span class="nb">zip</span><span class="p">(</span><span class="n">state_hash</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span><span class="n">state_hash</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+    
+    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population&#39;</span>
+    <span class="n">source_code</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">source_code</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+    
+    <span class="c1"># get first table in the page</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;table&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">&quot;wikitable sortable&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># store state and 2016 population in dict (to be converted to DataFrame at end)</span>
+    <span class="n">df_state_popu</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="p">[],</span><span class="n">population</span><span class="o">=</span><span class="p">[])</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">table</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">):</span>
+        <span class="n">cells</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cells</span><span class="p">)</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
+            <span class="n">_state</span> <span class="o">=</span> <span class="n">cells</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">print</span> <span class="n">_state</span>
+            <span class="k">if</span> <span class="n">_state</span> <span class="ow">in</span> <span class="n">state_hash_inv</span><span class="p">:</span>
+                <span class="c1"># only keep 50 states + DC</span>
+                <span class="n">df_state_popu</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_state</span><span class="p">)</span>
+                <span class="n">df_state_popu</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">cells</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)))</span>
+            
+            <span class="c1"># get 51 states (50 + DC)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_state_popu</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">51</span><span class="p">:</span>
+                <span class="k">break</span>
+    
+    <span class="n">df_state_popu</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_state_popu</span><span class="p">)</span>
 
-<h1 id="index">Index</h1>
+    <span class="c1"># replace state with its abbreviation</span>
+    <span class="n">df_state_popu</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">state_hash_inv</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-<div class="genindex-jumpbox">
- 
+    <span class="k">return</span> <span class="n">df_state_popu</span>
+    
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">df_state</span> <span class="o">=</span> <span class="n">get_state_population</span><span class="p">()</span>
+    <span class="n">df_state</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;df_state_populations.csv&#39;</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
 </div>
 
 

@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Part2: Holiday Detction via Regression and Residual Analysis</title>
+    <title>Part2: Holiday Detection via Flight-Residual Analysis</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -64,8 +64,8 @@
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
             
-                <li><a href="http://takwatanabe.me"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; takwatanabe.me</a></li>
-                <li><a href="https://github.com/wtak23/airtraffic"><i class="fa fa-github" aria-hidden="true"></i>&nbsp; Github</a></li>
+                <li><a href="http://takwatanabe.me/resume.pdf"><i class="fa fa-spotify" aria-hidden="true"></i>&nbsp; resume</a></li>
+                <li><a href="https://github.com/wtak23/airtraffic"><i class="fa fa-github" aria-hidden="true"></i>&nbsp; Codes</a></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -73,15 +73,33 @@
      id="dLabelGlobalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="index.html">TOC <b class="caret"></b></a>
+     href="index.html">Contents <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="main_findings.html">Summary of Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="main_findings.html#air-traffics">Air-traffics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main_findings.html#national-holidays-salient-in-reisual-air-traffic-residuals-signal">National holidays salient in reisual air-traffic residuals signal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main_findings.html#preliminary-graph-theory-analysis-based-on-airtraffic-network-structure">Preliminary graph theory analysis based on airtraffic network structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#air-traffic-trend-analysis">Air-traffic Trend Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis-gallery.html">hi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#air-traffic-residual-analysis">Air-traffic Residual Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="regression-gallery.html">hi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="regression-gallery.html#bye">bye</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#network-theoretic-analysis-of-us-airline-data">Network Theoretic Analysis of US Airline Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network-analysis-gallery.html">Hello</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="network-analysis-gallery.html#not-cool">not cool</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network-analysis-gallery.html#taste-this">Taste this</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="network-analysis-gallery.html#haro">Haro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="network-analysis-gallery.html#bye">bye</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="flight-count-analysis.html">Part 1. Air-traffic Count Analysis</a><ul>
@@ -118,7 +136,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Part2: Holiday Detction via Regression and Residual Analysis</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Part2: Holiday Detection via Flight-Residual Analysis</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#aim-of-this-notebook">Aim of this notebook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#load-data-and-prepare-timeseries">Load data, and prepare Timeseries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#regression-analysis-eliminate-effect-from-day-of-week">Regression analysis: eliminate effect from &#8220;day_of_week&#8221;</a><ul>
@@ -162,26 +180,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="data_munging.html">Other Data munging (elbow grease required!)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="spotify_0105a.html">Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-the-carrier-spreadsheet">Study the &#8220;carrier&#8221; spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#sort-out-the-nan-values">sort out the &#8220;nan&#8221; values</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-away-nans-from-the-dataframe">Filter away nans from the DataFrame</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#realized-some-code-is-treated-as-int-convert-to-string">Realized some <em>Code</em> is treated as int...convert to string</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-spreadsheet">Study <em>airports</em> spreadsheet</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#study-nans">Study nans</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#filter-out-non-usa-airports">Filter out non-USA airports</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="spotify_0105a.html#study-airports-state-distribution">Study &#8220;airports&#8221; state distribution</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#plot-bubble-markers-for-all-airports">Plot bubble markers for all airports</a></li>
-<li class="toctree-l4"><a class="reference internal" href="spotify_0105a.html#take-a-closer-look-at-michigan-my-home-state">Take a closer look at Michigan, my home state</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="create_lookup_table.html">Create lookup-table</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#aim-of-notebook">Aim of notebook</a></li>
 <li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#load-the-main-airport-traffic-data">Load the main airport traffic data</a></li>
@@ -197,6 +195,27 @@
 <li class="toctree-l3"><a class="reference internal" href="create_lookup_table.html#all-done-save-dataframe-on-disk">All done. Save dataframe on disk</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="webscrape_beautifulsoup.html">BeautifulSoup to extract US State population</a></li>
+<li class="toctree-l2"><a class="reference internal" href="carriers_airports.html">Study <code class="docutils literal"><span class="pre">carriers.xls</span></code> and <code class="docutils literal"><span class="pre">airports</span> <span class="pre">new.xlt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="carriers_airports.html#study-the-carrier-spreadsheet">Study the &#8220;carrier&#8221; spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#sort-out-the-nan-values">sort out the &#8220;nan&#8221; values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#filter-away-nans-from-the-dataframe">Filter away nans from the DataFrame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#realized-some-code-is-treated-as-int-convert-to-string">Realized some <em>Code</em> is treated as int...convert to string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#what-s-the-deal-with-the-1-appended-to-some-of-the-entries">What&#8217;s the deal with the (1) appended to some of the entries?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="carriers_airports.html#study-airports-spreadsheet">Study <em>airports</em> spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#study-nans">Study nans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#filter-out-non-usa-airports">Filter out non-USA airports</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="carriers_airports.html#study-airports-state-distribution">Study &#8220;airports&#8221; state distribution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#plot-bubble-markers-for-all-airports">Plot bubble markers for all airports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="carriers_airports.html#take-a-closer-look-at-michigan-my-home-state">Take a closer look at Michigan, my home state</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="test.html">Test</a></li>
 </ul>
 </li>
@@ -209,11 +228,11 @@
      id="dLabelLocalToc"
      data-toggle="dropdown"
      data-target="#"
-     href="#">page <b class="caret"></b></a>
+     href="#">page-contents <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Part2: Holiday Detction via Regression and Residual Analysis</a><ul>
+<li><a class="reference internal" href="#">Part2: Holiday Detection via Flight-Residual Analysis</a><ul>
 <li><a class="reference internal" href="#aim-of-this-notebook">Aim of this notebook</a></li>
 <li><a class="reference internal" href="#load-data-and-prepare-timeseries">Load data, and prepare Timeseries</a></li>
 <li><a class="reference internal" href="#regression-analysis-eliminate-effect-from-day-of-week">Regression analysis: eliminate effect from &#8220;day_of_week&#8221;</a><ul>
@@ -258,9 +277,9 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="part2-holiday-detction-via-regression-and-residual-analysis">
-<h1>Part2: Holiday Detction via Regression and Residual Analysis</h1>
-<p>The original ipython notebook can be downloaded from <a class="reference external" href="http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/regressing_out_weekday_effect.ipynb">here</a> .</p>
+  <div class="section" id="part2-holiday-detection-via-flight-residual-analysis">
+<h1>Part2: Holiday Detection via Flight-Residual Analysis</h1>
+<p>The original Jupyter notebook can be downloaded from <a class="reference external" href="http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/regressing_out_weekday_effect.ipynb">here</a> .</p>
 <div class="contents local topic" id="page-contents">
 <p class="topic-title first"><cite>Page Contents</cite></p>
 <ul class="simple">
@@ -285,7 +304,7 @@
 <li>In our <a class="reference external" href="http://takwatanabe.me/airtraffic/flight-count-analysis1.html">air-traffic count
 analysis</a>,
 we found from the following plot that when the time-series signal of
-the airtraffic-counts is heavily influenced by &#8220;<em>what day of the week
+the air-traffic-counts is heavily influenced by &#8220;<em>what day of the week
 it is</em>.&#8221;, indicating that people tend to fly out less especially on
 Saturdays.</li>
 <li>This <code class="docutils literal"><span class="pre">day_of_week</span></code> effect seems to obscure away interesting trend

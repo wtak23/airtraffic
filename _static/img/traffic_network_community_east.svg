@@ -1,0 +1,1908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="623.0281"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="0.000000 -174.000000 623.028076 617.920166" height="617.92017"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path fill="none" stroke-width="0.5344"
+              d="M 385.064178,-32.926086 C 370.700897,-54.430294 381.412231,-108.231544 402.916443,-122.594849"
+              class="Newark (NJ) Burlington (VT)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.110999994"
+              d="M 385.064178,-32.926086 C 399.215515,14.410482 349.437714,106.642349 302.101135,120.793701"
+              class="Newark (NJ) Myrtle Beach (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.421"
+              d="M 385.064178,-32.926086 C 361.460907,-32.149834 324.891602,-66.390373 324.115356,-89.993652"
+              class="Newark (NJ) Rochester (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0848"
+              d="M 385.064178,-32.926086 C 384.453339,-43.928162 400.040131,-61.347572 411.042206,-61.958435"
+              class="Newark (NJ) Hartford (CT)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1182"
+              d="M 385.064178,-32.926086 C 383.242859,-17.336498 357.126465,3.315893 341.536896,1.494568"
+              class="Newark (NJ) Baltimore (MD)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6392"
+              d="M 385.064178,-32.926086 C 398.630310,21.576368 337.225830,123.679237 282.723358,137.245361"
+              class="Newark (NJ) Charleston (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.70019996"
+              d="M 385.064178,-32.926086 C 354.932312,-9.486605 274.575287,-19.525179 251.135818,-49.657043"
+              class="Newark (NJ) Cleveland (OH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6694"
+              d="M 385.064178,-32.926086 C 418.221985,53.155994 338.835541,232.015823 252.753464,265.173615"
+              class="Newark (NJ) Fort Myers (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1004"
+              d="M 385.064178,-32.926086 C 376.720886,-43.845238 380.584656,-72.738914 391.503815,-81.082214"
+              class="Newark (NJ) Albany (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6326"
+              d="M 385.064178,-32.926086 C 345.906128,-7.989208 249.763748,-29.320957 224.826874,-68.479004"
+              class="Newark (NJ) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.2268"
+              d="M 385.064178,-32.926086 C 426.216797,50.900421 362.205994,238.369141 278.379486,279.521759"
+              class="Newark (NJ) Miami (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5854"
+              d="M 385.064178,-32.926086 C 394.991669,-8.857548 373.780151,42.136517 349.711609,52.064026"
+              class="Newark (NJ) Norfolk (VA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.090799995"
+              d="M 385.064178,-32.926086 C 507.799591,25.565926 604.164673,297.407074 545.672668,420.142487"
+              class="Newark (NJ) Charlotte Amalie (VI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.80079997"
+              d="M 385.064178,-32.926086 C 383.410187,-14.573231 353.399933,10.475085 335.047089,8.821106"
+              class="Newark (NJ) Washington (DC) [R.Reagan]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.91179997"
+              d="M 385.064178,-32.926086 C 409.799988,50.191795 322.226898,211.972351 239.109009,236.708160"
+              class="Newark (NJ) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.43879998"
+              d="M 385.064178,-32.926086 C 347.199036,13.830244 220.266815,27.167025 173.510498,-10.698120"
+              class="Newark (NJ) Indianapolis (IN)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.496"
+              d="M 385.064178,-32.926086 C 388.402161,-7.622456 355.453644,35.339947 330.150024,38.677917"
+              class="Newark (NJ) Richmond (VA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6288"
+              d="M 385.064178,-32.926086 C 503.823944,28.796377 589.379883,299.519684 527.657410,418.279449"
+              class="Newark (NJ) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.87"
+              d="M 385.064178,-32.926086 C 388.296021,-51.789440 421.438782,-75.236725 440.302155,-72.004883"
+              class="Newark (NJ) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2498"
+              d="M 385.064178,-32.926086 C 384.133209,-52.980591 412.818512,-84.458801 432.873016,-85.389771"
+              class="Newark (NJ) Manchester (NH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.3121998"
+              d="M 385.064178,-32.926086 C 412.316711,44.128498 337.613617,200.589157 260.559021,227.841675"
+              class="Newark (NJ) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5886"
+              d="M 385.064178,-32.926086 C 384.624634,-60.346779 425.096375,-102.137123 452.517059,-102.576660"
+              class="Newark (NJ) Portland (ME)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2182"
+              d="M 385.064178,-32.926086 C 364.777557,-10.858105 301.245697,-8.186047 279.177704,-28.472656"
+              class="Newark (NJ) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2608"
+              d="M 385.064178,-32.926086 C 389.840424,-47.306957 418.576141,-61.713879 432.957001,-56.937622"
+              class="Newark (NJ) Providence (RI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2182"
+              d="M 385.064178,-32.926086 C 366.934784,-37.541553 346.663910,-71.658829 351.279388,-89.788208"
+              class="Newark (NJ) Syracuse (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0486"
+              d="M 385.064178,-32.926086 C 384.177979,-71.216629 440.284515,-129.981735 478.575073,-130.867920"
+              class="Newark (NJ) Bangor (ME)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.4973999"
+              d="M 385.064178,-32.926086 C 425.612579,49.343636 363.030579,233.570801 280.760864,274.119202"
+              class="Newark (NJ) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5538"
+              d="M 385.064178,-32.926086 C 358.623566,-27.566486 310.923279,-59.187992 305.563660,-85.628601"
+              class="Newark (NJ) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.2124"
+              d="M 385.064178,-32.926086 C 423.431549,46.759209 361.454712,223.838211 281.769409,262.205597"
+              class="Newark (NJ) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.419"
+              d="M 385.064178,-32.926086 C 390.361816,4.580112 342.049011,68.785904 304.542816,74.083557"
+              class="Newark (NJ) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.3534"
+              d="M 385.064178,-32.926086 C 385.680298,14.973463 314.755188,87.746979 266.855621,88.363098"
+              class="Newark (NJ) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.095199995"
+              d="M 293.737732,-23.386536 C 324.246460,3.776830 329.264526,90.284973 302.101135,120.793701"
+              class="Latrobe (PA) Myrtle Beach (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.13679999"
+              d="M 293.737732,-23.386536 C 337.347626,33.494850 317.440399,184.231781 260.559021,227.841675"
+              class="Latrobe (PA) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.035"
+              d="M 293.737732,-23.386536 C 334.830933,39.558147 302.053711,195.614975 239.109009,236.708160"
+              class="Latrobe (PA) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.121199995"
+              d="M 293.737732,-23.386536 C 350.643524,38.709988 342.857391,217.213425 280.760864,274.119202"
+              class="Latrobe (PA) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0262"
+              d="M 293.737732,-23.386536 C 343.252930,42.522350 318.662354,215.658432 252.753464,265.173615"
+              class="Latrobe (PA) Fort Myers (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0896"
+              d="M 302.101135,120.793701 C 286.128448,89.046715 309.789917,17.467245 341.536896,1.494568"
+              class="Myrtle Beach (SC) Baltimore (MD)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.14639999"
+              d="M 302.101135,120.793701 C 291.181610,54.593773 374.102234,-61.085369 440.302155,-72.004883"
+              class="Myrtle Beach (SC) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.14639999"
+              d="M 302.101135,120.793701 C 292.209747,80.493820 337.822510,5.206928 378.122406,-4.684448"
+              class="Myrtle Beach (SC) Atlantic City (NJ)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0892"
+              d="M 302.101135,120.793701 C 287.951782,80.914902 326.545959,-0.127320 366.424744,-14.276672"
+              class="Myrtle Beach (SC) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.055999998"
+              d="M 302.101135,120.793701 C 259.958008,78.766754 259.783752,-47.488346 301.810699,-89.631470"
+              class="Myrtle Beach (SC) Niagara Falls (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.19999999"
+              d="M 302.101135,120.793701 C 248.791733,98.394012 202.427185,-15.169609 224.826874,-68.479004"
+              class="Myrtle Beach (SC) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.077599995"
+              d="M 302.101135,120.793701 C 257.817932,96.896614 227.238739,-5.373831 251.135818,-49.657043"
+              class="Myrtle Beach (SC) Cleveland (OH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2976"
+              d="M 302.101135,120.793701 C 288.596130,72.005615 341.520752,-21.434021 390.308838,-34.939026"
+              class="Myrtle Beach (SC) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.16319999"
+              d="M 302.101135,120.793701 C 328.498169,155.726852 315.694031,247.722153 280.760864,274.119202"
+              class="Myrtle Beach (SC) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0316"
+              d="M 302.101135,120.793701 C 271.493225,52.098511 328.624146,-96.856140 397.319336,-127.464050"
+              class="Myrtle Beach (SC) Plattsburgh (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1184"
+              d="M 478.575073,-130.867920 C 440.303223,-67.640495 288.054291,-30.207146 224.826874,-68.479004"
+              class="Bangor (ME) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0876"
+              d="M 478.575073,-130.867920 C 480.107605,-94.028900 427.147888,-36.471558 390.308838,-34.939026"
+              class="Bangor (ME) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.58419997"
+              d="M 411.042206,-61.958435 C 372.495026,-26.019482 260.765839,-29.931820 224.826874,-68.479004"
+              class="Hartford (CT) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.398"
+              d="M 411.042206,-61.958435 C 452.201477,31.313364 374.032654,232.959946 280.760864,274.119202"
+              class="Hartford (CT) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.22919999"
+              d="M 411.042206,-61.958435 C 530.412842,10.766108 600.381958,298.908844 527.657410,418.279449"
+              class="Hartford (CT) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.9952"
+              d="M 411.042206,-61.958435 C 409.831757,-35.366772 368.128571,2.705029 341.536896,1.494568"
+              class="Hartford (CT) Baltimore (MD)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.29"
+              d="M 411.042206,-61.958435 C 409.999084,-32.603504 364.402039,9.864222 335.047089,8.821106"
+              class="Hartford (CT) Washington (DC) [R.Reagan]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.060399998"
+              d="M 411.042206,-61.958435 C 411.655060,-43.498589 384.884583,-14.889534 366.424744,-14.276672"
+              class="Hartford (CT) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0492"
+              d="M 411.042206,-61.958435 C 381.521179,-27.516880 285.577362,-20.136044 251.135818,-49.657043"
+              class="Hartford (CT) Cleveland (OH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0078"
+              d="M 411.042206,-61.958435 C 416.950714,-13.450157 353.051117,68.175041 304.542816,74.083557"
+              class="Hartford (CT) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.185"
+              d="M 411.042206,-61.958435 C 444.810852,35.125717 349.837646,231.404953 252.753464,265.173615"
+              class="Hartford (CT) Fort Myers (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.7094"
+              d="M 411.042206,-61.958435 C 438.905579,26.098223 348.615692,199.978287 260.559021,227.841675"
+              class="Hartford (CT) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1592"
+              d="M 411.042206,-61.958435 C 450.020447,28.728935 372.456787,223.227356 281.769409,262.205597"
+              class="Hartford (CT) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4062"
+              d="M 411.042206,-61.958435 C 436.388885,32.161518 333.228943,211.361496 239.109009,236.708160"
+              class="Hartford (CT) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.7644"
+              d="M 411.042206,-61.958435 C 412.269196,-3.056812 325.757233,87.136108 266.855621,88.363098"
+              class="Hartford (CT) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1452"
+              d="M 411.042206,-61.958435 C 452.805725,32.870144 373.208069,237.758270 278.379486,279.521759"
+              class="Hartford (CT) Miami (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.63019997"
+              d="M 341.536896,1.494568 C 353.285736,9.973516 358.190552,40.315193 349.711609,52.064026"
+              class="Baltimore (MD) Norfolk (VA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.40559998"
+              d="M 341.536896,1.494568 C 381.725616,65.590271 345.865112,222.016876 281.769409,262.205597"
+              class="Baltimore (MD) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4646"
+              d="M 341.536896,1.494568 C 342.918701,-41.515709 409.506775,-103.958450 452.517059,-102.576660"
+              class="Baltimore (MD) Portland (ME)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.1566"
+              d="M 341.536896,1.494568 C 346.590057,-32.958378 405.849213,-77.058044 440.302155,-72.004883"
+              class="Baltimore (MD) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.41599998"
+              d="M 341.536896,1.494568 C 323.071625,7.972961 285.656097,-10.007374 279.177704,-28.472656"
+              class="Baltimore (MD) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5356"
+              d="M 341.536896,1.494568 C 376.516022,71.987061 323.245972,230.194489 252.753464,265.173615"
+              class="Baltimore (MD) Fort Myers (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.482"
+              d="M 341.536896,1.494568 C 313.226349,9.344460 258.985718,-21.346504 251.135818,-49.657043"
+              class="Baltimore (MD) Cleveland (OH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.024"
+              d="M 341.536896,1.494568 C 344.963562,-15.256536 375.230194,-35.243195 391.981323,-31.816528"
+              class="Baltimore (MD) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4306"
+              d="M 341.536896,1.494568 C 319.754944,-13.318769 309.302032,-68.211700 324.115356,-89.993652"
+              class="Baltimore (MD) Rochester (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.0346"
+              d="M 341.536896,1.494568 C 383.906616,68.174698 347.441010,231.749481 280.760864,274.119202"
+              class="Baltimore (MD) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.44739997"
+              d="M 341.536896,1.494568 C 356.924347,40.407433 321.636200,121.857910 282.723358,137.245361"
+              class="Baltimore (MD) Charleston (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.267"
+              d="M 341.536896,1.494568 C 462.117981,47.627441 573.790283,297.698364 527.657410,418.279449"
+              class="Baltimore (MD) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.7866"
+              d="M 341.536896,1.494568 C 316.917633,-8.735418 295.333679,-61.009315 305.563660,-85.628601"
+              class="Baltimore (MD) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="5.9999997E-4"
+              d="M 341.536896,1.494568 C 343.360229,-6.637250 358.292938,-16.099995 366.424744,-14.276672"
+              class="Baltimore (MD) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.0086"
+              d="M 341.536896,1.494568 C 342.427246,-34.149529 397.228943,-86.280128 432.873016,-85.389771"
+              class="Baltimore (MD) Manchester (NH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.1108"
+              d="M 341.536896,1.494568 C 348.134491,-28.475891 402.986542,-63.535202 432.957001,-56.937622"
+              class="Baltimore (MD) Providence (RI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.8512"
+              d="M 341.536896,1.494568 C 348.655884,23.411182 326.459412,66.964577 304.542816,74.083557"
+              class="Baltimore (MD) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.75479996"
+              d="M 341.536896,1.494568 C 335.014923,-25.014172 364.995087,-74.560242 391.503815,-81.082214"
+              class="Baltimore (MD) Albany (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.602"
+              d="M 341.536896,1.494568 C 370.610718,62.959564 322.024017,198.767822 260.559021,227.841675"
+              class="Baltimore (MD) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.67899996"
+              d="M 341.536896,1.494568 C 346.655151,-18.316236 384.048706,-40.355064 403.859528,-35.236816"
+              class="Baltimore (MD) Islip (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.1444"
+              d="M 341.536896,1.494568 C 304.200165,10.841858 234.174164,-31.142286 224.826874,-68.479004"
+              class="Baltimore (MD) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.40179998"
+              d="M 341.536896,1.494568 C 384.510864,69.731491 346.616394,236.547806 278.379486,279.521759"
+              class="Baltimore (MD) Miami (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.96919996"
+              d="M 341.536896,1.494568 C 368.094055,69.022858 306.637299,210.151016 239.109009,236.708160"
+              class="Baltimore (MD) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.3731999"
+              d="M 341.536896,1.494568 C 343.974365,33.804527 299.165588,85.925652 266.855621,88.363098"
+              class="Baltimore (MD) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.39299998"
+              d="M 341.536896,1.494568 C 305.493073,32.661312 204.677246,25.345699 173.510498,-10.698120"
+              class="Baltimore (MD) Indianapolis (IN)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.068799995"
+              d="M 456.809631,-46.042969 C 448.315765,-47.933857 438.411255,-63.511005 440.302155,-72.004883"
+              class="Nantucket (MA) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1568"
+              d="M 456.809631,-46.042969 C 446.689240,-30.232019 407.792267,-21.696154 391.981323,-31.816528"
+              class="Nantucket (MA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.019199999"
+              d="M 456.809631,-46.042969 C 443.429932,-10.717644 370.372406,22.200798 335.047089,8.821106"
+              class="Nantucket (MA) Washington (DC) [R.Reagan]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.8156"
+              d="M 251.135818,-49.657043 C 284.499512,-91.959885 397.999298,-105.368591 440.302155,-72.004883"
+              class="Cleveland (OH) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2658"
+              d="M 251.135818,-49.657043 C 314.425476,12.985560 315.396057,201.883957 252.753464,265.173615"
+              class="Cleveland (OH) Fort Myers (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.012399999"
+              d="M 251.135818,-49.657043 C 282.873047,-74.258041 367.380341,-63.553734 391.981323,-31.816528"
+              class="Cleveland (OH) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3484"
+              d="M 251.135818,-49.657043 C 321.816071,9.173204 339.591095,203.438950 280.760864,274.119202"
+              class="Cleveland (OH) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.019199999"
+              d="M 251.135818,-49.657043 C 400.027466,-11.374065 565.940369,269.387817 527.657410,418.279449"
+              class="Cleveland (OH) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6106"
+              d="M 251.135818,-49.657043 C 279.613678,-54.743668 329.960449,-19.656776 335.047089,8.821106"
+              class="Cleveland (OH) Washington (DC) [R.Reagan]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0039999997"
+              d="M 251.135818,-49.657043 C 294.833832,-18.594070 313.786346,93.547379 282.723358,137.245361"
+              class="Cleveland (OH) Charleston (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0464"
+              d="M 251.135818,-49.657043 C 281.269684,-65.638756 350.443024,-44.410530 366.424744,-14.276672"
+              class="Cleveland (OH) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.153"
+              d="M 251.135818,-49.657043 C 286.565338,-35.590324 318.609528,38.654037 304.542816,74.083557"
+              class="Cleveland (OH) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4132"
+              d="M 251.135818,-49.657043 C 281.883820,-25.196976 291.315704,57.615112 266.855621,88.363098"
+              class="Cleveland (OH) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5464"
+              d="M 251.135818,-49.657043 C 308.520203,3.958064 314.174133,170.457275 260.559021,227.841675"
+              class="Cleveland (OH) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3796"
+              d="M 251.135818,-49.657043 C 242.109634,-48.159649 226.324280,-59.452827 224.826874,-68.479004"
+              class="Cleveland (OH) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.21059999"
+              d="M 251.135818,-49.657043 C 306.003479,10.021359 298.787415,181.840485 239.109009,236.708160"
+              class="Cleveland (OH) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.012"
+              d="M 251.135818,-49.657043 C 281.914032,-74.548042 365.417847,-65.717232 390.308838,-34.939026"
+              class="Cleveland (OH) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.012"
+              d="M 251.135818,-49.657043 C 322.420319,10.729985 338.766510,208.237274 278.379486,279.521759"
+              class="Cleveland (OH) Miami (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2608"
+              d="M 351.279388,-89.788208 C 370.024902,-37.273190 319.370667,69.617584 266.855621,88.363098"
+              class="Syracuse (NY) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.14639999"
+              d="M 351.279388,-89.788208 C 396.661285,-8.118162 342.229065,182.459778 260.559021,227.841675"
+              class="Syracuse (NY) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.044"
+              d="M 351.279388,-89.788208 C 409.957153,-2.903024 367.646057,215.441422 280.760864,274.119202"
+              class="Syracuse (NY) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2236"
+              d="M 351.279388,-89.788208 C 330.250732,-60.235863 254.379211,-47.450340 224.826874,-68.479004"
+              class="Syracuse (NY) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.19319999"
+              d="M 351.279388,-89.788208 C 370.055115,-86.624268 393.472809,-53.714752 390.308838,-34.939026"
+              class="Syracuse (NY) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4416"
+              d="M 351.279388,-89.788208 C 371.014099,-86.334259 395.435272,-51.551254 391.981323,-31.816528"
+              class="Syracuse (NY) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.17799999"
+              d="M 252.753464,265.173615 C 199.309052,201.159515 215.163605,24.971752 279.177704,-28.472656"
+              class="Fort Myers (FL) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2052"
+              d="M 252.753464,265.173615 C 223.855621,186.128204 299.076996,24.213373 378.122406,-4.684448"
+              class="Fort Myers (FL) Atlantic City (NJ)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0212"
+              d="M 252.753464,265.173615 C 224.371918,164.710663 332.494049,-28.556080 432.957001,-56.937622"
+              class="Fort Myers (FL) Providence (RI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.146"
+              d="M 252.753464,265.173615 C 218.923279,175.768951 302.284973,-9.083321 391.689636,-42.913513"
+              class="Fort Myers (FL) White Plains (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0844"
+              d="M 252.753464,265.173615 C 219.242249,183.231201 291.889069,10.050762 373.831482,-23.460449"
+              class="Fort Myers (FL) Trenton (NJ)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.0E-4"
+              d="M 252.753464,265.173615 C 260.144073,261.361267 276.948517,266.728607 280.760864,274.119202"
+              class="Fort Myers (FL) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1988"
+              d="M 252.753464,265.173615 C 217.941681,197.444382 267.317871,43.632885 335.047089,8.821106"
+              class="Fort Myers (FL) Washington (DC) [R.Reagan]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0336"
+              d="M 252.753464,265.173615 C 193.155045,184.451126 224.841171,-26.030193 305.563660,-85.628601"
+              class="Fort Myers (FL) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4488"
+              d="M 252.753464,265.173615 C 219.597672,186.549301 287.800446,18.879128 366.424744,-14.276672"
+              class="Fort Myers (FL) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="4.0E-4"
+              d="M 252.753464,265.173615 C 216.106720,175.085800 296.268341,-15.016037 386.356140,-51.662781"
+              class="Fort Myers (FL) Newburgh/Poughkeepsie (NY)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4732"
+              d="M 252.753464,265.173615 C 221.201004,177.930023 304.737701,-0.264071 391.981323,-31.816528"
+              class="Fort Myers (FL) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.7272"
+              d="M 252.753464,265.173615 C 220.211792,226.991074 228.673080,120.904770 266.855621,88.363098"
+              class="Fort Myers (FL) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0148"
+              d="M 252.753464,265.173615 C 211.252380,168.172379 294.502594,-39.581116 391.503815,-81.082214"
+              class="Fort Myers (FL) Albany (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.7066"
+              d="M 252.753464,265.173615 C 180.437622,204.028397 163.681671,3.836836 224.826874,-68.479004"
+              class="Fort Myers (FL) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.78099996"
+              d="M 252.753464,265.173615 C 222.827515,160.228180 335.356720,-42.078922 440.302155,-72.004883"
+              class="Fort Myers (FL) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.33319998"
+              d="M 252.753464,265.173615 C 220.242004,177.640015 302.775238,-2.427572 390.308838,-34.939026"
+              class="Fort Myers (FL) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3504"
+              d="M 252.753464,265.173615 C 181.730530,225.847855 134.184738,60.324821 173.510498,-10.698120"
+              class="Fort Myers (FL) Indianapolis (IN)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2712"
+              d="M 324.115356,-89.993652 C 348.334778,-42.870354 313.978912,64.143692 266.855621,88.363098"
+              class="Rochester (NY) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.15959999"
+              d="M 324.115356,-89.993652 C 374.971161,-13.715315 336.837372,176.985870 260.559021,227.841675"
+              class="Rochester (NY) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1778"
+              d="M 324.115356,-89.993652 C 308.560577,-65.833023 248.987503,-52.924240 224.826874,-68.479004"
+              class="Rochester (NY) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1252"
+              d="M 324.115356,-89.993652 C 372.454437,-7.652018 321.450653,188.369064 239.109009,236.708160"
+              class="Rochester (NY) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.051999997"
+              d="M 324.115356,-89.993652 C 348.364990,-92.221420 388.081055,-59.188648 390.308838,-34.939026"
+              class="Rochester (NY) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4876"
+              d="M 324.115356,-89.993652 C 349.323975,-91.931427 390.043579,-57.025146 391.981323,-31.816528"
+              class="Rochester (NY) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.41619998"
+              d="M 391.503815,-81.082214 C 427.099640,6.891529 348.532776,192.245850 260.559021,227.841675"
+              class="Albany (NY) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.0E-4"
+              d="M 391.503815,-81.082214 C 398.916138,-90.217567 423.737671,-92.802101 432.873016,-85.389771"
+              class="Albany (NY) Manchester (NH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1854"
+              d="M 391.503815,-81.082214 C 360.689056,-45.226181 260.682892,-37.664261 224.826874,-68.479004"
+              class="Albany (NY) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1652"
+              d="M 391.503815,-81.082214 C 424.582916,12.954826 333.146057,203.629044 239.109009,236.708160"
+              class="Albany (NY) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4052"
+              d="M 391.503815,-81.082214 C 400.463257,-22.263514 325.674316,79.403679 266.855621,88.363098"
+              class="Albany (NY) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2536"
+              d="M 391.503815,-81.082214 C 440.395508,12.106668 373.949738,225.227509 280.760864,274.119202"
+              class="Albany (NY) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.66459996"
+              d="M 330.150024,38.677917 C 327.428192,61.273834 289.451538,91.084946 266.855621,88.363098"
+              class="Richmond (VA) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.28399998"
+              d="M 330.150024,38.677917 C 354.064575,90.428871 312.309998,203.927124 260.559021,227.841675"
+              class="Richmond (VA) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.14639999"
+              d="M 330.150024,38.677917 C 367.360443,95.644005 337.726959,236.908783 280.760864,274.119202"
+              class="Richmond (VA) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.0E-4"
+              d="M 330.150024,38.677917 C 326.814056,20.832054 348.578888,-10.940698 366.424744,-14.276672"
+              class="Richmond (VA) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.912"
+              d="M 330.150024,38.677917 C 330.043884,-5.489069 396.135162,-71.898750 440.302155,-72.004883"
+              class="Richmond (VA) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.41779998"
+              d="M 330.150024,38.677917 C 287.653992,38.311161 224.460129,-25.982990 224.826874,-68.479004"
+              class="Richmond (VA) Detroit (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.57879996"
+              d="M 330.150024,38.677917 C 327.458405,11.922767 363.553680,-32.247398 390.308838,-34.939026"
+              class="Richmond (VA) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="4.0E-4"
+              d="M 330.150024,38.677917 C 328.417419,12.212767 365.516174,-30.083899 391.981323,-31.816528"
+              class="Richmond (VA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.018199999"
+              d="M 330.150024,38.677917 C 367.964691,97.200798 336.902344,241.707108 278.379486,279.521759"
+              class="Richmond (VA) Miami (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2032"
+              d="M 403.859528,-35.236816 C 425.298431,52.102283 326.448120,215.269272 239.109009,236.708160"
+              class="Islip (NY) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.29799998"
+              d="M 403.859528,-35.236816 C 438.929993,48.669689 365.675934,227.135132 281.769409,262.205597"
+              class="Islip (NY) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2382"
+              d="M 403.859528,-35.236816 C 441.111023,51.254128 367.251801,236.867722 280.760864,274.119202"
+              class="Islip (NY) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4628"
+              d="M 403.859528,-35.236816 C 427.815125,46.038979 341.834808,203.886078 260.559021,227.841675"
+              class="Islip (NY) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1586"
+              d="M 224.826874,-68.479004 C 277.551056,-38.913425 312.288940,84.521187 282.723358,137.245361"
+              class="Detroit (MI) Charleston (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2512"
+              d="M 224.826874,-68.479004 C 194.752182,-72.658485 155.909348,-124.039742 160.088837,-154.114441"
+              class="Detroit (MI) Escanaba (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.152"
+              d="M 224.826874,-68.479004 C 302.352295,-13.730594 336.517822,184.680176 281.769409,262.205597"
+              class="Detroit (MI) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5498"
+              d="M 224.826874,-68.479004 C 305.137543,-9.589375 337.269135,199.211075 278.379486,279.521759"
+              class="Detroit (MI) Miami (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.20799999"
+              d="M 224.826874,-68.479004 C 273.912415,-69.347343 348.843262,2.978474 349.711609,52.064026"
+              class="Detroit (MI) Norfolk (VA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.8466"
+              d="M 224.826874,-68.479004 C 262.330933,-75.063026 328.463074,-28.682959 335.047089,8.821106"
+              class="Detroit (MI) Washington (DC) [R.Reagan]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6784"
+              d="M 224.826874,-68.479004 C 247.647873,-90.769508 315.315125,-89.973763 337.605621,-67.152771"
+              class="Detroit (MI) Elmira/Corning (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3434"
+              d="M 224.826874,-68.479004 C 250.602631,-94.178741 327.815887,-94.064697 353.515594,-68.288940"
+              class="Detroit (MI) Binghamton (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3046"
+              d="M 224.826874,-68.479004 C 247.600082,-93.845070 319.808960,-97.734383 345.175049,-74.961182"
+              class="Detroit (MI) Ithaca/Cortland (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.90059996"
+              d="M 224.826874,-68.479004 C 288.720734,-10.297997 297.290009,172.814301 239.109009,236.708160"
+              class="Detroit (MI) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.4482"
+              d="M 224.826874,-68.479004 C 264.631287,-94.867401 363.920441,-74.743423 390.308838,-34.939026"
+              class="Detroit (MI) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3848"
+              d="M 224.826874,-68.479004 C 226.119781,-46.659554 195.329956,-11.991023 173.510498,-10.698120"
+              class="Detroit (MI) Indianapolis (IN)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.059"
+              d="M 224.826874,-68.479004 C 268.244873,-86.379196 360.222198,-48.102463 378.122406,-4.684448"
+              class="Detroit (MI) Atlantic City (NJ)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.2018"
+              d="M 224.826874,-68.479004 C 304.533325,-11.146156 338.093719,194.412750 280.760864,274.119202"
+              class="Detroit (MI) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1514"
+              d="M 224.826874,-68.479004 C 265.590240,-94.577400 365.882904,-72.579918 391.981323,-31.816528"
+              class="Detroit (MI) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.012399999"
+              d="M 224.826874,-68.479004 C 382.744659,-31.693424 564.442993,260.361664 527.657410,418.279449"
+              class="Detroit (MI) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.045399997"
+              d="M 224.826874,-68.479004 C 263.312531,-96.738457 363.430176,-81.399162 391.689636,-42.913513"
+              class="Detroit (MI) White Plains (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.16059999"
+              d="M 224.826874,-68.479004 C 263.053955,-113.470390 387.881653,-123.616844 432.873016,-85.389771"
+              class="Detroit (MI) Manchester (NH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3048"
+              d="M 224.826874,-68.479004 C 203.572906,-79.744110 188.589600,-128.522705 199.854706,-149.776672"
+              class="Detroit (MI) Pellston (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.3116"
+              d="M 224.826874,-68.479004 C 291.237427,-16.361296 312.676727,161.431122 260.559021,227.841675"
+              class="Detroit (MI) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.228"
+              d="M 224.826874,-68.479004 C 263.545380,-120.836578 400.159515,-141.295166 452.517059,-102.576660"
+              class="Detroit (MI) Portland (ME)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.24159999"
+              d="M 224.826874,-68.479004 C 190.584930,-74.571854 148.361298,-135.074036 154.454132,-169.315979"
+              class="Detroit (MI) Marquette (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.26819998"
+              d="M 224.826874,-68.479004 C 243.698303,-71.347900 276.308807,-47.344093 279.177704,-28.472656"
+              class="Detroit (MI) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3252"
+              d="M 224.826874,-68.479004 C 268.761200,-107.796753 393.639252,-100.871925 432.957001,-56.937622"
+              class="Detroit (MI) Providence (RI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.081199996"
+              d="M 224.826874,-68.479004 C 249.621628,-114.920090 356.475342,-147.389603 402.916443,-122.594849"
+              class="Detroit (MI) Burlington (VT)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1064"
+              d="M 224.826874,-68.479004 C 263.631500,-89.276215 353.034271,-62.265083 373.831482,-23.460449"
+              class="Detroit (MI) Trenton (NJ)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3268"
+              d="M 224.826874,-68.479004 C 237.544312,-88.056274 285.986359,-98.346039 305.563660,-85.628601"
+              class="Detroit (MI) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.9152"
+              d="M 224.826874,-68.479004 C 263.986908,-85.958115 348.945618,-53.436714 366.424744,-14.276672"
+              class="Detroit (MI) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.17"
+              d="M 224.826874,-68.479004 C 210.319321,-81.532974 208.138962,-122.875259 221.192932,-137.382813"
+              class="Detroit (MI) Alpena (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.39839998"
+              d="M 224.826874,-68.479004 C 269.282593,-55.909679 317.112152,29.627857 304.542816,74.083557"
+              class="Detroit (MI) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.5302"
+              d="M 224.826874,-68.479004 C 267.216766,-112.279236 396.501923,-114.394760 440.302155,-72.004883"
+              class="Detroit (MI) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2712"
+              d="M 224.826874,-68.479004 C 201.217926,-84.275620 189.499420,-143.383972 205.296051,-166.992920"
+              class="Detroit (MI) Sault Ste. Marie (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.299"
+              d="M 224.826874,-68.479004 C 264.601044,-45.516331 289.818298,48.588924 266.855621,88.363098"
+              class="Detroit (MI) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.0014"
+              d="M 278.379486,279.521759 C 240.458710,176.831894 337.612274,-34.084091 440.302155,-72.004883"
+              class="Miami (FL) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5202"
+              d="M 278.379486,279.521759 C 359.962280,254.187271 520.338135,338.559692 545.672668,420.142487"
+              class="Miami (FL) Charlotte Amalie (VI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2478"
+              d="M 278.379486,279.521759 C 362.873474,255.936218 524.992676,347.298828 548.578247,431.792816"
+              class="Miami (FL) Christiansted (VI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.5893999"
+              d="M 278.379486,279.521759 C 238.832199,194.533737 306.993286,7.730761 391.981323,-31.816528"
+              class="Miami (FL) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.0698"
+              d="M 278.379486,279.521759 C 355.986603,257.417694 505.553345,340.672333 527.657410,418.279449"
+              class="Miami (FL) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.3116"
+              d="M 278.379486,279.521759 C 235.572876,214.048096 269.573425,51.627716 335.047089,8.821106"
+              class="Miami (FL) Washington (DC) [R.Reagan]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.0934"
+              d="M 278.379486,279.521759 C 237.228836,203.153015 290.056030,26.873960 366.424744,-14.276672"
+              class="Miami (FL) Philadelphia (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4292"
+              d="M 278.379486,279.521759 C 242.524506,233.201447 258.222504,109.938538 304.542816,74.083557"
+              class="Miami (FL) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.2434"
+              d="M 278.379486,279.521759 C 237.842972,243.594803 230.928665,128.899612 266.855621,88.363098"
+              class="Miami (FL) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.4419999"
+              d="M 278.379486,279.521759 C 264.479370,272.749817 253.787094,241.741776 260.559021,227.841675"
+              class="Miami (FL) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.0E-4"
+              d="M 278.379486,279.521759 C 275.594238,275.380554 277.628204,264.990845 281.769409,262.205597"
+              class="Miami (FL) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.85179996"
+              d="M 278.379486,279.521759 C 261.962677,278.813141 238.400391,253.124969 239.109009,236.708160"
+              class="Miami (FL) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.5718"
+              d="M 278.379486,279.521759 C 237.873184,194.243713 305.030823,5.567265 390.308838,-34.939026"
+              class="Miami (FL) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="4.0E-4"
+              d="M 373.831482,-23.460449 C 405.001434,57.833466 329.815491,226.529266 248.521576,257.699219"
+              class="Trenton (NJ) Punta Gorda (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2126"
+              d="M 373.831482,-23.460449 C 401.437439,49.454468 333.473938,200.235748 260.559021,227.841675"
+              class="Trenton (NJ) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.096"
+              d="M 373.831482,-23.460449 C 414.733276,54.669605 358.890930,233.217392 280.760864,274.119202"
+              class="Trenton (NJ) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0436"
+              d="M 373.831482,-23.460449 C 412.552277,52.085175 357.315033,223.484802 281.769409,262.205597"
+              class="Trenton (NJ) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0148"
+              d="M 373.831482,-23.460449 C 395.224915,43.485291 326.896454,175.994019 259.950714,197.387451"
+              class="Trenton (NJ) St. Augustine (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.042799998"
+              d="M 373.831482,-23.460449 C 398.920715,55.517769 318.087219,211.618927 239.109009,236.708160"
+              class="Trenton (NJ) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.060999997"
+              d="M 373.831482,-23.460449 C 374.801025,20.299435 310.615509,87.393562 266.855621,88.363098"
+              class="Trenton (NJ) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.070599996"
+              d="M 373.831482,-23.460449 C 379.482544,9.906086 337.909332,68.432487 304.542816,74.083557"
+              class="Trenton (NJ) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.0E-4"
+              d="M 160.088837,-154.114441 C 155.921585,-156.027817 152.540756,-165.148727 154.454132,-169.315979"
+              class="Escanaba (MI) Marquette (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.14639999"
+              d="M 548.578247,431.792816 C 541.691406,433.274323 529.138855,425.166290 527.657410,418.279449"
+              class="Christiansted (VI) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0144"
+              d="M 548.578247,431.792816 C 423.547760,419.451416 254.514191,213.393570 266.855621,88.363098"
+              class="Christiansted (VI) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.085999995"
+              d="M 301.810699,-89.631470 C 370.350891,-12.671366 357.720947,205.579025 280.760864,274.119202"
+              class="Niagara Falls (NY) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.097799994"
+              d="M 397.319336,-127.464050 C 454.324280,-23.835705 384.389221,217.114243 280.760864,274.119202"
+              class="Plattsburgh (NY) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="4.0E-4"
+              d="M 366.424744,-14.276672 C 397.239288,63.699139 326.497375,226.884674 248.521576,257.699219"
+              class="Philadelphia (PA) Punta Gorda (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.2136"
+              d="M 366.424744,-14.276672 C 369.654572,-40.597797 413.981018,-75.234726 440.302155,-72.004883"
+              class="Philadelphia (PA) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3346"
+              d="M 366.424744,-14.276672 C 346.136139,0.333540 293.787903,-8.184050 279.177704,-28.472656"
+              class="Philadelphia (PA) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.081599995"
+              d="M 366.424744,-14.276672 C 489.158142,36.757572 596.706909,297.409088 545.672668,420.142487"
+              class="Philadelphia (PA) Charlotte Amalie (VI)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0016"
+              d="M 366.424744,-14.276672 C 368.028107,-22.895960 383.362030,-33.419872 391.981323,-31.816528"
+              class="Philadelphia (PA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.078"
+              d="M 366.424744,-14.276672 C 406.971130,60.535278 355.572815,233.572815 280.760864,274.119202"
+              class="Philadelphia (PA) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.04"
+              d="M 366.424744,-14.276672 C 379.988892,32.768013 329.768036,123.681229 282.723358,137.245361"
+              class="Philadelphia (PA) Charleston (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.44579998"
+              d="M 366.424744,-14.276672 C 485.182495,39.988018 581.922119,299.521698 527.657410,418.279449"
+              class="Philadelphia (PA) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.118599996"
+              d="M 366.424744,-14.276672 C 364.768768,-3.381586 345.942200,10.477081 335.047089,8.821106"
+              class="Philadelphia (PA) Washington (DC) [R.Reagan]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0032"
+              d="M 366.424744,-14.276672 C 339.982147,-16.374840 303.465485,-59.185997 305.563660,-85.628601"
+              class="Philadelphia (PA) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.47959998"
+              d="M 366.424744,-14.276672 C 404.790131,57.950851 353.996918,223.840210 281.769409,262.205597"
+              class="Philadelphia (PA) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.19039999"
+              d="M 366.424744,-14.276672 C 371.199005,-36.115311 411.118347,-61.711884 432.957001,-56.937622"
+              class="Philadelphia (PA) Providence (RI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4886"
+              d="M 366.424744,-14.276672 C 371.720428,15.771757 334.591248,68.787903 304.542816,74.083557"
+              class="Philadelphia (PA) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3208"
+              d="M 366.424744,-14.276672 C 367.069092,-23.185963 381.399536,-35.583374 390.308838,-34.939026"
+              class="Philadelphia (PA) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.0486"
+              d="M 366.424744,-14.276672 C 393.675262,55.320145 330.155853,200.591141 260.559021,227.841675"
+              class="Philadelphia (PA) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.042799998"
+              d="M 366.424744,-14.276672 C 387.462769,49.350960 323.578339,176.349426 259.950714,197.387451"
+              class="Philadelphia (PA) St. Augustine (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.98359996"
+              d="M 366.424744,-14.276672 C 391.158569,61.383446 314.769104,211.974350 239.109009,236.708160"
+              class="Philadelphia (PA) Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.3817999"
+              d="M 366.424744,-14.276672 C 367.038879,26.165108 307.297394,87.748970 266.855621,88.363098"
+              class="Philadelphia (PA) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.15259999"
+              d="M 366.424744,-14.276672 C 328.557587,25.021889 212.809067,27.169022 173.510498,-10.698120"
+              class="Philadelphia (PA) Indianapolis (IN)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0016"
+              d="M 335.047089,8.821106 C 336.261536,-36.952442 406.743530,-103.791100 452.517059,-102.576660"
+              class="Washington (DC) [R.Reagan] Portland (ME)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="3.4083998"
+              d="M 335.047089,8.821106 C 339.932922,-28.395103 403.085938,-76.890694 440.302155,-72.004883"
+              class="Washington (DC) [R.Reagan] Boston (MA)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="4.0E-4"
+              d="M 335.047089,8.821106 C 322.337769,-31.035957 363.059357,-109.885529 402.916443,-122.594849"
+              class="Washington (DC) [R.Reagan] Burlington (VT)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="9.999999E-4"
+              d="M 335.047089,8.821106 C 316.414459,12.536230 282.892853,-9.840028 279.177704,-28.472656"
+              class="Washington (DC) [R.Reagan] Pittsburgh (PA)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.34939998"
+              d="M 335.047089,8.821106 C 350.267181,44.970703 318.872955,122.025253 282.723358,137.245361"
+              class="Washington (DC) [R.Reagan] Charleston (SC)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="1.1352"
+              d="M 335.047089,8.821106 C 377.249481,72.737968 344.677734,231.916824 280.760864,274.119202"
+              class="Washington (DC) [R.Reagan] Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.14639999"
+              d="M 335.047089,8.821106 C 455.460815,52.190712 571.027039,297.865723 527.657410,418.279449"
+              class="Washington (DC) [R.Reagan] San Juan (PR)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3904"
+              d="M 335.047089,8.821106 C 375.068451,70.153542 343.101868,222.184235 281.769409,262.205597"
+              class="Washington (DC) [R.Reagan] West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3146"
+              d="M 335.047089,8.821106 C 338.306396,-10.693267 372.466949,-35.075851 391.981323,-31.816528"
+              class="Washington (DC) [R.Reagan] New York (NY) [JFK]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="1.7814"
+              d="M 335.047089,8.821106 C 337.347412,-10.983270 370.504486,-37.239349 390.308838,-34.939026"
+              class="Washington (DC) [R.Reagan] New York (NY) [Lag]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="1.6295999"
+              d="M 335.047089,8.821106 C 363.953583,67.522835 319.260742,198.935181 260.559021,227.841675"
+              class="Washington (DC) [R.Reagan] Orlando (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="1.0458"
+              d="M 335.047089,8.821106 C 361.436890,73.586136 303.874054,210.318375 239.109009,236.708160"
+              class="Washington (DC) [R.Reagan] Tampa (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.1561999"
+              d="M 335.047089,8.821106 C 337.317169,38.367798 296.402313,86.092987 266.855621,88.363098"
+              class="Washington (DC) [R.Reagan] Charlotte (NC)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3114"
+              d="M 335.047089,8.821106 C 298.835938,37.224579 201.913971,25.513041 173.510498,-10.698120"
+              class="Washington (DC) [R.Reagan] Indianapolis (IN)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0484"
+              d="M 452.952576,-55.600891 C 445.515198,-38.649765 408.932434,-24.379150 391.981323,-31.816528"
+              class="Hyannis (MA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1436"
+              d="M 518.149597,426.060638 C 401.340515,359.718842 325.639526,84.992554 391.981323,-31.816528"
+              class="Ponce (PR) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.19759999"
+              d="M 518.149597,426.060638 C 426.987671,437.934967 272.433350,319.003601 260.559021,227.841675"
+              class="Ponce (PR) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0866"
+              d="M 221.192932,-137.382813 C 214.446518,-135.593948 201.643570,-143.030258 199.854706,-149.776672"
+              class="Alpena (MI) Pellston (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0036"
+              d="M 239.109009,236.708160 C 224.300690,177.658813 290.662262,66.872330 349.711609,52.064026"
+              class="Tampa (FL) Norfolk (VA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3266"
+              d="M 239.109009,236.708160 C 194.086578,175.658264 218.127808,16.549768 279.177704,-28.472656"
+              class="Tampa (FL) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1462"
+              d="M 239.109009,236.708160 C 218.633163,160.626953 302.041199,15.791393 378.122406,-4.684448"
+              class="Tampa (FL) Atlantic City (NJ)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1462"
+              d="M 239.109009,236.708160 C 213.700790,150.267700 305.249176,-17.505304 391.689636,-42.913513"
+              class="Tampa (FL) White Plains (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.333"
+              d="M 239.109009,236.708160 C 219.670853,191.096481 258.931122,93.521713 304.542816,74.083557"
+              class="Tampa (FL) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.86719996"
+              d="M 239.109009,236.708160 C 254.921585,235.860001 279.912689,258.306610 280.760864,274.119202"
+              class="Tampa (FL) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.45479998"
+              d="M 239.109009,236.708160 C 333.132965,215.312744 506.261993,324.255493 527.657410,418.279449"
+              class="Tampa (FL) San Juan (PR)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.24479999"
+              d="M 239.109009,236.708160 C 187.932587,158.949890 227.805389,-34.452179 305.563660,-85.628601"
+              class="Tampa (FL) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1898"
+              d="M 239.109009,236.708160 C 213.442230,133.535767 329.700623,-59.722980 432.873016,-85.389771"
+              class="Tampa (FL) Manchester (NH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.287"
+              d="M 239.109009,236.708160 C 219.149445,139.209412 335.458252,-36.978065 432.957001,-56.937622"
+              class="Tampa (FL) Providence (RI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.053"
+              d="M 239.109009,236.708160 C 215.978531,152.428757 307.701935,-8.686054 391.981323,-31.816528"
+              class="Tampa (FL) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.2616"
+              d="M 239.109009,236.708160 C 214.989319,201.489838 231.637299,112.482788 266.855621,88.363098"
+              class="Tampa (FL) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5726"
+              d="M 239.109009,236.708160 C 217.605042,134.726913 338.320923,-50.500904 440.302155,-72.004883"
+              class="Tampa (FL) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.7966"
+              d="M 239.109009,236.708160 C 215.019531,152.138763 305.739441,-10.849556 390.308838,-34.939026"
+              class="Tampa (FL) New York (NY) [Lag]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3796"
+              d="M 239.109009,236.708160 C 176.508041,200.346603 137.148941,51.902840 173.510498,-10.698120"
+              class="Tampa (FL) Indianapolis (IN)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0818"
+              d="M 390.308838,-34.939026 C 399.589996,-9.418970 375.231659,42.782860 349.711609,52.064026"
+              class="New York (NY) [Lag] Norfolk (VA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.2626"
+              d="M 390.308838,-34.939026 C 428.029877,46.197784 362.906219,224.484558 281.769409,262.205597"
+              class="New York (NY) [Lag] West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0744"
+              d="M 390.308838,-34.939026 C 389.222961,-60.908199 426.547882,-101.490776 452.517059,-102.576660"
+              class="New York (NY) [Lag] Portland (ME)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.6376"
+              d="M 390.308838,-34.939026 C 392.894318,-52.350861 422.890320,-74.590378 440.302155,-72.004883"
+              class="New York (NY) [Lag] Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1122"
+              d="M 390.308838,-34.939026 C 369.375885,-11.419525 302.697205,-7.539703 279.177704,-28.472656"
+              class="New York (NY) [Lag] Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0448"
+              d="M 390.308838,-34.939026 C 375.299194,-54.991714 382.863770,-107.585205 402.916443,-122.594849"
+              class="New York (NY) [Lag] Burlington (VT)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.3116"
+              d="M 390.308838,-34.939026 C 430.210876,48.782211 364.482117,234.217148 280.760864,274.119202"
+              class="New York (NY) [Lag] Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1858"
+              d="M 390.308838,-34.939026 C 363.221893,-28.127907 312.374786,-58.541649 305.563660,-85.628601"
+              class="New York (NY) [Lag] Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1934"
+              d="M 390.308838,-34.939026 C 403.228638,21.014948 338.677338,124.325584 282.723358,137.245361"
+              class="New York (NY) [Lag] Charleston (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0042"
+              d="M 390.308838,-34.939026 C 388.731537,-53.542011 414.270020,-83.812454 432.873016,-85.389771"
+              class="New York (NY) [Lag] Manchester (NH)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.221"
+              d="M 390.308838,-34.939026 C 394.960144,4.018696 343.500519,69.432251 304.542816,74.083557"
+              class="New York (NY) [Lag] Raleigh/Durham (NC)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="1.7644"
+              d="M 390.308838,-34.939026 C 416.915039,43.567085 339.065125,201.235489 260.559021,227.841675"
+              class="New York (NY) [Lag] Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.6927999"
+              d="M 390.308838,-34.939026 C 390.278625,14.412043 316.206696,88.393318 266.855621,88.363098"
+              class="New York (NY) [Lag] Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2916"
+              d="M 390.308838,-34.939026 C 351.797333,13.268824 221.718338,27.813368 173.510498,-10.698120"
+              class="New York (NY) [Lag] Indianapolis (IN)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2696"
+              d="M 173.510498,-10.698120 C 214.607483,-76.317802 374.682465,-113.101860 440.302155,-72.004883"
+              class="Indianapolis (IN) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1204"
+              d="M 173.510498,-10.698120 C 251.924042,24.815268 316.274261,195.705658 280.760864,274.119202"
+              class="Indianapolis (IN) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.033"
+              d="M 173.510498,-10.698120 C 216.673309,-19.948248 295.292694,30.920755 304.542816,74.083557"
+              class="Indianapolis (IN) Raleigh/Durham (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.616"
+              d="M 173.510498,-10.698120 C 238.628159,19.600134 290.857269,162.724014 260.559021,227.841675"
+              class="Indianapolis (IN) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3426"
+              d="M 173.510498,-10.698120 C 211.991760,-9.554901 267.998840,49.881836 266.855621,88.363098"
+              class="Indianapolis (IN) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1454"
+              d="M 425.223358,-69.701416 C 465.095001,27.955206 378.417480,234.247574 280.760864,274.119202"
+              class="Worcester (MA) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1454"
+              d="M 425.223358,-69.701416 C 451.799133,22.740078 353.000519,201.265930 260.559021,227.841675"
+              class="Worcester (MA) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.058799997"
+              d="M 378.122406,-4.684448 C 377.094269,-30.584488 414.402130,-70.976746 440.302155,-72.004883"
+              class="Atlantic City (NJ) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.29279998"
+              d="M 378.122406,-4.684448 C 401.114960,65.333458 330.576904,204.849136 260.559021,227.841675"
+              class="Atlantic City (NJ) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0616"
+              d="M 378.122406,-4.684448 C 412.229828,67.964157 354.418030,228.098190 281.769409,262.205597"
+              class="Atlantic City (NJ) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3522"
+              d="M 378.122406,-4.684448 C 414.410828,70.548592 355.993927,237.830780 280.760864,274.119202"
+              class="Atlantic City (NJ) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.044"
+              d="M 447.239929,-49.121338 C 441.275665,-52.310493 437.112976,-66.040619 440.302155,-72.004883"
+              class="Martha&apos;s Vineyard (MA) Boston (MA)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0552"
+              d="M 447.239929,-49.121338 C 439.649170,-34.608658 406.494019,-24.225767 391.981323,-31.816528"
+              class="Martha&apos;s Vineyard (MA) New York (NY) [JFK]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="5.9999997E-4"
+              d="M 386.356140,-51.662781 C 428.212463,32.028236 365.460449,220.349258 281.769409,262.205597"
+              class="Newburgh/Poughkeepsie (NY) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="2.0E-4"
+              d="M 386.356140,-51.662781 C 393.076935,-66.520401 425.444519,-78.725662 440.302155,-72.004883"
+              class="Newburgh/Poughkeepsie (NY) Boston (MA)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.147"
+              d="M 386.356140,-51.662781 C 430.393494,34.612679 367.036316,230.081848 280.760864,274.119202"
+              class="Newburgh/Poughkeepsie (NY) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.14639999"
+              d="M 386.356140,-51.662781 C 417.097595,29.397539 341.619324,197.100204 260.559021,227.841675"
+              class="Newburgh/Poughkeepsie (NY) Orlando (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2628"
+              d="M 304.542816,74.083557 C 339.793579,118.847076 325.524384,238.868469 280.760864,274.119202"
+              class="Raleigh/Durham (NC) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.68079996"
+              d="M 304.542816,74.083557 C 302.476990,17.713999 383.932617,-69.939064 440.302155,-72.004883"
+              class="Raleigh/Durham (NC) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.445"
+              d="M 304.542816,74.083557 C 300.850494,35.415840 353.313599,-28.124212 391.981323,-31.816528"
+              class="Raleigh/Durham (NC) New York (NY) [JFK]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6016"
+              d="M 304.542816,74.083557 C 326.497681,113.631943 300.107391,205.886810 260.559021,227.841675"
+              class="Raleigh/Durham (NC) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.0804"
+              d="M 304.542816,74.083557 C 299.861267,84.476906 277.248962,93.044624 266.855621,88.363098"
+              class="Raleigh/Durham (NC) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4788"
+              d="M 527.657410,418.279449 C 412.129517,337.693634 359.716339,43.523033 440.302155,-72.004883"
+              class="San Juan (PR) Boston (MA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.30699998"
+              d="M 527.657410,418.279449 C 531.633057,415.049011 542.442261,416.166809 545.672668,420.142487"
+              class="San Juan (PR) Charlotte Amalie (VI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.1862"
+              d="M 527.657410,418.279449 C 449.446045,438.826691 301.308105,352.330566 280.760864,274.119202"
+              class="San Juan (PR) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.763"
+              d="M 527.657410,418.279449 C 410.502991,355.395477 329.097351,85.337883 391.981323,-31.816528"
+              class="San Juan (PR) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.5641999"
+              d="M 527.657410,418.279449 C 436.150177,433.611572 275.891144,319.348907 260.559021,227.841675"
+              class="San Juan (PR) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3306"
+              d="M 527.657410,418.279449 C 409.513763,404.456543 253.032715,206.506729 266.855621,88.363098"
+              class="San Juan (PR) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.4996"
+              d="M 391.689636,-42.913513 C 419.614532,37.463646 340.936188,199.916763 260.559021,227.841675"
+              class="White Plains (NY) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.48959997"
+              d="M 391.689636,-42.913513 C 430.729431,40.094353 364.777283,223.165817 281.769409,262.205597"
+              class="White Plains (NY) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2968"
+              d="M 391.689636,-42.913513 C 432.910431,42.678787 366.353180,232.898422 280.760864,274.119202"
+              class="White Plains (NY) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5172"
+              d="M 440.302155,-72.004883 C 416.783722,-31.073547 320.109039,-4.954208 279.177704,-28.472656"
+              class="Boston (MA) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0686"
+              d="M 440.302155,-72.004883 C 559.805725,5.350487 623.028076,300.638916 545.672668,420.142487"
+              class="Boston (MA) Charlotte Amalie (VI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.2015998"
+              d="M 440.302155,-72.004883 C 438.675659,-54.303047 409.683136,-30.190033 391.981323,-31.816528"
+              class="Boston (MA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2122"
+              d="M 440.302155,-72.004883 C 450.636475,1.360928 356.089172,126.911072 282.723358,137.245361"
+              class="Boston (MA) Charleston (SC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5446"
+              d="M 440.302155,-72.004883 C 410.629730,-47.781929 329.786621,-55.956154 305.563660,-85.628601"
+              class="Boston (MA) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.5482"
+              d="M 440.302155,-72.004883 C 437.686462,-5.241978 333.618530,90.978806 266.855621,88.363098"
+              class="Boston (MA) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.2833999"
+              d="M 440.302155,-72.004883 C 464.322815,23.913059 356.476990,203.820984 260.559021,227.841675"
+              class="Boston (MA) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.0532"
+              d="M 440.302155,-72.004883 C 477.618713,29.128201 381.893951,236.802643 280.760864,274.119202"
+              class="Boston (MA) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6956"
+              d="M 440.302155,-72.004883 C 475.437714,26.543772 380.318054,227.070053 281.769409,262.205597"
+              class="Boston (MA) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3114"
+              d="M 432.873016,-85.389771 C 461.056519,11.719318 357.668121,199.658188 260.559021,227.841675"
+              class="Manchester (NH) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="8.0E-4"
+              d="M 432.873016,-85.389771 C 474.352386,16.934452 383.085083,232.639832 280.760864,274.119202"
+              class="Manchester (NH) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1856"
+              d="M 349.711609,52.064026 C 367.036621,105.050079 313.545044,210.516663 260.559021,227.841675"
+              class="Norfolk (VA) Orlando (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.36339998"
+              d="M 349.711609,52.064026 C 340.400238,75.895035 290.686646,97.674484 266.855621,88.363098"
+              class="Norfolk (VA) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="4.0E-4"
+              d="M 349.711609,52.064026 C 341.389435,26.833971 366.751251,-23.494360 391.981323,-31.816528"
+              class="Norfolk (VA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.139"
+              d="M 282.723358,137.245361 C 309.705627,165.012634 308.528107,247.136932 280.760864,274.119202"
+              class="Charleston (SC) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6252"
+              d="M 282.723358,137.245361 C 270.762573,81.581390 336.317352,-19.855743 391.981323,-31.816528"
+              class="Charleston (SC) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2148"
+              d="M 282.723358,137.245361 C 269.773346,130.642456 260.252716,101.313095 266.855621,88.363098"
+              class="Charleston (SC) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0078"
+              d="M 199.854706,-149.776672 C 197.499725,-154.308197 200.764526,-164.637939 205.296051,-166.992920"
+              class="Pellston (MI) Sault Ste. Marie (MI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0019999999"
+              d="M 260.559021,227.841675 C 232.866943,123.366386 348.041779,-74.884598 452.517059,-102.576660"
+              class="Orlando (FL) Portland (ME)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6386"
+              d="M 260.559021,227.841675 C 213.019882,172.855072 224.191116,19.066475 279.177704,-28.472656"
+              class="Orlando (FL) Pittsburgh (PA)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.6554"
+              d="M 260.559021,227.841675 C 206.865875,156.146683 233.868683,-31.935471 305.563660,-85.628601"
+              class="Orlando (FL) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.8656"
+              d="M 260.559021,227.841675 C 238.082779,136.406219 341.521545,-34.461361 432.957001,-56.937622"
+              class="Orlando (FL) Providence (RI)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="2.2247999"
+              d="M 260.559021,227.841675 C 234.911835,149.625580 313.765228,-6.169350 391.981323,-31.816528"
+              class="Orlando (FL) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.3388"
+              d="M 260.559021,227.841675 C 233.922607,198.686630 237.700592,114.999489 266.855621,88.363098"
+              class="Orlando (FL) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.29279998"
+              d="M 260.559021,227.841675 C 273.854889,233.056808 285.975983,260.823334 280.760864,274.119202"
+              class="Orlando (FL) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1732"
+              d="M 452.517059,-102.576660 C 453.572723,-27.256416 342.175873,87.307434 266.855621,88.363098"
+              class="Portland (ME) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.47559997"
+              d="M 452.517059,-102.576660 C 454.561951,-76.317490 418.240509,-33.861408 391.981323,-31.816528"
+              class="Portland (ME) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3444"
+              d="M 279.177704,-28.472656 C 340.012695,31.729088 340.962616,213.284195 280.760864,274.119202"
+              class="Pittsburgh (PA) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0094"
+              d="M 279.177704,-28.472656 C 301.069672,-51.702156 368.751831,-53.708481 391.981323,-31.816528"
+              class="Pittsburgh (PA) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0019999999"
+              d="M 279.177704,-28.472656 C 337.831696,29.144653 339.386719,203.551605 281.769409,262.205597"
+              class="Pittsburgh (PA) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.97459996"
+              d="M 279.177704,-28.472656 C 300.080444,-2.641087 292.687195,67.460358 266.855621,88.363098"
+              class="Pittsburgh (PA) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.0132"
+              d="M 432.957001,-56.937622 C 466.548126,37.128532 375.835571,228.614471 281.769409,262.205597"
+              class="Providence (RI) West Palm Beach/Palm Beach (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.51919997"
+              d="M 432.957001,-56.937622 C 428.796875,5.342802 329.136047,92.523239 266.855621,88.363098"
+              class="Providence (RI) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.3454"
+              d="M 432.957001,-56.937622 C 468.729126,39.712971 377.411469,238.347061 280.760864,274.119202"
+              class="Providence (RI) Fort Lauderdale (FL)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.1432"
+              d="M 545.672668,420.142487 C 463.485657,443.920197 304.538574,356.306213 280.760864,274.119202"
+              class="Charlotte Amalie (VI) Fort Lauderdale (FL)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.16659999"
+              d="M 545.672668,420.142487 C 423.553345,409.550049 256.263123,210.482391 266.855621,88.363098"
+              class="Charlotte Amalie (VI) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.22399999"
+              d="M 545.672668,420.142487 C 424.542603,360.488953 332.327820,89.313538 391.981323,-31.816528"
+              class="Charlotte Amalie (VI) New York (NY) [JFK]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.46879998"
+              d="M 402.916443,-122.594849 C 418.885101,-102.252159 412.324005,-47.785168 391.981323,-31.816528"
+              class="Burlington (VT) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.8252"
+              d="M 280.760864,274.119202 C 241.817795,190.687958 308.550110,7.126528 391.981323,-31.816528"
+              class="Fort Lauderdale (FL) New York (NY) [JFK]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.2658"
+              d="M 280.760864,274.119202 C 213.771881,197.209091 228.653534,-18.639599 305.563660,-85.628601"
+              class="Fort Lauderdale (FL) Buffalo (NY)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="1.0618"
+              d="M 280.760864,274.119202 C 240.828613,239.749039 232.485443,128.295364 266.855621,88.363098"
+              class="Fort Lauderdale (FL) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.9816"
+              d="M 305.563660,-85.628601 C 333.609619,-92.149719 385.460205,-59.862473 391.981323,-31.816528"
+              class="Buffalo (NY) New York (NY) [JFK]" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.5178"
+              d="M 305.563660,-85.628601 C 332.620392,-43.088654 309.395569,61.306366 266.855621,88.363098"
+              class="Buffalo (NY) Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+        <path fill="none" stroke-width="0.81979996"
+              d="M 281.769409,262.205597 C 245.007370,181.358780 311.134521,4.945517 391.981323,-31.816528"
+              class="West Palm Beach/Palm Beach (FL) New York (NY) [JFK]"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="0.69799995"
+              d="M 281.769409,262.205597 C 244.018158,230.419861 235.069885,126.114349 266.855621,88.363098"
+              class="West Palm Beach/Palm Beach (FL) Charlotte (NC)"
+              stroke-opacity="1.0" stroke="#b80084"/>
+        <path fill="none" stroke-width="1.1151999"
+              d="M 391.981323,-31.816528 C 390.992096,17.244539 315.916687,89.352310 266.855621,88.363098"
+              class="New York (NY) [JFK] Charlotte (NC)" stroke-opacity="1.0"
+              stroke="#b80084"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="447.23993"
+                class="Martha&apos;s Vineyard (MA)" cy="-49.121338"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="6.181818" cx="324.11536"
+                class="Rochester (NY)" cy="-89.99365" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="8.581818" cx="282.72336"
+                class="Charleston (SC)" cy="137.24536" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.4363637" cx="456.80963"
+                class="Nantucket (MA)" cy="-46.04297" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.8727274" cx="403.85953"
+                class="Islip (NY)" cy="-35.236816" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="27.781818" cx="224.82687"
+                class="Detroit (MI)" cy="-68.479004" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="5.9636364" cx="351.2794"
+                class="Syracuse (NY)" cy="-89.78821" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="14.690909" cx="335.0471"
+                class="Washington (DC) [R.Reagan]" cy="8.821106"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.0" cx="452.95258"
+                class="Hyannis (MA)" cy="-55.60089" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.8727274" cx="386.35614"
+                class="Newburgh/Poughkeepsie (NY)" cy="-51.66278"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="5.9636364" cx="378.1224"
+                class="Atlantic City (NJ)" cy="-4.6844482" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="8.8" cx="527.6574"
+                class="San Juan (PR)" cy="418.27945" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="5.5272727" cx="391.68964"
+                class="White Plains (NY)" cy="-42.913513" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="9.018182" cx="281.7694"
+                class="West Palm Beach/Palm Beach (FL)" cy="262.2056"
+                stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="9.454546" cx="411.0422"
+                class="Hartford (CT)" cy="-61.958435" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="14.909091" cx="278.3795"
+                class="Miami (FL)" cy="279.52176" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.0" cx="345.17505"
+                class="Ithaca/Cortland (NY)" cy="-74.96118" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="16.872726" cx="239.10901"
+                class="Tampa (FL)" cy="236.70816" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.6545453" cx="548.57825"
+                class="Christiansted (VI)" cy="431.79282" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="6.4" cx="452.51706"
+                class="Portland (ME)" cy="-102.57666" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="10.109091" cx="279.1777"
+                class="Pittsburgh (PA)" cy="-28.472656" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="5.3090906" cx="402.91644"
+                class="Burlington (VT)" cy="-122.59485" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="15.781817" cx="366.42474"
+                class="Philadelphia (PA)" cy="-14.276672" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="19.054546" cx="266.85562"
+                class="Charlotte (NC)" cy="88.3631" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="518.1496"
+                class="Ponce (PR)" cy="426.06064" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="23.636364" cx="385.06418"
+                class="Newark (NJ)" cy="-32.926086" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="7.2727275" cx="302.10114"
+                class="Myrtle Beach (SC)" cy="120.7937" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="18.618183" cx="341.5369"
+                class="Baltimore (MD)" cy="1.4945679" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="6.6181817" cx="432.957"
+                class="Providence (RI)" cy="-56.937622" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="7.0545454" cx="391.5038"
+                class="Albany (NY)" cy="-81.082214" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="160.08884"
+                class="Escanaba (MI)" cy="-154.11444" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.6545453" cx="199.8547"
+                class="Pellston (MI)" cy="-149.77667" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="6.4" cx="545.67267"
+                class="Charlotte Amalie (VI)" cy="420.1425" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.4363637" cx="337.60562"
+                class="Elmira/Corning (NY)" cy="-67.15277" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.0" cx="353.5156"
+                class="Binghamton (NY)" cy="-68.28894" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="18.400002" cx="390.30884"
+                class="New York (NY) [Lag]" cy="-34.939026" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="248.52158"
+                class="Punta Gorda (FL)" cy="257.69922" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="397.31934"
+                class="Plattsburgh (NY)" cy="-127.46405" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.4363637" cx="154.45413"
+                class="Marquette (MI)" cy="-169.31598" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.4363637" cx="478.57507"
+                class="Bangor (ME)" cy="-130.86792" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="7.2727275" cx="330.15002"
+                class="Richmond (VA)" cy="38.677917" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="221.19293"
+                class="Alpena (MI)" cy="-137.38281" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="18.400002" cx="391.98132"
+                class="New York (NY) [JFK]" cy="-31.816528" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="17.309092" cx="440.30215"
+                class="Boston (MA)" cy="-72.00488" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="205.29605"
+                class="Sault Ste. Marie (MI)" cy="-166.99292" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="301.8107"
+                class="Niagara Falls (NY)" cy="-89.63147" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="5.3090906" cx="293.73773"
+                class="Latrobe (PA)" cy="-23.386536" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="12.50909" cx="251.13582"
+                class="Cleveland (OH)" cy="-49.657043" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="12.290909" cx="252.75346"
+                class="Fort Myers (FL)" cy="265.1736" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="7.2727275" cx="349.7116"
+                class="Norfolk (VA)" cy="52.064026" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="10.109091" cx="173.5105"
+                class="Indianapolis (IN)" cy="-10.69812" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.2181816" cx="425.22336"
+                class="Worcester (MA)" cy="-69.701416" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="6.181818" cx="432.87302"
+                class="Manchester (NH)" cy="-85.38977" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="19.49091" cx="260.55902"
+                class="Orlando (FL)" cy="227.84167" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="4.4363637" cx="259.9507"
+                class="St. Augustine (FL)" cy="197.38745" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="17.745455" cx="280.76086"
+                class="Fort Lauderdale (FL)" cy="274.1192" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="6.4" cx="373.83148"
+                class="Trenton (NJ)" cy="-23.46045" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="8.145454" cx="305.56366"
+                class="Buffalo (NY)" cy="-85.6286" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#b80084" r="11.854546" cx="304.54282"
+                class="Raleigh/Durham (NC)" cy="74.08356" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="3" x="447.23993" y="-48.417236" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Martha&apos;s Vineyard (MA)">
+            Martha&apos;s Vineyard (MA)
+        </text>
+        <text font-size="4" x="324.11536" y="-89.054855" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Rochester (NY)">
+            Rochester (NY)
+        </text>
+        <text font-size="6" x="282.72336" y="138.65356" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Charleston (SC)">
+            Charleston (SC)
+        </text>
+        <text font-size="3" x="456.80963" y="-45.338867" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Nantucket (MA)">
+            Nantucket (MA)
+        </text>
+        <text font-size="3" x="403.85953" y="-34.532715" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Islip (NY)">
+            Islip (NY)
+        </text>
+        <text font-size="25" x="224.82687" y="-63.931885" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Detroit (MI)">
+            Detroit
+        </text>
+        <text font-size="4" x="351.2794" y="-88.84941" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Syracuse (NY)">
+            Syracuse (NY)
+        </text>
+        <text font-size="11" x="335.0471" y="11.402811" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Washington (DC) [R.Reagan]">
+            Washington (DC) [R.Reagan]
+        </text>
+        <text font-size="3" x="452.95258" y="-54.89679" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Hyannis (MA)">
+            Hyannis (MA)
+        </text>
+        <text font-size="3" x="386.35614" y="-50.95868" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Newburgh/Poughkeepsie (NY)">
+            Newburgh/Poughkeepsie (NY)
+        </text>
+        <text font-size="4" x="378.1224" y="-3.745646" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Atlantic City (NJ)">
+            Atlantic City (NJ)
+        </text>
+        <text font-size="6" x="527.6574" y="419.68765" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="San Juan (PR)">
+            San Juan (PR)
+        </text>
+        <text font-size="4" x="391.68964" y="-41.97471" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="White Plains (NY)">
+            White Plains (NY)
+        </text>
+        <text font-size="6" x="281.7694" y="263.6138" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="West Palm Beach/Palm Beach (FL)">
+            West Palm Beach/Palm Beach (FL)
+        </text>
+        <text font-size="7" x="411.0422" y="-60.315533" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Hartford (CT)">
+            Hartford (CT)
+        </text>
+        <text font-size="11" x="278.3795" y="282.10345" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Miami (FL)">
+            Miami (FL)
+        </text>
+        <text font-size="3" x="345.17505" y="-74.25708" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Ithaca/Cortland (NY)">
+            Ithaca/Cortland (NY)
+        </text>
+        <text font-size="13" x="239.10901" y="239.75928" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Tampa (FL)">
+            Tampa (FL)
+        </text>
+        <text font-size="3" x="548.57825" y="432.49692" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Christiansted (VI)">
+            Christiansted (VI)
+        </text>
+        <text font-size="4" x="452.51706" y="-101.63786" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Portland (ME)">
+            Portland (ME)
+        </text>
+        <text font-size="7" x="279.1777" y="-26.829752" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Pittsburgh (PA)">
+            Pittsburgh (PA)
+        </text>
+        <text font-size="3" x="402.91644" y="-121.89075" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Burlington (VT)">
+            Burlington (VT)
+        </text>
+        <text font-size="12" x="366.42474" y="-11.460266" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Philadelphia (PA)">
+            Philadelphia (PA)
+        </text>
+        <text font-size="15" x="266.85562" y="91.883606" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Charlotte (NC)">
+            Charlotte (NC)
+        </text>
+        <text font-size="3" x="518.1496" y="426.76474" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Ponce (PR)">
+            Ponce (PR)
+        </text>
+        <text font-size="20" x="385.06418" y="-28.232077" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Newark (NJ)">
+            Newark (NJ)
+        </text>
+        <text font-size="5" x="302.10114" y="121.96721" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Myrtle Beach (SC)">
+            Myrtle Beach (SC)
+        </text>
+        <text font-size="15" x="341.5369" y="5.0150757" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Baltimore (MD)">
+            Baltimore (MD)
+        </text>
+        <text font-size="4" x="432.957" y="-55.998817" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Providence (RI)">
+            Providence (RI)
+        </text>
+        <text font-size="5" x="391.5038" y="-79.90871" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Albany (NY)">
+            Albany (NY)
+        </text>
+        <text font-size="3" x="160.08884" y="-153.41034" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Escanaba (MI)">
+            Escanaba (MI)
+        </text>
+        <text font-size="3" x="199.8547" y="-149.07257" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Pellston (MI)">
+            Pellston (MI)
+        </text>
+        <text font-size="4" x="545.67267" y="421.0813" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Charlotte Amalie (VI)">
+            Charlotte Amalie (VI)
+        </text>
+        <text font-size="3" x="337.60562" y="-66.44867" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Elmira/Corning (NY)">
+            Elmira/Corning (NY)
+        </text>
+        <text font-size="3" x="353.5156" y="-67.58484" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Binghamton (NY)">
+            Binghamton (NY)
+        </text>
+        <text font-size="15" x="390.30884" y="-31.418518" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="New York (NY) [Lag]">
+            New York (NY) [Lag]
+        </text>
+        <text font-size="3" x="248.52158" y="258.40332" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Punta Gorda (FL)">
+            Punta Gorda (FL)
+        </text>
+        <text font-size="3" x="397.31934" y="-126.75995" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Plattsburgh (NY)">
+            Plattsburgh (NY)
+        </text>
+        <text font-size="3" x="154.45413" y="-168.61188" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Marquette (MI)">
+            Marquette (MI)
+        </text>
+        <text font-size="3" x="478.57507" y="-130.16382" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Bangor (ME)">
+            Bangor (ME)
+        </text>
+        <text font-size="5" x="330.15002" y="39.851418" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Richmond (VA)">
+            Richmond (VA)
+        </text>
+        <text font-size="3" x="221.19293" y="-136.67871" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Alpena (MI)">
+            Alpena (MI)
+        </text>
+        <text font-size="15" x="391.98132" y="-28.29602" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="New York (NY) [JFK]">
+            New York (NY) [JFK]
+        </text>
+        <text font-size="14" x="440.30215" y="-68.71907" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Boston (MA)">
+            Boston (MA)
+        </text>
+        <text font-size="3" x="205.29605" y="-166.28882" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Sault Ste. Marie (MI)">
+            Sault Ste. Marie (MI)
+        </text>
+        <text font-size="3" x="301.8107" y="-88.92737" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Niagara Falls (NY)">
+            Niagara Falls (NY)
+        </text>
+        <text font-size="3" x="293.73773" y="-22.682434" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Latrobe (PA)">
+            Latrobe (PA)
+        </text>
+        <text font-size="9" x="251.13582" y="-47.544006" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Cleveland (OH)">
+            Cleveland (OH)
+        </text>
+        <text font-size="9" x="252.75346" y="267.28592" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Fort Myers (FL)">
+            Fort Myers (FL)
+        </text>
+        <text font-size="5" x="349.7116" y="53.237526" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Norfolk (VA)">
+            Norfolk (VA)
+        </text>
+        <text font-size="7" x="173.5105" y="-9.055217" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Indianapolis (IN)">
+            Indianapolis (IN)
+        </text>
+        <text font-size="3" x="425.22336" y="-68.997314" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Worcester (MA)">
+            Worcester (MA)
+        </text>
+        <text font-size="4" x="432.87302" y="-84.45097" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Manchester (NH)">
+            Manchester (NH)
+        </text>
+        <text font-size="16" x="260.55902" y="231.59819" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Orlando (FL)">
+            Orlando (FL)
+        </text>
+        <text font-size="3" x="259.9507" y="198.09155" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="St. Augustine (FL)">
+            St. Augustine (FL)
+        </text>
+        <text font-size="14" x="280.76086" y="277.40503" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Fort Lauderdale (FL)">
+            Fort Lauderdale (FL)
+        </text>
+        <text font-size="4" x="373.83148" y="-22.521648" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Trenton (NJ)">
+            Trenton (NJ)
+        </text>
+        <text font-size="6" x="305.56366" y="-84.2204" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Buffalo (NY)">
+            Buffalo (NY)
+        </text>
+        <text font-size="9" x="304.54282" y="76.19586" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="Raleigh/Durham (NC)">
+            Raleigh/Durham (NC)
+        </text>
+    </g>
+</svg>
