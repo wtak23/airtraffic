@@ -1,5 +1,5 @@
-Test
-====
+Test SVG and png figures
+========================
 
 .. image:: /_static/img/test.png
    :scale: 100 %
