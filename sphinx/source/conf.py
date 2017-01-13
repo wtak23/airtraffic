@@ -48,9 +48,6 @@ language = None
 exclude_patterns = [
 # 'test3.rst',
 #'templates',
-'flight-count-analysis-gallery',
-'regression-gallery',
-'network-analysis-gallery.rst',
 'autodoc.rst',
 ]
 
