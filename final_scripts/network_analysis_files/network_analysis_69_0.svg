@@ -1,0 +1,802 @@
+<svg contentScriptType="text/ecmascript" contentStyleType="text/css" height="364.6472" preserveAspectRatio="xMidYMid meet" version="1.1" viewBox="-329.000000 -181.514648 570.246216 364.647186" width="570.2462" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify">
+    <g id="edges">
+        <path class="Panama City (FL) Baltimore (MD)" d="M 40.041641,48.136230 C 32.762032,-22.310450 127.512634,-138.899902 197.959320,-146.179504" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.090214744"/>
+        <path class="Panama City (FL) Atlanta (GA)" d="M 40.041641,48.136230 C 29.708076,28.920870 43.030766,-15.402517 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.143458"/>
+        <path class="Panama City (FL) Nashville (TN)" d="M 40.041641,48.136230 C 11.071432,26.994841 -0.671799,-48.172550 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.39572725"/>
+        <path class="Panama City (FL) Houston (TX) [G.Bush]" d="M 40.041641,48.136230 C 6.944069,82.593910 -94.388802,84.634071 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.39240646"/>
+        <path class="Panama City (FL) Dallas (TX)" d="M 40.041641,48.136230 C -9.548325,76.295677 -126.172424,44.149902 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.08357317"/>
+        <path class="Panama City (FL) Houston (TX) [WP.Hobby]" d="M 40.041641,48.136230 C 8.510963,83.741005 -92.192207,89.852150 -127.796982,58.321472" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.33484614"/>
+        <path class="Lawton/Fort Sill (OK) Dallas/Fort Worth (TX)" d="M -182.587448,-43.109558 C -170.763489,-40.888943 -156.358459,-19.822071 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.6315032"/>
+        <path class="Houston (TX) [WP.Hobby] Nashville (TN)" d="M -127.796982,58.321472 C -125.236519,1.575310 -36.276573,-79.703224 20.469591,-77.142761" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.74385655"/>
+        <path class="Houston (TX) [WP.Hobby] Lubbock (TX)" d="M -127.796982,58.321472 C -167.063431,64.743027 -235.595444,15.475677 -242.016983,-23.790771" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.004981182"/>
+        <path class="Houston (TX) [WP.Hobby] Pensacola (FL)" d="M -127.796982,58.321472 C -102.868553,26.771435 -18.150833,16.839024 13.399204,41.767456" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Houston (TX) [WP.Hobby] Dallas/Fort Worth (TX)" d="M -127.796982,58.321472 C -147.217316,51.213978 -165.686584,11.422230 -158.579086,-7.998108" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.5280053"/>
+        <path class="Houston (TX) [WP.Hobby] Washington (DC) [R.Reagan]" d="M -127.796982,58.321472 C -103.065605,-44.261375 87.905724,-161.038574 190.488571,-136.307190" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.7488377"/>
+        <path class="Houston (TX) [WP.Hobby] Memphis (TN)" d="M -127.796982,58.321472 C -131.587112,17.547977 -76.112045,-49.297459 -35.338554,-53.087585" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.3686075"/>
+        <path class="Houston (TX) [WP.Hobby] Greer (SC)" d="M -127.796982,58.321472 C -103.870193,-8.923672 32.887688,-73.901207 100.132835,-49.974426" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.08135931"/>
+        <path class="Houston (TX) [WP.Hobby] Raleigh/Durham (NC)" d="M -127.796982,58.321472 C -96.113968,-25.108032 76.554825,-102.727760 159.984329,-71.044739" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.22968784"/>
+        <path class="Houston (TX) [WP.Hobby] Dallas (TX)" d="M -127.796982,58.321472 C -145.856262,50.876144 -161.777206,12.619223 -154.331879,-5.440063" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="3.688842"/>
+        <path class="Houston (TX) [WP.Hobby] Tulsa (OK)" d="M -127.796982,58.321472 C -157.165588,33.192028 -163.524323,-48.555042 -138.394882,-77.923645" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.5518043"/>
+        <path class="Houston (TX) [WP.Hobby] Fort Lauderdale (FL)" d="M -127.796982,58.321472 C -60.863228,19.655495 97.536385,62.057152 136.202362,128.990906" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.41122428"/>
+        <path class="Houston (TX) [WP.Hobby] Harlingen/San Benito (TX)" d="M -127.796982,58.321472 C -122.571198,80.198845 -147.548599,120.853569 -169.425964,126.079346" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.9486385"/>
+        <path class="Houston (TX) [WP.Hobby] Baltimore (MD)" d="M -127.796982,58.321472 C -103.545914,-47.729984 91.907867,-170.430573 197.959320,-146.179504" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.64533985"/>
+        <path class="Houston (TX) [WP.Hobby] New Orleans (LA)" d="M -127.796982,58.321472 C -111.647095,39.441628 -59.102501,35.346695 -40.222656,51.496582" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.8264334"/>
+        <path class="Houston (TX) [WP.Hobby] Charleston (SC)" d="M -127.796982,58.321472 C -87.845497,-8.111782 71.731621,-47.834427 138.164871,-7.882935" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.16659287"/>
+        <path class="Houston (TX) [WP.Hobby] Austin (TX)" d="M -127.796982,58.321472 C -138.881042,64.456200 -164.709244,57.032188 -170.843964,45.948120" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.8473544"/>
+        <path class="Houston (TX) [WP.Hobby] Oklahoma City (OK)" d="M -127.796982,58.321472 C -159.690414,42.651951 -184.026306,-28.692493 -168.356781,-60.585938" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.7278061"/>
+        <path class="Houston (TX) [WP.Hobby] Birmingham (AL)" d="M -127.796982,58.321472 C -114.076874,12.543135 -24.829206,-35.544205 20.949131,-21.824097" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.36417976"/>
+        <path class="Houston (TX) [WP.Hobby] Jacksonville (FL)" d="M -127.796982,58.321472 C -83.756271,7.495071 58.544411,-2.683472 109.370811,41.357239" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.20754926"/>
+        <path class="Houston (TX) [WP.Hobby] El Paso (TX)" d="M -127.796982,58.321472 C -175.304825,88.346634 -291.604309,62.122593 -321.629486,14.614746" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.5495904"/>
+        <path class="Houston (TX) [WP.Hobby] Atlanta (GA)" d="M -127.796982,58.321472 C -106.599869,3.501339 7.425995,-46.933193 62.246128,-25.736084" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="2.2315695"/>
+        <path class="Houston (TX) [WP.Hobby] Orlando (FL)" d="M -127.796982,58.321472 C -74.159103,14.440353 72.119392,29.075500 116.000511,82.713379" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.84292674"/>
+        <path class="Houston (TX) [WP.Hobby] Corpus Christi (TX)" d="M -127.796982,58.321472 C -127.822235,73.094734 -150.019989,95.216774 -164.793259,95.191528" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.7521585"/>
+        <path class="Houston (TX) [WP.Hobby] Tampa (FL)" d="M -127.796982,58.321472 C -76.675804,20.503658 56.732685,40.458691 94.550499,91.579865" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.5850122"/>
+        <path class="Houston (TX) [WP.Hobby] Midland/Odessa (TX)" d="M -127.796982,58.321472 C -161.282639,73.203079 -233.833527,45.296997 -248.715118,11.811340" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.5506974"/>
+        <path class="Houston (TX) [WP.Hobby] Charlotte (NC)" d="M -127.796982,58.321472 C -100.486008,-15.132565 50.661499,-84.347168 124.115532,-57.036194" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.22692052"/>
+        <path class="Houston (TX) [WP.Hobby] San Antonio (TX)" d="M -127.796982,58.321472 C -138.449371,69.951347 -171.872757,71.417580 -183.502625,60.765198" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.8163604"/>
+        <path class="Myrtle Beach (SC) Dallas/Fort Worth (TX)" d="M 157.542648,-24.334595 C 97.585594,42.157051 -92.087440,51.958939 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.047044497"/>
+        <path class="Myrtle Beach (SC) Baltimore (MD)" d="M 157.542648,-24.334595 C 141.256989,-56.786911 165.507004,-129.893860 197.959320,-146.179504" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.12342262"/>
+        <path class="Myrtle Beach (SC) Atlanta (GA)" d="M 157.542648,-24.334595 C 138.203033,-5.555588 81.025139,-6.396481 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.83462477"/>
+        <path class="Myrtle Beach (SC) Fort Lauderdale (FL)" d="M 157.542648,-24.334595 C 183.939697,10.598562 171.135513,102.593864 136.202362,128.990906" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.22526012"/>
+        <path class="Myrtle Beach (SC) Charleston/Dunbar (WV)" d="M 157.542648,-24.334595 C 127.946480,-35.048191 99.622612,-95.512840 110.336212,-125.109009" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.022692053"/>
+        <path class="Austin (TX) Lubbock (TX)" d="M -170.843964,45.948120 C -199.026352,46.234947 -241.730164,4.391611 -242.016983,-23.790771" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.19094531"/>
+        <path class="Austin (TX) New Orleans (LA)" d="M -170.843964,45.948120 C -143.610001,20.933552 -65.237221,24.262630 -40.222656,51.496582" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.20865619"/>
+        <path class="Austin (TX) Dallas/Fort Worth (TX)" d="M -170.843964,45.948120 C -179.180237,32.705898 -171.821304,0.338162 -158.579086,-7.998108" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="2.5099623"/>
+        <path class="Austin (TX) Memphis (TN)" d="M -170.843964,45.948120 C -163.550034,-0.960104 -82.246780,-60.381523 -35.338554,-53.087585" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.009962364"/>
+        <path class="Austin (TX) Nashville (TN)" d="M -170.843964,45.948120 C -157.199432,-16.932768 -42.411297,-90.787292 20.469591,-77.142761" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.3807837"/>
+        <path class="Austin (TX) Dallas (TX)" d="M -170.843964,45.948120 C -177.819183,32.368065 -167.911926,1.535156 -154.331879,-5.440063" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.9088997"/>
+        <path class="Austin (TX) Fort Lauderdale (FL)" d="M -170.843964,45.948120 C -92.826134,1.147411 91.401649,50.973080 136.202362,128.990906" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.5960815"/>
+        <path class="Austin (TX) Harlingen/San Benito (TX)" d="M -170.843964,45.948120 C -154.534119,61.690765 -153.683319,109.769501 -169.425964,126.079346" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.19537303"/>
+        <path class="Austin (TX) Baltimore (MD)" d="M -170.843964,45.948120 C -135.508835,-66.238068 85.773132,-181.514648 197.959320,-146.179504" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.38023025"/>
+        <path class="Austin (TX) Washington (DC) [R.Reagan]" d="M -170.843964,45.948120 C -135.028519,-62.769451 81.770996,-172.122635 190.488571,-136.307190" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Austin (TX) Houston (TX) [G.Bush]" d="M -170.843964,45.948120 C -161.326797,38.666298 -136.128296,42.019325 -128.846481,51.536499" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="1.0366393"/>
+        <path class="Austin (TX) Tampa (FL)" d="M -170.843964,45.948120 C -108.638718,1.995575 50.597954,29.374619 94.550499,91.579865" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.20588887"/>
+        <path class="Austin (TX) El Paso (TX)" d="M -170.843964,45.948120 C -207.267746,69.838547 -297.739044,51.038525 -321.629486,14.614746" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.5235776"/>
+        <path class="Austin (TX) Atlanta (GA)" d="M -170.843964,45.948120 C -138.562790,-15.006741 1.291267,-58.017262 62.246128,-25.736084" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.8435909"/>
+        <path class="Austin (TX) Orlando (FL)" d="M -170.843964,45.948120 C -106.122017,-4.067730 65.984665,17.991428 116.000511,82.713379" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.6071508"/>
+        <path class="Austin (TX) Charlotte (NC)" d="M -170.843964,45.948120 C -132.448929,-33.640644 44.526764,-95.431229 124.115532,-57.036194" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.49313703"/>
+        <path class="Austin (TX) Washington (DC) [W.Dulles]" d="M -170.843964,45.948120 C -136.938660,-61.773205 75.501312,-172.497223 183.222641,-138.591919" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.054793004"/>
+        <path class="Austin (TX) Miami (FL)" d="M -170.843964,45.948120 C -92.221909,2.704205 90.577057,55.771408 133.820969,134.393463" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.17489484"/>
+        <path class="Charleston/Dunbar (WV) Houston (TX) [G.Bush]" d="M 110.336212,-125.109009 C 97.828781,-41.943371 -45.680847,64.043930 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.16991366"/>
+        <path class="Charleston/Dunbar (WV) Atlanta (GA)" d="M 110.336212,-125.109009 C 120.592781,-95.616402 91.738731,-35.992653 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.9054682"/>
+        <path class="Alexandria (LA) Dallas/Fort Worth (TX)" d="M -80.159782,24.417603 C -102.326782,33.618320 -149.378372,14.168895 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.32156298"/>
+        <path class="Alexandria (LA) Houston (TX) [G.Bush]" d="M -80.159782,24.417603 C -84.473343,39.578720 -113.685356,55.850060 -128.846481,51.536499" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.53686076"/>
+        <path class="Alexandria (LA) Atlanta (GA)" d="M -80.159782,24.417603 C -61.709335,-14.094318 23.734209,-44.186531 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.74385655"/>
+        <path class="Fort Myers (FL) Nashville (TN)" d="M 108.194962,120.045319 C 51.212269,98.152771 -1.422955,-20.160069 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.06696923"/>
+        <path class="Fort Myers (FL) Baltimore (MD)" d="M 108.194962,120.045319 C 72.902863,48.847481 126.761490,-110.887413 197.959320,-146.179504" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.737215"/>
+        <path class="Fort Myers (FL) Dallas/Fort Worth (TX)" d="M 108.194962,120.045319 C 29.231466,147.791443 -130.832962,70.965385 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.62264776"/>
+        <path class="Fort Myers (FL) Dallas (TX)" d="M 108.194962,120.045319 C 30.592512,147.453613 -126.923584,72.162384 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.007195041"/>
+        <path class="Fort Myers (FL) Washington (DC) [R.Reagan]" d="M 108.194962,120.045319 C 73.383186,52.316097 122.759346,-101.495407 190.488571,-136.307190" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.2745185"/>
+        <path class="Fort Myers (FL) Houston (TX) [G.Bush]" d="M 108.194962,120.045319 C 47.084908,153.751846 -95.139954,112.646561 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.32045606"/>
+        <path class="Fort Myers (FL) Atlanta (GA)" d="M 108.194962,120.045319 C 69.848915,100.078804 42.279617,12.609963 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.3295329"/>
+        <path class="Fort Myers (FL) Charlotte (NC)" d="M 108.194962,120.045319 C 75.962769,81.444901 85.515121,-24.804007 124.115532,-57.036194" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.0056454"/>
+        <path class="Tallahassee (FL) Dallas/Fort Worth (TX)" d="M 62.994148,43.347900 C 8.410299,77.393341 -124.533638,46.585739 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.23743635"/>
+        <path class="Tallahassee (FL) Atlanta (GA)" d="M 62.994148,43.347900 C 49.027748,29.680710 48.578938,-11.769684 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.261346"/>
+        <path class="Tallahassee (FL) Miami (FL)" d="M 62.994148,43.347900 C 95.368629,47.391651 137.864716,102.018982 133.820969,134.393463" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.008855435"/>
+        <path class="Baltimore (MD) Norfolk (VA)" d="M 197.959320,-146.179504 C 210.021118,-136.995209 214.337387,-105.126068 205.153091,-93.064270" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.8711534"/>
+        <path class="Baltimore (MD) Nashville (TN)" d="M 197.959320,-146.179504 C 176.268707,-96.874214 69.774887,-55.452164 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.0997343"/>
+        <path class="Baltimore (MD) Jacksonville (FL)" d="M 197.959320,-146.179504 C 217.748978,-90.954445 164.595871,21.567591 109.370811,41.357239" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.67024577"/>
+        <path class="Baltimore (MD) Louisville (KY)" d="M 197.959320,-146.179504 C 170.679077,-109.606750 74.899605,-95.667999 38.326855,-122.948242" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.6696923"/>
+        <path class="Baltimore (MD) Dallas/Fort Worth (TX)" d="M 197.959320,-146.179504 C 154.287918,-47.235550 -59.635132,35.673294 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.92262566"/>
+        <path class="Baltimore (MD) New Orleans (LA)" d="M 197.959320,-146.179504 C 189.858139,-59.007893 46.948956,59.597759 -40.222656,51.496582" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.5152756"/>
+        <path class="Baltimore (MD) Memphis (TN)" d="M 197.959320,-146.179504 C 169.918121,-80.901543 29.939405,-25.046394 -35.338554,-53.087585" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.2319017"/>
+        <path class="Baltimore (MD) Greer (SC)" d="M 197.959320,-146.179504 C 197.635040,-107.373192 138.939148,-49.650139 100.132835,-49.974426" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.15220279"/>
+        <path class="Baltimore (MD) Charleston (SC)" d="M 197.959320,-146.179504 C 213.659744,-106.561295 177.783081,-23.583363 138.164871,-7.882935" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.61822003"/>
+        <path class="Baltimore (MD) Dallas (TX)" d="M 197.959320,-146.179504 C 155.648972,-47.573372 -55.725746,36.870293 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.7648882"/>
+        <path class="Baltimore (MD) Fort Lauderdale (FL)" d="M 197.959320,-146.179504 C 240.642014,-78.794022 203.587845,86.308212 136.202362,128.990906" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.8104937"/>
+        <path class="Baltimore (MD) Little Rock (AR)" d="M 197.959320,-146.179504 C 163.111206,-71.578674 -1.062201,-11.949619 -75.663025,-46.797729" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.032654416"/>
+        <path class="Baltimore (MD) Houston (TX) [G.Bush]" d="M 197.959320,-146.179504 C 172.141357,-41.275146 -23.942123,77.354462 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.5750498"/>
+        <path class="Baltimore (MD) Tampa (FL)" d="M 197.959320,-146.179504 C 224.829437,-77.945862 162.784134,64.709755 94.550499,91.579865" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.3360637"/>
+        <path class="Baltimore (MD) Oklahoma City (OK)" d="M 197.959320,-146.179504 C 141.814819,-55.797569 -77.974846,-4.441429 -168.356781,-60.585938" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Baltimore (MD) Birmingham (AL)" d="M 197.959320,-146.179504 C 187.428360,-85.906387 81.222252,-11.293140 20.949131,-21.824097" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.2069958"/>
+        <path class="Baltimore (MD) Raleigh/Durham (NC)" d="M 197.959320,-146.179504 C 205.391266,-123.557556 182.606293,-78.476692 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.1738986"/>
+        <path class="Baltimore (MD) Atlanta (GA)" d="M 197.959320,-146.179504 C 194.905365,-94.948181 113.477448,-22.682129 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="3.5687404"/>
+        <path class="Baltimore (MD) Orlando (FL)" d="M 197.959320,-146.179504 C 227.346146,-84.009163 178.170853,53.326565 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.2160726"/>
+        <path class="Baltimore (MD) West Palm Beach/Palm Beach (FL)" d="M 197.959320,-146.179504 C 238.460999,-81.378464 202.011963,76.575623 137.210922,117.077301" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.5601063"/>
+        <path class="Baltimore (MD) Miami (FL)" d="M 197.959320,-146.179504 C 241.246246,-77.237244 202.763229,91.106537 133.820969,134.393463" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.55512506"/>
+        <path class="Baltimore (MD) Charlotte (NC)" d="M 197.959320,-146.179504 C 201.019226,-113.582085 156.712952,-60.096096 124.115532,-57.036194" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.8989373"/>
+        <path class="Baltimore (MD) San Antonio (TX)" d="M 197.959320,-146.179504 C 163.055878,-28.498169 -65.821289,95.668640 -183.502625,60.765198" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.4455391"/>
+        <path class="Charleston (SC) Washington (DC) [R.Reagan]" d="M 138.164871,-7.882935 C 122.944756,-44.032528 154.338989,-121.087074 190.488571,-136.307190" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.48262122"/>
+        <path class="Charleston (SC) Atlanta (GA)" d="M 138.164871,-7.882935 C 119.410492,3.730186 73.859245,-6.981705 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.02236"/>
+        <path class="Charleston (SC) Nashville (TN)" d="M 138.164871,-7.882935 C 100.773849,1.804157 30.156683,-39.751740 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.21087004"/>
+        <path class="Charleston (SC) Charlotte (NC)" d="M 138.164871,-7.882935 C 125.524361,-14.903717 117.094749,-44.395676 124.115532,-57.036194" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.2966571"/>
+        <path class="Charleston (SC) Washington (DC) [W.Dulles]" d="M 138.164871,-7.882935 C 121.034622,-43.036289 148.069290,-121.461670 183.222641,-138.591919" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.0011069294"/>
+        <path class="Charleston (SC) Houston (TX) [G.Bush]" d="M 138.164871,-7.882935 C 96.646492,57.403225 -63.560326,93.054886 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.34093425"/>
+        <path class="Charleston (SC) Dallas (TX)" d="M 138.164871,-7.882935 C 80.154091,51.104992 -95.343956,52.570713 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Charleston (SC) Fort Lauderdale (FL)" d="M 138.164871,-7.882935 C 165.147141,19.884336 163.969635,102.008636 136.202362,128.990906" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.19149879"/>
+        <path class="Daytona Beach (FL) Charlotte (NC)" d="M 120.979065,67.181702 C 96.762779,41.710827 98.644653,-32.819904 124.115532,-57.036194" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.001660394"/>
+        <path class="Daytona Beach (FL) Atlanta (GA)" d="M 120.979065,67.181702 C 90.648918,60.344734 55.409157,4.594061 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.893292"/>
+        <path class="Charlotte (NC) Washington (DC) [R.Reagan]" d="M 124.115532,-57.036194 C 121.535934,-86.165001 161.359756,-133.727600 190.488571,-136.307190" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.5818021"/>
+        <path class="Charlotte (NC) Norfolk (VA)" d="M 124.115532,-57.036194 C 133.117432,-80.449318 181.739975,-102.066170 205.153091,-93.064270" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.50199246"/>
+        <path class="Charlotte (NC) Richmond (VA)" d="M 124.115532,-57.036194 C 126.527901,-79.214233 163.413498,-108.862747 185.591537,-106.450378" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.91875136"/>
+        <path class="Charlotte (NC) Louisville (KY)" d="M 124.115532,-57.036194 C 93.775383,-53.060867 42.302181,-92.608093 38.326855,-122.948242" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.0044277175"/>
+        <path class="Charlotte (NC) Dallas/Fort Worth (TX)" d="M 124.115532,-57.036194 C 77.384224,9.310349 -92.232544,38.733200 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="2.2946646"/>
+        <path class="Charlotte (NC) Memphis (TN)" d="M 124.115532,-57.036194 C 93.014435,-24.355654 -2.658015,-21.986490 -35.338554,-53.087585" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.45550144"/>
+        <path class="Charlotte (NC) Nashville (TN)" d="M 124.115532,-57.036194 C 99.365028,-40.328316 37.177467,-52.392258 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.93037415"/>
+        <path class="Charlotte (NC) Fort Lauderdale (FL)" d="M 124.115532,-57.036194 C 163.738312,-22.248138 170.990417,89.368118 136.202362,128.990906" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.4683418"/>
+        <path class="Charlotte (NC) Dallas (TX)" d="M 124.115532,-57.036194 C 78.745277,8.972515 -88.323166,39.930195 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Charlotte (NC) New Orleans (LA)" d="M 124.115532,-57.036194 C 112.954453,-2.461994 14.351543,62.657665 -40.222656,51.496582" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.8927385"/>
+        <path class="Charlotte (NC) Houston (TX) [G.Bush]" d="M 124.115532,-57.036194 C 95.237671,15.270748 -56.539536,80.414368 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.536418"/>
+        <path class="Charlotte (NC) West Palm Beach/Palm Beach (FL)" d="M 124.115532,-57.036194 C 161.557312,-24.832571 169.414551,79.635521 137.210922,117.077301" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.96524245"/>
+        <path class="Charlotte (NC) Tampa (FL)" d="M 124.115532,-57.036194 C 147.925735,-21.399975 130.186722,67.769661 94.550499,91.579865" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.730684"/>
+        <path class="Charlotte (NC) Raleigh/Durham (NC)" d="M 124.115532,-57.036194 C 128.487579,-67.011658 150.008865,-75.416786 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.4943546"/>
+        <path class="Charlotte (NC) Jacksonville (FL)" d="M 124.115532,-57.036194 C 140.845276,-34.408562 131.998444,24.627497 109.370811,41.357239" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.1074828"/>
+        <path class="Charlotte (NC) Atlanta (GA)" d="M 124.115532,-57.036194 C 118.001678,-38.402290 80.880035,-19.622223 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="3.7890193"/>
+        <path class="Charlotte (NC) Washington (DC) [W.Dulles]" d="M 124.115532,-57.036194 C 119.625809,-85.168762 155.090073,-134.102203 183.222641,-138.591919" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.0"/>
+        <path class="Charlotte (NC) Orlando (FL)" d="M 124.115532,-57.036194 C 150.442444,-27.463274 145.573425,56.386471 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.8513393"/>
+        <path class="Charlotte (NC) Greensboro/High Point (NC)" d="M 124.115532,-57.036194 C 123.515518,-63.974873 133.023514,-75.282921 139.962189,-75.882935" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.11235333"/>
+        <path class="Charlotte (NC) Miami (FL)" d="M 124.115532,-57.036194 C 164.342560,-20.691347 170.165817,94.166443 133.820969,134.393463" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.7196147"/>
+        <path class="Charlotte (NC) Wilmington (NC)" d="M 124.115532,-57.036194 C 138.432388,-63.193901 169.144241,-50.955170 175.301956,-36.638306" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.35366392"/>
+        <path class="Charlotte (NC) San Antonio (TX)" d="M 124.115532,-57.036194 C 86.152176,28.047718 -98.418709,98.728546 -183.502625,60.765198" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.36030552"/>
+        <path class="Abilene (TX) Dallas/Fort Worth (TX)" d="M -205.577469,1.354675 C -198.048355,-9.915558 -169.849319,-15.527227 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.28116006"/>
+        <path class="El Paso (TX) Dallas/Fort Worth (TX)" d="M -321.629486,14.614746 C -293.541992,-22.517906 -195.711731,-36.085617 -158.579086,-7.998108" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.78813374"/>
+        <path class="El Paso (TX) Atlanta (GA)" d="M -321.629486,14.614746 C -252.924530,-70.230545 -22.599161,-94.441040 62.246128,-25.736084" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.48704892"/>
+        <path class="El Paso (TX) Houston (TX) [G.Bush]" d="M -321.629486,14.614746 C -275.688538,-16.557503 -160.018723,5.595551 -128.846481,51.536499" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.6049369"/>
+        <path class="El Paso (TX) Dallas (TX)" d="M -321.629486,14.614746 C -292.180908,-22.855738 -191.802353,-34.888622 -154.331879,-5.440063" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.76544166"/>
+        <path class="El Paso (TX) San Antonio (TX)" d="M -321.629486,14.614746 C -284.774017,-3.780535 -201.897903,23.909735 -183.502625,60.765198" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.47597963"/>
+        <path class="Jacksonville/Camp Lejeune (NC) Atlanta (GA)" d="M 180.528336,-48.563110 C 161.437286,-20.341261 90.467979,-6.645046 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.7045606"/>
+        <path class="Texarkana (AR) Dallas/Fort Worth (TX)" d="M -105.413101,-19.614685 C -113.722977,-6.658174 -145.622574,0.311773 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.5091875"/>
+        <path class="Monroe (LA) Dallas/Fort Worth (TX)" d="M -71.371063,0.084106 C -90.429108,15.909268 -142.753922,11.059939 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.5617667"/>
+        <path class="Monroe (LA) Houston (TX) [G.Bush]" d="M -71.371063,0.084106 C -72.575668,21.869669 -107.060913,52.741104 -128.846481,51.536499" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.43280938"/>
+        <path class="Monroe (LA) Atlanta (GA)" d="M -71.371063,0.084106 C -49.811665,-31.803370 30.358652,-47.295486 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.7239318"/>
+        <path class="Valparaiso (FL) Dallas/Fort Worth (TX)" d="M 24.514996,41.329590 C -21.969360,68.082870 -131.825806,38.486248 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.63205665"/>
+        <path class="Valparaiso (FL) Houston (TX) [G.Bush]" d="M 24.514996,41.329590 C -4.115919,74.043266 -96.132805,80.167412 -128.846481,51.536499" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.4903697"/>
+        <path class="Valparaiso (FL) Atlanta (GA)" d="M 24.514996,41.329590 C 18.648087,20.370228 41.286766,-19.869175 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.3305291"/>
+        <path class="New Bern/Morehead/Beaufort (NC) Atlanta (GA)" d="M 190.443832,-53.775452 C 170.412170,-22.528036 93.493546,-5.704414 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.3868718"/>
+        <path class="Corpus Christi (TX) Dallas/Fort Worth (TX)" d="M -164.793259,95.191528 C -184.188354,73.310768 -180.459839,11.396986 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.08910781"/>
+        <path class="Corpus Christi (TX) Houston (TX) [G.Bush]" d="M -164.793259,95.191528 C -166.334900,79.271172 -144.766846,53.078152 -128.846481,51.536499" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.9165375"/>
+        <path class="Fayetteville (NC) Atlanta (GA)" d="M 158.255386,-51.984436 C 144.303192,-27.532911 86.697655,-11.783901 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.9674563"/>
+        <path class="Midland/Odessa (TX) Dallas/Fort Worth (TX)" d="M -248.715118,11.811340 C -234.649796,-10.177757 -180.568176,-22.063427 -158.579086,-7.998108" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.21087004"/>
+        <path class="Midland/Odessa (TX) Houston (TX) [G.Bush]" d="M -248.715118,11.811340 C -216.796356,-4.217356 -144.875168,19.617741 -128.846481,51.536499" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.78702676"/>
+        <path class="Midland/Odessa (TX) Dallas (TX)" d="M -248.715118,11.811340 C -233.288757,-10.515589 -176.658813,-20.866430 -154.331879,-5.440063" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.9248395"/>
+        <path class="Waco (TX) Dallas/Fort Worth (TX)" d="M -161.761078,18.649902 C -166.454285,12.683902 -164.545090,-3.304904 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.8357317"/>
+        <path class="Miami (FL) Nashville (TN)" d="M 133.820969,134.393463 C 68.843452,114.756500 0.832626,-12.165241 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.05534647"/>
+        <path class="Miami (FL) Pensacola (FL)" d="M 133.820969,134.393463 C 91.211418,139.952621 18.958357,84.377014 13.399204,41.767456" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.0"/>
+        <path class="Miami (FL) Dallas/Fort Worth (TX)" d="M 133.820969,134.393463 C 46.862640,164.395157 -128.577393,78.960220 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="2.254815"/>
+        <path class="Miami (FL) New Orleans (LA)" d="M 133.820969,134.393463 C 82.432861,152.622818 -21.993305,102.884689 -40.222656,51.496582" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.45882222"/>
+        <path class="Miami (FL) Greer (SC)" d="M 133.820969,134.393463 C 90.209763,104.257507 69.996887,-6.363223 100.132835,-49.974426" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.0"/>
+        <path class="Miami (FL) Raleigh/Durham (NC)" d="M 133.820969,134.393463 C 97.965988,88.073143 113.664017,-35.189770 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.5933142"/>
+        <path class="Miami (FL) Tulsa (OK)" d="M 133.820969,134.393463 C 36.914379,146.373199 -126.415131,18.982944 -138.394882,-77.923645" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.0282267"/>
+        <path class="Miami (FL) Richmond (VA)" d="M 133.820969,134.393463 C 96.006310,75.870575 127.068657,-68.635727 185.591537,-106.450378" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.024352446"/>
+        <path class="Miami (FL) Washington (DC) [R.Reagan]" d="M 133.820969,134.393463 C 91.014359,68.919807 125.014908,-93.500572 190.488571,-136.307190" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.8142573"/>
+        <path class="Miami (FL) Key West (FL)" d="M 133.820969,134.393463 C 133.467056,144.304535 118.069572,158.640259 108.158501,158.286346" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.064755365"/>
+        <path class="Miami (FL) Houston (TX) [G.Bush]" d="M 133.820969,134.393463 C 64.716080,170.355560 -92.884384,120.641388 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.6913881"/>
+        <path class="Miami (FL) Oklahoma City (OK)" d="M 133.820969,134.393463 C 34.389542,155.833130 -146.917114,38.845490 -168.356781,-60.585938" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="5.534647E-4"/>
+        <path class="Miami (FL) Gainesville (FL)" d="M 133.820969,134.393463 C 111.498657,126.297546 90.159081,80.670212 98.254997,58.347900" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.061434582"/>
+        <path class="Miami (FL) Birmingham (AL)" d="M 133.820969,134.393463 C 80.003082,125.724319 12.279985,31.993786 20.949131,-21.824097" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.04925836"/>
+        <path class="Miami (FL) Jacksonville (FL)" d="M 133.820969,134.393463 C 110.323692,120.676247 95.653595,64.854515 109.370811,41.357239" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.06752269"/>
+        <path class="Miami (FL) Atlanta (GA)" d="M 133.820969,134.393463 C 87.480087,116.682526 44.535183,20.604797 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="3.1674783"/>
+        <path class="Miami (FL) Washington (DC) [W.Dulles]" d="M 133.820969,134.393463 C 89.104233,69.916054 118.745224,-93.875175 183.222641,-138.591919" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.3636263"/>
+        <path class="Miami (FL) Orlando (FL)" d="M 133.820969,134.393463 C 119.920868,127.621544 109.228592,96.613487 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.9946867"/>
+        <path class="Miami (FL) Tampa (FL)" d="M 133.820969,134.393463 C 117.404152,133.684830 93.841873,107.996681 94.550499,91.579865" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.1777729"/>
+        <path class="Miami (FL) San Antonio (TX)" d="M 133.820969,134.393463 C 55.630592,183.132538 -134.763550,138.955582 -183.502625,60.765198" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.1676998"/>
+        <path class="Savannah (GA) Atlanta (GA)" d="M 117.854591,7.947144 C 99.996246,12.332191 66.631172,-7.877747 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.0151649"/>
+        <path class="Savannah (GA) Houston (TX) [G.Bush]" d="M 117.854591,7.947144 C 77.232246,66.005234 -70.788391,92.158844 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.22858092"/>
+        <path class="Fort Lauderdale (FL) Washington (DC) [R.Reagan]" d="M 136.202362,128.990906 C 93.999985,65.074051 126.571716,-94.104813 190.488571,-136.307190" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.5701793"/>
+        <path class="Fort Lauderdale (FL) Nashville (TN)" d="M 136.202362,128.990906 C 71.829071,110.910728 2.389408,-12.769474 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.64423287"/>
+        <path class="Fort Lauderdale (FL) Jacksonville (FL)" d="M 136.202362,128.990906 C 113.309326,116.830482 97.210388,64.250282 109.370811,41.357239" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.60161614"/>
+        <path class="Fort Lauderdale (FL) Dallas/Fort Worth (TX)" d="M 136.202362,128.990906 C 49.848274,160.549393 -127.020607,78.355980 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.5535754"/>
+        <path class="Fort Lauderdale (FL) Raleigh/Durham (NC)" d="M 136.202362,128.990906 C 100.951630,84.227386 115.220810,-35.794003 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.36307284"/>
+        <path class="Fort Lauderdale (FL) Dallas (TX)" d="M 136.202362,128.990906 C 51.209328,160.211563 -123.111229,79.552979 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.5263449"/>
+        <path class="Fort Lauderdale (FL) Richmond (VA)" d="M 136.202362,128.990906 C 98.991943,72.024811 128.625443,-69.239960 185.591537,-106.450378" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Fort Lauderdale (FL) New Orleans (LA)" d="M 136.202362,128.990906 C 85.418495,148.777039 -20.436516,102.280449 -40.222656,51.496582" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.56951517"/>
+        <path class="Fort Lauderdale (FL) Houston (TX) [G.Bush]" d="M 136.202362,128.990906 C 67.701714,166.509796 -91.327599,120.037148 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.0670799"/>
+        <path class="Fort Lauderdale (FL) Oklahoma City (OK)" d="M 136.202362,128.990906 C 37.375156,151.987366 -145.360321,38.241264 -168.356781,-60.585938" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.0"/>
+        <path class="Fort Lauderdale (FL) Atlanta (GA)" d="M 136.202362,128.990906 C 90.465714,112.836746 46.091976,20.000565 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="4.4708877"/>
+        <path class="Fort Lauderdale (FL) Orlando (FL)" d="M 136.202362,128.990906 C 122.906479,123.775764 110.785370,96.009254 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.40402922"/>
+        <path class="Fort Lauderdale (FL) Tampa (FL)" d="M 136.202362,128.990906 C 120.389778,129.839066 95.398666,107.392448 94.550499,91.579865" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.1916095"/>
+        <path class="Albany (GA) Atlanta (GA)" d="M 65.633423,20.144836 C 55.779778,11.646111 53.747402,-15.882440 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.55678546"/>
+        <path class="Brunswick (GA) Atlanta (GA)" d="M 112.799469,28.027161 C 91.936150,27.385180 61.604149,-4.872766 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.5711756"/>
+        <path class="Greensboro/High Point (NC) Atlanta (GA)" d="M 139.962189,-75.882935 C 134.448349,-50.310349 87.818710,-20.222240 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.6061546"/>
+        <path class="Roanoke (VA) Atlanta (GA)" d="M 139.349197,-102.360168 C 139.253403,-71.614738 92.991554,-25.640285 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.91875136"/>
+        <path class="Charlottesville (VA) Atlanta (GA)" d="M 165.417847,-117.991638 C 163.234619,-78.906181 101.331581,-23.552851 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.57892406"/>
+        <path class="Montgomery (AL) Dallas/Fort Worth (TX)" d="M 28.875668,3.048462 C -10.824598,38.330101 -123.297447,31.702158 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.111799866"/>
+        <path class="Montgomery (AL) Atlanta (GA)" d="M 28.875668,3.048462 C 29.792850,-9.382540 49.815128,-26.653267 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.3393846"/>
+        <path class="Columbia (SC) Dallas/Fort Worth (TX)" d="M 120.769951,-31.027527 C 69.506027,29.448162 -98.103401,43.265812 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.2446314"/>
+        <path class="Columbia (SC) Houston (TX) [G.Bush]" d="M 120.769951,-31.027527 C 87.359467,35.408566 -62.410389,84.946976 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.14500774"/>
+        <path class="Columbia (SC) Atlanta (GA)" d="M 120.769951,-31.027527 C 110.123474,-18.264473 75.009178,-15.089608 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.5762675"/>
+        <path class="Fayetteville (AR) Dallas/Fort Worth (TX)" d="M -110.826157,-79.652222 C -106.045914,-55.770809 -134.697678,-12.778346 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.23411557"/>
+        <path class="Fayetteville (AR) Atlanta (GA)" d="M -110.826157,-79.652222 C -65.428474,-103.483452 38.414902,-71.133766 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.0388532"/>
+        <path class="Fayetteville (AR) Houston (TX) [G.Bush]" d="M -110.826157,-79.652222 C -88.192474,-49.810410 -99.004669,28.902819 -128.846481,51.536499" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.50254595"/>
+        <path class="Dothan (AL) Atlanta (GA)" d="M 43.667969,24.522278 C 37.331932,10.754974 48.478821,-19.400043 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.7632278"/>
+        <path class="Washington (DC) [R.Reagan] Nashville (TN)" d="M 190.488571,-136.307190 C 168.317657,-90.470505 66.306274,-54.971848 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.59054685"/>
+        <path class="Washington (DC) [R.Reagan] Dallas/Fort Worth (TX)" d="M 190.488571,-136.307190 C 146.336853,-40.831841 -63.103741,36.153606 -158.579086,-7.998108" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.8098295"/>
+        <path class="Washington (DC) [R.Reagan] Baton Rouge (LA)" d="M 190.488571,-136.307190 C 176.947830,-51.410759 29.292042,55.622780 -55.604389,42.082031" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.0"/>
+        <path class="Washington (DC) [R.Reagan] Dallas (TX)" d="M 190.488571,-136.307190 C 147.697906,-41.169678 -59.194366,37.350601 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.3382776"/>
+        <path class="Washington (DC) [R.Reagan] New Orleans (LA)" d="M 190.488571,-136.307190 C 181.907074,-52.604191 43.480343,60.078075 -40.222656,51.496582" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.41454506"/>
+        <path class="Washington (DC) [R.Reagan] Houston (TX) [G.Bush]" d="M 190.488571,-136.307190 C 164.190292,-34.871437 -27.410732,77.834778 -128.846481,51.536499" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.8872039"/>
+        <path class="Washington (DC) [R.Reagan] Jacksonville (FL)" d="M 190.488571,-136.307190 C 209.797897,-84.550758 161.127243,22.047903 109.370811,41.357239" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.40513614"/>
+        <path class="Washington (DC) [R.Reagan] Atlanta (GA)" d="M 190.488571,-136.307190 C 186.954315,-88.544479 110.008842,-22.201813 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="3.5930927"/>
+        <path class="Washington (DC) [R.Reagan] Orlando (FL)" d="M 190.488571,-136.307190 C 219.395081,-77.605461 174.702240,53.806877 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.2537081"/>
+        <path class="Washington (DC) [R.Reagan] West Palm Beach/Palm Beach (FL)" d="M 190.488571,-136.307190 C 230.509933,-74.974762 198.543350,77.055939 137.210922,117.077301" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.5396281"/>
+        <path class="Washington (DC) [R.Reagan] Tampa (FL)" d="M 190.488571,-136.307190 C 216.878372,-71.542168 159.315521,65.190063 94.550499,91.579865" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.4462032"/>
+        <path class="Houston (TX) [G.Bush] Lubbock (TX)" d="M -128.846481,51.536499 C -166.546051,59.105148 -234.448334,13.908785 -242.016983,-23.790771" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.6148993"/>
+        <path class="Houston (TX) [G.Bush] Harlingen/San Benito (TX)" d="M -128.846481,51.536499 C -122.053802,74.560966 -146.401505,119.286674 -169.425964,126.079346" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.55678546"/>
+        <path class="Houston (TX) [G.Bush] Norfolk (VA)" d="M -128.846481,51.536499 C -90.966721,-44.183567 109.433029,-130.944031 205.153091,-93.064270" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.18762453"/>
+        <path class="Houston (TX) [G.Bush] Nashville (TN)" d="M -128.846481,51.536499 C -124.719116,-4.062567 -35.129475,-81.270126 20.469591,-77.142761" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.5744963"/>
+        <path class="Houston (TX) [G.Bush] Tyler (TX)" d="M -128.846481,51.536499 C -138.733597,42.157959 -139.496445,13.259485 -130.117905,3.372375" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.15497011"/>
+        <path class="Houston (TX) [G.Bush] New Orleans (LA)" d="M -128.846481,51.536499 C -111.129700,33.803749 -57.955406,33.779800 -40.222656,51.496582" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="1.6166704"/>
+        <path class="Houston (TX) [G.Bush] Mobile (AL)" d="M -128.846481,51.536499 C -106.883644,23.983355 -32.609676,15.597895 -5.056534,37.560730" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.89605933"/>
+        <path class="Houston (TX) [G.Bush] Oklahoma City (OK)" d="M -128.846481,51.536499 C -159.173019,37.014072 -182.879211,-30.259388 -168.356781,-60.585938" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.58722603"/>
+        <path class="Houston (TX) [G.Bush] Huntsville (AL)" d="M -128.846481,51.536499 C -118.178833,2.436451 -28.527277,-55.212147 20.572771,-44.544495" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.48870933"/>
+        <path class="Houston (TX) [G.Bush] Washington (DC) [W.Dulles]" d="M -128.846481,51.536499 C -104.458344,-48.903008 82.783142,-162.980057 183.222641,-138.591919" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.6707992"/>
+        <path class="Houston (TX) [G.Bush] Mission/McAllen/Edinburg (TX)" d="M -128.846481,51.536499 C -123.903450,76.746712 -154.304230,121.976585 -179.514450,126.919617" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.65308833"/>
+        <path class="Houston (TX) [G.Bush] Tampa (FL)" d="M -128.846481,51.536499 C -76.158409,14.865776 57.879776,38.891792 94.550499,91.579865" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.0593314"/>
+        <path class="Houston (TX) [G.Bush] Killeen (TX)" d="M -128.846481,51.536499 C -141.858978,55.866302 -167.872421,42.842270 -172.202240,29.829773" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.4577153"/>
+        <path class="Houston (TX) [G.Bush] Louisville (KY)" d="M -128.846481,51.536499 C -130.308777,-16.795116 -30.004761,-121.485962 38.326855,-122.948242" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.18208988"/>
+        <path class="Houston (TX) [G.Bush] Dallas/Fort Worth (TX)" d="M -128.846481,51.536499 C -146.699921,45.576099 -164.539490,9.855335 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.9847244"/>
+        <path class="Houston (TX) [G.Bush] Memphis (TN)" d="M -128.846481,51.536499 C -131.069717,11.910097 -74.964951,-50.864357 -35.338554,-53.087585" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.6298428"/>
+        <path class="Houston (TX) [G.Bush] Baton Rouge (LA)" d="M -128.846481,51.536499 C -116.088951,34.997189 -72.143700,29.324505 -55.604389,42.082031" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.1584016"/>
+        <path class="Houston (TX) [G.Bush] Gulfport/Biloxi (MS)" d="M -128.846481,51.536499 C -108.690643,27.962572 -43.095997,22.835436 -19.522070,42.991272" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.56840825"/>
+        <path class="Houston (TX) [G.Bush] Jacksonville (FL)" d="M -128.846481,51.536499 C -83.238876,1.857193 59.691505,-4.250366 109.370811,41.357239" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.2961036"/>
+        <path class="Houston (TX) [G.Bush] Laredo (TX)" d="M -128.846481,51.536499 C -133.514954,75.795395 -176.906036,105.181023 -201.164932,100.512543" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.54626966"/>
+        <path class="Houston (TX) [G.Bush] Amarillo (TX)" d="M -128.846481,51.536499 C -173.209396,52.513847 -241.219788,-12.564508 -242.197144,-56.927429" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.5202568"/>
+        <path class="Houston (TX) [G.Bush] Atlanta (GA)" d="M -128.846481,51.536499 C -106.082474,-2.136539 8.573090,-48.500088 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="2.409232"/>
+        <path class="Houston (TX) [G.Bush] Knoxville (TN)" d="M -128.846481,51.536499 C -113.470367,-12.275724 5.312128,-84.929886 69.124352,-69.553772" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.50863403"/>
+        <path class="Houston (TX) [G.Bush] Lake Charles (LA)" d="M -128.846481,51.536499 C -121.996902,43.615952 -99.841721,42.009491 -91.921173,48.859070" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.52081025"/>
+        <path class="Houston (TX) [G.Bush] Orlando (FL)" d="M -128.846481,51.536499 C -73.641708,8.802475 73.266487,27.508606 116.000511,82.713379" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.6404693"/>
+        <path class="Houston (TX) [G.Bush] Jackson/Vicksburg (MS)" d="M -128.846481,51.536499 C -119.956490,23.702246 -64.870117,-4.714149 -37.035866,4.175842" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.9624751"/>
+        <path class="Houston (TX) [G.Bush] Pensacola (FL)" d="M -128.846481,51.536499 C -102.351158,21.133554 -17.003740,15.272127 13.399204,41.767456" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.8556564"/>
+        <path class="Houston (TX) [G.Bush] College Station/Bryan (TX)" d="M -128.846481,51.536499 C -134.907516,52.440193 -145.354630,44.704170 -146.258316,38.643127" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.40513614"/>
+        <path class="Houston (TX) [G.Bush] Lafayette (LA)" d="M -128.846481,51.536499 C -118.056076,38.984894 -83.043068,36.343086 -70.491463,47.133484" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.8700465"/>
+        <path class="Houston (TX) [G.Bush] Greer (SC)" d="M -128.846481,51.536499 C -103.352798,-14.561552 34.034782,-75.468102 100.132835,-49.974426" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.2523799"/>
+        <path class="Houston (TX) [G.Bush] Tulsa (OK)" d="M -128.846481,51.536499 C -156.648193,27.554150 -162.377228,-50.121937 -138.394882,-77.923645" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.92871374"/>
+        <path class="Houston (TX) [G.Bush] Lexington (KY)" d="M -128.846481,51.536499 C -136.880127,-6.120190 -62.445534,-104.655655 -4.788845,-112.689293" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.18430375"/>
+        <path class="Houston (TX) [G.Bush] Richmond (VA)" d="M -128.846481,51.536499 C -97.556259,-42.948486 91.106552,-137.740601 185.591537,-106.450378" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.21031658"/>
+        <path class="Houston (TX) [G.Bush] Little Rock (AR)" d="M -128.846481,51.536499 C -137.876633,21.232962 -105.966560,-37.767578 -75.663025,-46.797729" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.8562099"/>
+        <path class="Houston (TX) [G.Bush] West Palm Beach/Palm Beach (FL)" d="M -128.846481,51.536499 C -62.526833,11.433178 97.107597,50.757656 137.210922,117.077301" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.059774186"/>
+        <path class="Houston (TX) [G.Bush] Shreveport (LA)" d="M -128.846481,51.536499 C -133.642288,36.211971 -117.849228,6.031469 -102.524696,1.235657" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.72116446"/>
+        <path class="Houston (TX) [G.Bush] Birmingham (AL)" d="M -128.846481,51.536499 C -113.559479,6.905256 -23.682114,-37.111099 20.949131,-21.824097" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.924286"/>
+        <path class="Houston (TX) [G.Bush] Raleigh/Durham (NC)" d="M -128.846481,51.536499 C -95.596558,-30.745914 77.701920,-104.294662 159.984329,-71.044739" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.094088994"/>
+        <path class="Houston (TX) [G.Bush] Brownsville (TX)" d="M -128.846481,51.536499 C -120.228043,75.239471 -142.854858,123.721588 -166.557831,132.340027" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.78868717"/>
+        <path class="Houston (TX) [G.Bush] San Antonio (TX)" d="M -128.846481,51.536499 C -137.931976,64.313469 -170.725662,69.850685 -183.502625,60.765198" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="1.2032323"/>
+        <path class="Tulsa (OK) Dallas/Fort Worth (TX)" d="M -138.394882,-77.923645 C -128.446609,-59.901695 -140.557144,-17.946375 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.3294222"/>
+        <path class="Tulsa (OK) Atlanta (GA)" d="M -138.394882,-77.923645 C -87.829163,-107.614334 32.555439,-76.301796 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.9010405"/>
+        <path class="Tulsa (OK) Dallas (TX)" d="M -138.394882,-77.923645 C -127.085556,-60.239529 -136.647766,-16.749380 -154.331879,-5.440063" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.55623204"/>
+        <path class="Mobile (AL) Dallas/Fort Worth (TX)" d="M -5.056534,37.560730 C -44.872814,59.153473 -136.986343,31.818172 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.2855878"/>
+        <path class="Mobile (AL) Atlanta (GA)" d="M -5.056534,37.560730 C -4.255364,11.440835 36.126232,-26.537254 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.3781271"/>
+        <path class="Oklahoma City (OK) Dallas/Fort Worth (TX)" d="M -168.356781,-60.585938 C -155.883682,-52.023911 -150.017059,-20.471214 -158.579086,-7.998108" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.0676334"/>
+        <path class="Oklahoma City (OK) Dallas (TX)" d="M -168.356781,-60.585938 C -154.522629,-52.361744 -146.107681,-19.274220 -154.331879,-5.440063" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.55235773"/>
+        <path class="Oklahoma City (OK) Atlanta (GA)" d="M -168.356781,-60.585938 C -115.266228,-99.736549 23.095516,-78.826637 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.3045163"/>
+        <path class="Sarasota/Bradenton (FL) Atlanta (GA)" d="M 94.264786,103.329559 C 62.047924,83.920166 42.836727,6.480777 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.183861"/>
+        <path class="Dallas/Fort Worth (TX) Chattanooga (TN)" d="M -158.579086,-7.998108 C -126.245071,-58.313663 -2.270720,-85.285980 48.044834,-52.951965" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.25791454"/>
+        <path class="Dallas/Fort Worth (TX) Lubbock (TX)" d="M -158.579086,-7.998108 C -178.425201,5.530937 -228.487946,-3.944660 -242.016983,-23.790771" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.24795218"/>
+        <path class="Dallas/Fort Worth (TX) Norfolk (VA)" d="M -158.579086,-7.998108 C -102.845886,-97.757782 115.393417,-148.797485 205.153091,-93.064270" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.38465795"/>
+        <path class="Dallas/Fort Worth (TX) Tyler (TX)" d="M -158.579086,-7.998108 C -150.612762,-11.416248 -133.536041,-4.593957 -130.117905,3.372375" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.28337392"/>
+        <path class="Dallas/Fort Worth (TX) San Angelo (TX)" d="M -158.579086,-7.998108 C -164.308212,10.447910 -200.570923,29.523251 -219.016937,23.794128" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.61213195"/>
+        <path class="Dallas/Fort Worth (TX) New Orleans (LA)" d="M -158.579086,-7.998108 C -123.008865,-19.770454 -51.995007,15.926359 -40.222656,51.496582" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="1.5735002"/>
+        <path class="Dallas/Fort Worth (TX) Huntsville (AL)" d="M -158.579086,-7.998108 C -130.057999,-51.137756 -22.566879,-73.065590 20.572771,-44.544495" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.080805846"/>
+        <path class="Dallas/Fort Worth (TX) Washington (DC) [W.Dulles]" d="M -158.579086,-7.998108 C -116.337509,-102.477219 88.743530,-180.833496 183.222641,-138.591919" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.7693159"/>
+        <path class="Dallas/Fort Worth (TX) Mission/McAllen/Edinburg (TX)" d="M -158.579086,-7.998108 C -135.782608,23.172512 -148.343826,104.123138 -179.514450,126.919617" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.5855656"/>
+        <path class="Dallas/Fort Worth (TX) Tampa (FL)" d="M -158.579086,-7.998108 C -88.037575,-38.708435 63.840172,21.038349 94.550499,91.579865" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.4356874"/>
+        <path class="Dallas/Fort Worth (TX) Meridian (MS)" d="M -158.579086,-7.998108 C -127.293037,-34.570980 -40.504646,-27.501204 -13.931775,3.784851" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Dallas/Fort Worth (TX) Killeen (TX)" d="M -158.579086,-7.998108 C -153.738129,2.292099 -161.912033,24.988827 -172.202240,29.829773" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.52247065"/>
+        <path class="Dallas/Fort Worth (TX) Louisville (KY)" d="M -158.579086,-7.998108 C -142.187912,-70.369324 -24.044363,-139.339401 38.326855,-122.948242" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.17821562"/>
+        <path class="Dallas/Fort Worth (TX) Memphis (TN)" d="M -158.579086,-7.998108 C -142.948883,-41.664108 -69.004562,-68.717796 -35.338554,-53.087585" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.73168033"/>
+        <path class="Dallas/Fort Worth (TX) Nashville (TN)" d="M -158.579086,-7.998108 C -136.598282,-57.636772 -29.169075,-99.123566 20.469591,-77.142761" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.5519149"/>
+        <path class="Dallas/Fort Worth (TX) Baton Rouge (LA)" d="M -158.579086,-7.998108 C -127.968117,-18.577019 -66.183296,11.471062 -55.604389,42.082031" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.2464025"/>
+        <path class="Dallas/Fort Worth (TX) Raleigh/Durham (NC)" d="M -158.579086,-7.998108 C -107.475739,-84.320114 83.662323,-122.148094 159.984329,-71.044739" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.9951295"/>
+        <path class="Dallas/Fort Worth (TX) Gulfport/Biloxi (MS)" d="M -158.579086,-7.998108 C -120.569809,-25.611637 -37.135597,4.981991 -19.522070,42.991272" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.4134381"/>
+        <path class="Dallas/Fort Worth (TX) Jacksonville (FL)" d="M -158.579086,-7.998108 C -95.118034,-51.717014 65.651901,-22.103809 109.370811,41.357239" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.63205665"/>
+        <path class="Dallas/Fort Worth (TX) Wichita Falls (TX)" d="M -158.579086,-7.998108 C -167.890945,-7.165744 -183.107269,-19.884983 -183.939636,-29.196838" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.48538852"/>
+        <path class="Dallas/Fort Worth (TX) Laredo (TX)" d="M -158.579086,-7.998108 C -145.394119,22.221191 -170.945633,87.327576 -201.164932,100.512543" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.65640914"/>
+        <path class="Dallas/Fort Worth (TX) Amarillo (TX)" d="M -158.579086,-7.998108 C -185.088562,-1.060360 -235.259384,-30.417952 -242.197144,-56.927429" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.08246624"/>
+        <path class="Dallas/Fort Worth (TX) Atlanta (GA)" d="M -158.579086,-7.998108 C -117.961639,-55.710747 14.533490,-66.353531 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="3.9533982"/>
+        <path class="Dallas/Fort Worth (TX) Knoxville (TN)" d="M -158.579086,-7.998108 C -125.349541,-65.849922 11.272535,-102.783325 69.124352,-69.553772" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.97409785"/>
+        <path class="Dallas/Fort Worth (TX) Lake Charles (LA)" d="M -158.579086,-7.998108 C -133.876068,-9.958255 -93.881317,24.156050 -91.921173,48.859070" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.22304627"/>
+        <path class="Dallas/Fort Worth (TX) Orlando (FL)" d="M -158.579086,-7.998108 C -85.520866,-44.771729 79.226891,9.655163 116.000511,82.713379" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="2.2210538"/>
+        <path class="Dallas/Fort Worth (TX) Longview (TX)" d="M -158.579086,-7.998108 C -148.353699,-13.977694 -124.046242,-7.608992 -118.066658,2.616394" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.21972547"/>
+        <path class="Dallas/Fort Worth (TX) West Palm Beach/Palm Beach (FL)" d="M -158.579086,-7.998108 C -74.405998,-42.141029 103.068001,32.904217 137.210922,117.077301" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.44166481"/>
+        <path class="Dallas/Fort Worth (TX) Jackson/Vicksburg (MS)" d="M -158.579086,-7.998108 C -131.835663,-29.871962 -58.909718,-22.567591 -37.035866,4.175842" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.49590436"/>
+        <path class="Dallas/Fort Worth (TX) Pensacola (FL)" d="M -158.579086,-7.998108 C -114.230316,-32.440655 -11.043343,-2.581318 13.399204,41.767456" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.32765108"/>
+        <path class="Dallas/Fort Worth (TX) Beaumont/Port Arthur (TX)" d="M -158.579086,-7.998108 C -135.400330,-6.459898 -102.939507,30.615555 -104.477715,53.794312" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.37026787"/>
+        <path class="Dallas/Fort Worth (TX) College Station/Bryan (TX)" d="M -158.579086,-7.998108 C -146.786682,-1.134015 -139.394226,26.850727 -146.258316,38.643127" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.3182422"/>
+        <path class="Dallas/Fort Worth (TX) Lafayette (LA)" d="M -158.579086,-7.998108 C -129.935242,-14.589314 -77.082664,18.489641 -70.491463,47.133484" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.23300864"/>
+        <path class="Dallas/Fort Worth (TX) Greer (SC)" d="M -158.579086,-7.998108 C -115.231964,-68.135757 39.995190,-93.321548 100.132835,-49.974426" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.12618995"/>
+        <path class="Dallas/Fort Worth (TX) Richmond (VA)" d="M -158.579086,-7.998108 C -109.435410,-96.522690 97.066956,-155.594055 185.591537,-106.450378" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.49313703"/>
+        <path class="Dallas/Fort Worth (TX) Little Rock (AR)" d="M -158.579086,-7.998108 C -149.755798,-32.341244 -100.006165,-55.621017 -75.663025,-46.797729" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.25293335"/>
+        <path class="Dallas/Fort Worth (TX) Fort Smith (AR)" d="M -158.579086,-7.998108 C -159.520187,-27.603729 -131.523422,-58.423820 -111.917809,-59.364929" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.33982733"/>
+        <path class="Dallas/Fort Worth (TX) Shreveport (LA)" d="M -158.579086,-7.998108 C -145.521454,-17.362232 -111.888817,-11.821975 -102.524696,1.235657" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.2801639"/>
+        <path class="Dallas/Fort Worth (TX) Birmingham (AL)" d="M -158.579086,-7.998108 C -125.438644,-46.668949 -17.721710,-54.964542 20.949131,-21.824097" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.06530883"/>
+        <path class="Dallas/Fort Worth (TX) Brownsville (TX)" d="M -158.579086,-7.998108 C -132.107208,21.665268 -136.894455,105.868149 -166.557831,132.340027" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.47597963"/>
+        <path class="Dallas/Fort Worth (TX) San Antonio (TX)" d="M -158.579086,-7.998108 C -149.811142,10.739262 -164.765259,51.997242 -183.502625,60.765198" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="2.5426168"/>
+        <path class="West Palm Beach/Palm Beach (FL) Atlanta (GA)" d="M 137.210922,117.077301 C 93.655289,103.507576 48.676411,17.819555 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.5741642"/>
+        <path class="Washington (DC) [W.Dulles] Norfolk (VA)" d="M 183.222641,-138.591919 C 196.714264,-133.872482 209.872528,-106.555893 205.153091,-93.064270" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.021585124"/>
+        <path class="Washington (DC) [W.Dulles] Louisville (KY)" d="M 183.222641,-138.591919 C 157.372223,-106.484024 70.434753,-97.097824 38.326855,-122.948242" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.0"/>
+        <path class="Washington (DC) [W.Dulles] Raleigh/Durham (NC)" d="M 183.222641,-138.591919 C 192.084412,-120.434822 178.141418,-79.906517 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.36750054"/>
+        <path class="Washington (DC) [W.Dulles] New Orleans (LA)" d="M 183.222641,-138.591919 C 176.551285,-55.885159 42.484104,58.167942 -40.222656,51.496582" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.13836618"/>
+        <path class="Washington (DC) [W.Dulles] Tampa (FL)" d="M 183.222641,-138.591919 C 211.522583,-74.823135 158.319275,63.279938 94.550499,91.579865" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.5822449"/>
+        <path class="Washington (DC) [W.Dulles] Atlanta (GA)" d="M 183.222641,-138.591919 C 181.598511,-91.825447 109.012596,-24.111948 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.692495"/>
+        <path class="Washington (DC) [W.Dulles] Orlando (FL)" d="M 183.222641,-138.591919 C 214.039276,-80.886429 173.705994,51.896744 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.0017711"/>
+        <path class="Columbus (GA) Atlanta (GA)" d="M 51.778915,1.101501 C 48.504841,-6.359458 54.785172,-22.462009 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.6851893"/>
+        <path class="Tampa (FL) Norfolk (VA)" d="M 94.550499,91.579865 C 79.742195,32.530518 146.103760,-78.255966 205.153091,-93.064270" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.0044277175"/>
+        <path class="Tampa (FL) Nashville (TN)" d="M 94.550499,91.579865 C 45.989788,72.651520 1.541248,-28.582054 20.469591,-77.142761" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.75658625"/>
+        <path class="Tampa (FL) Louisville (KY)" d="M 94.550499,91.579865 C 40.400146,59.918968 6.665958,-68.797890 38.326855,-122.948242" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.22802745"/>
+        <path class="Tampa (FL) New Orleans (LA)" d="M 94.550499,91.579865 C 59.579208,110.517845 -21.284679,86.467873 -40.222656,51.496582" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.5844587"/>
+        <path class="Tampa (FL) Memphis (TN)" d="M 94.550499,91.579865 C 39.639194,88.624184 -38.294235,1.823717 -35.338554,-53.087585" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Tampa (FL) Dallas (TX)" d="M 94.550499,91.579865 C 25.370035,121.952362 -123.959389,63.740402 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.41177773"/>
+        <path class="Tampa (FL) Birmingham (AL)" d="M 94.550499,91.579865 C 57.149429,83.619347 12.988611,15.576968 20.949131,-21.824097" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.37414214"/>
+        <path class="Tampa (FL) Raleigh/Durham (NC)" d="M 94.550499,91.579865 C 75.112350,45.968178 114.372650,-51.606583 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.45716184"/>
+        <path class="Tampa (FL) Atlanta (GA)" d="M 94.550499,91.579865 C 64.626434,74.577553 45.243813,4.187981 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="4.3485723"/>
+        <path class="Tampa (FL) San Antonio (TX)" d="M 94.550499,91.579865 C 32.776939,141.027557 -134.054932,122.538757 -183.502625,60.765198" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.19703344"/>
+        <path class="Wilmington (NC) Atlanta (GA)" d="M 175.301956,-36.638306 C 154.871246,-11.846697 87.037735,-5.305363 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.9823998"/>
+        <path class="Meridian (MS) Hattiesburg/Laurel (MS)" d="M -13.931775,3.784851 C -11.683477,9.786896 -17.314095,22.162407 -23.316139,24.410706" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Chattanooga (TN) Atlanta (GA)" d="M 48.044834,-52.951965 C 56.328270,-50.349049 64.849045,-34.019520 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.7860305"/>
+        <path class="Killeen (TX) Atlanta (GA)" d="M -172.202240,29.829773 C -136.425735,-28.173069 4.243285,-61.512585 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.31768873"/>
+        <path class="Louisville (KY) Atlanta (GA)" d="M 38.326855,-122.948242 C 62.553143,-108.289665 76.904709,-49.962372 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.6631614"/>
+        <path class="Louisville (KY) Orlando (FL)" d="M 38.326855,-122.948242 C 94.993912,-97.350647 141.598099,26.046322 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.24352446"/>
+        <path class="New Orleans (LA) Nashville (TN)" d="M -40.222656,51.496582 C -53.812073,13.630263 -17.396729,-63.553345 20.469591,-77.142761" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.62154084"/>
+        <path class="New Orleans (LA) Dallas (TX)" d="M -40.222656,51.496582 C -74.431831,62.931099 -142.897369,28.769112 -154.331879,-5.440063" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.363737"/>
+        <path class="New Orleans (LA) Atlanta (GA)" d="M -40.222656,51.496582 C -35.175430,15.556292 26.305840,-30.783308 62.246128,-25.736084" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="3.4608147"/>
+        <path class="New Orleans (LA) Orlando (FL)" d="M -40.222656,51.496582 C -2.734662,26.495306 90.999237,45.225380 116.000511,82.713379" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.75160503"/>
+        <path class="New Orleans (LA) San Antonio (TX)" d="M -40.222656,51.496582 C -67.024925,82.006294 -152.992905,87.567467 -183.502625,60.765198" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.19924729"/>
+        <path class="Gulfport/Biloxi (MS) Atlanta (GA)" d="M -19.522070,42.991272 C -16.913902,12.892160 32.147015,-28.344254 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.77540404"/>
+        <path class="Columbus (MS) Atlanta (GA)" d="M -11.051080,-19.504395 C 2.362025,-35.410175 46.340347,-39.149189 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.5639805"/>
+        <path class="Memphis (TN) Atlanta (GA)" d="M -35.338554,-53.087585 C -10.351316,-67.134224 48.199490,-50.723320 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.935466"/>
+        <path class="Memphis (TN) Orlando (FL)" d="M -35.338554,-53.087585 C 22.089451,-56.195206 112.892891,25.285372 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.2335621"/>
+        <path class="Memphis (TN) Dallas (TX)" d="M -35.338554,-53.087585 C -49.607712,-19.759418 -121.003716,8.829096 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.39572725"/>
+        <path class="Nashville (TN) Pensacola (FL)" d="M 20.469591,-77.142761 C 42.837555,-51.946640 38.595325,19.399490 13.399204,41.767456" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.39129955"/>
+        <path class="Nashville (TN) Dallas (TX)" d="M 20.469591,-77.142761 C -0.150162,-27.841930 -105.031044,15.179689 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.57947755"/>
+        <path class="Nashville (TN) Raleigh/Durham (NC)" d="M 20.469591,-77.142761 C 49.592144,-103.826103 133.300980,-100.167290 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.59940225"/>
+        <path class="Nashville (TN) Jacksonville (FL)" d="M 20.469591,-77.142761 C 61.949837,-71.223007 115.290565,-0.123005 109.370811,41.357239" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.5412885"/>
+        <path class="Nashville (TN) Atlanta (GA)" d="M 20.469591,-77.142761 C 39.106232,-75.216736 64.172157,-44.372726 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.1120212"/>
+        <path class="Nashville (TN) Orlando (FL)" d="M 20.469591,-77.142761 C 71.547005,-64.277718 128.865555,31.635965 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.8595307"/>
+        <path class="Nashville (TN) San Antonio (TX)" d="M 20.469591,-77.142761 C 7.256739,-8.766724 -115.126587,73.978050 -183.502625,60.765198" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.3730352"/>
+        <path class="Baton Rouge (LA) Atlanta (GA)" d="M -55.604389,42.082031 C -45.597908,4.948303 25.112402,-35.742565 62.246128,-25.736084" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.5120655"/>
+        <path class="Newport News/Williamsburg (VA) Atlanta (GA)" d="M 200.043442,-98.222351 C 186.981232,-56.165634 104.302841,-12.673874 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.6475537"/>
+        <path class="Norfolk (VA) Atlanta (GA)" d="M 205.153091,-93.064270 C 190.037338,-51.017242 104.293159,-10.620329 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.6421298"/>
+        <path class="Norfolk (VA) Orlando (FL)" d="M 205.153091,-93.064270 C 222.478104,-40.078224 168.986557,65.388367 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.25625414"/>
+        <path class="Huntsville (AL) Atlanta (GA)" d="M 20.572771,-44.544495 C 32.669125,-49.117485 57.673138,-37.832436 62.246128,-25.736084" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.5762675"/>
+        <path class="Amarillo (TX) Dallas (TX)" d="M -242.197144,-56.927429 C -214.326614,-64.203011 -161.607468,-33.310593 -154.331879,-5.440063" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.73610806"/>
+        <path class="Atlanta (GA) Greer (SC)" d="M 62.246128,-25.736084 C 64.975800,-38.161095 87.707825,-52.704102 100.132835,-49.974426" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.8175781"/>
+        <path class="Atlanta (GA) Dallas (TX)" d="M 62.246128,-25.736084 C 22.989731,21.638721 -106.957077,33.816334 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.8740314"/>
+        <path class="Atlanta (GA) Jackson/Vicksburg (MS)" d="M 62.246128,-25.736084 C 48.372116,0.102701 -11.197081,18.049856 -37.035866,4.175842" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.3476865"/>
+        <path class="Atlanta (GA) Knoxville (TN)" d="M 62.246128,-25.736084 C 54.858234,-35.875267 58.985165,-62.165878 69.124352,-69.553772" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.191056"/>
+        <path class="Atlanta (GA) Bristol/Johnson City/Kingsport (TN)" d="M 62.246128,-25.736084 C 57.497108,-44.309036 78.233009,-79.291992 96.805962,-84.041016" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.1705778"/>
+        <path class="Atlanta (GA) Raleigh/Durham (NC)" d="M 62.246128,-25.736084 C 72.732040,-54.345455 131.374954,-81.530655 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="3.001439"/>
+        <path class="Atlanta (GA) Orlando (FL)" d="M 62.246128,-25.736084 C 94.686905,-14.797070 126.939529,50.272610 116.000511,82.713379" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="5.0"/>
+        <path class="Atlanta (GA) Asheville (NC)" d="M 62.246128,-25.736084 C 60.820686,-39.982685 80.052422,-63.490757 94.299019,-64.916199" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.2646668"/>
+        <path class="Atlanta (GA) Melbourne (FL)" d="M 62.246128,-25.736084 C 98.369911,-15.839252 137.710342,53.191677 127.813515,89.315460" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.84292674"/>
+        <path class="Atlanta (GA) Augusta (GA)" d="M 62.246128,-25.736084 C 71.699799,-32.880276 96.596581,-29.416065 103.740768,-19.962402" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.4716626"/>
+        <path class="Atlanta (GA) Pensacola (FL)" d="M 62.246128,-25.736084 C 65.977455,-2.465992 36.669296,38.036133 13.399204,41.767456" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.379234"/>
+        <path class="Atlanta (GA) Lafayette (LA)" d="M 62.246128,-25.736084 C 50.272522,15.385347 -29.370033,59.107086 -70.491463,47.133484" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.7255922"/>
+        <path class="Atlanta (GA) Key West (FL)" d="M 62.246128,-25.736084 C 108.233093,1.885927 135.780518,112.299385 108.158501,158.286346" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.96800977"/>
+        <path class="Atlanta (GA) Lexington (KY)" d="M 62.246128,-25.736084 C 31.448492,-29.719730 -8.772492,-81.891655 -4.788845,-112.689293" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.4124418"/>
+        <path class="Atlanta (GA) Richmond (VA)" d="M 62.246128,-25.736084 C 70.772346,-66.548027 144.779602,-114.976601 185.591537,-106.450378" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.2199469"/>
+        <path class="Atlanta (GA) Little Rock (AR)" d="M 62.246128,-25.736084 C 30.451969,-2.366585 -52.293526,-15.003571 -75.663025,-46.797729" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.238654"/>
+        <path class="Atlanta (GA) Fort Smith (AR)" d="M 62.246128,-25.736084 C 20.687569,2.370937 -83.810791,-17.806370 -111.917809,-59.364929" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.39240646"/>
+        <path class="Atlanta (GA) Shreveport (LA)" d="M 62.246128,-25.736084 C 34.686306,12.612434 -64.176178,28.795479 -102.524696,1.235657" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.2242639"/>
+        <path class="Atlanta (GA) Gainesville (FL)" d="M 62.246128,-25.736084 C 86.264694,-16.121061 107.870018,34.329330 98.254997,58.347900" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.2574718"/>
+        <path class="Atlanta (GA) Birmingham (AL)" d="M 62.246128,-25.736084 C 54.769127,-16.694286 29.990929,-14.347095 20.949131,-21.824097" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.9880452"/>
+        <path class="Atlanta (GA) Jacksonville (FL)" d="M 62.246128,-25.736084 C 85.089729,-21.742355 113.364540,18.513638 109.370811,41.357239" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="3.173013"/>
+        <path class="Atlanta (GA) Valdosta (GA)" d="M 62.246128,-25.736084 C 78.364105,-17.377645 90.003418,19.336977 81.644981,35.454956" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.56840825"/>
+        <path class="Atlanta (GA) San Antonio (TX)" d="M 62.246128,-25.736084 C 30.396635,40.713921 -117.052620,92.614693 -183.502625,60.765198" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.7843702"/>
+        <path class="Orlando (FL) Dallas (TX)" d="M 116.000511,82.713379 C 44.303337,119.149170 -117.896088,66.257111 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.6647111"/>
+        <path class="Orlando (FL) Birmingham (AL)" d="M 116.000511,82.713379 C 76.082741,80.816162 19.051912,18.093676 20.949131,-21.824097" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.3962807"/>
+        <path class="Orlando (FL) Raleigh/Durham (NC)" d="M 116.000511,82.713379 C 94.045647,43.164989 120.435936,-49.089878 159.984329,-71.044739" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.83185744"/>
+        <path class="Orlando (FL) Richmond (VA)" d="M 116.000511,82.713379 C 92.085968,30.962421 133.840591,-82.535835 185.591537,-106.450378" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.39240646"/>
+        <path class="Orlando (FL) San Antonio (TX)" d="M 116.000511,82.713379 C 51.710247,138.224365 -127.991631,125.055458 -183.502625,60.765198" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.2900155"/>
+        <path class="Birmingham (AL) Dallas (TX)" d="M 20.949131,-21.824097 C -10.830264,16.508911 -115.998871,26.339333 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.3857649"/>
+        <path class="Pensacola (FL) Dallas (TX)" d="M 13.399204,41.767456 C -29.588520,65.872169 -130.227158,37.547661 -154.331879,-5.440063" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.0044277175"/>
+        <path class="Raleigh/Durham (NC) Dallas (TX)" d="M 159.984329,-71.044739 C 110.242012,4.939442 -78.347694,44.302250 -154.331879,-5.440063" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.20201461"/>
+        <path class="Little Rock (AR) Dallas (TX)" d="M -75.663025,-46.797729 C -83.125259,-22.792423 -130.326584,2.022174 -154.331879,-5.440063" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.58833295"/>
+        <path class="Dallas (TX) Lubbock (TX)" d="M -154.331879,-5.440063 C -175.539032,8.426817 -228.150101,-2.583609 -242.016983,-23.790771" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.95417315"/>
+        <path class="Dallas (TX) San Antonio (TX)" d="M -154.331879,-5.440063 C -146.924973,13.635139 -164.427414,53.358295 -183.502625,60.765198" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.8646226"/>
+    </g>
+    <g id="nodes">
+        <circle class="Panama City (FL)" cx="40.04164" cy="48.13623" fill="#e28bff" fill-opacity="1.0" r="6.5974026" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Lawton/Fort Sill (OK)" cx="-182.58745" cy="-43.10956" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Houston (TX) [WP.Hobby]" cx="-127.79698" cy="58.321472" fill="#00c7ff" fill-opacity="1.0" r="12.454546" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Myrtle Beach (SC)" cx="157.54265" cy="-24.334595" fill="#e28bff" fill-opacity="1.0" r="6.331169" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Austin (TX)" cx="-170.84396" cy="45.94812" fill="#00c7ff" fill-opacity="1.0" r="10.058441" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Charleston/Dunbar (WV)" cx="110.33621" cy="-125.10901" fill="#e28bff" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Alexandria (LA)" cx="-80.15978" cy="24.417603" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Fort Myers (FL)" cx="108.19496" cy="120.04532" fill="#e28bff" fill-opacity="1.0" r="7.1298704" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Tallahassee (FL)" cx="62.99415" cy="43.3479" fill="#e28bff" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Baltimore (MD)" cx="197.95932" cy="-146.1795" fill="#e28bff" fill-opacity="1.0" r="12.454546" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Charleston (SC)" cx="138.16487" cy="-7.8829346" fill="#e28bff" fill-opacity="1.0" r="7.662338" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Daytona Beach (FL)" cx="120.979065" cy="67.1817" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Houston (TX) [Ell]" cx="-129.42279" cy="56.161804" fill="#fa9200" fill-opacity="1.0" r="5.0" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Charlotte (NC)" cx="124.11553" cy="-57.036194" fill="#e28bff" fill-opacity="1.0" r="12.454546" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Abilene (TX)" cx="-205.57747" cy="1.3546753" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="El Paso (TX)" cx="-321.6295" cy="14.614746" fill="#00c7ff" fill-opacity="1.0" r="6.8636365" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Jacksonville/Camp Lejeune (NC)" cx="180.52834" cy="-48.56311" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Texarkana (AR)" cx="-105.4131" cy="-19.614685" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Monroe (LA)" cx="-71.37106" cy="0.084106445" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Valparaiso (FL)" cx="24.514996" cy="41.32959" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="New Bern/Morehead/Beaufort (NC)" cx="190.44383" cy="-53.77545" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Corpus Christi (TX)" cx="-164.79326" cy="95.19153" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Fayetteville (NC)" cx="158.25539" cy="-51.984436" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Midland/Odessa (TX)" cx="-248.71512" cy="11.81134" fill="#00c7ff" fill-opacity="1.0" r="6.064935" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Waco (TX)" cx="-161.76108" cy="18.649902" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Miami (FL)" cx="133.82097" cy="134.39346" fill="#e28bff" fill-opacity="1.0" r="11.38961" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Savannah (GA)" cx="117.85459" cy="7.9471436" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Fort Lauderdale (FL)" cx="136.20236" cy="128.9909" fill="#e28bff" fill-opacity="1.0" r="10.058441" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Albany (GA)" cx="65.63342" cy="20.144836" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Brunswick (GA)" cx="112.79947" cy="28.02716" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Greensboro/High Point (NC)" cx="139.96219" cy="-75.882935" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Roanoke (VA)" cx="139.3492" cy="-102.36017" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Charlottesville (VA)" cx="165.41785" cy="-117.99164" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Montgomery (AL)" cx="28.875668" cy="3.048462" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Columbia (SC)" cx="120.76995" cy="-31.027527" fill="#e28bff" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Fayetteville (AR)" cx="-110.82616" cy="-79.65222" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Dothan (AL)" cx="43.66797" cy="24.522278" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Washington (DC) [R.Reagan]" cx="190.48857" cy="-136.30719" fill="#e28bff" fill-opacity="1.0" r="9.792208" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Houston (TX) [G.Bush]" cx="-128.84648" cy="51.5365" fill="#69c404" fill-opacity="1.0" r="20.70779" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Tulsa (OK)" cx="-138.39488" cy="-77.923645" fill="#69c404" fill-opacity="1.0" r="6.5974026" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Mobile (AL)" cx="-5.056534" cy="37.56073" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Oklahoma City (OK)" cx="-168.35678" cy="-60.585938" fill="#69c404" fill-opacity="1.0" r="7.1298704" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Sarasota/Bradenton (FL)" cx="94.264786" cy="103.32956" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Dallas/Fort Worth (TX)" cx="-158.57909" cy="-7.998108" fill="#69c404" fill-opacity="1.0" r="23.103897" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="West Palm Beach/Palm Beach (FL)" cx="137.21092" cy="117.0773" fill="#e28bff" fill-opacity="1.0" r="6.5974026" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Washington (DC) [W.Dulles]" cx="183.22264" cy="-138.59192" fill="#e28bff" fill-opacity="1.0" r="8.461039" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Columbus (GA)" cx="51.778915" cy="1.1015015" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Tampa (FL)" cx="94.5505" cy="91.579865" fill="#e28bff" fill-opacity="1.0" r="10.324676" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Wilmington (NC)" cx="175.30196" cy="-36.638306" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Punta Gorda (FL)" cx="103.963066" cy="112.57092" fill="#806b68" fill-opacity="1.0" r="5.0" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Paducah (KY)" cx="-14.191071" cy="-96.6814" fill="#ff5d85" fill-opacity="1.0" r="5.0" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Meridian (MS)" cx="-13.931775" cy="3.784851" fill="#69c404" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Chattanooga (TN)" cx="48.044834" cy="-52.951965" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Killeen (TX)" cx="-172.20224" cy="29.829773" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Longview (TX)" cx="-118.06666" cy="2.616394" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Louisville (KY)" cx="38.326855" cy="-122.94824" fill="#e28bff" fill-opacity="1.0" r="7.1298704" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="New Orleans (LA)" cx="-40.222656" cy="51.496582" fill="#00c7ff" fill-opacity="1.0" r="9.259741" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Gulfport/Biloxi (MS)" cx="-19.52207" cy="42.991272" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Columbus (MS)" cx="-11.05108" cy="-19.504395" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Memphis (TN)" cx="-35.338554" cy="-53.087585" fill="#e28bff" fill-opacity="1.0" r="7.662338" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Nashville (TN)" cx="20.469591" cy="-77.14276" fill="#e28bff" fill-opacity="1.0" r="10.59091" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Baton Rouge (LA)" cx="-55.60439" cy="42.08203" fill="#69c404" fill-opacity="1.0" r="6.064935" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Newport News/Williamsburg (VA)" cx="200.04344" cy="-98.22235" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Wichita Falls (TX)" cx="-183.93964" cy="-29.196838" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Norfolk (VA)" cx="205.15309" cy="-93.06427" fill="#e28bff" fill-opacity="1.0" r="7.1298704" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Laredo (TX)" cx="-201.16493" cy="100.51254" fill="#69c404" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Huntsville (AL)" cx="20.572771" cy="-44.544495" fill="#e28bff" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Amarillo (TX)" cx="-242.19714" cy="-56.92743" fill="#00c7ff" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Atlanta (GA)" cx="62.246128" cy="-25.736084" fill="#e28bff" fill-opacity="1.0" r="25.5" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Knoxville (TN)" cx="69.12435" cy="-69.55377" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Lake Charles (LA)" cx="-91.92117" cy="48.85907" fill="#69c404" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Brownsville (TX)" cx="-166.55783" cy="132.34003" fill="#69c404" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Orlando (FL)" cx="116.00051" cy="82.71338" fill="#e28bff" fill-opacity="1.0" r="10.59091" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Birmingham (AL)" cx="20.949131" cy="-21.824097" fill="#e28bff" fill-opacity="1.0" r="7.396104" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="St. Augustine (FL)" cx="115.39223" cy="52.259155" fill="#00af87" fill-opacity="1.0" r="5.0" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Asheville (NC)" cx="94.29902" cy="-64.9162" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Mission/McAllen/Edinburg (TX)" cx="-179.51445" cy="126.91962" fill="#69c404" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Jackson/Vicksburg (MS)" cx="-37.035866" cy="4.1758423" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Melbourne (FL)" cx="127.813515" cy="89.31546" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Augusta (GA)" cx="103.74077" cy="-19.962402" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Pensacola (FL)" cx="13.399204" cy="41.767456" fill="#69c404" fill-opacity="1.0" r="6.8636365" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Beaumont/Port Arthur (TX)" cx="-104.477715" cy="53.79431" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="College Station/Bryan (TX)" cx="-146.25832" cy="38.643127" fill="#69c404" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Lafayette (LA)" cx="-70.49146" cy="47.133484" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Bristol/Johnson City/Kingsport (TN)" cx="96.80596" cy="-84.041016" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Greer (SC)" cx="100.132835" cy="-49.974426" fill="#e28bff" fill-opacity="1.0" r="6.5974026" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Raleigh/Durham (NC)" cx="159.98433" cy="-71.04474" fill="#e28bff" fill-opacity="1.0" r="8.461039" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Richmond (VA)" cx="185.59154" cy="-106.45038" fill="#e28bff" fill-opacity="1.0" r="6.8636365" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Little Rock (AR)" cx="-75.663025" cy="-46.79773" fill="#69c404" fill-opacity="1.0" r="6.331169" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Harlingen/San Benito (TX)" cx="-169.42596" cy="126.079346" fill="#00c7ff" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Tyler (TX)" cx="-130.1179" cy="3.3723755" fill="#69c404" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Hattiesburg/Laurel (MS)" cx="-23.31614" cy="24.410706" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Fort Smith (AR)" cx="-111.91781" cy="-59.36493" fill="#69c404" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Lexington (KY)" cx="-4.788845" cy="-112.68929" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Shreveport (LA)" cx="-102.5247" cy="1.2356567" fill="#69c404" fill-opacity="1.0" r="5.7987013" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Gainesville (FL)" cx="98.255" cy="58.3479" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Dallas (TX)" cx="-154.33188" cy="-5.4400635" fill="#00c7ff" fill-opacity="1.0" r="11.922078" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="San Angelo (TX)" cx="-219.01694" cy="23.794128" fill="#69c404" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Jacksonville (FL)" cx="109.37081" cy="41.35724" fill="#e28bff" fill-opacity="1.0" r="7.662338" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Valdosta (GA)" cx="81.64498" cy="35.454956" fill="#e28bff" fill-opacity="1.0" r="5.266234" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Key West (FL)" cx="108.1585" cy="158.28635" fill="#e28bff" fill-opacity="1.0" r="5.5324674" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Lubbock (TX)" cx="-242.01698" cy="-23.790771" fill="#00c7ff" fill-opacity="1.0" r="6.331169" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="San Antonio (TX)" cx="-183.50262" cy="60.765198" fill="#00c7ff" fill-opacity="1.0" r="8.461039" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+    </g>
+    <g id="node-labels">
+        <text class="Panama City (FL)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="40.04164" y="49.30973">
+            Panama City (FL)
+        </text>
+        <text class="Lawton/Fort Sill (OK)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-182.58745" y="-42.17043">
+            Lawton/Fort Sill (OK)
+        </text>
+        <text class="Houston (TX) [WP.Hobby]" fill="#000000" font-family="Arial" font-size="12" style="text-anchor: middle; dominant-baseline: central;" x="-127.79698" y="61.13788">
+            Houston (TX) [WP.Hobby]
+        </text>
+        <text class="Myrtle Beach (SC)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="157.54265" y="-23.16109">
+            Myrtle Beach (SC)
+        </text>
+        <text class="Austin (TX)" fill="#000000" font-family="Arial" font-size="9" style="text-anchor: middle; dominant-baseline: central;" x="-170.84396" y="48.060425">
+            Austin (TX)
+        </text>
+        <text class="Charleston/Dunbar (WV)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="110.33621" y="-123.93551">
+            Charleston/Dunbar (WV)
+        </text>
+        <text class="Alexandria (LA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-80.15978" y="25.591106">
+            Alexandria (LA)
+        </text>
+        <text class="Fort Myers (FL)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="108.19496" y="121.45352">
+            Fort Myers (FL)
+        </text>
+        <text class="Tallahassee (FL)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="62.99415" y="44.5214">
+            Tallahassee (FL)
+        </text>
+        <text class="Baltimore (MD)" fill="#000000" font-family="Arial" font-size="12" style="text-anchor: middle; dominant-baseline: central;" x="197.95932" y="-143.3631">
+            Baltimore (MD)
+        </text>
+        <text class="Charleston (SC)" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="138.16487" y="-6.2400312">
+            Charleston (SC)
+        </text>
+        <text class="Daytona Beach (FL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="120.979065" y="68.1205">
+            Daytona Beach (FL)
+        </text>
+        <text class="Houston (TX) [Ell]" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-129.42279" y="57.10061">
+            Houston (TX) [Ell]
+        </text>
+        <text class="Charlotte (NC)" fill="#000000" font-family="Arial" font-size="12" style="text-anchor: middle; dominant-baseline: central;" x="124.11553" y="-54.219788">
+            Charlotte (NC)
+        </text>
+        <text class="Abilene (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-205.57747" y="2.2934775">
+            Abilene (TX)
+        </text>
+        <text class="El Paso (TX)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="-321.6295" y="16.02295">
+            El Paso (TX)
+        </text>
+        <text class="Jacksonville/Camp Lejeune (NC)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="180.52834" y="-47.624306">
+            Jacksonville/Camp Lejeune (NC)
+        </text>
+        <text class="Texarkana (AR)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-105.4131" y="-18.675884">
+            Texarkana (AR)
+        </text>
+        <text class="Monroe (LA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-71.37106" y="1.257609">
+            Monroe (LA)
+        </text>
+        <text class="Valparaiso (FL)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="24.514996" y="42.50309">
+            Valparaiso (FL)
+        </text>
+        <text class="New Bern/Morehead/Beaufort (NC)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="190.44383" y="-52.836647">
+            New Bern/Morehead/Beaufort (NC)
+        </text>
+        <text class="Corpus Christi (TX)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-164.79326" y="96.365036">
+            Corpus Christi (TX)
+        </text>
+        <text class="Fayetteville (NC)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="158.25539" y="-51.04563">
+            Fayetteville (NC)
+        </text>
+        <text class="Midland/Odessa (TX)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-248.71512" y="12.9852495">
+            Midland/Odessa (TX)
+        </text>
+        <text class="Waco (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-161.76108" y="19.588705">
+            Waco (TX)
+        </text>
+        <text class="Miami (FL)" fill="#000000" font-family="Arial" font-size="11" style="text-anchor: middle; dominant-baseline: central;" x="133.82097" y="136.97517">
+            Miami (FL)
+        </text>
+        <text class="Savannah (GA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="117.85459" y="8.885946">
+            Savannah (GA)
+        </text>
+        <text class="Fort Lauderdale (FL)" fill="#000000" font-family="Arial" font-size="9" style="text-anchor: middle; dominant-baseline: central;" x="136.20236" y="131.10321">
+            Fort Lauderdale (FL)
+        </text>
+        <text class="Albany (GA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="65.63342" y="21.083637">
+            Albany (GA)
+        </text>
+        <text class="Brunswick (GA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="112.79947" y="28.965961">
+            Brunswick (GA)
+        </text>
+        <text class="Greensboro/High Point (NC)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="139.96219" y="-74.94414">
+            Greensboro/High Point (NC)
+        </text>
+        <text class="Roanoke (VA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="139.3492" y="-101.42137">
+            Roanoke (VA)
+        </text>
+        <text class="Charlottesville (VA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="165.41785" y="-117.05284">
+            Charlottesville (VA)
+        </text>
+        <text class="Montgomery (AL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="28.875668" y="3.9872642">
+            Montgomery (AL)
+        </text>
+        <text class="Columbia (SC)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="120.76995" y="-29.854025">
+            Columbia (SC)
+        </text>
+        <text class="Fayetteville (AR)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-110.82616" y="-78.478714">
+            Fayetteville (AR)
+        </text>
+        <text class="Dothan (AL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="43.66797" y="25.461079">
+            Dothan (AL)
+        </text>
+        <text class="Washington (DC) [R.Reagan]" fill="#000000" font-family="Arial" font-size="9" style="text-anchor: middle; dominant-baseline: central;" x="190.48857" y="-134.19489">
+            Washington (DC) [R.Reagan]
+        </text>
+        <text class="Houston (TX) [G.Bush]" fill="#000000" font-family="Arial" font-size="23" style="text-anchor: middle; dominant-baseline: central;" x="-128.84648" y="56.93461">
+            Houston (TX) [G.Bush]
+        </text>
+        <text class="Tulsa (OK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-138.39488" y="-76.74973">
+            Tulsa (OK)
+        </text>
+        <text class="Mobile (AL)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-5.056534" y="38.73423">
+            Mobile (AL)
+        </text>
+        <text class="Oklahoma City (OK)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="-168.35678" y="-59.177246">
+            Oklahoma City (OK)
+        </text>
+        <text class="Sarasota/Bradenton (FL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="94.264786" y="104.26836">
+            Sarasota/Bradenton (FL)
+        </text>
+        <text class="Dallas/Fort Worth (TX)" fill="#000000" font-family="Arial" font-size="27" style="text-anchor: middle; dominant-baseline: central;" x="-158.57909" y="-1.6611938">
+            Dallas/Fort Worth (TX)
+        </text>
+        <text class="West Palm Beach/Palm Beach (FL)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="137.21092" y="118.25081">
+            West Palm Beach/Palm Beach (FL)
+        </text>
+        <text class="Washington (DC) [W.Dulles]" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="183.22264" y="-136.949">
+            Washington (DC) [W.Dulles]
+        </text>
+        <text class="Columbus (GA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="51.778915" y="2.0403037">
+            Columbus (GA)
+        </text>
+        <text class="Tampa (FL)" fill="#000000" font-family="Arial" font-size="9" style="text-anchor: middle; dominant-baseline: central;" x="94.5505" y="93.69217">
+            Tampa (FL)
+        </text>
+        <text class="Wilmington (NC)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="175.30196" y="-35.6995">
+            Wilmington (NC)
+        </text>
+        <text class="Punta Gorda (FL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="103.963066" y="113.50972">
+            Punta Gorda (FL)
+        </text>
+        <text class="Paducah (KY)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-14.191071" y="-95.7426">
+            Paducah (KY)
+        </text>
+        <text class="Meridian (MS)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-13.931775" y="4.7236533">
+            Meridian (MS)
+        </text>
+        <text class="Chattanooga (TN)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="48.044834" y="-52.01316">
+            Chattanooga (TN)
+        </text>
+        <text class="Killeen (TX)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-172.20224" y="31.003277">
+            Killeen (TX)
+        </text>
+        <text class="Longview (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-118.06666" y="3.5551963">
+            Longview (TX)
+        </text>
+        <text class="Louisville (KY)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="38.326855" y="-121.54004">
+            Louisville (KY)
+        </text>
+        <text class="New Orleans (LA)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="-40.222656" y="53.374836">
+            New Orleans (LA)
+        </text>
+        <text class="Gulfport/Biloxi (MS)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-19.52207" y="44.164772">
+            Gulfport/Biloxi (MS)
+        </text>
+        <text class="Columbus (MS)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-11.05108" y="-18.565594">
+            Columbus (MS)
+        </text>
+        <text class="Memphis (TN)" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="-35.338554" y="-51.44468">
+            Memphis (TN)
+        </text>
+        <text class="Nashville (TN)" fill="#000000" font-family="Arial" font-size="10" style="text-anchor: middle; dominant-baseline: central;" x="20.469591" y="-74.79576">
+            Nashville (TN)
+        </text>
+        <text class="Baton Rouge (LA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-55.60439" y="43.25553">
+            Baton Rouge (LA)
+        </text>
+        <text class="Newport News/Williamsburg (VA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="200.04344" y="-97.283554">
+            Newport News/Williamsburg (VA)
+        </text>
+        <text class="Wichita Falls (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-183.93964" y="-28.258036">
+            Wichita Falls (TX)
+        </text>
+        <text class="Norfolk (VA)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="205.15309" y="-91.65607">
+            Norfolk (VA)
+        </text>
+        <text class="Laredo (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-201.16493" y="101.45134">
+            Laredo (TX)
+        </text>
+        <text class="Huntsville (AL)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="20.572771" y="-43.370995">
+            Huntsville (AL)
+        </text>
+        <text class="Amarillo (TX)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-242.19714" y="-55.75393">
+            Amarillo (TX)
+        </text>
+        <text class="Atlanta (GA)" fill="#000000" font-family="Arial" font-size="31" style="text-anchor: middle; dominant-baseline: central;" x="62.246128" y="-18.46037">
+            Atlanta (GA)
+        </text>
+        <text class="Knoxville (TN)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="69.12435" y="-68.380264">
+            Knoxville (TN)
+        </text>
+        <text class="Lake Charles (LA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-91.92117" y="49.797874">
+            Lake Charles (LA)
+        </text>
+        <text class="Brownsville (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-166.55783" y="133.27884">
+            Brownsville (TX)
+        </text>
+        <text class="Orlando (FL)" fill="#000000" font-family="Arial" font-size="10" style="text-anchor: middle; dominant-baseline: central;" x="116.00051" y="85.061195">
+            Orlando (FL)
+        </text>
+        <text class="Birmingham (AL)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="20.949131" y="-20.415894">
+            Birmingham (AL)
+        </text>
+        <text class="St. Augustine (FL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="115.39223" y="53.19796">
+            St. Augustine (FL)
+        </text>
+        <text class="Asheville (NC)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="94.29902" y="-63.977398">
+            Asheville (NC)
+        </text>
+        <text class="Mission/McAllen/Edinburg (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-179.51445" y="127.85841">
+            Mission/McAllen/Edinburg (TX)
+        </text>
+        <text class="Jackson/Vicksburg (MS)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-37.035866" y="5.349345">
+            Jackson/Vicksburg (MS)
+        </text>
+        <text class="Melbourne (FL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="127.813515" y="90.25426">
+            Melbourne (FL)
+        </text>
+        <text class="Augusta (GA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="103.74077" y="-19.023602">
+            Augusta (GA)
+        </text>
+        <text class="Pensacola (FL)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="13.399204" y="43.17566">
+            Pensacola (FL)
+        </text>
+        <text class="Beaumont/Port Arthur (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-104.477715" y="54.733116">
+            Beaumont/Port Arthur (TX)
+        </text>
+        <text class="College Station/Bryan (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-146.25832" y="39.581932">
+            College Station/Bryan (TX)
+        </text>
+        <text class="Lafayette (LA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-70.49146" y="48.306984">
+            Lafayette (LA)
+        </text>
+        <text class="Bristol/Johnson City/Kingsport (TN)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="96.80596" y="-83.10222">
+            Bristol/Johnson City/Kingsport (TN)
+        </text>
+        <text class="Greer (SC)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="100.132835" y="-48.800926">
+            Greer (SC)
+        </text>
+        <text class="Raleigh/Durham (NC)" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="159.98433" y="-69.40184">
+            Raleigh/Durham (NC)
+        </text>
+        <text class="Richmond (VA)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="185.59154" y="-105.042175">
+            Richmond (VA)
+        </text>
+        <text class="Little Rock (AR)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-75.663025" y="-45.62423">
+            Little Rock (AR)
+        </text>
+        <text class="Harlingen/San Benito (TX)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-169.42596" y="127.25285">
+            Harlingen/San Benito (TX)
+        </text>
+        <text class="Tyler (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-130.1179" y="4.3111777">
+            Tyler (TX)
+        </text>
+        <text class="Hattiesburg/Laurel (MS)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-23.31614" y="25.349506">
+            Hattiesburg/Laurel (MS)
+        </text>
+        <text class="Fort Smith (AR)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-111.91781" y="-58.426125">
+            Fort Smith (AR)
+        </text>
+        <text class="Lexington (KY)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-4.788845" y="-111.75049">
+            Lexington (KY)
+        </text>
+        <text class="Shreveport (LA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-102.5247" y="2.4091592">
+            Shreveport (LA)
+        </text>
+        <text class="Gainesville (FL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="98.255" y="59.286705">
+            Gainesville (FL)
+        </text>
+        <text class="Dallas (TX)" fill="#000000" font-family="Arial" font-size="11" style="text-anchor: middle; dominant-baseline: central;" x="-154.33188" y="-2.8583574">
+            Dallas (TX)
+        </text>
+        <text class="San Angelo (TX)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-219.01694" y="24.73293">
+            San Angelo (TX)
+        </text>
+        <text class="Jacksonville (FL)" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="109.37081" y="43.000145">
+            Jacksonville (FL)
+        </text>
+        <text class="Valdosta (GA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="81.64498" y="36.39376">
+            Valdosta (GA)
+        </text>
+        <text class="Key West (FL)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="108.1585" y="159.22516">
+            Key West (FL)
+        </text>
+        <text class="Lubbock (TX)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-242.01698" y="-22.617268">
+            Lubbock (TX)
+        </text>
+        <text class="San Antonio (TX)" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="-183.50262" y="62.408104">
+            San Antonio (TX)
+        </text>
+    </g>
+</svg>

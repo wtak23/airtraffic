@@ -1,0 +1,760 @@
+<svg contentScriptType="text/ecmascript" contentStyleType="text/css" height="1381.3857" preserveAspectRatio="xMidYMid meet" version="1.1" viewBox="-769.620056 -771.621643 1129.620117 1381.385742" width="1129.6201" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify">
+    <g id="edges">
+        <path class="Laramie (WY) Denver (CO)" d="M 310.224487,66.656799 C 320.433594,69.908257 330.870026,90.099083 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.62600005"/>
+        <path class="Long Beach (CA) Seattle (WA)" d="M 92.508682,232.106384 C 14.899254,183.569077 -28.708927,-5.651011 19.828377,-83.260437" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.85300004"/>
+        <path class="Long Beach (CA) Portland (OR)" d="M 92.508682,232.106384 C 23.339298,194.007721 -23.266777,33.105659 14.831886,-36.063721" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.80500007"/>
+        <path class="Long Beach (CA) Sacramento (CA)" d="M 92.508682,232.106384 C 59.357403,223.009399 23.275970,159.636993 32.372959,126.485718" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.721"/>
+        <path class="Long Beach (CA) Las Vegas (NV)" d="M 92.508682,232.106384 C 93.298080,212.016037 124.617699,183.064621 144.708038,183.854004" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.386"/>
+        <path class="Long Beach (CA) Salt Lake City (UT)" d="M 92.508682,232.106384 C 83.394905,179.949493 147.959564,88.043526 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.209"/>
+        <path class="Long Beach (CA) Oakland (CA)" d="M 92.508682,232.106384 C 61.523952,229.571915 18.848545,179.293137 21.383005,148.308411" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.733"/>
+        <path class="Long Beach (CA) Anchorage (AK)" d="M 92.508682,232.106384 C -164.828888,196.465668 -497.374207,-243.001801 -461.733459,-500.339355" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.108"/>
+        <path class="Long Beach (CA) San Francisco (CA)" d="M 92.508682,232.106384 C 61.370613,230.530106 17.027935,181.458572 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.1400001"/>
+        <path class="Long Beach (CA) Phoenix (AZ)" d="M 92.508682,232.106384 C 115.527222,212.282303 179.791153,217.073990 199.615234,240.092529" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.002"/>
+        <path class="Long Beach (CA) Reno (NV)" d="M 92.508682,232.106384 C 62.098679,213.030914 45.096863,138.802704 64.172333,108.392700" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.078"/>
+        <path class="Helena (MT) Denver (CO)" d="M 199.323471,-61.195129 C 257.283142,-54.553490 334.260193,42.348488 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Helena (MT) Salt Lake City (UT)" d="M 199.323471,-61.195129 C 227.507050,-33.328751 227.982834,50.746178 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.9850001"/>
+        <path class="Lewiston (ID) Salt Lake City (UT)" d="M 112.463951,-56.429810 C 157.066360,-46.888397 209.657867,34.327332 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.707"/>
+        <path class="Gustavus (AK) Juneau (AK)" d="M -213.944962,-403.215210 C -209.606415,-406.694763 -197.879227,-405.406311 -194.399658,-401.067749" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.08400001"/>
+        <path class="Fairbanks (AK) Anchorage (AK)" d="M -426.185272,-638.955933 C -405.571594,-604.122986 -426.900482,-520.953064 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Fairbanks (AK) Seattle (WA)" d="M -426.185272,-638.955933 C -225.843445,-617.019592 41.764748,-283.602264 19.828377,-83.260437" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.5810001"/>
+        <path class="Arcata/Eureka (CA) San Francisco (CA)" d="M -11.134169,77.163452 C 9.444920,85.847183 27.287952,129.741409 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.447"/>
+        <path class="Great Falls (MT) Denver (CO)" d="M 210.980087,-84.093140 C 271.188049,-70.540573 341.171112,40.100212 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.513"/>
+        <path class="Great Falls (MT) Salt Lake City (UT)" d="M 210.980087,-84.093140 C 241.411926,-49.315838 234.893768,48.497898 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.96500003"/>
+        <path class="Tucson (AZ) Seattle (WA)" d="M 218.265152,267.551575 C 108.415382,237.076508 -10.646675,26.589325 19.828377,-83.260437" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.47500002"/>
+        <path class="Tucson (AZ) Portland (OR)" d="M 218.265152,267.551575 C 116.855423,247.515167 -5.204525,65.345993 14.831886,-36.063721" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.21700001"/>
+        <path class="Tucson (AZ) Las Vegas (NV)" d="M 218.265152,267.551575 C 186.814209,265.523468 142.679947,215.304947 144.708038,183.854004" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.12"/>
+        <path class="Tucson (AZ) Salt Lake City (UT)" d="M 218.265152,267.551575 C 176.911041,233.456955 166.021835,120.283852 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.83000004"/>
+        <path class="Tucson (AZ) Denver (CO)" d="M 218.265152,267.551575 C 206.687149,212.232208 272.299194,111.886169 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.9540001"/>
+        <path class="Tucson (AZ) San Diego (CA)" d="M 218.265152,267.551575 C 193.873306,286.821411 128.380753,279.138367 109.110916,254.746521" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="1.0120001"/>
+        <path class="Tucson (AZ) San Francisco (CA)" d="M 218.265152,267.551575 C 154.886749,284.037537 35.090195,213.698898 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.827"/>
+        <path class="Tucson (AZ) Phoenix (AZ)" d="M 218.265152,267.551575 C 209.043365,265.789734 197.853409,249.314316 199.615234,240.092529" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="1.48"/>
+        <path class="Tucson (AZ) Los Angeles (CA)" d="M 218.265152,267.551575 C 184.584808,286.016815 106.366440,263.194153 87.901215,229.513794" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="2.5370002"/>
+        <path class="Kotzebue (AK) Nome (AK)" d="M -683.405579,-727.574463 C -673.103577,-697.429077 -702.868774,-636.758057 -733.014160,-626.456055" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.052"/>
+        <path class="Kotzebue (AK) Anchorage (AK)" d="M -683.405579,-727.574463 C -593.624146,-726.461853 -460.620850,-590.120789 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.416"/>
+        <path class="Missoula (MT) Seattle (WA)" d="M 163.382629,-69.613342 C 131.942368,-43.631905 45.809811,-51.820168 19.828377,-83.260437" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.23500001"/>
+        <path class="Missoula (MT) Denver (CO)" d="M 163.382629,-69.613342 C 230.214111,-68.476227 328.755676,33.476681 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.661"/>
+        <path class="Missoula (MT) San Francisco (CA)" d="M 163.382629,-69.613342 C 178.413712,3.329107 91.546677,135.289413 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.052"/>
+        <path class="Missoula (MT) Salt Lake City (UT)" d="M 163.382629,-69.613342 C 200.438019,-47.251488 222.478302,41.874367 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.144"/>
+        <path class="Butte (MT) Salt Lake City (UT)" d="M 190.417542,-46.428894 C 217.429062,-23.296947 223.248398,51.918236 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.688"/>
+        <path class="Yuma (AZ) Phoenix (AZ)" d="M 153.889297,255.600159 C 159.932953,243.353439 187.368515,234.048874 199.615234,240.092529" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.033"/>
+        <path class="Fresno (CA) Seattle (WA)" d="M 65.044762,168.846008 C 5.580196,127.467995 -21.549633,-23.795872 19.828377,-83.260437" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.9760001"/>
+        <path class="Fresno (CA) Portland (OR)" d="M 65.044762,168.846008 C 14.020237,137.906631 -16.107487,14.960804 14.831886,-36.063721" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Fresno (CA) Denver (CO)" d="M 65.044762,168.846008 C 103.851959,102.623688 261.396210,61.500973 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.2770001"/>
+        <path class="Fresno (CA) Phoenix (AZ)" d="M 65.044762,168.846008 C 106.208160,156.181213 186.950439,198.929138 199.615234,240.092529" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.46300003"/>
+        <path class="Fresno (CA) San Diego (CA)" d="M 65.044762,168.846008 C 91.038101,177.212875 117.477783,228.753189 109.110916,254.746521" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.72400004"/>
+        <path class="Fresno (CA) San Francisco (CA)" d="M 65.044762,168.846008 C 52.051552,174.429001 24.187227,163.313705 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.961"/>
+        <path class="Fresno (CA) Salt Lake City (UT)" d="M 65.044762,168.846008 C 74.075844,123.848427 155.118866,69.898666 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.029"/>
+        <path class="Fresno (CA) Los Angeles (CA)" d="M 65.044762,168.846008 C 81.749611,176.408279 95.463486,212.808945 87.901215,229.513794" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.095"/>
+        <path class="Elko (NV) Salt Lake City (UT)" d="M 133.669296,78.056335 C 147.133408,64.941589 187.001709,65.465637 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.637"/>
+        <path class="King Salmon (AK) Anchorage (AK)" d="M -579.736450,-412.109863 C -573.781738,-453.356354 -502.979950,-506.294037 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.063"/>
+        <path class="Medford (OR) Denver (CO)" d="M 9.963947,42.097595 C 85.136986,-9.791214 275.729767,25.135128 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.64900005"/>
+        <path class="Medford (OR) Salt Lake City (UT)" d="M 9.963947,42.097595 C 55.360878,11.433525 169.452377,33.532814 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.735"/>
+        <path class="Medford (OR) San Francisco (CA)" d="M 9.963947,42.097595 C 33.336582,62.014122 38.520748,126.947861 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.5810001"/>
+        <path class="Bakersfield (CA) Denver (CO)" d="M 76.589951,197.857605 C 107.285782,128.141998 257.902954,69.612335 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.671"/>
+        <path class="Bakersfield (CA) Phoenix (AZ)" d="M 76.589951,197.857605 C 109.641991,181.699539 183.457169,207.040482 199.615234,240.092529" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="1.2650001"/>
+        <path class="Bakersfield (CA) San Francisco (CA)" d="M 76.589951,197.857605 C 55.485382,199.947342 20.693943,171.425064 18.604221,150.320496" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.666"/>
+        <path class="Honolulu (HI) Portland (OR)" d="M -601.792603,478.857117 C -581.451904,252.548050 -211.477188,-56.404457 14.831886,-36.063721" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.77800006"/>
+        <path class="Honolulu (HI) Sacramento (CA)" d="M -601.792603,478.857117 C -545.433777,281.549713 -164.934448,70.126869 32.372959,126.485718" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Honolulu (HI) Phoenix (AZ)" d="M -601.792603,478.857117 C -489.263977,270.822632 -8.419250,127.563889 199.615234,240.092529" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="1.212"/>
+        <path class="Honolulu (HI) Kona (HI)" d="M -601.792603,478.857117 C -588.784912,478.403809 -568.593384,497.235382 -568.140076,510.243073" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="6.708"/>
+        <path class="Honolulu (HI) Seattle (WA)" d="M -601.792603,478.857117 C -589.891907,242.109390 -216.919342,-95.161125 19.828377,-83.260437" fill="none" stroke="#749736" stroke-opacity="1.0" stroke-width="1.8010001"/>
+        <path class="Honolulu (HI) Anchorage (AK)" d="M -601.792603,478.857117 C -769.620056,255.005997 -685.584595,-332.511902 -461.733459,-500.339355" fill="none" stroke="#749736" stroke-opacity="1.0" stroke-width="0.34600002"/>
+        <path class="Honolulu (HI) San Jose (CA)" d="M -601.792603,478.857117 C -540.455688,288.596130 -163.058823,95.210007 27.202181,156.546936" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.61"/>
+        <path class="Honolulu (HI) San Diego (CA)" d="M -601.792603,478.857117 C -504.433990,291.854309 -77.891922,157.387924 109.110916,254.746521" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.69900006"/>
+        <path class="Honolulu (HI) Kahului (HI)" d="M -601.792603,478.857117 C -594.983582,475.248993 -579.357971,480.050323 -575.749878,486.859314" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="9.065001"/>
+        <path class="Honolulu (HI) Las Vegas (NV)" d="M -601.792603,478.857117 C -511.493103,270.556396 -63.592712,93.554504 144.708038,183.854004" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="0.88900006"/>
+        <path class="Honolulu (HI) San Francisco (CA)" d="M -601.792603,478.857117 C -543.420532,289.070404 -171.182480,91.948441 18.604221,150.320496" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="2.618"/>
+        <path class="Honolulu (HI) Los Angeles (CA)" d="M -601.792603,478.857117 C -513.722473,291.049683 -99.906235,141.443665 87.901215,229.513794" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="5.676"/>
+        <path class="Honolulu (HI) Lihue (HI)" d="M -601.792603,478.857117 C -609.202209,481.351807 -624.058594,473.979370 -626.553284,466.569763" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="6.6180005"/>
+        <path class="Honolulu (HI) Hilo (HI)" d="M -601.792603,478.857117 C -585.742737,474.777100 -555.547974,492.731812 -551.467957,508.781677" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="4.991"/>
+        <path class="Honolulu (HI) Oakland (CA)" d="M -601.792603,478.857117 C -543.267212,288.112244 -169.361847,89.783035 21.383005,148.308411" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.56600004"/>
+        <path class="Honolulu (HI) Denver (CO)" d="M -601.792603,478.857117 C -491.620178,217.265106 66.026535,-9.864273 327.618561,100.308167" fill="none" stroke="#b17bb3" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Honolulu (HI) Bellingham (WA)" d="M -601.792603,478.857117 C -597.710205,235.856628 -227.085815,-122.520523 15.914673,-118.438110" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="0.141"/>
+        <path class="Honolulu (HI) Salt Lake City (UT)" d="M -601.792603,478.857117 C -521.396240,238.489838 -40.250824,-1.466583 200.116455,78.929749" fill="none" stroke="#b17bb3" stroke-opacity="1.0" stroke-width="0.356"/>
+        <path class="Reno (NV) Phoenix (AZ)" d="M 64.172333,108.392700 C 117.600876,107.644089 198.866623,186.663986 199.615234,240.092529" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="1.8570001"/>
+        <path class="Reno (NV) Las Vegas (NV)" d="M 64.172333,108.392700 C 95.371735,107.377823 143.693146,152.654602 144.708038,183.854004" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="3.3690002"/>
+        <path class="Reno (NV) Salt Lake City (UT)" d="M 64.172333,108.392700 C 85.468567,75.311279 167.035034,57.633518 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.0860001"/>
+        <path class="Reno (NV) Denver (CO)" d="M 64.172333,108.392700 C 115.244667,54.086552 273.312408,49.235828 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.4920001"/>
+        <path class="Reno (NV) Oakland (CA)" d="M 64.172333,108.392700 C 63.597610,124.933708 37.924015,148.883133 21.383005,148.308411" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.42600003"/>
+        <path class="Reno (NV) San Diego (CA)" d="M 64.172333,108.392700 C 102.430817,128.675751 129.393967,216.488037 109.110916,254.746521" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.717"/>
+        <path class="Reno (NV) San Francisco (CA)" d="M 64.172333,108.392700 C 63.444267,125.891884 36.103401,151.048553 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.4940001"/>
+        <path class="Reno (NV) Los Angeles (CA)" d="M 64.172333,108.392700 C 93.142326,127.871140 107.379662,200.543808 87.901215,229.513794" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.593"/>
+        <path class="Montrose/Delta (CO) Denver (CO)" d="M 271.373383,130.783936 C 276.527252,113.439743 310.274384,95.154282 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.51500005"/>
+        <path class="Montrose/Delta (CO) Phoenix (AZ)" d="M 271.373383,130.783936 C 278.883484,166.997284 235.828583,232.582428 199.615234,240.092529" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.05"/>
+        <path class="Montrose/Delta (CO) San Francisco (CA)" d="M 271.373383,130.783936 C 224.726868,185.245087 73.065361,196.967010 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.029000001"/>
+        <path class="Montrose/Delta (CO) Los Angeles (CA)" d="M 271.373383,130.783936 C 254.424927,187.224335 144.341614,246.462250 87.901215,229.513794" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.041"/>
+        <path class="Dillingham (AK) Anchorage (AK)" d="M -611.904297,-424.182007 C -597.101563,-469.447662 -506.999115,-515.142029 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.08400001"/>
+        <path class="Phoenix (AZ) Durango (CO)" d="M 199.615234,240.092529 C 197.590729,209.251114 240.816132,159.952225 271.657562,157.927734" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="0.99500006"/>
+        <path class="Phoenix (AZ) Spokane (WA)" d="M 199.615234,240.092529 C 114.764969,193.828171 56.886116,-2.843767 103.150475,-87.694031" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="0.88000005"/>
+        <path class="Phoenix (AZ) Grand Junction (CO)" d="M 199.615234,240.092529 C 187.102356,203.309143 223.508087,129.364746 260.291473,116.851868" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.085"/>
+        <path class="Phoenix (AZ) Portland (OR)" d="M 199.615234,240.092529 C 107.427322,221.817947 -3.442696,56.124199 14.831886,-36.063721" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="3.2110002"/>
+        <path class="Phoenix (AZ) Sacramento (CA)" d="M 199.615234,240.092529 C 143.445419,250.819626 43.100048,182.655533 32.372959,126.485718" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="3.555"/>
+        <path class="Phoenix (AZ) Monterey (CA)" d="M 199.615234,240.092529 C 151.829712,261.012390 48.771637,220.713867 27.851784,172.928345" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.48800004"/>
+        <path class="Phoenix (AZ) Oakland (CA)" d="M 199.615234,240.092529 C 145.611969,257.382141 38.672626,202.311676 21.383005,148.308411" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.7680001"/>
+        <path class="Phoenix (AZ) Santa Ana (CA)" d="M 199.615234,240.092529 C 178.160278,259.545898 116.797768,256.543518 97.344391,235.088562" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="4.3630004"/>
+        <path class="Phoenix (AZ) Burbank (CA)" d="M 199.615234,240.092529 C 174.496140,258.963959 108.510361,249.592422 89.638939,224.473328" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.0410001"/>
+        <path class="Phoenix (AZ) San Luis Obispo (CA)" d="M 199.615234,240.092529 C 161.860229,262.610382 71.450943,239.754639 48.933094,201.999634" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.583"/>
+        <path class="Phoenix (AZ) Kona (HI)" d="M 199.615234,240.092529 C 100.094284,447.673706 -360.558899,609.764038 -568.140076,510.243073" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.319"/>
+        <path class="Phoenix (AZ) Denver (CO)" d="M 199.615234,240.092529 C 197.259018,186.534988 274.061005,102.664383 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="8.1310005"/>
+        <path class="Phoenix (AZ) Seattle (WA)" d="M 199.615234,240.092529 C 98.987274,211.379303 -8.884842,17.367531 19.828377,-83.260437" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="6.2060003"/>
+        <path class="Phoenix (AZ) Boise (ID)" d="M 199.615234,240.092529 C 139.364502,209.210938 95.310806,72.512451 126.192398,12.261719" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="1.11"/>
+        <path class="Phoenix (AZ) San Jose (CA)" d="M 199.615234,240.092529 C 148.423508,257.866028 44.975674,207.738678 27.202181,156.546936" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="3.4750001"/>
+        <path class="Phoenix (AZ) Flagstaff (AZ)" d="M 199.615234,240.092529 C 193.594818,231.759125 197.064316,210.228363 205.397720,204.207947" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="1.9080001"/>
+        <path class="Phoenix (AZ) San Diego (CA)" d="M 199.615234,240.092529 C 184.445175,261.124207 130.142578,269.916595 109.110916,254.746521" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="5.5020003"/>
+        <path class="Phoenix (AZ) Colorado Springs (CO)" d="M 199.615234,240.092529 C 201.357864,191.664444 276.613953,121.636276 325.042023,123.378906" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.126"/>
+        <path class="Phoenix (AZ) Palm Springs (CA)" d="M 199.615234,240.092529 C 182.261993,254.150024 135.145859,249.206390 121.088364,231.853149" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="2.2250001"/>
+        <path class="Phoenix (AZ) Las Vegas (NV)" d="M 199.615234,240.092529 C 177.386078,239.826263 144.441772,206.083160 144.708038,183.854004" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="5.8900003"/>
+        <path class="Phoenix (AZ) Santa Barbara (CA)" d="M 199.615234,240.092529 C 168.632736,262.799164 88.099045,250.385391 65.392403,219.402893" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.70500004"/>
+        <path class="Phoenix (AZ) Kahului (HI)" d="M 199.615234,240.092529 C 93.895569,444.518921 -371.323486,592.578979 -575.749878,486.859314" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.591"/>
+        <path class="Phoenix (AZ) San Francisco (CA)" d="M 199.615234,240.092529 C 145.458618,258.340332 36.852020,204.477112 18.604221,150.320496" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="5.137"/>
+        <path class="Phoenix (AZ) Ontario (CA)" d="M 199.615234,240.092529 C 177.504135,257.008881 118.962982,249.216751 102.046638,227.105652" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="3.0010002"/>
+        <path class="Phoenix (AZ) Los Angeles (CA)" d="M 199.615234,240.092529 C 175.156677,260.319580 108.128273,253.972351 87.901215,229.513794" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="8.028001"/>
+        <path class="Phoenix (AZ) Lihue (HI)" d="M 199.615234,240.092529 C 79.676979,450.621674 -416.024139,586.508057 -626.553284,466.569763" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.37300003"/>
+        <path class="Phoenix (AZ) Salt Lake City (UT)" d="M 199.615234,240.092529 C 167.482925,207.759720 167.783646,111.062065 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="5.5660005"/>
+        <path class="Phoenix (AZ) Roswell (NM)" d="M 199.615234,240.092529 C 226.301956,214.497147 304.725128,216.134140 330.320526,242.820862" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="0.24300002"/>
+        <path class="Phoenix (AZ) Anchorage (AK)" d="M 199.615234,240.092529 C -80.740875,224.275879 -477.550110,-219.983261 -461.733459,-500.339355" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="0.367"/>
+        <path class="Phoenix (AZ) Bend/Redmond (OR)" d="M 199.615234,240.092529 C 119.055527,223.361374 23.312721,77.425056 40.043884,-3.134644" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.15200001"/>
+        <path class="Phoenix (AZ) Albuquerque (NM)" d="M 199.615234,240.092529 C 211.664902,214.478836 268.159943,194.132828 293.773651,206.182495" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="2.1000001"/>
+        <path class="Kahului (HI) Portland (OR)" d="M -575.749878,486.859314 C -562.218140,264.158356 -207.869080,-49.595474 14.831886,-36.063721" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.637"/>
+        <path class="Kahului (HI) Hilo (HI)" d="M -575.749878,486.859314 C -566.509033,486.387390 -551.939880,499.540833 -551.467957,508.781677" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="0.731"/>
+        <path class="Kahului (HI) Seattle (WA)" d="M -575.749878,486.859314 C -570.658142,253.719711 -213.311218,-88.352135 19.828377,-83.260437" fill="none" stroke="#749736" stroke-opacity="1.0" stroke-width="1.3540001"/>
+        <path class="Kahului (HI) Oakland (CA)" d="M -575.749878,486.859314 C -524.033508,299.722565 -165.753754,96.592003 21.383005,148.308411" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.693"/>
+        <path class="Kahului (HI) Anchorage (AK)" d="M -575.749878,486.859314 C -750.386353,266.616302 -681.976440,-325.702911 -461.733459,-500.339355" fill="none" stroke="#749736" stroke-opacity="1.0" stroke-width="0.076000005"/>
+        <path class="Kahului (HI) San Jose (CA)" d="M -575.749878,486.859314 C -521.221924,300.206421 -159.450714,102.018990 27.202181,156.546936" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.69500005"/>
+        <path class="Kahului (HI) Sacramento (CA)" d="M -575.749878,486.859314 C -526.200012,293.160034 -161.326324,76.935875 32.372959,126.485718" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Kahului (HI) Denver (CO)" d="M -575.749878,486.859314 C -472.386414,228.875397 69.634659,-3.055283 327.618561,100.308167" fill="none" stroke="#b17bb3" stroke-opacity="1.0" stroke-width="0.21400002"/>
+        <path class="Kahului (HI) San Diego (CA)" d="M -575.749878,486.859314 C -485.200256,303.464600 -74.283798,164.196915 109.110916,254.746521" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.44200003"/>
+        <path class="Kahului (HI) San Francisco (CA)" d="M -575.749878,486.859314 C -524.186768,300.680725 -167.574371,98.757431 18.604221,150.320496" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="2.1520002"/>
+        <path class="Kahului (HI) Bellingham (WA)" d="M -575.749878,486.859314 C -578.476440,247.466888 -223.477737,-115.711533 15.914673,-118.438110" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="0.08800001"/>
+        <path class="Kahului (HI) Kona (HI)" d="M -575.749878,486.859314 C -569.551147,490.014099 -564.985291,504.044342 -568.140076,510.243073" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="0.95000005"/>
+        <path class="Kahului (HI) Los Angeles (CA)" d="M -575.749878,486.859314 C -494.488770,302.659973 -96.298111,148.252686 87.901215,229.513794" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="3.0110002"/>
+        <path class="Kahului (HI) Lihue (HI)" d="M -575.749878,486.859314 C -589.968506,492.962067 -620.450500,480.788361 -626.553284,466.569763" fill="none" stroke="#806b68" stroke-opacity="1.0" stroke-width="1.427"/>
+        <path class="Bend/Redmond (OR) Denver (CO)" d="M 40.043884,-3.134644 C 118.247383,-39.961021 290.792206,22.104668 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.54700005"/>
+        <path class="Bend/Redmond (OR) Salt Lake City (UT)" d="M 40.043884,-3.134644 C 88.471275,-18.736277 184.514816,30.502357 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.66400003"/>
+        <path class="Bend/Redmond (OR) Los Angeles (CA)" d="M 40.043884,-3.134644 C 96.145035,33.823578 124.859436,173.412628 87.901215,229.513794" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.15200001"/>
+        <path class="Bend/Redmond (OR) San Francisco (CA)" d="M 40.043884,-3.134644 C 66.446976,31.844315 53.583183,123.917404 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.1450001"/>
+        <path class="Cody (WY) Denver (CO)" d="M 251.124390,-9.787720 C 288.442383,-3.067376 334.338898,62.990150 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.057000004"/>
+        <path class="Cody (WY) Salt Lake City (UT)" d="M 251.124390,-9.787720 C 258.666290,18.157360 228.061539,71.387840 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.794"/>
+        <path class="Spokane (WA) Seattle (WA)" d="M 103.150475,-87.694031 C 87.372772,-70.142891 37.379517,-67.482735 19.828377,-83.260437" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="3.3350003"/>
+        <path class="Spokane (WA) Anchorage (AK)" d="M 103.150475,-87.694031 C -92.355370,-57.246323 -431.285767,-304.833527 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.012"/>
+        <path class="Spokane (WA) Boise (ID)" d="M 103.150475,-87.694031 C 127.750008,-72.311264 141.575165,-12.337816 126.192398,12.261719" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.629"/>
+        <path class="Spokane (WA) Las Vegas (NV)" d="M 103.150475,-87.694031 C 165.771606,-41.695934 190.706146,121.232887 144.708038,183.854004" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.711"/>
+        <path class="Spokane (WA) Denver (CO)" d="M 103.150475,-87.694031 C 185.644531,-94.987206 320.325378,17.814110 327.618561,100.308167" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.457"/>
+        <path class="Spokane (WA) Oakland (CA)" d="M 103.150475,-87.694031 C 133.997467,-24.140043 84.936996,117.461411 21.383005,148.308411" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="0.70400006"/>
+        <path class="Spokane (WA) Salt Lake City (UT)" d="M 103.150475,-87.694031 C 155.868423,-73.762466 214.048019,26.211796 200.116455,78.929749" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.337"/>
+        <path class="Spokane (WA) Los Angeles (CA)" d="M 103.150475,-87.694031 C 163.542191,-21.202612 154.392639,169.122086 87.901215,229.513794" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.16100001"/>
+        <path class="Nome (AK) Anchorage (AK)" d="M -733.014160,-626.456055 C -653.534668,-655.488892 -490.766296,-579.818848 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.41500002"/>
+        <path class="Bethel (AK) Anchorage (AK)" d="M -668.651978,-485.006470 C -630.334839,-529.456787 -506.183746,-538.656494 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.9760001"/>
+        <path class="Monterey (CA) Los Angeles (CA)" d="M 27.851784,172.928345 C 51.178761,172.235550 87.208420,206.186813 87.901215,229.513794" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.2830001"/>
+        <path class="Monterey (CA) San Francisco (CA)" d="M 27.851784,172.928345 C 21.480701,170.256287 15.932163,156.691589 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.72300005"/>
+        <path class="Twin Falls (ID) Salt Lake City (UT)" d="M 156.800858,37.494690 C 173.750992,37.118580 199.740356,61.979618 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.97900003"/>
+        <path class="Juneau (AK) Ketchikan (AK)" d="M -194.399658,-401.067749 C -165.189758,-391.912537 -135.107773,-334.364807 -144.263016,-305.154907" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.344"/>
+        <path class="Juneau (AK) Seattle (WA)" d="M -194.399658,-401.067749 C -87.992584,-380.351898 40.544231,-189.667511 19.828377,-83.260437" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.4760001"/>
+        <path class="Juneau (AK) Anchorage (AK)" d="M -194.399658,-401.067749 C -267.720734,-367.455292 -428.121002,-427.018280 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.115"/>
+        <path class="Juneau (AK) Yakutat (AK)" d="M -194.399658,-401.067749 C -219.908127,-391.135193 -273.069641,-414.499084 -283.002197,-440.007568" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.36200002"/>
+        <path class="Juneau (AK) Petersburg (AK)" d="M -194.399658,-401.067749 C -178.547424,-396.650208 -161.395355,-366.245544 -165.812897,-350.393311" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.36400002"/>
+        <path class="Juneau (AK) Sitka (AK)" d="M -194.399658,-401.067749 C -188.586365,-389.797241 -196.772171,-364.171570 -208.042679,-358.358276" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.70500004"/>
+        <path class="Cedar City (UT) Salt Lake City (UT)" d="M 180.679565,148.599365 C 170.633011,130.778061 182.295151,88.976295 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.62600005"/>
+        <path class="Ketchikan (AK) Wrangell (AK)" d="M -144.263016,-305.154907 C -153.635910,-309.857025 -160.642075,-330.969513 -155.939957,-340.342407" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.36400002"/>
+        <path class="Ketchikan (AK) Seattle (WA)" d="M -144.263016,-305.154907 C -67.065842,-293.594269 31.388988,-160.457611 19.828377,-83.260437" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="1.4100001"/>
+        <path class="Ketchikan (AK) Sitka (AK)" d="M -144.263016,-305.154907 C -167.659622,-303.039673 -205.927414,-334.961670 -208.042679,-358.358276" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Boise (ID) Sacramento (CA)" d="M 126.192398,12.261719 C 130.273315,53.870407 73.981644,122.404800 32.372959,126.485718" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="0.257"/>
+        <path class="Boise (ID) Seattle (WA)" d="M 126.192398,12.261719 C 85.815163,14.430092 21.996750,-42.883202 19.828377,-83.260437" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="2.1590002"/>
+        <path class="Boise (ID) Portland (OR)" d="M 126.192398,12.261719 C 94.255211,24.868732 27.438900,-4.126530 14.831886,-36.063721" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="0.397"/>
+        <path class="Boise (ID) Eugene (OR)" d="M 126.192398,12.261719 C 99.317375,34.264942 25.999998,26.957239 3.996777,0.082214" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.001"/>
+        <path class="Boise (ID) Las Vegas (NV)" d="M 126.192398,12.261719 C 164.213974,42.877045 175.323364,145.832428 144.708038,183.854004" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.712"/>
+        <path class="Boise (ID) Denver (CO)" d="M 126.192398,12.261719 C 184.086914,-10.414225 304.942596,42.413643 327.618561,100.308167" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="2.1090002"/>
+        <path class="Boise (ID) Oakland (CA)" d="M 126.192398,12.261719 C 132.439850,60.432938 69.554230,142.060959 21.383005,148.308411" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="0.725"/>
+        <path class="Boise (ID) San Diego (CA)" d="M 126.192398,12.261719 C 171.273056,64.174973 161.024170,209.665848 109.110916,254.746521" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Boise (ID) San Francisco (CA)" d="M 126.192398,12.261719 C 132.286514,61.391109 67.733612,144.226379 18.604221,150.320496" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="1.4560001"/>
+        <path class="Boise (ID) Salt Lake City (UT)" d="M 126.192398,12.261719 C 154.310806,10.810514 198.665253,50.811333 200.116455,78.929749" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="2.0800002"/>
+        <path class="Boise (ID) Los Angeles (CA)" d="M 126.192398,12.261719 C 161.984573,63.370369 139.009857,193.721619 87.901215,229.513794" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.57900006"/>
+        <path class="Pasco/Kennewick/Richland (WA) Denver (CO)" d="M 73.680771,-52.249817 C 154.979935,-72.525780 307.342590,19.009010 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.731"/>
+        <path class="Pasco/Kennewick/Richland (WA) Salt Lake City (UT)" d="M 73.680771,-52.249817 C 125.203827,-51.301041 201.065231,27.406700 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.041"/>
+        <path class="Pasco/Kennewick/Richland (WA) Seattle (WA)" d="M 73.680771,-52.249817 C 56.708168,-47.681465 24.396732,-66.287834 19.828377,-83.260437" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="1.0840001"/>
+        <path class="Pasco/Kennewick/Richland (WA) San Francisco (CA)" d="M 73.680771,-52.249817 C 103.179520,-0.720442 70.133598,120.821739 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.469"/>
+        <path class="West Yellowstone (MT) Salt Lake City (UT)" d="M 224.387268,-7.381348 C 236.795334,14.735035 222.232834,66.521690 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.224"/>
+        <path class="Adak Island (AK) Anchorage (AK)" d="M -746.148804,-348.181580 C -719.697327,-435.496216 -549.048096,-526.790894 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.105000004"/>
+        <path class="Eugene (OR) Denver (CO)" d="M 3.996777,0.082214 C 88.766335,-44.596962 282.939392,15.538612 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.693"/>
+        <path class="Eugene (OR) Salt Lake City (UT)" d="M 3.996777,0.082214 C 58.990219,-23.372211 176.662018,23.936306 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.748"/>
+        <path class="Eugene (OR) Los Angeles (CA)" d="M 3.996777,0.082214 C 66.663979,29.187641 117.006645,166.846588 87.901215,229.513794" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.29000002"/>
+        <path class="Eugene (OR) San Francisco (CA)" d="M 3.996777,0.082214 C 36.965919,27.208380 45.730389,117.351357 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.8230001"/>
+        <path class="Santa Ana (CA) Portland (OR)" d="M 97.344391,235.088562 C 26.611431,197.360611 -22.896069,34.669239 14.831886,-36.063721" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="1.6530001"/>
+        <path class="Santa Ana (CA) Sacramento (CA)" d="M 97.344391,235.088562 C 62.629536,226.362289 23.646675,161.200577 32.372959,126.485718" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.3270001"/>
+        <path class="Santa Ana (CA) Seattle (WA)" d="M 97.344391,235.088562 C 18.171387,186.921967 -28.338219,-4.087435 19.828377,-83.260437" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="3.2470002"/>
+        <path class="Santa Ana (CA) San Jose (CA)" d="M 97.344391,235.088562 C 67.607620,233.408676 25.522295,186.283707 27.202181,156.546936" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="3.3990002"/>
+        <path class="Santa Ana (CA) Las Vegas (NV)" d="M 97.344391,235.088562 C 96.570213,215.368912 124.988396,184.628189 144.708038,183.854004" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="2.436"/>
+        <path class="Santa Ana (CA) San Francisco (CA)" d="M 97.344391,235.088562 C 64.642746,233.882980 17.398643,183.022141 18.604221,150.320496" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="4.6410003"/>
+        <path class="Santa Ana (CA) Oakland (CA)" d="M 97.344391,235.088562 C 64.796082,232.924805 19.219252,180.856720 21.383005,148.308411" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.7020001"/>
+        <path class="Santa Ana (CA) Denver (CO)" d="M 97.344391,235.088562 C 116.443153,162.077637 254.607635,81.209412 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="3.6710002"/>
+        <path class="Santa Ana (CA) Salt Lake City (UT)" d="M 97.344391,235.088562 C 86.667038,183.302383 148.330276,89.607101 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.7420001"/>
+        <path class="Albuquerque (NM) Portland (OR)" d="M 293.773651,206.182495 C 189.536041,213.521606 22.170998,68.173874 14.831886,-36.063721" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.24200001"/>
+        <path class="Albuquerque (NM) Seattle (WA)" d="M 293.773651,206.182495 C 181.096008,203.082977 16.728844,29.417210 19.828377,-83.260437" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.37500003"/>
+        <path class="Albuquerque (NM) San Diego (CA)" d="M 293.773651,206.182495 C 266.553894,252.827850 155.756256,281.966278 109.110916,254.746521" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.675"/>
+        <path class="Albuquerque (NM) Las Vegas (NV)" d="M 293.773651,206.182495 C 259.494843,231.529922 170.055466,218.132828 144.708038,183.854004" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.4130001"/>
+        <path class="Albuquerque (NM) San Francisco (CA)" d="M 293.773651,206.182495 C 227.567368,250.043991 62.465706,216.526779 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.372"/>
+        <path class="Albuquerque (NM) Los Angeles (CA)" d="M 293.773651,206.182495 C 257.265442,252.023239 133.741959,266.022034 87.901215,229.513794" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.241"/>
+        <path class="Albuquerque (NM) Oakland (CA)" d="M 293.773651,206.182495 C 227.720703,249.085815 64.286324,214.361359 21.383005,148.308411" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.85"/>
+        <path class="Albuquerque (NM) Denver (CO)" d="M 293.773651,206.182495 C 279.367767,178.238647 299.674713,114.714050 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.9000001"/>
+        <path class="Albuquerque (NM) Salt Lake City (UT)" d="M 293.773651,206.182495 C 249.591660,199.463394 193.397354,123.111732 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.0350001"/>
+        <path class="Billings (MT) Denver (CO)" d="M 260.188171,-41.410461 C 302.017975,-26.552814 342.476196,58.478363 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.3130001"/>
+        <path class="Billings (MT) Seattle (WA)" d="M 260.188171,-41.410461 C 203.746216,-1.708496 59.530342,-26.818481 19.828377,-83.260437" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.135"/>
+        <path class="Billings (MT) Salt Lake City (UT)" d="M 260.188171,-41.410461 C 272.241882,-5.328074 236.198837,66.876053 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.13"/>
+        <path class="Grand Junction (CO) Denver (CO)" d="M 260.291473,116.851868 C 270.448151,100.077713 310.844391,90.151489 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.822"/>
+        <path class="Grand Junction (CO) Salt Lake City (UT)" d="M 260.291473,116.851868 C 240.672043,121.302444 204.567032,98.549179 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.915"/>
+        <path class="Gunnison (CO) Denver (CO)" d="M 288.145142,130.011353 C 290.099182,116.176033 313.783234,98.354118 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.024"/>
+        <path class="Lihue (HI) Seattle (WA)" d="M -626.553284,466.569763 C -607.242981,227.327362 -219.414001,-102.570724 19.828377,-83.260437" fill="none" stroke="#749736" stroke-opacity="1.0" stroke-width="0.611"/>
+        <path class="Lihue (HI) Portland (OR)" d="M -626.553284,466.569763 C -598.802979,237.766022 -213.971863,-63.814056 14.831886,-36.063721" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.101"/>
+        <path class="Lihue (HI) San Jose (CA)" d="M -626.553284,466.569763 C -557.806763,273.814087 -165.553497,87.800400 27.202181,156.546936" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.209"/>
+        <path class="Lihue (HI) Denver (CO)" d="M -626.553284,466.569763 C -508.971222,202.483063 63.531860,-17.273895 327.618561,100.308167" fill="none" stroke="#b17bb3" stroke-opacity="1.0" stroke-width="0.032"/>
+        <path class="Lihue (HI) Oakland (CA)" d="M -626.553284,466.569763 C -560.618286,273.330200 -171.856537,82.373428 21.383005,148.308411" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.24700001"/>
+        <path class="Lihue (HI) San Diego (CA)" d="M -626.553284,466.569763 C -521.785095,277.072266 -80.386574,149.978333 109.110916,254.746521" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.21900001"/>
+        <path class="Lihue (HI) San Francisco (CA)" d="M -626.553284,466.569763 C -560.771667,274.288391 -173.677139,84.538834 18.604221,150.320496" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="0.49600002"/>
+        <path class="Lihue (HI) Los Angeles (CA)" d="M -626.553284,466.569763 C -531.073608,276.267670 -102.400879,134.034088 87.901215,229.513794" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="1.5090001"/>
+        <path class="Mammoth Lakes (CA) Denver (CO)" d="M 80.390648,150.251038 C 119.847656,90.816879 268.184387,60.851154 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.009000001"/>
+        <path class="Mammoth Lakes (CA) San Francisco (CA)" d="M 80.390648,150.251038 C 68.047256,162.622208 30.975397,162.663895 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.109000005"/>
+        <path class="North Bend/Coos Bay (OR) Denver (CO)" d="M -13.997206,17.058105 C 70.975952,-34.615032 275.945435,15.335007 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.034"/>
+        <path class="North Bend/Coos Bay (OR) San Francisco (CA)" d="M -13.997206,17.058105 C 19.175558,37.190300 38.736416,117.147728 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.27"/>
+        <path class="Aspen (CO) Denver (CO)" d="M 290.202179,115.354980 C 294.676086,104.862343 317.125916,95.834251 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.154"/>
+        <path class="Aspen (CO) San Francisco (CA)" d="M 290.202179,115.354980 C 242.875687,176.667679 79.916916,197.646988 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.275"/>
+        <path class="Aspen (CO) Los Angeles (CA)" d="M 290.202179,115.354980 C 272.573761,178.646927 151.193161,247.142227 87.901215,229.513794" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.67700005"/>
+        <path class="Colorado Springs (CO) Seattle (WA)" d="M 325.042023,123.378906 C 222.671417,143.093765 39.543236,19.110168 19.828377,-83.260437" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Colorado Springs (CO) Las Vegas (NV)" d="M 325.042023,123.378906 C 301.070251,171.540726 192.869858,207.825790 144.708038,183.854004" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.201"/>
+        <path class="Colorado Springs (CO) Denver (CO)" d="M 325.042023,123.378906 C 320.943207,118.249451 322.489105,104.407013 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="2.4840002"/>
+        <path class="Colorado Springs (CO) Salt Lake City (UT)" d="M 325.042023,123.378906 C 291.167084,139.474182 216.211731,112.804695 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.67600006"/>
+        <path class="Colorado Springs (CO) Los Angeles (CA)" d="M 325.042023,123.378906 C 298.840851,192.034042 156.556351,255.714981 87.901215,229.513794" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.694"/>
+        <path class="Oakland (CA) Portland (OR)" d="M 21.383005,148.308411 C -16.801647,112.744209 -20.732317,2.120931 14.831886,-36.063721" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="1.9610001"/>
+        <path class="Oakland (CA) Kona (HI)" d="M 21.383005,148.308411 C -24.134682,338.599976 -377.848511,555.760742 -568.140076,510.243073" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.37500003"/>
+        <path class="Oakland (CA) Seattle (WA)" d="M 21.383005,148.308411 C -25.241692,102.305573 -26.174467,-36.635742 19.828377,-83.260437" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="3.5620003"/>
+        <path class="Oakland (CA) San Diego (CA)" d="M 21.383005,148.308411 C 60.216209,152.050461 112.852959,215.913315 109.110916,254.746521" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="3.8520002"/>
+        <path class="Oakland (CA) Las Vegas (NV)" d="M 21.383005,148.308411 C 53.157131,130.752518 127.152145,152.079880 144.708038,183.854004" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="3.7680001"/>
+        <path class="Oakland (CA) Ontario (CA)" d="M 21.383005,148.308411 C 53.275181,147.935135 101.673355,195.213486 102.046638,227.105652" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.355"/>
+        <path class="Oakland (CA) Los Angeles (CA)" d="M 21.383005,148.308411 C 50.927723,151.245850 90.838654,199.969086 87.901215,229.513794" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="6.2990003"/>
+        <path class="Oakland (CA) Burbank (CA)" d="M 21.383005,148.308411 C 50.267174,149.890213 91.220734,195.589157 89.638939,224.473328" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="4.024"/>
+        <path class="Oakland (CA) Denver (CO)" d="M 21.383005,148.308411 C 73.030067,77.461243 256.771423,48.661106 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.5130001"/>
+        <path class="Oakland (CA) Salt Lake City (UT)" d="M 21.383005,148.308411 C 43.253960,98.685989 150.494034,57.058792 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="2.115"/>
+        <path class="San Jose (CA) Portland (OR)" d="M 27.202181,156.546936 C -13.794010,120.498863 -21.216187,4.932471 14.831886,-36.063721" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.8460002"/>
+        <path class="San Jose (CA) Kona (HI)" d="M 27.202181,156.546936 C -21.127052,346.354614 -378.332397,558.572266 -568.140076,510.243073" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.157"/>
+        <path class="San Jose (CA) Seattle (WA)" d="M 27.202181,156.546936 C -22.234055,110.060226 -26.658339,-33.824200 19.828377,-83.260437" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="3.9720001"/>
+        <path class="San Jose (CA) San Diego (CA)" d="M 27.202181,156.546936 C 63.223846,159.805115 112.369087,218.724854 109.110916,254.746521" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="3.821"/>
+        <path class="San Jose (CA) Las Vegas (NV)" d="M 27.202181,156.546936 C 56.164768,138.507172 126.668274,154.891418 144.708038,183.854004" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="3.0770001"/>
+        <path class="San Jose (CA) Ontario (CA)" d="M 27.202181,156.546936 C 56.282818,155.689789 101.189484,198.025024 102.046638,227.105652" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="1.4210001"/>
+        <path class="San Jose (CA) Los Angeles (CA)" d="M 27.202181,156.546936 C 53.935360,159.000504 90.354774,202.780624 87.901215,229.513794" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="5.142"/>
+        <path class="San Jose (CA) Burbank (CA)" d="M 27.202181,156.546936 C 53.274811,157.644867 90.736870,198.400696 89.638939,224.473328" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.315"/>
+        <path class="San Jose (CA) Denver (CO)" d="M 27.202181,156.546936 C 76.037704,85.215897 256.287537,51.472645 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="2.397"/>
+        <path class="San Jose (CA) Salt Lake City (UT)" d="M 27.202181,156.546936 C 46.261597,106.440643 150.010162,59.870331 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.639"/>
+        <path class="Bellingham (WA) Seattle (WA)" d="M 15.914673,-118.438110 C 23.732948,-112.185310 26.081169,-91.078712 19.828377,-83.260437" fill="none" stroke="#749736" stroke-opacity="1.0" stroke-width="0.216"/>
+        <path class="Bellingham (WA) Las Vegas (NV)" d="M 15.914673,-118.438110 C 102.131775,-83.738358 179.407791,97.636909 144.708038,183.854004" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="0.216"/>
+        <path class="Portland (OR) Sacramento (CA)" d="M 14.831886,-36.063721 C 50.849991,-7.062048 61.374634,90.467613 32.372959,126.485718" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="1.7580001"/>
+        <path class="Portland (OR) Kona (HI)" d="M 14.831886,-36.063721 C 7.498840,189.792053 -342.284302,517.576111 -568.140076,510.243073" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.16900001"/>
+        <path class="Portland (OR) Bozeman (MT)" d="M 14.831886,-36.063721 C 53.809528,-76.916977 173.555862,-79.730392 214.409119,-40.752747" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.149"/>
+        <path class="Portland (OR) Seattle (WA)" d="M 14.831886,-36.063721 C 6.391841,-46.502361 9.389735,-74.820389 19.828377,-83.260437" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="2.144"/>
+        <path class="Portland (OR) Anchorage (AK)" d="M 14.831886,-36.063721 C -173.336319,-33.605782 -459.275513,-312.171143 -461.733459,-500.339355" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="1.0580001"/>
+        <path class="Portland (OR) San Diego (CA)" d="M 14.831886,-36.063721 C 91.849739,3.242521 148.417160,177.728668 109.110916,254.746521" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="1.8510001"/>
+        <path class="Portland (OR) Santa Barbara (CA)" d="M 14.831886,-36.063721 C 76.037308,4.917499 106.373627,158.197464 65.392403,219.402893" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Portland (OR) Palm Springs (CA)" d="M 14.831886,-36.063721 C 89.666557,-3.731644 153.420441,157.018478 121.088364,231.853149" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.30100003"/>
+        <path class="Portland (OR) Las Vegas (NV)" d="M 14.831886,-36.063721 C 84.790665,-18.055408 162.716339,113.895218 144.708038,183.854004" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="2.947"/>
+        <path class="Portland (OR) San Francisco (CA)" d="M 14.831886,-36.063721 C 52.863197,0.458656 55.126598,112.289185 18.604221,150.320496" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="5.124"/>
+        <path class="Portland (OR) Ontario (CA)" d="M 14.831886,-36.063721 C 84.908714,-0.872795 137.237564,157.028824 102.046638,227.105652" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="0.901"/>
+        <path class="Portland (OR) Los Angeles (CA)" d="M 14.831886,-36.063721 C 82.561249,2.437916 126.402855,161.784424 87.901215,229.513794" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="4.776"/>
+        <path class="Portland (OR) Burbank (CA)" d="M 14.831886,-36.063721 C 81.900711,1.082279 126.784943,157.404510 89.638939,224.473328" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="1.148"/>
+        <path class="Portland (OR) Salt Lake City (UT)" d="M 14.831886,-36.063721 C 74.887497,-50.121944 186.058228,18.874134 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="2.8720002"/>
+        <path class="Portland (OR) Denver (CO)" d="M 14.831886,-36.063721 C 104.663597,-71.346680 292.335602,10.476452 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="3.9900002"/>
+        <path class="San Luis Obispo (CA) Los Angeles (CA)" d="M 48.933094,201.999634 C 62.229549,199.708847 85.610420,216.217331 87.901215,229.513794" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.3900001"/>
+        <path class="San Luis Obispo (CA) San Francisco (CA)" d="M 48.933094,201.999634 C 32.531494,197.729584 14.334168,166.722107 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.116"/>
+        <path class="Kalispell (MT) Denver (CO)" d="M 160.401459,-105.632080 C 235.032928,-97.887451 335.363190,25.676697 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.90300006"/>
+        <path class="Kalispell (MT) Salt Lake City (UT)" d="M 160.401459,-105.632080 C 205.256821,-76.662712 229.085831,34.074383 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.0250001"/>
+        <path class="Seattle (WA) Sacramento (CA)" d="M 19.828377,-83.260437 C 64.286530,-43.820118 71.813278,82.027565 32.372959,126.485718" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="3.8980002"/>
+        <path class="Seattle (WA) Burbank (CA)" d="M 19.828377,-83.260437 C 95.337242,-35.675797 137.223572,148.964462 89.638939,224.473328" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="1.1620001"/>
+        <path class="Seattle (WA) Kona (HI)" d="M 19.828377,-83.260437 C 20.935394,153.033966 -331.845673,509.136047 -568.140076,510.243073" fill="none" stroke="#749736" stroke-opacity="1.0" stroke-width="0.897"/>
+        <path class="Seattle (WA) Bozeman (MT)" d="M 19.828377,-83.260437 C 67.246063,-113.675049 183.994507,-88.170433 214.409119,-40.752747" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.18900001"/>
+        <path class="Seattle (WA) Sitka (AK)" d="M 19.828377,-83.260437 C -80.765404,-92.705788 -217.488037,-257.764496 -208.042679,-358.358276" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.21100001"/>
+        <path class="Seattle (WA) Denver (CO)" d="M 19.828377,-83.260437 C 118.100136,-108.104752 302.774231,2.036404 327.618561,100.308167" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="6.497"/>
+        <path class="Seattle (WA) Anchorage (AK)" d="M 19.828377,-83.260437 C -159.899780,-70.363861 -448.836853,-320.611206 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="6.696"/>
+        <path class="Seattle (WA) San Diego (CA)" d="M 19.828377,-83.260437 C 105.286270,-33.515556 158.855804,169.288635 109.110916,254.746521" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="3.5390003"/>
+        <path class="Seattle (WA) Hayden (CO)" d="M 19.828377,-83.260437 C 116.464737,-102.106659 289.688599,14.578552 308.534821,111.214905" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.060000002"/>
+        <path class="Seattle (WA) Las Vegas (NV)" d="M 19.828377,-83.260437 C 98.227203,-54.813480 173.154999,105.455185 144.708038,183.854004" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="6.242"/>
+        <path class="Seattle (WA) San Francisco (CA)" d="M 19.828377,-83.260437 C 66.299728,-36.299419 65.565239,103.849136 18.604221,150.320496" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="7.8890004"/>
+        <path class="Seattle (WA) Ontario (CA)" d="M 19.828377,-83.260437 C 98.345261,-37.630867 147.676208,148.588776 102.046638,227.105652" fill="none" stroke="#b1ab02" stroke-opacity="1.0" stroke-width="0.961"/>
+        <path class="Seattle (WA) Jackson (WY)" d="M 19.828377,-83.260437 C 79.905693,-103.792122 200.819183,-44.473679 221.350876,15.603638" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.025"/>
+        <path class="Seattle (WA) Palm Springs (CA)" d="M 19.828377,-83.260437 C 103.103096,-40.489716 163.859085,148.578430 121.088364,231.853149" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.943"/>
+        <path class="Seattle (WA) Santa Barbara (CA)" d="M 19.828377,-83.260437 C 89.473846,-31.840572 116.812271,149.757416 65.392403,219.402893" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.499"/>
+        <path class="Seattle (WA) Los Angeles (CA)" d="M 19.828377,-83.260437 C 95.997787,-34.320156 136.841492,153.344391 87.901215,229.513794" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="10.224001"/>
+        <path class="Seattle (WA) Salt Lake City (UT)" d="M 19.828377,-83.260437 C 88.324036,-86.880020 196.496872,10.434093 200.116455,78.929749" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="4.243"/>
+        <path class="Cordova (AK) Yakutat (AK)" d="M -384.510529,-474.369385 C -357.336487,-487.798676 -296.431488,-467.181610 -283.002197,-440.007568" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.36100003"/>
+        <path class="Cordova (AK) Anchorage (AK)" d="M -384.510529,-474.369385 C -405.149109,-464.118805 -451.482880,-479.700775 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.36200002"/>
+        <path class="Jackson (WY) San Francisco (CA)" d="M 221.350876,15.603638 C 207.744919,83.096344 86.096924,163.926453 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.201"/>
+        <path class="Jackson (WY) Salt Lake City (UT)" d="M 221.350876,15.603638 C 229.769211,32.515743 217.028564,70.511414 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.0550001"/>
+        <path class="Jackson (WY) Denver (CO)" d="M 221.350876,15.603638 C 259.545319,11.291008 323.305939,62.113728 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.0150001"/>
+        <path class="Jackson (WY) Los Angeles (CA)" d="M 221.350876,15.603638 C 237.442978,85.075600 157.373184,213.421692 87.901215,229.513794" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.31"/>
+        <path class="Los Angeles (CA) Sacramento (CA)" d="M 87.901215,229.513794 C 56.189949,220.013824 22.872995,158.196991 32.372959,126.485718" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="4.7440004"/>
+        <path class="Los Angeles (CA) Kona (HI)" d="M 87.901215,229.513794 C 12.838818,416.867889 -380.785980,585.305481 -568.140076,510.243073" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="1.4760001"/>
+        <path class="Los Angeles (CA) Denver (CO)" d="M 87.901215,229.513794 C 110.003555,155.729202 253.833954,78.205826 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="6.8490005"/>
+        <path class="Los Angeles (CA) Anchorage (AK)" d="M 87.901215,229.513794 C -167.996338,193.470093 -497.777161,-244.441772 -461.733459,-500.339355" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.51500005"/>
+        <path class="Los Angeles (CA) Durango (CO)" d="M 87.901215,229.513794 C 110.335266,178.445313 220.589081,135.493683 271.657562,157.927734" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="0.012"/>
+        <path class="Los Angeles (CA) San Diego (CA)" d="M 87.901215,229.513794 C 97.189705,230.318390 109.915520,245.458038 109.110916,254.746521" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="2.8790002"/>
+        <path class="Los Angeles (CA) Hayden (CO)" d="M 87.901215,229.513794 C 108.368164,161.727295 240.748337,90.747955 308.534821,111.214905" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.096"/>
+        <path class="Los Angeles (CA) Las Vegas (NV)" d="M 87.901215,229.513794 C 90.130623,209.020477 124.214722,181.624603 144.708038,183.854004" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="11.298"/>
+        <path class="Los Angeles (CA) Eagle (CO)" d="M 87.901215,229.513794 C 103.393379,164.163162 224.657608,89.375443 290.008240,104.867615" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.12200001"/>
+        <path class="Los Angeles (CA) San Francisco (CA)" d="M 87.901215,229.513794 C 58.203156,227.534546 16.624962,180.018555 18.604221,150.320496" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="17.409"/>
+        <path class="Los Angeles (CA) Bozeman (MT)" d="M 87.901215,229.513794 C 59.149487,150.158905 135.054230,-12.001019 214.409119,-40.752747" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.164"/>
+        <path class="Los Angeles (CA) Palm Springs (CA)" d="M 87.901215,229.513794 C 95.006516,223.344223 114.918808,224.747849 121.088364,231.853149" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.37500003"/>
+        <path class="Los Angeles (CA) Santa Barbara (CA)" d="M 87.901215,229.513794 C 81.377274,231.993378 67.871986,225.926849 65.392403,219.402893" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="1.4050001"/>
+        <path class="Los Angeles (CA) Hilo (HI)" d="M 87.901215,229.513794 C 15.880959,413.241211 -367.740540,580.801941 -551.467957,508.781677" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="0.27800003"/>
+        <path class="Los Angeles (CA) Sun Valley/Hailey/Ketchum (ID)" d="M 87.901215,229.513794 C 59.334381,172.259048 102.366249,43.526672 159.620987,14.959839" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.032"/>
+        <path class="Los Angeles (CA) Salt Lake City (UT)" d="M 87.901215,229.513794 C 80.227455,176.953934 147.556595,86.603516 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="5.03"/>
+        <path class="Hayden (CO) Denver (CO)" d="M 308.534821,111.214905 C 310.170227,105.216805 321.620483,98.672768 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.34300002"/>
+        <path class="Hayden (CO) San Francisco (CA)" d="M 308.534821,111.214905 C 258.369812,177.022141 84.411461,200.485489 18.604221,150.320496" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.014"/>
+        <path class="Kodiak (AK) Anchorage (AK)" d="M -507.364258,-381.155884 C -522.074768,-414.118744 -494.696320,-485.628815 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.53800005"/>
+        <path class="Eagle (CO) Denver (CO)" d="M 290.008240,104.867615 C 296.618408,96.433662 319.184601,93.697990 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.32700002"/>
+        <path class="Casper (WY) Denver (CO)" d="M 299.006622,30.281250 C 318.734375,38.564247 335.901550,80.580391 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.757"/>
+        <path class="Casper (WY) Salt Lake City (UT)" d="M 299.006622,30.281250 C 288.958282,59.788982 229.624191,88.978088 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.76400006"/>
+        <path class="Idaho Falls (ID) Denver (CO)" d="M 198.566437,14.757202 C 241.487061,6.056971 318.918335,57.387550 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.023"/>
+        <path class="Idaho Falls (ID) Salt Lake City (UT)" d="M 198.566437,14.757202 C 211.710938,27.281710 212.640961,65.785233 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.462"/>
+        <path class="San Francisco (CA) Sacramento (CA)" d="M 18.604221,150.320496 C 16.591015,142.799789 24.852257,128.498917 32.372959,126.485718" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="1.7780001"/>
+        <path class="San Francisco (CA) Burbank (CA)" d="M 18.604221,150.320496 C 47.641731,150.944122 90.262558,195.435822 89.638939,224.473328" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="2.8330002"/>
+        <path class="San Francisco (CA) Kona (HI)" d="M 18.604221,150.320496 C -26.760132,339.653870 -378.806702,555.607422 -568.140076,510.243073" fill="none" stroke="#4099b3" stroke-opacity="1.0" stroke-width="0.726"/>
+        <path class="San Francisco (CA) Denver (CO)" d="M 18.604221,150.320496 C 70.404625,78.515152 255.813232,48.507763 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="7.5800004"/>
+        <path class="San Francisco (CA) Anchorage (AK)" d="M 18.604221,150.320496 C -207.595291,116.256058 -495.797913,-274.139862 -461.733459,-500.339355" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.11100001"/>
+        <path class="San Francisco (CA) San Diego (CA)" d="M 18.604221,150.320496 C 57.590767,153.104370 111.894783,215.759979 109.110916,254.746521" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="7.9430003"/>
+        <path class="San Francisco (CA) Las Vegas (NV)" d="M 18.604221,150.320496 C 50.531693,131.806427 126.193977,151.926544 144.708038,183.854004" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="9.114"/>
+        <path class="San Francisco (CA) Ontario (CA)" d="M 18.604221,150.320496 C 50.649734,148.989044 100.715187,195.060150 102.046638,227.105652" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="2.64"/>
+        <path class="San Francisco (CA) Bozeman (MT)" d="M 18.604221,150.320496 C 19.550552,72.944870 137.033493,-41.699078 214.409119,-40.752747" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.209"/>
+        <path class="San Francisco (CA) Santa Maria (CA)" d="M 18.604221,150.320496 C 37.131950,155.366028 57.355244,190.725922 52.309708,209.253662" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.675"/>
+        <path class="San Francisco (CA) Santa Barbara (CA)" d="M 18.604221,150.320496 C 41.778336,154.779343 69.851250,196.228775 65.392403,219.402893" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="2.308"/>
+        <path class="San Francisco (CA) Palm Springs (CA)" d="M 18.604221,150.320496 C 55.407585,146.130203 116.898071,195.049789 121.088364,231.853149" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="2.5040002"/>
+        <path class="San Francisco (CA) Redding (CA)" d="M 18.604221,150.320496 C 5.910975,137.074707 6.739790,98.166153 19.985580,85.472900" fill="none" stroke="#00c7ff" stroke-opacity="1.0" stroke-width="0.93000007"/>
+        <path class="San Francisco (CA) Sun Valley/Hailey/Ketchum (ID)" d="M 18.604221,150.320496 C 19.735439,95.045013 104.345505,13.828619 159.620987,14.959839" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.18100001"/>
+        <path class="San Francisco (CA) Salt Lake City (UT)" d="M 18.604221,150.320496 C 40.628521,99.739899 149.535858,56.905453 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="3.3370001"/>
+        <path class="Ontario (CA) Sacramento (CA)" d="M 102.046638,227.105652 C 67.987915,220.916397 26.183708,160.544449 32.372959,126.485718" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.2450001"/>
+        <path class="Ontario (CA) Las Vegas (NV)" d="M 102.046638,227.105652 C 101.928589,209.923035 127.525421,183.972046 144.708038,183.854004" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="1.496"/>
+        <path class="Ontario (CA) Denver (CO)" d="M 102.046638,227.105652 C 121.801529,156.631775 257.144684,80.553276 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.2800001"/>
+        <path class="Ontario (CA) Salt Lake City (UT)" d="M 102.046638,227.105652 C 92.025421,177.856506 150.867310,88.950958 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.031"/>
+        <path class="Bozeman (MT) Denver (CO)" d="M 214.409119,-40.752747 C 265.263184,-35.182449 333.188873,49.454098 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.138"/>
+        <path class="Bozeman (MT) Salt Lake City (UT)" d="M 214.409119,-40.752747 C 235.487091,-13.957713 226.911499,57.851780 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.141"/>
+        <path class="Santa Barbara (CA) Denver (CO)" d="M 65.392403,219.402893 C 94.018692,143.138718 251.354401,71.681877 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.73300004"/>
+        <path class="Barrow (AK) Deadhorse (AK)" d="M -551.820313,-750.229065 C -526.421631,-771.621643 -456.234650,-765.612488 -434.842041,-740.213806" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.13700001"/>
+        <path class="Barrow (AK) Anchorage (AK)" d="M -551.820313,-750.229065 C -483.824982,-718.268494 -429.772888,-568.334717 -461.733459,-500.339355" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.208"/>
+        <path class="Sacramento (CA) San Diego (CA)" d="M 32.372959,126.485718 C 73.372711,136.790283 119.415482,213.746765 109.110916,254.746521" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="3.107"/>
+        <path class="Sacramento (CA) Las Vegas (NV)" d="M 32.372959,126.485718 C 66.313629,115.492363 133.714676,149.913330 144.708038,183.854004" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="2.765"/>
+        <path class="Sacramento (CA) Burbank (CA)" d="M 32.372959,126.485718 C 63.423676,134.630035 97.783264,193.422607 89.638939,224.473328" fill="none" stroke="#fa9200" stroke-opacity="1.0" stroke-width="2.289"/>
+        <path class="Sacramento (CA) Denver (CO)" d="M 32.372959,126.485718 C 86.186569,62.201084 263.333923,46.494556 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="2.8130002"/>
+        <path class="Sacramento (CA) Salt Lake City (UT)" d="M 32.372959,126.485718 C 56.410469,83.425827 157.056549,54.892242 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.6370001"/>
+        <path class="Gillette (WY) Denver (CO)" d="M 313.158813,-4.040100 C 336.920410,13.937604 345.596283,76.546562 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.67800003"/>
+        <path class="Gillette (WY) Salt Lake City (UT)" d="M 313.158813,-4.040100 C 307.144318,35.162342 239.318909,84.944244 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.36600003"/>
+        <path class="Pocatello (ID) Salt Lake City (UT)" d="M 189.475601,29.350220 C 201.519684,37.137959 207.904190,66.885666 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.87500006"/>
+        <path class="Anchorage (AK) Kona (HI)" d="M -461.733459,-500.339355 C -280.898285,-276.941559 -344.742279,329.407898 -568.140076,510.243073" fill="none" stroke="#749736" stroke-opacity="1.0" stroke-width="0.046000004"/>
+        <path class="Anchorage (AK) Las Vegas (NV)" d="M -461.733459,-500.339355 C -203.606491,-484.788971 160.258392,-74.272972 144.708038,183.854004" fill="none" stroke="#34c581" stroke-opacity="1.0" stroke-width="0.083000004"/>
+        <path class="Anchorage (AK) Deadhorse (AK)" d="M -461.733459,-500.339355 C -504.330048,-553.692566 -488.195221,-697.617188 -434.842041,-740.213806" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.13700001"/>
+        <path class="Anchorage (AK) Denver (CO)" d="M -461.733459,-500.339355 C -183.733536,-538.080261 289.877655,-177.691742 327.618561,100.308167" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.45100003"/>
+        <path class="Anchorage (AK) Salt Lake City (UT)" d="M -461.733459,-500.339355 C -213.509644,-516.855530 183.600281,-169.294067 200.116455,78.929749" fill="none" stroke="#a5a781" stroke-opacity="1.0" stroke-width="0.09200001"/>
+        <path class="Kona (HI) Denver (CO)" d="M -568.140076,510.243073 C -470.975342,249.104370 66.479843,3.143417 327.618561,100.308167" fill="none" stroke="#b17bb3" stroke-opacity="1.0" stroke-width="0.09"/>
+        <path class="Kona (HI) San Diego (CA)" d="M -568.140076,510.243073 C -483.789185,323.693573 -77.438591,170.395630 109.110916,254.746521" fill="none" stroke="#bd7e34" stroke-opacity="1.0" stroke-width="0.16800001"/>
+        <path class="St. George (UT) Denver (CO)" d="M 173.414932,163.281677 C 191.660965,119.846252 284.183136,82.062141 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.674"/>
+        <path class="St. George (UT) Salt Lake City (UT)" d="M 173.414932,163.281677 C 161.884842,141.070984 177.905762,90.459831 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="1.345"/>
+        <path class="Durango (CO) Denver (CO)" d="M 271.657562,157.927734 C 271.325836,135.211624 304.902435,100.639877 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.63000005"/>
+        <path class="Petersburg (AK) Wrangell (AK)" d="M -165.812897,-350.393311 C -161.828125,-350.357697 -155.904373,-344.327179 -155.939957,-340.342407" fill="none" stroke="#69c404" stroke-opacity="1.0" stroke-width="0.36400002"/>
+        <path class="Las Vegas (NV) Burbank (CA)" d="M 144.708038,183.854004 C 141.818085,202.991699 108.776619,227.363281 89.638939,224.473328" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="3.361"/>
+        <path class="Las Vegas (NV) San Diego (CA)" d="M 144.708038,183.854004 C 151.767105,205.151932 130.408844,247.687454 109.110916,254.746521" fill="none" stroke="#7dac7f" stroke-opacity="1.0" stroke-width="4.52"/>
+        <path class="Las Vegas (NV) Salt Lake City (UT)" d="M 144.708038,183.854004 C 134.804871,151.787476 168.049927,88.832916 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="4.1010003"/>
+        <path class="Las Vegas (NV) Denver (CO)" d="M 144.708038,183.854004 C 164.580978,130.562729 274.327271,80.435226 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="6.807"/>
+        <path class="Sun Valley/Hailey/Ketchum (ID) Denver (CO)" d="M 159.620987,14.959839 C 210.290176,-1.570011 311.088715,49.638988 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.14600001"/>
+        <path class="Sun Valley/Hailey/Ketchum (ID) Salt Lake City (UT)" d="M 159.620987,14.959839 C 180.514053,19.654728 204.811340,58.036671 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.87500006"/>
+        <path class="Palm Springs (CA) Salt Lake City (UT)" d="M 121.088364,231.853149 C 106.309303,185.462845 153.726151,93.708809 200.116455,78.929749" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="0.82400006"/>
+        <path class="Palm Springs (CA) Denver (CO)" d="M 121.088364,231.853149 C 136.085419,164.238129 260.003540,85.311119 327.618561,100.308167" fill="none" stroke="#71a9ff" stroke-opacity="1.0" stroke-width="1.0040001"/>
+        <path class="San Diego (CA) Salt Lake City (UT)" d="M 109.110916,254.746521 C 92.148666,201.382050 146.751984,95.891998 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="2.4840002"/>
+        <path class="San Diego (CA) Denver (CO)" d="M 109.110916,254.746521 C 121.924767,180.157318 253.029358,87.494301 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="4.691"/>
+        <path class="Rock Springs (WY) Denver (CO)" d="M 248.569702,60.432922 C 272.354523,52.598202 319.783813,76.523346 327.618561,100.308167" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="0.661"/>
+        <path class="Burbank (CA) Salt Lake City (UT)" d="M 89.638939,224.473328 C 82.625725,173.269104 148.912231,85.942963 200.116455,78.929749" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="0.989"/>
+        <path class="Burbank (CA) Denver (CO)" d="M 89.638939,224.473328 C 112.401833,152.044373 255.189606,77.545273 327.618561,100.308167" fill="none" stroke="#ee8e7f" stroke-opacity="1.0" stroke-width="1.3700001"/>
+        <path class="Denver (CO) Salt Lake City (UT)" d="M 327.618561,100.308167 C 297.842438,121.532906 221.341202,108.705849 200.116455,78.929749" fill="none" stroke="#e28bff" stroke-opacity="1.0" stroke-width="7.071"/>
+    </g>
+    <g id="nodes">
+        <circle class="Laramie (WY)" cx="310.2245" cy="66.6568" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Long Beach (CA)" cx="92.50868" cy="232.10638" fill="#e28bff" fill-opacity="1.0" r="8.596491" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Helena (MT)" cx="199.32347" cy="-61.19513" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Lewiston (ID)" cx="112.46395" cy="-56.42981" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Gustavus (AK)" cx="-213.94496" cy="-403.2152" fill="#69c404" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Fairbanks (AK)" cx="-426.18527" cy="-638.95593" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Arcata/Eureka (CA)" cx="-11.134169" cy="77.16345" fill="#00c7ff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Santa Fe (NM)" cx="305.55652" cy="192.40686" fill="#ff5d85" fill-opacity="1.0" r="5.0" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Great Falls (MT)" cx="210.98009" cy="-84.09314" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Tucson (AZ)" cx="218.26515" cy="267.55157" fill="#00c7ff" fill-opacity="1.0" r="8.236842" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Kotzebue (AK)" cx="-683.4056" cy="-727.57446" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Missoula (MT)" cx="163.38263" cy="-69.61334" fill="#e28bff" fill-opacity="1.0" r="6.4385967" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Butte (MT)" cx="190.41754" cy="-46.428894" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Yuma (AZ)" cx="153.8893" cy="255.60016" fill="#fa9200" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Fresno (CA)" cx="65.04476" cy="168.84601" fill="#e28bff" fill-opacity="1.0" r="7.877193" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Elko (NV)" cx="133.6693" cy="78.056335" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="King Salmon (AK)" cx="-579.73645" cy="-412.10986" fill="#69c404" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Medford (OR)" cx="9.963947" cy="42.097595" fill="#00c7ff" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Bakersfield (CA)" cx="76.58995" cy="197.8576" fill="#fa9200" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Honolulu (HI)" cx="-601.7926" cy="478.85712" fill="#806b68" fill-opacity="1.0" r="11.473684" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Reno (NV)" cx="64.17233" cy="108.3927" fill="#00c7ff" fill-opacity="1.0" r="8.236842" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Montrose/Delta (CO)" cx="271.37338" cy="130.78394" fill="#e28bff" fill-opacity="1.0" r="6.4385967" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Dillingham (AK)" cx="-611.9043" cy="-424.182" fill="#69c404" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Phoenix (AZ)" cx="199.61523" cy="240.09253" fill="#fa9200" fill-opacity="1.0" r="19.026316" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Kahului (HI)" cx="-575.7499" cy="486.8593" fill="#806b68" fill-opacity="1.0" r="10.754386" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Bend/Redmond (OR)" cx="40.043884" cy="-3.1346436" fill="#00c7ff" fill-opacity="1.0" r="6.7982454" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Cody (WY)" cx="251.12439" cy="-9.78772" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Spokane (WA)" cx="103.150475" cy="-87.69403" fill="#69c404" fill-opacity="1.0" r="8.236842" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Nome (AK)" cx="-733.01416" cy="-626.45605" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Bethel (AK)" cx="-668.652" cy="-485.00647" fill="#69c404" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Monterey (CA)" cx="27.851784" cy="172.92834" fill="#00c7ff" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Twin Falls (ID)" cx="156.80086" cy="37.49469" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Juneau (AK)" cx="-194.39966" cy="-401.06775" fill="#69c404" fill-opacity="1.0" r="7.517544" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Cedar City (UT)" cx="180.67957" cy="148.59937" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Ketchikan (AK)" cx="-144.26302" cy="-305.1549" fill="#69c404" fill-opacity="1.0" r="6.4385967" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Boise (ID)" cx="126.1924" cy="12.261719" fill="#69c404" fill-opacity="1.0" r="9.675438" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Flagstaff (AZ)" cx="205.39772" cy="204.20795" fill="#fa9200" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Pasco/Kennewick/Richland (WA)" cx="73.68077" cy="-52.249817" fill="#e28bff" fill-opacity="1.0" r="6.4385967" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="West Yellowstone (MT)" cx="224.38727" cy="-7.3813477" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Hobbs (NM)" cx="354.45645" cy="255.39355" fill="#00af87" fill-opacity="1.0" r="5.0" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Adak Island (AK)" cx="-746.1488" cy="-348.18158" fill="#69c404" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Eugene (OR)" cx="3.9967768" cy="0.082214355" fill="#00c7ff" fill-opacity="1.0" r="6.7982454" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Santa Ana (CA)" cx="97.34439" cy="235.08856" fill="#fa9200" fill-opacity="1.0" r="8.596491" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Albuquerque (NM)" cx="293.77365" cy="206.1825" fill="#e28bff" fill-opacity="1.0" r="8.596491" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Billings (MT)" cx="260.18817" cy="-41.41046" fill="#e28bff" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Grand Junction (CO)" cx="260.29147" cy="116.85187" fill="#e28bff" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Gunnison (CO)" cx="288.14514" cy="130.01135" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Lihue (HI)" cx="-626.5533" cy="466.56976" fill="#806b68" fill-opacity="1.0" r="8.9561405" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Mammoth Lakes (CA)" cx="80.39065" cy="150.25104" fill="#00c7ff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="North Bend/Coos Bay (OR)" cx="-13.997206" cy="17.058105" fill="#00c7ff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Aspen (CO)" cx="290.20218" cy="115.35498" fill="#e28bff" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Colorado Springs (CO)" cx="325.04202" cy="123.37891" fill="#e28bff" fill-opacity="1.0" r="7.157895" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Oakland (CA)" cx="21.383005" cy="148.30841" fill="#fa9200" fill-opacity="1.0" r="12.192983" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="San Jose (CA)" cx="27.20218" cy="156.54694" fill="#fa9200" fill-opacity="1.0" r="10.394737" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Bellingham (WA)" cx="15.914673" cy="-118.43811" fill="#806b68" fill-opacity="1.0" r="6.4385967" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Portland (OR)" cx="14.831886" cy="-36.06372" fill="#fa9200" fill-opacity="1.0" r="14.710526" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="San Luis Obispo (CA)" cx="48.933094" cy="201.99963" fill="#00c7ff" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Kalispell (MT)" cx="160.40146" cy="-105.63208" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Seattle (WA)" cx="19.828377" cy="-83.26044" fill="#69c404" fill-opacity="1.0" r="19.026316" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Cordova (AK)" cx="-384.51053" cy="-474.3694" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Jackson (WY)" cx="221.35088" cy="15.603638" fill="#e28bff" fill-opacity="1.0" r="6.7982454" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Los Angeles (CA)" cx="87.901215" cy="229.5138" fill="#00c7ff" fill-opacity="1.0" r="18.666668" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Hayden (CO)" cx="308.53482" cy="111.214905" fill="#e28bff" fill-opacity="1.0" r="6.4385967" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Kodiak (AK)" cx="-507.36426" cy="-381.15588" fill="#69c404" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Sitka (AK)" cx="-208.04268" cy="-358.35828" fill="#69c404" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Eagle (CO)" cx="290.00824" cy="104.867615" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Casper (WY)" cx="299.00662" cy="30.28125" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Idaho Falls (ID)" cx="198.56644" cy="14.757202" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="San Francisco (CA)" cx="18.604221" cy="150.3205" fill="#00c7ff" fill-opacity="1.0" r="20.824562" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Ontario (CA)" cx="102.04664" cy="227.10565" fill="#fa9200" fill-opacity="1.0" r="8.596491" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Bozeman (MT)" cx="214.40912" cy="-40.752747" fill="#e28bff" fill-opacity="1.0" r="7.157895" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Hilo (HI)" cx="-551.46796" cy="508.78168" fill="#806b68" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Santa Maria (CA)" cx="52.309708" cy="209.25366" fill="#00c7ff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Santa Barbara (CA)" cx="65.3924" cy="219.4029" fill="#00c7ff" fill-opacity="1.0" r="7.157895" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Barrow (AK)" cx="-551.8203" cy="-750.22906" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Sacramento (CA)" cx="32.37296" cy="126.48572" fill="#fa9200" fill-opacity="1.0" r="10.754386" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Gillette (WY)" cx="313.1588" cy="-4.0401" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Pocatello (ID)" cx="189.4756" cy="29.35022" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Anchorage (AK)" cx="-461.73346" cy="-500.33936" fill="#69c404" fill-opacity="1.0" r="13.991228" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Kona (HI)" cx="-568.1401" cy="510.24307" fill="#806b68" fill-opacity="1.0" r="9.31579" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="St. George (UT)" cx="173.41493" cy="163.28168" fill="#e28bff" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Durango (CO)" cx="271.65756" cy="157.92773" fill="#fa9200" fill-opacity="1.0" r="6.0789475" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Petersburg (AK)" cx="-165.8129" cy="-350.3933" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Las Vegas (NV)" cx="144.70804" cy="183.854" fill="#00c7ff" fill-opacity="1.0" r="13.631579" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Wrangell (AK)" cx="-155.93996" cy="-340.3424" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Sun Valley/Hailey/Ketchum (ID)" cx="159.62099" cy="14.959839" fill="#e28bff" fill-opacity="1.0" r="6.4385967" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Palm Springs (CA)" cx="121.08836" cy="231.85315" fill="#00c7ff" fill-opacity="1.0" r="7.517544" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Deadhorse (AK)" cx="-434.84204" cy="-740.2138" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="San Diego (CA)" cx="109.110916" cy="254.74652" fill="#fa9200" fill-opacity="1.0" r="12.192983" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Rock Springs (WY)" cx="248.5697" cy="60.432922" fill="#e28bff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Burbank (CA)" cx="89.63894" cy="224.47333" fill="#fa9200" fill-opacity="1.0" r="8.596491" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Denver (CO)" cx="327.61856" cy="100.30817" fill="#e28bff" fill-opacity="1.0" r="25.5" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Roswell (NM)" cx="330.32053" cy="242.82086" fill="#fa9200" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Redding (CA)" cx="19.98558" cy="85.4729" fill="#00c7ff" fill-opacity="1.0" r="5.359649" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Yakutat (AK)" cx="-283.0022" cy="-440.00757" fill="#69c404" fill-opacity="1.0" r="5.7192984" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle class="Salt Lake City (UT)" cx="200.11646" cy="78.92975" fill="#e28bff" fill-opacity="1.0" r="22.982456" stroke="#000000" stroke-opacity="1.0" stroke-width="1.0"/>
+    </g>
+    <g id="node-labels">
+        <text class="Laramie (WY)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="310.2245" y="67.595604">
+            Laramie (WY)
+        </text>
+        <text class="Long Beach (CA)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="92.50868" y="233.98398">
+            Long Beach (CA)
+        </text>
+        <text class="Helena (MT)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="199.32347" y="-60.021626">
+            Helena (MT)
+        </text>
+        <text class="Lewiston (ID)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="112.46395" y="-55.491005">
+            Lewiston (ID)
+        </text>
+        <text class="Gustavus (AK)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-213.94496" y="-402.27643">
+            Gustavus (AK)
+        </text>
+        <text class="Fairbanks (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-426.18527" y="-637.7825">
+            Fairbanks (AK)
+        </text>
+        <text class="Arcata/Eureka (CA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-11.134169" y="78.10225">
+            Arcata/Eureka (CA)
+        </text>
+        <text class="Santa Fe (NM)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="305.55652" y="193.34567">
+            Santa Fe (NM)
+        </text>
+        <text class="Great Falls (MT)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="210.98009" y="-82.91963">
+            Great Falls (MT)
+        </text>
+        <text class="Tucson (AZ)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="218.26515" y="269.4292">
+            Tucson (AZ)
+        </text>
+        <text class="Kotzebue (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-683.4056" y="-726.401">
+            Kotzebue (AK)
+        </text>
+        <text class="Missoula (MT)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="163.38263" y="-68.20514">
+            Missoula (MT)
+        </text>
+        <text class="Butte (MT)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="190.41754" y="-45.49009">
+            Butte (MT)
+        </text>
+        <text class="Yuma (AZ)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="153.8893" y="256.53897">
+            Yuma (AZ)
+        </text>
+        <text class="Fresno (CA)" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="65.04476" y="170.48892">
+            Fresno (CA)
+        </text>
+        <text class="Elko (NV)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="133.6693" y="78.99513">
+            Elko (NV)
+        </text>
+        <text class="King Salmon (AK)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-579.73645" y="-411.17108">
+            King Salmon (AK)
+        </text>
+        <text class="Medford (OR)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="9.963947" y="43.271503">
+            Medford (OR)
+        </text>
+        <text class="Bakersfield (CA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="76.58995" y="199.0311">
+            Bakersfield (CA)
+        </text>
+        <text class="Honolulu (HI)" fill="#000000" font-family="Arial" font-size="12" style="text-anchor: middle; dominant-baseline: central;" x="-601.7926" y="481.67352">
+            Honolulu (HI)
+        </text>
+        <text class="Reno (NV)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="64.17233" y="110.27031">
+            Reno (NV)
+        </text>
+        <text class="Montrose/Delta (CO)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="271.37338" y="132.19263">
+            Montrose/Delta (CO)
+        </text>
+        <text class="Dillingham (AK)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-611.9043" y="-423.24323">
+            Dillingham (AK)
+        </text>
+        <text class="Phoenix (AZ)" fill="#000000" font-family="Arial" font-size="26" style="text-anchor: middle; dominant-baseline: central;" x="199.61523" y="246.19473">
+            Phoenix (AZ)
+        </text>
+        <text class="Kahului (HI)" fill="#000000" font-family="Arial" font-size="11" style="text-anchor: middle; dominant-baseline: central;" x="-575.7499" y="489.44104">
+            Kahului (HI)
+        </text>
+        <text class="Bend/Redmond (OR)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="40.043884" y="-1.7259521">
+            Bend/Redmond (OR)
+        </text>
+        <text class="Cody (WY)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="251.12439" y="-8.614218">
+            Cody (WY)
+        </text>
+        <text class="Spokane (WA)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="103.150475" y="-85.81642">
+            Spokane (WA)
+        </text>
+        <text class="Nome (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-733.01416" y="-625.2826">
+            Nome (AK)
+        </text>
+        <text class="Bethel (AK)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-668.652" y="-484.0677">
+            Bethel (AK)
+        </text>
+        <text class="Monterey (CA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="27.851784" y="174.10184">
+            Monterey (CA)
+        </text>
+        <text class="Twin Falls (ID)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="156.80086" y="38.433495">
+            Twin Falls (ID)
+        </text>
+        <text class="Juneau (AK)" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="-194.39966" y="-399.42487">
+            Juneau (AK)
+        </text>
+        <text class="Cedar City (UT)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="180.67957" y="149.53818">
+            Cedar City (UT)
+        </text>
+        <text class="Ketchikan (AK)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="-144.26302" y="-303.7467">
+            Ketchikan (AK)
+        </text>
+        <text class="Boise (ID)" fill="#000000" font-family="Arial" font-size="10" style="text-anchor: middle; dominant-baseline: central;" x="126.1924" y="14.608725">
+            Boise (ID)
+        </text>
+        <text class="Flagstaff (AZ)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="205.39772" y="205.14676">
+            Flagstaff (AZ)
+        </text>
+        <text class="Pasco/Kennewick/Richland (WA)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="73.68077" y="-50.841614">
+            Pasco/Kennewick/Richland (WA)
+        </text>
+        <text class="West Yellowstone (MT)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="224.38727" y="-6.4425454">
+            West Yellowstone (MT)
+        </text>
+        <text class="Hobbs (NM)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="354.45645" y="256.33237">
+            Hobbs (NM)
+        </text>
+        <text class="Adak Island (AK)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-746.1488" y="-347.2428">
+            Adak Island (AK)
+        </text>
+        <text class="Eugene (OR)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="3.9967768" y="1.4909058">
+            Eugene (OR)
+        </text>
+        <text class="Santa Ana (CA)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="97.34439" y="236.96616">
+            Santa Ana (CA)
+        </text>
+        <text class="Albuquerque (NM)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="293.77365" y="208.06009">
+            Albuquerque (NM)
+        </text>
+        <text class="Billings (MT)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="260.18817" y="-40.23696">
+            Billings (MT)
+        </text>
+        <text class="Grand Junction (CO)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="260.29147" y="118.02578">
+            Grand Junction (CO)
+        </text>
+        <text class="Gunnison (CO)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="288.14514" y="130.95049">
+            Gunnison (CO)
+        </text>
+        <text class="Lihue (HI)" fill="#000000" font-family="Arial" font-size="9" style="text-anchor: middle; dominant-baseline: central;" x="-626.5533" y="468.68207">
+            Lihue (HI)
+        </text>
+        <text class="Mammoth Lakes (CA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="80.39065" y="151.42453">
+            Mammoth Lakes (CA)
+        </text>
+        <text class="North Bend/Coos Bay (OR)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-13.997206" y="18.232016">
+            North Bend/Coos Bay (OR)
+        </text>
+        <text class="Aspen (CO)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="290.20218" y="116.52889">
+            Aspen (CO)
+        </text>
+        <text class="Colorado Springs (CO)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="325.04202" y="124.7876">
+            Colorado Springs (CO)
+        </text>
+        <text class="Oakland (CA)" fill="#000000" font-family="Arial" font-size="13" style="text-anchor: middle; dominant-baseline: central;" x="21.383005" y="151.36058">
+            Oakland (CA)
+        </text>
+        <text class="San Jose (CA)" fill="#000000" font-family="Arial" font-size="11" style="text-anchor: middle; dominant-baseline: central;" x="27.20218" y="159.12863">
+            San Jose (CA)
+        </text>
+        <text class="Bellingham (WA)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="15.914673" y="-117.02991">
+            Bellingham (WA)
+        </text>
+        <text class="Portland (OR)" fill="#000000" font-family="Arial" font-size="17" style="text-anchor: middle; dominant-baseline: central;" x="14.831886" y="-32.07243">
+            Portland (OR)
+        </text>
+        <text class="San Luis Obispo (CA)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="48.933094" y="203.17354">
+            San Luis Obispo (CA)
+        </text>
+        <text class="Kalispell (MT)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="160.40146" y="-104.45857">
+            Kalispell (MT)
+        </text>
+        <text class="Seattle (WA)" fill="#000000" font-family="Arial" font-size="26" style="text-anchor: middle; dominant-baseline: central;" x="19.828377" y="-77.15822">
+            Seattle (WA)
+        </text>
+        <text class="Cordova (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-384.51053" y="-473.19586">
+            Cordova (AK)
+        </text>
+        <text class="Jackson (WY)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="221.35088" y="17.01184">
+            Jackson (WY)
+        </text>
+        <text class="Los Angeles (CA)" fill="#000000" font-family="Arial" font-size="25" style="text-anchor: middle; dominant-baseline: central;" x="87.901215" y="235.38132">
+            Los Angeles (CA)
+        </text>
+        <text class="Hayden (CO)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="308.53482" y="112.6236">
+            Hayden (CO)
+        </text>
+        <text class="Kodiak (AK)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="-507.36426" y="-380.2171">
+            Kodiak (AK)
+        </text>
+        <text class="Sitka (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-208.04268" y="-357.18475">
+            Sitka (AK)
+        </text>
+        <text class="Eagle (CO)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="290.00824" y="106.04153">
+            Eagle (CO)
+        </text>
+        <text class="Casper (WY)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="299.00662" y="31.454754">
+            Casper (WY)
+        </text>
+        <text class="Idaho Falls (ID)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="198.56644" y="15.930704">
+            Idaho Falls (ID)
+        </text>
+        <text class="San Francisco (CA)" fill="#000000" font-family="Arial" font-size="30" style="text-anchor: middle; dominant-baseline: central;" x="18.604221" y="157.36151">
+            San Francisco (CA)
+        </text>
+        <text class="Ontario (CA)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="102.04664" y="228.9839">
+            Ontario (CA)
+        </text>
+        <text class="Bozeman (MT)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="214.40912" y="-39.344543">
+            Bozeman (MT)
+        </text>
+        <text class="Hilo (HI)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-551.46796" y="509.9552">
+            Hilo (HI)
+        </text>
+        <text class="Santa Maria (CA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="52.309708" y="210.19247">
+            Santa Maria (CA)
+        </text>
+        <text class="Santa Barbara (CA)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="65.3924" y="220.8111">
+            Santa Barbara (CA)
+        </text>
+        <text class="Barrow (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-551.8203" y="-749.05554">
+            Barrow (AK)
+        </text>
+        <text class="Sacramento (CA)" fill="#000000" font-family="Arial" font-size="11" style="text-anchor: middle; dominant-baseline: central;" x="32.37296" y="129.06743">
+            Sacramento (CA)
+        </text>
+        <text class="Gillette (WY)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="313.1588" y="-2.8665977">
+            Gillette (WY)
+        </text>
+        <text class="Pocatello (ID)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="189.4756" y="30.28902">
+            Pocatello (ID)
+        </text>
+        <text class="Anchorage (AK)" fill="#000000" font-family="Arial" font-size="16" style="text-anchor: middle; dominant-baseline: central;" x="-461.73346" y="-496.58417">
+            Anchorage (AK)
+        </text>
+        <text class="Kona (HI)" fill="#000000" font-family="Arial" font-size="9" style="text-anchor: middle; dominant-baseline: central;" x="-568.1401" y="512.35535">
+            Kona (HI)
+        </text>
+        <text class="St. George (UT)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="173.41493" y="164.45517">
+            St. George (UT)
+        </text>
+        <text class="Durango (CO)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="271.65756" y="159.10164">
+            Durango (CO)
+        </text>
+        <text class="Petersburg (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-165.8129" y="-349.2198">
+            Petersburg (AK)
+        </text>
+        <text class="Las Vegas (NV)" fill="#000000" font-family="Arial" font-size="15" style="text-anchor: middle; dominant-baseline: central;" x="144.70804" y="187.37451">
+            Las Vegas (NV)
+        </text>
+        <text class="Wrangell (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-155.93996" y="-339.16888">
+            Wrangell (AK)
+        </text>
+        <text class="Sun Valley/Hailey/Ketchum (ID)" fill="#000000" font-family="Arial" font-size="6" style="text-anchor: middle; dominant-baseline: central;" x="159.62099" y="16.368042">
+            Sun Valley/Hailey/Ketchum (ID)
+        </text>
+        <text class="Palm Springs (CA)" fill="#000000" font-family="Arial" font-size="7" style="text-anchor: middle; dominant-baseline: central;" x="121.08836" y="233.49606">
+            Palm Springs (CA)
+        </text>
+        <text class="Deadhorse (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-434.84204" y="-739.0403">
+            Deadhorse (AK)
+        </text>
+        <text class="San Diego (CA)" fill="#000000" font-family="Arial" font-size="13" style="text-anchor: middle; dominant-baseline: central;" x="109.110916" y="257.79764">
+            San Diego (CA)
+        </text>
+        <text class="Rock Springs (WY)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="248.5697" y="61.371727">
+            Rock Springs (WY)
+        </text>
+        <text class="Burbank (CA)" fill="#000000" font-family="Arial" font-size="8" style="text-anchor: middle; dominant-baseline: central;" x="89.63894" y="226.35092">
+            Burbank (CA)
+        </text>
+        <text class="Denver (CO)" fill="#000000" font-family="Arial" font-size="41" style="text-anchor: middle; dominant-baseline: central;" x="327.61856" y="109.93423">
+            Denver (CO)
+        </text>
+        <text class="Roswell (NM)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="330.32053" y="243.75967">
+            Roswell (NM)
+        </text>
+        <text class="Redding (CA)" fill="#000000" font-family="Arial" font-size="4" style="text-anchor: middle; dominant-baseline: central;" x="19.98558" y="86.4117">
+            Redding (CA)
+        </text>
+        <text class="Yakutat (AK)" fill="#000000" font-family="Arial" font-size="5" style="text-anchor: middle; dominant-baseline: central;" x="-283.0022" y="-438.83405">
+            Yakutat (AK)
+        </text>
+        <text class="Salt Lake City (UT)" fill="#000000" font-family="Arial" font-size="35" style="text-anchor: middle; dominant-baseline: central;" x="200.11646" y="87.14427">
+            Salt Lake City (UT)
+        </text>
+    </g>
+</svg>
