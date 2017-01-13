@@ -37,6 +37,9 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="top" title="" href="index.html" />
+    <link rel="up" title="Project Overview" href="overview.html" />
+    <link rel="next" title="Part 1. Air-traffic Count Analysis" href="flight-count-analysis.html" />
+    <link rel="prev" title="Gallery 2: Air-traffic Residual Analysis" href="regression-gallery.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -75,10 +78,22 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="overview.html">Project Overview</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="overview.html#galleries">Galleries</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis-gallery.html">Gallery 1: Trend in US air-traffic movement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="regression-gallery.html">Gallery 2: Air-traffic Residual Analysis</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gallery 3: Network Theoretic Analysis of US Airtraffic</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="flight-count-analysis.html">Part 1. Air-traffic Count Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#load-and-explore-dataset">Load and explore dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#goal-of-this-analysis">Goal of this analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#load-and-explore-dataset">Load and explore dataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#enhanced-lookup-table">Enhanced lookup table</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#create-timeseries-of-daily-flight-counts">Create Timeseries of Daily Flight Counts</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#create-interactive-plot-with-plotly-cufflinks">Create interactive plot with plotly/cufflinks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#study-seasonal-trend-with-rolling-averaged-timeseries">Study seasonal trend with rolling-averaged timeseries</a></li>
@@ -100,24 +115,27 @@
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#id1">Data tidying</a></li>
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#choropleth-figure-display-result-on-us-map">Choropleth figure (display result on US map)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#choropleth-after-normalizing-over-state-population">Choropleth after normalizing over state population</a></li>
-<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#ignore-nothing-interesting-normalized-flight-counts-at-different-month">(ignore, nothing interesting) Normalized flight-counts at different month?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#ignore-nothing-interesting">(ignore, nothing interesting)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="flight-count-analysis.html#most-frequently-used-airports">Most frequently used airports</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#id2">Data tidying</a></li>
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#id3">Plot results</a></li>
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#display-results-on-us-map">Display results on US Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-count-analysis.html#conclusion">Conclusion</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="regressing_out_weekday_effect.html">Part2: Holiday Detection via Flight-Residual Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#aim-of-this-notebook">Aim of this notebook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#load-data-and-prepare-timeseries">Load data, and prepare Timeseries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="regressing_out_weekday_effect.html">Part 2: Regressing out the effect of &#8220;day_of_wek&#8221;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#goal-of-this-notebook">Goal of this notebook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#load-data-and-prepare-timeseries">Load data, and prepare Timeseries</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#regression-analysis-eliminate-effect-from-day-of-week">Regression analysis: eliminate effect from &#8220;day_of_week&#8221;</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#fit-ols-model">Fit OLS model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#analyze-residual-signal">Analyze residual signal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#get-lagged-residual">Get &#8220;Lagged&#8221; residual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#compute-first-order-difference-in-the-residual">Compute first-order difference in the residual</a></li>
 <li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#histograms-of-the-signals">Histograms of the signals</a></li>
 </ul>
 </li>
@@ -125,6 +143,7 @@
 <li class="toctree-l3"><a class="reference internal" href="regressing_out_weekday_effect.html#try-overlaying-the-annual-plot">Try overlaying the annual plot</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="regressing_out_weekday_effect.html#summary">Summary</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="network_analysis.html">Part3: Network analysis of 2016 US Air Traffic</a><ul>

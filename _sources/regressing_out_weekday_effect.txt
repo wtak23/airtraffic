@@ -1,5 +1,5 @@
-Part2: Holiday Detection via Flight-Residual Analysis
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
+Part 2: Regressing out the effect of "day_of_wek"
+"""""""""""""""""""""""""""""""""""""""""""""""""
 
 The original Jupyter notebook can be downloaded from `here <http://nbviewer.jupyter.org/github/wtak23/airtraffic/blob/master/final_scripts/regressing_out_weekday_effect.ipynb>`__ .
 
@@ -7,38 +7,33 @@ The original Jupyter notebook can be downloaded from `here <http://nbviewer.jupy
    :depth: 2
    :local:
 
-Aim of this notebook
-====================
+Goal of this notebook
+=====================
 
--  In our `air-traffic count
-   analysis <http://takwatanabe.me/airtraffic/flight-count-analysis1.html>`__,
-   we found from the following plot that when the time-series signal of
-   the air-traffic-counts is heavily influenced by "*what day of the week
-   it is*.", indicating that people tend to fly out less especially on
-   Saturdays.
+-  In the previous `air-traffic count
+   analysis <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__,
+   we saw from the plot below that the daily air-traffic signal is
+   heavily influenced by ``day_of_week``
+-  namely, the time-series takes a huge "dip" on Saturdays, suggesting
+   people tend to fly out less on that day
+-  This ``day_of_week`` effect may potentially obscure away other
+   interesting patterns in the data.
 
--  This ``day_of_week`` effect seems to obscure away interesting trend
-   in our data.
-
-.. code:: python
-
-    from IPython.core.display import display, HTML
-    display(HTML('<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1555.embed?link=false&logo=false" height="525px" width="100%"></iframe>'))
-
-
+-  In this notebook, we'll aim to **linearly regress out** the effect of
+   ``day_of_week`` by using a linear regression model
+-  The regressors will be the ``day_of_week``, encoded by a categorical
+   `dummy
+   variables <https://en.wikipedia.org/wiki/Dummy_variable_(statistics)>`__
+   (called ``factor`` in R)
+-  I'm sure there are other autocorrelatio-based or Fourier-based models
+   that are more suitable for this type of signal, but a simple linear
+   regression is a good starting-point for me, especially with the time
+   constraint.
 
 .. raw:: html
 
     <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1555.embed?link=false&logo=false" height="525px" width="100%"></iframe>
 
-
--  So in this notebook, we'll aim to **linearly regress out** the effect
-   of ``day_of_week`` by using a linear regression model
-
--  The regressors will be the ``day_of_week``, encoded by a categorical
-   `dummy
-   variables <https://en.wikipedia.org/wiki/Dummy_variable_(statistics)>`__
-   (called ``factor`` in R)
 
 .. code:: python
 
@@ -57,6 +52,8 @@ Aim of this notebook
     import cufflinks as cf
     cf.set_config_file(theme='ggplot',sharing='secret')
     
+    # utility functions for this project
+    # see https://github.com/wtak23/airtraffic/blob/master/final_scripts/util/util.py
     import util
     
     # limit output to avoid cluttering screen
@@ -69,10 +66,11 @@ Aim of this notebook
     period = '11/1/2015 to 10/31/2016' #range of our analysis
 
 Load data, and prepare Timeseries
-=================================
+---------------------------------
 
 -  Here I'll quickly repeat the procedure I took in my previous notebook
    (`link <http://takwatanabe.me/airtraffic/flight-count-analysis1.html#create-timeseries-of-daily-flight-counts>`__)
+-  please feel free to skip over this section entirely
 
 .. code:: python
 
@@ -115,9 +113,6 @@ Load data, and prepare Timeseries
                       + df_data['MONTH'].astype(str) + '-' 
                       + df_data['DAY_OF_MONTH'].astype(str))
     
-
-.. code:: python
-
     # now we can create time-series of airtraffic counts
     ts_flightcounts = pd.DataFrame(df_data['time'].value_counts()).\
         rename(columns={'time':'counts'})
@@ -144,45 +139,24 @@ Load data, and prepare Timeseries
         + '/'  + ts_flightcounts['day'].astype(str)
         + ' (' + ts_flightcounts['day_of_week'] + ')'
     ).tolist()
-    print hover_text[:5]
-
-
-.. parsed-literal::
-    :class: myliteral
-
-    ['11/1 (Sun)', '11/2 (Mon)', '11/3 (Tue)', '11/4 (Wed)', '11/5 (Thu)']
-    
-
-.. code:: python
-
-    plt_options = dict(text=hover_text,color='pink')
-    title = 'Daily Airflight Counts in the US between ' + period
-    title+= '<br>(hover over plot for dates; left-click to zoom)'
-    
-    ts_flightcounts.iplot(y='counts',
-                          filename=outfile+'plot_flightcounts',
-                          title=title,
-                          **plt_options)
-
 
 -  Ok, we are in business. Let's next run our regression analysis.
 
 Regression analysis: eliminate effect from "day\_of\_week"
 ==========================================================
 
--  Here we will apply linear regression using ``day_of_week`` encoded by
-   dummy-variables as the regressors.
-
--  By studying the residual-timeseries from this regression, we hope to
-   identify interesting trends that are buried under the dominant effect
-   of ``day_of_week``
+-  Here we will apply linear regression using dummy-variables
+   ``day_of_week`` as the regressors.
+-  If least-squares fit can remove the effect from the regressor
+   variables, we may be able to dig out interesting patterns from the
+   residual-timeseries signal
 
 Fit OLS model
 -------------
 
 .. code:: python
 
-    # i love statsmodels, as it allows me to apply R like syntax
+    # as someone with an R background, i love statsmodels :)
     import statsmodels.formula.api as smf
     
     # fit OLS model using categorical variables without intercept 
@@ -208,10 +182,10 @@ Fit OLS model
       <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   73.96</td>
     </tr>
     <tr>
-      <th>Date:</th>             <td>Wed, 11 Jan 2017</td> <th>  Prob (F-statistic):</th> <td>9.34e-60</td>
+      <th>Date:</th>             <td>Thu, 12 Jan 2017</td> <th>  Prob (F-statistic):</th> <td>9.34e-60</td>
     </tr>
     <tr>
-      <th>Time:</th>                 <td>12:24:22</td>     <th>  Log-Likelihood:    </th> <td> -3004.6</td>
+      <th>Time:</th>                 <td>23:53:07</td>     <th>  Log-Likelihood:    </th> <td> -3004.6</td>
     </tr>
     <tr>
       <th>No. Observations:</th>      <td>   366</td>      <th>  AIC:               </th> <td>   6023.</td>
@@ -321,29 +295,29 @@ Analyze residual signal
 
 -  The cyclical effect from ``day_of_week`` has been fairly suppressed.
 
--  There are dominant *spikes* present around National holidays (eg,
-   Thanksgiving, Independence day), which makes sesne --- many people,
-   myself included, tend to fly out during these vacation time :)
+-  The dominant *spikes* that in the residual occurs right around
+   National holidays (eg, Thanksgiving, Independence day), which makes
+   sesne
 
-Get "Lagged" residual
----------------------
+-  many folks, myself included, tend to fly out during these vacation
+   time :)
 
--  Let's take this a step further, and compute and plot the "lagged"
-   residual plot by computing the "first-order-difference" in the
-   residual signal
+Compute first-order difference in the residual
+----------------------------------------------
 
+-  Let's take this a step further, and compute the first-order
+   difference in the residual
 -  this is given by: ``resid_lag[t] = resid[t] - resid[t-1]``
-
 -  (coming from an electrical engineering background, I interpret this
    as a high-pass filtering operation)
 
 .. code:: python
 
     # also add "lagged" residual information
-    ts_flightcounts['resid_lag'] = \
+    ts_flightcounts['resid_diff'] = \
         ts_flightcounts['residual'].shift(1) - ts_flightcounts['residual']
         
-    title = 'Lagged Residual Signal of Airflight Counts in the US between {}'.format(period)
+    title = 'First-order difference of the Residual Signal (`day_of_week` used as regressors)'
     title+= '<br>(left click to zoom on figure; shaded region = +/-1.5 std-dev)'
     
     annotations = {
@@ -356,14 +330,14 @@ Get "Lagged" residual
         datetime(2016, 9, 4):'Labor Day',
     }
     
-    std_ = ts_flightcounts['resid_lag'].std() # std-deviation
+    std_ = ts_flightcounts['resid_diff'].std() # std-deviation
     
-    ts_flightcounts['resid_lag'].iplot(
-        filename=outfile+'plot_resid_lag',
+    ts_flightcounts['resid_diff'].iplot(
+        filename=outfile+'resid_diff',
         annotations=annotations,
-        color = 'orange',
+        color = 'blue',
         #hspan=[(-1.5*std_,1.5*std_)],
-        hspan = dict(y0=-1.5*std_,y1=1.5*std_,opacity=0.2,color='teal',fill=True),
+        hspan = dict(y0=-1.5*std_,y1=1.5*std_,opacity=0.15,color='magenta',fill=True),
         text=hover_text,
         title=title)
 
@@ -372,12 +346,12 @@ Get "Lagged" residual
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1807.embed?link=false&logo=false&share_key=gZgt67hPMDug68ug3PsKwf" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1977.embed?link=false&logo=false&share_key=KDoSJE8poT6uSxXfAyG10q" height="525px" width="100%"></iframe>
 
 
 
--  Pretty neat! The national holidays appear as huge "*spikes*" in the
-   signal!
+-  Pretty neat! The national holidays appear as salient "*spikes*" in
+   the signal!
 
 -  There are some other mild "spikes" occuring at days I am not familiar
    with (e.g., was February 7th last year a special day?)
@@ -388,17 +362,17 @@ Get "Lagged" residual
     title+= '<br>(original signal overlaid in secondary y-axes; left click to select zooming region)'
     
     fig1 = ts_flightcounts.iplot(columns=['counts'],   text=hover_text, color='pink',asFigure=True)
-    fig2 = ts_flightcounts.iplot(columns=['resid_lag'], text=hover_text, color='orange',
-                                 secondary_y=['resid_lag'], asFigure=True,title=title)
+    fig2 = ts_flightcounts.iplot(columns=['resid_diff'], text=hover_text, color='blue',
+                                 secondary_y=['resid_diff'], asFigure=True,title=title)
     fig2['data'].extend(fig1['data'])
-    py.iplot(fig2,filename=outfile+'resid-lag-overlaid')
+    py.iplot(fig2,filename=outfile+'resid_diff-overlaid')
 
 
 
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1809.embed?link=false&logo=false&share_key=OZtWbp85ihAeQoPk7bnbGm" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1981.embed?link=false&logo=false&share_key=K7P4DF9fjWBAj8eQZCr1qK" height="525px" width="100%"></iframe>
 
 
 
@@ -406,7 +380,7 @@ Get "Lagged" residual
 
     #| below create stacked subplot...not that interesting, so comment out
     # title = 'Flight counts'
-    # ts_flightcounts.iplot(y=['counts','residual','resid_lag'],
+    # ts_flightcounts.iplot(y=['counts','residual','resid_diff'],
     #                       subplots=True, shape=(3,1),
     #                       text=hover_text,
     #                       shared_xaxes=True, 
@@ -427,18 +401,18 @@ Histograms of the signals
 
     from plotly.tools import FigureFactory as FF
     
-    columns = ['counts','residual','resid_lag']
-    colors  = ['red','green','orange']
+    columns = ['counts','residual','resid_diff']
+    colors  = ['red','green','blue']
     group_data = map(lambda col: ts_flightcounts[col].dropna().values,columns)
     fig = FF.create_distplot(group_data,
                              group_labels=columns,
-                             bin_size= 300,
+                             bin_size= 500,
                              colors=colors,
                              curve_type='kde',#'kde' or 'normal'
     )
     
     title = 'Distributions among the three quantities of interest ({})'.format(period)
-    title+= '<br>(KDE of the lagged residual looks sufficiently bell curvy?)'
+    title+= '<br>(first-order difference in the residual looks pretty heavy tailed...)'
     
     fig['layout'].update(title=title)
     py.iplot(fig, filename=outfile+'histogram2')
@@ -452,17 +426,10 @@ Histograms of the signals
 
 
 
--  test of normality is quite a heavily debated topic, so I will refrain
-   myself on discussing about it too much
-
--  (for exmple, with large sample size, your chance of rejecting the
-   null based on pvalues gets very high, regardless of the
-   distributional assumption you make on the test statistics)
-
--  but based on the above plot, the ``lagged_residual_plot`` looks
-   sufficiently normal to my eyes (perhaps an `subexponential
-   distribution <https://en.wikipedia.org/wiki/Heavy-tailed_distribution>`__,
-   based on its heavy tail...can be an interesting reserch topic)
+-  the above plot shows ``resid_diff`` is indeed heavy-tailed, as the
+   tails correspond to the major holiday
+-  (perhaps an `subexponential
+   distribution <https://en.wikipedia.org/wiki/Heavy-tailed_distribution>`__)
 
 Repeat analysis for 3 years period
 ==================================
@@ -471,7 +438,7 @@ Repeat analysis for 3 years period
    (from Nov2013-Oct2015), to see if similar pattern appeared in
    previous years.
 
--  The code below is merely a carbon copy of the above.
+-  The code below is merely a carbon copy of the above
 
 .. code:: python
 
@@ -598,10 +565,10 @@ Repeat analysis for 3 years period
       <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   212.7</td> 
     </tr>
     <tr>
-      <th>Date:</th>             <td>Wed, 11 Jan 2017</td> <th>  Prob (F-statistic):</th> <td>1.59e-179</td>
+      <th>Date:</th>             <td>Thu, 12 Jan 2017</td> <th>  Prob (F-statistic):</th> <td>1.59e-179</td>
     </tr>
     <tr>
-      <th>Time:</th>                 <td>12:27:02</td>     <th>  Log-Likelihood:    </th> <td> -9081.9</td> 
+      <th>Time:</th>                 <td>23:54:48</td>     <th>  Log-Likelihood:    </th> <td> -9081.9</td> 
     </tr>
     <tr>
       <th>No. Observations:</th>      <td>  1096</td>      <th>  AIC:               </th> <td>1.818e+04</td>
@@ -704,53 +671,52 @@ Repeat analysis for 3 years period
 .. code:: python
 
     # also add "lagged" residual information
-    ts_flightcounts['resid_lag'] = \
+    ts_flightcounts['resid_diff'] = \
         ts_flightcounts['residual'].shift(1) - ts_flightcounts['residual']
         
-    title = 'Lagged Residual Plot of Airflight Counts in the US ({})(left click to zoom)'.format(period)
+    title = 'First-order difference in the Residual Signal over 3 years period({})(left click to zoom)'.format(period)
     title+= '<br>("day-of-week" used as regressors; shaded region = +/-1.5 std-dev)'
     
-    std_ = ts_flightcounts['resid_lag'].std()
+    std_ = ts_flightcounts['resid_diff'].std()
     
-    ts_flightcounts['resid_lag'].iplot(
-        filename=outfile+'plot_resid_lag_3years',
-        hspan = dict(y0=-1.5*std_,y1=1.5*std_,opacity=0.2,color='teal',fill=True),
-        text=hover_text,
-        title=title)
+    ts_flightcounts['resid_diff'].iplot(
+        filename=outfile+'plot_resid_diff_3years',color='blue',
+        hspan = dict(y0=-1.5*std_,y1=1.5*std_,opacity=0.15,color='magenta',fill=True),
+        text=hover_text, title=title)
 
 
 
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1817.embed?link=false&logo=false&share_key=lgPen2YeoNXEvEBbXRWvOj" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1983.embed?link=false&logo=false&share_key=utFoPyapR3lTdweq3PzOid" height="525px" width="100%"></iframe>
 
 
 
 .. code:: python
 
-    title = 'Lagged Residual Signal in the Daily Airflight Counts ({})'.format(period)
-    title+= '<br>(original signal overlaid in secondary y-axes; left click to select zooming region)'
+    title = 'First-order-difference in Residual Signal ({})'.format(period)
+    title+= '<br>(original airtraffic signal overlaid in secondary y-axes; left click to zoom)'
     
     fig1 = ts_flightcounts.iplot(columns=['counts'],   text=hover_text, color='pink',asFigure=True)
-    fig2 = ts_flightcounts.iplot(columns=['resid_lag'], text=hover_text, color='orange',
-                                 secondary_y=['resid_lag'], asFigure=True,title=title)
+    fig2 = ts_flightcounts.iplot(columns=['resid_diff'], text=hover_text, color='blue',
+                                 secondary_y=['resid_diff'], asFigure=True,title=title)
     fig2['data'].extend(fig1['data'])
-    py.iplot(fig2,filename=outfile+'resid-lag-overlaid_3years')
+    py.iplot(fig2,filename=outfile+'resid_diff-overlaid_3years')
 
 
 
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1825.embed?link=false&logo=false&share_key=u82qeAgOF2RqhNxIADGimh" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1985.embed?link=false&logo=false&share_key=0kSCOfNtl1qxa3OznhUuVc" height="525px" width="100%"></iframe>
 
 
 
 .. code:: python
 
-    columns = ['counts','residual','resid_lag']
-    colors  = ['red','green','orange']
+    columns = ['counts','residual','resid_diff']
+    colors  = ['red','green','blue']
     group_data = map(lambda col: ts_flightcounts[col].dropna().values,columns)
     fig = FF.create_distplot(group_data,
                              group_labels=columns,
@@ -808,7 +774,7 @@ Try overlaying the annual plot
           <th>month</th>
           <th>day_of_week</th>
           <th>residual</th>
-          <th>resid_lag</th>
+          <th>resid_diff</th>
         </tr>
       </thead>
       <tbody>
@@ -875,7 +841,7 @@ Try overlaying the annual plot
           <th>month</th>
           <th>day_of_week</th>
           <th>residual</th>
-          <th>resid_lag</th>
+          <th>resid_diff</th>
           <th>period</th>
         </tr>
       </thead>
@@ -943,7 +909,7 @@ Try overlaying the annual plot
     util.sns_figure(figsize=(16,5))
     ts_flightcounts.query('period == "period1"').plot(x='month',y='counts',label='(2013/11 to 2014/10)',ax=plt.gca(),color='red')
     ts_flightcounts.query('period == "period2"').plot(x='month',y='counts',label='(2014/11 to 2015/10)',ax=plt.gca(),color='green')
-    ts_flightcounts.query('period == "period3"').plot(x='month',y='counts',label='(2015/11 to 2016/10)',ax=plt.gca(),color='orange')
+    ts_flightcounts.query('period == "period3"').plot(x='month',y='counts',label='(2015/11 to 2016/10)',ax=plt.gca(),color='blue')
     plt.title('Daily Airflight Counts in the US over 3 different annual periods')
 
 
@@ -952,21 +918,22 @@ Try overlaying the annual plot
 .. parsed-literal::
     :class: myliteral
 
-    <matplotlib.text.Text at 0xc1824828>
+    <matplotlib.text.Text at 0x1f85a780>
 
 
 
 
-.. figure:: /_static/img/regressing_out_weekday_effect_42_1.png
+.. image:: /_static/img/regressing_out_weekday_effect_39_1.png
     :scale: 100%
+
 
 .. code:: python
 
     util.sns_figure(figsize=(16,5))
-    ts_flightcounts.query('period == "period1"').plot(x='month',y='resid_lag',label='(2013/11 to 2014/10)',ax=plt.gca(),color='red')
-    ts_flightcounts.query('period == "period2"').plot(x='month',y='resid_lag',label='(2014/11 to 2015/10)',ax=plt.gca(),color='green')
-    ts_flightcounts.query('period == "period3"').plot(x='month',y='resid_lag',label='(2015/11 to 2016/10)',ax=plt.gca(),color='orange')
-    plt.title('Lagged residual plots in the Airflight Counts in the US over 3 different annual periods')
+    ts_flightcounts.query('period == "period1"').plot(x='month',y='resid_diff',label='(2013/11 to 2014/10)',ax=plt.gca(),color='red')
+    ts_flightcounts.query('period == "period2"').plot(x='month',y='resid_diff',label='(2014/11 to 2015/10)',ax=plt.gca(),color='green')
+    ts_flightcounts.query('period == "period3"').plot(x='month',y='resid_diff',label='(2015/11 to 2016/10)',ax=plt.gca(),color='blue')
+    plt.title('First-order difference of the residual from US Airflight Traffics over 3 annual periods')
 
 
 
@@ -974,10 +941,23 @@ Try overlaying the annual plot
 .. parsed-literal::
     :class: myliteral
 
-    <matplotlib.text.Text at 0xf37d45c0>
+    <matplotlib.text.Text at 0x607c6978>
 
 
 
 
-.. figure:: /_static/img/regressing_out_weekday_effect_43_1.png
-   :scale: 100%
+.. image:: /_static/img/regressing_out_weekday_effect_40_1.png
+    :scale: 100%
+
+
+Summary
+=======
+
+-  using a simple linear regression model with the ``day_of_week`` as
+   the regressors revealed there are **spikes** in the US Airtraffic
+   signal at national holidays
+-  taking the first-order difference in the residual of the regression
+   model makes the **spike** even more salient
+-  in the future, I would like to read about autocorrelation model and
+   power-spectral density methods, as these seem appropritae for the
+   type of signal I observed in the above analysis.

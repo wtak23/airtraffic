@@ -7,6 +7,34 @@ The original Jupyter-notebook can be downloaded from `here <http://nbviewer.jupy
    :depth: 2
    :local:
 
+Goal of this analysis
+=====================
+
+Here we begin our analysis with the US airtraffic data, which was
+downloaded from the `BTS
+webpage <http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time>`__
+(data kept in my `github
+repository <https://github.com/wtak23/airtraffic/tree/master/data>`__)
+
+We limit the scope of our analysis during the time period of Nov-1-2015
+to Oct-31-2016 (this is the latest available data provided by BTS).
+
+Throughout this project, I'll focus on the following two fields from the
+dataset:
+
+1. ``ORIGIN_AIRPORT_ID`` - ID used to identify the airport used as
+   **take-off**
+2. ``DEST_AIRPORT_ID`` - ID used to identify the airport used for
+   **landing**
+
+These fields/columns are accompanied with the corresponding timestamp,
+allowing us to analyze the temporal trend in the frequency of the
+flights at different airports in the US.
+
+In this analysis, we'll begin acclimiating ourselves with the dataset,
+and study the flight-count time-series, with the goal of identifying
+interesting trends at different time and location within the US.
+
 .. code:: python
 
     %matplotlib inline
@@ -26,8 +54,10 @@ The original Jupyter-notebook can be downloaded from `here <http://nbviewer.jupy
     from IPython.display import display
     
     import cufflinks as cf
-    cf.set_config_file(theme='ggplot')
+    cf.set_config_file(theme='ggplot',sharing='secret')
     
+    # utility functions for this project
+    # see https://github.com/wtak23/airtraffic/blob/master/final_scripts/util/util.py
     import util
     
     # limit output to avoid cluttering screen
@@ -41,8 +71,7 @@ The original Jupyter-notebook can be downloaded from `here <http://nbviewer.jupy
 Load and explore dataset
 ========================
 
-Load the **airport data**, as well as the **lookup-table** I created
-`here <http://takwatanabe.me/airtraffic/create_lookup_table.html>`__.
+Load the **airport data**.
 
 .. code:: python
 
@@ -230,9 +259,23 @@ Load the **airport data**, as well as the **lookup-table** I created
 
 
 
+Enhanced lookup table
+---------------------
+
+In a separate
+`notebook <http://takwatanabe.me/airtraffic/create_lookup_table.html>`__,
+I prepared an **enhanced** lookup-table based on the lookup-table
+provided by the BTS.
+
+The **enhanced** table contains additional information that'll allow me
+to query the state/city/latitude/longitude of the airports using the
+above ``AIRPORT_ID``. This will be called ``df_lookup`` throughout the
+project (``df`` for **DataFrame**)
+
 .. code:: python
 
-    df_lookup = pd.read_csv('df_lookup.csv') # lookup table for the AIRPORT_ID above
+    # lookup table for the AIRPORT_ID above
+    df_lookup = pd.read_csv('df_lookup.csv') 
     df_lookup.head()
 
 
@@ -721,8 +764,10 @@ Study seasonal trend with rolling-averaged timeseries
 
 .. code:: python
 
-    title = 'Daily Airflight Counts in the US between ' + period + ' with rolling-mean applied over 7day window'
-    ts_flightcounts['counts'].rolling(window=7).mean().iplot(filename=outfile+'rolling_mean',title=title)
+    title = 'Daily Airflight Counts in the US between ' + period
+    title+='<br>with rolling-mean applied over 7day window'
+    ts_flightcounts['counts'].rolling(window=7).mean().iplot(
+        filename=outfile+'rolling_mean',title=title)
 
 
 
@@ -748,8 +793,8 @@ Narrow focus on Honolulu Airport
 
     honolulu = df_lookup.query('City == "Honolulu"')
     display(honolulu)
-    code = honolulu['Code'].values[0]
-    hawaii_flights = df_data.query('ORIGIN_AIRPORT_ID == @code or DEST_AIRPORT_ID == @code')
+    code_hawaii = honolulu['Code'].values[0]
+    hawaii_flights = df_data.query('ORIGIN_AIRPORT_ID == @code_hawaii or DEST_AIRPORT_ID == @code_hawaii')
     hawaii_flights.sample(6).sort_index()
 
 
@@ -811,70 +856,70 @@ Narrow focus on Honolulu Airport
       </thead>
       <tbody>
         <tr>
-          <th>145291</th>
-          <td>2015</td>
+          <th>704</th>
+          <td>2016</td>
+          <td>2</td>
           <td>4</td>
-          <td>12</td>
-          <td>15</td>
-          <td>Tue</td>
-          <td>12173</td>
+          <td>1</td>
+          <td>Fri</td>
           <td>12892</td>
-          <td>2015-12-15</td>
-        </tr>
-        <tr>
-          <th>236668</th>
-          <td>2015</td>
-          <td>4</td>
-          <td>12</td>
-          <td>5</td>
-          <td>Sat</td>
           <td>12173</td>
-          <td>12982</td>
-          <td>2015-12-5</td>
+          <td>2016-4-1</td>
         </tr>
         <tr>
-          <th>256048</th>
+          <th>192940</th>
           <td>2016</td>
           <td>3</td>
           <td>8</td>
-          <td>31</td>
-          <td>Wed</td>
+          <td>28</td>
+          <td>Sun</td>
+          <td>14747</td>
           <td>12173</td>
+          <td>2016-8-28</td>
+        </tr>
+        <tr>
+          <th>231651</th>
+          <td>2016</td>
+          <td>3</td>
+          <td>9</td>
+          <td>9</td>
+          <td>Fri</td>
           <td>12758</td>
-          <td>2016-8-31</td>
-        </tr>
-        <tr>
-          <th>260987</th>
-          <td>2016</td>
-          <td>3</td>
-          <td>7</td>
-          <td>9</td>
-          <td>Sat</td>
           <td>12173</td>
-          <td>12402</td>
-          <td>2016-7-9</td>
+          <td>2016-9-9</td>
         </tr>
         <tr>
-          <th>317478</th>
-          <td>2016</td>
-          <td>3</td>
-          <td>9</td>
-          <td>13</td>
-          <td>Tue</td>
-          <td>12173</td>
-          <td>11618</td>
-          <td>2016-9-13</td>
-        </tr>
-        <tr>
-          <th>323943</th>
+          <th>249594</th>
           <td>2016</td>
           <td>2</td>
+          <td>6</td>
           <td>5</td>
-          <td>23</td>
-          <td>Mon</td>
-          <td>14771</td>
+          <td>Sun</td>
+          <td>12478</td>
           <td>12173</td>
-          <td>2016-5-23</td>
+          <td>2016-6-5</td>
+        </tr>
+        <tr>
+          <th>255893</th>
+          <td>2016</td>
+          <td>3</td>
+          <td>8</td>
+          <td>1</td>
+          <td>Mon</td>
+          <td>12758</td>
+          <td>12173</td>
+          <td>2016-8-1</td>
+        </tr>
+        <tr>
+          <th>339274</th>
+          <td>2015</td>
+          <td>4</td>
+          <td>12</td>
+          <td>16</td>
+          <td>Wed</td>
+          <td>11618</td>
+          <td>12173</td>
+          <td>2015-12-16</td>
         </tr>
       </tbody>
     </table>
@@ -926,6 +971,11 @@ Narrow focus on Honolulu Airport
     <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1961.embed?link=false&logo=false&share_key=QekV0ZwAg0rPIdoQOsMy9n" height="525px" width="100%"></iframe>
 
 
+
+-  From the above plot, Honolulu airport appears to be influenced by the
+   **winter/summer vacaton period** than the national trend.
+-  Makes sense, but I probably should explore trends in the previous
+   years to reaffirm this observation.
 
 Flight counts study by "day\_of\_week" and "month"
 ==================================================
@@ -1046,7 +1096,7 @@ Over entire year period
 
 .. code:: python
 
-    title = 'Total US Flight-counts over "day_of_week" ({})'.format(period)
+    title = 'Total US Flight-counts over "month_of_the_year" ({})'.format(period)
     flight_counts_month.iplot(kind='bar',title=title,filename=outfile+'bar_by_month')
 
 
@@ -1058,12 +1108,36 @@ Over entire year period
 
 
 
--  as we saw in the rolling-averaged timeseries plot, the above plot
-   tells us that the summertime and end-of-the-year looks to have more
-   flights (makes sense...vacation time)
+-  as we saw earlier in the rolling-averaged timeseries plot, the above
+   plot tells us that the summertime and end-of-the-year looks to have
+   more flights (makes sense...vacation time)
+
+.. code:: python
+
+    # get hawaii_flights grouped by month
+    query_str = 'ORIGIN_AIRPORT_ID == @code_hawaii or DEST_AIRPORT_ID == @code_hawaii'
+    hawaii_monthly_counts = df_data.query(query_str)['MONTH'].value_counts().to_frame(name='flight-counts')
+    hawaii_monthly_counts = hawaii_monthly_counts.reindex(range(1,13))  # reorder by month
+    hawaii_monthly_counts.index = hawaii_monthly_counts.index.map(lambda num: calendar.month_abbr[num]) # replace number with string-of-month
+    
+    
+    title = 'Total Flight-counts at Honolulu airport grouoped over "month_of_the_year" ({})'.format(period)
+    hawaii_monthly_counts.iplot(kind='bar',title=title,filename=outfile+'bar_by_month_honolulu')
+
+
+
+
+.. raw:: html
+
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1965.embed?link=false&logo=false&share_key=KtcLiNEd0yrUmwNXY7Z2j3" height="525px" width="100%"></iframe>
+
+
 
 Pivoting: analysis grouped by month and day\_of\_week
 -----------------------------------------------------
+
+-  anything intereting if we group over both ``month`` and
+   ``day_of_week``?
 
 .. code:: python
 
@@ -1415,37 +1489,37 @@ each city
       </thead>
       <tbody>
         <tr>
-          <th>88104</th>
-          <td>2016</td>
-          <td>1</td>
-          <td>2</td>
-          <td>14</td>
-          <td>Sun</td>
-          <td>12478</td>
-          <td>14986</td>
-          <td>2016-2-14</td>
-        </tr>
-        <tr>
-          <th>306364</th>
-          <td>2016</td>
-          <td>2</td>
-          <td>4</td>
-          <td>28</td>
-          <td>Thu</td>
-          <td>12953</td>
-          <td>13930</td>
-          <td>2016-4-28</td>
-        </tr>
-        <tr>
-          <th>335411</th>
+          <th>194457</th>
           <td>2016</td>
           <td>3</td>
-          <td>9</td>
-          <td>1</td>
-          <td>Thu</td>
+          <td>7</td>
+          <td>30</td>
+          <td>Sat</td>
           <td>12953</td>
-          <td>11292</td>
-          <td>2016-9-1</td>
+          <td>13303</td>
+          <td>2016-7-30</td>
+        </tr>
+        <tr>
+          <th>360778</th>
+          <td>2015</td>
+          <td>4</td>
+          <td>11</td>
+          <td>1</td>
+          <td>Sun</td>
+          <td>13342</td>
+          <td>12953</td>
+          <td>2015-11-1</td>
+        </tr>
+        <tr>
+          <th>146935</th>
+          <td>2016</td>
+          <td>1</td>
+          <td>1</td>
+          <td>18</td>
+          <td>Mon</td>
+          <td>12953</td>
+          <td>10721</td>
+          <td>2016-1-18</td>
         </tr>
       </tbody>
     </table>
@@ -1478,37 +1552,37 @@ each city
       </thead>
       <tbody>
         <tr>
-          <th>97887</th>
+          <th>154350</th>
           <td>2015</td>
           <td>4</td>
           <td>11</td>
-          <td>19</td>
-          <td>Thu</td>
-          <td>10721</td>
+          <td>20</td>
+          <td>Fri</td>
+          <td>11433</td>
           <td>12892</td>
-          <td>2015-11-19</td>
+          <td>2015-11-20</td>
         </tr>
         <tr>
-          <th>369000</th>
+          <th>82671</th>
           <td>2016</td>
           <td>4</td>
           <td>10</td>
-          <td>30</td>
-          <td>Sun</td>
+          <td>21</td>
+          <td>Fri</td>
           <td>12892</td>
-          <td>14747</td>
-          <td>2016-10-30</td>
+          <td>14057</td>
+          <td>2016-10-21</td>
         </tr>
         <tr>
-          <th>182393</th>
-          <td>2015</td>
-          <td>4</td>
-          <td>12</td>
-          <td>28</td>
-          <td>Mon</td>
+          <th>226715</th>
+          <td>2016</td>
+          <td>1</td>
+          <td>2</td>
+          <td>26</td>
+          <td>Fri</td>
+          <td>13487</td>
           <td>12892</td>
-          <td>10397</td>
-          <td>2015-12-28</td>
+          <td>2016-2-26</td>
         </tr>
       </tbody>
     </table>
@@ -1541,37 +1615,37 @@ each city
       </thead>
       <tbody>
         <tr>
-          <th>429670</th>
+          <th>455474</th>
+          <td>2016</td>
+          <td>2</td>
+          <td>4</td>
+          <td>30</td>
+          <td>Sat</td>
+          <td>12889</td>
+          <td>10800</td>
+          <td>2016-4-30</td>
+        </tr>
+        <tr>
+          <th>446555</th>
+          <td>2016</td>
+          <td>2</td>
+          <td>4</td>
+          <td>28</td>
+          <td>Thu</td>
+          <td>12889</td>
+          <td>10821</td>
+          <td>2016-4-28</td>
+        </tr>
+        <tr>
+          <th>452743</th>
           <td>2015</td>
           <td>4</td>
           <td>11</td>
-          <td>21</td>
+          <td>28</td>
           <td>Sat</td>
+          <td>12191</td>
           <td>12889</td>
-          <td>14869</td>
-          <td>2015-11-21</td>
-        </tr>
-        <tr>
-          <th>181923</th>
-          <td>2015</td>
-          <td>4</td>
-          <td>12</td>
-          <td>27</td>
-          <td>Sun</td>
-          <td>12889</td>
-          <td>14747</td>
-          <td>2015-12-27</td>
-        </tr>
-        <tr>
-          <th>337794</th>
-          <td>2016</td>
-          <td>1</td>
-          <td>3</td>
-          <td>14</td>
-          <td>Mon</td>
-          <td>12266</td>
-          <td>12889</td>
-          <td>2016-3-14</td>
+          <td>2015-11-28</td>
         </tr>
       </tbody>
     </table>
@@ -1761,6 +1835,9 @@ Plot results
 
 
 
+-  Maybe I'm reaching, but Las Vegas again looks fairly "flat", with no
+   much of a *spike* occuring at holiday seasons.
+
 Create sublots of monthly flight-count trends for each city
 -----------------------------------------------------------
 
@@ -1808,18 +1885,13 @@ Create sublots of monthly flight-count trends for each city
 -  Good, we're ready to make subplots
 
 -  Some references
-
 -  http://takwatanabe.me/data\_science/plotly\_pandas/Cufflinks%20-%20Pandas%20Like%20Visualization.html#id21
-
 -  http://takwatanabe.me/data\_science/plotly\_layout/plotly-layout-options-subplots.html
-
 -  http://stackoverflow.com/questions/26939121/how-to-avoid-duplicate-legend-labels-in-plotly-or-pass-custom-legend-labels
-
 -  http://takwatanabe.me/data\_science/plotly\_layout/plotly-layout-options-legend.html
 
 -  (self-remark) Maybe next time, **do not** try to make subplots with
    cufflinks...was a huge pain...
-
 -  see
    http://takwatanabe.me/data\_science/plotly\_pandas/plotly-pandas-basic-charts.html#id2
 
@@ -1856,13 +1928,25 @@ Create sublots of monthly flight-count trends for each city
 
 
 
+Some remarks
+
+-  ... well that took quite an effort, but can't really detect any
+   visually noticeable trend...
+-  this is where I should start relying on quantatative statistical
+   approach; as much as visualization is important, it can sometimes not
+   convey key information or worse even deliver the wrong impression...
+-  I won't be able to do this with the time constraint, but this could
+   be set up a simple F-test based on one-way-ANOVA using categorical
+   variables over month or day\_of\_week
+
 Which state had the most air traffics?
 ======================================
 
--  Now let's conduct a similar analysis by grouping over states
+-  Now let's conduct a similar analysis by grouping over **states**,
+   instead of a particular set of cities
 
--  the code used below is nearly a carbon copy of the above (next-time,
-   perhaps create a function to avoid repeating the same code)
+-  the code used below is nearly a carbon copy of the above (perhaps
+   create a function to avoid repeating the same code)
 
 Data tidying
 ------------
@@ -2266,8 +2350,82 @@ Data tidying
 
 .. code:: python
 
+    # create hover-text object for plotly
+    def string_rank(ranking):
+        headstr = 'Rank: '
+        if ranking == 1:
+            return headstr + '1st'
+        elif ranking == 2:
+            return headstr + '2nd'
+        elif ranking == 3:
+            return headstr + '3rd'
+        else:
+            return headstr + str(ranking)+'th'
+        
+    # series for pplotting    
+    tmp_sr = flight_counts.sort_values('flight-counts',ascending=False).reset_index()
+    tmp_sr= tmp_sr.rename(columns={'index':'state'})
+    hover_text = (1+tmp_sr.index).map(string_rank).tolist()
+    tmp_sr['text'] = (1+tmp_sr.index).map(string_rank)
+    tmp_sr.head()
+
+
+
+
+.. raw:: html
+
+    <div>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>state</th>
+          <th>flight-counts</th>
+          <th>text</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>CA</td>
+          <td>1218745</td>
+          <td>Rank: 1st</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>TX</td>
+          <td>1041128</td>
+          <td>Rank: 2nd</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>FL</td>
+          <td>876232</td>
+          <td>Rank: 3rd</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>GA</td>
+          <td>776731</td>
+          <td>Rank: 4th</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>IL</td>
+          <td>702984</td>
+          <td>Rank: 5th</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+
+
+.. code:: python
+
     title = 'US airflight-counts across states " (during {})'.format(period)
-    flight_counts.sort_values('flight-counts',ascending=False).iplot(kind='bar',title=title,filename=outfile+'bar_by_state')
+    tmp_sr.iplot(kind='bar',columns=['flight-counts'],color='green',x=['state'],
+                 text=hover_text,title=title,filename=outfile+'bar_by_state')
 
 
 
@@ -2277,6 +2435,13 @@ Data tidying
     <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1851.embed?link=false&logo=false&share_key=PNATJ4yJPiuILM772Cxu9L" height="525px" width="100%"></iframe>
 
 
+
+-  so California, Texas, and Florida has the largest airtraffics
+-  These are state with large land areas, above ranking is probably
+   correlated with the city-size, number of state airports, etc
+-  (and Georgia being the 4th is not perhaps too surprising as we
+   already saw it has the Atlanta airport, the busiest airport in the
+   US!)
 
 Choropleth figure (display result on US map)
 --------------------------------------------
@@ -2292,11 +2457,6 @@ Choropleth figure (display result on US map)
 
 .. code:: python
 
-    states = flight_counts.index
-    counts = flight_counts.values
-
-.. code:: python
-
     # prepare Plotly "Data" and "Layout" object
     
     # took this colorscale from: https://plot.ly/python/choropleth-maps/
@@ -2307,10 +2467,12 @@ Choropleth figure (display result on US map)
     data = dict(
             type='choropleth',
             autocolorscale = False,
-            #Greys, YlGnBu, Greens, YlOrRd, Bluered, RdBu, Reds, Blues, Picnic, Rainbow, Portland, Jet, Hot, Blackbody, Earth, Electric, Viridis
+            #Greys, YlGnBu, Greens, YlOrRd, Bluered, RdBu, Reds, Blues, Picnic, 
+            #Rainbow, Portland, Jet, Hot, Blackbody, Earth, Electric, Viridis
             colorscale = colorscale,
-            locations = states,
-            z = counts,
+            locations = tmp_sr['state'],
+            z = tmp_sr['flight-counts'],
+            text = tmp_sr['text'],
             locationmode = 'USA-states',
             marker = dict(line = dict (color = 'rgb(0,0,0)',width = 2) ),
             colorbar = dict(title = "flight-counts")
@@ -2340,22 +2502,6 @@ Choropleth figure (display result on US map)
 .. raw:: html
 
     <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1853.embed?link=false&logo=false&share_key=xcDy8dp7T93r2qLV5WLTCI" height="525px" width="100%"></iframe>
-
-
-
-.. code:: python
-
-    # what about during January? 
-    data['z'] = flight_counts_by_month['Jan'].values
-    layout['title'] = 'US airflight-counts across states during Jan,2016'
-    py.iplot( fig , filename=outfile+'_choropleth_jan')
-
-
-
-
-.. raw:: html
-
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1855.embed?link=false&logo=false&share_key=wNO9k0tspaCCCR4aUjllda" height="525px" width="100%"></iframe>
 
 
 
@@ -2488,7 +2634,12 @@ Choropleth after normalizing over state population
 
     # normalize by state population
     flight_counts_popu['normalized_flight_counts'] = flight_counts_popu['flight-counts'].astype(float)/flight_counts_popu['population']
-    flight_counts_popu.sort_values('normalized_flight_counts',ascending=False).head()
+    flight_counts_popu = flight_counts_popu.sort_values('normalized_flight_counts',ascending=False).reset_index(drop=True)
+    
+    # get ranking info for hover_text
+    flight_counts_popu['text'] = (1+flight_counts_popu.index).map(string_rank)
+    flight_counts_popu.head()
+    
 
 
 
@@ -2504,49 +2655,57 @@ Choropleth after normalizing over state population
           <th>flight-counts</th>
           <th>population</th>
           <th>normalized_flight_counts</th>
+          <th>text</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>7</th>
+          <th>0</th>
           <td>DC</td>
           <td>226131</td>
           <td>681170</td>
           <td>0.331974</td>
+          <td>Rank: 1st</td>
         </tr>
         <tr>
-          <th>33</th>
+          <th>1</th>
           <td>NV</td>
           <td>323313</td>
           <td>2940058</td>
           <td>0.109968</td>
+          <td>Rank: 2nd</td>
         </tr>
         <tr>
-          <th>11</th>
+          <th>2</th>
           <td>HI</td>
           <td>139771</td>
           <td>1428557</td>
           <td>0.097841</td>
+          <td>Rank: 3rd</td>
         </tr>
         <tr>
-          <th>5</th>
+          <th>3</th>
           <td>CO</td>
           <td>479372</td>
           <td>5540545</td>
           <td>0.086521</td>
+          <td>Rank: 4th</td>
         </tr>
         <tr>
-          <th>10</th>
+          <th>4</th>
           <td>GA</td>
           <td>776731</td>
           <td>10310371</td>
           <td>0.075335</td>
+          <td>Rank: 5th</td>
         </tr>
       </tbody>
     </table>
     </div>
 
 
+
+-  Wow, DC takes a huge spike!
 
 .. code:: python
 
@@ -2564,6 +2723,7 @@ Choropleth after normalizing over state population
             locationmode = 'USA-states',
             marker = dict(line = dict (color = 'rgb(0,0,0)',width = 2), zmax=0.1 ),
             colorbar = dict(title = "flight-counts"),
+            text=flight_counts_popu['text'],
             # --- customize heatmap scale --- #
             zauto=False, # <- took me forever to figure this out....argh...plotly api definitely has room for improvements...
             zmax=0.1
@@ -2579,12 +2739,18 @@ Choropleth after normalizing over state population
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1963.embed?link=false&logo=false&share_key=rX1PkRx764wtdkfkuVyoJQ" height="525px" width="100%"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1975.embed?link=false&logo=false&share_key=OAdzE3WplmAdJBdw1oBTvY" height="525px" width="100%"></iframe>
 
 
 
-(ignore, nothing interesting) Normalized flight-counts at different month?
---------------------------------------------------------------------------
+-  Nevada, Utah, Colorado ranks high in this...
+
+(ignore, nothing interesting)
+-----------------------------
+
+i thought normalized flight-counts at different month may get something
+interesting...realized i'm starting to dig in a rabbit hole...let's stop
+here with the "state" analysis
 
 .. code:: python
 
@@ -2611,6 +2777,8 @@ Data tidying
 
 -  the traffic-counts for each airport is computed by adding the number
    of times it was used as an **origin** or **destination**
+-  I just learned that this is called airtraffic
+   `movement <https://en.wikipedia.org/wiki/List_of_busiest_airports_by_aircraft_movements>`__
 
 .. code:: python
 
@@ -2872,17 +3040,6 @@ Begin by creating "hovertext" object for plotly
 .. code:: python
 
     # create hovertext with ranking information
-    def string_rank(ranking):
-        headstr = 'Ranking: '
-        if ranking == 1:
-            return headstr + '1st'
-        elif ranking == 2:
-            return headstr + '2nd'
-        elif ranking == 3:
-            return headstr + '3rd'
-        else:
-            return headstr + str(ranking)+'th'
-    
     hover_text = df['Airport'] + '<br>' \
                + df['City'] + ', ' + df['State'] + '<br>' \
                + 'Number of flight: ' + df['flight_counts'].astype(str)
@@ -2894,11 +3051,11 @@ Begin by creating "hovertext" object for plotly
 .. parsed-literal::
     :class: myliteral
 
-    ['Hartsfield-Jackson Atlanta International<br>Atlanta, GA<br>Number of flight: 769254<br>Ranking: 1st',
-     "Chicago O'Hare International<br>Chicago, IL<br>Number of flight: 514700<br>Ranking: 2nd",
-     'Denver International<br>Denver, CO<br>Number of flight: 451093<br>Ranking: 3rd',
-     'Los Angeles International<br>Los Angeles, CA<br>Number of flight: 423115<br>Ranking: 4th',
-     'Dallas/Fort Worth International<br>Dallas/Fort Worth, TX<br>Number of flight: 411110<br>Ranking: 5th']
+    ['Hartsfield-Jackson Atlanta International<br>Atlanta, GA<br>Number of flight: 769254<br>Rank: 1st',
+     "Chicago O'Hare International<br>Chicago, IL<br>Number of flight: 514700<br>Rank: 2nd",
+     'Denver International<br>Denver, CO<br>Number of flight: 451093<br>Rank: 3rd',
+     'Los Angeles International<br>Los Angeles, CA<br>Number of flight: 423115<br>Rank: 4th',
+     'Dallas/Fort Worth International<br>Dallas/Fort Worth, TX<br>Number of flight: 411110<br>Rank: 5th']
     
 
 .. code:: python
@@ -3095,6 +3252,7 @@ Display results on US Map
     </div>
 
 
+
 .. code:: python
 
     # group each airport by ranking-group
@@ -3166,3 +3324,13 @@ Display results on US Map
     <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1865.embed?link=false&logo=false&share_key=7RDIKA9PJVI5HB2jeiKPGb" height="525px" width="100%"></iframe>
 
 
+
+Conclusion
+----------
+
+-  **Hartsfield-Jackson Atlanta airport** has the largest traffic by
+   quite a margin.
+-  I personally did not know that Atlanta had the largest airport, but
+   quick google-search told me that this is a well-known fact :(
+-  But it was nice to learn something new from the data! Plus the above
+   bubble chart is pretty cool in my opinion :)

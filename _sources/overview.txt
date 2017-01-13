@@ -2,36 +2,43 @@ Project Overview
 """"""""""""""""
 To narrow the scope of my analysis, I decided to focus on the air-traffic data from Nov-1-2015 to Oct-31-2016. This is the latest available data provided by the Bureau of Transportation Statistic, and completes a full year cycle.
 
-The project is broken down into three-parts, each having its own separate `Jupyter notebook <http://jupyter.org/>`__ page that allows me to present the result alongside with the analysis code.
+The project is broken down into three-parts, each having its own separate `Jupyter notebook <http://jupyter.org/>`__ page that allows me to present the result along with the analysis code.
 
 .. rubric:: A quick remark
 
-About 65-75% of the content in my Jupyter notebooks are occupied by codes (most of the effort towards "`tidying <https://en.wikipedia.org/wiki/Tidy_data>`__" the data-table). I put my best effort in making the visualization charts as self-explanatory as possible, so if you are only interested in the "punchline" of the analysis, please scroll thorough the code and pause whenever you see a figure/chart.
+About 65-75% of the content in my Jupyter notebooks are occupied with codes (most of the effort towards "`tidying <https://en.wikipedia.org/wiki/Tidy_data>`__" the data-table). I put my best effort in making the visualization charts self-explanatory as possible, so if you are only interested in the "punchline" of the analysis, please scroll thorough the code and pause whenever you see a figure/chart (or visit the gallery pages linked below).
 
+#########
+Galleries
+#########
 
-.. (or visit the gallery pages linked at top of this page).
+.. toctree::
+    :maxdepth: 2
 
-..    #########
-..    Galleries
-..    #########
-..    toctree
-..        :maxdepth: 2
-    
-..        flight-count-analysis-gallery
-..        regression-gallery
-..        network-analysis-gallery
+    flight-count-analysis-gallery
+    regression-gallery
+    network-analysis-gallery.rst
+
 
 
 .. rubric:: Part 1. Air-traffic trend analysis (`main notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
 
-- Here I analyzed the general trend in the frequency of flight-counts in the US as a time-series signal. 
-- The goal was to identify some interesting trend in the flight-counts at different time (eg, day-of-week, month, end of year) and location (eg, densely populated area, location of **hub** airports).
+- Here I analyzed the general trend in the daily flight-counts in the US airline as a time-series signal. 
+- The goal was to identify any interesting trend in the flight-counts at different time period (eg, day-of-week, month, national holidayss) and location (eg, densely populated area, location of **hub** airports).
 - Example types of questions asked: 
 
-  - Is there any day/time of the year when the US flight-counts takes a dip/hike? 
-  - does Honolulu airport attract more visitors during the winter-time? 
-  - Is there a trend in fight counts that is specific to airports at major cities like NY/LA? W
-  - which airport in the US is the busiest i terms of flight-counts?
+  - Is there any day/time of the year when the US flight-counts takes a dip/spike? 
+
+    (**answer**: ``Saturday`` takes a huge dip)
+  - does Honolulu airport attract more visitors during the winter-time when its cold at most other part of the country? 
+
+    (**answer**: turned out to be the opposite - summer turned out to be the busiest in terms  of air-traffic movements)
+  - Is there any trend in fight-counts that is specific to airports at major cities like NY/LA? 
+
+    (**answer**: nothing I can detect)
+  - which airport in the US is the busiest i terms of flight-counts? 
+
+    (**answer**: Atlanta turned out to be the biggest **hub** spot. Nevada also stood out after normalizing over state population)
 
 - Example chart from analysis:
 
@@ -42,6 +49,10 @@ About 65-75% of the content in my Jupyter notebooks are occupied by codes (most 
 .. ==========================================================================..
 
 .. rubric:: Part2: Regressing away the effect of ``day_of_the_week`` in the Air-traffic Time Series Signal (`main notebook <http://takwatanabe.me/airtraffic/regressing_out_weekday_effect.html>`__)
+
+- Part 1 of our analysis revealed that the US air-traffic is heavily influenced by what day of the week it is, especially on Saturdays
+- I had a suspicions that this potentially contaminates other interesting patterns inside the signal
+- In this notebook, we'll aim to **linearly regress out** the effect of ``day_of_week`` by using a linear regression model, with the ``day_of_week`` used as the regressor
 
 - Example chart from analysis:
 
