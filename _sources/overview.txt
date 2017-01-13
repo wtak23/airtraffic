@@ -61,7 +61,7 @@ Galleries
    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1807.embed?link=false&logo=false&share_key=gZgt67hPMDug68ug3PsKwf" height="525px" width="75%"></iframe>
 
 .. =========================================================================..
-.. rubric:: Part 3. Air-traffic count analysis (`main notebook <http://takwatanabe.me/airtraffic/flight-count-analysis.html>`__)
+.. rubric:: Part 3. Air-traffic count analysis [**absolutely my favorite part**] (`main notebook <http://takwatanabe.me/airtraffic/network_analysis.html>`__)
 
 - Example chart from analysis: figure in SVG format, so feel free to open in new tab and zoom in closely :)
 

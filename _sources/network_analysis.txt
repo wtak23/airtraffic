@@ -9,7 +9,54 @@ The original Jupyter notebook can be downloaded from `here <http://nbviewer.jupy
 Overview: network view of the US Airtraffic System
 ==================================================
 
-.... explain
+-  In this final part of the project, we'll view the US Airline system
+   as a large network (graph) system consisting of nodes (airports)
+   whose interactions/connections are described by edges (flights
+   between airports).
+-  More precisely, we will view the airport graph as a `complex
+   network <https://en.wikipedia.org/wiki/Complex_network>`__ system,
+   which exhibits non-trivial topology that are absent in random graphs
+   (such as hub nodes with high degre of centrality)
+-  Complex network is a heavily researched field, and we fortunately
+   have access to rich set of both theoretical and practical tools
+
+-  tools I will relying on for this work:
+
+-  `NetworkX <networkx.readthedocs.org/en/networkx-1.11/>`__ and `Brain
+   Connectivity Toolbox <https://sites.google.com/site/bctnet/>`__ for
+   computing collections of `**complex network
+   measures** <https://arxiv.org/pdf/cond-mat/0505185v5.pdf>`__ that
+   characterizes the topological struture of the network
+-  `Gephi <https://gephi.org/>`__ for visualizing the graph data saved
+   as a ``.gexf`` file
+
+This part of the analysis was by far mar favorite part!
+
+Outline of the analysis
+-----------------------
+
+-  we'll again begin by **tidying** the US passenger travel data into a
+   graph structure
+-  For any airport pair, say ``A`` and ``B``, we'll measure the **edge**
+   in two ways:
+
+(1) **trips**: ``A -> B`` is distinguished from ``B -> A``;
+    directionality matters here (**directed graph**)
+
+(2) **routes**: ``A -> B`` and ``B -> A`` are not distuishable, so both
+    landings and take-offs are counted; (**undirected graph**)
+
+-  once we have the normalized data, we'll first identify the pairs of
+   airports with the largest edge values
+
+-  we will then compute a collection of key network measures that
+   characterizes the topologicla property of the US air-traffic system,
+   such as the level of centrality/important of an airport, as well as
+   the **community structure** formed among the US airports (ie, set of
+   airports that tend to be tightly connected with each other)
+
+The remainder of the section loads the dataset in the exact same way as
+part1 and 2.
 
 .. code:: python
 
@@ -33,6 +80,8 @@ Overview: network view of the US Airtraffic System
     import cufflinks as cf
     cf.set_config_file(theme='ggplot',sharing='secret')
     
+    # utility functions for this project
+    # see https://github.com/wtak23/airtraffic/blob/master/final_scripts/util/util.py
     import util
     
     # limit output to avoid cluttering screen
@@ -233,10 +282,13 @@ Overview: network view of the US Airtraffic System
     </div>
 
 
-Create the network "edges" --- pairs of aiports forming the trips
-=================================================================
+Create directed graph: **trips**
+================================
 
--  this is a directed network in the language of graph theory
+-  we first define a directed graph, where flights ``A->B`` is
+   distinguished from ``B-A``
+
+-  I'll refer to these edges as ``trips``
 
 Data tidying
 ------------
@@ -847,13 +899,13 @@ Most frequent "trips" in US during the past year
 -  For instance, **SF to LA** (17757 flights) and **LA to SF** (17409
    flights) were the most frequent made trip.
 
--  As these values are very close, it's reasonable to say most of the
-   flights were round trip
+-  As these values are very close, it's reasonable to believe most of
+   the flights were **round trips**
 
 -  (the small difference in flight-counts can be due to missed flight,
-   permanent relocation, etc)'
+   permanent relocation, etc)
 
-Let's next plot the top 500 trips.
+Let's next plot the top 500 ``trips``.
 
 .. code:: python
 
@@ -876,33 +928,21 @@ Let's next plot the top 500 trips.
                   + '<br>Number of flight: ' + trip_counts['counts'].astype(str))
     
     trip_counts['text'] = trip_counts['text'] + '<br>' + map(string_rank,trip_counts['text'].index + 1)
-    trip_counts['text'][:5].tolist()
-
-
-
-
-.. parsed-literal::
-    :class: myliteral
-
-    ['San Francisco International to Los Angeles International<br>San Francisco (CA) to Los Angeles (CA)<br>Number of flight: 17757<br>Ranking: 1st',
-     'Los Angeles International to San Francisco International<br>Los Angeles (CA) to San Francisco (CA)<br>Number of flight: 17409<br>Ranking: 2nd',
-     'Los Angeles International to John F. Kennedy International<br>Los Angeles (CA) to New York (NY)<br>Number of flight: 12463<br>Ranking: 3rd',
-     'John F. Kennedy International to Los Angeles International<br>New York (NY) to Los Angeles (CA)<br>Number of flight: 12461<br>Ranking: 4th',
-     'Los Angeles International to McCarran International<br>Los Angeles (CA) to Las Vegas (NV)<br>Number of flight: 11317<br>Ranking: 5th']
-
-
 
 .. code:: python
 
-    # trip_counts.iplot(kind='bar',columns=['counts'],text='text',filename='test')
+    trip_counts['x'] = trip_counts.index+1
+    # trip_counts.iplot(kind='bar',columns=['counts'],text='text',filename='test',x=trip_counts.index.bool())
     
-    # plot top_k
+    
+    
+    # # plot top_k
     top_k = 250
     
     title = 'Most frequent flights made in the US airports between {} (directions considered)'.format(top_k,period)
     title+= '<br>(hover over plots for the pairs of takeoff/landing airports; left-click to pan-zoom)'
-    
-    trip_counts[:top_k].iplot(kind='bar',columns=['counts'],text='text',
+    trip_counts[:top_k].iplot(kind='bar',columns=['counts'],x='x', # <- ranking info
+                              text='text',xTitle='edge-ranking',
                               color='pink',title=title,
                               filename=outfile+'topk_trip')
 
@@ -921,12 +961,12 @@ Create undirected graph -- edges ignoring directionality
 -  In our next analysis, we'll drop **directionality** in our analysis
 
 -  That is, for any given trip (edge), we'll ignoring which airport was
-   used for **take-off** and **landing**
+   used for **take-off** or **landing**
 
 -  So the airport pair (SF,LA) will form an **undirected edge** with a
    value of 17757+17409 = 35166
 
--  So to create an undirected graph, .we do the following:
+-  To create an undirected graph, .we do the following:
 
 -  For any airport pair ``A,B``, we identify the directed edges
    ``(A -> B)`` and ``(A <- B)``
@@ -962,6 +1002,7 @@ Data tidying
           <th>code2</th>
           <th>distance</th>
           <th>text</th>
+          <th>x</th>
         </tr>
       </thead>
       <tbody>
@@ -978,6 +1019,7 @@ Data tidying
           <td>12892</td>
           <td>543.531637</td>
           <td>San Francisco International to Los Angeles Int...</td>
+          <td>1</td>
         </tr>
         <tr>
           <th>1</th>
@@ -992,6 +1034,7 @@ Data tidying
           <td>14771</td>
           <td>543.531637</td>
           <td>Los Angeles International to San Francisco Int...</td>
+          <td>2</td>
         </tr>
         <tr>
           <th>2</th>
@@ -1006,6 +1049,7 @@ Data tidying
           <td>12478</td>
           <td>3983.079400</td>
           <td>Los Angeles International to John F. Kennedy I...</td>
+          <td>3</td>
         </tr>
         <tr>
           <th>3</th>
@@ -1020,6 +1064,7 @@ Data tidying
           <td>12892</td>
           <td>3983.079400</td>
           <td>John F. Kennedy International to Los Angeles I...</td>
+          <td>4</td>
         </tr>
         <tr>
           <th>4</th>
@@ -1034,6 +1079,7 @@ Data tidying
           <td>12889</td>
           <td>380.413047</td>
           <td>Los Angeles International to McCarran Internat...</td>
+          <td>5</td>
         </tr>
       </tbody>
     </table>
@@ -1096,6 +1142,7 @@ Data tidying
           <th>code2</th>
           <th>distance</th>
           <th>text</th>
+          <th>x</th>
         </tr>
       </thead>
       <tbody>
@@ -1112,6 +1159,7 @@ Data tidying
           <td>14771</td>
           <td>543.531637</td>
           <td>Los Angeles International to San Francisco Int...</td>
+          <td>2</td>
         </tr>
         <tr>
           <th>3</th>
@@ -1126,6 +1174,7 @@ Data tidying
           <td>12892</td>
           <td>3983.079400</td>
           <td>John F. Kennedy International to Los Angeles I...</td>
+          <td>4</td>
         </tr>
         <tr>
           <th>5</th>
@@ -1140,6 +1189,7 @@ Data tidying
           <td>12892</td>
           <td>380.413047</td>
           <td>McCarran International to Los Angeles Internat...</td>
+          <td>6</td>
         </tr>
         <tr>
           <th>7</th>
@@ -1154,6 +1204,7 @@ Data tidying
           <td>14747</td>
           <td>1535.379400</td>
           <td>Los Angeles International to Seattle/Tacoma In...</td>
+          <td>8</td>
         </tr>
         <tr>
           <th>9</th>
@@ -1168,6 +1219,7 @@ Data tidying
           <td>12953</td>
           <td>1180.129320</td>
           <td>Chicago O'Hare International to LaGuardia&lt;br&gt;C...</td>
+          <td>10</td>
         </tr>
       </tbody>
     </table>
@@ -1193,6 +1245,7 @@ Data tidying
           <th>code2</th>
           <th>distance</th>
           <th>text</th>
+          <th>x</th>
         </tr>
       </thead>
       <tbody>
@@ -1209,6 +1262,7 @@ Data tidying
           <td>12892</td>
           <td>543.531637</td>
           <td>San Francisco International to Los Angeles Int...</td>
+          <td>1</td>
         </tr>
         <tr>
           <th>2</th>
@@ -1223,6 +1277,7 @@ Data tidying
           <td>12478</td>
           <td>3983.079400</td>
           <td>Los Angeles International to John F. Kennedy I...</td>
+          <td>3</td>
         </tr>
         <tr>
           <th>4</th>
@@ -1237,6 +1292,7 @@ Data tidying
           <td>12889</td>
           <td>380.413047</td>
           <td>Los Angeles International to McCarran Internat...</td>
+          <td>5</td>
         </tr>
         <tr>
           <th>6</th>
@@ -1251,6 +1307,7 @@ Data tidying
           <td>12892</td>
           <td>1535.379400</td>
           <td>Seattle/Tacoma International to Los Angeles In...</td>
+          <td>7</td>
         </tr>
         <tr>
           <th>8</th>
@@ -1265,6 +1322,7 @@ Data tidying
           <td>13930</td>
           <td>1180.129320</td>
           <td>LaGuardia to Chicago O'Hare International&lt;br&gt;N...</td>
+          <td>9</td>
         </tr>
       </tbody>
     </table>
@@ -1290,6 +1348,7 @@ Data tidying
           <th>code2</th>
           <th>distance</th>
           <th>text</th>
+          <th>x</th>
         </tr>
       </thead>
       <tbody>
@@ -1306,6 +1365,7 @@ Data tidying
           <td>11630</td>
           <td>809.595183</td>
           <td>Wiley Post/Will Rogers Memorial to Fairbanks I...</td>
+          <td>3242</td>
         </tr>
         <tr>
           <th>3598</th>
@@ -1320,6 +1380,7 @@ Data tidying
           <td>11292</td>
           <td>1028.249825</td>
           <td>Devils Lake Regional to Denver International&lt;b...</td>
+          <td>3599</td>
         </tr>
         <tr>
           <th>3607</th>
@@ -1334,6 +1395,7 @@ Data tidying
           <td>11298</td>
           <td>751.719146</td>
           <td>Hattiesburg-Laurel Regional to Dallas/Fort Wor...</td>
+          <td>3608</td>
         </tr>
         <tr>
           <th>4344</th>
@@ -1348,6 +1410,7 @@ Data tidying
           <td>14683</td>
           <td>2192.125251</td>
           <td>Washington Dulles International to San Antonio...</td>
+          <td>4345</td>
         </tr>
         <tr>
           <th>4365</th>
@@ -1362,6 +1425,7 @@ Data tidying
           <td>14771</td>
           <td>862.579453</td>
           <td>Joslin Field - Magic Valley Regional to San Fr...</td>
+          <td>4366</td>
         </tr>
       </tbody>
     </table>
@@ -1406,6 +1470,7 @@ Data tidying
           <th>code2</th>
           <th>distance</th>
           <th>text</th>
+          <th>x</th>
           <th>counts_</th>
         </tr>
       </thead>
@@ -1423,6 +1488,7 @@ Data tidying
           <td>14771</td>
           <td>543.531637</td>
           <td>Los Angeles International to San Francisco Int...</td>
+          <td>2</td>
           <td>17757</td>
         </tr>
         <tr>
@@ -1438,6 +1504,7 @@ Data tidying
           <td>12892</td>
           <td>3983.079400</td>
           <td>John F. Kennedy International to Los Angeles I...</td>
+          <td>4</td>
           <td>12463</td>
         </tr>
         <tr>
@@ -1453,6 +1520,7 @@ Data tidying
           <td>12892</td>
           <td>380.413047</td>
           <td>McCarran International to Los Angeles Internat...</td>
+          <td>6</td>
           <td>11317</td>
         </tr>
         <tr>
@@ -1468,6 +1536,7 @@ Data tidying
           <td>14747</td>
           <td>1535.379400</td>
           <td>Los Angeles International to Seattle/Tacoma In...</td>
+          <td>8</td>
           <td>10245</td>
         </tr>
         <tr>
@@ -1483,6 +1552,7 @@ Data tidying
           <td>12953</td>
           <td>1180.129320</td>
           <td>Chicago O'Hare International to LaGuardia&lt;br&gt;C...</td>
+          <td>10</td>
           <td>10057</td>
         </tr>
       </tbody>
@@ -1526,6 +1596,7 @@ Data tidying
           <th>code2</th>
           <th>distance</th>
           <th>text</th>
+          <th>x</th>
         </tr>
       </thead>
       <tbody>
@@ -1542,6 +1613,7 @@ Data tidying
           <td>14771</td>
           <td>543.531637</td>
           <td>Los Angeles International to San Francisco Int...</td>
+          <td>2</td>
         </tr>
         <tr>
           <th>1</th>
@@ -1556,6 +1628,7 @@ Data tidying
           <td>12892</td>
           <td>3983.079400</td>
           <td>John F. Kennedy International to Los Angeles I...</td>
+          <td>4</td>
         </tr>
         <tr>
           <th>2</th>
@@ -1570,6 +1643,7 @@ Data tidying
           <td>12892</td>
           <td>380.413047</td>
           <td>McCarran International to Los Angeles Internat...</td>
+          <td>6</td>
         </tr>
         <tr>
           <th>3</th>
@@ -1584,6 +1658,7 @@ Data tidying
           <td>14747</td>
           <td>1535.379400</td>
           <td>Los Angeles International to Seattle/Tacoma In...</td>
+          <td>8</td>
         </tr>
         <tr>
           <th>4</th>
@@ -1598,6 +1673,7 @@ Data tidying
           <td>12953</td>
           <td>1180.129320</td>
           <td>Chicago O'Hare International to LaGuardia&lt;br&gt;C...</td>
+          <td>10</td>
         </tr>
         <tr>
           <th>5</th>
@@ -1612,6 +1688,7 @@ Data tidying
           <td>13830</td>
           <td>162.094231</td>
           <td>Honolulu International to Kahului Airport&lt;br&gt;H...</td>
+          <td>15</td>
         </tr>
         <tr>
           <th>6</th>
@@ -1626,6 +1703,7 @@ Data tidying
           <td>12889</td>
           <td>666.370587</td>
           <td>San Francisco International to McCarran Intern...</td>
+          <td>14</td>
         </tr>
         <tr>
           <th>7</th>
@@ -1640,6 +1718,7 @@ Data tidying
           <td>12892</td>
           <td>2807.429621</td>
           <td>Chicago O'Hare International to Los Angeles In...</td>
+          <td>18</td>
         </tr>
         <tr>
           <th>8</th>
@@ -1654,6 +1733,7 @@ Data tidying
           <td>13204</td>
           <td>649.748804</td>
           <td>Hartsfield-Jackson Atlanta International to Or...</td>
+          <td>17</td>
         </tr>
         <tr>
           <th>9</th>
@@ -1668,6 +1748,7 @@ Data tidying
           <td>10721</td>
           <td>642.205372</td>
           <td>Ronald Reagan Washington National to Logan Int...</td>
+          <td>20</td>
         </tr>
       </tbody>
     </table>
@@ -1725,6 +1806,7 @@ to Oct-31-2016
           <th>code2</th>
           <th>distance</th>
           <th>text</th>
+          <th>x</th>
         </tr>
       </thead>
       <tbody>
@@ -1741,6 +1823,7 @@ to Oct-31-2016
           <td>14771</td>
           <td>543.531637</td>
           <td>Los Angeles International to San Francisco Int...</td>
+          <td>2</td>
         </tr>
         <tr>
           <th>1</th>
@@ -1755,6 +1838,7 @@ to Oct-31-2016
           <td>12892</td>
           <td>3983.079400</td>
           <td>John F. Kennedy International to Los Angeles I...</td>
+          <td>4</td>
         </tr>
         <tr>
           <th>2</th>
@@ -1769,6 +1853,7 @@ to Oct-31-2016
           <td>12892</td>
           <td>380.413047</td>
           <td>McCarran International to Los Angeles Internat...</td>
+          <td>6</td>
         </tr>
         <tr>
           <th>3</th>
@@ -1783,6 +1868,7 @@ to Oct-31-2016
           <td>14747</td>
           <td>1535.379400</td>
           <td>Los Angeles International to Seattle/Tacoma In...</td>
+          <td>8</td>
         </tr>
         <tr>
           <th>4</th>
@@ -1797,6 +1883,7 @@ to Oct-31-2016
           <td>12953</td>
           <td>1180.129320</td>
           <td>Chicago O'Hare International to LaGuardia&lt;br&gt;C...</td>
+          <td>10</td>
         </tr>
         <tr>
           <th>5</th>
@@ -1811,6 +1898,7 @@ to Oct-31-2016
           <td>13830</td>
           <td>162.094231</td>
           <td>Honolulu International to Kahului Airport&lt;br&gt;H...</td>
+          <td>15</td>
         </tr>
         <tr>
           <th>6</th>
@@ -1825,6 +1913,7 @@ to Oct-31-2016
           <td>12889</td>
           <td>666.370587</td>
           <td>San Francisco International to McCarran Intern...</td>
+          <td>14</td>
         </tr>
         <tr>
           <th>7</th>
@@ -1839,6 +1928,7 @@ to Oct-31-2016
           <td>12892</td>
           <td>2807.429621</td>
           <td>Chicago O'Hare International to Los Angeles In...</td>
+          <td>18</td>
         </tr>
         <tr>
           <th>8</th>
@@ -1853,6 +1943,7 @@ to Oct-31-2016
           <td>13204</td>
           <td>649.748804</td>
           <td>Hartsfield-Jackson Atlanta International to Or...</td>
+          <td>17</td>
         </tr>
         <tr>
           <th>9</th>
@@ -1867,6 +1958,7 @@ to Oct-31-2016
           <td>10721</td>
           <td>642.205372</td>
           <td>Ronald Reagan Washington National to Logan Int...</td>
+          <td>20</td>
         </tr>
       </tbody>
     </table>
@@ -1901,14 +1993,16 @@ to Oct-31-2016
 
 .. code:: python
 
+    route_counts['x'] = (route_counts.index+1).values # raking info to give plotly
     # route_counts.iplot(kind='bar',columns=['counts'],text='text',filename='test',color='cyan')
+    
     
     # plot top_k
     top_k = 250
     title = 'Most frequent <b>flights</b> made in the US airports between {} (undirected network)'.format(top_k,period)
     title+= '<br>(hover over plots for the pairs of airports; left-click to pan-zoom)'
-    route_counts[:top_k].iplot(kind='bar',columns=['counts'],text='text',color='cyan',title=title,
-                              filename=outfile+'topk_routes')
+    route_counts[:top_k].iplot(kind='bar',columns=['counts'],text='text',color='cyan',title=title,x='x',
+                              xTitle='Ranking',filename=outfile+'topk_routes')
     
 
 
@@ -1920,13 +2014,21 @@ to Oct-31-2016
 
 
 
-Overview: complex networt study of the US Airport System
-========================================================
+Ok, the above is nice, but the charts above does not convey the
+geographical information about the network architecture of the US
+Airflight system.
 
--  complex network theory tools used for analysis
+We'll finally turn out attention to tools from network theory.
 
--  remainder of section defines helper functions, please skip to next
-   section for actual analysis
+**The next setcion only contains helper codes that are rather specific
+to ``networkx``, so can be skipped entirely**
+
+(only codes, can be skipped) Define helper functions for complex network analysis
+=================================================================================
+
+-  this section defines a set of helper functions that I wrote for my
+   own convenience.
+-  please skip to next section for actual analysis
 
 make\_nx\_graph: create networkx graph object
 ---------------------------------------------
@@ -1934,15 +2036,16 @@ make\_nx\_graph: create networkx graph object
 .. code:: python
 
     def make_nx_graph(counts,df_lookup,digraph=False):
-        """
+        """ Convert airflight-counts between airport pairs into networkx Graph object.
         
         Parameters
         ----------
         counts : pandas.DataFrame
             Table containing the trip_counts (digraph) or route_counts (undirected graph)
-            Use in network analysis scripts
+            Use for later network analysis scripts
         df_lookup : pandas.DataFrame
-            Table 
+            Lookup table created in  http://takwatanabe.me/airtraffic/create_lookup_table.html
+            (used to map airport-id key quantities of interest)
         digraph : bool
             Is the graph directed? (default = False, so undirected)
         """
@@ -1958,11 +2061,11 @@ make\_nx\_graph: create networkx graph object
                     
         G.add_nodes_from(nodes)
         
-        # --- add airport name as node attribute (handy for analysis in Gephi) ---
+        # --- add airport name as node attribute (handy for later analysis in Gephi) ---
         # --- to do this, need to pass a dictionary to networkx 
         hash_airport   = df_lookup.set_index('Code')['Airport'].to_dict()
     
-        # filter away airport in the lookup-table not in the graph
+        # filter away airports in the lookup-table absent in the graph
         nodes_airport = {key:val for key,val in hash_airport.iteritems() if key in nodes}
         nx.set_node_attributes(G, 'airport', nodes_airport)
         
@@ -2002,7 +2105,7 @@ compute\_network\_measures: network measures characterizing nodes (airport)
 .. code:: python
 
     def compute_network_measures(G,add_module_attr = True):
-        """ Compute the following well known complex network measures.
+        """ Compute a set of well studied complex network measures
         
         The measures characterizes individual nodes in the network
         (in  our context, characterizes the airport)
@@ -2027,7 +2130,7 @@ compute\_network\_measures: network measures characterizing nodes (airport)
         degree_wei = A.sum(axis=0,dtype=int) # weighted degree 
         degree_bin = (A!=0).sum(axis=0)      # binary degree
         
-        # community detection -> compute modularity groups
+        # appply modularity algorithm to detect communities of airports
         module = bct.modularity_louvain_und(bct.normalize(A),seed=0)[0]
         
         # convert numpy array into dictionary with node-label
@@ -2114,6 +2217,10 @@ Other helper functions
 
 Complex network theory in action!
 =================================
+
+-  below, we will focus on **undirected graph**, but a very similar
+   result can be obtained using directed graph
+-  (which makes sense, since most of the flights consist of round-trips)
 
 .. code:: python
 
@@ -2211,10 +2318,12 @@ Complex network theory in action!
 
 
 
+Let's quickly peruse the distribution of these network measures
+
 .. code:: python
 
     FF = plotly.tools.FigureFactory
-    fig = FF.create_scatterplotmatrix(df_network,diag='histogram',index='module',width=1000,height=850)
+    fig = FF.create_scatterplotmatrix(df_network,diag='histogram',index='module',width=800,height=650)
     fig.layout['title'] = 'Scatterplot Matrix of Complex Network Measures'
     
     py.iplot(fig,filename=outfile+'_scattermat')
@@ -2237,16 +2346,25 @@ Complex network theory in action!
 
 .. raw:: html
 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1953.embed?link=false&logo=false&share_key=gGIBKQOHB5hkU1UgIIoq2z" height="850px" width="1000px"></iframe>
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1953.embed?link=false&logo=false&share_key=gGIBKQOHB5hkU1UgIIoq2z" height="650px" width="800px"></iframe>
 
 
+
+-  High **`centrality <https://en.wikipedia.org/wiki/Centrality>`__**
+   indicates the airports of high importance, such as number of
+   connections an airport provides (eg, hub structure from nodes with
+   high degree).
+-  The centrality measures, appear to indicate a
+   **`power-law <https://en.wikipedia.org/wiki/Power_law>`__**
+   disttribution, hinting that the US airtraffic system forms what is
+   known as a `scale-free
+   structure <en.wikipedia.org/wiki/Scale-free_network>`__
 
 Power law analysis of centrality measures
 -----------------------------------------
 
--  below we focus only on undirected graph over the ``route_graph``, but
-   I've found nearly identical result when analysing digraphs over
-   ``trip_counts``
+-  we'll visually examine how well the distribution of the cenrality
+   measures fit the power-law distribution.
 
 **CREDIT**: code inspired from Philip Singer's blog post.
 
@@ -2288,16 +2406,28 @@ http://www.philippsinger.info/?p=247
     
 
 
-.. figure:: /_static/img/network_analysis_44_1.png
+.. image:: /_static/img/network_analysis_48_1.png
     :scale: 100%
+
+-  Outside of clustering coefficient (which is not a centrality
+   measure), measures seem to exhibit the property of the Power-law
+   distribution to an extent.
+-  The `Google PageRank
+   centrality <https://en.wikipedia.org/wiki/PageRank>`__ seems to
+   exhibit the best fit.
 
 PageRank Centrality among US Airports
 -------------------------------------
+
+-  let's identify the most important nodes according to the Google
+   PageRank algorithm, one of the best known algorithms from Google that
+   measures the importance of a node (site) in the world-wide-web graph.
 
 .. code:: python
 
     measure = 'pagerank'
     
+    # join data-table with pagerank with the lookup table (City_State is unique, so is a valid merge keu)
     df = df_network[measure].reset_index().rename(columns={'index':'City_State'})
     df = df.merge(df_lookup,on='City_State').sort_values(by=measure,ascending=False).reset_index(drop=True)
     df.head()
@@ -2444,12 +2574,26 @@ PageRank Centrality among US Airports
 
 
 
+Above plot is quite insightful!
+
+As a Michigan native, proud to see Detroit Airport score in the top 10.
+
 Communities Detected via Modularity Score
 -----------------------------------------
 
+We next analyze the **communities** of airports that were identified by
+the `Girvan-Newman modularity
+algorithm <https://en.wikipedia.org/wiki/Girvan%E2%80%93Newman_algorithm>`__.
+
+A **community** describes a set of airports that tend to connect with
+each other.
+
+To gain geographical insight, we'll again display the results on the US
+map.
+
 .. code:: python
 
-    measure = 'degree_bin'
+    measure = 'degree_bin' # make bubble size proportional to binary degree
     df = df_network[[measure,'module']].reset_index().rename(columns={'index':'City_State'})
     df = df.merge(df_lookup,on='City_State').sort_values(by=measure,ascending=False).reset_index(drop=True)
     display(df.head())
@@ -2598,7 +2742,99 @@ Communities Detected via Modularity Score
 
 
 
+From the above chart, we can quickly see that the US airport community
+is mostly based on geographical distance.
+
+In fact, I was quite surprised to see how closely the communities
+resemble the `four regions of the United
+Stats <https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States>`__
+assigned by the Census Bureau (Northeast, South, Midwest, and West
+regions), which was fascinating since the Girvan-Newman modularity
+algorithm was purely driven by the Airline traffic data. It could be
+possible that policy-makers assign flight schedule based o these four
+regions, but it was still cool to see the data pick this up.
+
+Finally, it was interesting to see Washingto DC be part of the Western
+region dominant red community.
+
+Visualizing the airtraffics in Gephi
+------------------------------------
+
+We conclude our analysis by producing the overall graph structure in the
+US airline by rendering the edges on the US map using
+`Gephi <https://gephi.org/>`__.
+
+To do this, we exported the Graph object in networkx as a GEXF (Graph
+Exchange XML Format) file.
+
+.. code:: python
+
+    # export graph object with the module information for visualizing in Gephi
+    nx.write_gexf(G, 'airtraffic_network.gexf')
+
+Below are the result of the figures rendered in Gephi in SVG format.
+
+.. code:: python
+
+    from IPython.display import SVG, display
+    display(SVG('./gephi/traffic_mainland.svg'))
+
+
+
+.. image:: /_static/img/network_analysis_65_0.svg
+    :scale: 100%
+
+Finally, below we display only the *intra*-community edges to avoid
+cluttering the figure with edges.
+
+.. code:: python
+
+    display(SVG('./gephi/traffic_mainland_intra_only.svg'))
+
+
+
+.. image:: /_static/img/network_analysis_67_0.svg
+    :scale: 100%
+
+We can also obtain a hierarchical module/community by running another
+recursion of community detection algorithm, as illustrated below.
+
+.. code:: python
+
+    display(SVG('./gephi/south.svg'))
+
+
+
+.. image:: /_static/img/network_analysis_69_0.svg
+    :scale: 100%
+
+.. code:: python
+
+    display(SVG('./gephi/midwest.svg'))
+
+
+
+.. image:: /_static/img/network_analysis_70_0.svg
+    :scale: 100%
+
+.. code:: python
+
+    display(SVG('./gephi/west.svg'))
+
+
+
+.. image:: /_static/img/network_analysis_71_0.svg
+    :scale: 100%
+
+Other visualization charts that we created in Gephi is available at
+https://github.com/wtak23/airtraffic/tree/master/final\_scripts/gephi
+
 Conclusion
 ==========
 
-...say something...
+As an overall concluding remark, I am glad I undertook this data science
+project. 
+I learned a lot about the seasonal and geographical trends present in  the US air-traffic system, and also became familiar about the network architecture of the sytem in terms of centrality and modularity. ,
+
+I was also able to get my hands wet on utilizing variety of practical tools, such as included web-scraping, API querying, geocoding, visualization of network graphs, dataframe manipulation and data tidying, and creating
+intuitive visualization charts that helps data to deliver the message to us analysts.

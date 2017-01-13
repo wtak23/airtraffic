@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Gallery 3: Network Theoretic Analysis of US Airtraffic</title>
+    <title>Gallery 3: Network Theoretic Analysis of US Airtraffic (my favorite)</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -83,7 +83,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="overview.html#galleries">Galleries</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="flight-count-analysis-gallery.html">Gallery 1: Trend in US air-traffic movement</a></li>
 <li class="toctree-l3"><a class="reference internal" href="regression-gallery.html">Gallery 2: Air-traffic Residual Analysis</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Gallery 3: Network Theoretic Analysis of US Airtraffic</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Gallery 3: Network Theoretic Analysis of US Airtraffic (my favorite)</a></li>
 </ul>
 </li>
 </ul>
@@ -147,8 +147,11 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="network_analysis.html">Part3: Network analysis of 2016 US Air Traffic</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#overview-network-view-of-the-us-airtraffic-system">Overview: network view of the US Airtraffic System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#create-the-network-edges-pairs-of-aiports-forming-the-trips">Create the network &#8220;edges&#8221; &#8212; pairs of aiports forming the trips</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#overview-network-view-of-the-us-airtraffic-system">Overview: network view of the US Airtraffic System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#outline-of-the-analysis">Outline of the analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#create-directed-graph-trips">Create directed graph: <strong>trips</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#data-tidying">Data tidying</a></li>
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#most-frequent-trips-in-us-during-the-past-year">Most frequent &#8220;trips&#8221; in US during the past year</a></li>
 </ul>
@@ -158,7 +161,7 @@
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#most-frequent-routes-in-us-during-the-past-year">Most frequent &#8220;routes&#8221; in US during the past year</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#overview-complex-networt-study-of-the-us-airport-system">Overview: complex networt study of the US Airport System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="network_analysis.html#only-codes-can-be-skipped-define-helper-functions-for-complex-network-analysis">(only codes, can be skipped) Define helper functions for complex network analysis</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#make-nx-graph-create-networkx-graph-object">make_nx_graph: create networkx graph object</a></li>
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#compute-network-measures-network-measures-characterizing-nodes-airport">compute_network_measures: network measures characterizing nodes (airport)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#other-helper-functions">Other helper functions</a></li>
@@ -168,6 +171,7 @@
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#power-law-analysis-of-centrality-measures">Power law analysis of centrality measures</a></li>
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#pagerank-centrality-among-us-airports">PageRank Centrality among US Airports</a></li>
 <li class="toctree-l3"><a class="reference internal" href="network_analysis.html#communities-detected-via-modularity-score">Communities Detected via Modularity Score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="network_analysis.html#visualizing-the-airtraffics-in-gephi">Visualizing the airtraffics in Gephi</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="network_analysis.html#conclusion">Conclusion</a></li>
@@ -226,7 +230,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Gallery 3: Network Theoretic Analysis of US Airtraffic</a></li>
+<li><a class="reference internal" href="#">Gallery 3: Network Theoretic Analysis of US Airtraffic (my favorite)</a></li>
 </ul>
 </ul>
 </li>
@@ -256,9 +260,14 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="gallery-3-network-theoretic-analysis-of-us-airtraffic">
-<h1>Gallery 3: Network Theoretic Analysis of US Airtraffic</h1>
-<p>Main notebook: <a class="reference external" href="http://takwatanabe.me/airtraffic/network_analysis.html">http://takwatanabe.me/airtraffic/network_analysis.html</a></p>
+  <div class="section" id="gallery-3-network-theoretic-analysis-of-us-airtraffic-my-favorite">
+<h1>Gallery 3: Network Theoretic Analysis of US Airtraffic (my favorite)</h1>
+<p><a class="reference external" href="http://takwatanabe.me/airtraffic/network_analysis.html">Main notebook</a></p>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1949.embed?link=false&logo=false&share_key=DGLvImGRtSipSJVEfFEkWN" height="525px" width="100%"></iframe><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1951.embed?link=false&logo=false&share_key=mwagthg1Y2h7lqjZUTXlGu" height="525px" width="100%"></iframe><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1953.embed?link=false&logo=false&share_key=gGIBKQOHB5hkU1UgIIoq2z" height="650px" width="800px"></iframe><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1955.embed?link=false&logo=false&share_key=b2DdhlljEH0JZMTRVPlUjf" height="525px" width="100%"></iframe><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~takanori/1957.embed?link=false&logo=false&share_key=KybShvlrzWuZ5pwbUUwQOq" height="525px" width="100%"></iframe><a class="reference internal image-reference" href="_images/network_analysis_65_0.svg"><img src="_images/network_analysis_65_0.svg" /></a>
+<a class="reference internal image-reference" href="_images/network_analysis_67_0.svg"><img src="_images/network_analysis_67_0.svg" /></a>
+<a class="reference internal image-reference" href="_images/network_analysis_69_0.svg"><img src="_images/network_analysis_69_0.svg" /></a>
+<a class="reference internal image-reference" href="_images/network_analysis_70_0.svg"><img src="_images/network_analysis_70_0.svg" /></a>
+<a class="reference internal image-reference" href="_images/network_analysis_71_0.svg"><img src="_images/network_analysis_71_0.svg" /></a>
 </div>
 
 
